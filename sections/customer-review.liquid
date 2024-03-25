@@ -1,0 +1,108 @@
+<secction class="customer-review">
+  <div class="customer-review-content">
+    <div class="custom-page-width">
+      <!-- Customer-review Start  -->
+        <div class="customer-img">
+          <img src="{{ section.settings.customer_review | img_url:'master' }}">
+        </div>
+      <div class="sleep-btn-content">
+        <div class="sleep-btn sleep-data">
+          <a href="#subscribe">  <p>YES, I WANT SLEEP!</p> </a>
+        </div>
+      </div>
+      <!-- Customer-review End  -->
+    </div>
+  </div>
+</secction>
+
+<div class="img-width-text">
+  
+        <div class="image-width-text-content-customer">
+           <div class="custom-page-width">
+          <div class="image-content customer-review">
+              <img src="{{ section.settings.img_above  | img_url:'master' }}">
+          </div>
+
+                 <div class="sleep-btn-content">
+        <div class="sleep-btn customer-review-btn">
+           <a href="#subscribe"> <p>YES, I WANT SLEEP!</p> </a>
+        </div>
+      </div>
+           </div>
+        </div>
+</div>
+
+<style>
+  .sleep-btn.customer-review-btn{
+    margin:0px;
+  }
+  .customer-review-content{
+    background-image:url({{ section.settings.review_bg_image | img_url:'master' }});
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  
+    margin-top:20px;
+  }
+  .customer-img{
+    padding-top:30px;
+    text-align:center;
+  }
+  .sleep-btn-content{
+    padding-bottom:15px;
+  }    
+  .image-width-text-content-customer{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  
+    background-image:url({{ section.settings.img_customer_text | img_url:'master' }});
+  }   
+  .customer-review{
+    padding-top:50px;
+    padding-bottom:15px;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "z-patch customer-review",
+    "settings": [
+      {
+        "type":"image_picker",
+          "id":"review_bg_image",
+        "label":"Background Image"
+      },
+      {
+        "type":"image_picker",
+          "id":"customer_review",
+        "label":"Customer Review"
+      },
+      {
+        "type":"text",
+          "id":"btn_text",
+        "label":"Sleep Button"
+      },
+      {
+        "type":"image_picker",
+          "id":"img_customer_text",
+        "label":"Natural Image bg"
+      },
+      {
+        "type":"image_picker",
+          "id":"img_above",
+        "label":"Natural Image"
+      }
+    ],
+
+    
+      "presets":[
+        {
+          "name":"z-patch customer-review"
+        }
+      ]
+    
+  }
+{% endschema %}

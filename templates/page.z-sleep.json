@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "zsleep_announcement_money_D39xwy": {
+      "type": "zsleep-announcement-money",
+      "settings": {
+      }
+    },
+    "zsleep_announcement_logo_UB8mwQ": {
+      "type": "zsleep-announcement-logo",
+      "settings": {
+      }
+    },
+    "zsleep_show_NwVVLM": {
+      "type": "zsleep-show",
+      "settings": {
+      }
+    },
+    "zsleep_works_yXr7HC": {
+      "type": "zsleep-works",
+      "blocks": {
+        "text_WUPN9A": {
+          "type": "text",
+          "settings": {
+            "peelgif": "shopify:\/\/shop_images\/peel.gif",
+            "peel_text": "Peel"
+          }
+        },
+        "text_4zdkw4": {
+          "type": "text",
+          "settings": {
+            "peelgif": "shopify:\/\/shop_images\/stick.gif",
+            "peel_text": "Stick"
+          }
+        },
+        "text_UwwbKC": {
+          "type": "text",
+          "settings": {
+            "peelgif": "shopify:\/\/shop_images\/sleep.gif",
+            "peel_text": "Sleep"
+          }
+        }
+      },
+      "block_order": [
+        "text_WUPN9A",
+        "text_4zdkw4",
+        "text_UwwbKC"
+      ],
+      "settings": {
+        "main_title": "How The ZPatch Works"
+      }
+    },
+    "zsleep_choose_q76rPU": {
+      "type": "zsleep-choose",
+      "settings": {
+        "main_title": "Why Choose ZSleep Patch?"
+      }
+    },
+    "zsleep_video_QY8ind": {
+      "type": "zsleep-video",
+      "blocks": {
+        "text_4DjVU8": {
+          "type": "text",
+          "settings": {
+            "title": "1. They Have More Energy",
+            "subtitle": "\" I always wake up looking refreshed and feeling energized...\" - Sierra",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/560840637?badge=0&autopause=0&player_id=0&app_id=58479&h=d2d5787326&wmode=opaque"
+          }
+        },
+        "text_LWeAQY": {
+          "type": "text",
+          "settings": {
+            "title": "2. They Don't Wake Up In The Middle Of The Night",
+            "subtitle": "\"I sleep through the whole night... it's super effective\" - Lexie",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/560842790?badge=0&autopause=0&player_id=0&app_id=58479&h=7950666148&wmode=opaque"
+          }
+        },
+        "text_6EFWjf": {
+          "type": "text",
+          "settings": {
+            "title": "3. They Fall Asleep Faster",
+            "subtitle": "\"As soon as I put the patch on, I start feeling sleepy\" - Hayley",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/560861088?badge=0&autopause=0&player_id=0&app_id=58479&h=1a33c960ac&wmode=opaque"
+          }
+        },
+        "text_kbxedT": {
+          "type": "text",
+          "settings": {
+            "title": "4. They Get More Restful Sleep",
+            "subtitle": "\"I used to get around 4 hours of sleep a night, but with these I get 8 hours...\" -Hailie",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/560855080?badge=0&autopause=0&player_id=0&app_id=58479&h=bb7b93fe38&wmode=opaque"
+          }
+        }
+      },
+      "block_order": [
+        "text_4DjVU8",
+        "text_LWeAQY",
+        "text_6EFWjf",
+        "text_kbxedT"
+      ],
+      "settings": {
+      }
+    },
+    "zsleep_natural_sol_8xPXNt": {
+      "type": "zsleep-natural-sol",
+      "settings": {
+        "main_title": ""
+      }
+    },
+    "zsleep_announcement_bar_9xzhA9": {
+      "type": "zsleep-announcement-bar",
+      "settings": {
+      }
+    },
+    "zsleep_amazon_reviews_cdedwE": {
+      "type": "zsleep-amazon-reviews",
+      "blocks": {
+        "text_6PEEkR": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/1_cdbe978e-734a-43b2-87b9-cefa02cf409a.jpg"
+          }
+        },
+        "text_K9UQYQ": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/2_96ac6ca6-9ed8-44a3-93c1-99ab61faaf1a.jpg"
+          }
+        },
+        "text_Rhz67K": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/3_df4374d7-d12c-4948-bced-f668f445afc1.jpg"
+          }
+        },
+        "text_KxPb4N": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/4_edd9ba84-41b0-4fa4-9223-4a2f5392f983.jpg"
+          }
+        },
+        "text_E47Uma": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/5_195627f9-559a-4580-8b67-0ad10e6e14ce.jpg"
+          }
+        },
+        "text_mhpJrQ": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/6_385267ed-df0f-42a1-baf2-2983e307d68c.jpg"
+          }
+        },
+        "text_wFrjPW": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/7_910355a1-05d6-4afd-9848-538f6f0d5de3.jpg"
+          }
+        },
+        "text_w9pC7x": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/8_971d9a52-661a-4bc9-a84b-a93746a584b9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "text_6PEEkR",
+        "text_K9UQYQ",
+        "text_Rhz67K",
+        "text_KxPb4N",
+        "text_E47Uma",
+        "text_mhpJrQ",
+        "text_wFrjPW",
+        "text_w9pC7x"
+      ],
+      "settings": {
+      }
+    },
+    "rich_text_Q77maq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bcEr8x": {
+          "type": "heading",
+          "settings": {
+            "title": "Thousands Of Our Happy Customers Cannot Be Wrong! "
+          }
+        }
+      },
+      "block_order": [
+        "heading_bcEr8x"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "zsleep_inst_reviews_yJHr3i": {
+      "type": "zsleep-inst-reviews",
+      "blocks": {
+        "text_GPkJcy": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/1_159a82bc-b039-4c85-ab52-889a445b1edf.jpg"
+          }
+        },
+        "text_qJM9Xb": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/2_272e0642-c5f7-49b9-94fb-e73b821d5d0b.jpg"
+          }
+        },
+        "text_9eXaqw": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/3_5ec0bad5-8499-4fef-b985-845a0aa92966.png"
+          }
+        },
+        "text_VaFeCz": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/4_f38aa6bd-48fc-4955-bdd8-07590fa58594.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_GPkJcy",
+        "text_qJM9Xb",
+        "text_9eXaqw",
+        "text_VaFeCz"
+      ],
+      "settings": {
+      }
+    },
+    "zsleep_footer_JdrkmU": {
+      "type": "zsleep-footer",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "zsleep_announcement_money_D39xwy",
+    "zsleep_announcement_logo_UB8mwQ",
+    "zsleep_show_NwVVLM",
+    "zsleep_works_yXr7HC",
+    "zsleep_choose_q76rPU",
+    "zsleep_video_QY8ind",
+    "zsleep_natural_sol_8xPXNt",
+    "zsleep_announcement_bar_9xzhA9",
+    "zsleep_amazon_reviews_cdedwE",
+    "rich_text_Q77maq",
+    "zsleep_inst_reviews_yJHr3i",
+    "zsleep_footer_JdrkmU"
+  ]
+}

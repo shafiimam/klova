@@ -1,0 +1,88 @@
+{%- liquid
+assign author = article.metafields.blogs.author
+assign comment = article.metafields.blogs.comment
+assign image = article.metafields.blogs.image | file_url
+assign product = article.metafields.blogs.product.value
+assign short_title = product.metafields.card.short_text
+assign short_description = product.metafields.card.description
+-%}
+{% if article.metafields.blogs.product %}
+  <div class="article-product">
+    <div class="article-product__wrapper">
+      <div class="page-width">
+        <div class="article-product__inner">
+          <div class="article-product__box">
+            <div class="article-product__content">
+              {% if short_title != blank %}
+              <div class="article-product__subtitle"> {{ short_title }} </div>
+              {% endif %}
+              <h2 class="article-product__title"> {{ product.title }}</h2>
+              {% if short_description != blank %}
+              <div class="article-product__text"> {{ short_description }} </div>
+              {% endif %}
+              {% if section.settings.button != blank %}
+              <a href=" {{ product.url }} " class="c-button main-product__button article-product__button">
+                <span class="main-product__price article-product__price"> {{ product.price | money }} </span>
+                <span>{{ section.settings.button }}</span></a>
+              {% endif %}
+            </div>
+            {% if article.metafields.blogs.image != blank %}
+            <div class="article-product__image">
+              <img src="{{ image }}" alt=" {{ image.alt }} ">
+            </div>
+            {% endif %}
+            <div class="article-product__comment">
+              <div class="article-product__comment_stars">
+                {% render 'comment-stars' %}
+              </div>
+              {% if comment != blank %}
+              <div class="article-product__comment_text"> {{ comment }} </div>
+              {% endif %}
+              {% if author != blank %}
+              <div class="article-product__comment_author"> {{ author }} </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="reviews__wrapper">
+        <div class="page-width">
+          <div class="reviews__inner">
+            {% if section.settings.title != blank %}
+            <h2 class="reviews__title"> {{ section.settings.title }} </h2>
+            {% endif %}
+            <div class="reviews__widget">
+              <!-- YOTPO -->
+              <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}"
+                data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}"
+                data-image-url="{{ product.featured_image | product_img_url: " large" |replace: '?' , '%3F' | replace: '&'
+                ,'%26'}}" data-description="{{ product.description | escape }}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Article Product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button label",
+      "default": "View product"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title reviews",
+      "default": "What our customers say:"
+    }
+  ]
+}
+{% endschema %}

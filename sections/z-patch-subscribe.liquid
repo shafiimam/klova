@@ -1,0 +1,139 @@
+<section id="subscribe" class="customer-review remove-pd">
+  <div class="data-review-content">
+    <div class="custom-page-width">
+      <!-- Customer-review Start  -->
+      <div class="subscribe-text">
+        <p style="line-height: 42px; text-align: center;">
+          <span style="font-size: 32px;">
+            <strong><span style="font-family: Poppins; font-weight: 700; font-style: normal;">Join The 98% of people who say they feel less tired on mornings after wearing Klova</span></strong>
+          </span>
+        </p>
+      </div>
+        <div class="customer-img">
+          <img src="{{ section.settings.customer_review | img_url:'master' }}">
+        </div>
+      <div class="sleep-btn-content">
+        <div class="sleep-btn z-patch-sub">
+{% comment %}
+<form method="post" action="/cart/add" id="AddToCartForm-template--15486142054465__main-11218040842" accept-charset="UTF-8" class="product-single__form" enctype="multipart/form-data">
+     
+</form>
+{% endcomment %}
+       <a class="add_to_cart">
+          <p>ORDER NOW</p>
+       </a>
+        </div>
+      </div>
+      <!-- Customer-review End  -->
+    </div>
+  </div>
+</section>
+
+
+<script>
+$(document).ready(function () {
+        $(document).on('click','.add_to_cart',function(){
+            // var quantity = $(".quantity option:selected").val();
+            var quantity = parseInt(1);
+            var id="31632025256001";
+            $.ajax({
+                type: 'POST',
+                url: '/cart/add.js',
+                dataType: 'json',
+                data: {id:id,quantity:quantity},
+                success: function(){
+                    location.href="/checkout";
+                }
+            });
+        })
+    });
+</script>
+
+
+<style>
+  .z-patch-sub{
+   width: 390px;
+       position: relative;
+    top: -33px; 
+  }
+  .subscribe-text{
+    max-width:700px;
+    margin:0 auto;
+    padding-top:10px;
+  }
+  .sleep-btn.customer-review-btn{
+    margin:0px;
+  }
+  .data-review-content{
+    background-image:url({{ section.settings.bg_image | img_url:'master' }});
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  
+    margin-top:20px;
+  }
+  .customer-img{
+    padding-top:30px;
+    text-align:center;
+  }
+  .sleep-btn-content{
+    padding-bottom:15px;
+  }    
+  .image-width-text-content{
+    background-image:url({{ section.settings.img_text | img_url:'master' }});
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  
+  }   
+  .customer-review{
+    padding-top:50px;
+    /* padding-bottom:15px; */
+  }
+  .customer-review.remove-pd{
+    padding-bottom:0px;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "z-patch subscribe",
+    "settings": [
+      {
+        "type":"image_picker",
+          "id":"bg_image",
+        "label":"Background Image"
+      },
+      {
+        "type":"image_picker",
+          "id":"customer_review",
+        "label":"Customer Review"
+      },
+      {
+        "type":"text",
+          "id":"btn_text",
+        "label":"Sleep Button"
+      },
+      {
+        "type":"image_picker",
+          "id":"img_text",
+        "label":"Natural Image bg"
+      },
+      {
+        "type":"image_picker",
+          "id":"img_above",
+        "label":"Natural Image"
+      }
+    ],
+
+    
+      "presets":[
+        {
+          "name":"z-patch subscribe"
+        }
+      ]
+    
+  }
+{% endschema %}

@@ -1,0 +1,59 @@
+{%- style -%}
+.reviews {
+  padding: {{ section.settings.paddingsection_mob }} !important;
+}
+
+@media (min-width:768px) {
+  .reviews {
+    padding: {{ section.settings.paddingsection }} !important;
+  }
+}
+{%- endstyle -%}
+<div class="reviews">
+  <div class="reviews__wrapper">
+    <div class="page-width">
+      <div class="reviews__inner">
+        {% if section.settings.title != blank %}
+        <h2 class="reviews__title"> {{ section.settings.title }} </h2>
+        {% endif %}
+        <div class="reviews__widget">
+          <!-- YOTPO -->
+          <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "settings": [
+  {
+  "type": "text",
+  "id": "paddingsection",
+  "label": "Padding Section (desktop)",
+  "default": "0px 0px 0px 0px",
+  "info": "Padding: Top Right Bottom Left"
+  },
+  {
+  "type": "text",
+  "id": "paddingsection_mob",
+  "label": "Padding Section (mobile)",
+  "default": "0px 0px 0px 0px",
+  "info": "Padding: Top Right Bottom Left"
+  },
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  }
+  ],
+  "presets": [
+  {
+  "category": "New",
+  "name":"Reviews"
+  }
+  ]
+}
+{% endschema %}

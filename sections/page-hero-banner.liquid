@@ -1,0 +1,90 @@
+<div class="o-container">
+  <div class="br-radius-24 flex-md page-hero page-hero--{{ section.id }} {{ section.settings.style_overlay }}">
+    <style>
+      .page-hero--{{ section.id }} .page-hero__image img {
+        max-width: {{ section.settings.max_width }}px;
+      }{}
+    </style>
+
+    <div class="page-hero__text text">
+      {% if section.settings.page_hero_title != blank %}
+        <h2 class="text__title">{{ section.settings.page_hero_title }}</h2>
+      {% endif %}
+      {% if section.settings.page_hero_descr != blank %}
+        <div class="text__descr">
+          {{ section.settings.page_hero_descr }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="page-hero__image">
+      {% if section.settings.page_hero_image != blank %}
+        {%- assign img_url = section.settings.page_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img class="lazyload"
+              data-src="{{ img_url }}"
+              data-widths="[540, 720, 900, 1080, 1600]"
+              data-aspectratio="{{ section.settings.page_hero_image.aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ section.settings.page_hero_image.alt }}">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Page hero-banner",
+    "settings": [
+      {
+        "type": "select",
+        "id": "style_overlay",
+        "label": "Style gradient overlay",
+        "options": [
+          {
+            "value": "bg-gr--blue-purple",
+            "label": "Blue to Purple"
+          },
+          {
+            "value": "bg-gr--green-blue",
+            "label": "Green to Blue"
+          },
+          {
+            "value": "bg-gr--yellow-orange",
+            "label": "Yellow to Orange"
+          }
+        ]
+      },
+      {
+        "id": "page_hero_title",
+        "type": "text",
+        "label": "Hero-banner title",
+        "default": "We believe healthier sleep leads to happier lives."
+      },
+      {
+        "id": "page_hero_descr",
+        "type": "richtext",
+        "label": "Hero-banner description",
+        "default": "<p>Our Mission - To promote happy & healthy lives through customized wellbeing and sleep experiences that enhance everyday interactions, relationships and positive energy.</p>"
+      },
+      {
+        "id": "page_hero_image",
+        "type": "image_picker",
+        "label": "Hero-banner image"
+      },
+      {
+        "type": "range",
+        "id": "max_width",
+        "label": "Max img width",
+        "unit": "px", 
+        "min": 200,
+        "max": 450,
+        "step": 5,
+        "default": 420
+      }
+    ],
+    "presets": [
+      {
+        "name": "Page hero-banner"
+      }
+    ]
+  }
+{% endschema %}

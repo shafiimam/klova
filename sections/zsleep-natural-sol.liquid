@@ -1,0 +1,148 @@
+<section class="zsleep-works">
+  <div class="zsleep-choose">
+    <div class="zsleep-maintitle">
+      <p>{{ section.settings.main_title }}</p>
+    </div>
+    <h2 style="text-align: center;color:#fff;margin-bottom:0px;">
+      Experience The Natural Solution To Sleepless Nights
+    </h2>
+    <div class="simply-content-natural">
+      <p class="klovazsleep-text-first">
+        The Klova ZSleep Patch harnesses the power of nature to enhance your sleep with key ingredients like:
+      </p>
+      <ul class="choose-text-content">
+        <li class="choose-text"><strong>Magnesium -</strong> known for its relaxation properties.</li>
+
+        <li class="choose-text"><strong>Hops -</strong> traditionally used to support sleep quality;</li>
+
+        <li class="choose-text"><strong>Valerian Root -</strong> often used for its calming effect.</li>
+
+        <li class="choose-text"><strong>L-Theanine -</strong> which promotes relaxation without drowsiness</li>
+
+        <li class="choose-text"><strong>Melatonin - </strong> your body's natural sleep hormone.</li>
+      </ul>
+      <p class="klovazsleep-text">
+        These ingredients work together to help you fall asleep faster, enjoy a deeper sleep, and wake up feeling
+        refreshed.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+    .klovazsleep-text{
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-style: normal;
+      color: #fff;
+      margin: 0 auto;
+      max-width: 600px;
+      margin-top:5px;
+    }
+    .klovazsleep-text-first{
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-style: normal;
+      color: #fff;
+      margin: 0 auto;
+      max-width: 600px;
+      margin-bottom:20px;
+    }
+    .zsleep-choose{
+      background-color:#504e98;
+    }
+    ul.choose-text-content{
+      max-width:600px;
+      margin:0 auto;
+      list-style:block;
+    }
+  .choose-text-content li::maker{
+      color:#fff;
+      font-size:16px;
+    }
+
+    li.choose-text{
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-style: normal;
+      color: #fff;
+      list-style: disc;
+      /* list-style-image: url("https://cdn.shopify.com/s/files/1/2065/0707/files/whitedot.svg?v=1711096502"); */
+    }
+    .zsleep-works-data{
+      display:flex;
+      justify-content: space-evenly;
+      padding-bottom:40px;
+    }
+    .works-image-content{
+      width:193px;
+      height:193px;
+    }
+    .works-image-content img{
+       border-radius:30px;
+    }
+    .zsleep-maintitle{
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-style: normal;
+      color: rgb(225, 223, 238);
+      text-align:center;
+      padding:20px;
+    }
+    .set-width{
+      max-width:352px;
+      margin:0 auto;
+      padding-bottom:20px;
+    }
+    .works-title-content{
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-style: normal;
+      color: rgb(225, 223, 238);
+      text-align:center;
+    }
+    .simply-content-natural{
+      padding:25px 0px;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "zsleep natural",
+  "settings": [
+    {
+      "type":"text",
+        "id":"main_title",
+      "label":"Main Title"
+    }
+  ],
+  "blocks":[
+    {
+    "type": "text",
+    "name": "zsleep-works",
+    "settings":[
+    {
+      "type":"image_picker",
+        "id":"bgchoose",
+      "label":"Image"
+    },
+    {
+      "type":"text",
+        "id":"peel_text",
+      "label":"Text"
+    }
+    ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"zsleep natural"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,55 @@
+<section class="zsleep-announcement-bar">
+  <div class="zsleep-announcement-bar-content">
+    <div class="zsleep-page-width announcement-bar-text">
+      <div class="logo-content">
+      <div class="left-side-icon">
+       <img src="{{ "left_logo.png"  | file_url }}">
+      </div>
+      <div class="center-side-icon">
+       <img src="{{ "center_logo.png" | file_url }}">
+      </div>
+      <div class="right-side-icon">
+       <img src="{{ "right_logo.png" | file_url }}">
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .zsleep-announcement-bar-content{
+    background: rgba(102, 96, 170, 1);
+    height: 54px;
+    position: relative;
+  }
+  .announcement-bar-text{
+    padding-top:2px;
+  }
+  .logo-content{
+    display:flex;
+    justify-content: center;
+    padding-top:5px;
+    position: relative;
+  }
+  .left-side-icon{
+    position: absolute;
+    left:32%;
+  }
+  .right-side-icon{
+     position: absolute;
+    right:32%;
+    bottom:0%;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "zsleep announcement-logo",
+    "settings": [],
+    "presets":[
+      {
+        "name":"zsleep announcement-log"
+      }
+    ]
+  }
+{% endschema %}

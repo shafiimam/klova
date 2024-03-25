@@ -1,0 +1,155 @@
+<div class="simile">
+  <div class="simile__wrapper">
+    <div class="page-width">
+      <div class="simile__inner">
+        <ul class="simile__items">
+          {% for block in section.blocks %}
+          {% case block.type %}
+          {% when 'text' %}
+          <li class="simile__item">
+            <div class="simile__case">
+              {% if block.settings.subtitle != blank %}
+              <div class="simile__subtitle">{{ block.settings.subtitle }}</div>
+              {% endif %}
+              {% if block.settings.title != blank %}
+              <h3 class="simile__title">{{ block.settings.title }}</h3>
+              {% endif %}
+              {% if block.settings.text != blank %}
+              <p class="simile__text">{{ block.settings.text }}</p>
+              {% endif %}
+            </div>
+            {% if block.settings.item-image != blank %}
+            <div class="simile__item_image">
+              {%- assign img_url = block.settings.item-image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[360, 540, 720, 900, 1080, 1600]"
+                  data-aspectratio="{{ block.settings.item-image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ block.settings.item-image.alt }}">
+            </div>
+            {% endif %}
+          </li>
+          {% when 'image_picker' %}
+          <li class="simile__item simile__item_right">
+            <div class="simile__case">
+              {% if block.settings.subtitle-two != blank %}
+              <div class="simile__subtitle">{{ block.settings.subtitle-two }}</div>
+              {% endif %}
+              {% if block.settings.title-two != blank %}
+              <h3 class="simile__title">{{ block.settings.title-two }}</h3>
+              {% endif %}
+              {% if block.settings.text-two != blank %}
+              <p class="simile__text">{{ block.settings.text-two }}</p>
+              {% endif %}
+            </div>
+            {% if block.settings.item-image-two != blank %}
+            <div class="simile__item_image">
+              {%- assign img_url = block.settings.item-image-two | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[360, 540, 720, 900, 1080, 1600]"
+                  data-aspectratio="{{ block.settings.item-image-two.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ block.settings.item-image-two.alt }}">
+            </div>
+            {% endif %}
+          </li>
+          {% endcase %}
+          {% endfor %}
+        </ul>
+        {% if section.settings.image != blank %}
+        <div class="simile__image br-radius-16">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% if section.settings.image != blank %}
+    <div class="simile__image simile__image_tablet br-radius-16">
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product comparison",
+  "settings": [
+  {
+  "type": "text",
+  "id": "text",
+  "label": "Text",
+  "default": "VS"
+  },
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image"
+  }
+  ],
+  "blocks": [
+  {
+  "name": "Product on the left",
+  "type": "text",
+  "limit": 1,
+  "settings": [
+  {
+  "type": "text",
+  "id": "subtitle",
+  "label": "Subtitle"
+  },
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  },
+  {
+  "type": "text",
+  "id": "text",
+  "label": "Text"
+  },
+  {
+  "type": "image_picker",
+  "id": "item-image",
+  "label": "Image"
+  }
+  ]
+  },
+  {
+  "name": "Product on the right",
+  "type": "image_picker",
+  "limit": 1,
+  "settings": [
+  {
+  "type": "text",
+  "id": "subtitle-two",
+  "label": "Subtitle"
+  },
+  {
+  "type": "text",
+  "id": "title-two",
+  "label": "Title"
+  },
+  {
+  "type": "text",
+  "id": "text-two",
+  "label": "Text"
+  },
+  {
+  "type": "image_picker",
+  "id": "item-image-two",
+  "label": "Image"
+  }
+  ]
+  }
+  ],
+  "presets": [
+  {
+  "category": "New",
+  "name":"Product comparison"
+  }
+  ]
+}
+{% endschema %}

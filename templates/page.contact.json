@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "4714f14f-3056-4942-a3ab-bb421f6b93f6": {
+          "type": "text",
+          "settings": {
+            "links_item": "<p>888-568-1688 (M-F 9am-4pm EST) <\/p>"
+          }
+        },
+        "9b3dde0d-f4d0-4e88-9270-b8e5c8e54586": {
+          "type": "text",
+          "settings": {
+            "links_item": "<p>@klovasleep<\/p>"
+          }
+        },
+        "cfb4e3dc-12d5-43f7-9cf6-75fa00c8ee3f": {
+          "type": "text",
+          "settings": {
+            "links_item": "<p>sleep@klova.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4714f14f-3056-4942-a3ab-bb421f6b93f6",
+        "9b3dde0d-f4d0-4e88-9270-b8e5c8e54586",
+        "cfb4e3dc-12d5-43f7-9cf6-75fa00c8ee3f"
+      ],
+      "settings": {
+        "contact_title": "Contact Us",
+        "links_title": "<p>Get in touch ;)<\/p>",
+        "policy_link": "<p>Looking for our <a href=\"\/pages\/shipping\" target=\"_blank\" title=\"Shipping\">Shipping & Return Policy<\/a>?<\/p>",
+        "name_label": "Your name",
+        "email_label": "Your email",
+        "question_label": "Your question (please include Order ID if applicable)",
+        "form_button": "Submit"
+      }
+    }
+  },
+  "order": [
+    "form"
+  ]
+}

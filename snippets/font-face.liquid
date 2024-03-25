@@ -1,0 +1,77 @@
+{%- assign header_font = settings.type_header_font_family -%}
+{%- assign base_font = settings.type_base_font_family -%}
+
+{%- assign fonts_header_link = settings.fonts_header_link -%}
+
+{%- assign base_font_bold = base_font | font_modify: 'weight', '600' -%}
+{%- assign base_font_italic = base_font | font_modify: 'style', 'italic' -%}
+{%- assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic' -%}
+
+{% if fonts_header_link != blank %}
+  <link href="{{ fonts_header_link }}" rel="stylesheet">
+{% elsif settings.fonts_header_custom %}
+  {%- style -%}
+    @font-face {
+      font-family: 'Bergen Sans';
+      src: url({{ 'BergenSans-BoldItalic.static.woff2' | asset_url }}) format('woff2'),
+           url({{ 'BergenSans-BoldItalic.static.woff' | asset_url }}) format('woff');
+      font-weight: 700;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Bergen Sans';
+      src: url({{ 'BergenSans.static.woff2' | asset_url }}) format('woff2'),
+           url({{ 'BergenSans.static.woff' | asset_url }}) format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Bergen Sans';
+      src: url({{ 'BergenSans-SemiBoldItalic.static.woff2' | asset_url }}) format('woff2'),
+           url({{ 'BergenSans-SemiBoldItalic.static.woff' | asset_url }}) format('woff');
+      font-weight: 600;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Bergen Sans';
+      src: url({{ 'BergenSans-Bold.static.woff2' | asset_url }}) format('woff2'),
+          url({{ 'BergenSans-Bold.static.woff' | asset_url }}) format('woff');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+        font-family: 'Bergen Sans';
+        src: url({{ 'BergenSans-Italic.static.woff2' | asset_url }}) format('woff2'),
+             url({{ 'BergenSans-Italic.static.woff' | asset_url }}) format('woff');
+        font-weight: normal;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Bergen Sans';
+        src: url({{ 'BergenSans-SemiBold.static.woff2' | asset_url }}) format('woff2'),
+             url({{ 'BergenSans-SemiBold.static.woff' | asset_url }}) format('woff');
+        font-weight: 600;
+        font-style: normal;
+    }
+  {%- endstyle -%}
+{% else %}
+  {%- unless settings.type_header_font_family.system? -%}
+    {%- style -%}
+      {{ header_font | font_face: font_display: 'swap' }}
+    {%- endstyle -%}
+  {%- endunless -%}
+{% endif %}
+
+{% if settings.fonts_body_link != blank %}
+  <link href="{{ settings.fonts_body_link }}" rel="stylesheet">
+{% else %}
+  {%- unless settings.type_base_font_family.system? -%}
+    {%- style -%}
+      {{ base_font | font_face: font_display: 'swap' }}
+
+      {{ base_font_bold | font_face: font_display: 'swap' }}
+      {{ base_font_italic | font_face: font_display: 'swap' }}
+      {{ base_font_bold_italic | font_face: font_display: 'swap' }}
+    {%- endstyle -%}
+  {%- endunless -%}
+{% endif %}

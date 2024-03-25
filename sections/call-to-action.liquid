@@ -1,0 +1,95 @@
+{%- style -%}
+.call-to-action--{{ section.id }} {
+  background-image: url({{ section.settings.call_to_action_desktop_image | img_url: 'master' }});
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: {{ section.settings.marginsection_mob }} !important;
+}
+@media screen and (max-width: 650px) {
+  .call-to-action--{{ section.id }} {
+    background-image: url({{ section.settings.call_to_action_mobile_image | img_url: 'master' }});
+  }
+}
+@media (min-width:768px) {
+  .call-to-action--{{ section.id }} {
+    margin: {{ section.settings.marginsection }} !important;
+  }
+}
+{%- endstyle -%}
+
+<div class="o-container">
+  <div class="br-radius-24 flex call-to-action call-to-action--{{ section.id }}">
+    <div class="call-to-action__text text">
+      <h3 class="text__title">{{ section.settings.call_to_action_title }}</h3>
+      <div class="text__descr">
+        {{ section.settings.call_to_action_descr }}
+      </div>
+    </div>
+    <div class="call-to-action__button">
+      <a class="c-button" href="{{ section.settings.call_to_action_button_link }}">
+        {{ section.settings.call_to_action_button }}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Call to action",
+    "settings": [
+      {
+        "type": "text",
+        "id": "marginsection",
+        "label": "Margin Section (desktop)",
+        "default": "0px 0px 0px 0px",
+        "info": "Margin: Top Right Bottom Left"
+      },
+      {
+        "type": "text",
+        "id": "marginsection_mob",
+        "label": "Margin Section (mobile)",
+        "default": "0px 0px 0px 0px",
+        "info": "Margin: Top Right Bottom Left"
+      },
+      {
+        "id": "call_to_action_desktop_image",
+        "type": "image_picker",
+        "label": "CTA background image desktop"
+      },
+      {
+        "id": "call_to_action_mobile_image",
+        "type": "image_picker",
+        "label": "CTA background image mobile"
+      },
+      {
+        "id": "call_to_action_title",
+        "type": "text",
+        "label": "CTA title",
+        "default": "Healthy sleep leads to a healthier mind & body"
+      },
+      {
+        "id": "call_to_action_descr",
+        "type": "richtext",
+        "label": "CTA description",
+        "default": "<p>Can bring you one step closer towards achieving your goals — without the weight of feeling constantly distracted.</p>"
+      },
+      {
+        "id": "call_to_action_button",
+        "type": "text",
+        "label": "CTA button",
+        "default": "SHOP now"
+      },
+      {
+        "id": "call_to_action_button_link",
+        "type": "url",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Call to action"
+      }
+    ]
+  }
+{% endschema %}

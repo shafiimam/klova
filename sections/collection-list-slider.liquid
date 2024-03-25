@@ -1,0 +1,126 @@
+<div class="collection-slider collection-slider--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .collection-slider--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .collection-slider--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="o-container">
+    <div class="collection-slider__wrap br-radius-8  {{ section.settings.style_overlay }}">
+      <ul class="collection-slider__list">
+        {%- for block in section.blocks -%}
+          {%- assign collection_current = block.settings.collection -%}
+          <li class="collection-slider__item">
+            <a
+              href="{{ collection_current.url }}"
+              class="collection-slider__link br-radius-16 {% if collection.handle == collection_current.handle -%}is-active{%- endif -%}"
+            >
+              {% if block.settings.title != blank %}
+                <span>{{ block.settings.title }}</span>
+              {% else %}
+                <span>{{ collection_current.title }}</span>
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+        {% if section.settings.show_byob %}
+          <li class="collection-slider__item">
+            <a
+              href="{{ section.settings.byob_link }}"
+              class="collection-slider__link br-radius-16 {% if collection.handle == collection_current.handle -%}is-active{%- endif -%}"
+            >
+              {% if section.settings.byob_title != blank %}
+                <span>{{ section.settings.byob_title }}</span>
+              {% else %}
+                <span>Build Your Own Bundle</span>
+              {% endif %}
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection list",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "select",
+      "id": "style_overlay",
+      "label": "Style gradient overlay",
+      "options": [
+        {
+          "value": "bg-gr--blue-purple",
+          "label": "Blue to Purple"
+        },
+        {
+          "value": "bg-gr--green-blue",
+          "label": "Green to Blue"
+        },
+        {
+          "value": "bg-gr--yellow-orange",
+          "label": "Yellow to Orange"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_byob",
+      "label":"Show BYOB Menu",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "byob_title",
+      "label": "BYOB Title",
+      "default": "Build Your Own Bundle"
+    },
+    {
+      "type": "url",
+      "id": "byob_link",
+      "label": "BYOB Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection-name",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Custom title for collection",
+          "info": "optionally*"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

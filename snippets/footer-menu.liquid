@@ -1,0 +1,18 @@
+{% if section.settings.show_titles %}
+  <div class="footer__title">
+    {%- if block.settings.title == blank -%}
+      {{ linklists[block.settings.menu].title }}
+    {%- else -%}
+      {{ block.settings.title }}
+    {%- endif -%}
+  </div>
+{% endif %}
+
+<ul class="footer__menu">
+  {%- for link in linklists[block.settings.menu].links -%}
+    <li><a href="{{ link.url }}" class="hover-link-line">{{ link.title }}</a></li>
+  {%- endfor -%}
+  {%- if block.settings.enable_account_link -%}
+    <li><a href="{{ routes.account_url }}" class="hover-link-line">{{ 'customer.account.title' | t }}</a></li>
+  {%- endif -%}
+</ul>

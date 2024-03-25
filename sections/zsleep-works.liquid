@@ -1,0 +1,100 @@
+<section class="zsleep-works">
+
+  <div class="zsleep-works-content">
+    <div class="zsleep-maintitle"><p>{{ section.settings.main_title }}</p></div>
+    <div class="zsleep-works-data zsleep-page-width">
+      {% for block in section.blocks %}
+      <div class="works-image-content"><img src="{{ block.settings.peelgif | img_url:'master' }}">
+       <div class="works-title-content">{{ block.settings.peel_text }}</div>
+      </div>
+     
+      {% endfor %}
+    </div>
+    <div class="simply-content">
+   <div class="simply-peel set-width"  style="height: auto;"><p style="line-height: 18px; text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(225, 223, 238);">Simply <strong><u>Peel</u></strong> 1 ZPatch Off The Sheet About An Hour Before Bed.</span></p></div>
+ <div class="stick set-width" style="height: auto;"><p style="line-height: 18px; text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(225, 223, 238);"><strong><u>Stick</u></strong> It On A Lean, Hairless Area, Like Top of Foot, Calf, Shoulder.</span></p></div>
+  <div class="sleep set-width" id="lp-pom-text-51" style="height: auto;"><p style="line-height: 18px; text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(225, 223, 238);">Feel It Start Working, Fall Asleep When You're Ready, <strong><u>Sleep</u></strong> Soundly &amp; Wake Up Refreshed!</span></p></div>
+    </div>
+    </div>
+
+  
+</section>
+
+<style>
+  .zsleep-works-content{
+   background-color:#6660aa;  
+  }
+  .zsleep-works-data{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom:40px;
+  }
+  .works-image-content{
+    width:193px;
+    height:193px;
+  }
+  .works-image-content img{
+     border-radius:30px;
+  }
+  .zsleep-maintitle{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(225, 223, 238);
+    text-align:center;
+    padding:20px;
+  }
+  .set-width{
+    max-width:352px;
+    margin:0 auto;
+    padding-bottom:20px;
+  }
+  .works-title-content{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(225, 223, 238); 
+    text-align:center;
+  }
+  .simply-content{
+    padding-top:20px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "zsleep works",
+    "settings": [
+      {
+        "type":"text",
+          "id":"main_title",
+        "label":"Main Title"
+      }
+    ],
+    "blocks":[
+      {
+      "type": "text",
+      "name": "zsleep-works",
+      "settings":[
+      {
+        "type":"image_picker",
+          "id":"peelgif",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+          "id":"peel_text",
+        "label":"Text"
+      }
+      ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Zsleep Works"
+      }
+    ]
+  }
+{% endschema %}

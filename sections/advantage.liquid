@@ -1,0 +1,159 @@
+<div class="advantage advantage--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .advantage--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .advantage--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="o-container">
+    {% if section.settings.title != blank or section.settings.description != blank %}
+      <div class="advantage__head">
+        <h2 class="advantage__title">{{ section.settings.title }}</h2>
+        <div class="advantage__info rte">
+          {{ section.settings.description }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="advantage__wrap flkty-slider flkty-slider--md">
+      {%- for block in section.blocks -%}
+      {% if block.type == "card-info" %}
+        <div class="advantage-card br-radius-16" style="background-color: {{ block.settings.overlay }};">
+          <figure class="advantage-card__icon">
+            {% if block.settings.svg_icon != blank %}
+              {{ block.settings.svg_icon }}
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </figure>
+          {% if block.settings.title != blank %}
+            <div class="advantage-card__title">{{ block.settings.title }}</div>
+          {% endif %}
+          {% if block.settings.description != blank %}
+            <div class="advantage-card__info rte">{{ block.settings.description }}</div>
+          {% endif %}
+        </div>
+      {% elsif block.type == "card-img" %}
+        <div class="advantage-card br-radius-16 advantage-card--img">
+          <figure class="advantage-card__img">
+            {% if block.settings.image != blank %}
+              {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="lazyload"
+                    data-src="{{ img_url }}"
+                    data-widths="[540, 720, 900, 1080, 1600]"
+                    data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                    data-sizes="auto"
+                    alt="{{ block.settings.image.alt }}">
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </figure>
+        </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Advantage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Info",
+      "default": "<p>Description</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card-info",
+      "name": "Info card",
+      "limit": 3,
+      "settings": [
+         {
+          "type": "html",
+          "id": "svg_icon",
+          "label": "Svg",
+          "info": "Right click on SVG file. Open with any text editor and copy all code. Paste code in above box. Contact us if you face issue."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Description</p>"
+        },
+        {
+          "type": "color",
+          "id": "overlay",
+          "label": "Overlay",
+          "default": "#FAF9FB"
+        }
+      ]
+    },
+    {
+      "type": "card-img",
+      "name": "Image card",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advantage",
+      "blocks": [
+        {
+          "type": "card-info"
+        },
+        {
+          "type": "card-info"
+        },
+        {
+          "type": "card-info"
+        },
+        {
+          "type": "card-img"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

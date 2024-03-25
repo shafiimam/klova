@@ -1,0 +1,217 @@
+<div class="reviews-home reviews-home--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="store-availability">
+  {%- style -%}
+    .reviews-home--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .reviews-home--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+  <div class="reviews-home__wrap {{ section.settings.style_overlay }}">
+    <div class="o-container">
+      <div class="reviews-home__inside">
+        {% if section.settings.title != blank %}
+          <div class="reviews-home__head">
+            <p>{{ section.settings.title }}</p>
+          </div>
+        {% endif %}
+        <div class="reviews-home__body {% if section.settings.show_custom_reviews %}flkty-slider flkty-slider--md{% endif %}">
+          {% if section.settings.show_custom_reviews %}
+            {%- for block in section.blocks -%}
+              <div class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__star">
+                    <style>
+                      .reviews-home--{{ section.id }} .review-card__star svg path { 
+                        fill: {{  section.settings.color_star }};
+                      }
+                    </style>
+                    {% for i in (1..block.settings.star_length) %}
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.10427 2.89977C9.18679 2.7323 9.31455 2.59128 9.47308 2.49267C9.63161 2.39406 9.81457 2.3418 10.0013 2.3418C10.188 2.3418 10.3709 2.39406 10.5295 2.49267C10.688 2.59128 10.8157 2.7323 10.8983 2.89977L12.8283 6.80977L17.1453 7.43777C17.33 7.46459 17.5035 7.54256 17.6462 7.66287C17.7888 7.78318 17.895 7.94102 17.9527 8.11853C18.0103 8.29604 18.0171 8.48614 17.9723 8.66733C17.9276 8.84851 17.833 9.01355 17.6993 9.14377L14.5753 12.1878L15.3133 16.4878C15.3448 16.6717 15.3242 16.8607 15.2539 17.0335C15.1836 17.2064 15.0663 17.3561 14.9153 17.4657C14.7644 17.5754 14.5858 17.6406 14.3997 17.654C14.2136 17.6675 14.0274 17.6286 13.8623 17.5418L10.0023 15.5118L6.14027 17.5418C5.97507 17.6284 5.78893 17.6671 5.60289 17.6535C5.41684 17.6399 5.23832 17.5745 5.08748 17.4648C4.93664 17.355 4.8195 17.2053 4.74931 17.0325C4.67912 16.8596 4.65867 16.6706 4.69027 16.4868L5.42727 12.1878L2.30327 9.14377C2.16956 9.01355 2.07497 8.84851 2.03019 8.66733C1.98541 8.48614 1.99222 8.29604 2.04987 8.11853C2.10751 7.94102 2.21368 7.78318 2.35637 7.66287C2.49906 7.54256 2.67257 7.46459 2.85727 7.43777L7.17427 6.81077L9.10427 2.89877V2.89977Z" fill="#1E062C"/>
+                      </svg>
+                    {% endfor %}
+                  </div>
+                  <span class="review-card__date">{% if block.settings.start_day < 10 %}{{ block.settings.start_day | prepend: 0 }}{% else %}{{ block.settings.start_day }}{% endif %}.{% if block.settings.start_month < 10 %}{{ block.settings.start_month | prepend: 0 }}{% else %}{{ block.settings.start_month }}{% endif %}.{{ block.settings.start_year }}</span>
+                </div>
+                <div class="review-card__body">
+                  <span class="review-card__title">{{ block.settings.title }}</span>
+                  <div class="review-card__rte rte">{{ block.settings.text }}</div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="reviews-home__widget">
+              <!-- YOTPO -->
+              <div class="yotpo yotpo-main-widget" data-product-id="{{ section.settings.product.id }}" data-name="{{ section.settings.product.title | escape }}" data-url="{{ shop.url }}{{ section.settings.product.url }}" data-image-url="{{ section.settings.product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ section.settings.product.description | escape }}"></div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Reviews for home",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tilte",
+      "default": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_custom_reviews",
+      "label": "Show custom reviews",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Reviews from the plugin 'YOTPO'"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product with reviews"
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "select",
+      "id": "style_overlay",
+      "label": "Style gradient overlay",
+      "options": [
+        {
+          "value": "bg-gr--blue-purple",
+          "label": "Blue to Purple"
+        },
+        {
+          "value": "bg-gr--green-blue",
+          "label": "Green to Blue"
+        },
+        {
+          "value": "bg-gr--yellow-orange",
+          "label": "Yellow to Orange"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "color_star",
+      "label": "Star",
+      "default": "#1E062C"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tilte",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Description",
+          "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa odio voluptates!</p>"
+        },
+        {
+          "type": "header",
+          "content": "Star"
+        },
+        {
+          "type": "range",
+          "id": "star_length",
+          "label": "Star",
+          "unit": "str",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Date"
+        },
+        {
+          "type": "range",
+          "id": "start_day",
+          "label": "Day",
+            "min": 1,
+            "max": 31,
+            "step": 1,
+          "default": 27
+        },
+        {
+          "type": "range",
+          "id": "start_month",
+          "label": "Month",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+          "default": 11
+        },
+        {
+          "type": "range",
+          "id": "start_year",
+          "label": "Year",
+            "min": 2021,
+            "max": 2025,
+            "step": 1,
+          "default": 2021
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews for home",
+      "blocks": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "review"
+        },
+        {
+          "type": "review"
+        },
+        {
+          "type": "review"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

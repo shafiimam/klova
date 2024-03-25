@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "4e59c1e5-44e4-46af-a7b3-2594300a959d": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHO CAN USE THIS PATCH?",
+            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing. <\/p>"
+          }
+        },
+        "e6aa007f-1328-4f46-a890-10277accb980": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHERE IS KLOVA MADE?",
+            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility. <\/p>"
+          }
+        },
+        "332cd5a4-29ee-4f1a-8656-95b536641f43": {
+          "type": "text",
+          "settings": {
+            "acc-button": "ARE THERE ANY INTERACTIONS?",
+            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
+          }
+        },
+        "a2fae86f-ca48-42e5-9e50-c0dbed0f03c9": {
+          "type": "text",
+          "settings": {
+            "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
+          }
+        },
+        "4dd9655e-7f09-4bf4-9c5f-161901a9330b": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WILL IT MAKE ME GROGGY?",
+            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
+          }
+        },
+        "0a33ab1d-694d-4575-b60b-819d466fa987": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHAT ARE ‘NOOTROPICS’?",
+            "acc-text": "<p>Nootropics are defined as any supplement or substance used to enhance memory or other cognitive functions like focus or clarity.<\/p><p><\/p><p>Klova uses only the most clinically researched, natural nootropics like guarana, huperzine A, bacopa and agmatine sulfate. Each ingredient has been shown to have nootropic properties of varying degree in independent clinical research.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4e59c1e5-44e4-46af-a7b3-2594300a959d",
+        "e6aa007f-1328-4f46-a890-10277accb980",
+        "332cd5a4-29ee-4f1a-8656-95b536641f43",
+        "a2fae86f-ca48-42e5-9e50-c0dbed0f03c9",
+        "4dd9655e-7f09-4bf4-9c5f-161901a9330b",
+        "0a33ab1d-694d-4575-b60b-819d466fa987"
+      ],
+      "settings": {
+        "title": "FAQ:",
+        "note": "Got a question? Please",
+        "note-link": "Contact Us",
+        "note-link-url": "shopify:\/\/pages\/contact-us-1"
+      }
+    }
+  },
+  "order": [
+    "faq"
+  ]
+}

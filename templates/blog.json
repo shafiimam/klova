@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "16545290077091a0d3": {
+      "type": "page-hero-banner",
+      "settings": {
+        "style_overlay": "bg-gr--blue-purple",
+        "page_hero_title": "We believe healthier sleep leads to happier lives.",
+        "page_hero_descr": "",
+        "max_width": 270
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_rss": false,
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_image_size": "wide"
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "tags"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "16545290077091a0d3",
+    "main",
+    "sidebar"
+  ],
+  "wrapper": "div.blog-layout"
+}

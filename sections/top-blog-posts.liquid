@@ -1,0 +1,118 @@
+<div class="top-blog-posts top-blog-posts--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .top-blog-posts--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .top-blog-posts--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="o-container">
+    <div class="top-blog-posts__wrap">
+      {% if section.settings.title != blank %}
+        <div class="top-blog-posts__head u-align-center">
+          <h2 class="top-blog-posts__title">{{ section.settings.title }}</h2>
+        </div>
+      {% endif %}
+      <div class="top-blog-posts__body">
+        {%- for block in section.blocks -%}
+        {%- assign article = block.settings.article -%}
+          <a href="{{ article.url }}" aria-label="{{ article.title | escape }}" class="article-card br-radius-24" style="background-color: {{ section.settings.overlay }};">
+            <figure class="article-card__image">
+              {% if article.image != blank %}
+                {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <img class="lazyload"
+                      data-src="{{ img_url }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-aspectratio="{{ article.image.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ article.image.alt }}">
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            </figure>
+            <div class="article-card__body">
+              <div class="article-card__info">{%- for tag in article.tags -%}{%- if forloop.last -%}{{ tag }}{%- else -%}{{ tag }}, {% endif -%}{% endfor -%}</div>
+
+              <h4 class="article-card__title">
+                {{ article.title | truncatewords: 22 }}
+              </h4>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Top blog posts",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tilte",
+      "default": "Title"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "overlay",
+      "label": "Post overlay",
+      "default": "#FAF9FB"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Blog posts",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "Blog post"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top blog posts",
+      "blocks": [
+        {
+          "type": "article"
+        },
+        {
+          "type": "article"
+        },
+        {
+          "type": "article"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

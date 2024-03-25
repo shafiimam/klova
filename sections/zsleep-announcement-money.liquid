@@ -1,0 +1,50 @@
+<section class="zsleep-announcement-bar">
+  <div class="zsleep-announcement-money-content">
+    <div class="zsleep-page-width announcement-money-text">
+      <div class="money-logo-content">
+         <p style="text-align: center; line-height: 20px;"><span style="font-size: 14px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">30 DAY MONEY BACK GUARANTEE</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .zsleep-announcement-money-content{
+    background: rgba(225,223,238,1);
+    height: 49px;
+    position: relative;
+  }
+  .announcement-money-text{
+    padding-top:2px;
+    height:100%;
+  }
+  .money-logo-content{
+    display:flex;
+    justify-content: center;
+    padding-top:5px;
+    position: relative;
+    align-items: end;
+    height:100%;
+  }
+  .left-side-icon{
+    position: absolute;
+    left:32%;
+  }
+  .right-side-icon{
+     position: absolute;
+    right:32%;
+    bottom:0%;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "zsleep announcement-money",
+    "settings": [],
+    "presets":[
+      {
+        "name":"zsleep announcement-money"
+      }
+    ]
+  }
+{% endschema %}

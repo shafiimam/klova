@@ -1,0 +1,201 @@
+<section class="zsleep-video">
+  <div class="zsleep-video-content">
+    <div class="zsleep-video-data zsleep-page-width">
+      <!-- Video content start  -->
+      <p style="text-align: center;"><span style="font-size: 16px; font-family: Montserrat; font-weight: 500; font-style: normal; color: rgb(102, 96, 170);"><strong>FORMER INSOMNIACS <u>LOVE</u> KLOVA SLEEP PATCHES &amp; HERE'S 5 REASONS WHY:</strong></span></p>
+      <p style="text-align: center; line-height: 16px;"><span style="font-size: 14px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);"><em>We keep selling out on Amazon as Klova Sleep Patches go viral, here's what to expect...</em></span></p>
+
+      {% for block in section.blocks %}
+      <div class="video-details">
+        <p class="moreEnergy-text">
+          <span>
+           <strong><u>{{ block.settings.title }}</u></strong> 
+          </span>
+        </p>
+        {% if block.settings.subtitle !=blank %}
+        <p class="looking-text">  
+        <span>
+            <em>{{ block.settings.subtitle }}</em>
+        </span>
+        </p>
+          {% endif %}
+        <div class="video-iframe-data">
+        <div class="video-iframe">
+        <iframe width="100%" height="100%" src="{{ block.settings.vimeo_url }}">
+        </iframe>
+        </div>
+        </div>  
+      </div>
+        {% endfor %}
+      <div class="amazon-text">
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-97" style="height: auto;"><p style="text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">A 28 PATCH, 4 WEEK SUPPLY IS:</span></p></div>
+     <p style="text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">$44.99 IN STORES, <strong>BUT...</strong></span></p>
+      <p style="text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">Our Friends at TikTok Said We Should Give You a Discount, SOOOO Order Now &amp; <strong>SAVE 22% TODAY!</strong></span></p>  
+
+            <div class="sleep-btn">
+                <a href="https://www.amazon.com/dp/B077XZ9CHP?maas=maas_adg_1A636B77FE36908B36ACFE0586EABD89_afap_abs&ref_=aa_maas&tag=maas">
+          <p>GET IT ON AMAZON & SAVE 22%</p>
+              </a>
+        </div>
+      </div>
+
+      <div class="icon-text">
+
+        <div class="zsleep-icon-text">
+        
+        <div class="icon-text-money">
+          <p style="text-align: center; line-height: 12px;"><span style="font-size: 10px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);"><em>30 DAY MONEY BACK GUARANTEE</em></span></p>
+          <div class="width-set">
+            <img src="{{ "money.png" | file_url }}">
+          </div>
+        </div>
+
+        <div class="icon-text-money">
+          <p style="text-align: center; line-height: 12px;"><span style="font-size: 10px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);"><em>FREE SHIPPING</em></span></p>
+          <div class="width-set">
+            <img src="{{ "free.png" | file_url }}">
+          </div>
+        </div>
+
+
+        <div class="icon-text-money">
+          <p style="text-align: center; line-height: 12px;"><span style="font-size: 10px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);"><em>DOCTOR TESTED, DOCTOR APPROVED</em></span></p>
+          <div class="width-set">
+            <img src="{{ "doctor.png" | file_url }}">
+          </div>
+        </div>     
+          
+        </div>
+
+        <div class="want-it">
+          <div class="want-it-content">
+        <p style="text-align: center;"><span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">WANT IT NOW? Get it as soon as today with Amazon Prime!</span></p>
+          </div>
+          </div>
+        
+
+      </div>
+      
+      <!-- Video content end -->
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .want-it{
+    padding-bottom:30px;
+  }
+  .zsleep-video-data.zsleep-page-width{
+    padding-bottom:30px;
+  }
+  .want-it-content{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .zsleep-icon-text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .width-set{
+    width:65px;
+    height:65px;
+  }
+  .icon-text-money{
+   width:109px; 
+  }
+  .amazon-text{
+    max-width:340px;
+    margin:0 auto;
+  }
+  .zsleep-video-content{
+    background: rgba(225, 223, 238, 1);
+  }
+  .moreEnergy-text{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(102, 96, 170);
+    text-align:center;
+  }
+  .moreEnergy-text span{
+    font-size: 18px; 
+    font-family: Montserrat; 
+    font-weight: 500; 
+    font-style: normal; 
+    color: rgb(102, 96, 170);
+  }
+  .looking-text{
+    text-align: center; 
+    line-height: 16px;
+    max-width:300px;
+    margin:0 auto;
+    padding-top:5px;
+  }
+  .looking-text span{
+    font-size: 14px; 
+    font-family: Montserrat; 
+    font-weight: 600; 
+    font-style: normal; 
+    color: rgb(102, 96, 170);
+  }
+  .video-iframe{
+    width: 400px;
+    height: 300px;
+  }
+  .video-iframe iframe{
+    border:0px;
+  }
+  .video-details{
+   padding:20px 0px;
+  }
+  .video-iframe-data{
+    display:flex;
+    justify-content:center;
+  }
+
+
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "zsleep four video",
+    "settings": [],
+     "blocks":[
+      {
+      "type": "text",
+      "name": "vimeo video",
+      "settings":[
+      {
+         "type":"text",
+          "id":"title",
+        "label":"Main title",
+        "default":"<p>enter text</p>"
+      },
+      {
+        "type":"text",
+          "id":"subtitle",
+        "label":"Sub Title",
+        "default":"<p>enter text</p>"
+      },
+      {
+        "type":"url",
+          "id":"vimeo_url",
+        "label":"Vimeo video"
+      }
+      ]
+      }
+    ],
+    
+      "presets":[
+        {
+          "name":"zsleep four video"
+        }
+      ]
+    
+  }
+{% endschema %}

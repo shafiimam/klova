@@ -1,0 +1,284 @@
+<div class="video-with-text video-with-text--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .video-with-text--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    .video-with-text--{{ section.id }} .video-card {
+      height: {{ section.settings.height_mobile }}px;
+    }
+
+    @media (min-width:420px) {
+      .video-with-text--{{ section.id }} .video-card {
+       height: 40vw;
+      }
+    }
+    
+
+    @media (min-width:768px) {
+      .video-with-text--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+      .video-with-text--{{ section.id }} .video-card {
+        height: 40vw;
+        max-height: {{ section.settings.height }}px;
+      }
+    }
+
+    @media (min-width:1024px) {
+      height: {{ section.settings.height }}px;
+    }
+  {%- endstyle -%}
+
+  <div class="o-container">
+    <div class="video-with-text__wrap br-radius-16" style="background-color: {{ section.settings.overlay }};">
+      <div class="video-with-text__head">
+        <div class="video-with-text__main">
+          {% if section.settings.title != blank %}
+            {% assign array_word_title = section.settings.title | split: ' ' %}
+            <h2 class="video-with-text__title">
+              {%- for word in array_word_title -%}
+                <span {% if forloop.last %}class="video-with-text__title--gradient"{% endif %}>{{ word | newline_to_br }}. </span>
+              {%- endfor -%}
+            </h2>
+          {% endif %}
+          {% if section.settings.info != blank %}
+            <div class="video-with-text__info">
+              {{ section.settings.info }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="cards-info">
+          {%- for block in section.blocks -%}
+            <div class="card-info br-radius-16">
+              {% if block.settings.title != blank %}
+                <span class="card-info__title">{{ block.settings.title }}</span>
+              {% endif %}
+              {% if block.settings.text != blank %}
+                {% if block.settings.popup_info != blank %}
+                  <p>{{ block.settings.text | truncatewords: 12 }}</p>
+                {% else %}
+                  <p>{{ block.settings.text | truncatewords: 22 }}</p>
+                {% endif %}
+              {% endif %}
+
+              {% if block.settings.popup_info != blank %}
+                <a href="#popup" class="js-modal-open-popup" tabindex="-1">Learn More</a>
+              
+                <div id="popup" class="modal">
+                  <div class="modal__inner br-radius-16" style="background-color: {{ section.settings.overlay }};">
+                    <div class="modal__centered">
+                      <div class="modal__centered-content">
+                        {% if section.settings.title != blank %}
+                          {% assign array_word_title = section.settings.title | split: ' ' %}
+                          <h2 class="video-with-text__title">
+                            {%- for word in array_word_title -%}
+                              <span {% if forloop.last %}class="video-with-text__title--gradient"{% endif %}>{{ word | newline_to_br }}. </span>
+                            {%- endfor -%}
+                          </h2>
+                        {% endif %}
+
+                        <div class="card-info__popup-info">{{ block.settings.popup_info }}</div>
+                      </div>
+                
+                      <button type="button" class="btn btn--circle btn--icon modal__close js-modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15 15L9 9M15 9L9 15" stroke="#1E062C" stroke-width="2" stroke-linecap="round"></path>
+                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#1E062C" stroke-width="2"></path>
+                        </svg>
+                          
+                        <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="video-with-text__body">
+        <div class="video-card br-radius-16 video-parent-section" data-section-type="video-section" data-section-id="{{ section.id }}">
+          {%- assign link_href = section.settings.video_url -%}
+
+          {% if link_href != blank %}
+            <div class="video-card__container">
+              {%- if section.settings.video_url contains 'youtube.com/watch' -%}
+                {%- assign video_id = section.settings.video_url | split: 'v=' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                <div
+                  id="YouTubeVideo-{{ section.id }}"
+                  class="video-div"
+                  data-type="youtube"
+                  data-video-id="{{ video_id }}"></div>
+              {%- endif -%}
+    
+              {%- if section.settings.video_url contains 'youtu.be/' -%}
+                {%- assign video_id = section.settings.video_url | split: '.be/' -%}
+                {%- assign video_id = video_id[1] | split: '&' | first -%}
+                <div
+                  id="YouTubeVideo-{{ section.id }}"
+                  class="video-div"
+                  data-type="youtube"
+                  data-video-id="{{ video_id }}"></div>
+              {%- endif -%}
+
+              {%- if section.settings.video_url contains 'vimeo.com' -%}
+                {%- assign video_id = section.settings.video_url | split: '.com/' -%}
+                {%- assign video_id = video_id[1] | split: '/' | first -%}
+                <button type="button" id="VimeoTrigger-{{ section_id }}" class="vimeo-mobile-trigger medium-up--hide">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
+                </button>
+                <div
+                  id="Vimeo-{{ section.id }}"
+                  class="video-div"
+                  data-type="vimeo"
+                  data-video-id="{{ video_id }}"></div>
+              {%- endif -%}
+
+              {%- if section.settings.video_url contains '.mp4' or section.settings.video_url contains '.MP4' -%}
+                <video
+                  id="Mp4Video-{{ section_id }}"
+                  class="video-div"
+                  data-type="mp4"
+                  src="{{ section.settings.video_url }}"
+                  loop muted playsinline autoplay></video>
+              {%- endif -%}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- for block in section.blocks -%}
+    
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Video with text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tilte",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "info",
+      "label": "Description",
+      "default": "<p>Text</p>"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "overlay",
+      "label": "Overlay",
+      "default": "#FAF9FB"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Background video link",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "info": "Supports YouTube, .MP4 and Vimeo. Not all features supported by Vimeo. [Learn more](https://archetypethemes.co/blogs/expanse/how-do-i-add-background-videos)"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Text protection",
+      "info": "Darkens your video to ensure your text is readable",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Height",
+      "default": 395,
+      "min": 150,
+      "max": 500,
+      "step": 5,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Mobile height",
+      "default": 345,
+      "min": 150,
+      "max": 500,
+      "step": 5,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card_info",
+      "name": "Card",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tilte",
+          "default": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Text"
+        },
+        {
+          "type": "richtext",
+          "id": "popup_info",
+          "label": "Popup text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video with text",
+      "blocks": [
+        {
+          "type": "card_info"
+        },
+        {
+          "type": "card_info"
+        },
+        {
+          "type": "card_info"
+        },
+        {
+          "type": "card_info"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

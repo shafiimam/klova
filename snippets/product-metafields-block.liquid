@@ -1,0 +1,354 @@
+{%- liquid
+    assign title_1 = product.metafields.b_card.benefits_card_1_title
+    assign description_1 = product.metafields.b_card.benefits_card_1_description
+    assign image_1 = product.metafields.b_card.benefits_card_1_image | file_url
+    assign position_1 = product.metafields.b_card.benefits_card_1_position_image
+
+    assign position_class_1 = false
+    if position_1 == 'Left'
+      assign position_class_1 = 'benefits-card__inner_left'
+    endif -%}
+{% if title_1 != blank or description_1 != blank %}
+  <div class="benefits-card">
+    <div class="benefits-card__wrapper">
+      <div class="page-width">
+        <div
+          class="benefits-card__inner br-radius-8 {{ position_class_1 }}"
+          style="background-color: #FAF9FB;">
+          <div class="benefits-card__content">
+            {% if title_1 != blank %}
+              <h2 class="benefits-card__title"> {{ title_1 }} </h2>
+            {% endif %}
+            {% if description_1 != blank %}
+              <div class="benefits-card__text"> {{ description_1 }} </div>
+            {% endif %}
+          </div>
+          {% if image_1 != blank %}
+            <div class="benefits-card__image">
+              <div class="benefits-card__image_overlay">
+                {% if image_1 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_1 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if image_1 != blank %}
+            <div
+              class="benefits-card__image mobile">
+              <div class="benefits-card__image_overlay">
+                {% if image_1 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_1 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{%- liquid
+    assign title_2 = product.metafields.b_card.benefits_card_2_title
+    assign description_2 = product.metafields.b_card.benefits_card_2_description
+    assign image_2 = product.metafields.b_card.benefits_card_2_image | file_url
+    assign position_2 = product.metafields.b_card.benefits_card_2_position_image
+
+    assign position_class_2 = false
+    if position_2 == 'Left'
+      assign position_class_2 = 'benefits-card__inner_left'
+    endif -%}
+{% if title_2 != blank or description_2 != blank %}
+  <div class="benefits-card">
+    <div class="benefits-card__wrapper">
+      <div class="page-width">
+        <div
+          class="benefits-card__inner br-radius-8 {{ position_class_2 }}"
+          style="background-color: #FAF9FB;">
+          <div class="benefits-card__content">
+            {% if title_2 != blank %}
+              <h2 class="benefits-card__title"> {{ title_2 }} </h2>
+            {% endif %}
+            {% if description_2 != blank %}
+              <div class="benefits-card__text"> {{ description_2 }} </div>
+            {% endif %}
+          </div>
+          {% if image_2 != blank %}
+            <div class="benefits-card__image">
+              <div class="benefits-card__image_overlay">
+                {% if image_2 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_2 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if image_2 != blank %}
+            <div
+              class="benefits-card__image mobile">
+              <div class="benefits-card__image_overlay">
+                {% if image_2 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_2 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{%- liquid
+    assign title_3 = product.metafields.b_card.benefits_card_3_title
+    assign description_3 = product.metafields.b_card.benefits_card_3_description
+    assign image_3 = product.metafields.b_card.benefits_card_3_image | file_url
+    assign position_3 = product.metafields.b_card.benefits_card_3_position_image
+
+    assign position_class_3 = false
+    if position_3 == 'Left'
+      assign position_class_3 = 'benefits-card__inner_left'
+    endif -%}
+{% if title_3 != blank or description_3 != blank %}
+  <div class="benefits-card">
+    <div class="benefits-card__wrapper">
+      <div class="page-width">
+        <div
+          class="benefits-card__inner br-radius-8 {{ position_class_3 }}"
+          style="background-color: #FAF9FB;">
+          <div class="benefits-card__content">
+            {% if title_3 != blank %}
+              <h2 class="benefits-card__title"> {{ title_3 }} </h2>
+            {% endif %}
+            {% if description_3 != blank %}
+              <div class="benefits-card__text"> {{ description_3 }} </div>
+            {% endif %}
+          </div>
+          {% if image_3 != blank %}
+            <div class="benefits-card__image">
+              <div class="benefits-card__image_overlay">
+                {% if image_3 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_3 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if image_3 != blank %}
+            <div
+              class="benefits-card__image mobile">
+              <div class="benefits-card__image_overlay">
+                {% if image_5 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_3 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{%- liquid
+    assign title_4 = product.metafields.b_card.benefits_card_4_title
+    assign description_4 = product.metafields.b_card.benefits_card_4_description
+    assign image_4 = product.metafields.b_card.benefits_card_4_image | file_url
+    assign position_4 = product.metafields.b_card.benefits_card_4_position_image
+
+    assign position_class_4 = false
+    if position_4 == 'Left'
+      assign position_class_4 = 'benefits-card__inner_left'
+    endif -%}
+{% if title_4 != blank or description_4 != blank %}
+  <div class="benefits-card">
+    <div class="benefits-card__wrapper">
+      <div class="page-width">
+        <div
+          class="benefits-card__inner br-radius-8 {{ position_class_4 }}"
+          style="background-color: #FAF9FB;">
+          <div class="benefits-card__content">
+            {% if title_4 != blank %}
+              <h2 class="benefits-card__title"> {{ title_4 }} </h2>
+            {% endif %}
+            {% if description_4 != blank %}
+              <div class="benefits-card__text"> {{ description_4 }} </div>
+            {% endif %}
+          </div>
+          {% if image_4 != blank %}
+            <div class="benefits-card__image">
+              <div class="benefits-card__image_overlay">
+                {% if image_4 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_4 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if image_4 != blank %}
+            <div
+              class="benefits-card__image mobile">
+              <div class="benefits-card__image_overlay">
+                {% if image_4 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_4 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{%- liquid
+    assign title_5 = product.metafields.b_card.benefits_card_5_title
+    assign description_5 = product.metafields.b_card.benefits_card_5_description
+    assign image_5 = product.metafields.b_card.benefits_card_5_image | file_url
+    assign position_5 = product.metafields.b_card.benefits_card_5_position_image
+
+    assign position_class_5 = false
+    if position_5 == 'Left'
+      assign position_class_5 = 'benefits-card__inner_left'
+    endif -%}
+{% if title_5 != blank or description_5 != blank %}
+  <div class="benefits-card">
+    <div class="benefits-card__wrapper">
+      <div class="page-width">
+        <div
+          class="benefits-card__inner br-radius-8 {{ position_class_5 }}"
+          style="background-color: #FAF9FB;">
+          <div class="benefits-card__content">
+            {% if title_5 != blank %}
+              <h2 class="benefits-card__title"> {{ title_5 }} </h2>
+            {% endif %}
+            {% if description_5 != blank %}
+              <div class="benefits-card__text"> {{ description_5 }} </div>
+            {% endif %}
+          </div>
+          {% if image_5 != blank %}
+            <div class="benefits-card__image">
+              <div class="benefits-card__image_overlay">
+                {% if image_5 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_5 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if image_5 != blank %}
+            <div
+              class="benefits-card__image mobile">
+              <div class="benefits-card__image_overlay">
+                {% if image_5 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_5 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{%- liquid
+    assign title_6 = product.metafields.b_card.benefits_card_6_title
+    assign description_6 = product.metafields.b_card.benefits_card_6_description
+    assign image_6 = product.metafields.b_card.benefits_card_6_image | file_url
+    assign position_6 = product.metafields.b_card.benefits_card_6_position_image
+
+    assign position_class_6 = false
+    if position_6 == 'Left'
+      assign position_class_6 = 'benefits-card__inner_left'
+    endif -%}
+{% if title_6 != blank or description_6 != blank %}
+  <div class="benefits-card">
+    <div class="benefits-card__wrapper">
+      <div class="page-width">
+        <div
+          class="benefits-card__inner br-radius-8 {{ position_class_6 }}"
+          style="background-color: #FAF9FB;">
+          <div class="benefits-card__content">
+            {% if title_6 != blank %}
+              <h2 class="benefits-card__title"> {{ title_6 }} </h2>
+            {% endif %}
+            {% if description_6 != blank %}
+              <div class="benefits-card__text"> {{ description_6 }} </div>
+            {% endif %}
+          </div>
+          {% if image_6 != blank %}
+            <div class="benefits-card__image">
+              <div class="benefits-card__image_overlay">
+                {% if image_6 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_6 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if image_6 != blank %}
+            <div
+              class="benefits-card__image mobile">
+              <div class="benefits-card__image_overlay">
+                {% if image_6 != blank %}
+                  <img class="lazyload"
+                      data-src="{{ image_6 }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-sizes="auto">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

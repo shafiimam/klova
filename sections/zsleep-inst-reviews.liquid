@@ -1,0 +1,138 @@
+<section class="z-patch-reviews-photo">
+  <div class="reviews-content">
+    <div class="custom-page-width">
+      <!-- Review Part Start -->
+      <div class="reviews-main-content">
+        <div class="reviews-main-title">
+          <h2>{{ section.settings.review_title }}</h2>
+        </div>
+      </div>
+      <div class="reviews-img-data inst-reviews">
+        {% for block in section.blocks %}
+          <div class="reviews-img img-width-{{ forloop.index }}">
+            {% if block.settings.review_img != blank %}
+              <img src="{{ block.settings.review_img | img_url:'master' }}">
+            {% endif %}
+          </div>
+        {% endfor %}
+
+        <div class="sleep-btn zsleep-pd-top amazon-reviews-img">
+          <a href="https://www.amazon.com/dp/B077XZ9CHP?maas=maas_adg_1A636B77FE36908B36ACFE0586EABD89_afap_abs&ref_=aa_maas&tag=maas">
+            <p>GET IT NOW</p>
+          </a>
+        </div>
+      </div>
+      <!-- Review Part End -->
+    </div>
+  </div>
+</section>
+<style>
+    .reviews-img-data .sleep-btn.amazon-reviews-img{
+      margin-top:10px;
+    }
+    .reviews-img.img-width-3{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    .reviews-img.img-width-4{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom:2px;
+    }
+    .reviews-img.img-width-1{
+      text-align:end;
+    }
+    .inst-reviews .reviews-img{
+      margin-top:0px;
+    }
+    .how-it-works{
+      padding-bottom:40px;
+      padding-top:40px;
+    }
+    .how-it-text{
+      font-size:32px;
+      text-align:center;
+      margin: 0px;
+      font-family: Poppins;
+      font-weight: 700;
+      font-style: normal;
+    }
+    .how-it-text-area{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: end;
+      position: relative;
+      padding-right: 10px;
+      right: 80px;
+      width:50%
+    }
+    .sleep-btn-content{
+      display:flex;
+      justify-content:space-evenly;
+    }
+
+    .reviews-main-title{
+      max-width:650px;
+      margin:0 auto;
+    }
+  .reviews-main-title h2{
+     font-size:32px;
+      font-family: Poppins;
+      font-weight: 700;
+      font-style: normal;
+     padding-top:5px;
+    }
+    .reviews-main-content{
+      text-align:center;
+    }
+  /* .reviews-content{
+    background-image:url({{ section.settings.bg_image | img_url:'master' }});
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }  */
+   .reviews-img-data.inst-reviews{
+      max-width:100%;
+      width:100%;
+      display:flex;
+      /* align-items:center; */
+      /* padding-top:15px; */
+      flex-wrap: wrap;
+      /* padding-bottom:30px; */
+   }
+   .reviews-img{
+      width:50%;
+      max-width:50%;
+      margin-bottom: 15px;
+      margin-top: 10px;
+   }
+</style>
+
+{% schema %}
+{
+  "name": "zsleep inst-reviews",
+  "settings": [
+  ],
+  "blocks":[
+    {
+    "type": "text",
+    "name": "review-photo",
+    "settings":[
+    {
+      "type":"image_picker",
+        "id":"review_img",
+      "label":"Review Image"
+    }
+    ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"zsleep inst-reviews"
+    }
+  ]
+}
+{% endschema %}

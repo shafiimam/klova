@@ -1,0 +1,110 @@
+<div class="crawl-line crawl-line--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .crawl-line--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    .crawl-line--{{ section.id }} .crawl-line__item:before {
+      background-color: {{ section.settings.text_color }};
+    }
+
+    @media (min-width:768px) {
+      .crawl-line--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="o-container">
+    <div class="crawl-line__wrap br-radius-8" style="background-color: {{ section.settings.overlay }};">
+      <ul class="crawl-line__list">
+        {%- for block in section.blocks -%}
+          <li class="crawl-line__item" style="color: {{ section.settings.text_color }};">{{ block.settings.label }}</li>
+        {% endfor %}
+        {%- for block in section.blocks -%}
+          <li class="crawl-line__item" style="color: {{ section.settings.text_color }};">{{ block.settings.label }}</li>
+        {% endfor %}
+        {%- for block in section.blocks -%}
+          <li class="crawl-line__item" style="color: {{ section.settings.text_color }};">{{ block.settings.label }}</li>
+        {% endfor %}
+        {%- for block in section.blocks -%}
+          <li class="crawl-line__item" style="color: {{ section.settings.text_color }};">{{ block.settings.label }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Crawl line",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "overlay",
+      "label": "Overlay",
+      "default": "#FAF9FB"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#554360"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text line",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Crawl line",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

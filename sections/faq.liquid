@@ -1,0 +1,83 @@
+<div class="faq-page">
+  <div class="faq-page__wrapper">
+    <div class="page-width">
+      <div class="faq-page__inner br-radius-24">
+        {%- if section.settings.title != blank -%}
+        <h2 class="faq-page__title">
+          {{ section.settings.title | escape }}
+        </h2>
+        {%- endif -%}
+        <div class="accordion">
+          <ul class="accordion__items">
+            {% for block in section.blocks %}
+            {% if block.settings.acc-button != blank %}
+            <li class="accordion__item">
+              <button class="accordion__button"> {{ block.settings.acc-button }} </button>
+              <div class="accordion__text"><div class="accordion__inside">{{ block.settings.acc-text }}</div></div>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        {% if section.settings.note != blank %}
+        <div class="faq-page__note">
+          {{ section.settings.note }}
+          {% if section.settings.note-link != blank and section.settings.note-link-url != blank %}
+          <a href="{{ section.settings.note-link-url }}"> {{ section.settings.note-link }} </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "FAQ",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "header",
+"content": "Note"
+},
+{
+"type": "text",
+"id": "note",
+"label": "Text"
+},
+{
+"type": "text",
+"id": "note-link",
+"label": "Link text"
+},
+{
+"type": "url",
+"id": "note-link-url",
+"label": "Link URL"
+}
+],
+"blocks": [
+{
+"type": "text",
+"name": "Accordion item",
+"settings": [
+{
+"type": "text",
+"id": "acc-button",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "acc-text",
+"label": "Text"
+}
+]
+}
+]
+}
+{% endschema %}

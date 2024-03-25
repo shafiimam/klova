@@ -1,0 +1,83 @@
+<div class="o-container">
+  <div class="br-radius-24 empower">
+    <div class="empower__patch flex patch">
+      <div class="patch__image">
+        <img
+          src="{{ section.settings.empower_image | img_url: 'master' }}"
+          alt="{{ section.settings.empower_image.alt | default: "patches" }}"
+        >
+      </div>
+      <div class="patch__text text">
+        <h2 class="text__title">{{ section.settings.empower_title }}</h2>
+        <div class="text__descr">
+          {{ section.settings.empower_descr }}
+        </div>
+        <div class="patch__button">
+          <a class="c-button -primary -large" href="{{ section.settings.empower_button_link }}">
+            {{ section.settings.empower_button }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <ul class="empower__achievements achievements flex">
+      {%- for block in section.blocks -%}
+        <li class="achievements__item">{{ block.settings.achievements_item }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Empower",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "id": "empower_image",
+        "type": "image_picker",
+        "label": "Empower image"
+      },
+      {
+        "id": "empower_title",
+        "type": "text",
+        "label": "Empower title",
+        "default": "Empower Your Best Self, with Klova ;)"
+      },
+      {
+        "id": "empower_descr",
+        "type": "richtext",
+        "label": "Empower description",
+        "default": "<p>We’re Empowering Happy & Healthy Lifestyles with Natural Products, Technology and Education. Sleep Your Best & Wakeup Refreshed, with Klova.</p>"
+      },
+      {
+        "id": "empower_button",
+        "type": "text",
+        "label": "Empower button",
+        "default": "Patch me!"
+      },
+      {
+        "id": "empower_button_link",
+        "type": "url",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Achievements",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "achievements_item",
+            "label": "Achievement"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Empower"
+      }
+    ]
+  }
+{% endschema %}

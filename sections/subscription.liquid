@@ -1,0 +1,710 @@
+<div class="subscription subscription--bg-green subscription--{{ section.id }}" data-section-id="{{ section.id }}">
+  <div class="o-container">
+
+    {%- render 'toggle' -%}
+
+    {%- liquid
+                assign collection_first =  section.blocks.size | append: '.0' | divided_by: 2 | ceil 
+                assign collection_second = section.blocks.size | minus: collection_first   
+              -%}
+
+    <div class="subscription__product is-shown">
+
+
+      <div class="subscription__left">
+        {% if section.settings.title_first != blank %}
+          <h2 class="subscription__title">
+            {{ section.settings.title_first }}
+          </h2>
+        {% endif %}
+        {% if section.settings.description_first != blank %}
+          <div class="subscription__description">
+            {{ section.settings.description_first }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="subscription__right">
+        <ul class="subscription__list">
+          {%- for block in section.blocks limit: collection_first -%}
+            {%- liquid
+                          assign product = block.settings.product  
+                        -%}
+            <li class="subscription__variant">
+              {%- if forloop.index != 1 -%}
+                <div class="subscription__badge">
+                  {%- if block.settings.badge != blank -%}
+                    {{ block.settings.badge }}
+                  {%- endif -%}
+                  {% comment %}
+                    {%- if forloop.index == 2 -%}
+                    <span>Most Popular</span>
+                    {%- else -%}
+                    <span>Best Value</span>
+                    {%- endif -%}
+                  {% endcomment %}
+                </div>
+              {%- endif -%}
+              <h3>
+                {{ block.settings.title }}
+              </h3>
+              {%- liquid
+                            assign on_sale = false
+                            if product.compare_at_price > product.price
+                              assign on_sale = true
+                            endif
+                          -%}
+              <div class="subscription__price">
+                {% if forloop.index == 1 %}
+                  <span class="subscription__price--current {% if on_sale -%}subscription__price--sale{%- endif -%}">
+                    {%- render 'price' with product.price -%}
+                  </span>
+                  {%- if on_sale -%}
+                    <span class="subscription__price--old">
+                      {%- render 'price' with product.compare_at_price -%}
+                    </span>
+                  {%- endif -%}
+                {% endif %}
+                {% if forloop.index == 2 %}
+                  <span class="subscription__price--current {% if on_sale -%}subscription__price--sale{%- endif -%}">
+
+                    {% liquid
+                     assign current_variant = product.selected_or_first_available_variant
+                     assign filtered_selling_plan_groups = product.selling_plan_groups | where: 'app_id', 'SKIO'
+                     for group in filtered_selling_plan_groups
+                       if group.options[0].name contains current_variant.id
+                         assign selected_selling_plan = group.selling_plans[0]
+                       endif
+                     endfor 
+ 
+                     assign price_adjustment = selected_selling_plan.price_adjustments.first
+ 
+                     assign group = product.selling_plan_groups | where: 'id', selected_selling_plan.group_id | first
+ 
+                     if group.name == 'Subscription'
+                       case price_adjustment.value_type	
+                         when 'percentage'	
+                           assign discount_percent = price_adjustment.value | round
+                           assign discount_absolute = current_variant.price | times: price_adjustment.value | divided_by: 100.0	
+                         when 'fixed_amount'	
+                           assign discount_percent = price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0 | round
+                           assign discount_absolute = price_adjustment.value	
+                         when 'price'	
+                           assign discount_percent = current_variant.price | minus: price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0	| round
+                           assign discount_absolute = current_variant.price | minus: price_adjustment.value	
+                       endcase	
+                       if discount_percent == 0	
+                         assign discount_text = ''	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       elsif discount_format == 'percent' or discount_format == blank	
+                         assign discount_text = discount_percent | append: '%'	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       else	
+                         assign discount_text = discount_absolute | money	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       endif	
+                     endif	
+                   %}
+                    {{ selling_plan_price | money }}
+
+                    {% comment %}{%- render 'price' with product.variants[0].price -%}{% endcomment %}
+                  </span>
+                  {%- if on_sale -%}
+                    <span class="subscription__price--old">
+                      {%- render 'price' with product.price -%}
+                    </span>
+                  {%- endif -%}
+                {% endif %}
+                {% if forloop.index == 3 %}
+                  <span class="subscription__price--current {% if on_sale -%}subscription__price--sale{%- endif -%}">
+                    
+                    {%- render 'price' with product.variants[2].price -%}
+
+                  </span>
+                  {%- if on_sale -%}
+                    <span class="subscription__price--old">
+                      {%- render 'price' with product.variants[2].compare_at_price -%}
+                    </span>
+                  {%- endif -%}
+                {% endif %}
+              </div>
+              <div class="subscription__price-per-serving">
+                {% comment %}
+                  {{ product.price | divided_by: 28 | times: 3 | money }}
+                {% endcomment %}
+                {% if  block.settings.price_per_serving != blank %}
+                  <span>{{ block.settings.price_per_serving }}
+                  </span>
+                {% endif %}
+              </div>
+              {% if forloop.index == 1 %}
+                <div class="subscription__img">
+                  {% if product.featured_image != blank %}
+                    {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{ product.featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ product.featured_image.alt }}">
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if forloop.index == 2 %}
+                <div class="subscription__img">
+                  {% if product.featured_image != blank %}
+                    {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{ product.featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ product.featured_image.alt }}">
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if forloop.index == 3 %}
+                <div class="subscription__img">
+                  {% if product.variants[2].featured_image != blank %}
+                    {%- assign img_url = product.variants[2].featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{ product.featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ product.featured_image.alt }}">
+                  {% endif %}
+                </div>
+              {% endif %}
+              <p class="subscription__subtitle">
+                {{ product.title }}
+              </p>
+              <div class="subscription__descr-list">
+                {% if  block.settings.item_1 != blank %}
+                  <p>{{ block.settings.item_1 }}
+                  </p>
+                {% endif %}
+                {% if  block.settings.item_2 != blank %}
+                  <p>{{ block.settings.item_2 }}
+                  </p>
+                {% endif %}
+                {% if  block.settings.item_3 != blank %}
+                  <p>{{ block.settings.item_3 }}
+                  </p>
+                {% endif %}
+              </div>
+
+
+              {% if forloop.index == 1 %}
+
+                {% assign product = block.settings.product %}
+
+                <form class="product-form w-100 d-flex justify-content-center" action="/cart/add" data-productid="{{product.id}}" method="post">
+                  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[0].title }}"/>
+                  <input type="submit" value="{{ block.settings.btn }}" name="add" class="product-form__submit appeal__button c-button -secondary"/>
+                </form>
+              {% elsif forloop.index == 2 %}
+                {% assign product = block.settings.product %}
+                {%- liquid
+                  assign current_variant = product.selected_or_first_available_variant
+                  assign selling_plan_groups = product.selling_plan_groups | where: "app_id", "SKIO"
+                  assign selling_plan_group = null
+                  for group in selling_plan_groups
+                    if group.options[0].name contains current_variant.id
+                      assign selling_plan_group = group
+                    endif
+                  endfor
+                  assign selling_plan = null
+                  if selling_plan_group != null
+                    assign selling_plan = selling_plan_group.selling_plans[0]
+                  endif
+
+                   assign price_adjustment = selling_plan.price_adjustments.first
+ 
+                   assign group = product.selling_plan_groups | where: 'id', selling_plan.group_id | first
+
+                   if group.name == 'Subscription'
+                     case price_adjustment.value_type	
+                       when 'percentage'	
+                         assign discount_percent = price_adjustment.value | round
+                         assign discount_absolute = current_variant.price | times: price_adjustment.value | divided_by: 100.0	
+                       when 'fixed_amount'	
+                         assign discount_percent = price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0 | round
+                         assign discount_absolute = price_adjustment.value	
+                       when 'price'	
+                         assign discount_percent = current_variant.price | minus: price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0	| round
+                         assign discount_absolute = current_variant.price | minus: price_adjustment.value	
+                     endcase	
+                     if discount_percent == 0	
+                       assign discount_text = ''	
+                       assign selling_plan_price = current_variant.price | minus: discount_absolute
+                     elsif discount_format == 'percent' or discount_format == blank	
+                       assign discount_text = discount_percent | append: '%'	
+                       assign selling_plan_price = current_variant.price | minus: discount_absolute
+                     else	
+                       assign discount_text = discount_absolute | money	
+                       assign selling_plan_price = current_variant.price | minus: discount_absolute
+                     endif	
+                   endif
+                   
+                -%}
+                <form class="product-form w-100 d-flex justify-content-center" action="/cart/add" data-productid="{{product.id}}" method="post">
+                  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[0].title }}"/>
+                  <input type="hidden" name="selling_plan" value="{{ selling_plan.id | default: '' }}">
+                  <input type="hidden" name="properties[Discount]" value="{{  discount_text }}">
+                  <input type="submit" value="{{ block.settings.btn }}" name="add" class="product-form__submit appeal__button c-button -secondary"/>
+                </form>
+              {% elsif forloop.index == 3 %}
+
+                {% assign product = block.settings.product %}
+
+                {%- liquid
+                  assign current_variant = product.variants[2]
+                  assign selling_plan_groups = product.selling_plan_groups | where: "app_id", "SKIO"
+                  assign selling_plan_group = null
+                  for group in selling_plan_groups
+                    if group.options[0].name contains current_variant.id
+                      assign selling_plan_group = group
+                    endif
+                  endfor
+                  assign selling_plan = null
+                  if selling_plan_group != null
+                    assign selling_plan = selling_plan_group.selling_plans[0]
+                  endif
+
+                   assign price_adjustment = selling_plan.price_adjustments.first
+  
+                   assign group = product.selling_plan_groups | where: 'id', selling_plan.group_id | first
+  
+                   if group.name == 'Subscription'
+                     case price_adjustment.value_type	
+                       when 'percentage'	
+                         assign discount_percent = price_adjustment.value | round
+                         assign discount_absolute = current_variant.price | times: price_adjustment.value | divided_by: 100.0	
+                       when 'fixed_amount'	
+                         assign discount_percent = price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0 | round
+                         assign discount_absolute = price_adjustment.value	
+                       when 'price'	
+                         assign discount_percent = current_variant.price | minus: price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0	| round
+                         assign discount_absolute = current_variant.price | minus: price_adjustment.value	
+                     endcase	
+                     if discount_percent == 0	
+                       assign discount_text = ''	
+                       assign selling_plan_price = current_variant.price | minus: discount_absolute
+                     elsif discount_format == 'percent' or discount_format == blank	
+                       assign discount_text = discount_percent | append: '%'	
+                       assign selling_plan_price = current_variant.price | minus: discount_absolute
+                     else	
+                       assign discount_text = discount_absolute | money	
+                       assign selling_plan_price = current_variant.price | minus: discount_absolute
+                     endif	
+                   endif
+                   
+                -%}
+
+                <form class="product-form w-100 d-flex justify-content-center" action="/cart/add" data-productid="{{product.id}}" method="post">
+                  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[2].id }}" data-variant-title="{{ product.variants[2].title }}"/>
+                  <input type="hidden" name="selling_plan" value="{{ selling_plan.id | default: '' }}">
+                  <input type="hidden" name="properties[Discount]" value="{{  discount_text }}">
+                  <input type="submit" value="{{ block.settings.btn }}" name="add" class="product-form__submit appeal__button c-button -secondary"/>
+                </form>
+
+              {% endif %}
+
+              {%- if block.settings.bottom_text != blank -%}
+                <p class="subscription__bottom-text">
+                  {{ block.settings.bottom_text }}
+                </p>
+              {%- endif -%}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="subscription__product is-hide">
+
+      <div class="subscription__left">
+        {% if section.settings.title_first != blank %}
+          <h2 class="subscription__title">
+            {{ section.settings.title_first }}
+          </h2>
+        {% endif %}
+        {% if section.settings.description_second != blank %}
+          <div class="subscription__description">
+            {{ section.settings.description_second }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="subscription__right">
+        <ul class="subscription__list">
+          {%- for block in section.blocks offset: collection_second -%}
+
+            {%- liquid
+                          assign product = block.settings.product  
+                        -%}
+            <li class="subscription__variant">
+              {%- if forloop.index != 1 -%}
+                <div class="subscription__badge">
+                  {% comment %}
+                    {%- if forloop.index == 2 -%}
+                    <span>Most Popular</span>
+                    {%- else -%}
+                    <span>Best Value</span>
+                    {%- endif -%}
+                  {% endcomment %}
+                  {%- if block.settings.badge != blank -%}
+                    {{ block.settings.badge }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+              <h3>
+                {{ block.settings.title}}
+              </h3>
+              {%- liquid
+                            assign on_sale = false
+                            if product.compare_at_price > product.price
+                              assign on_sale = true
+                            endif
+                          -%}
+              <div class="subscription__price">
+                {% if forloop.index == 1 %}
+                  <span class="subscription__price--current {% if on_sale -%}subscription__price--sale{%- endif -%}">
+                    {%- render 'price' with product.price -%}
+                  </span>
+                  {%- if on_sale -%}
+                    <span class="subscription__price--old">
+                      {%- render 'price' with product.compare_at_price -%}
+                    </span>
+                  {%- endif -%}
+                {% endif %}
+                {% if forloop.index == 2 %}
+                  <span class="subscription__price--current {% if on_sale -%}subscription__price--sale{%- endif -%}">
+
+                    {% liquid
+                     assign current_variant = product.selected_or_first_available_variant
+                     assign filtered_selling_plan_groups = product.selling_plan_groups | where: 'app_id', 'SKIO'
+                     for group in filtered_selling_plan_groups
+                       if group.options[0].name contains current_variant.id
+                         assign selected_selling_plan = group.selling_plans[0]
+                       endif
+                     endfor 
+ 
+                     assign price_adjustment = selected_selling_plan.price_adjustments.first
+ 
+                     assign group = product.selling_plan_groups | where: 'id', selected_selling_plan.group_id | first
+ 
+                     if group.name == 'Subscription'
+                       case price_adjustment.value_type	
+                         when 'percentage'	
+                           assign discount_percent = price_adjustment.value | round
+                           assign discount_absolute = current_variant.price | times: price_adjustment.value | divided_by: 100.0	
+                         when 'fixed_amount'	
+                           assign discount_percent = price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0 | round
+                           assign discount_absolute = price_adjustment.value	
+                         when 'price'	
+                           assign discount_percent = current_variant.price | minus: price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0	| round
+                           assign discount_absolute = current_variant.price | minus: price_adjustment.value	
+                       endcase	
+                       if discount_percent == 0	
+                         assign discount_text = ''	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       elsif discount_format == 'percent' or discount_format == blank	
+                         assign discount_text = discount_percent | append: '%'	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       else	
+                         assign discount_text = discount_absolute | money	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       endif	
+                     endif	
+                   %}
+                    {{ selling_plan_price | money }}
+
+                    {% comment %}{%- render 'price' with product.variants[1].price -%}{% endcomment %}
+                  </span>
+                  {%- if on_sale -%}
+                    <span class="subscription__price--old">
+                      {%- render 'price' with product.price -%}
+                    </span>
+                  {%- endif -%}
+                {% endif %}
+                {% if forloop.index == 3 %}
+                  <span class="subscription__price--current {% if on_sale -%}subscription__price--sale{%- endif -%}">
+                    {%- render 'price' with product.variants[2].price -%}
+                  </span>
+                  {%- if on_sale -%}
+                    <span class="subscription__price--old">
+                      {%- render 'price' with product.variants[2].compare_at_price -%}
+                    </span>
+                  {%- endif -%}
+                {% endif %}
+              </div>
+              <div class="subscription__price-per-serving">
+                {% comment %}
+                  {{ product.price | divided_by: 28 | times: 3 | money }}
+                {% endcomment %}
+                {% if  block.settings.price_per_serving != blank %}
+                  <span>{{ block.settings.price_per_serving }}
+                  </span>
+                {% endif %}
+              </div>
+              {% if forloop.index == 1 %}
+                <div class="subscription__img">
+                  {% if product.featured_image != blank %}
+                    {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{ product.featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ product.featured_image.alt }}">
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if forloop.index == 2 %}
+                <div class="subscription__img">
+                  {% if product.featured_image != blank %}
+                    {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{ product.featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ product.featured_image.alt }}">
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if forloop.index == 3 %}
+                <div class="subscription__img">
+                  {% if product.variants[2].featured_image != blank %}
+                    {%- assign img_url = product.variants[2].featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 540, 720, 900, 1080, 1600]" data-aspectratio="{{ product.featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ product.featured_image.alt }}">
+                  {% endif %}
+                </div>
+              {% endif %}
+              <p class="subscription__subtitle">
+                {% comment %}
+                  {% if  block.settings.new_product != blank %} 
+                  <span class="subscription__new">{{ block.settings.new_product }}</span>
+                  {% endif %}
+                {% endcomment %}
+                {{ product.title }}
+              </p>
+              <div class="subscription__descr-list">
+                {% if  block.settings.item_1 != blank %}
+                  <p>{{ block.settings.item_1 }}
+                  </p>
+                {% endif %}
+                {% if  block.settings.item_2 != blank %}
+                  <p>{{ block.settings.item_2 }}
+                  </p>
+                {% endif %}
+                {% if  block.settings.item_3 != blank %}
+                  <p>{{ block.settings.item_3 }}
+                  </p>
+                {% endif %}
+              </div>
+              {% if forloop.index == 1 %}
+                {% assign product = block.settings.product %}
+                <form class="product-form w-100 d-flex justify-content-center" action="/cart/add" data-productid="{{product.id}}" method="post">
+                  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[0].title }}"/>
+                  <input type="submit" value="{{ block.settings.btn }}" name="add" class="product-form__submit appeal__button c-button -secondary"/>
+                </form>
+              {% elsif forloop.index == 2 %}
+                {% assign product = block.settings.product %}
+                <form class="product-form w-100 d-flex justify-content-center" action="/cart/add" data-productid="{{product.id}}" method="post">
+                  {%- liquid
+                      assign current_variant = product.selected_or_first_available_variant
+                      assign selling_plan_groups = product.selling_plan_groups | where: "app_id", "SKIO"
+                      assign selling_plan_group = null
+                      for group in selling_plan_groups
+                        if group.options[0].name contains current_variant.id
+                          assign selling_plan_group = group
+                        endif
+                      endfor
+                      assign selling_plan = null
+                      if selling_plan_group != null
+                        assign selling_plan = selling_plan_group.selling_plans[0]
+                      endif
+
+                     assign price_adjustment = selling_plan.price_adjustments.first
+  
+                     assign group = product.selling_plan_groups | where: 'id', selling_plan.group_id | first
+    
+                     if group.name == 'Subscription'
+                       case price_adjustment.value_type	
+                         when 'percentage'	
+                           assign discount_percent = price_adjustment.value | round
+                           assign discount_absolute = current_variant.price | times: price_adjustment.value | divided_by: 100.0	
+                         when 'fixed_amount'	
+                           assign discount_percent = price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0 | round
+                           assign discount_absolute = price_adjustment.value	
+                         when 'price'	
+                           assign discount_percent = current_variant.price | minus: price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0	| round
+                           assign discount_absolute = current_variant.price | minus: price_adjustment.value	
+                       endcase	
+                       if discount_percent == 0	
+                         assign discount_text = ''	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       elsif discount_format == 'percent' or discount_format == blank	
+                         assign discount_text = discount_percent | append: '%'	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       else	
+                         assign discount_text = discount_absolute | money	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       endif	
+                     endif
+                     
+                    -%}
+                  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[0].id }}" data-variant-title="{{ product.variants[1].title }}"/>
+                  <input type="hidden" name="selling_plan" value="{{ selling_plan.id | default: '' }}">
+                  <input type="hidden" name="properties[Discount]" value="{{  discount_text }}">
+                  <input type="submit" value="{{ block.settings.btn }}" name="add" class="product-form__submit appeal__button c-button -secondary"/>
+                </form>
+              {% elsif forloop.index == 3 %}
+                {% assign product = block.settings.product %}
+                <form class="product-form w-100 d-flex justify-content-center" action="/cart/add" data-productid="{{product.id}}" method="post">
+                  {%- liquid
+                    assign current_variant = product.variants[2]
+                    assign selling_plan_groups = product.selling_plan_groups | where: "app_id", "SKIO"
+                    assign selling_plan_group = null
+                    for group in selling_plan_groups
+                      if group.options[0].name contains current_variant.id
+                        assign selling_plan_group = group
+                      endif
+                    endfor
+                    assign selling_plan = null
+                    if selling_plan_group != null
+                      assign selling_plan = selling_plan_group.selling_plans[0]
+                    endif
+
+                    assign price_adjustment = selling_plan.price_adjustments.first
+  
+                     assign group = product.selling_plan_groups | where: 'id', selling_plan.group_id | first
+    
+                     if group.name == 'Subscription'
+                       case price_adjustment.value_type	
+                         when 'percentage'	
+                           assign discount_percent = price_adjustment.value | round
+                           assign discount_absolute = current_variant.price | times: price_adjustment.value | divided_by: 100.0	
+                         when 'fixed_amount'	
+                           assign discount_percent = price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0 | round
+                           assign discount_absolute = price_adjustment.value	
+                         when 'price'	
+                           assign discount_percent = current_variant.price | minus: price_adjustment.value | times: 1.0 | divided_by: current_variant.price | times: 100.0	| round
+                           assign discount_absolute = current_variant.price | minus: price_adjustment.value	
+                       endcase	
+                       if discount_percent == 0	
+                         assign discount_text = ''	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       elsif discount_format == 'percent' or discount_format == blank	
+                         assign discount_text = discount_percent | append: '%'	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       else	
+                         assign discount_text = discount_absolute | money	
+                         assign selling_plan_price = current_variant.price | minus: discount_absolute
+                       endif	
+                     endif
+                     
+                  -%}
+                  <input type="hidden" name="id" data-productid="{{product.id}}" class="product-select" value="{{ product.variants[2].id }}" data-variant-title="{{ product.variants[2].title }}"/>
+                  <input type="hidden" name="selling_plan" value="{{ selling_plan.id | default: '' }}">
+                  <input type="hidden" name="properties[Discount]" value="{{  discount_text }}">
+                  <input type="submit" value="{{ block.settings.btn }}" name="add" class="product-form__submit appeal__button c-button -secondary"/>
+                </form>
+              {% endif %}
+
+              {%- if block.settings.bottom_text != blank -%}
+                <p class="subscription__bottom-text">
+                  {{  block.settings.bottom_text }}
+                </p>
+              {%- endif -%}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Subscription",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title_first",
+        "label": "First Block Title"
+      },
+      {
+        "type": "text",
+        "id": "title_second",
+        "label": "Second Block Title"
+      },
+      {
+        "type": "richtext",
+        "id": "description_first",
+        "label": "First Block Description"
+      },
+      {
+        "type": "richtext",
+        "id": "description_second",
+        "label": "Second Block Description"
+      }, {
+        "type": "text",
+        "id": "toggle_first-value",
+        "label": "Toggle First Value"
+      }, {
+        "type": "text",
+        "id": "toggle_second-value",
+        "label": "Toggle Second Value"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "text",
+            "id": "badge",
+            "label": "Block Badge"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Block Title"
+          },
+          {
+            "type": "text",
+            "id": "price_per_serving",
+            "label": "Price Per Serving"
+          }, {
+            "type": "text",
+            "id": "item_1",
+            "label": "Description Item 1"
+          }, {
+            "type": "text",
+            "id": "item_2",
+            "label": "Description Item 2"
+          }, {
+            "type": "text",
+            "id": "item_3",
+            "label": "Description Item 3"
+          }, {
+            "type": "text",
+            "id": "btn",
+            "label": "Button text"
+          }, {
+            "type": "text",
+            "id": "bottom_text",
+            "label": "Bottom text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Subscription",
+        "blocks": [
+          {
+            "type": "product"
+          },
+          {
+            "type": "product"
+          },
+          {
+            "type": "product"
+          },
+          {
+            "type": "product"
+          }, {
+            "type": "product"
+          }, {
+            "type": "product"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,98 @@
+<section class="customer-review">
+  <div class="customer-footer-content">
+    <div class="custom-page-width">
+      <!-- Customer-review Start  -->
+
+      <div class="footer-text-image">
+        <p style="line-height: 58px; text-align: center;padding-top: 50px;"><span style="font-size: 46px;"><strong>
+          <span style="font-family: Poppins; font-weight: 700; font-style: normal;">Take Advantage Of Our Limited Time TikTok Discount&nbsp;</span>
+        </strong>
+        </span>
+        </p>
+      </div>
+      
+      <div class="sleep-btn-content">
+        <div class="sleep-btn sleep-data">
+          <a href="#subscribe"> <p>YES, I WANT SLEEP!</p> </a>
+        </div>
+      </div>
+      <!-- Customer-review End  -->
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+  .footer-text-image{
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .sleep-btn.customer-review-btn{
+    margin:0px;
+  }
+  .customer-footer-content{
+    height:500px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  
+    /* margin-top:20px; */
+    background-image:url({{ section.settings.footer_image | img_url:'master' }});
+  }
+  .customer-img{
+    padding-top:30px;
+    text-align:center;
+  }
+  .sleep-btn-content{
+    padding-bottom:15px;
+  }    
+  
+  .customer-review{
+    padding-top:0px;
+    padding-bottom:15px;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "z-patch footer-bottom",
+    "settings": [
+      {
+        "type":"image_picker",
+          "id":"footer_image",
+        "label":"Background Image"
+      },
+      {
+        "type":"image_picker",
+          "id":"customer_review",
+        "label":"Customer Review"
+      },
+      {
+        "type":"text",
+          "id":"btn_text",
+        "label":"Sleep Button"
+      },
+      {
+        "type":"image_picker",
+          "id":"img_text",
+        "label":"Natural Image bg"
+      },
+      {
+        "type":"image_picker",
+          "id":"img_above",
+        "label":"Natural Image"
+      }
+    ],
+
+    
+      "presets":[
+        {
+          "name":"z-patch footer-bottom"
+        }
+      ]
+    
+  }
+{% endschema %}

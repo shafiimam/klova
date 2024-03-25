@@ -1,0 +1,414 @@
+{% comment %}
+** Account details template - main content area **
+{% endcomment %}
+
+{% assign id = section.id %}
+{% comment %}Layout{% endcomment %}
+{% assign width = section.settings.width %}
+{% assign padding_top = section.settings.padding_top %}
+{% assign padding_bottom = section.settings.padding_bottom %}
+{% comment %}Advanced{% endcomment %}
+{% assign css_class = section.settings.css_class %}
+{% assign custom_css = section.settings.custom_css %}
+{% capture icon_set %}
+{% if settings.toggle_icon_style == 'carets' %}
+  {% include settings.icon, name: 'down-caret', icon_class: 'icon--rotate' %}
+{% else %}
+  {% include settings.icon, name: 'plus', icon_class: 'icon--active' %}
+  {% include settings.icon, name: 'minus' %}
+{% endif %}
+{% endcapture %}
+{% style %}
+
+.section__wrapper {
+  padding-top: {{ padding_top }}px;
+  padding-bottom: {{ padding_bottom }}px;
+}
+
+{% include 'css-loop', css: section_css, id: id %}
+{% include 'css-loop', css: custom_css, id: id %}
+{% endstyle %}
+
+{% paginate customer.orders by 20 %}
+<section class="section section__wrapper is-width-{{ width }} {{ css_class }} account-details">
+  <div class="account-details__tabs tabs o-container">
+    <div class="tabs__inner desktop-only">
+      <div class="tabs__nav-items">
+        <ul id="tabs-nav">
+          <li><button class="tabs__nav-item tabs__nav-item-tabs c-button -secondary tab-link tab1 active" data-tab="#tab1">Profile</button></li>      
+          <li><button class="tabs__nav-item tabs__nav-item-tabs c-button -secondary tab-link tab2" data-tab="#tab2">My Orders</button></li>
+          <li><button class="tabs__nav-item tabs__nav-item-tabs c-button -secondary tab-link tab3" data-tab="#tab3">Delivery Address</button></li> 
+          <li><button class="tabs__nav-item tabs__nav-item-tabs c-button -secondary tab-link tab4" data-tab="#tab4">Change Password</button></li>
+        </ul>
+      
+      
+        
+        <div class="logOut">       
+          {% capture logout_link %}{{ routes.account_logout_url }}{% endcapture %}
+          {% capture logout_label %}{{ 'layout.customer.log_out' | t }}{% endcapture %}
+          {% include 'button', label: logout_label, class: "tabs__nav-item c-button -secondary", type: 'link', href: logout_link, style: '', attribute: 'data-no-instant' %}
+        </div>
+      </div>
+    </div>
+    <div id="tabs-content" class="tabs__account-area">
+      <div id="tab1" class="tabs__tab-content tab-content active">
+        <h2 class="user_title desktop-only"><a href="{{ routes.account_url }}" title="{{ 'layout.customer.my_account' | t }}">Hello, {{ customer.name }}</a></h2>
+        <div class="tab-content__profile-info profile-info">
+          <div class="profile-info__item one-whole medium-down--one-whole column">
+            <label>First Name</label>
+            <p class="account-sidebar__firstname">{{ customer.first_name }}</p>
+          </div>
+          <div class="profile-info__item one-whole medium-down--one-whole column">
+            <label>Last Name</label>
+            <p class="account-sidebar__lastname">{{ customer.last_name }}</p>
+          </div>
+          <div class=" profile-info__item one-whole medium-down--one-whole column">
+            <label>Your email (for answering you)</label>
+            <p class="account-sidebar__email">{{ customer.email }}</p>
+          </div>
+                {% render 'loop-subscriptions', type: 'customer-portal-link' %}
+
+          {% if customer.phone != blank %}
+          <div class="profile-info__item one-whole medium-down--one-whole column">
+            <label>Contact No.:</label>
+            <p class="account-sidebar__contact">{{ customer.phone }}</p>
+          </div>
+          {% endif %}
+         
+          {% capture birthday_tag %}
+          {% for tag in customer.tags %}
+              {%  if tag contains 'birthday_'%}{{ tag | remove: 'birthday_' }}{% endif %}
+              {% endfor %}
+          {% endcapture %}
+          
+          {% if birthday_tag != blank %}
+          <div class="profile-info__item one-whole medium-down--one-whole column">
+            <label>Birthdate</label>
+            <p class="account-sidebar__birthdate">
+              {{ birthday_tag }}
+            </p>
+          </div>
+          {% endif %}
+
+          <div class="profile-info__control control">
+            <div class="control__item">
+              <h6 class="subtitle">My Points: 
+                <span class="sweettooth-points-balance">...</span> points
+              </h6>
+              <a href="#" data-st-intent="st:points:rewards" class="c-button -primary -large">
+                Redeem points
+              </a>
+            </div>
+            <div class="control__item">
+              <h6 class="subtitle">Share with friends, get $10</h6>
+              <a href="#" data-st-intent="st:referrals:offers" class="c-button -primary -large">
+                Invite Friends
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="tabs__tab-content tab-content">
+        <div id="customer_orders">
+          
+          
+          
+          <h2 class="title">{{ 'customer.orders.title' | t }}</h2>
+         {% if customer.orders.size != 0 %}
+          <div class="my_order_detail">
+            {% for order in customer.orders %}
+            <div class="oder-area-start">
+            <div class="order_name-total">
+              <div class="o-container">
+                <div class="column one-half">
+                  <p>{{ 'customer.orders.order_number' | t }}: <strong>{{ order.name | link_to: order.customer_url }}</strong></p>
+                </div>
+                <div class="column one-half">
+                  <p>Grand Total: <strong>{{ order.total_price | money }} </strong></p>
+                </div>
+              </div>
+            </div>
+           	<div class="">
+              <div class="o-container">
+                <div class="column one-half">
+                  <p>{{ 'customer.orders.date' | t }}: <strong>{{ order.created_at | date: format: "month_day_year" }}</strong></p>
+                  <p>{{ 'customer.orders.fulfillment_status' | t }}: <strong>{{ order.fulfillment_status_label }}</strong></p>
+                </div>
+                <div class="column one-half">
+                  <p>{{ 'customer.orders.payment_status' | t }}: <strong>{{ order.financial_status_label }}</strong></p>
+                </div>
+              </div>                    
+            </div>
+            </div>
+            {% endfor %}
+          </div>
+           {% comment %}
+          
+          <h2>Billing Address</h2>
+<p>{{ order.billing_address.name }}</p>
+<p>{{ order.billing_address.company }}</p>
+<p>{{ order.billing_address.street }}</p>
+<p>{{ order.billing_address.city }}, {{ order.billing_address.province }}</p>
+<p>{{ order.billing_address.country }} {{ order.billing_address.zip }}</p>
+<p>{{ order.billing_address.phone }}</p>
+          
+          <h2>Shipping Address</h2>
+<p>{{ order.shipping_address.name }}</p>
+<p>{{ order.shipping_address.company }}</p>
+<p>{{ order.shipping_address.street }}</p>
+<p>{{ order.shipping_address.city }}, {{ order.shipping_address.province }}</p>
+<p>{{ order.shipping_address.country }} {{ order.shipping_address.zip }}</p>
+<p>{{ order.shipping_address.phone }}</p>
+          
+          <table>
+  {% for line_item in order.line_items %}
+  <tr>
+    <td>{{ line_item.title | link_to: line_item.product.url }}</td>
+    <td>{{ line_item.sku }}</td>
+    <td>{{ line_item.original_price | money }}</td>
+    <td>{{ line_item.quantity }}</td>
+    <td>{{ line_item.line_price | money }}</td>
+  </tr>
+  {% endfor %}
+</table>
+           
+            <table class="table is-bordered" width="100%">
+              <thead class="text-align-left">
+                <tr>
+                  <th>{{ 'customer.orders.order_number' | t }}</th>
+                  <th>{{ 'customer.orders.date' | t }}</th>
+                  <th>{{ 'customer.orders.payment_status' | t }}</th>
+                  <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+                  <th>{{ 'customer.orders.total' | t }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for order in customer.orders %}
+                <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
+                  <td>{{ order.name | link_to: order.customer_url }}</td>
+                  <td>{{ order.created_at | date: format: "month_day_year" }}</td>
+                  <td>{{ order.financial_status_label }}</td>
+                  <td>{{ order.fulfillment_status_label }}</td>
+                  <td>
+                    <span>{{ order.total_price | money }} {{ order.currency }}</span>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            {% endcomment %}
+          {% else %}
+          <p>{{ 'customer.orders.none' | t }}</p>
+          {% endif %}
+
+          <div class="one-whole column text-align-center">
+            {% include 'pagination' %}
+          </div>
+        </div>
+      </div>
+      <div id="tab3" class="tabs__tab-content tab-content">
+        <div class="tab-content__address address">
+          <h2>Delivery Address</h2>     
+          <div class="address__accordion-button-wrapper">
+            <button class="address__accordion-button" type="button">
+              Address Default
+              {% include 'icon-plus-accordion' %}
+            </button>   
+          </div>  
+          <div class="address__accordion-area">
+            {% form 'customer_address', customer.new_address %}
+            <div class="address__form">
+              <div class="address__name-wrapper">
+                <div class="tabs__input">
+                  <input type="text" id="address_first_name_{{form.id}}" class="address_form input" name="address[first_name]" placeholder=" " value="{{form.first_name}}" autocapitalize="words">
+                  <label for="address_first_name_{{form.id}}">{{ 'customer.addresses.first_name' | t }}</label>
+                </div>
+                <div class="tabs__input">
+                  <input type="text" id="address_last_name_{{form.id}}" class="address_form input" name="address[last_name]" placeholder=" " value="{{form.last_name}}" autocapitalize="words">
+                  <label for="address_last_name_{{form.id}}">{{ 'customer.addresses.last_name' | t }}</label>
+                </div>
+              </div>
+              <div class="address__address-wrapper">
+                <div class="tabs__input">
+                  <input type="text" id="address_address1_{{form.id}}" class="address_form input" name="address[address1]" placeholder=" " value="{{form.address1}}" autocapitalize="words">
+                  <label for="address_address1_{{form.id}}">{{ 'customer.addresses.address1' | t }}</label>
+                </div>
+              </div>
+              <div class="address__address-wrapper">
+                <div class="tabs__input">
+                  <input type="text" id="address_address2_{{form.id}}" class="address_form input" name="address[address2]" placeholder=" " value="{{form.address2}}" autocapitalize="words">
+                  <label for="address_address2_{{form.id}}">{{ 'customer.addresses.address2' | t }}</label>
+                </div>
+              </div>
+              <div class="address__data-wrapper">
+                <div class="tabs__input">
+                  <input type="text" id="address_company_new" class="input" name="address[company]" placeholder=" " value="{{form.company}}" autocapitalize="words">
+                  <label class="label {% if settings.show_labels == blank %}{% endif %}" for="address_company_new">{{ 'customer.addresses.company' | t }}</label>
+                </div>
+                <div class="tabs__input">
+                  <input type="text" id="address_city_{{form.id}}" class="address_form input" name="address[city]" placeholder=" " value="{{form.city}}" autocapitalize="words">
+                  <label for="address_city_{{form.id}}">{{ 'customer.addresses.city' | t }}</label>
+                </div>
+                <div class="tabs__input tabs__select">
+                  <label for="address_country_{{form.id}}">{{ 'customer.addresses.country' | t }}</label>
+                  <select id="address_country_{{form.id}}" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
+                </div>
+                <div class="tabs__input">
+                  <input type="text" id="AddressProvinceNew" class="input" name="address[province]" placeholder=" " value="{{ form.province }}" autocapitalize="words">
+                  <label class="label " for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+                </div>
+                <div class="tabs__input">
+                  <input type="text" id="address_zip_{{form.id}}" class="address_form input" name="address[zip]" placeholder=" " value="{{form.zip}}" autocapitalize="characters">
+                  <label for="address_zip_{{form.id}}">{{ 'customer.addresses.zip' | t }}</label>
+                </div>
+                <div class="tabs__input">
+                  <input type="tel" id="address_phone_{{form.id}}" class="address_form input" name="address[phone]" placeholder=" " value="{{form.phone}}">
+                  <label for="address_phone_{{form.id}}">{{ 'customer.addresses.phone' | t }}</label>
+                </div>
+              </div>
+              <div class="address__save-button">
+                <input class="c-button -primary" type="submit" value="{{ 'customer.addresses.save_address' | t }}" />
+              </div>
+            </div>
+            {% endform %}
+          </div>
+        </div>
+      </div>
+      <div id="tab4" class="tabs__tab-content tab-content">
+        <div class="tab-content__password password">
+          <h2>{{ 'customer.reset_password.title' | t }}</h2>
+          {% form 'recover_customer_password' %}
+          {% if form.posted_successfully? %}
+          {% assign reset_success = true %}
+          {% endif %}
+          <div class="password__note">
+            <p>{{ 'customer.recover_password.subtext' | t }}</p>
+          </div>
+          <div  class="customer_address">
+            {{ form.errors | default_errors }}
+            <div id="recover_email">
+              <div class="tabs__input">
+                <input type="email" class="input__full" value="" size="30" name="email" id="recover-email" class="input" autocorrect="off" autocapitalize="off" placeholder=" " />
+                <label class="label" for="email">{{ 'customer.recover_password.email' | t }}</label>
+              </div>
+            </div>
+            <div class="password__button">
+              <input class="c-button -primary -large" type="submit" value="{{ 'customer.recover_password.submit' | t }}" />
+            </div>
+          {% endform %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+
+  // Tabs
+  const tabsBtns= document.querySelectorAll('.tabs__nav-item-tabs');
+  const tabsItems = document.querySelectorAll(".tab-content");
+  console.log(tabsItems);
+
+  tabsBtns.forEach(onTabClick);
+
+  function onTabClick(btn) {
+    btn.addEventListener("click", () => {
+      let tabId = btn.getAttribute("data-tab");
+      let currentTab = document.querySelector(tabId);
+
+      if (!btn.classList.contains("active")) {
+        tabsBtns.forEach(btn => {
+          btn.classList.remove("active");
+        });
+
+        tabsItems.forEach(item => {
+          item.classList.remove("active");
+        });
+
+        btn.classList.add("active");
+        currentTab.classList.add("active");
+      }
+
+    });
+  }
+
+  // Accordion
+
+  const showAddressButton = document.querySelector(".address__accordion-button");
+  const addressArea = document.querySelector(".address__accordion-area");
+  const addressIconPlus = document.querySelector(".address__icon-plus");
+
+  showAddressButton.addEventListener("click", () => {
+    addressIconPlus.classList.toggle("active");
+    if(addressArea.style.maxHeight) {
+      addressArea.style.maxHeight = null;
+    } else {
+      addressArea.style.maxHeight = addressArea.scrollHeight + 'px';
+    }
+  })
+</script>
+
+{% endpaginate %}
+
+{% schema %}
+{
+  "name": "Account details",
+  "class": "account-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "standard",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Advanced"
+    },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ]
+}
+{% endschema %}

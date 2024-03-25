@@ -1,0 +1,446 @@
+
+  
+  
+      <style>
+        @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=pxiEyp8kv8JHgFVrJJfedA&skey=87759fb096548f6d&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=pxiByp8kv8JHgFVrLEj6Z1xlEw&skey=ce7ef9d62ca89319&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=pxiByp8kv8JHgFVrLCz7Z1xlEw&skey=cea76fe63715a67a&v=v20) format('woff');
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+      </style>
+    
+  <style>
+    .gps-482557032650507162 .-translate-x-1\/2,.gps-482557032650507162 .-translate-y-1\/2{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.gps-482557032650507162 .g-paragraph-1{font-family:var(--g-p1-ff);font-size:var(--g-p1-size);font-style:var(--g-p1-fs);font-weight:var(--g-p1-weight);letter-spacing:var(--g-p1-ls);line-height:var(--g-p1-lh)}.gps-482557032650507162 .visible{visibility:visible}.gps-482557032650507162 .invisible{visibility:hidden}.gps-482557032650507162 .absolute{position:absolute}.gps-482557032650507162 .relative{position:relative}.gps-482557032650507162 .left-1\/2{left:50%}.gps-482557032650507162 .top-1\/2{top:50%}.gps-482557032650507162 .mx-auto{margin-left:auto;margin-right:auto}.gps-482557032650507162 .mb-0{margin-bottom:0}.gps-482557032650507162 .block{display:block}.gps-482557032650507162 .flex{display:flex}.gps-482557032650507162 .inline-flex{display:inline-flex}.gps-482557032650507162 .grid{display:grid}.gps-482557032650507162 .hidden{display:none}.gps-482557032650507162 .h-6{height:24px}.gps-482557032650507162 .h-full{height:100%}.gps-482557032650507162 .w-6{width:24px}.gps-482557032650507162 .w-\[68px\]{width:68px}.gps-482557032650507162 .w-full{width:100%}.gps-482557032650507162 .\!max-w-none{max-width:none!important}.gps-482557032650507162 .max-w-full{max-width:100%}.gps-482557032650507162 .flex-none{flex:none}.gps-482557032650507162 .-translate-x-1\/2{--tw-translate-x:-50%}.gps-482557032650507162 .-translate-x-1\/2,.gps-482557032650507162 .-translate-y-1\/2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-482557032650507162 .-translate-y-1\/2{--tw-translate-y:-50%}.gps-482557032650507162 .flex-col{flex-direction:column}.gps-482557032650507162 .flex-wrap{flex-wrap:wrap}.gps-482557032650507162 .items-center{align-items:center}.gps-482557032650507162 .justify-start{justify-content:flex-start}.gps-482557032650507162 .justify-center{justify-content:center}.gps-482557032650507162 .gap-y-0{row-gap:0}.gps-482557032650507162 .overflow-hidden{overflow:hidden}.gps-482557032650507162 .bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.gps-482557032650507162 .bg-cover{background-size:cover}.gps-482557032650507162 .bg-center{background-position:50%}.gps-482557032650507162 .leading-\[0\]{line-height:0}.gps-482557032650507162 .text-g-line-3{color:var(--g-c-line-3)}.gps-482557032650507162 .opacity-100{opacity:1}.gps-482557032650507162 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-482557032650507162 .duration-200{transition-duration:.2s}.gps-482557032650507162 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1023px){.gps-482557032650507162 .tablet\:block{display:block}.gps-482557032650507162 .tablet\:hidden{display:none}}@media (max-width:767px){.gps-482557032650507162 .mobile\:block{display:block}.gps-482557032650507162 .mobile\:hidden{display:none}}.gps-482557032650507162 .\[\&\>svg\]\:\!h-\[var\(--height-desktop\)\]>svg{height:var(--height-desktop)!important}.gps-482557032650507162 .\[\&\>svg\]\:\!w-auto>svg{width:auto!important}@media (max-width:1023px){.gps-482557032650507162 .tablet\:\[\&\>svg\]\:\!h-\[var\(--height-tablet\)\]>svg{height:var(--height-tablet)!important}}@media (max-width:767px){.gps-482557032650507162 .mobile\:\[\&\>svg\]\:\!h-\[var\(--height-mobile\)\]>svg{height:var(--height-mobile)!important}}.gps-482557032650507162 .\[\&_\*\]\:max-w-full *{max-width:100%}.gps-482557032650507162 .\[\&_\>_article\]\:aspect-\[var\(--aspect\)\]>article{aspect-ratio:var(--aspect)}@media (max-width:1023px){.gps-482557032650507162 .tablet\:\[\&_\>_article\]\:aspect-\[var\(--aspect-tablet\2c _var\(--aspect\)\)\]>article{aspect-ratio:var(--aspect-tablet,var(--aspect))}}@media (max-width:767px){.gps-482557032650507162 .mobile\:\[\&_\>_article\]\:aspect-\[var\(--aspect-mobile\2c _var\(--aspect-tablet\2c _var\(--aspect\)\)\)\]>article{aspect-ratio:var(--aspect-mobile,var(--aspect-tablet,var(--aspect)))}}.gps-482557032650507162 .\[\&_p\]\:inline p{display:inline}.gps-482557032650507162 .\[\&_p\]\:after\:whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-482557032650507162 .\[\&_p\]\:after\:content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}
+  </style>
+  
+      
+      
+            <section
+              class="mx-auto max-w-full"
+              style="--w:100%;--w-tablet:100%;--w-mobile:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--pl:0px;--pl-tablet:0px;--pl-mobile:var(--g-ct-p, 15px);--pr:0px;--pr-tablet:0px;--pr-mobile:var(--g-ct-p, 15px)"
+            >
+              
+    <div
+      id="gVJDudNTJl"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-2xl);--pb:var(--g-s-2xl);--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gVJDudNTJl mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gpVjETi7iz relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="gbqtj-GOnE"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--cg:32px;--pc:start;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gbqtj-GOnE mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gexW49Wf7K relative flex flex-col"
+    >
+      
+    <div
+      
+      class="!max-w-none bg-black [&_>_article]:aspect-[var(--aspect)] tablet:[&_>_article]:aspect-[var(--aspect-tablet,_var(--aspect))] mobile:[&_>_article]:aspect-[var(--aspect-mobile,_var(--aspect-tablet,_var(--aspect)))] gcgh1lkjWc"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--aspect:16/9"
+    >
+      
+    <gp-lite-youtube-embed gp-data='{"lazy":true,"style":{"--aspect":"16/9"},"videoTitle":"Video","iframeSrc":"https://www.youtube-nocookie.com/embed/JRyDwKLSr_g?autoplay=1&state=1&&controls=1"}'>
+      <link rel="preload" href="https://i.ytimg.com/vi/JRyDwKLSr_g/hqdefault.jpg" as="image" />
+      <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+      <link rel="preconnect" href="https://www.google.com" />
+      
+      <article
+        aria-hidden
+        class="relative bg-cover bg-center gp-lite-youtube-embed-article"
+        data-title="Video"
+        style="background-image:url(https://i.ytimg.com/vi/JRyDwKLSr_g/hqdefault.jpg);--aspect:16/9"
+      >
+        <img src="https://i.ytimg.com/vi/JRyDwKLSr_g/hqdefault.jpg" alt="Poster" class="invisible w-full h-full" />
+        <button
+          type="button"
+          class="absolute top-1/2 left-1/2 w-[68px] -translate-x-1/2 -translate-y-1/2 gp-lite-youtube-embed-button visible opacity-100"
+          aria-label="Play"
+        >
+          <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+            <path
+              d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+              fill="#f00"
+            ></path>
+            <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+          </svg>
+        </button>
+        
+      </article>
+    </gp-lite-youtube-embed>
+    <script src="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-lite-youtube-embed.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gxo436TJ75 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gWrAVKpsKS "
+        style="--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      >
+      <div class="flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--ff:var(--g-font-Poppins, 'Poppins');--weight:600;--lh:130%;--size:46px;--size-tablet:46px;--size-mobile:32px;--c:var(--g-c-text-2, text-2);word-break:break-word;overflow:hidden"
+        >
+        <p>04. They Were Proven To Work On 'The Doctors'</p>
+        </h2>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="gKJu0ryfti "
+        style="--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-Poppins, 'Poppins');--weight:400;--lh:180%;--size:16px;--size-tablet:16px;--size-mobile:16px;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+        <p>The Doctors were skeptical of Klova too, so they gave them to audience members the night before airing for a full review. All three audience members reported deeper sleep! Shelbie even ditched her alarm clock and "popped right up" in the morning.</p>
+        </div>
+      </div>
+    </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:16px;--pb:16px" class="gzwHJoTuxt ">
+      
+    <div
+      class="flex justify-start"
+    >
+      <div
+        style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bbw:1px;--bbw-tablet:1px;--bbw-mobile:1px;--t:rotate(0deg);--bc:var(--g-c-line-2, line-2)"
+        class="block tablet:block mobile:block"
+      ></div>
+      <div
+        class="items-center hidden tablet:hidden mobile:hidden"
+        style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bc:var(--g-c-line-2, line-2);--t:rotate(0deg)"
+      >
+        
+    <div
+      class="hidden"
+      style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bc:var(--g-c-line-2, line-2);--bs:solid;--bbw:1px;--bbw-tablet:1px;--bbw-mobile:1px;--minw:100px"
+    ></div>
+  
+        
+            <span
+              class="inline-flex items-center justify-center flex-none"
+              style="--mr:var(--g-s-xs);--w:20px;--h:20px;--t:rotate(0);--c:var(--g-c-text-1, text-1)"
+            >
+              <svg style="width: 100%; height: 100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M428.8 137.6h-86.177a115.52 115.52 0 0 0 2.176-22.4c0-47.914-35.072-83.2-92-83.2-45.314 0-57.002 48.537-75.707 78.784-7.735 12.413-16.994 23.317-25.851 33.253l-.131.146-.129.148C135.662 161.807 127.764 168 120.8 168h-2.679c-5.747-4.952-13.536-8-22.12-8H32c-17.673 0-32 12.894-32 28.8v230.4C0 435.106 14.327 448 32 448h64c8.584 0 16.373-3.048 22.12-8h2.679c28.688 0 67.137 40 127.2 40h21.299c62.542 0 98.8-38.658 99.94-91.145 12.482-17.813 18.491-40.785 15.985-62.791A93.148 93.148 0 0 0 393.152 304H428.8c45.435 0 83.2-37.584 83.2-83.2 0-45.099-38.101-83.2-83.2-83.2zm0 118.4h-91.026c12.837 14.669 14.415 42.825-4.95 61.05 11.227 19.646 1.687 45.624-12.925 53.625 6.524 39.128-10.076 61.325-50.6 61.325H248c-45.491 0-77.21-35.913-120-39.676V215.571c25.239-2.964 42.966-21.222 59.075-39.596 11.275-12.65 21.725-25.3 30.799-39.875C232.355 112.712 244.006 80 252.8 80c23.375 0 44 8.8 44 35.2 0 35.2-26.4 53.075-26.4 70.4h158.4c18.425 0 35.2 16.5 35.2 35.2 0 18.975-16.225 35.2-35.2 35.2zM88 384c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z" /></svg>
+            </span>
+          
+        
+            <span
+              class="inline-flex items-center justify-center flex-none g-paragraph-1"
+              style="--tt:horizontal;--c:var(--g-c-text-1, text-1);--mr:var(--g-s-s)"
+            >
+              Title
+            </span>
+          
+        
+    <div
+      class="flex"
+      style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bc:var(--g-c-line-2, line-2);--bs:solid;--bbw:1px;--bbw-tablet:1px;--bbw-mobile:1px;--minw:100px"
+    ></div>
+  
+      </div>
+    </div>
+  
+      </div>
+    <div
+      parentTag="Col"
+        class="grOrJbMDSq "
+        style="--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] g-paragraph-1 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:italic;--c:var(--g-c-text-1, text-1);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >
+        <p>"I love the patch, I definitely saw an improvement." - Shelbie</p>
+        </div>
+      </div>
+    </div>
+    
+      
+      
+    <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+        
+    <div 
+            class="flex flex-wrap"
+            style="--cg:8px;--jc:left">
+            <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gBV1R8_SIr ">
+      
+    <div 
+      
+      class="flex w-full flex-col items-center"
+    >
+    <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] g0ETPi7Qyy"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bc:#121212"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:16px;--h:16px;--minw:16px;--height-desktop:16px;--height-tablet:16px;--height-mobile:16px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:!h-[var(--height-desktop)] [&>svg]:!w-auto tablet:[&>svg]:!h-[var(--height-tablet)] mobile:[&>svg]:!h-[var(--height-mobile)] text-g-line-3"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor"><path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M115.584 494.176c-12.352 6.336 -26.368 -4.768 -23.872 -18.944l26.56 -151.36L5.536 216.48c-10.528 -10.048 -5.056 -28.416 9.056 -30.4l156.736 -22.272L241.216 25.344c6.304 -12.48 23.36 -12.48 29.664 0l69.888 138.464 156.736 22.272c14.112 1.984 19.584 20.352 9.024 30.4l-112.704 107.392 26.56 151.36c2.496 14.176 -11.52 25.28 -23.872 18.944L256 421.984l-140.448 72.192z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div>
+  
+      </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gdQg9BK9cX ">
+      
+    <div 
+      
+      class="flex w-full flex-col items-center"
+    >
+    <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] g8ZGNVUP7i"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bc:#121212"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:16px;--h:16px;--minw:16px;--height-desktop:16px;--height-tablet:16px;--height-mobile:16px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:!h-[var(--height-desktop)] [&>svg]:!w-auto tablet:[&>svg]:!h-[var(--height-tablet)] mobile:[&>svg]:!h-[var(--height-mobile)] text-g-line-3"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor"><path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M115.584 494.176c-12.352 6.336 -26.368 -4.768 -23.872 -18.944l26.56 -151.36L5.536 216.48c-10.528 -10.048 -5.056 -28.416 9.056 -30.4l156.736 -22.272L241.216 25.344c6.304 -12.48 23.36 -12.48 29.664 0l69.888 138.464 156.736 22.272c14.112 1.984 19.584 20.352 9.024 30.4l-112.704 107.392 26.56 151.36c2.496 14.176 -11.52 25.28 -23.872 18.944L256 421.984l-140.448 72.192z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div>
+  
+      </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="ge5gVINbfg ">
+      
+    <div 
+      
+      class="flex w-full flex-col items-center"
+    >
+    <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] grVHOCbXYC"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bc:#121212"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:16px;--h:16px;--minw:16px;--height-desktop:16px;--height-tablet:16px;--height-mobile:16px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:!h-[var(--height-desktop)] [&>svg]:!w-auto tablet:[&>svg]:!h-[var(--height-tablet)] mobile:[&>svg]:!h-[var(--height-mobile)] text-g-line-3"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor"><path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M115.584 494.176c-12.352 6.336 -26.368 -4.768 -23.872 -18.944l26.56 -151.36L5.536 216.48c-10.528 -10.048 -5.056 -28.416 9.056 -30.4l156.736 -22.272L241.216 25.344c6.304 -12.48 23.36 -12.48 29.664 0l69.888 138.464 156.736 22.272c14.112 1.984 19.584 20.352 9.024 30.4l-112.704 107.392 26.56 151.36c2.496 14.176 -11.52 25.28 -23.872 18.944L256 421.984l-140.448 72.192z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div>
+  
+      </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="g1OW85nueB ">
+      
+    <div 
+      
+      class="flex w-full flex-col items-center"
+    >
+    <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] g_XU3gOKbz"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bc:#121212"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:16px;--h:16px;--minw:16px;--height-desktop:16px;--height-tablet:16px;--height-mobile:16px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:!h-[var(--height-desktop)] [&>svg]:!w-auto tablet:[&>svg]:!h-[var(--height-tablet)] mobile:[&>svg]:!h-[var(--height-mobile)] text-g-line-3"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor"><path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M115.584 494.176c-12.352 6.336 -26.368 -4.768 -23.872 -18.944l26.56 -151.36L5.536 216.48c-10.528 -10.048 -5.056 -28.416 9.056 -30.4l156.736 -22.272L241.216 25.344c6.304 -12.48 23.36 -12.48 29.664 0l69.888 138.464 156.736 22.272c14.112 1.984 19.584 20.352 9.024 30.4l-112.704 107.392 26.56 151.36c2.496 14.176 -11.52 25.28 -23.872 18.944L256 421.984l-140.448 72.192z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div>
+  
+      </div><div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gS3Ng3-AZ7 ">
+      
+    <div 
+      
+      class="flex w-full flex-col items-center"
+    >
+    <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] ggwdm_HFys"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--bs:none;--bc:#121212"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:var(--g-c-line-3, line-3);--t:rotate(0deg);--w:16px;--h:16px;--minw:16px;--height-desktop:16px;--height-tablet:16px;--height-mobile:16px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:!h-[var(--height-desktop)] [&>svg]:!w-auto tablet:[&>svg]:!h-[var(--height-tablet)] mobile:[&>svg]:!h-[var(--height-mobile)] text-g-line-3"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor"><path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M115.584 494.176c-12.352 6.336 -26.368 -4.768 -23.872 -18.944l26.56 -151.36L5.536 216.48c-10.528 -10.048 -5.056 -28.416 9.056 -30.4l156.736 -22.272L241.216 25.344c6.304 -12.48 23.36 -12.48 29.664 0l69.888 138.464 156.736 22.272c14.112 1.984 19.584 20.352 9.024 30.4l-112.704 107.392 26.56 151.36c2.496 14.176 -11.52 25.28 -23.872 18.944L256 421.984l-140.448 72.192z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div>
+  
+      </div>
+         </div>
+    </div>
+  
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+            </section>
+          
+    
+{% schema %}
+  {
+    
+    "name": "Section 6",
+    "tag": "section",
+    "class": "gps-482557032650507162 gps gpsi",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/klova/apps/bold/app/shopify/edit?pageType=GP_STATIC&editorId=482550033917412398&sectionId=482557032650507162)"
+      }
+    ],
+    "blocks": [{"type": "@app"}]
+  }
+{% endschema %}

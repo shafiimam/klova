@@ -1,0 +1,176 @@
+<div class="top-products top-products--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .top-products--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .top-products--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="o-container">
+    <div class="top-products__inner">
+      {% if section.settings.title != blank %}
+      <h2 class="top-products__title"> {{ section.settings.title }} </h2>
+    {% endif %}
+    <div class="top-products__wrap">
+      {%- for block in section.blocks -%}
+        <div class="top-product br-radius-16 {{ block.settings.style_overlay }}">
+          {%- liquid
+            assign product = block.settings.product
+            assign on_sale = false
+            if product.compare_at_price > product.price
+              assign on_sale = true
+            endif
+          -%}
+
+          <a href="{{ product.url | within: collection }}" class="top-product__link">
+            <figure class="top-product__img">
+              {% if block.settings.image != blank %}
+                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="lazyload"
+                    data-src="{{ img_url }}"
+                    data-widths="[360, 540, 720, 900, 1080, 1600]"
+                    data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                    data-sizes="auto"
+                    alt="{{ block.settings.image.alt }}">
+              {% elsif product.featured_image != blank %}
+                {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="lazyload"
+                    data-src="{{ img_url }}"
+                    data-widths="[360, 540, 720, 900, 1080, 1600]"
+                    data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+                    data-sizes="auto"
+                    alt="{{ product.featured_image.alt }}">
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+            </figure>
+          </a>
+          <div class="top-product__info">
+            {% if product.metafields.card.short_text != blank %}
+              <span class="top-product__sub">{{ product.metafields.card.short_text }}</span>
+            {% endif %}
+            {% if product.title != blank %}
+              <div class="top-product__title ">{{ product.title }}</div>
+            {% else %}
+              <div class="top-product__title ">Product title</div>
+            {% endif %}
+
+            <div class="top-product__rte rte">
+              {{ block.settings.description }}
+            </div>
+
+            <a href="{{ product.url | within: collection }}" class="top-product__btn c-button -large">
+              <div class="grid-product__price">
+                {%- if product.price_varies -%}
+                  <span class="grid-product__price--current">
+                    {%- render 'price-varies', price: product.price_min -%}
+                  </span>
+                {%- else -%}
+                  {%- if on_sale -%}
+                    <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                  {%- endif -%}
+                  <span class="grid-product__price--current {% if on_sale -%}grid-product__price--sale{%- endif -%}">
+                    {%- render 'price' with product.price -%}
+                  </span>
+                {%- endif -%}
+              </div>
+
+              <span class="top-product__btn--text">{{ block.settings.btn | default: "Button text" }}</span>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Top products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+   {
+    "type": "text",
+    "id": "title",
+    "label": "Title"
+   }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "select",
+          "id": "style_overlay",
+          "label": "Style gradient overlay",
+          "options": [
+            {
+              "value": "bg-gr--green-blue",
+              "label": "Green to Blue"
+            },
+            {
+              "value": "bg-gr--yellow-orange",
+              "label": "Yellow to Orange"
+            }
+          ]
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image product"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Description</p>"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top products",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

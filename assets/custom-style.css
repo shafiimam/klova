@@ -1,0 +1,35 @@
+.main-product__content .jdgm-prev-badge__text {
+  display: block !important;
+  visibility: visible !important;
+  color: var(--colorTextBody)!important;
+  font-family: var(--typeBasePrimary)!important;
+  font-size: .875rem!important;
+  font-weight: 400!important;
+  line-height: .875rem!important;
+  position: relative;
+  text-decoration: underline;
+}
+
+.main-product__content .jdgm-prev-badge {
+  display: flex !important;
+  align-items: center;
+}
+
+.main-product__content .jdgm-prev-badge__stars {
+  margin-right: 14px;
+}
+
+.main-product__content .jdgm-widget.jdgm-preview-badge.jdgm--done-setup {
+  left: 0;
+  position: absolute;
+  top: 22px;
+}
+
+/* .grid-product__image-wrap{
+  margin:0 10%!important;
+}
+
+.grid-product__title{
+  text-align: center !important;
+  font-size: 1.5em !important;
+} */

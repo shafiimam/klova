@@ -1,0 +1,214 @@
+{%- liquid
+  assign collection = collections[section.settings.home_featured_products]
+  assign product_limit = section.settings.count | plus: 1
+  if section.settings.mobile_scrollable
+    assign product_limit = section.settings.count
+  endif
+-%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div
+  id="CollectionSection-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-template">
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header{% if section.settings.view_all %} section-header--with-link{% endif %}">
+        <h2 class="section-header__title">
+          {{ section.settings.title }}
+        </h2>
+        {%- if section.settings.view_all -%}
+          <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">{{ 'collections.general.all_of_collection' | t }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="wrapper spc-width page-width{% if section.settings.mobile_scrollable %} page-width--flush-small{% endif %}">
+    <div
+      class="new-grid carousel product-grid{% if section.settings.mobile_scrollable %} scrollable-grid--small{% endif %}"
+      data-view="{% if section.settings.mobile_scrollable %}scrollable-5{% else %}xsmall{% endif %}">
+      {%- if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 -%}
+
+        {%- liquid
+          for i in (1..product_limit)
+            unless section.settings.mobile_scrollable
+              assign item_classes = ''
+              if forloop.index > section.settings.count
+                assign item_classes = 'hide'
+                assign mod = forloop.index | modulo: 2
+                if mod == 0
+                  assign item_classes = 'medium-up--hide'
+                endif
+              endif
+            endunless
+            render 'onboarding-product-grid-item', i: i, classes: item_classes
+          endfor
+        -%}
+
+      {%- else -%}
+
+        {%- liquid
+          for product in collections[section.settings.home_featured_products].products limit: product_limit
+            assign item_classes = ''
+            unless section.settings.mobile_scrollable
+              if forloop.index > section.settings.count
+                assign item_classes = 'hide'
+                assign mod = forloop.index | modulo: 2
+                if mod == 0
+                  assign item_classes = 'medium-up--hide'
+                endif
+              endif
+            endunless
+
+            render 'product-grid-metafields', product: product, collection: collection, classes: item_classes
+
+            if settings.quick_shop_enable
+              render 'quick-shop-modal', product: product
+            endif
+          endfor
+        -%}
+
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+<style>
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+}
+
+.carousel{
+  width:100%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+.wrapper .slick-dots li button:before {
+  font-size:20px;
+  color:white;
+}
+  
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    position:absolute;
+    left:12px;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color:#000;
+}
+.prev_arrow.slick-arrow{
+    position: absolute;
+    left: 0;
+    top: 47%;
+    transform: translate(10px, 0%); 
+    z-index:111;
+}
+.next_arrow.slick-arrow{
+    position: absolute;
+    right: 0;
+    top: 47%;
+    transform: translate(-30px, 0%);  
+    z-index:111;
+}  
+.meta-bg-color{
+  background:black;
+}  
+</style>
+
+<script>
+  $(document).ready(function(){
+  $('.carousel').slick({
+  slidesToShow: 3,
+  centerMode: true,
+  prevArrow:'<span class="prev_arrow"><img src="https://cdn.shopify.com/s/files/1/2065/0707/files/leftside.png?v=1708325700"></span>',
+  nextArrow:'<span class="next_arrow"><img src="https://cdn.shopify.com/s/files/1/2065/0707/files/rightside.png?v=1708325700"></span>',  
+      responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        }
+      }, 
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+});
+
+
+  
+</script>
+
+{% schema %}
+  {
+    "name": "Feature Col Metafields",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "collection",
+        "id": "home_featured_products",
+        "label": "Collection"
+      },
+      {
+        "type": "range",
+        "id": "count",
+        "label": "Products",
+        "default": 5,
+        "min": 5,
+        "max": 15,
+        "step": 5
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_scrollable",
+        "label": "Enable swipe on mobile",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "view_all",
+        "label": "Show 'View all' link",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [{
+      "name": "Feature Col Metafields"
+    }],
+    "blocks" : []
+  }
+{% endschema %}

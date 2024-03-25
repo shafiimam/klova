@@ -1,0 +1,45 @@
+<div class="sleep-chart">
+  <div class="sleep-chart__wrapper">
+    <div class="page-width">
+      <div class="sleep-chart__inner">
+        {% if section.settings.title != blank %}
+        <h2 class="sleep-chart__title"> {{ section.settings.title }} </h2>
+        {% endif %}
+        {% if section.settings.image != blank %}
+        <div class="sleep-chart__image">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% if section.settings.image != blank %}
+    <div class="sleep-chart__image sleep-chart__image_mobile">
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sleep chart",
+  "settings": [
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Title"
+  },
+  {
+  "type": "image_picker",
+  "id": "image",
+  "label": "Image"
+  }
+  ],
+  "presets": [
+  {
+  "category": "New",
+  "name":"Sleep chart"
+  }
+  ]
+}
+{% endschema %}

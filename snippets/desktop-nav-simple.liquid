@@ -1,0 +1,239 @@
+{%- comment -%}
+  This accepts a parameter for the menu name. Pass it from the include tag - Shikeb
+{%- endcomment -%}
+{% assign menu_name_desktop = linklists.mega-menu %}
+
+{% assign collection = collection[block.settings.menu_collection] %}
+
+{% if menu_name_desktop %}
+  <ul class="main-menu small--hide">
+    {% for link in menu_name_desktop.links %}
+      <li class="{% if link.active %}active{% endif %}">
+       <a href="{{ link.url }}">{{ link.title }}</a>
+         {% if link.links.size > 0 %}{% render 'icon-caret' %}{% endif %}
+      
+      {% if link.title contains 'Shop' %}
+<div class="sub-menu page-width">   
+
+<div class="tab mega-menu-tab">
+  <div class="menutitle">
+  <button class="tablinks" onclick="openTab(event, 'firstTab')" id="defaultOpen">{{ config.menu_title }}</button>
+  <button class="tablinks" onclick="openTab(event, 'secondTab')">{{ config.menu_title_two }}</button>
+  <button class="tablinks" onclick="openTab(event, 'thirdTab')">{{ config.menu_title_three }}</button>
+  <button class="tablinks" onclick="openTab(event, 'fourthTab')">{{ config.menu_title_four }}</button>
+  <button class="tablinks" onclick="openTab(event, 'fiveTab')">{{ config.menu_title_five }}</button>
+  </div> 
+  <div class="shopall-text"><div class="shopall-data"><a href="{{ config.shopall_url }}"><p>{{ config.shopall_text }}</p></a></div></div>
+</div>
+
+<div id="firstTab" class="tabcontent">
+  <div class="mega-menu-pro" >
+    
+    {% for product in collections[config.menu_collection].products %}
+      <div class="product-loop animate__animated animate__faster animate__fadeInRight"   style="animation-delay: {{ forloop.index | times:100 }}ms">
+      {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="secondTab" class="tabcontent">
+ <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
+ 
+    {% for product in collections[config.menu_collection_two].products %}
+       <div class="product-loop animate__animated animate__faster animate__fadeInRight"  style="animation-delay: {{ forloop.index | times:100 }}ms">
+      {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
+       </div>
+    {% endfor %}
+        
+ </div>
+</div>
+
+<div id="thirdTab" class="tabcontent">
+   <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
+ 
+    {% for product in collections[config.menu_collection_three].products %}
+       <div class="product-loop animate__animated animate__faster animate__fadeInRight"  style="animation-delay: {{ forloop.index | times:100 }}ms">
+      {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
+       </div>
+    {% endfor %}
+        
+   </div>
+</div>
+
+  <div id="fourthTab" class="tabcontent">
+   <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
+ 
+    {% for product in collections[config.menu_collection_four].products %}
+       <div class="product-loop animate__animated animate__faster animate__fadeInRight" style="animation-delay: {{ forloop.index | times:100 }}ms">
+      {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
+       </div>
+    {% endfor %}
+        
+   </div>
+</div>
+
+  <div id="fiveTab" class="tabcontent">
+   <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
+ 
+    {% for product in collections[config.menu_collection_five].products %}
+       <div class="product-loop animate__animated animate__faster animate__fadeInRight" style="animation-delay: {{ forloop.index | times:100 }}ms">
+      {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
+       </div>
+    {% endfor %}
+        
+   </div>
+</div>
+  
+</div>   
+       {% else %}
+        
+        {% if link.links.size > 0 %}
+        <ul class="sub-menu page-width">
+            {% for sub_link in link.links %}
+              <li class="{% if sub_link.active %}active{% endif %}">
+                <a href="{{ sub_link.url }}">{{ sub_link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+
+
+
+
+
+
+<script>
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+<style>
+  .main-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    margin-top:5px;
+  }
+
+  .main-menu li {
+    margin-right: 10px; /* Adjust the spacing between menu items */
+  }
+
+  .main-menu a {
+    text-decoration: none;
+    color: #333; /* Adjust the text color */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Bergen Sans';
+  }
+
+  .main-menu a:hover {
+    text-decoration: underline;
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    /* left: 0; */
+    top: 50px;
+    background-color: #fff; /* Adjust the background color of sub-menu */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */ */
+    z-index: 1;
+    margin:0 auto;
+    padding-top:40px;
+    padding-left:0px;
+    padding-bottom:40px;
+    /* width:100%;
+    max-width:100%; */
+    box-shadow: 0 0.125rem 0.25rem #0000000d; 
+  }
+  .sub-menu li {
+    display: block;
+    white-space: nowrap;
+  }
+  .main-menu li:hover .sub-menu {
+    display: block;
+  }
+
+  .tab {
+  background-color: #fff;
+  width: 20%;
+  height: 100%;  
+   float:left; 
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #000;
+  padding: 7px 16px;
+  width: 90%;
+  /* border: none;
+  outline: none; */
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 5%;
+  /* border-radius: 4px; */
+  font-family: 'Bergen Sans';
+}
+
+/* .tab button:hover {
+  background-color: #bee9f7;
+} */
+
+.tab button.active {
+  font-weight:700;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  /* border: 1px solid #ccc; */
+  width: 80%;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+}
+.mega-menu-pro{
+  display:flex;
+  flex-wrap:wrap;
+}
+.product-loop{
+  width:20%;
+  flex:0 0 auto;
+}
+.menutitle{
+  padding-bottom:85px;
+}
+</style>

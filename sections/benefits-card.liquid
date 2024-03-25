@@ -1,0 +1,149 @@
+<div class="benefits-card">
+  <div class="benefits-card__wrapper">
+    <div class="page-width">
+      <div class="benefits-card__inner br-radius-8 {{ section.settings.position_image }} {% if 
+        section.blocks != blank %} benefits-card__inner_acc{% endif %}"
+        style="background-color: {{ section.settings.bcg-color }};">
+        <div class="benefits-card__content {{ section.settings.text-align }}">
+          {% if section.settings.title != blank %}
+          <h2 class="benefits-card__title"> {{ section.settings.title }} </h2>
+          {% endif %}
+          {% if section.settings.text != blank %}
+          <div class="benefits-card__text"> {{ section.settings.text }} </div>
+          {% endif %}
+          {% if section.blocks != blank %}
+          <div class="accordion benefits-card__accordion">
+            <ul class="accordion__items">
+              {% for block in section.blocks %}
+              {% if block.settings.acc-button != blank %}
+              <li class="accordion__item">
+                <button class="accordion__button"> {{ block.settings.acc-button }} </button>
+                <div class="accordion__text"> <div class="accordion__inside">{{ block.settings.acc-text }}</div></div>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+        {% if section.settings.image != blank %}
+        <div class="benefits-card__image">
+          <div class="benefits-card__image_overlay">
+            <img src="{{ section.settings.image | img_url: '850x' }}" alt="{{ section.settings.image.alt }}">
+          </div>
+        </div>
+        {% endif %}
+        {% if section.settings.image-mobile != blank %}
+        <div class="benefits-card__image mobile">
+          <div class="benefits-card__image_overlay">
+            <img src="{{ section.settings.image-mobile | img_url: '700x' }}"
+              alt="{{ section.settings.image-mobile.alt }}">
+          </div>
+        </div>
+        {% elsif section.settings.image != blank %}
+        <div class="benefits-card__image mobile">
+          <div class="benefits-card__image_overlay">
+            <img src="{{ section.settings.image | img_url: '700x' }}" alt="{{ section.settings.image.alt }}">
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Benefits card",
+"settings": [
+{
+"type": "header",
+"content": "Position image"
+},
+{
+"type": "select",
+"id": "position_image",
+"label": "Position",
+"options": [
+{
+"value": "benefits-card__inner_right",
+"label": "Right"
+},
+{
+"value": "benefits-card__inner_left",
+"label": "Left"
+}
+]
+},
+{
+"type": "header",
+"content": "Text align"
+},
+{
+"type": "select",
+"id": "text-align",
+"label": "Position",
+"options": [
+{
+"value": "benefits-card__content_left",
+"label": "Left"
+},
+{
+"value": "benefits-card__content_right",
+"label": "Right"
+}
+]
+},
+{
+"type": "color",
+"id": "bcg-color",
+"label": "Background",
+"default": "#FAF9FB"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image-mobile",
+"label": "Image on mobile"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text"
+}
+],
+"blocks": [
+{
+"type": "text",
+"name": "Accordion item",
+"settings": [
+{
+"type": "text",
+"id": "acc-button",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "acc-text",
+"label": "Text"
+}
+]
+}
+],
+"presets": [
+{
+"category": "New",
+"name":"Benefits card"
+}
+]
+}
+{% endschema %}

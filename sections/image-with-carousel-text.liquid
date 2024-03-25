@@ -1,0 +1,189 @@
+<div class="abstract-desc abstract-desc--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .abstract-desc--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .abstract-desc--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+  <div class="o-container">
+    <div class="abstract-desc__wrap br-radius-16" style="background-color: {{ section.settings.overlay }};">
+      {% if section.settings.title != blank %}
+        <h2 class="abstract-desc__title">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      <figure class="abstract-desc__image">
+        {% if section.settings.html != blank %}
+            {{ section.settings.html }}
+        {% elsif  section.settings.image != blank %}
+          {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="lazyload"
+                data-src="{{ img_url }}"
+                data-widths="[540, 720, 900, 1080, 1600]"
+                data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ section.settings.image.alt }}">
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </figure>
+
+      <div class="abstract-desc__body flkty-slider">
+        {%- for block in section.blocks -%}
+          <div data-aos="{{ section.settings.animate }}" class="abstract-info">
+            {% if block.settings.title != blank %}
+              <span class="abstract-info__title">{{ block.settings.title }}</span>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <div class="abstract-info__text rte">{{ block.settings.text }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image with carousel text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "Lottiefiles animation",
+      "info": "Click on 'Handoff'. Web copy all code. Paste code in above box. Contact us if you face issue."
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "overlay",
+      "label": "Overlay",
+      "default": "#FAF9FB"
+    },
+    {
+      "type": "select",
+      "id": "animate",
+      "label": "Animate",
+      "options": [
+        {
+          "value": "false",
+          "label": "No"
+        },
+        {
+          "value": "fade-up",
+          "label": "Fade up"
+        },
+        {
+          "value": "fade-down",
+          "label": "Fade down"
+        },
+        {
+          "value": "fade-right",
+          "label": "Fade right"
+        },
+        {
+          "value": "fade-left",
+          "label": "Fade left"
+        },
+        {
+          "value": "flip-up",
+          "label": "Flip up"
+        },
+        {
+          "value": "flip-down",
+          "label": "Flip down"
+        },
+        {
+          "value": "flip-right",
+          "label": "Flip right"
+        },
+        {
+          "value": "flip-left",
+          "label": "Flip left"
+        },
+        {
+          "value": "zoom-in",
+          "label": "Zoom in"
+        },
+        {
+          "value": "zoom-out",
+          "label": "Zoom out"
+        }
+      ]
+     }
+  ],
+  "blocks": [
+    {
+      "type": "info",
+      "name": "Info",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Description",
+          "default": "<p>Description</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with carousel text",
+      "blocks": [
+        {
+          "type": "info"
+        },
+        {
+          "type": "info"
+        },
+        {
+          "type": "info"
+        },
+        {
+          "type": "info"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

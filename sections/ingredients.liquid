@@ -1,0 +1,181 @@
+<div class="ingredients ingredients--{{ section.id }}" data-section-id="{{ section.id }}">
+  {%- style -%}
+    .ingredients--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:768px) {
+      .ingredients--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+  <div class="o-container">
+    <div class="ingredients__wrap">
+      {% if section.settings.title != blank or section.settings.rte != blank %}
+        <div class="ingredients__head u-align-center">
+          {% if section.settings.title != blank %}
+            <h2 class="ingredients__title">{{ section.settings.title }}</h2>
+          {% endif %}
+          {% if section.settings.rte != blank %}
+            <div class="ingredients__text rte">{{ section.settings.rte }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+      <div class="ingredients__body">
+        <figure class="ingredients__image">
+          {% if section.settings.image != blank %}
+              {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="lazyload"
+                    data-src="{{ img_url }}"
+                    data-widths="[540, 720, 900, 1080, 1600]"
+                    data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+                    data-sizes="auto"
+                    alt="{{ section.settings.image.alt }}">
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+        </figure>
+
+        <ul class="ingredients__list">
+          {%- for block in section.blocks -%}
+            <li class="ingredients__item ingredient-card u-align-center">
+              <figure class="ingredient-card__icon">
+                {% if block.settings.svg_icon != blank %}
+                  {{ block.settings.svg_icon }}
+                {% elsif block.settings.image != blank %}
+                  {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <img class="lazyload"
+                      data-src="{{ img_url }}"
+                      data-widths="[540, 720, 900, 1080, 1600]"
+                      data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ block.settings.image.alt }}">
+                {% else %}
+                  {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </figure>
+              {% if block.settings.title != blank %}
+                <div class="ingredient-card__title">{{ block.settings.title }}</div>
+              {% endif %}
+              {% if block.settings.description != blank %}
+                <div class="ingredient-card__info rte">{{ block.settings.description }}</div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Ingredients",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "rte",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "header",
+          "content": "Or"
+        },
+        {
+          "type": "html",
+          "id": "svg_icon",
+          "label": "Svg",
+          "info": "Right click on SVG file. Open with any text editor and copy all code. Paste code in above box. Contact us if you face issue."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Description</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredients",
+      "blocks": [
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

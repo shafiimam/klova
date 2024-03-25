@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "settings": {
+        "blog_capitalize_first": false,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "back-link": "- Back to blog"
+      }
+    },
+    "article-product": {
+      "type": "article-product",
+      "settings": {
+        "button": "View product",
+        "title": "What our customers say:"
+      }
+    },
+    "1654340586f33d493c": {
+      "type": "top-blog-posts",
+      "blocks": {
+        "1654340586c78da8fc-0": {
+          "type": "article",
+          "settings": {
+            "article": "the-daily-snooze\/9-sleep-hacks-for-snore-free-snooze"
+          }
+        },
+        "1654340586c78da8fc-1": {
+          "type": "article",
+          "settings": {
+            "article": "the-daily-snooze\/common-sleep-myths-compromise-good-sleep-health"
+          }
+        },
+        "1654340586c78da8fc-2": {
+          "type": "article",
+          "settings": {
+            "article": "the-daily-snooze\/sleep-is-your-superpower"
+          }
+        }
+      },
+      "block_order": [
+        "1654340586c78da8fc-0",
+        "1654340586c78da8fc-1",
+        "1654340586c78da8fc-2"
+      ],
+      "settings": {
+        "paddingsection": "160px 0px 80px 0px",
+        "paddingsection_mob": "120px 0px 80px 0px",
+        "title": "",
+        "overlay": "#faf9fb"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article-product",
+    "1654340586f33d493c"
+  ]
+}

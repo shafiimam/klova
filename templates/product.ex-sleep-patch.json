@@ -1,0 +1,436 @@
+{
+  "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "a310623b-9aaf-479b-8302-dceb2a0a9c9a": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
+          "type": "paragraph",
+          "settings": {
+            "subtitle": "{{ product.metafields.add_met.subtitle.value }}"
+          }
+        },
+        "fb173e0b-99fc-4a25-b9e4-0fdac1f62597": {
+          "type": "textarea",
+          "settings": {
+            "un-text": "{{ product.metafields.add_meta.sub_two.value }}"
+          }
+        },
+        "a91a2500-65d8-4a3c-a0ba-5156b25d84ae": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "4c031575-b1fb-46de-a7bc-39207e9de917": {
+          "type": "skio-plan-picker",
+          "settings": {
+          }
+        },
+        "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": false
+          }
+        },
+        "essential_countdown_app_block_CAhqfx": {
+          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "clsly3rjw4546821ou9msv7eihr"
+          }
+        },
+        "5bc7c87e-c148-4334-b277-88538ef442a8": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "label": "AUTOMATIC MONTHLY SUBSCRIPTIONS NOW AVAILABLE, CLICK HERE.",
+            "url": "{{ product.metafields.cta.subscription_link.value }}"
+          }
+        },
+        "991843c7-0724-43cf-8891-6972bb0b8de4": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING - OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
+        },
+        "4a35f8b0-879a-41fc-8ad7-20579c2e14f4": {
+          "type": "tab",
+          "settings": {
+            "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
+            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}<\/p>",
+            "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
+            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}<\/p>",
+            "acc-button-three": "{{ product.metafields.add_tab.product_title_tab_3.value }}",
+            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}<\/p>",
+            "acc-button-four": "{{ product.metafields.add_tab.product_title_tab_4.value }}",
+            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}<\/p>",
+            "acc-button-five": "{{ product.metafields.add_tab.product_title_tab_5.value }}",
+            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}<\/p>",
+            "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
+            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a310623b-9aaf-479b-8302-dceb2a0a9c9a",
+        "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
+        "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
+        "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "4c031575-b1fb-46de-a7bc-39207e9de917",
+        "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
+        "essential_countdown_app_block_CAhqfx",
+        "5bc7c87e-c148-4334-b277-88538ef442a8",
+        "991843c7-0724-43cf-8891-6972bb0b8de4",
+        "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
+      ],
+      "settings": {
+        "link-back-text": "- Back to shop",
+        "link-back": "shopify:\/\/collections\/all",
+        "second_stars": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1654687495df726be8": {
+      "type": "video-with-text",
+      "blocks": {
+        "165468749574c87244-0": {
+          "type": "card_info",
+          "settings": {
+            "title": "Peel",
+            "text": "Peel one patch off of the included sheets (28 patches per pack).",
+            "popup_info": ""
+          }
+        },
+        "165468749574c87244-1": {
+          "type": "card_info",
+          "settings": {
+            "title": "Stick",
+            "text": "Stick the patch on any hair-free part of the body with good blood flow.",
+            "popup_info": ""
+          }
+        },
+        "165468749574c87244-2": {
+          "type": "card_info",
+          "settings": {
+            "title": "Optimize",
+            "text": "Before applying the patch, shave the area you'll be apply it to Lorem",
+            "popup_info": "<p>Before applying the patch, shave the area you'll be apply it to, as even tiny hairs can prevent absorption. For best results, ensure proper blood flow to the area after applying. We recommend applying to the top of the foot and walking for 10 minutes. Alternatively, apply to the upper arm\/ shoulder and do a few sets of arm circles or pushups to get blood flowing to the area. Remember, the ingredients absorbing through the upper dermis capillaries NEED a good amount of blood flow to carry them through the body, so do not place the patches on area without good blood flow. <\/p>"
+          }
+        },
+        "165468749574c87244-3": {
+          "type": "card_info",
+          "settings": {
+            "title": "Remove",
+            "text": "Simply remove about 7-9 hours later when you wake up and discard.",
+            "popup_info": ""
+          }
+        }
+      },
+      "block_order": [
+        "165468749574c87244-0",
+        "165468749574c87244-1",
+        "165468749574c87244-2",
+        "165468749574c87244-3"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 60px 0px",
+        "paddingsection_mob": "0px 0px 60px 0px",
+        "title": "Peel Stick Sleep",
+        "info": "<p>Extra-Strength Sleep Patches are the easiest way to unlock your best sleep ever, here's how it works:<\/p>",
+        "overlay": "#faf9fb",
+        "video_url": "https:\/\/vimeo.com\/703421279",
+        "overlay_opacity": 0,
+        "height": 500,
+        "height_mobile": 160
+      }
+    },
+    "1654687329523c467f": {
+      "type": "image-with-carousel-text",
+      "blocks": {
+        "1654687329e5bc22ff-0": {
+          "type": "info",
+          "settings": {
+            "title": "COMPREHENSIVE INGREDIENTS",
+            "text": "<p>Every Extra-Strength Sleep Patch is the equivalent of 7 different health products working together as 1 to help promote your best sleep ever.<\/p>"
+          }
+        },
+        "1654687329e5bc22ff-1": {
+          "type": "info",
+          "settings": {
+            "title": "THE DIFFERENCE IS THE DELIVERY",
+            "text": "<p>Your body was built to absorb nutrients it needs transdermally, and we aren't the first to capitalize on it either: the sun has been doing it for years now ;)<\/p>"
+          }
+        },
+        "1654687329e5bc22ff-2": {
+          "type": "info",
+          "settings": {
+            "title": "WELLNESS THAT STICKS",
+            "text": "<p>Klova is a wellness routine you can stick with easier than most, because it sticks with you. Each patch stays secure for up to 8 hours, or until you remove it.<\/p>"
+          }
+        },
+        "1654687329e5bc22ff-3": {
+          "type": "info",
+          "settings": {
+            "title": "GIVE YOUR STOMACH A BREAK",
+            "text": "<p>Stomach aches are very common with sleep support pills or drinks. We fixed that by skipping the stomach and going right to bloodstream. Better results, faster.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1654687329e5bc22ff-0",
+        "1654687329e5bc22ff-1",
+        "1654687329e5bc22ff-2",
+        "1654687329e5bc22ff-3"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 40px 0px",
+        "paddingsection_mob": "0px 0px 40px 0px",
+        "title": "See you in bed ;)",
+        "image": "shopify:\/\/shop_images\/hand.png",
+        "html": "",
+        "overlay": "#faf9fb",
+        "animate": "false"
+      }
+    },
+    "16539147732bd96387": {
+      "type": "benefits-card",
+      "settings": {
+        "position_image": "benefits-card__image_right",
+        "text-align": "benefits-card__content_left",
+        "bcg-color": "#faf9fb",
+        "image": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
+        "title": "Fall asleep",
+        "text": "<p>Melatonin and naturally occuring ingredients promote relaxation before bed, which can help you wind down and ease into a gentle sleep.<\/p>"
+      }
+    },
+    "1653916291e266d004": {
+      "type": "benefits-card",
+      "settings": {
+        "position_image": "benefits-card__inner_left",
+        "text-align": "benefits-card__content_right",
+        "bcg-color": "#faf9fb",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_9-min-min.jpg",
+        "title": "Stay asleep",
+        "text": "<p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC2909186\/\" target=\"_blank\" title=\"Melatonin sleep patch study\">Independent studies<\/a> have shown that transdermal melatonin patches can be more effective at helping people remain sleeping.<\/p>"
+      }
+    },
+    "16539162981609c3bf": {
+      "type": "benefits-card",
+      "settings": {
+        "position_image": "benefits-card__image_right",
+        "text-align": "benefits-card__content_left",
+        "bcg-color": "#faf9fb",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-1-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_10-min-min.jpg",
+        "title": "Reduce tossing and turning",
+        "text": "<p>96% of sleep study participants reported less tossing and turning when using a Klova sleep patch.<\/p>"
+      }
+    },
+    "1653916303774cfc14": {
+      "type": "benefits-card",
+      "settings": {
+        "position_image": "benefits-card__inner_left",
+        "text-align": "benefits-card__content_right",
+        "bcg-color": "#faf9fb",
+        "image": "shopify:\/\/shop_images\/BluePatch-WakeUpRefreshed.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BluePatch-WakeUpRefreshed.jpg",
+        "title": "Wake up refreshed",
+        "text": "<p>94% of sleep study participants reported waking up more refreshed after using Klova sleeping patches.<\/p>"
+      }
+    },
+    "16539163096b01f9e3": {
+      "type": "benefits-card",
+      "settings": {
+        "position_image": "benefits-card__image_right",
+        "text-align": "benefits-card__content_left",
+        "bcg-color": "#faf9fb",
+        "image": "shopify:\/\/shop_images\/BluepatchEliminateGroggyMornings.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BluepatchEliminateGroggyMornings.jpg",
+        "title": "Eliminate groggy mornings",
+        "text": "<p>With almost 100% of sleep study participants reporting better sleep and more energy, our favorite stat is that they reported fewer groggy mornings. <\/p><p><\/p><p>What are you waiting for? Your best sleep ever is waiting.<\/p>"
+      }
+    },
+    "16539274943ce12887": {
+      "type": "sleep-chart",
+      "settings": {
+        "title": "Sleep Aid Comparison chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
+      }
+    },
+    "slideshow_image_DphBr7": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_KcqLEM": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/product-comparison-desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/product-comparison-mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_KcqLEM"
+      ],
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "16539298801be67a40": {
+      "type": "simile",
+      "blocks": {
+        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
+          "type": "text",
+          "settings": {
+            "subtitle": "The original",
+            "title": "Sleep Patch",
+            "text": "Our first patch. Simple and reliable",
+            "item-image": "shopify:\/\/shop_images\/ZPatch-AmazonMainImage-2022_1_png.webp"
+          }
+        },
+        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
+          "type": "image_picker",
+          "settings": {
+            "subtitle-two": "Brand new",
+            "title-two": "Extra Strength Sleep Patch",
+            "text-two": "",
+            "item-image-two": "shopify:\/\/shop_images\/untitled-design-95_png.webp"
+          }
+        }
+      },
+      "block_order": [
+        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
+        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
+      ],
+      "disabled": true,
+      "settings": {
+        "text": "VS",
+        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
+      }
+    },
+    "1653908906e8b1c207": {
+      "type": "faq-block",
+      "blocks": {
+        "95efa8d9-b7a2-4979-bae9-044a1cde6016": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHO CAN USE THIS PATCH?",
+            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
+          }
+        },
+        "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHERE IS KLOVA MADE?",
+            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
+          }
+        },
+        "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
+          "type": "text",
+          "settings": {
+            "acc-button": "ARE THERE ANY INTERACTIONS?",
+            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
+          }
+        },
+        "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
+          "type": "text",
+          "settings": {
+            "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
+          }
+        },
+        "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WILL IT MAKE ME GROGGY?",
+            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "95efa8d9-b7a2-4979-bae9-044a1cde6016",
+        "43f3a410-63e7-4bd9-bf77-63ec200964aa",
+        "b78ca722-63a3-4f9b-b14c-ff8533cfb237",
+        "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d",
+        "783ba886-e7c2-4ffc-adc7-3e85654ed6e8"
+      ],
+      "settings": {
+        "title": "FAQ",
+        "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
+        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
+        "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
+        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
+      }
+    },
+    "16630817672cdb6d0f": {
+      "type": "apps",
+      "blocks": {
+        "855dfa5d-fd92-4e3d-89d7-075b7757950e": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "855dfa5d-fd92-4e3d-89d7-075b7757950e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "zp-product-header-content",
+    "main",
+    "1654687495df726be8",
+    "1654687329523c467f",
+    "16539147732bd96387",
+    "1653916291e266d004",
+    "16539162981609c3bf",
+    "1653916303774cfc14",
+    "16539163096b01f9e3",
+    "16539274943ce12887",
+    "slideshow_image_DphBr7",
+    "16539298801be67a40",
+    "1653908906e8b1c207",
+    "16630817672cdb6d0f",
+    "zp-product-footer-content"
+  ]
+}

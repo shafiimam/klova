@@ -1,0 +1,21 @@
+{%- liquid
+  assign toggle_first-value = section.settings.toggle_first-value 
+  assign toggle_second-value = section.settings.toggle_second-value 
+-%}
+
+<div class="toggle">  
+<span class="toggle__title is-bold">
+  {{ toggle_first-value }}
+</span>
+  <label class="toggle__switch" for="toggle-input">    
+    <input type="checkbox" id="toggle-input" name="toggle-input-name">
+    <div class="toggle__slider">
+      <div class="toggle__slider-point">
+      </div>
+    </div>    
+  </label>
+  <span class="toggle__title">
+    {{ toggle_second-value }}
+  </span>
+</div>
+      

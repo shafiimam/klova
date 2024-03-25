@@ -1,0 +1,112 @@
+{%- liquid
+assign number_of_comments = article.comments_count
+if comment.status == 'pending'
+assign number_of_comments = article.comments_count | plus: 1
+endif
+-%}
+
+<div class="main-article__wrapper">
+  <div class="page-width">
+    {% if section.settings.back-link != blank %}
+    <div class="main-article__back">
+      <a href="{{ blog.url }}"> {{ section.settings.back-link }} </a>
+      {% endif %}
+    </div>
+
+
+    <div class="main-article__top">
+      {%- if section.settings.blog_show_tags and article.tags.size > 0 -%}
+      <div class="main-article__tag_wrapper">
+        {%- for tag in article.tags -%}
+        {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if
+        tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{%
+        endif %}
+        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="main-article__tag">{{ tag }}</a>
+        {%- endfor -%}
+        {%- if section.settings.blog_show_date -%}
+        <span class="main-article__date">{{ article.published_at | date: '%d.%m.%Y' }}</span>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+
+
+      <h1 class="main-article__title">{{ article.title }}</h1>
+
+      <div class="article__sub-meta">
+        {%- if section.settings.blog_show_comments and article.comments_count > 0 -%}
+        <span>
+          <a href="{{ article.url }}#comments" class="js-no-transition">
+            {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
+          </a>
+        </span>
+        {%- endif -%}
+        {%- if section.settings.blog_show_author -%}
+        <span>by {{ article.author }}</span>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="main-article__content">
+      <div class="rte{% if section.settings.blog_capitalize_first %} capitalize-first-letter{% endif %}">
+        {{ article.content }}
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const articleContent = document.querySelector('.main-article__content');
+    if (articleContent != undefined && articleContent != null) {
+      const articleElement = articleContent.querySelectorAll('p');
+      articleElement.forEach(e => {
+        if (e.querySelector('div') != null || e.querySelector('img')) {
+          e.classList.add('main-article__element');
+        }
+      });
+    }
+  });
+</script>
+
+
+{% schema %}
+{
+"name": "Article pages",
+"class": "blog-layout__main",
+"settings": [
+{
+"type": "checkbox",
+"id": "blog_capitalize_first",
+"label": "Capitalize first letter",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "blog_show_tags",
+"label": "Show tags",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "blog_show_date",
+"label": "Show date",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "blog_show_comments",
+"label": "Show comment count",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "blog_show_author",
+"label": "Show author"
+},
+{
+"type": "text",
+"id": "back-link",
+"label": "Label for link back",
+"default": "- Back to blog"
+}
+]
+}
+{% endschema %}

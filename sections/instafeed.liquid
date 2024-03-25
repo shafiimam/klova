@@ -1,0 +1,99 @@
+<div class="instagram-section instagram-section--{{ section.id }}">
+  {%- style -%}
+    .instagram-section--{{ section.id }} {
+      padding: {{ section.settings.paddingsection_mob }} !important;
+    }
+
+    @media (min-width:750px) {
+      .instagram-section--{{ section.id }} {
+        padding: {{ section.settings.paddingsection }} !important;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="instagram-section__wrap {{ section.settings.style_overlay }}">
+    <div class="o-container{% if section.settings.full_width %} -fluid{% endif %}">
+      <div class="instagram-section__head u-align-center">
+        {% if section.settings.title != blank %}
+          <h2 class="instagram-section__title" style="color: {{ section.settings.color_text }}">{{ section.settings.title }}</h2>
+        {% endif %}
+      </div>
+      <div class="instagram-section__body">
+        <div id="insta-feed"></div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+{% schema %}
+{
+  "name": "Instafeed",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "paddingsection",
+      "label": "Padding Section (desktop)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "text",
+      "id": "paddingsection_mob",
+      "label": "Padding Section (mobile)",
+      "default": "0px 0px 0px 0px",
+      "info": "Padding: Top Right Bottom Left"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full page width",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Url instagram"
+    },
+    {
+      "type": "text",
+      "id": "instagram_label",
+      "label": "Label for instagram"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "select",
+      "id": "style_overlay",
+      "label": "Style gradient overlay",
+      "options": [
+        {
+          "value": "bg-gr--green-blue",
+          "label": "Green to Blue"
+        },
+        {
+          "value": "bg-gr--yellow-orange",
+          "label": "Yellow to Orange"
+        },
+        {
+          "value": "bg-gr--blue-purple",
+          "label": "Blue to Purple"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instafeed"
+    }
+  ]
+}
+{% endschema %}

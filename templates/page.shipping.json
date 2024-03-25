@@ -1,0 +1,95 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16545047227795dc22": {
+      "type": "faq-old",
+      "blocks": {
+        "1654504722306a2779-0": {
+          "type": "question",
+          "settings": {
+            "title": "Return & Refund Policy",
+            "text": "<p>It's simple — if you are not 100% satisfied with one of our products, we will create a solution for you.<\/p><p><strong>Subscription Cancellations:<\/strong> Customers with an active subscription can pause, skip or cancel their subscription at any time by logging into their account. A subscription reminder email is sent 3 days before the next scheduled shipment, allowing for modification or cancellation of the upcoming shipment. Customers who do not choose to modify or cancel their order before the charge date will be charged for, and shipped, the original order as outlined in the email. Subscription cancellations are accepted up until 24 hours before the next scheduled charge\/ shipment date. Simply reach out to sleep@klova.com if you need additional help with your subscription.<\/p><p><strong>Unopened Products:<\/strong> Accepted within 30 days of you receiving the product. If you have a subscription, you can return the latest shipment you have received within 30 days of you receiving the product. Contact customer service: sleep@klova.com for return instructions. <\/p><p><strong>Opened Products:<\/strong> Accepted within 30 days of you receiving the product. Email sleep@klova.com with your order id and reason for a refund. All refunds will be issued within 3 business days. You may also opt to exchange your product at absolutely no charge. Each paid order is allowed one free exchange, and the exchange will void any refunds on the initial paid order.<\/p><p>If you have a special circumstance, please contact Klova support: sleep@klova.com<\/p>",
+            "video_url": ""
+          }
+        },
+        "1654504722306a2779-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I make an exchange or return?",
+            "text": "<p>We hope you love our products as much as we do, but if not, we'll take care of it.<\/p><p>To initiate a return, please email us sleep@klova.com, or do so online within your <a href=\"https:\/\/www.klova.com\/account\/login\" title=\"https:\/\/www.klova.com\/account\/login\">Account<\/a>.<\/p>",
+            "video_url": ""
+          }
+        },
+        "add71199-008b-4d54-af32-a7ed3ed8719e": {
+          "type": "question",
+          "settings": {
+            "title": "How long will my exchange or return take?",
+            "text": "<p>For domestic returns, ground shipping can take up to 8 business days, depending on the shipping distance. After we receive your return at the warehouse, please allow up to 10 business days for the return to be posted to your original method of payment.<\/p><p>All Refunds will be processed within 3 business days of receiving the returned item(s), or within 3 business days of receiving the refund request if no items are to be returned.<\/p><p><strong>Please email sleep@klova.com with any questions about refunds or returns.<\/strong><\/p>",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1654504722306a2779-0",
+        "1654504722306a2779-1",
+        "add71199-008b-4d54-af32-a7ed3ed8719e"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Returns",
+        "style_overlay": ""
+      }
+    },
+    "16545047275459dce1": {
+      "type": "faq-old",
+      "blocks": {
+        "165450472757110864-0": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "text": "<p>No, we currently only ship within the USA. All products are proudly made in the USA.<\/p>",
+            "video_url": ""
+          }
+        },
+        "165450472757110864-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I update my ZPatch styles and ship date?",
+            "text": "<p>After you join, we will create a personalized <a href=\"https:\/\/www.klova.com\/account\/login\">Account<\/a> page you can access by logging into your account at <a href=\"https:\/\/www.klova.com\/\">Klova.com<\/a>. Here, you will be able to update your select new styles, and advance or delay your next shipment to your exact specifications.<\/p>",
+            "video_url": ""
+          }
+        },
+        "9a9d1cbc-eb2b-4f6a-aebb-b04cb4468473": {
+          "type": "question",
+          "settings": {
+            "title": "How do orders ship?",
+            "text": "<p>All orders ship via USPS Priority Mail. To ensure protection from lost, stolen or misplaced packages, please select and enable Route Shipping Protection at checkout.<\/p>",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "165450472757110864-0",
+        "165450472757110864-1",
+        "9a9d1cbc-eb2b-4f6a-aebb-b04cb4468473"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Shipping",
+        "style_overlay": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16545047227795dc22",
+    "16545047275459dce1"
+  ]
+}
