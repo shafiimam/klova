@@ -305,7 +305,6 @@
                     </div>
 
                   {% when 'bundle_pack' %}
-                  
                     {% if product.metafields.custom.bundle_variant !=blank %}
                     <h2 class="bundle-title">{{ block.settings.bundle_title }}</h2>
                     {% endif %}
@@ -335,9 +334,8 @@
                       </div>
                     </div>
 
-                  {% when 'bundle_btn' %}
-                   <div class="bundle-bg">
-              
+            {% when 'bundle_btn' %}
+              <div class="bundle-bg">
                 {% if block.settings.bundle_img !=blank %}
                 <div class="bundle-content">
                   <div class="bundle-image">
@@ -360,7 +358,6 @@
                   </div>  
                 </div>
                 {% endif %}
-              
             </div>
 
                   {%- when 'price' -%}

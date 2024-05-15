@@ -12,7 +12,7 @@
        <a href="{{ link.url }}">{{ link.title }}</a>
          {% if link.links.size > 0 %}{% render 'icon-caret' %}{% endif %}
       
-      {% if link.title contains 'Shop' %}
+{% if link.title contains 'Shop' %}
 <div class="sub-menu page-width">   
 
 <div class="tab mega-menu-tab">
@@ -28,7 +28,6 @@
 
 <div id="firstTab" class="tabcontent">
   <div class="mega-menu-pro" >
-    
     {% for product in collections[config.menu_collection].products %}
       <div class="product-loop animate__animated animate__faster animate__fadeInRight"   style="animation-delay: {{ forloop.index | times:100 }}ms">
       {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
@@ -36,58 +35,44 @@
     {% endfor %}
   </div>
 </div>
-
 <div id="secondTab" class="tabcontent">
  <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
- 
     {% for product in collections[config.menu_collection_two].products %}
        <div class="product-loop animate__animated animate__faster animate__fadeInRight"  style="animation-delay: {{ forloop.index | times:100 }}ms">
       {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
        </div>
     {% endfor %}
-        
  </div>
 </div>
-
 <div id="thirdTab" class="tabcontent">
    <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
- 
     {% for product in collections[config.menu_collection_three].products %}
        <div class="product-loop animate__animated animate__faster animate__fadeInRight"  style="animation-delay: {{ forloop.index | times:100 }}ms">
       {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
        </div>
     {% endfor %}
-        
    </div>
 </div>
-
   <div id="fourthTab" class="tabcontent">
    <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
- 
     {% for product in collections[config.menu_collection_four].products %}
        <div class="product-loop animate__animated animate__faster animate__fadeInRight" style="animation-delay: {{ forloop.index | times:100 }}ms">
       {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
        </div>
     {% endfor %}
-        
    </div>
 </div>
-
   <div id="fiveTab" class="tabcontent">
    <div class="animate__animated animate__faster animate__fadeInRight mega-menu-pro">
- 
     {% for product in collections[config.menu_collection_five].products %}
        <div class="product-loop animate__animated animate__faster animate__fadeInRight" style="animation-delay: {{ forloop.index | times:100 }}ms">
       {%  render 'megamenu-product', product: product, collection: collection, classes: item_classes  %}
        </div>
     {% endfor %}
-        
-   </div>
-</div>
-  
-</div>   
+                   </div>
+                </div>
+              </div>   
        {% else %}
-        
         {% if link.links.size > 0 %}
         <ul class="sub-menu page-width">
             {% for sub_link in link.links %}
@@ -103,11 +88,6 @@
     {% endfor %}
   </ul>
 {% endif %}
-
-
-
-
-
 
 
 <script>
@@ -127,12 +107,6 @@ function openTab(evt, cityName) {
 
 document.getElementById("defaultOpen").click();
 </script>
-
-
-
-
-
-
 
 
 <style>

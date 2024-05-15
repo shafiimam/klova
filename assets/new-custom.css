@@ -152,3 +152,6 @@ p.bundle-btn-text{
  padding-right:20px; 
 }  
 }
+.header-wrapper--init .hidden-nav{
+  display:none !important;
+}
