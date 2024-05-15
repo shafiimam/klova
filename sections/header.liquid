@@ -62,13 +62,8 @@
   {%- endif -%}
 </style>
 
-
-
 {% for block in section.blocks %}
-{% assign config = block.settings %}
-  
-
-
+  {% assign config = block.settings %}
 {% endfor %}
 
 <div data-section-id="{{ section.id }}" data-section-type="header">
@@ -77,16 +72,28 @@
       id="SiteHeader"
       class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
       data-sticky="{{ section.settings.header_sticky }}"
-      data-overlay="{{ overlay_header }}">
-
+      data-overlay="{{ overlay_header }}"
+    >
       <div class="site-header__element site-header__element--top">
         <div class="page-width  {% if logo_alignment == 'center' %}full-width{% endif %}">
-          <div class="header-layout" data-layout="{{ section.settings.main_menu_alignment }}" data-nav="{{ nav_position }}" data-logo-align="{{ logo_alignment }}">
-
+          <div
+            class="header-layout"
+            data-layout="{{ section.settings.main_menu_alignment }}"
+            data-nav="{{ nav_position }}"
+            data-logo-align="{{ logo_alignment }}"
+          >
             {%- if nav_position == 'below' and logo_alignment == 'left' -%}
               <div class="header-item header-item--compress-nav small--hide">
                 <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-hamburger"
+                    viewBox="0 0 64 64"
+                  >
+                    <path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path>
+                  </svg>
                   <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
                 </button>
               </div>
@@ -99,120 +106,145 @@
             {%- endif -%}
 
             {%- if nav_position == 'below' -%}
-               {% if logo_alignment != 'center' %}
-              <div class="header-item header-item--search small--hide">
-                {%- if logo_alignment == 'center' -%}
-                  <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
-                    <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
-                  </button>
-                {%- endif -%}
+              {% if logo_alignment != 'center' %}
+                <div class="header-item header-item--search small--hide">
+                  {%- if logo_alignment == 'center' -%}
+                    <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        role="presentation"
+                        class="icon icon-hamburger"
+                        viewBox="0 0 64 64"
+                      >
+                        <path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path>
+                      </svg>
+                      <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+                    </button>
+                  {%- endif -%}
 
-                {%- render 'header-search' -%}
-              </div>
+                  {%- render 'header-search' -%}
+                </div>
               {% endif %}
             {%- endif -%}
 
             {%- if nav_position == 'beside' -%}
               <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}{% unless section.settings.show_desktop_menu %} medium-up--hide{% endunless %}">
-                {%- render 'header-desktop-nav', main_menu: main_menu, nav_position: nav_position, show_mega_products: section.settings.mega_products -%}
+                {%- render 'header-desktop-nav',
+                  main_menu: main_menu,
+                  nav_position: nav_position,
+                  show_mega_products: section.settings.mega_products
+                -%}
               </div>
             {%- endif -%}
 
             {%- if logo_alignment == 'center' -%}
-              
-     <button type="button"
-      aria-controls="MobileNav"
-      class="site-nav__link site-nav__link--icon mobile-icon mobile-nav-trigger medium-up--hide">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.59961 5.9998C3.59961 5.68154 3.72604 5.37632 3.95108 5.15128C4.17612 4.92623 4.48135 4.7998 4.79961 4.7998H19.1996C19.5179 4.7998 19.8231 4.92623 20.0481 5.15128C20.2732 5.37632 20.3996 5.68154 20.3996 5.9998C20.3996 6.31806 20.2732 6.62329 20.0481 6.84833C19.8231 7.07338 19.5179 7.1998 19.1996 7.1998H4.79961C4.48135 7.1998 4.17612 7.07338 3.95108 6.84833C3.72604 6.62329 3.59961 6.31806 3.59961 5.9998ZM3.59961 11.9998C3.59961 11.6815 3.72604 11.3763 3.95108 11.1513C4.17612 10.9262 4.48135 10.7998 4.79961 10.7998H19.1996C19.5179 10.7998 19.8231 10.9262 20.0481 11.1513C20.2732 11.3763 20.3996 11.6815 20.3996 11.9998C20.3996 12.3181 20.2732 12.6233 20.0481 12.8483C19.8231 13.0734 19.5179 13.1998 19.1996 13.1998H4.79961C4.48135 13.1998 4.17612 13.0734 3.95108 12.8483C3.72604 12.6233 3.59961 12.3181 3.59961 11.9998ZM3.59961 17.9998C3.59961 17.6815 3.72604 17.3763 3.95108 17.1513C4.17612 16.9262 4.48135 16.7998 4.79961 16.7998H11.9996C12.3179 16.7998 12.6231 16.9262 12.8481 17.1513C13.0732 17.3763 13.1996 17.6815 13.1996 17.9998C13.1996 18.3181 13.0732 18.6233 12.8481 18.8483C12.6231 19.0734 12.3179 19.1998 11.9996 19.1998H4.79961C4.48135 19.1998 4.17612 19.0734 3.95108 18.8483C3.72604 18.6233 3.59961 18.3181 3.59961 17.9998Z" fill="#1E062C"/>
-      </svg>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 15L9 9M15 9L9 15" stroke="#1E062C" stroke-width="2" stroke-linecap="round"/>
-        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#1E062C" stroke-width="2"/>
-      </svg>
+              <button
+                type="button"
+                aria-controls="MobileNav"
+                class="site-nav__link site-nav__link--icon mobile-icon mobile-nav-trigger medium-up--hide"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.59961 5.9998C3.59961 5.68154 3.72604 5.37632 3.95108 5.15128C4.17612 4.92623 4.48135 4.7998 4.79961 4.7998H19.1996C19.5179 4.7998 19.8231 4.92623 20.0481 5.15128C20.2732 5.37632 20.3996 5.68154 20.3996 5.9998C20.3996 6.31806 20.2732 6.62329 20.0481 6.84833C19.8231 7.07338 19.5179 7.1998 19.1996 7.1998H4.79961C4.48135 7.1998 4.17612 7.07338 3.95108 6.84833C3.72604 6.62329 3.59961 6.31806 3.59961 5.9998ZM3.59961 11.9998C3.59961 11.6815 3.72604 11.3763 3.95108 11.1513C4.17612 10.9262 4.48135 10.7998 4.79961 10.7998H19.1996C19.5179 10.7998 19.8231 10.9262 20.0481 11.1513C20.2732 11.3763 20.3996 11.6815 20.3996 11.9998C20.3996 12.3181 20.2732 12.6233 20.0481 12.8483C19.8231 13.0734 19.5179 13.1998 19.1996 13.1998H4.79961C4.48135 13.1998 4.17612 13.0734 3.95108 12.8483C3.72604 12.6233 3.59961 12.3181 3.59961 11.9998ZM3.59961 17.9998C3.59961 17.6815 3.72604 17.3763 3.95108 17.1513C4.17612 16.9262 4.48135 16.7998 4.79961 16.7998H11.9996C12.3179 16.7998 12.6231 16.9262 12.8481 17.1513C13.0732 17.3763 13.1996 17.6815 13.1996 17.9998C13.1996 18.3181 13.0732 18.6233 12.8481 18.8483C12.6231 19.0734 12.3179 19.1998 11.9996 19.1998H4.79961C4.48135 19.1998 4.17612 19.0734 3.95108 18.8483C3.72604 18.6233 3.59961 18.3181 3.59961 17.9998Z" fill="#1E062C"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 15L9 9M15 9L9 15" stroke="#1E062C" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#1E062C" stroke-width="2"/>
+                </svg>
 
-      <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
-    </button>
-          
-             <div class="header-item header-item--icons">
-              {% include 'desktop-nav-simple' with 'menu_name_desktop' : 'menu-new-desktop','config' : 'config' %} 
-             </div>
-  
+                <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+              </button>
+
+              <div class="header-item header-item--icons">
+                {% include 'desktop-nav-simple' with 'menu_name_desktop' : 'menu-new-desktop','config' : 'config' %}
+              </div>
+
               <div class="header-item header-item--logo">
                 {%- render 'header-logo-block', section: section -%}
               </div>
 
-          <div class="header-item search-set-mob medium-up--hide">
-               <div class="search-spc">
-                       <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
-        <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
-      </a>
-                    
+              <div class="header-item search-set-mob medium-up--hide">
+                <div class="search-spc">
+                  <a
+                    href="{{ routes.search_url }}"
+                    class="site-nav__link site-nav__link--icon js-search-header js-no-transition"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="icon icon-search"
+                      viewBox="0 0 64 64"
+                    >
+                      <defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/>
+                    </svg>
+                    <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
+                  </a>
                 </div>
-            
-            <a href="{{ routes.cart_url }}"
-      id="HeaderCartTrigger"
-      aria-controls="HeaderCart"
-      class="site-nav__link site-nav__link--icon js-no-transition"
-      data-icon="{{ settings.cart_icon }}">
-      <span class="cart-link">
-        {%- if settings.cart_icon == 'cart' -%}
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25002 7.24976V7.12988C7.25002 4.96214 8.71763 3.0694 10.8171 2.52954C11.5931 2.33 12.407 2.33 13.183 2.52954C15.2824 3.0694 16.75 4.96214 16.75 7.12988V7.24976H18.2511C18.8224 7.24976 19.3073 7.66874 19.3901 8.23398L19.6088 9.72644C20.0393 12.6649 20.0393 15.6504 19.6088 18.5889C19.4008 20.0079 18.2565 21.105 16.83 21.2529L16.2011 21.3181C13.4079 21.6078 10.5921 21.6078 7.79888 21.3181L7.17001 21.2529C5.74347 21.105 4.59918 20.0079 4.39127 18.5889C3.96072 15.6504 3.96072 12.6649 4.39127 9.72643L4.60994 8.23398C4.69276 7.66874 5.17761 7.24976 5.74889 7.24976H7.25002ZM11.1906 3.98228C11.7216 3.84575 12.2784 3.84575 12.8094 3.98228C14.2459 4.35166 15.25 5.64669 15.25 7.12988V7.24976H8.75002V7.12988C8.75002 5.64669 9.75417 4.35166 11.1906 3.98228ZM7.25002 8.74976V10.9998C7.25002 11.414 7.5858 11.7498 8.00002 11.7498C8.41423 11.7498 8.75002 11.414 8.75002 10.9998V8.74976H15.25V10.9998C15.25 11.414 15.5858 11.7498 16 11.7498C16.4142 11.7498 16.75 11.414 16.75 10.9998V8.74976H17.9496L18.1246 9.94389C18.534 12.7381 18.534 15.5772 18.1246 18.3714C18.0162 19.1115 17.4193 19.6837 16.6753 19.7609L16.0464 19.8261C13.356 20.1051 10.644 20.1051 7.95361 19.8261L7.32474 19.7609C6.5807 19.6837 5.98386 19.1115 5.87542 18.3714C5.46601 15.5772 5.46601 12.7381 5.87542 9.94389L6.05039 8.74976H7.25002Z" fill="#1E062C"/>
-          </svg>
-        {%- elsif settings.cart_icon == 'bag-minimal' -%}
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 6H16C16 3.79 14.21 2 12 2C9.79 2 8 3.79 8 6H6C4.9 6 4 6.9 4 8V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6ZM12 4C13.1 4 14 4.9 14 6H10C10 4.9 10.9 4 12 4ZM18 20H6V8H8V10C8 10.55 8.45 11 9 11C9.55 11 10 10.55 10 10V8H14V10C14 10.55 14.45 11 15 11C15.55 11 16 10.55 16 10V8H18V20Z" fill="#1E062C"/>
-          </svg>
-        {%- else -%}
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25002 7.24976V7.12988C7.25002 4.96214 8.71763 3.0694 10.8171 2.52954C11.5931 2.33 12.407 2.33 13.183 2.52954C15.2824 3.0694 16.75 4.96214 16.75 7.12988V7.24976H18.2511C18.8224 7.24976 19.3073 7.66874 19.3901 8.23398L19.6088 9.72644C20.0393 12.6649 20.0393 15.6504 19.6088 18.5889C19.4008 20.0079 18.2565 21.105 16.83 21.2529L16.2011 21.3181C13.4079 21.6078 10.5921 21.6078 7.79888 21.3181L7.17001 21.2529C5.74347 21.105 4.59918 20.0079 4.39127 18.5889C3.96072 15.6504 3.96072 12.6649 4.39127 9.72643L4.60994 8.23398C4.69276 7.66874 5.17761 7.24976 5.74889 7.24976H7.25002ZM11.1906 3.98228C11.7216 3.84575 12.2784 3.84575 12.8094 3.98228C14.2459 4.35166 15.25 5.64669 15.25 7.12988V7.24976H8.75002V7.12988C8.75002 5.64669 9.75417 4.35166 11.1906 3.98228ZM7.25002 8.74976V10.9998C7.25002 11.414 7.5858 11.7498 8.00002 11.7498C8.41423 11.7498 8.75002 11.414 8.75002 10.9998V8.74976H15.25V10.9998C15.25 11.414 15.5858 11.7498 16 11.7498C16.4142 11.7498 16.75 11.414 16.75 10.9998V8.74976H17.9496L18.1246 9.94389C18.534 12.7381 18.534 15.5772 18.1246 18.3714C18.0162 19.1115 17.4193 19.6837 16.6753 19.7609L16.0464 19.8261C13.356 20.1051 10.644 20.1051 7.95361 19.8261L7.32474 19.7609C6.5807 19.6837 5.98386 19.1115 5.87542 18.3714C5.46601 15.5772 5.46601 12.7381 5.87542 9.94389L6.05039 8.74976H7.25002Z" fill="#1E062C"/>
-        </svg>
-        {%- endif -%}
-        <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}">
-          <span class="cart-link__bubble-num">{{ cart.item_count }}</span>
-        </span>
-      </span>
-            {% comment %}
-      <span class="site-nav__icon-label small--hide{% if hide_icon_labels %} icon__fallback-text{% endif %}">
-        {{ 'layout.cart.title' | t }}
-      </span>
-      {% endcomment %}
-    </a>
-            
-          </div>
 
-            
-            
+                <a
+                  href="{{ routes.cart_url }}"
+                  id="HeaderCartTrigger"
+                  aria-controls="HeaderCart"
+                  class="site-nav__link site-nav__link--icon js-no-transition"
+                  data-icon="{{ settings.cart_icon }}"
+                >
+                  <span class="cart-link">
+                    {%- if settings.cart_icon == 'cart' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25002 7.24976V7.12988C7.25002 4.96214 8.71763 3.0694 10.8171 2.52954C11.5931 2.33 12.407 2.33 13.183 2.52954C15.2824 3.0694 16.75 4.96214 16.75 7.12988V7.24976H18.2511C18.8224 7.24976 19.3073 7.66874 19.3901 8.23398L19.6088 9.72644C20.0393 12.6649 20.0393 15.6504 19.6088 18.5889C19.4008 20.0079 18.2565 21.105 16.83 21.2529L16.2011 21.3181C13.4079 21.6078 10.5921 21.6078 7.79888 21.3181L7.17001 21.2529C5.74347 21.105 4.59918 20.0079 4.39127 18.5889C3.96072 15.6504 3.96072 12.6649 4.39127 9.72643L4.60994 8.23398C4.69276 7.66874 5.17761 7.24976 5.74889 7.24976H7.25002ZM11.1906 3.98228C11.7216 3.84575 12.2784 3.84575 12.8094 3.98228C14.2459 4.35166 15.25 5.64669 15.25 7.12988V7.24976H8.75002V7.12988C8.75002 5.64669 9.75417 4.35166 11.1906 3.98228ZM7.25002 8.74976V10.9998C7.25002 11.414 7.5858 11.7498 8.00002 11.7498C8.41423 11.7498 8.75002 11.414 8.75002 10.9998V8.74976H15.25V10.9998C15.25 11.414 15.5858 11.7498 16 11.7498C16.4142 11.7498 16.75 11.414 16.75 10.9998V8.74976H17.9496L18.1246 9.94389C18.534 12.7381 18.534 15.5772 18.1246 18.3714C18.0162 19.1115 17.4193 19.6837 16.6753 19.7609L16.0464 19.8261C13.356 20.1051 10.644 20.1051 7.95361 19.8261L7.32474 19.7609C6.5807 19.6837 5.98386 19.1115 5.87542 18.3714C5.46601 15.5772 5.46601 12.7381 5.87542 9.94389L6.05039 8.74976H7.25002Z" fill="#1E062C"/>
+                      </svg>
+                    {%- elsif settings.cart_icon == 'bag-minimal' -%}
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6H16C16 3.79 14.21 2 12 2C9.79 2 8 3.79 8 6H6C4.9 6 4 6.9 4 8V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6ZM12 4C13.1 4 14 4.9 14 6H10C10 4.9 10.9 4 12 4ZM18 20H6V8H8V10C8 10.55 8.45 11 9 11C9.55 11 10 10.55 10 10V8H14V10C14 10.55 14.45 11 15 11C15.55 11 16 10.55 16 10V8H18V20Z" fill="#1E062C"/>
+                      </svg>
+                    {%- else -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25002 7.24976V7.12988C7.25002 4.96214 8.71763 3.0694 10.8171 2.52954C11.5931 2.33 12.407 2.33 13.183 2.52954C15.2824 3.0694 16.75 4.96214 16.75 7.12988V7.24976H18.2511C18.8224 7.24976 19.3073 7.66874 19.3901 8.23398L19.6088 9.72644C20.0393 12.6649 20.0393 15.6504 19.6088 18.5889C19.4008 20.0079 18.2565 21.105 16.83 21.2529L16.2011 21.3181C13.4079 21.6078 10.5921 21.6078 7.79888 21.3181L7.17001 21.2529C5.74347 21.105 4.59918 20.0079 4.39127 18.5889C3.96072 15.6504 3.96072 12.6649 4.39127 9.72643L4.60994 8.23398C4.69276 7.66874 5.17761 7.24976 5.74889 7.24976H7.25002ZM11.1906 3.98228C11.7216 3.84575 12.2784 3.84575 12.8094 3.98228C14.2459 4.35166 15.25 5.64669 15.25 7.12988V7.24976H8.75002V7.12988C8.75002 5.64669 9.75417 4.35166 11.1906 3.98228ZM7.25002 8.74976V10.9998C7.25002 11.414 7.5858 11.7498 8.00002 11.7498C8.41423 11.7498 8.75002 11.414 8.75002 10.9998V8.74976H15.25V10.9998C15.25 11.414 15.5858 11.7498 16 11.7498C16.4142 11.7498 16.75 11.414 16.75 10.9998V8.74976H17.9496L18.1246 9.94389C18.534 12.7381 18.534 15.5772 18.1246 18.3714C18.0162 19.1115 17.4193 19.6837 16.6753 19.7609L16.0464 19.8261C13.356 20.1051 10.644 20.1051 7.95361 19.8261L7.32474 19.7609C6.5807 19.6837 5.98386 19.1115 5.87542 18.3714C5.46601 15.5772 5.46601 12.7381 5.87542 9.94389L6.05039 8.74976H7.25002Z" fill="#1E062C"/>
+                      </svg>
+                    {%- endif -%}
+                    <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}">
+                      <span class="cart-link__bubble-num">{{ cart.item_count }}</span>
+                    </span>
+                  </span>
+                  {% comment %}
+                    <span class="site-nav__icon-label small--hide{% if hide_icon_labels %} icon__fallback-text{% endif %}">
+                      {{ 'layout.cart.title' | t }}
+                    </span>
+                  {% endcomment %}
+                </a>
+              </div>
+
               <div class="header-item header-item--search small--hide">
-
                 <div class="search-spc data-demo" data-fancybox data-src="#dialog-content">
-                    
-                 
-               
-                 {%- render 'header-icons', section: section, nav_position: nav_position -%}
-                   </div>
+                  {%- render 'header-icons', section: section, nav_position: nav_position -%}
+                </div>
                 {%- if logo_alignment == 'center' -%}
-                  <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu medium-up--hide">
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                  <button
+                    type="button"
+                    class="site-nav__link site-nav__link--icon site-nav__compress-menu medium-up--hide"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="icon icon-hamburger"
+                      viewBox="0 0 64 64"
+                    >
+                      <path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path>
+                    </svg>
                     <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
                   </button>
                 {%- endif -%}
-
-           
               </div>
-  
             {%- endif -%}
 
-  {% if logo_alignment != 'center' %}
-            <div class="header-item header-item--icons">
-              {% include 'desktop-nav-simple' with 'menu_name_desktop' : 'menu-new-desktop' %} 
-              {%- render 'header-icons', section: section, nav_position: nav_position -%}
-            </div>
-  {%- endif -%}
-  
+            {% if logo_alignment != 'center' %}
+              <div class="header-item header-item--icons">
+                {% include 'desktop-nav-simple' with 'menu_name_desktop' : 'menu-new-desktop' %}
+                {%- render 'header-icons', section: section, nav_position: nav_position -%}
+              </div>
+            {%- endif -%}
           </div>
         </div>
 
@@ -221,7 +253,17 @@
             <div class="site-header__search">
               {%- render 'header-search' -%}
               <button type="button" class="text-link site-header__search-btn site-header__search-btn--cancel">
-                <span class="medium-up--hide"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg></span>
+                <span class="medium-up--hide">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-close"
+                    viewBox="0 0 64 64"
+                  >
+                    <defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/>
+                  </svg>
+                </span>
                 <span class="small--hide">{{ 'general.search.cancel' | t }}</span>
               </button>
             </div>
@@ -230,9 +272,17 @@
       </div>
 
       {%- if nav_position == 'below' -%}
-        <div class="site-header__element site-header__element--sub {% unless section.settings.show_desktop_menu %}medium-up--hide{% endunless %}" data-type="nav">
+    
+        <div
+          class="site-header__element site-header__element--sub {% unless section.settings.show_desktop_menu %}medium-up--hide{% endunless %}"
+          data-type="nav"
+        >
           <div class="page-width{% if logo_alignment == 'center' %} text-center{% endif %}">
-            {%- render 'header-desktop-nav', main_menu: main_menu, nav_position: nav_position, show_mega_products: section.settings.mega_products -%}
+            {%- render 'header-desktop-nav',
+              main_menu: main_menu,
+              nav_position: nav_position,
+              show_mega_products: section.settings.mega_products
+            -%}
           </div>
         </div>
 
@@ -241,6 +291,7 @@
             {%- render 'header-search' -%}
           </div>
         </div>
+        
       {%- endif -%}
 
       <div class="site-header__drawers">
@@ -309,279 +360,279 @@
     </header>
   </div>
 </div>
-                  {% comment %}
-                   <script>
-      Fancybox.bind('[data-fancybox]', {
-        // Custom options for all galleries
-      });    
-    </script>
-    {% endcomment %}
+{% comment %}
+                 <script>
+    Fancybox.bind('[data-fancybox]', {
+      // Custom options for all galleries
+    });
+  </script>
+{% endcomment %}
 
 {% schema %}
-  {
-    "name": "Header",
-    "class": "header-section",
-    "settings": [
-      {
-        "type": "link_list",
-        "id": "main_menu_link_list",
-        "label": "Navigation",
-        "default": "main-menu"
-      },
-      {
-        "type":"link_list",
-          "id":"mobile_menu_link_list",
-        "label":"Mobile Menu"
-      },
-      {
-        "type": "select",
-        "id": "main_menu_alignment",
-        "label": "Layout",
-        "default": "below",
-        "options": [
-          {
-            "value": "below",
-            "label": "Logo left, menu below"
-          },
-          {
-            "value": "left",
-            "label": "Logo left, menu left"
-          },
-          {
-            "value": "left-center",
-            "label": "Logo left, menu center"
-          },
-          {
-            "value": "center",
-            "label": "Logo center, menu below"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "id": "menu_bolder",
-        "label": "Make menu text bolder",
-        "info": "Enter the serial number in the menu. Example: 1,2"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_desktop_menu",
-        "label": "Show desktop Menu",
-        "default": true
-      },
+{
+  "name": "Header",
+  "class": "header-section",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "main_menu_link_list",
+      "label": "Navigation",
+      "default": "main-menu"
+    },
+    {
+      "type":"link_list",
+        "id":"mobile_menu_link_list",
+      "label":"Mobile Menu"
+    },
+    {
+      "type": "select",
+      "id": "main_menu_alignment",
+      "label": "Layout",
+      "default": "below",
+      "options": [
+        {
+          "value": "below",
+          "label": "Logo left, menu below"
+        },
+        {
+          "value": "left",
+          "label": "Logo left, menu left"
+        },
+        {
+          "value": "left-center",
+          "label": "Logo left, menu center"
+        },
+        {
+          "value": "center",
+          "label": "Logo center, menu below"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "menu_bolder",
+      "label": "Make menu text bolder",
+      "info": "Enter the serial number in the menu. Example: 1,2"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_desktop_menu",
+      "label": "Show desktop Menu",
+      "default": true
+    },
 
-      {
-        "type": "checkbox",
-        "id": "mega_products",
-        "label": "Show first product in mega menus",
-        "info": "[Learn more](https://archetypethemes.co/blogs/expanse/how-do-i-create-a-mega-menu)",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_search_icon",
-        "label": "Show 'search' icon",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "header_sticky",
-        "label": "Enable sticky header",
-        "default": true,
-        "info": "Recommended"
-      },
-      {
-        "type": "checkbox",
-        "id": "header_footer_menu",
-        "label": "Show footer content on mobile menu",
-        "default": true,
-        "info": "Recommended"
-      },
-      {
-        "type": "checkbox",
-        "id": "sticky_index",
-        "label": "Overlay header over home page",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "sticky_collection",
-        "label": "Overlay header over collection",
-        "info": "(if collection image is enabled)",
-        "default": false
-      },
-      {
-        "type": "header",
-        "content": "Category menu"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_category_menu",
-        "label": "Show category Menu",
-        "default": true
-      },
-      {
-        "type": "text",
-        "id": "title_category_menu",
-        "label": "Title name category menu",
-        "default": "Category menu"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "logo",
-        "name": "Logo",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "logo",
-            "label": "Logo"
-          },
-          {
-            "type": "image_picker",
-            "id": "logo-inverted",
-            "label": "White logo",
-            "info": "Used when on top of an image"
-          },
-          {
-            "type": "html",
-            "id": "svg_main",
-            "label": "Svg",
-            "info": "Right click on SVG file. Open with any text editor and copy all code. Paste code in above box. Contact us if you face issue."
-          },
-          {
-            "type": "html",
-            "id": "svg_mobile",
-            "label": "Svg for mobile",
-            "info": "Right click on SVG file. Open with any text editor and copy all code. Paste code in above box. Contact us if you face issue."
-          },
-          {
-            "type": "range",
-            "id": "desktop_logo_width",
-            "label": "Desktop logo width",
-            "default": 200,
-            "min": 40,
-            "max": 200,
-            "step": 10,
-            "unit": "px"
-          },
-          {
-            "type": "range",
-            "id": "mobile_logo_width",
-            "label": "Mobile logo width",
-            "default": 140,
-            "min": 40,
-            "max": 200,
-            "step": 10,
-            "unit": "px",
-            "info": "Set as a max-width, may appear smaller"
-          }
-        ]
-      },
-      {
-        "type": "category",
-        "name": "Menu category",
-        "limit": 8,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Banner"
-          },
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "info": "You can change the default text, or leave it blank"
-          },
-          {
-            "type": "collection",
-            "id": "collection",
-            "label": "Collection"
-          },
-          {
-            "type": "url",
-            "id": "url",
-            "label": "Link"
-          }
-        ]
-      },
-      {
-        "type": "MegaMenu",
-        "name": "Mega Menu",
-        "limit": 5,
-        "settings": [
-          {
-            "type": "text",
-            "id": "menu_title",
-            "label": "Title One",
-            "info": "You can change the default text, or leave it blank"
-          },
-          {
-            "type": "collection",
-            "id": "menu_collection",
-            "label": "Collection One"
-          },
-          {
-            "type": "text",
-            "id": "menu_title_two",
-            "label": "Title Two",
-            "info": "You can change the default text, or leave it blank"
-          },
-          {
-            "type": "collection",
-            "id": "menu_collection_two",
-            "label": "Collection Two"
-          },
-          {
-            "type": "text",
-            "id": "menu_title_three",
-            "label": "Title Three",
-            "info": "You can change the default text, or leave it blank"
-          },
-          {
-            "type": "collection",
-            "id": "menu_collection_three",
-            "label": "Collection Three"
-          },
-          {
-            "type": "text",
-            "id": "menu_title_four",
-            "label": "Title Four",
-            "info": "You can change the default text, or leave it blank"
-          },
-          {
-            "type": "collection",
-            "id": "menu_collection_four",
-            "label": "Collection Four"
-          },
-          {
-            "type": "text",
-            "id": "menu_title_five",
-            "label": "Title Five",
-            "info": "You can change the default text, or leave it blank"
-          },
-          {
-            "type": "collection",
-            "id": "menu_collection_five",
-            "label": "Collection Five"
-          },
-          {
-            "type":"text",
-              "id":"shopall_text",
-            "label":"Shop all Text"
-          },
-          {
-            "type":"url",
-              "id":"shopall_url",
-            "label":"Shop all URL"
-          }
-        ]
-      }
-    ],
-    "default": {
-      "settings": {}
+    {
+      "type": "checkbox",
+      "id": "mega_products",
+      "label": "Show first product in mega menus",
+      "info": "[Learn more](https://archetypethemes.co/blogs/expanse/how-do-i-create-a-mega-menu)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search_icon",
+      "label": "Show 'search' icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "header_sticky",
+      "label": "Enable sticky header",
+      "default": true,
+      "info": "Recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "header_footer_menu",
+      "label": "Show footer content on mobile menu",
+      "default": true,
+      "info": "Recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_index",
+      "label": "Overlay header over home page",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_collection",
+      "label": "Overlay header over collection",
+      "info": "(if collection image is enabled)",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Category menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category_menu",
+      "label": "Show category Menu",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title_category_menu",
+      "label": "Title name category menu",
+      "default": "Category menu"
     }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo-inverted",
+          "label": "White logo",
+          "info": "Used when on top of an image"
+        },
+        {
+          "type": "html",
+          "id": "svg_main",
+          "label": "Svg",
+          "info": "Right click on SVG file. Open with any text editor and copy all code. Paste code in above box. Contact us if you face issue."
+        },
+        {
+          "type": "html",
+          "id": "svg_mobile",
+          "label": "Svg for mobile",
+          "info": "Right click on SVG file. Open with any text editor and copy all code. Paste code in above box. Contact us if you face issue."
+        },
+        {
+          "type": "range",
+          "id": "desktop_logo_width",
+          "label": "Desktop logo width",
+          "default": 200,
+          "min": 40,
+          "max": 200,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "mobile_logo_width",
+          "label": "Mobile logo width",
+          "default": 140,
+          "min": 40,
+          "max": 200,
+          "step": 10,
+          "unit": "px",
+          "info": "Set as a max-width, may appear smaller"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "name": "Menu category",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Banner"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "You can change the default text, or leave it blank"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "type": "MegaMenu",
+      "name": "Mega Menu",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "Title One",
+          "info": "You can change the default text, or leave it blank"
+        },
+        {
+          "type": "collection",
+          "id": "menu_collection",
+          "label": "Collection One"
+        },
+        {
+          "type": "text",
+          "id": "menu_title_two",
+          "label": "Title Two",
+          "info": "You can change the default text, or leave it blank"
+        },
+        {
+          "type": "collection",
+          "id": "menu_collection_two",
+          "label": "Collection Two"
+        },
+        {
+          "type": "text",
+          "id": "menu_title_three",
+          "label": "Title Three",
+          "info": "You can change the default text, or leave it blank"
+        },
+        {
+          "type": "collection",
+          "id": "menu_collection_three",
+          "label": "Collection Three"
+        },
+        {
+          "type": "text",
+          "id": "menu_title_four",
+          "label": "Title Four",
+          "info": "You can change the default text, or leave it blank"
+        },
+        {
+          "type": "collection",
+          "id": "menu_collection_four",
+          "label": "Collection Four"
+        },
+        {
+          "type": "text",
+          "id": "menu_title_five",
+          "label": "Title Five",
+          "info": "You can change the default text, or leave it blank"
+        },
+        {
+          "type": "collection",
+          "id": "menu_collection_five",
+          "label": "Collection Five"
+        },
+        {
+          "type":"text",
+            "id":"shopall_text",
+          "label":"Shop all Text"
+        },
+        {
+          "type":"url",
+            "id":"shopall_url",
+          "label":"Shop all URL"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "settings": {}
   }
+}
 {% endschema %}

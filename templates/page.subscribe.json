@@ -1,0 +1,424 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "call_to_action_nVAA3A": {
+      "type": "call-to-action",
+      "settings": {
+        "marginsection": "0px 0px 0px 0px",
+        "marginsection_mob": "0px 0px 0px 0px",
+        "call_to_action_desktop_image": "shopify:\/\/shop_images\/Frame_1000003711.jpg",
+        "call_to_action_mobile_image": "shopify:\/\/shop_images\/Frame_1000003704_e80852ec-c6b4-4baa-b744-06fc9b414841.jpg",
+        "call_to_action_title": "Subscribe, Save and Simplify Your Routine",
+        "call_to_action_descr": "<p>Easily receive your orders at your doorstep, without any hassle. Subscribe today to enjoy a 10% discount and free shipping on all orders.<\/p>",
+        "call_to_action_button": "Manage my subscription",
+        "call_to_action_button_link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/get-subscription-link"
+      }
+    },
+    "slideshow_image_WdVijj": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_bgjYHq": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/account\/login",
+            "image": "shopify:\/\/shop_images\/Frame_1000003697.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003704.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_bgjYHq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".hero__slide-link {display: block !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "text_columns_FbgYrU": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_JUdz83": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/step_1.jpg",
+            "image_width": 390,
+            "title": "Select your product",
+            "text": "<p>Choose your product and click Subscribe & Save 20% above the Add to Cart button on the product’s page.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_ijDAV9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/step_2.jpg",
+            "image_width": 390,
+            "title": "How Often Do You Want It?",
+            "text": "<p>You get to control how often your shipments go out - every four, six or eight weeks!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_TBGbnD": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/step_3.jpg",
+            "image_width": 390,
+            "title": "Set It and Forget It (or be hands on)",
+            "text": "<p>Add to cart, check out, and leave your deliveries on autopilot. Pause, cancel, or restart or add products to your subscription any time.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_JUdz83",
+        "text_block_ijDAV9",
+        "text_block_TBGbnD"
+      ],
+      "custom_css": [
+        ".grid__item .h3 {color: #1e062c; font-family: Montserrat; font-size: 18px; font-style: normal; font-weight: 700; line-height: 24px;}",
+        ".grid__item p {color: #1e062c; font-family: Montserrat; font-size: 14px; font-style: normal; font-weight: 400; line-height: 22px;}"
+      ],
+      "settings": {
+        "title": "How It Works",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "logo_list_with_cta_jaLDpG": {
+      "type": "logo-list-with-cta",
+      "blocks": {
+        "logo_image_iHHw8T": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/discount_1.png",
+            "logo_title": "SAVE 20% ON EVERY ORDER"
+          }
+        },
+        "logo_image_e4QYF3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/truck_1.png",
+            "logo_title": "FREE SHIPPING ALWAYS"
+          }
+        },
+        "logo_image_dTMWGd": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/delete-symbol_2891452_2.png",
+            "logo_title": "EDIT OR CANCEL ANYTIME"
+          }
+        },
+        "logo_image_MjbX4f": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/time-management_2.png",
+            "logo_title": "EARLY ACCESS TO PRODUCTS"
+          }
+        },
+        "logo_image_BGjgE7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/people_2.png",
+            "logo_title": "CUSTOMER SUPPORT"
+          }
+        },
+        "logo_image_NCaLBz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/30-days_1.png",
+            "logo_title": "30 DAY MONEY BACK GUARANTEE"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_iHHw8T",
+        "logo_image_e4QYF3",
+        "logo_image_dTMWGd",
+        "logo_image_MjbX4f",
+        "logo_image_BGjgE7",
+        "logo_image_NCaLBz"
+      ],
+      "settings": {
+        "title": "Member Benefits",
+        "divider": true,
+        "link": "#subscribe",
+        "button_label": "SUBSCRIBE AND SAVE"
+      }
+    },
+    "featured_product_JFRwCM": {
+      "type": "featured-product",
+      "blocks": {
+        "custom_VctgTi": {
+          "type": "custom",
+          "settings": {
+            "code": "<span id=\"subscribe\"><\/span>"
+          }
+        },
+        "judge_me_reviews_preview_badge_homepage_xYJWfN": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "sleep-patch"
+          }
+        },
+        "description_Qp9b9Y": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "one_pack_jweDpd": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_9bVNxx": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Bundle Pack"
+          }
+        },
+        "variant_picker_rhwYKH": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart": "",
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "skio_plan_picker_GwigUA": {
+          "type": "skio-plan-picker",
+          "settings": {
+          }
+        },
+        "quantity_selector_UqkCPw": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "sales_point_GVGwhz": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
+        }
+      },
+      "block_order": [
+        "custom_VctgTi",
+        "judge_me_reviews_preview_badge_homepage_xYJWfN",
+        "description_Qp9b9Y",
+        "one_pack_jweDpd",
+        "bundle_pack_9bVNxx",
+        "variant_picker_rhwYKH",
+        "skio_plan_picker_GwigUA",
+        "quantity_selector_UqkCPw",
+        "sales_point_GVGwhz"
+      ],
+      "custom_css": [
+        ".shopify-payment-button {display: none;}"
+      ],
+      "settings": {
+        "featured_product": "sleep-patch",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": false,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "review_slider_geArHr": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_9H73c8": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
+            "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
+            "reviewer_name": "Dr. Sydne Ford",
+            "product_image": "shopify:\/\/shop_images\/YOUR_ARTWORKS_HERE.png",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_A9crA9": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.jpg",
+            "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
+            "reviewer_name": "Brandon T.",
+            "product_image": "shopify:\/\/shop_images\/YOUR_ARTWORKS_HERE.png",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_mz4nnG": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.jpg",
+            "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
+            "reviewer_name": "Heather T.",
+            "product_image": "shopify:\/\/shop_images\/YOUR_ARTWORKS_HERE.png",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_9H73c8",
+        "review_card_A9crA9",
+        "review_card_mz4nnG"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "review_count": "5209",
+        "divider": false
+      }
+    },
+    "benefits_card_yGWiri": {
+      "type": "benefits-card",
+      "blocks": {
+        "text_pq3FmU": {
+          "type": "text",
+          "settings": {
+            "acc-button": "HOW CAN I USE DEDICATED SUPPORT?",
+            "acc-text": "<p>To utilize our dedicated support, simply reach out via our customer service portal on our website or give us a call. Our team is ready to assist with any questions or concerns.<\/p>"
+          }
+        },
+        "text_w7qKnd": {
+          "type": "text",
+          "settings": {
+            "acc-button": "SHOULD I SUBSCRIBE EVEN IF I’M NEW TO KLOVA?",
+            "acc-text": "<p>Starting with a subscription is a great way to experience Klova's full benefits. It's flexible, and you can easily adjust or cancel anytime. Plus, subscribers often enjoy exclusive perks and discounts.<\/p>"
+          }
+        },
+        "text_wnRN3X": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHAT ARE THE PAYMENT OPTIONS?",
+            "acc-text": "<p>Klova accepts a variety of payment options, including major credit cards and PayPal, to ensure a seamless checkout process.<\/p>"
+          }
+        },
+        "text_9qUpkz": {
+          "type": "text",
+          "settings": {
+            "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any. If you're not completely satisfied, we'll make it right.<\/p>"
+          }
+        },
+        "text_qQkB7X": {
+          "type": "text",
+          "settings": {
+            "acc-button": "CAN I STILL GET DEALS IF I’M NOT SUBSCRIBED?",
+            "acc-text": "<p>Absolutely! While subscribers get regular deals, we also offer promotions and discounts to our non-subscribed customers. Keep an eye on our website and social media for the latest offers.<\/p>"
+          }
+        },
+        "text_3BDmHJ": {
+          "type": "text",
+          "settings": {
+            "acc-button": "HOW DO I RECEIVE DISCOUNTS?",
+            "acc-text": "<p>Stay updated on discounts by signing up for our newsletter, following us on social media, and visiting our website regularly. Plus, first-time buyers and subscribers often receive special discounts.<\/p>"
+          }
+        },
+        "text_B8PCBJ": {
+          "type": "text",
+          "settings": {
+            "acc-button": "WHEN SHOULD I EXPECT MY PATCHES?",
+            "acc-text": "<p>Once your order is placed, we process and ship quickly. Expect your Klova patches to arrive within 5 business days, ready to support your wellness journey.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_pq3FmU",
+        "text_w7qKnd",
+        "text_wnRN3X",
+        "text_9qUpkz",
+        "text_qQkB7X",
+        "text_3BDmHJ",
+        "text_B8PCBJ"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "position_image": "benefits-card__inner_right",
+        "text-align": "benefits-card__content_left",
+        "bcg-color": "#faf9fb",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-1-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_7-1-min.jpg",
+        "title": "Questions",
+        "text": "<p>We’re here to help!<\/p>"
+      }
+    },
+    "slideshow_image_KdWMyx": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_P7qENz": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_P7qENz"
+      ],
+      "custom_css": [
+        ".hero__slide-link {display: block !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "call_to_action_nVAA3A",
+    "slideshow_image_WdVijj",
+    "text_columns_FbgYrU",
+    "logo_list_with_cta_jaLDpG",
+    "featured_product_JFRwCM",
+    "review_slider_geArHr",
+    "benefits_card_yGWiri",
+    "slideshow_image_KdWMyx"
+  ]
+}

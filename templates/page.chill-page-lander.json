@@ -1,0 +1,403 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "landing_page_announcement_bar_3yi9We": {
+      "type": "landing-page-announcement-bar",
+      "custom_css": [
+        ".zsleep-announcement-money-content {background: rgba(103, 201, 187, 0.2) !important;}",
+        ".announcement-money-text span {color: rgba(103, 201, 187, 0.95) !important;}"
+      ],
+      "settings": {
+        "announcement_text": "30 DAY MONEY BACK GUARANTEE"
+      }
+    },
+    "zsleep_announcement_logo_ngYbUT": {
+      "type": "zsleep-announcement-logo",
+      "custom_css": [
+        ".zsleep-announcement-bar-content {background: rgba(103, 201, 187, 0.95);}"
+      ],
+      "settings": {
+      }
+    },
+    "page_video_banner_byN9Vk": {
+      "type": "page-video-banner",
+      "blocks": {
+        "content_UmCVLd": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Dear Friend,<\/p>"
+          }
+        },
+        "content_g6U9Gb": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Do the day's stresses follow you home? If you find relaxation elusive and calm a distant dream, you're in good company.<\/p>"
+          }
+        },
+        "content_NBWAmF": {
+          "type": "content",
+          "settings": {
+            "content": "<p>That sinking feeling of being unable to unwind is more common than you might think. <\/p>"
+          }
+        },
+        "content_Gjqwcr": {
+          "type": "content",
+          "settings": {
+            "content": "<p>It's not just about the discomfort in the moment; it's about the ripple effects on your mood, focus, and overall well-being.<\/p>"
+          }
+        },
+        "content_8HWY8R": {
+          "type": "content",
+          "settings": {
+            "content": "<p>It's time to address this challenge directly.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_UmCVLd",
+        "content_g6U9Gb",
+        "content_NBWAmF",
+        "content_Gjqwcr",
+        "content_8HWY8R"
+      ],
+      "custom_css": [
+        ".zsleep-show-content {background: rgba(103, 201, 187, 0.2);}",
+        ".sleep-patch-data {background: rgba(103, 201, 187, 0.95); height: 100%;}",
+        ".trans-text {color: rgba(103, 201, 187, 0.95);}"
+      ],
+      "settings": {
+        "heading": "Unwind Your Mind With Klova's Chill Patch",
+        "subHeading": "",
+        "video_thumbnail": "https:\/\/d9hhrg4mnvzow.cloudfront.net\/shop.klova.com\/zsleep-patches\/c4b1f0a6-screen-shot-2021-08-12-at-10-32-15-am_10fo093000000000000028.png",
+        "image_banner": "shopify:\/\/shop_images\/banner4_Klova_for_landing_page.jpg",
+        "video": "shopify:\/\/files\/videos\/2 [Klova] The Doctors TV Show about Klova Make a smaller Positive Version-.mp4",
+        "video_caption": "<p><strong>Embrace serenity wherever you roam. With Chill Patch, find your moment of peace, just like the tranquility of nature—effortlessly.<\/strong><\/p>",
+        "heading2": "Introducing the Klova Chill Patch, your secret to maintaining tranquility and balance every day. ",
+        "subheading2": "The Chill Patch, infused with natural ingredients, is designed to soothe your mind and promote a sense of peace.",
+        "image": "shopify:\/\/shop_images\/1.Chill_Patch.jpg",
+        "subheading3": "...let our patch be your guide to a calmer, more centered state of being.",
+        "subheading4": "Sub Heading 4"
+      }
+    },
+    "chill_patch_works_h6FBEM": {
+      "type": "chill-patch-works",
+      "blocks": {
+        "text_WpJEKT": {
+          "type": "how-to-image",
+          "settings": {
+            "peelgif": "shopify:\/\/shop_images\/peel.gif",
+            "peel_text": "Peel"
+          }
+        },
+        "text_64LJr6": {
+          "type": "how-to-image",
+          "settings": {
+            "peelgif": "shopify:\/\/shop_images\/Stick_1.gif",
+            "peel_text": "Stick"
+          }
+        },
+        "text_zibRt4": {
+          "type": "how-to-image",
+          "settings": {
+            "peelgif": "shopify:\/\/shop_images\/Chill_Patch_-_Thumbnail_Animation_1.gif",
+            "peel_text": "Chill"
+          }
+        },
+        "work_formula_WJCrit": {
+          "type": "work_formula",
+          "settings": {
+            "text": "<p><strong>Simple Application:<\/strong> Just place the patch on a clean, hairless part of your body.<\/p>"
+          }
+        },
+        "work_formula_p4tHqh": {
+          "type": "work_formula",
+          "settings": {
+            "text": "<p><strong>Natural Ingredients:<\/strong> A carefully selected mix, led by Sensoril® Ashwagandha, ensures serenity without artificial interventions.<\/p>"
+          }
+        },
+        "work_formula_YAdX7a": {
+          "type": "work_formula",
+          "settings": {
+            "text": "<p><strong>Doctor Endorsed:<\/strong> Thoroughly vetted and supported within the healthcare community.<\/p>"
+          }
+        },
+        "work_formula_UJr79h": {
+          "type": "work_formula",
+          "settings": {
+            "text": "<p><strong>Satisfaction Guaranteed: <\/strong>Feel the difference or it's on us, with a 30-day money-back guarantee.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_WpJEKT",
+        "text_64LJr6",
+        "text_zibRt4",
+        "work_formula_WJCrit",
+        "work_formula_p4tHqh",
+        "work_formula_YAdX7a",
+        "work_formula_UJr79h"
+      ],
+      "custom_css": [
+        ".zsleep-works-content {background: rgba(103, 201, 187, 0.3); padding-bottom: 20px;}",
+        ".simply-content *,.zsleep-maintitle, .zsleep-works-data * {color: black !important;}",
+        ".sleep-btn {background: rgba(103, 201, 187, 0.95); transition: all 0.2s ease;}",
+        ".sleep-btn:hover,.sleep-btn a:hover {color: rgba(103, 201, 187, 0.95); background: white;}"
+      ],
+      "settings": {
+        "main_title": "How The Chill Patch Works",
+        "footer_content": ""
+      }
+    },
+    "zsleep_video_9Y6Gx9": {
+      "type": "zsleep-video",
+      "blocks": {
+        "text_iRaY4r": {
+          "type": "text",
+          "settings": {
+            "title": "1. They Have More Energy",
+            "subtitle": "\" I always wake up looking refreshed and feeling energized...\" - Sierra",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/928093180?badge=0&autopause=0&player_id=0&app_id=58479&h=d2d5787326&wmode=opaque"
+          }
+        },
+        "text_YY3MqK": {
+          "type": "text",
+          "settings": {
+            "title": "2. They Don't Wake Up In The Middle Of The Night",
+            "subtitle": "\"I sleep through the whole night... it's super effective\" - Lexie",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/928092614?badge=0&autopause=0&player_id=0&app_id=58479&h=d2d5787326&wmode=opaque"
+          }
+        },
+        "text_nihCxz": {
+          "type": "text",
+          "settings": {
+            "title": "3. They Fall Asleep Faster",
+            "subtitle": "\"As soon as I put the patch on, I start feeling sleepy\" - Hayley",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/928093005?badge=0&autopause=0&player_id=0&app_id=58479&h=d2d5787326&wmode=opaque"
+          }
+        },
+        "text_78BcWq": {
+          "type": "text",
+          "settings": {
+            "title": "4. They Get More Restful Sleep",
+            "subtitle": "\"I used to get around 4 hours of sleep a night, but with these I get 8 hours...\" -Hailie",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/928092427?badge=0&autopause=0&player_id=0&app_id=58479&h=d2d5787326&wmode=opaque"
+          }
+        },
+        "text_T8Qr3J": {
+          "type": "text",
+          "settings": {
+            "title": "5. They Get More Restful Sleep",
+            "subtitle": "enter text",
+            "vimeo_url": "https:\/\/player.vimeo.com\/video\/928092815?badge=0&autopause=0&player_id=0&app_id=58479&h=d2d5787326&wmode=opaque"
+          }
+        }
+      },
+      "block_order": [
+        "text_iRaY4r",
+        "text_YY3MqK",
+        "text_nihCxz",
+        "text_78BcWq",
+        "text_T8Qr3J"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "carousel_videos_hQMbDE": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_9mnPbJ": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928093180?share=copy"
+          }
+        },
+        "video_EVbrt9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928092427?share=copy"
+          }
+        },
+        "video_iWkQ99": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928092815?share=copy"
+          }
+        },
+        "video_dCgp6d": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928093005?share=copy"
+          }
+        },
+        "video_8VhkdQ": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928092614?share=copy"
+          }
+        }
+      },
+      "block_order": [
+        "video_9mnPbJ",
+        "video_EVbrt9",
+        "video_iWkQ99",
+        "video_dCgp6d",
+        "video_8VhkdQ"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Real Stories of Peace and Calm",
+        "rte": "",
+        "overlay": "#faf9fb"
+      }
+    },
+    "advanced_content_fhnGXq": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_z8Jb4B": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n#shopify-section-toolbar,\n#shopify-section-header {\n  display: none !important;\n}\n<\/style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_z8Jb4B"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "chill_patch_natural_TwFc7V": {
+      "type": "chill-patch-natural",
+      "custom_css": [
+        ".zsleep-choose {background: rgba(103, 201, 187, 0.95);}"
+      ],
+      "settings": {
+        "main_title": ""
+      }
+    },
+    "chill_patch_amazon_reviews_4f8eWx": {
+      "type": "chill-patch-amazon-reviews",
+      "blocks": {
+        "text_eWgPBm": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-1.png"
+          }
+        },
+        "text_Xt4JHY": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/Screenshot_2024-04-03_210452.png"
+          }
+        },
+        "text_wKY4p8": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-3.png"
+          }
+        },
+        "text_r9qa4D": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-4.png"
+          }
+        },
+        "text_BkcRaM": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-5.png"
+          }
+        },
+        "text_RUBMJU": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-6.png"
+          }
+        },
+        "text_FtKRCk": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-7.png"
+          }
+        },
+        "text_ByhKHM": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-8.png"
+          }
+        },
+        "text_9NrRfY": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-9.png"
+          }
+        },
+        "text_3YTB3P": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-10.png"
+          }
+        },
+        "text_eyQqyE": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-11.png"
+          }
+        },
+        "text_rnGBfY": {
+          "type": "text",
+          "settings": {
+            "review_img": "shopify:\/\/shop_images\/review-12.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_eWgPBm",
+        "text_Xt4JHY",
+        "text_wKY4p8",
+        "text_r9qa4D",
+        "text_BkcRaM",
+        "text_RUBMJU",
+        "text_FtKRCk",
+        "text_ByhKHM",
+        "text_9NrRfY",
+        "text_3YTB3P",
+        "text_eyQqyE",
+        "text_rnGBfY"
+      ],
+      "custom_css": [
+        ".review-footer-content {background: rgba(103, 201, 187, 0.3);}",
+        ".sleep-btn {background: rgba(103, 201, 187, 0.95); transition: all 0.2s ease;}",
+        ".sleep-btn:hover,.sleep-btn a:hover {color: rgba(103, 201, 187, 0.95); background: white;}"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "landing_page_announcement_bar_3yi9We",
+    "zsleep_announcement_logo_ngYbUT",
+    "page_video_banner_byN9Vk",
+    "chill_patch_works_h6FBEM",
+    "zsleep_video_9Y6Gx9",
+    "carousel_videos_hQMbDE",
+    "advanced_content_fhnGXq",
+    "chill_patch_natural_TwFc7V",
+    "chill_patch_amazon_reviews_4f8eWx"
+  ]
+}

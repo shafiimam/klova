@@ -8,7 +8,7 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "ae95be24-81a4-40bc-bb85-8a01a91f2475": {
+        "af3f79f3-45f3-4dd2-9d01-764c0ed941c0": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
@@ -31,7 +31,34 @@
             "is_tab": false
           }
         },
-        "a32b17da-fb71-45c3-ad7b-566d65fbe477": {
+        "one_pack_XMzLAg": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_aiExWm": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_WGPnxM": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
+        "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
           "settings": {
           }
@@ -45,7 +72,7 @@
             "surface_pickup_enable": false
           }
         },
-        "essential_countdown_app_block_d6fVkB": {
+        "essential_countdown_app_block_MKCGLY": {
           "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
@@ -62,7 +89,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "free",
-            "text": "FREE SHIPPING",
+            "text": "FREE SHIPPING OVER $45",
             "icon-two": "money",
             "text-two": "MONEY-BACK GUARANTEE",
             "icon-three": "health",
@@ -88,19 +115,22 @@
         }
       },
       "block_order": [
-        "ae95be24-81a4-40bc-bb85-8a01a91f2475",
+        "af3f79f3-45f3-4dd2-9d01-764c0ed941c0",
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
-        "a32b17da-fb71-45c3-ad7b-566d65fbe477",
+        "one_pack_XMzLAg",
+        "bundle_pack_aiExWm",
+        "bundle_btn_WGPnxM",
+        "b9010da1-5cae-4ba5-9fc5-c670acc70709",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
-        "essential_countdown_app_block_d6fVkB",
+        "essential_countdown_app_block_MKCGLY",
         "6dbfc9bc-18b8-46ff-90c0-6c99d095e181",
         "991843c7-0724-43cf-8891-6972bb0b8de4",
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
@@ -108,11 +138,84 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
         "product_video_style": "muted"
+      }
+    },
+    "16539274943ce12887": {
+      "type": "sleep-chart",
+      "settings": {
+        "title": "Comparison chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
+      }
+    },
+    "review_slider_NFJHzE": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_6dEi6G": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
+            "review_text": "{{ block.settings.product.metafields.custom.product_review_1.value }}",
+            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_1.value }}",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_HGd63i": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.jpg",
+            "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
+            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_2.value }}",
+            "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_JyykWT": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.jpg",
+            "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
+            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_3.value }}",
+            "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_6dEi6G",
+        "review_card_HGd63i",
+        "review_card_JyykWT"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What Our Customers Say",
+        "review_count": "5209",
+        "divider": false
+      }
+    },
+    "1663080027983fd7ee": {
+      "type": "apps",
+      "blocks": {
+        "bf6b2f19-d616-4954-9103-d53133278ad0": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "bf6b2f19-d616-4954-9103-d53133278ad0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "1653908906e8b1c207": {
@@ -169,34 +272,65 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
-    "1663081243661448c6": {
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {
+      }
+    },
+    "17074127040251dd37": {
       "type": "apps",
       "blocks": {
-        "c336001e-cee0-4471-95be-62fa2fcd8e8d": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "rebuy_personalization_engine_rebuy_widget_mVNktN": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
+            "enabled": true,
+            "id": "133626",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
           }
         }
       },
       "block_order": [
-        "c336001e-cee0-4471-95be-62fa2fcd8e8d"
+        "rebuy_personalization_engine_rebuy_widget_mVNktN"
       ],
       "settings": {
         "full_width": false,
         "space_around": true
       }
     },
-    "zp-product-footer-content": {
-      "type": "product-footer-content-zipifypages",
+    "slideshow_image_tM3c7g": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_i3zCH4": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_i3zCH4"
+      ],
       "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 7
       }
     }
   },
   "order": [
     "zp-product-header-content",
     "main",
+    "16539274943ce12887",
+    "review_slider_NFJHzE",
+    "1663080027983fd7ee",
     "1653908906e8b1c207",
-    "1663081243661448c6",
-    "zp-product-footer-content"
+    "zp-product-footer-content",
+    "17074127040251dd37",
+    "slideshow_image_tM3c7g"
   ]
 }

@@ -1,0 +1,165 @@
+{% assign aligment = section.settings.aligment %}
+{% assign image = section.settings.image %}
+{% assign showOnRight = false %}
+{% if aligment == 'right' %}
+  {% assign showOnRight = true %}
+{% endif %}
+
+<section id="{{ section.id }}">
+  <div class="page-width">
+    <div class="sales-points-container">
+      {% if showOnRight == true %}
+        <div class="sales-points-image-container">
+          <img src="{{ image | img_url: '1200x' }}" alt="" height="100%" width="100%">
+        </div>
+      {% endif %}
+      <div class="sales-points-text-container">
+        {% for block in section.blocks %}
+          {% if block.type == 'sales_point' %}
+            {% render 'icon-with-text', block: block %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% if showOnRight == false %}
+        <div class="sales-points-image-container">
+          <img src="{{ image | img_url: '1200x' }}" alt="" height="100%" width="100%">
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+  #{{ section.id }} .page-width {
+    padding: 80px;
+  }
+  .sales-points-container {
+    display: flex;
+    gap: 80px;
+  }
+  .sales-points-image-container{
+    flex-basis: 50%;
+  }
+  .sales-points-text-container{
+    flex-basis: calc(50% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .icon-with-text {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .icon-with-text .icon__image {
+    height: 64px;
+    width: 64px;
+  }
+
+  .icon-container{
+    flex-basis: 64px;
+  }
+  .text-container{
+    flex-basis: calc(100% - 64px - 24px);
+  }
+  .icon-with-text .title {
+    color: #1b082a;
+    font-family: 'Bergen Sans';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .icon-with-text .subtitle {
+    color: #1b082a;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  @media (max-width: 800px) {
+    #{{ section.id }} .page-width {
+      padding: 48px 20px;
+    }
+    .sales-points-container{
+      flex-direction: column;
+      gap: 24px;
+    }
+    .icon-with-text .icon__image {
+      height: 40px;
+      width: 40px;
+    }
+    .icon-with-text .title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .icon-with-text .subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .icon-container{
+      flex-basis: 40px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Image with sales point",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "aligment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Sales Point",
+      "type": "sales_point",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Default Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Default Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with sales point"
+    }
+  ]
+}
+{% endschema %}

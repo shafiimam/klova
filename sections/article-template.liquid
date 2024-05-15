@@ -6,14 +6,14 @@ endif
 -%}
 
 <div class="main-article__wrapper">
-  <div class="page-width">
+  <div class="page-width"> 
     {% if section.settings.back-link != blank %}
-    <div class="main-article__back">
+    <div class="main-article__back title-data">
       <a href="{{ blog.url }}"> {{ section.settings.back-link }} </a>
-      {% endif %}
     </div>
-
-
+     {% endif %}  
+  </div>
+  <div class="page-width article-set-content">
     <div class="main-article__top">
       {%- if section.settings.blog_show_tags and article.tags.size > 0 -%}
       <div class="main-article__tag_wrapper">

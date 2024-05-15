@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_iQ7Nc4": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_WCWXUj": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_HBpG4r": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "48740f81-4aa6-40c7-b4bd-afe5ddaa826e": {
           "type": "skio-plan-picker",
           "settings": {
@@ -47,6 +74,7 @@
         },
         "essential_countdown_app_block_YwVrpa": {
           "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "disabled": true,
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
           }
@@ -88,6 +116,7 @@
         },
         "judge_me_reviews_preview_badge_h9BzrV": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {
           }
         }
@@ -97,6 +126,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_iQ7Nc4",
+        "bundle_pack_WCWXUj",
+        "bundle_btn_HBpG4r",
         "48740f81-4aa6-40c7-b4bd-afe5ddaa826e",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_YwVrpa",
@@ -106,15 +138,15 @@
         "judge_me_reviews_preview_badge_h9BzrV"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
         "image_position": "left",
         "image_container_size": "medium",
-        "product_image_size": "square",
+        "product_image_size": "natural",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -363,6 +395,7 @@
       ],
       "settings": {
         "full_width": false,
+        "title": "Product Comparison",
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
@@ -402,6 +435,13 @@
         "image-mobile": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
         "title": "The ZPatch checks the boxes.",
         "text": "<p>✓ Dermatologically tested<\/p><p><\/p><p>✓ Clinically tested<\/p><p><\/p><p>✓ Clinically proven<\/p><p><\/p><p>✓ Kind to skin<\/p><p><\/p><p>✓ Mild for skin<\/p><p><\/p><p>✓ Safe for skin<\/p><p><\/p><p>✓ Dermatologist Approved<\/p>"
+      }
+    },
+    "sleep_chart_CRLWCW": {
+      "type": "sleep-chart",
+      "settings": {
+        "title": "Comparison Chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
     "1655290887e148c5bc": {
@@ -484,93 +524,6 @@
         "text": ""
       }
     },
-    "16539298801be67a40": {
-      "type": "simile",
-      "blocks": {
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
-          "type": "text",
-          "settings": {
-            "subtitle": "The original",
-            "title": "Sleep Patch",
-            "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify:\/\/shop_images\/19430931_1.png"
-          }
-        },
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
-          "type": "image_picker",
-          "settings": {
-            "subtitle-two": "Brand new",
-            "title-two": "Extra Strenght Sleep Patch",
-            "text-two": "",
-            "item-image-two": "shopify:\/\/shop_images\/19430931_1.png"
-          }
-        }
-      },
-      "block_order": [
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
-      ],
-      "disabled": true,
-      "settings": {
-        "text": "VS",
-        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
-      }
-    },
-    "1653908906e8b1c207": {
-      "type": "faq-block",
-      "blocks": {
-        "95efa8d9-b7a2-4979-bae9-044a1cde6016": {
-          "type": "text",
-          "settings": {
-            "acc-button": "WHO CAN USE THIS PATCH?",
-            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
-          }
-        },
-        "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
-          "type": "text",
-          "settings": {
-            "acc-button": "WHERE IS KLOVA MADE?",
-            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
-          }
-        },
-        "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
-          "type": "text",
-          "settings": {
-            "acc-button": "ARE THERE ANY INTERACTIONS?",
-            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
-          }
-        },
-        "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
-          "type": "text",
-          "settings": {
-            "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
-            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
-          }
-        },
-        "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
-          "type": "text",
-          "settings": {
-            "acc-button": "WILL IT MAKE ME GROGGY?",
-            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "95efa8d9-b7a2-4979-bae9-044a1cde6016",
-        "43f3a410-63e7-4bd9-bf77-63ec200964aa",
-        "b78ca722-63a3-4f9b-b14c-ff8533cfb237",
-        "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d",
-        "783ba886-e7c2-4ffc-adc7-3e85654ed6e8"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "FAQ",
-        "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
-        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
-        "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
-        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
-      }
-    },
     "1655205737fe6568e0": {
       "type": "top-products",
       "blocks": {
@@ -579,7 +532,7 @@
           "settings": {
             "style_overlay": "bg-gr--green-blue",
             "product": "extra-strength-sleep-patch",
-            "image": "shopify:\/\/shop_images\/untitled-design-95_png.webp",
+            "image": "shopify:\/\/shop_images\/Extra-StrengthSleepPatch1_1800x1800_044ab0cf-39b5-4aee-8d9a-71687e025a9e.webp",
             "description": "<p>100% Drug-Free sleeping patches, made with melatonin, valerian, l-theanine and other natural ingredients. Peel. Stick. Sleep.<\/p>",
             "btn": "LEARN MORE"
           }
@@ -589,7 +542,6 @@
           "settings": {
             "style_overlay": "bg-gr--yellow-orange",
             "product": "nootropic-focus-patch",
-            "image": "shopify:\/\/shop_images\/focus_3ae6cce1-61de-495a-92b5-49c1e63b0624.png",
             "description": "<p>The World's First nootropic focus patches made with guarana, huperzine, agmatine sulfate and other clinically proven ingredients. Peel. Stick. Focus.<\/p>",
             "btn": "LEARN MORE"
           }
@@ -685,6 +637,29 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "slideshow_image_Cimid7": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_6rMa8P": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_6rMa8P"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
@@ -698,13 +673,13 @@
     "1653916291e266d004",
     "16539163096b01f9e3",
     "16539147732bd96387",
+    "sleep_chart_CRLWCW",
     "1655290887e148c5bc",
     "16539162981609c3bf",
-    "16539298801be67a40",
-    "1653908906e8b1c207",
     "1655205737fe6568e0",
     "16553028114973d0d8",
     "zp-product-footer-content",
-    "1706066578f3166c01"
+    "1706066578f3166c01",
+    "slideshow_image_Cimid7"
   ]
 }

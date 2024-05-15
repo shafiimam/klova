@@ -1,8 +1,7 @@
 <div class="slide-nav__wrapper" data-level="1">
-
-{% assign array_index_menu = section.settings.menu_bolder | split: ','  %}
+  {% assign array_index_menu = section.settings.menu_bolder | split: ',' %}
   <ul class="slide-nav">
-    {%- for link in main_menu.links -%}
+    {%- for link in mobile_menu.links -%}
       {%- liquid
         assign link_index = forloop.index
         assign child_list_handle = link.title | handleize | append: link_index
@@ -26,145 +25,325 @@
         {%- endcapture -%}
       {%- endif -%}
 
-      <li class="slide-nav__item">
-        {%- if link.levels > 0 -%}
-          <button type="button"
-            class="slide-nav__button js-toggle-submenu"
-            data-target="tier-2-{{ child_list_handle }}"
-            {% if link.active or link.child_active %}data-active="true"{% endif %}>
-            <span class="slide-nav__link">
-              {%- if have_image -%}
-                {{ collection_image }}
-              {%- endif -%}
-              <span>{{ link.title }}</span>
-              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-              <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
-            </span>
-          </button>
+      {% assign menu_name_desktop = linklists['mega-menu'] %}
 
-          <ul
-            class="slide-nav__dropdown"
-            data-parent="tier-2-{{ child_list_handle }}"
-            data-level="2">
-            <li class="slide-nav__item">
-              <button type="button"
-                class="slide-nav__button js-toggle-submenu">
-                <span class="slide-nav__link slide-nav__link--back">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
-                  <span>{{ link.title }}</span>
-                </span>
-              </button>
-            </li>
+      {% assign collection = collection[block.settings.menu_collection] %}
 
+      {% if link.title contains 'Shop' %}
+        <li class="slide-nav__item">
+          <div class="mobile-menu-layout">
             {% comment %}
-              If a collection, automatically add 'view all' link
+              <div class="mega-menu-tab">
+                <div class="menutitle">
+                <button>{{ config.menu_title }}</button>
+                <button>{{ config.menu_title_two }}</button>
+                <button>{{ config.menu_title_three }}</button>
+                <button>{{ config.menu_title_four }}</button>
+                <button>{{ config.menu_title_five }}</button>
+                </div>
+                <div class="shopall-text"><div class="shopall-data"><p>Shop All</p></div></div>
+              </div>
             {% endcomment %}
-            {%- if is_collection -%}
+
+            <div>
+              <h2>{{ config.menu_title }}</h2>
+              <div class="mega-menu-pro">
+                {% for product in collections[config.menu_collection].products %}
+                  <div
+                    class="product-loop animate__animated animate__faster animate__fadeInRight"
+                    style="animation-delay: {{ forloop.index | times:100 }}ms"
+                  >
+                    {% render 'megamenu-product', product: product, collection: collection, classes: item_classes %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div>
+              <h2>{{ config.menu_title_two }}</h2>
+              <div class="mega-menu-pro">
+                {% for product in collections[config.menu_collection_two].products %}
+                  <div
+                    class="product-loop animate__animated animate__faster animate__fadeInRight"
+                    style="animation-delay: {{ forloop.index | times:100 }}ms"
+                  >
+                    {% render 'megamenu-product', product: product, collection: collection, classes: item_classes %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div>
+              <h2>{{ config.menu_title_three }}</h2>
+              <div class="mega-menu-pro">
+                {% for product in collections[config.menu_collection_three].products %}
+                  <div
+                    class="product-loop animate__animated animate__faster animate__fadeInRight"
+                    style="animation-delay: {{ forloop.index | times:100 }}ms"
+                  >
+                    {% render 'megamenu-product', product: product, collection: collection, classes: item_classes %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div>
+              <h2>{{ config.menu_title_four }}</h2>
+              <div class="mega-menu-pro">
+                {% for product in collections[config.menu_collection_four].products %}
+                  <div
+                    class="product-loop animate__animated animate__faster animate__fadeInRight"
+                    style="animation-delay: {{ forloop.index | times:100 }}ms"
+                  >
+                    {% render 'megamenu-product', product: product, collection: collection, classes: item_classes %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div>
+              <h2>{{ config.menu_title_five }}</h2>
+              <div class="mega-menu-pro">
+                {% for product in collections[config.menu_collection_five].products %}
+                  <div
+                    class="product-loop animate__animated animate__faster animate__fadeInRight"
+                    style="animation-delay: {{ forloop.index | times:100 }}ms"
+                  >
+                    {% render 'megamenu-product', product: product, collection: collection, classes: item_classes %}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+
+      {% else %}
+        <li class="slide-nav__item">
+          {%- if link.levels > 0 -%}
+            <button
+              type="button"
+              class="slide-nav__button js-toggle-submenu"
+              data-target="tier-2-{{ child_list_handle }}"
+              {% if link.active or link.child_active %}
+                data-active="true"
+              {% endif %}
+            >
+              <span class="slide-nav__link">
+                {%- if have_image -%}
+                  {{ collection_image }}
+                {%- endif -%}
+                <span>{{ link.title }}</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  class="icon icon-chevron-right"
+                  viewBox="0 0 284.49 498.98"
+                >
+                  <path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/>
+                </svg>
+                <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+              </span>
+            </button>
+
+            <ul
+              class="slide-nav__dropdown"
+              data-parent="tier-2-{{ child_list_handle }}"
+              data-level="2"
+            >
               <li class="slide-nav__item">
-                <a href="{{ link.url }}" class="slide-nav__link">
-                  <span>{{ 'collections.general.all_of_collection' | t }}</span>
-                  {% comment %}
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-                  {% endcomment %}
-                </a>
+                <button
+                  type="button"
+                  class="slide-nav__button js-toggle-submenu"
+                >
+                  <span class="slide-nav__link slide-nav__link--back">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="icon icon-chevron-left"
+                      viewBox="0 0 284.49 498.98"
+                    >
+                      <path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/>
+                    </svg>
+                    <span>{{ link.title }}</span>
+                  </span>
+                </button>
               </li>
-            {%- endif -%}
 
-            {%- for childlink in link.links -%}
-              {%- liquid
-                assign grand_child_list_handle = childlink.title | handleize
-                assign grand_child_link_id = grand_child_list_handle | append: link_index
-              -%}
-
-              <li class="slide-nav__item">
-                {%- if childlink.levels > 0 -%}
-                  <button type="button"
-                    class="slide-nav__button js-toggle-submenu"
-                    data-target="tier-3-{{ grand_child_link_id }}"
-                    {% if link.active or link.child_active %}data-active="true"{% endif %}>
-                    <span class="slide-nav__link slide-nav__sublist-link">
-                      <span>{{ childlink.title }}</span>
-                      {% comment %}
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-                      {% endcomment %}
-                      <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
-                    </span>
-                  </button>
-                  <ul class="slide-nav__dropdown"
-                    data-parent="tier-3-{{ grand_child_link_id }}"
-                    data-level="3">
-                    <li class="slide-nav__item">
-                      <button type="button"
-                        class="slide-nav__button js-toggle-submenu"
-                        data-target="tier-2-{{ child_list_handle }}">
-                        <span class="slide-nav__link slide-nav__link--back">
-                          {% comment %}
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
-                          {% endcomment %}
-                          <span>{{ childlink.title }}</span>
-                        </span>
-                      </button>
-                    </li>
-
-                    {% comment %}
-                      If a collection, automatically add 'view all' link
-                    {% endcomment %}
-                    {%- if childlink.url contains '/collections/' -%}
-                      <li class="slide-nav__item">
-                        <a href="{{ childlink.url }}" class="slide-nav__link">
-                          <span>{{ 'collections.general.all_of_collection' | t }}</span>
-                          {% comment %}
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-                          {% endcomment %}
-                        </a>
-                      </li>
-                    {%- endif -%}
-
-                    {%- for grandchildlink in childlink.links -%}
-                      <li class="slide-nav__item">
-                        <a href="{{ grandchildlink.url }}" class="slide-nav__link">
-                          <span>{{ grandchildlink.title | escape }}</span>
-                          {% comment %}
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-                          {% endcomment %}
-                        </a>
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- else -%}
-                  <a href="{{ childlink.url }}" class="slide-nav__link">
-                    <span>{{ childlink.title | escape }}</span>
+              {% comment %}
+                If a collection, automatically add 'view all' link
+              {% endcomment %}
+              {%- if is_collection -%}
+                <li class="slide-nav__item">
+                  <a href="{{ link.url }}" class="slide-nav__link">
+                    <span>{{ 'collections.general.all_of_collection' | t }}</span>
                     {% comment %}
                       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
                     {% endcomment %}
                   </a>
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
-        {%- else -%}
-          <a href="{{ link.url }}" class="slide-nav__link  
-            {%- if array_index_menu != blank -%}
-              {%- assign link_index = link_index | json -%}
-              {%- for item in array_index_menu -%}
-                {%- assign item = item | json %}
-                {%- if link_index == item -%}
-                  slide-nav__link--bolder
-                {%- endif -%}
+                </li>
+              {%- endif -%}
+
+              {%- for childlink in link.links -%}
+                {%- liquid
+                  assign grand_child_list_handle = childlink.title | handleize
+                  assign grand_child_link_id = grand_child_list_handle | append: link_index
+                -%}
+
+                <li class="slide-nav__item">
+                  {%- if childlink.levels > 0 -%}
+                    <button
+                      type="button"
+                      class="slide-nav__button js-toggle-submenu"
+                      data-target="tier-3-{{ grand_child_link_id }}"
+                      {% if link.active or link.child_active %}
+                        data-active="true"
+                      {% endif %}
+                    >
+                      <span class="slide-nav__link slide-nav__sublist-link">
+                        <span>{{ childlink.title }}</span>
+                        {% comment %}
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                        {% endcomment %}
+                        <span class="icon__fallback-text">{{ 'general.drawers.expand_submenu' | t }}</span>
+                      </span>
+                    </button>
+                    <ul
+                      class="slide-nav__dropdown"
+                      data-parent="tier-3-{{ grand_child_link_id }}"
+                      data-level="3"
+                    >
+                      <li class="slide-nav__item">
+                        <button
+                          type="button"
+                          class="slide-nav__button js-toggle-submenu"
+                          data-target="tier-2-{{ child_list_handle }}"
+                        >
+                          <span class="slide-nav__link slide-nav__link--back">
+                            {% comment %}
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+                            {% endcomment %}
+                            <span>{{ childlink.title }}</span>
+                          </span>
+                        </button>
+                      </li>
+
+                      {% comment %}
+                        If a collection, automatically add 'view all' link
+                      {% endcomment %}
+                      {%- if childlink.url contains '/collections/' -%}
+                        <li class="slide-nav__item">
+                          <a href="{{ childlink.url }}" class="slide-nav__link">
+                            <span>{{ 'collections.general.all_of_collection' | t }}</span>
+                            {% comment %}
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                            {% endcomment %}
+                          </a>
+                        </li>
+                      {%- endif -%}
+
+                      {%- for grandchildlink in childlink.links -%}
+                        <li class="slide-nav__item">
+                          <a href="{{ grandchildlink.url }}" class="slide-nav__link">
+                            <span>{{ grandchildlink.title | escape }}</span>
+                            {% comment %}
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                            {% endcomment %}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- else -%}
+                    <a href="{{ childlink.url }}" class="slide-nav__link">
+                      <span>{{ childlink.title | escape }}</span>
+                      {% comment %}
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                      {% endcomment %}
+                    </a>
+                  {%- endif -%}
+                </li>
               {%- endfor -%}
-            {%- endif -%}">
+            </ul>
+          {%- else -%}
+            <a
+              href="{{ link.url }}"
+              class="
+                slide-nav__link
+                {%- if array_index_menu != blank -%}
+                  {%- assign link_index = link_index | json -%}
+                  {%- for item in array_index_menu -%}
+                    {%- assign item = item | json %}
+                    {%- if link_index == item -%}
+                      slide-nav__link--bolder
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              "
+            >
+              {%- if have_image -%}
+                {{ collection_image }}
+              {%- endif -%}
 
-            {%- if have_image -%}
-              {{ collection_image }}
-            {%- endif -%}
-
-            <span>{{ link.title | escape }}</span>
-            {% comment %}
-              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
-            {% endcomment %}
-          </a>
-        {%- endif -%}
-      </li>
+              <span>{{ link.title | escape }}</span>
+              {% comment %}
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+              {% endcomment %}
+            </a>
+          {%- endif -%}
+        </li>
+      {% endif %}
     {%- endfor -%}
+    {% comment %}
+      <li class="slide-nav__item">
+          <a class="slide-nav__link" href="https://www.klova.com/a/account/login">
+            <span>My Account</span>
+          </a>
+        </li>
+    {% endcomment %}
   </ul>
 </div>
+
+{% comment %}
+  <div class="soical-icons">
+    <div class="facebook-icon icon">{% render 'facebook-icon' %}</div>
+    <div class="instgram-icon icon">{% render 'instgram-icon' %}</div>
+    <div class="twitter-icon icon">{% render 'twitter-icon' %}</div>
+    <div class="youtube-icon icon">{% render 'youtube-icon' %}</div>
+    <div class="tik-tok-icon icon">{% render 'tik-tok-icon' %}</div>
+  </div>
+{% endcomment %}
+
+<style>
+   .slide-nav__item .mobile-menu-layout h2{
+     font-size:18px;
+   }
+    .soical-icons{
+      display:flex;
+    }
+    .soical-icons .icon{
+      width:24px;
+      height:24px;
+      margin-right:20px;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+    .product-loop{
+      width:33.33%;
+      max-width:33.33%;
+    }
+    }
+    @media only screen and (min-width:320px) and (max-width:500px){
+    .product-loop{
+      width:50%;
+      max-width:50%;
+    }
+    .sale-img{
+     width:60px;
+     height:60px;
+    }
+    .sale-img img{
+      width:100%;
+      height:100%;
+    }
+  }
+</style>

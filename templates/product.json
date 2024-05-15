@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_XMzLAg": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_aiExWm": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_WGPnxM": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
           "settings": {
@@ -92,6 +119,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_XMzLAg",
+        "bundle_pack_aiExWm",
+        "bundle_btn_WGPnxM",
         "b9010da1-5cae-4ba5-9fc5-c670acc70709",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_MKCGLY",
@@ -100,7 +130,7 @@
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
@@ -108,7 +138,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -117,42 +147,74 @@
     },
     "16539274943ce12887": {
       "type": "sleep-chart",
-      "disabled": true,
       "settings": {
-        "title": "Sleep Aid Comparison chart",
+        "title": "Comparison chart",
         "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
-    "16539298801be67a40": {
-      "type": "simile",
+    "review_slider_NFJHzE": {
+      "type": "review-slider",
       "blocks": {
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
-          "type": "text",
+        "review_card_6dEi6G": {
+          "type": "review_card",
           "settings": {
-            "subtitle": "The original",
-            "title": "Sleep Patch",
-            "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify:\/\/shop_images\/19430931_1.png"
+            "image": "shopify:\/\/shop_images\/05.jpg",
+            "review_text": "{{ block.settings.product.metafields.custom.product_review_1.value }}",
+            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_1.value }}",
+            "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
           }
         },
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
-          "type": "image_picker",
+        "review_card_HGd63i": {
+          "type": "review_card",
           "settings": {
-            "subtitle-two": "Brand new",
-            "title-two": "Extra Strenght Sleep Patch",
-            "text-two": "",
-            "item-image-two": "shopify:\/\/shop_images\/19430931_1.png"
+            "image": "shopify:\/\/shop_images\/08.jpg",
+            "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
+            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_2.value }}",
+            "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_JyykWT": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04.jpg",
+            "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
+            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_3.value }}",
+            "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
           }
         }
       },
       "block_order": [
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
+        "review_card_6dEi6G",
+        "review_card_HGd63i",
+        "review_card_JyykWT"
       ],
-      "disabled": true,
       "settings": {
-        "text": "VS",
-        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
+        "title": "What Our Customers Say",
+        "review_count": "5209",
+        "divider": false
+      }
+    },
+    "1663080027983fd7ee": {
+      "type": "apps",
+      "blocks": {
+        "bf6b2f19-d616-4954-9103-d53133278ad0": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "bf6b2f19-d616-4954-9103-d53133278ad0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "1653908906e8b1c207": {
@@ -209,23 +271,6 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
-    "1663080027983fd7ee": {
-      "type": "apps",
-      "blocks": {
-        "bf6b2f19-d616-4954-9103-d53133278ad0": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "bf6b2f19-d616-4954-9103-d53133278ad0"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
       "settings": {
@@ -251,16 +296,40 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "slideshow_image_qnjBEc": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_GcLfM9": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_GcLfM9"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
     "zp-product-header-content",
     "main",
     "16539274943ce12887",
-    "16539298801be67a40",
-    "1653908906e8b1c207",
+    "review_slider_NFJHzE",
     "1663080027983fd7ee",
+    "1653908906e8b1c207",
     "zp-product-footer-content",
-    "17074127040251dd37"
+    "17074127040251dd37",
+    "slideshow_image_qnjBEc"
   ]
 }

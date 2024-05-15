@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_CGpYMB": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_Vc9aFw": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_FWmb8w": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
           "settings": {
@@ -92,6 +119,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_CGpYMB",
+        "bundle_pack_Vc9aFw",
+        "bundle_btn_FWmb8w",
         "b9010da1-5cae-4ba5-9fc5-c670acc70709",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_h7RfpQ",
@@ -100,7 +130,7 @@
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
@@ -108,7 +138,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -123,36 +153,11 @@
         "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
-    "16539298801be67a40": {
-      "type": "simile",
-      "blocks": {
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
-          "type": "text",
-          "settings": {
-            "subtitle": "The original",
-            "title": "Sleep Patch",
-            "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify:\/\/shop_images\/19430931_1.png"
-          }
-        },
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
-          "type": "image_picker",
-          "settings": {
-            "subtitle-two": "Brand new",
-            "title-two": "Extra Strenght Sleep Patch",
-            "text-two": "",
-            "item-image-two": "shopify:\/\/shop_images\/19430931_1.png"
-          }
-        }
-      },
-      "block_order": [
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
-      ],
-      "disabled": true,
+    "sleep_chart_gFq4ja": {
+      "type": "sleep-chart",
       "settings": {
-        "text": "VS",
-        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
+        "title": "Comparison Chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
     "1653908906e8b1c207": {
@@ -210,6 +215,77 @@
         "space_around": true
       }
     },
+    "review_slider_J3ikai": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_gNwa8y": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
+            "review_text": "This patch is so easy to use. I love how it works almost instantly and I have energy all day long. It sticks on really good and doesn't fall off. It doesn't make you shaky or feel sick like other energy supplements. It's so simple easy and worth it. I'll be using these forever.",
+            "reviewer_name": "Mandie Miller Nash",
+            "product_image": "shopify:\/\/shop_images\/2023-RecoveryPouch-FrontSide-Mockup_2_309e51e1-a5eb-44d9-abc9-658d3453b864.png",
+            "product": "energy-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_CVwEWE": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.jpg",
+            "review_text": "After being on the go all day at work, coming home to relax i place a chill patch on and unwind. It’s the perfect way to a chill and rejuvenate for the next day. Love them!",
+            "reviewer_name": "Kris Matson",
+            "product_image": "shopify:\/\/shop_images\/2023-RecoveryPouch-FrontSide-Mockup_2_309e51e1-a5eb-44d9-abc9-658d3453b864.png",
+            "product": "energy-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_tzHHDf": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.jpg",
+            "review_text": "I may finally be able to quit my kickstart addiction! Yes!!!!?",
+            "reviewer_name": "Cat ",
+            "product_image": "shopify:\/\/shop_images\/2023-RecoveryPouch-FrontSide-Mockup_2_309e51e1-a5eb-44d9-abc9-658d3453b864.png",
+            "product": "energy-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_gNwa8y",
+        "review_card_CVwEWE",
+        "review_card_tzHHDf"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "review_count": "5209",
+        "divider": false
+      }
+    },
+    "slideshow_image_M8kmdb": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_LgLNyN": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_LgLNyN"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
       "settings": {
@@ -220,9 +296,11 @@
     "zp-product-header-content",
     "main",
     "16539274943ce12887",
-    "16539298801be67a40",
+    "sleep_chart_gFq4ja",
     "1653908906e8b1c207",
     "1663080027983fd7ee",
+    "review_slider_J3ikai",
+    "slideshow_image_M8kmdb",
     "zp-product-footer-content"
   ]
 }

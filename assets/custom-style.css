@@ -33,3 +33,18 @@
   text-align: center !important;
   font-size: 1.5em !important;
 } */
+
+/* hide the second thumbnail image for all products for consistency */
+.product__thumb-item [data-index="1"] {
+    display: none;
+    width: 0 !important;
+}
+.main-product__photos .product__thumb-item[data-index="1"] {
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 0;
+}
+
+.main-product__content .rte{
+  max-width: none;
+}

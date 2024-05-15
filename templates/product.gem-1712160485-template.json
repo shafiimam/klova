@@ -8,7 +8,7 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "c91b0e8c-b803-418a-881d-5116bdac73eb": {
+        "af3f79f3-45f3-4dd2-9d01-764c0ed941c0": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
@@ -31,7 +31,19 @@
             "is_tab": false
           }
         },
-        "b4c64640-043c-4404-af55-d94b767c546b": {
+        "one_pack_XMzLAg": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_aiExWm": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
           "settings": {
           }
@@ -45,7 +57,7 @@
             "surface_pickup_enable": false
           }
         },
-        "essential_countdown_app_block_rDh94i": {
+        "essential_countdown_app_block_MKCGLY": {
           "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
@@ -62,7 +74,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "free",
-            "text": "FREE SHIPPING",
+            "text": "FREE SHIPPING OVER $45",
             "icon-two": "money",
             "text-two": "MONEY-BACK GUARANTEE",
             "icon-three": "health",
@@ -88,19 +100,21 @@
         }
       },
       "block_order": [
-        "c91b0e8c-b803-418a-881d-5116bdac73eb",
+        "af3f79f3-45f3-4dd2-9d01-764c0ed941c0",
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
-        "b4c64640-043c-4404-af55-d94b767c546b",
+        "one_pack_XMzLAg",
+        "bundle_pack_aiExWm",
+        "b9010da1-5cae-4ba5-9fc5-c670acc70709",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
-        "essential_countdown_app_block_rDh94i",
+        "essential_countdown_app_block_MKCGLY",
         "6dbfc9bc-18b8-46ff-90c0-6c99d095e181",
         "991843c7-0724-43cf-8891-6972bb0b8de4",
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
@@ -108,11 +122,50 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
         "product_video_style": "muted"
+      }
+    },
+    "16539274943ce12887": {
+      "type": "sleep-chart",
+      "settings": {
+        "title": "Sleep Aid Comparison chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
+      }
+    },
+    "16539298801be67a40": {
+      "type": "simile",
+      "blocks": {
+        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
+          "type": "text",
+          "settings": {
+            "subtitle": "The original",
+            "title": "Sleep Patch",
+            "text": "Our first patch. Simple and reliable",
+            "item-image": "shopify:\/\/shop_images\/19430931_1.png"
+          }
+        },
+        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
+          "type": "image_picker",
+          "settings": {
+            "subtitle-two": "Brand new",
+            "title-two": "Extra Strenght Sleep Patch",
+            "text-two": "",
+            "item-image-two": "shopify:\/\/shop_images\/19430931_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
+        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
+      ],
+      "disabled": true,
+      "settings": {
+        "text": "VS",
+        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
       }
     },
     "1653908906e8b1c207": {
@@ -169,17 +222,17 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
-    "166308196979c513fb": {
+    "1663080027983fd7ee": {
       "type": "apps",
       "blocks": {
-        "cf83543e-4e51-408b-8c84-f094e93bec14": {
+        "bf6b2f19-d616-4954-9103-d53133278ad0": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
       },
       "block_order": [
-        "cf83543e-4e51-408b-8c84-f094e93bec14"
+        "bf6b2f19-d616-4954-9103-d53133278ad0"
       ],
       "settings": {
         "full_width": false,
@@ -190,13 +243,37 @@
       "type": "product-footer-content-zipifypages",
       "settings": {
       }
+    },
+    "17074127040251dd37": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_mVNktN": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "133626",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_mVNktN"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
     "zp-product-header-content",
     "main",
+    "16539274943ce12887",
+    "16539298801be67a40",
     "1653908906e8b1c207",
-    "166308196979c513fb",
-    "zp-product-footer-content"
+    "1663080027983fd7ee",
+    "zp-product-footer-content",
+    "17074127040251dd37"
   ]
 }

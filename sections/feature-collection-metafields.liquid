@@ -30,7 +30,6 @@
       class="new-grid carousel product-grid{% if section.settings.mobile_scrollable %} scrollable-grid--small{% endif %}"
       data-view="{% if section.settings.mobile_scrollable %}scrollable-5{% else %}xsmall{% endif %}">
       {%- if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 -%}
-
         {%- liquid
           for i in (1..product_limit)
             unless section.settings.mobile_scrollable

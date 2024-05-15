@@ -1,0 +1,183 @@
+<section class="z-patch-reviews-photo">
+  <div class="reviews-content">
+    <div class="custom-page-width">
+      <!-- Review Part Start -->
+      <div class="reviews-main-content">
+        <div class="reviews-main-title">
+          <h2>{{ section.settings.review_title }}</h2>
+        </div>
+      </div>
+      <div class="reviews-img-data inst-reviews">
+        {% for block in section.blocks %}
+          <div class="reviews-img amazon-reviews" data-block-id="{{ block.id }}">
+            {% if block.settings.review_img != blank %}
+              <img src="{{ block.settings.review_img | img_url:'master' }}">
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <!-- Review Part End -->
+    </div>
+  </div>
+  <div class="review-footer-content">
+    <div class="z-sleep-amazon-content">
+      <p class="z-sleep-amazon-text" style="text-align: start;">
+        <span style="color: #000;">Discover Your Pathway To Stress Relief With Klova's Chill Patch! </span>
+      </p>
+
+      <p class="z-sleep-amazon-text" style="text-align: start;">
+        <span style="color: #000;">
+          Valued at $34.99 for a 4-week supply, we're thrilled to extend a special offer to our community, inspired by
+          the overwhelming support from our social media followers.
+        </span>
+      </p>
+
+      <p class="z-sleep-amazon-text" style="text-align: start;">
+        <span style="color: #000;">
+          For a brief period, enjoy a discount, making your journey to tranquility not just beneficial, but also
+          economically sensible.
+        </span>
+      </p>
+
+      <p class="z-sleep-amazon-text" style="text-align: start;">
+        <span style="color: #000;">
+          Seize this chance to transform your stress into serenity and greet each day with renewed poise.
+        </span>
+      </p>
+    </div>
+
+    <div class="sleep-btn amazon-reviews-img">
+      <a href="https://www.amazon.com/Klova-Clinically-Ashwagandha-L-Theanine-Ingredients/dp/B0CP2YLNSK">
+        <p>GET IT NOW</p>
+      </a>
+    </div>
+  </div>
+</section>
+<style>
+      .z-sleep-amazon-content{
+        max-width:735px;
+        margin:0 auto;
+      }
+      .z-sleep-amazon-text{
+        padding:20px 0px;
+        padding-bottom:10px;
+        font-size: 18px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: normal;
+        color: #000;
+      }
+
+      .sleep-btn.amazon-reviews-img{
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom:10px;
+      }
+      .sleep-btn.amazon-reviews-img p{
+        font-size:16px;
+      }
+      .reviews-img.amazon-reviews:nth-child(2n+1){
+        text-align:end
+      }
+      .reviews-img.amazon-reviews{
+        margin:0px;
+      }
+      .reviews-img.img-width-1{
+        text-align:end;
+      }
+      .inst-reviews .reviews-img{
+        margin-top:0px;
+      }
+      .how-it-works{
+        padding-bottom:40px;
+        padding-top:40px;
+      }
+      .how-it-text{
+        font-size:32px;
+        text-align:center;
+        margin: 0px;
+        font-family: Poppins;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .how-it-text-area{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: end;
+        position: relative;
+        padding-right: 10px;
+        right: 80px;
+        width:50%
+      }
+      .sleep-btn-content{
+        display:flex;
+        justify-content:space-evenly;
+      }
+
+      .reviews-main-title{
+        max-width:650px;
+        margin:0 auto;
+      }
+    .reviews-main-title h2{
+       font-size:32px;
+        font-family: Poppins;
+        font-weight: 700;
+        font-style: normal;
+       padding-top:5px;
+      }
+      .reviews-main-content{
+        text-align:center;
+      }
+    /* .reviews-content{
+      background-image:url({{ section.settings.bg_image | img_url:'master' }});
+      background-repeat: no-repeat;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }  */
+     .reviews-img-data.inst-reviews{
+        max-width:100%;
+        width:100%;
+        display:flex;
+        align-items:center;
+        padding-top:15px;
+        flex-wrap: wrap;
+        padding-bottom:30px;
+     }
+     .reviews-img{
+        width:50%;
+        max-width:50%;
+        margin-bottom: 15px;
+        margin-top: 10px;
+     }
+    .review-footer-content {
+      background: aliceblue;
+      padding: 20px 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Chill patch Az Reviews",
+  "settings": [
+  ],
+  "blocks":[
+    {
+    "type": "text",
+    "name": "review-photo",
+    "settings":[
+    {
+      "type":"image_picker",
+        "id":"review_img",
+      "label":"Review Image"
+    }
+    ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Chill patch Az Reviews"
+    }
+  ]
+}
+{% endschema %}

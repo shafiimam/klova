@@ -1,0 +1,126 @@
+<script type='text/javascript'>
+
+(function()
+{
+  if( window.localStorage )
+  {
+    console.log('localstorage accessed');
+    if( !localStorage.getItem('{{ section.settings.discountcode }}') )
+    {  
+      
+      var discountRedirect = window.location + '?discount={{ section.settings.discountcode }}';
+      if (localStorage.getItem('discount_code') !== '{{ section.settings.discountcode }}') {
+        localStorage['{{ section.settings.discountcode }}'] = true;
+         window.location.replace(discountRedirect);
+      } 
+       console.log('page reloaded');
+    }
+  }
+  const priceSpan = document.querySelector('[data-product-price=""]');
+  const priceElement = priceSpan.querySelector('span');
+  if (priceElement) {
+        // Update the displayed price
+        priceElement.textContent = '$28.00';
+
+      document.querySelector('[data-save-price=""]').textContent = "Save $11.99";
+    }
+
+// document.addEventListener('rebuy:smartcart.init', function(event){ console.log('rebuy:smartcart.init event', event.detail); }); 
+// document.addEventListener('rebuy:smartcart.show', function(event){ console.log('rebuy:smartcart.show event', event.detail); }); 
+  document.addEventListener('rebuy:cart.change', function(event){ 
+    let itemValue = null;
+    
+   /* if(!event.detail.cart.cart.items.length) {
+    // const priceElement = priceSpan.querySelector('span');
+    if (priceElement) {
+        // Update the displayed price
+        priceElement.textContent = '$34.99';
+      document.querySelector('[data-save-price=""]').textContent = "Save $5";
+    }
+  } */
+
+    if(!event.detail.cart.cart.items.length) {
+    // const priceElement = priceSpan.querySelector('span');
+    if (priceElement) {
+        // Update the displayed price
+        priceElement.textContent = '$28.00';
+      document.querySelector('[data-save-price=""]').textContent = "Save $11.99";
+    }
+  }
+    
+for (const item of event.detail.cart.cart.items) {
+    if (item.product_title === "Original Sleep ZPatch") {
+        itemValue = item;
+
+      // const priceElement = priceSpan.querySelector('span');
+    if (priceElement) {
+        // Update the displayed price
+        priceElement.textContent = '$28.00';
+
+      document.querySelector('[data-save-price=""]').textContent = "Saved $11.99";
+    }
+
+// Find the li tag containing the product with the title "Original Sleep ZPatch"
+const liTags = document.querySelectorAll('ul[data-smartcart-items] li');
+let targetLiTag;
+liTags.forEach(li => {
+    const productName = li.querySelector('.rebuy-cart__flyout-item-product-title').innerText.trim();
+    if (productName === 'Original Sleep ZPatch') {
+        targetLiTag = li;
+    }
+});
+
+// Update the price if the target li tag is found
+if (targetLiTag) {
+    const priceElement = targetLiTag.querySelector('.rebuy-cart__flyout-item-price span[tabindex]');
+    if (priceElement) {
+        priceElement.innerText = '$28.00';
+    } else {
+        console.log('Price element not found.');
+    }
+} else {
+    console.log('Product not found.');
+}
+      
+        break;
+    } else {
+        const priceElement = priceSpan.querySelector('span');
+    if (priceElement) {
+        // Update the displayed price
+        priceElement.textContent = '$34.99';
+    }
+    }
+}
+
+ 
+
+// Now itemValue contains the item with product_title "Original Sleep ZPatch"
+console.log(itemValue);
+    
+    console.log('rebuy:cart.change event', event.detail.cart.cart.items);
+  
+  }); 
+
+})();
+
+</script>
+
+{% schema %}
+{
+  "name": "Discount Application",
+  "settings": [
+      {
+      "type": "text",
+      "id": "discountcode",
+      "label": "Discount Code",
+      "default": "-",
+      "info": "It will reload the page and add the provided discount code to the cart"
+    }
+  ],
+  "presets":[
+    {
+      "name":"DiscountCode"
+    }
+  ]
+}
+{% endschema %}

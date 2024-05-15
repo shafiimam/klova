@@ -1,0 +1,343 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        ".br-radius-24.flex.call-to-action.call-to-action--template--15773367697473__call_to_action_8qj7if {display: flex; justify-content: flex-start; flex-direction: column; align-items: flex-start; padding-left: 80px;}",
+        ".call-to-action__text.text {text-align: left; max-width: 525px;}"
+      ],
+      "settings": {
+      }
+    },
+    "custom_cta_EMhYQz": {
+      "type": "custom-cta",
+      "custom_css": [
+        "a.btn {width: 300px; border-radius: 6px; text-transform: uppercase;}",
+        "@media (max-width: 800px) {.call-to-action__button {display: flex; justify-content: center; }}"
+      ],
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/Frame_1000003874.jpg",
+        "tablet_image": "shopify:\/\/shop_images\/hero_image_1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Frame_1000003704_d848a404-427d-4f5d-99b7-338e12f3d141.jpg",
+        "heading": "The Ultimate Sleep Solution: The Klova Sleep Bundle",
+        "subheading": "With over one-third of adults reporting that they usually get less than the recommended amount of sleep, the quest for a restful night has never been more critical.",
+        "cta_link": "#subscribe",
+        "cta_text": "Shop Sleep Bundle NOW",
+        "desktop_alignment": "left"
+      }
+    },
+    "rich_text_dgbnDz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8EXC6G": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Many turn to over-the-counter sleep aids in their search for relief, only to be met with the unwelcome side effect of next-day grogginess…..<\/p><p><strong>disrupting their natural sleep cycle further.<\/strong><\/p><p>However, there's a groundbreaking solution that stands apart from conventional methods.<\/p><p>The Klova Sleep Bundle, featuring the<strong> Extra Strength Sleep Patch<\/strong>, the <strong>Melatonin Free Sleep Patch<\/strong>, and the <strong>Original Sleep Z Patch<\/strong>, introduces an innovative and natural approach to sleep enhancement. <\/p><p>This carefully curated selection promises not just to usher in the sleep you crave but to redefine your mornings with rejuvenation and clarity, free from the fog of traditional sleep aids.<\/p><p>By choosing Klova's Sleep Bundle, you're not just selecting an alternative to groggy mornings; you're embracing a lifestyle change that promises restorative sleep and optimized recovery, night after night.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_8EXC6G"
+      ],
+      "custom_css": [
+        ".text-center {max-width: 1200px; margin: 0 auto;}",
+        ".enlarge-text p {font-size: 24px;}",
+        "@media (max-width: 500px) {.enlarge-text p {font-size: 16px; font-weight: 400; line-height: 26px; }}",
+        "@media (min-width: 500px) and (max-width: 800px) {.enlarge-text p {font-size: 20px; font-weight: 400; line-height: 34px; text-align: center; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_columns_AhtVmg": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_jY9tcj": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Frame_14373.jpg",
+            "image_width": 650,
+            "title": "The Original Sleep Z Patch",
+            "text": "<p>Offering more than just melatonin, this patch incorporates a comprehensive formula aimed at enhancing sleep quality and duration.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_6pHMQf": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Frame_14375.jpg",
+            "image_width": 650,
+            "title": "The Extra Strength Sleep Patch",
+            "text": "<p>Offering more than just melatonin, this patch incorporates a comprehensive formula aimed at enhancing sleep quality and duration.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_a8PB4d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Frame_14374.jpg",
+            "image_width": 650,
+            "title": "The Melatonin Free Sleep Patch",
+            "text": "<p>Offering more than just melatonin, this patch incorporates a comprehensive formula aimed at enhancing sleep quality and duration.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_jY9tcj",
+        "text_block_6pHMQf",
+        "text_block_a8PB4d"
+      ],
+      "settings": {
+        "title": "The Science of Sleep: A Closer Look",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "rich_text_3hPcwr": {
+      "type": "rich-text",
+      "blocks": {
+        "button_7ThYgh": {
+          "type": "button",
+          "settings": {
+            "link": "#subscribe",
+            "link_text": "SHOP SLEEP BUNDLE NOW"
+          }
+        }
+      },
+      "block_order": [
+        "button_7ThYgh"
+      ],
+      "custom_css": [
+        ".index-section {padding-top: 0;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_and_image_LrFqJd": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".feature-row__image {border-radius: 20px;}",
+        ".feature-row {border-radius: 24px; background: #faf9fb;}",
+        ".feature-row__item {margin: 0;}",
+        ".feature-row__image {border-radius: 0px 20px 20px 0px;}",
+        "@media only screen and (max-width: 800px) {.feature-row__image {border-radius: 20px; } .feature-row__item {width: 100% !important; } .feature-row {flex-direction: column; margin: 0; background: none; } .feature-row__text--right {padding: 40px 20px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/b9f7914f627bf272282209aee7c914bc.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Backed by Science: The Proof Is in the Sleep",
+        "text": "<p><strong>Study on Sensoril Ashwagandha:<\/strong> Research published in the Indian Journal of Psychological Medicine found that Ashwagandha significantly improves sleep quality and can be a useful sleep aid.<\/p><p><strong>The Power of Tart Cherry:<\/strong> A study in the European Journal of Nutrition showed that Tart Cherry Juice increases both sleep duration and sleep quality in adults with insomnia. <\/p><p><strong>Valerian Root Effectiveness: <\/strong>According to a study in the American Journal of Medicine, Valerian Root has been shown to improve sleep quality without morning grogginess.<\/p><p><strong>Hops as a Sleep Aid:<\/strong> Research indicates that Hops, when combined with Valerian Root, can significantly improve sleep latency and quality.<\/p>",
+        "button_label": "TAKE KLOVA SLEEP BUNDLE NOW",
+        "button_link": "#subscribe",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "slideshow_image_jEMrAk": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_HHybU3": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Frame_1000003848.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003922.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_HHybU3"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "text_and_image_q7jmTn": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".feature-row__image {border-radius: 20px;}",
+        ".feature-row {border-radius: 24px; background: #faf9fb;}",
+        ".feature-row__item {margin: 0;}",
+        ".feature-row__image {border-radius: 20px 0 0 20px;}",
+        ".index-section {margin: 0 auto !important;}",
+        "@media (min-width: 300px) and (max-width: 800px) {}",
+        "@media only screen and (max-width: 800px) {.feature-row__image {border-radius: 20px; } .feature-row__item {width: 100% !important; } .feature-row {flex-direction: column; margin: 0; background: none; } .feature-row__text--left {padding: 40px 20px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_339S.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Join the Klova Sleep Revolution",
+        "text": "<p>With the Klova Sleep Bundle, embrace the journey to better sleep, better mornings, and better days. Discover the difference that a night of deep, restorative sleep can make in your life.<\/p><p><strong>From glowing testimonials to our dedicated blog, \"The Daily Snooze,\" Klova is more than a product; it's a wellness journey shared by many.<\/strong><\/p>",
+        "button_label": "TAKE KLOVA SLEEP BUNDLE NOW",
+        "button_link": "#subscribe",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_and_image_TiR8my": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".feature-row__image {border-radius: 20px;}",
+        ".feature-row {border-radius: 24px; background: #faf9fb;}",
+        ".feature-row__item {margin: 0;}",
+        ".feature-row__image {border-radius: 0px 20px 20px 0px;}",
+        ".index-section {margin: 0 auto !important;}",
+        "@media only screen and (max-width: 800px) {.feature-row__image {border-radius: 20px; } .feature-row {flex-direction: column; margin: 0; background: none; } .feature-row__item {width: 100% !important; } .feature-row__text--right {padding: 40px 20px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_339ss.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Rest Reimagined: Experience the Klova Sleep Bundle",
+        "text": "<p>With the Klova Sleep Bundle, embrace the journey to better sleep, better mornings, and better days. Discover the difference that a night of deep, restorative sleep can make in your life.<\/p><p><strong>From glowing testimonials to our dedicated blog, \"The Daily Snooze,\" Klova is more than a product; it's a wellness journey shared by many.<\/strong><\/p>",
+        "button_label": "TAKE KLOVA SLEEP BUNDLE NOW",
+        "button_link": "#subscribe",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "featured_product_pQCRx4": {
+      "type": "featured-product",
+      "blocks": {
+        "custom_DW7Fy9": {
+          "type": "custom",
+          "settings": {
+            "code": "<span id=\"subscribe\"><\/span>"
+          }
+        },
+        "judge_me_reviews_preview_badge_homepage_TNFgHX": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "sleep-bundle"
+          }
+        },
+        "description_Y8jjkJ": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "one_pack_FRW3B8": {
+          "type": "one_pack",
+          "disabled": true,
+          "settings": {
+            "pack_title": ""
+          }
+        },
+        "bundle_pack_UMFEwH": {
+          "type": "bundle_pack",
+          "disabled": true,
+          "settings": {
+            "bundle_title": ""
+          }
+        },
+        "skio_plan_picker_H7HnAL": {
+          "type": "skio-plan-picker",
+          "settings": {
+          }
+        },
+        "quantity_selector_FGEGyQ": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": false,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": false
+          }
+        },
+        "sales_point_rHJWjF": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
+        }
+      },
+      "block_order": [
+        "custom_DW7Fy9",
+        "judge_me_reviews_preview_badge_homepage_TNFgHX",
+        "description_Y8jjkJ",
+        "one_pack_FRW3B8",
+        "bundle_pack_UMFEwH",
+        "skio_plan_picker_H7HnAL",
+        "quantity_selector_FGEGyQ",
+        "sales_point_rHJWjF"
+      ],
+      "settings": {
+        "featured_product": "sleep-bundle",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": false,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "exit_intent_popup_Ffbk6r": {
+      "type": "exit-intent-popup",
+      "disabled": true,
+      "settings": {
+        "button_background_color": "#007bff",
+        "button_text_color": "#ffffff",
+        "button_text": "Click Me",
+        "popup_background_color": "#ffffff",
+        "popup_html_content": "<div class=\"ex-popup-container bg-gr--blue-purple\">\n  <h2 class=\"text__title\">Wait! Don’t Miss Our Exclusive Sleep Sample Offer! <\/h2>\n  <p>Before you leave, grab our exclusive Sleep Sample Pack at no cost—simply cover shipping! This special pack includes\n    a variety of our best sleep patches to help you find your ideal sleep solution. Don’t miss out on this unique\n    opportunity to enhance your nights!<\/p>\n  <div class=\"popup-button-container\">\n    <div class=\"patch__button\">\n      <a class=\"c-button -primary -large\" href=\"#\">\n        Get the FREE Sample Pack\n      <\/a>\n    <\/div>\n  <\/div>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_cta_EMhYQz",
+    "rich_text_dgbnDz",
+    "text_columns_AhtVmg",
+    "rich_text_3hPcwr",
+    "text_and_image_LrFqJd",
+    "slideshow_image_jEMrAk",
+    "text_and_image_q7jmTn",
+    "text_and_image_TiR8my",
+    "featured_product_pQCRx4",
+    "exit_intent_popup_Ffbk6r"
+  ]
+}

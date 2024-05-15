@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_nEpNXy": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_PghJqW": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_Gd4Ykn": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "48740f81-4aa6-40c7-b4bd-afe5ddaa826e": {
           "type": "skio-plan-picker",
           "settings": {
@@ -92,6 +119,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_nEpNXy",
+        "bundle_pack_PghJqW",
+        "bundle_btn_Gd4Ykn",
         "48740f81-4aa6-40c7-b4bd-afe5ddaa826e",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_R9YgnJ",
@@ -108,7 +138,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -178,6 +208,55 @@
         "text": "<p>The Ashwagandha Chill Patch is the <strong>easiest<\/strong>, and most <strong>convenient<\/strong> way to <strong>tackle stress and poor moods<\/strong>. Each patch is made with <strong>clincally proven<\/strong> Sensoril® Ashwagandha, which has been shown to help <strong>improve mood and reduce stress<\/strong> symptoms over 70%!<\/p>"
       }
     },
+    "1655216981912667ca": {
+      "type": "carousel-videos",
+      "blocks": {
+        "1655216981df61f9ea-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928093180?share=copy"
+          }
+        },
+        "1655216981df61f9ea-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928092614?share=copy"
+          }
+        },
+        "video_Y6dAX9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928093005?share=copy"
+          }
+        },
+        "dffb1456-ef04-4a14-8876-625db8480a1d": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928092427?share=copy"
+          }
+        },
+        "1655216981df61f9ea-1": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/928092815?share=copy"
+          }
+        }
+      },
+      "block_order": [
+        "1655216981df61f9ea-0",
+        "1655216981df61f9ea-2",
+        "video_Y6dAX9",
+        "dffb1456-ef04-4a14-8876-625db8480a1d",
+        "1655216981df61f9ea-1"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 16px 0px",
+        "paddingsection_mob": "0px 0px 16px 0px",
+        "title": "Chill Vibes Chronicles: Real Stories from Real Users",
+        "rte": "<p>Former Stress Warriors Share Their Klova Chill Patch Experience<\/p>",
+        "overlay": "#faf9fb"
+      }
+    },
     "f9abfcd4-03c3-4a06-b16c-0c8aa6b1121c": {
       "type": "benefits-card",
       "settings": {
@@ -211,56 +290,6 @@
         "image": "shopify:\/\/shop_images\/Chill_Website_Images.png",
         "title": "Find Your Vibe",
         "text": "<p>According to the American Institute of Stress, over 70% of people deal with stress that impacts their physical or mental health.<\/p><p><\/p><p>We created Chill Patches because we knew there was a better way to manage stress and low moods.<\/p><p><\/p><p>We found that some of the same proven ingredients in our best selling ZPatch, blended with Sensoril Ashwagandha had a HUGE impact on stress, mood and cognitive function for the majority of users.<\/p><p><\/p><p>Find your vibe, naturally and hassle-free thanks to our 30 Day Money Back Guarantee. <\/p>"
-      }
-    },
-    "1655216981912667ca": {
-      "type": "carousel-videos",
-      "blocks": {
-        "1655216981df61f9ea-0": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/player.vimeo.com\/video\/560840637"
-          }
-        },
-        "1655216981df61f9ea-1": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/player.vimeo.com\/video\/560842790"
-          }
-        },
-        "1655216981df61f9ea-2": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/player.vimeo.com\/video\/560859492"
-          }
-        },
-        "dffb1456-ef04-4a14-8876-625db8480a1d": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/player.vimeo.com\/video\/560861088"
-          }
-        },
-        "ea26f394-5e3f-4bbe-bd65-aecc436f2dd9": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/player.vimeo.com\/video\/560855080"
-          }
-        }
-      },
-      "block_order": [
-        "1655216981df61f9ea-0",
-        "1655216981df61f9ea-1",
-        "1655216981df61f9ea-2",
-        "dffb1456-ef04-4a14-8876-625db8480a1d",
-        "ea26f394-5e3f-4bbe-bd65-aecc436f2dd9"
-      ],
-      "disabled": true,
-      "settings": {
-        "paddingsection": "0px 0px 16px 0px",
-        "paddingsection_mob": "0px 0px 16px 0px",
-        "title": "Bedtime Stories: Before & After",
-        "rte": "<p>Former Insomniacs Continuously Send Us ZPatch Reviews, Here Are Some Of Their Stories…<\/p>",
-        "overlay": "#faf9fb"
       }
     },
     "1655285723551083cb": {
@@ -419,6 +448,13 @@
         "overlay": "#faf9fb"
       }
     },
+    "sleep_chart_zwXQwj": {
+      "type": "sleep-chart",
+      "settings": {
+        "title": "Comparison Chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
+      }
+    },
     "16539162981609c3bf": {
       "type": "benefits-card",
       "blocks": {
@@ -457,38 +493,6 @@
         "image-mobile": "shopify:\/\/shop_images\/GIrlatDesk-Blue-shutterstock_729605338.jpg",
         "title": "Frequently Asked Questions",
         "text": ""
-      }
-    },
-    "16539298801be67a40": {
-      "type": "simile",
-      "blocks": {
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
-          "type": "text",
-          "settings": {
-            "subtitle": "The original",
-            "title": "Sleep Patch",
-            "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify:\/\/shop_images\/19430931_1.png"
-          }
-        },
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
-          "type": "image_picker",
-          "settings": {
-            "subtitle-two": "Brand new",
-            "title-two": "Extra Strenght Sleep Patch",
-            "text-two": "",
-            "item-image-two": "shopify:\/\/shop_images\/19430931_1.png"
-          }
-        }
-      },
-      "block_order": [
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
-      ],
-      "disabled": true,
-      "settings": {
-        "text": "VS",
-        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
       }
     },
     "1653908906e8b1c207": {
@@ -584,101 +588,6 @@
         "space_around": true
       }
     },
-    "1655205737fe6568e0": {
-      "type": "top-products",
-      "blocks": {
-        "165520573733a3ee76-0": {
-          "type": "product",
-          "settings": {
-            "style_overlay": "bg-gr--green-blue",
-            "product": "extra-strength-sleep-patch",
-            "image": "shopify:\/\/shop_images\/untitled-design-95_png.webp",
-            "description": "<p>100% Drug-Free sleeping patches, made with melatonin, valerian, l-theanine and other natural ingredients. Peel. Stick. Sleep.<\/p>",
-            "btn": "LEARN MORE"
-          }
-        },
-        "165520573733a3ee76-1": {
-          "type": "product",
-          "settings": {
-            "style_overlay": "bg-gr--yellow-orange",
-            "product": "nootropic-focus-patch",
-            "image": "shopify:\/\/shop_images\/focus_3ae6cce1-61de-495a-92b5-49c1e63b0624.png",
-            "description": "<p>The World's First nootropic focus patches made with guarana, huperzine, agmatine sulfate and other clinically proven ingredients. Peel. Stick. Focus.<\/p>",
-            "btn": "LEARN MORE"
-          }
-        }
-      },
-      "block_order": [
-        "165520573733a3ee76-0",
-        "165520573733a3ee76-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "paddingsection": "48px 0px 104px 0px",
-        "paddingsection_mob": "0px 0px 0px 0px",
-        "title": "You may also like"
-      }
-    },
-    "16553028114973d0d8": {
-      "type": "faq-old",
-      "blocks": {
-        "1655302811179702a3-0": {
-          "type": "question",
-          "settings": {
-            "title": "MEET YOUR NEW BEDTIME BFF",
-            "text": "<p><strong>Klova ZPatches combine melatonin and all natural ingredients in a convenient transdermal patch.<br\/><br\/><\/strong>Simply apply about an hour before bed to start unwinding, and ease into deep, restorative sleep. Clinically Proven, natural ingredients in the ZPatch are absorbed throughout the night, and can help keep you sleeping soundly for up to 8 hours. The Best Part? No groggy mornings. 94% of Customers Surveyed said they actually woke up MORE refreshed, with MORE energy, following nights where they used the ZPatch. Try them Hassle Free - thanks to our 30 Day Money Back Guarantee.<\/p>",
-            "video_url": "https:\/\/player.vimeo.com\/video\/560828031"
-          }
-        },
-        "1655302811179702a3-1": {
-          "type": "question",
-          "settings": {
-            "title": "How it works",
-            "text": "<p><strong>Our unique, transdermal ingredient delivery technology is what makes the ZPatch the highest rated sleep patch in the country.<br\/><br\/><\/strong>The Contact Layer of the Patch is infused with Cosmoperine, a black pepper extract that prepares the skin for absorption by opening up the upper dermis capillaries. Within 20 - 60 minutes of putting on a ZPatch, your skin starts to absorb the all natural ingredients from the Formula Layer of the Patch. These ingredients are absorbed for about 6 hours, so they wear off before you rise - leaving you rested, refreshed, energized and ready to take on the day.<\/p>",
-            "video_url": "https:\/\/player.vimeo.com\/video\/560889317"
-          }
-        },
-        "0fc55593-3006-4465-8969-1562092260b8": {
-          "type": "question",
-          "settings": {
-            "title": "How To Use It",
-            "text": "<p><strong>Using the ZPatch is easy<br\/><br\/><\/strong>You can place it just about anywhere, but most users prefer the top of foot, shoulder, abdomen, calf or forearm. The ideal location is a clean, hairless part of the body. Even ‘peachfuzz’ can affect the ingredient delivery, so we recommend shaving the area it will be placed, especially if there is a little body hair. Simply Peel off a patch, Stick it on, and you’ll start to feel the effects within 20-60 minutes. Discard the patch in the morning, and remove any of the excess, natural adhesive with soap, water or rubbing alcohol. (Shaving the area prior to use prevents excess adhesive sticking to skin when patch is removed in the morning)<\/p>",
-            "video_url": ""
-          }
-        },
-        "d58f5253-9d2d-4531-a300-fbd20bff7709": {
-          "type": "question",
-          "settings": {
-            "title": "What’s In It",
-            "text": "<p>Full Supplement Facts<\/p>",
-            "video_url": "",
-            "image": "shopify:\/\/shop_images\/m_pr9.webp"
-          }
-        },
-        "c5baf7df-c79f-41e2-a28d-dc884730b9a5": {
-          "type": "question",
-          "settings": {
-            "title": "Better Sleep Guarantee",
-            "text": "<p>Yes, we offer a 30 Day Money Back Guarantee if the product doesn't meet your expectations.<\/p><p><strong>*Fun Fact: Klova Sleep Patches have less than a 2% refund rate!<\/strong><\/p>",
-            "video_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "1655302811179702a3-0",
-        "1655302811179702a3-1",
-        "0fc55593-3006-4465-8969-1562092260b8",
-        "d58f5253-9d2d-4531-a300-fbd20bff7709",
-        "c5baf7df-c79f-41e2-a28d-dc884730b9a5"
-      ],
-      "disabled": true,
-      "settings": {
-        "paddingsection": "100px 0px 100px 0px",
-        "paddingsection_mob": "60px 0px 60px 0px",
-        "title": "",
-        "style_overlay": "bg-gr--blue-purple"
-      }
-    },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
       "settings": {
@@ -704,6 +613,29 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "slideshow_image_gcxVh9": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_RR3xP9": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_RR3xP9"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
@@ -711,20 +643,19 @@
     "main",
     "165520195680c8f3b7",
     "1653916303774cfc14",
+    "1655216981912667ca",
     "f9abfcd4-03c3-4a06-b16c-0c8aa6b1121c",
     "7499d221-a431-4923-838d-1f0823023fcc",
     "2e0268da-a51d-472e-9e99-fe752e6fcac4",
-    "1655216981912667ca",
     "1655285723551083cb",
     "1655290887e148c5bc",
+    "sleep_chart_zwXQwj",
     "16539162981609c3bf",
-    "16539298801be67a40",
     "1653908906e8b1c207",
     "1707412982f325c155",
     "1663080677e87bd9f4",
-    "1655205737fe6568e0",
-    "16553028114973d0d8",
     "zp-product-footer-content",
-    "170743093275627db1"
+    "170743093275627db1",
+    "slideshow_image_gcxVh9"
   ]
 }

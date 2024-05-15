@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_VBLFJk": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_NGHfTK": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_nJ3Dfz": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "4c031575-b1fb-46de-a7bc-39207e9de917": {
           "type": "skio-plan-picker",
           "settings": {
@@ -93,6 +120,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_VBLFJk",
+        "bundle_pack_NGHfTK",
+        "bundle_btn_nJ3Dfz",
         "4c031575-b1fb-46de-a7bc-39207e9de917",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_CAhqfx",
@@ -101,7 +131,7 @@
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
@@ -109,7 +139,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -281,7 +311,7 @@
     "16539274943ce12887": {
       "type": "sleep-chart",
       "settings": {
-        "title": "Sleep Aid Comparison chart",
+        "title": "Comparison chart",
         "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
@@ -302,41 +332,10 @@
       ],
       "settings": {
         "full_width": false,
+        "title": "Product Comparison",
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
-      }
-    },
-    "16539298801be67a40": {
-      "type": "simile",
-      "blocks": {
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
-          "type": "text",
-          "settings": {
-            "subtitle": "The original",
-            "title": "Sleep Patch",
-            "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify:\/\/shop_images\/ZPatch-AmazonMainImage-2022_1_png.webp"
-          }
-        },
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
-          "type": "image_picker",
-          "settings": {
-            "subtitle-two": "Brand new",
-            "title-two": "Extra Strength Sleep Patch",
-            "text-two": "",
-            "item-image-two": "shopify:\/\/shop_images\/untitled-design-95_png.webp"
-          }
-        }
-      },
-      "block_order": [
-        "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
-        "b1bed1a0-3e11-49b3-8de9-a329568d8189"
-      ],
-      "disabled": true,
-      "settings": {
-        "text": "VS",
-        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
       }
     },
     "1653908906e8b1c207": {
@@ -414,6 +413,29 @@
       "type": "product-footer-content-zipifypages",
       "settings": {
       }
+    },
+    "slideshow_image_aQjDP8": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_fQRUEQ": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_fQRUEQ"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
@@ -428,9 +450,9 @@
     "16539163096b01f9e3",
     "16539274943ce12887",
     "slideshow_image_DphBr7",
-    "16539298801be67a40",
     "1653908906e8b1c207",
     "16630817672cdb6d0f",
-    "zp-product-footer-content"
+    "zp-product-footer-content",
+    "slideshow_image_aQjDP8"
   ]
 }

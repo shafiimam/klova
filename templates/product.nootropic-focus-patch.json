@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_yFRHyx": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_KGFCnz": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_i8xLMH": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "8ac7f3a8-6330-4b31-9e5c-11f94adab453": {
           "type": "skio-plan-picker",
           "settings": {
@@ -93,6 +120,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_yFRHyx",
+        "bundle_pack_KGFCnz",
+        "bundle_btn_i8xLMH",
         "8ac7f3a8-6330-4b31-9e5c-11f94adab453",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_zdK4Lf",
@@ -101,7 +131,7 @@
         "4da97281-5cd8-4047-acbe-7c8af01bc5c6"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": true,
         "sku_enable": false,
@@ -109,7 +139,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -327,7 +357,7 @@
       "type": "sleep-chart",
       "settings": {
         "title": "",
-        "image": "shopify:\/\/shop_images\/CompChart-NoBkgd-Focus-1.png"
+        "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
     "16539298801be67a40": {
@@ -436,6 +466,29 @@
       "type": "product-footer-content-zipifypages",
       "settings": {
       }
+    },
+    "slideshow_image_7BihzW": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_eRqmzF": {
+          "type": "image",
+          "settings": {
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_eRqmzF"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
@@ -453,6 +506,7 @@
     "16539298801be67a40",
     "1653908906e8b1c207",
     "16630811238323670e",
-    "zp-product-footer-content"
+    "zp-product-footer-content",
+    "slideshow_image_7BihzW"
   ]
 }

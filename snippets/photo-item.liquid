@@ -1,0 +1,23 @@
+<div class="photo-item" {{ block.shopify_attributes }}>
+  <div class="photo-item__image">
+    <img src="{{ block.settings.image | img_url: '264x' }}">
+  </div>
+  <p class="photo-item__caption" style="margin-top: 10px">
+    {{ block.settings.caption }}
+  </p>
+  {% if block.settings.subtitle %}
+    <p class="photo-item__subcaption" style="text-align: center">
+      {{ block.settings.subtitle }}
+    </p>
+  {% endif %}
+</div>
+
+
+<style>
+  .photo-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+</style>

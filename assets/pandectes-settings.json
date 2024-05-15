@@ -2,11 +2,11 @@
   "store": {
     "id": 20650707,
     "plan": "basic",
-    "theme": "Loop Pre Live | Klova (15\/03\/2024)",
+    "theme": "LIVE | Klova (Please don't update) | (10/04/24)",
     "primaryLocale": "en",
     "adminMode": false
   },
-  "tsPublished": 1710774170,
+  "tsPublished": 1712796572,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -313,15 +313,15 @@
       }
     },
     "content": {
-      "href": "https:\/\/klova.myshopify.com\/policies\/privacy-policy",
-      "imprintHref": "\/",
+      "href": "https://klova.myshopify.com/policies/privacy-policy",
+      "imprintHref": "/",
       "close": "&#10005;",
       "target": "",
       "logo": ""
     },
-    "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-bottom-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
+    "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-bottom-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--></div></div>",
     "compliance": {
-      "opt-both": "<div class=\"cc-compliance cc-highlight\">{{deny}}{{allow}}<\/div>"
+      "opt-both": "<div class=\"cc-compliance cc-highlight\">{{deny}}{{allow}}</div>"
     },
     "type": "opt-both",
     "layouts": {
@@ -332,7 +332,7 @@
     "revokable": false,
     "animateRevokable": false,
     "revokableReset": false,
-    "revokableLogoUrl": "https:\/\/cdn.shopify.com\/s\/files\/1\/2065\/0707\/t\/84\/assets\/pandectes-reopen-logo.png?v=1710504676",
+    "revokableLogoUrl": "https://cdn.shopify.com/s/files/1/2065/0707/t/100/assets/pandectes-reopen-logo.png?v=1712731400",
     "revokablePlacement": "bottom-left",
     "revokableMarginHorizontal": 15,
     "revokableMarginVertical": 15,
@@ -354,7 +354,7 @@
   },
   "banner": {
     "resetTs": 1647281577,
-    "extraCss": "        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .pd-cookie-banner-window .cc-header, .cc-logo {text-align: center}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .pd-cookie-banner-window .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    button.pd-cp-btn, a.pd-cp-btn{background-color:#000000;color:#FFFFFF!important;}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 \/ 20%);}  ",
+    "extraCss": "        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .pd-cookie-banner-window .cc-header, .cc-logo {text-align: center}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: inherit;}    .pd-cookie-banner-window .cc-header{font-family: inherit;}    .pd-cp-ui{font-family: inherit; background-color: #FFFFFF;color:#000000;}    button.pd-cp-btn, a.pd-cp-btn{background-color:#000000;color:#FFFFFF!important;}    input + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(0, 0, 0, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(0, 0, 0, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 1)}    .pd-cp-ui-close{color:#000000;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #000000!important}    .pd-cp-preferences-slider{background-color:#000000}    .pd-cp-toggle{color:#000000!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #000000}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#000000!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 / 20%);}  ",
     "customJavascript": null,
     "showPoweredBy": false,
     "hybridStrict": false,
@@ -367,7 +367,7 @@
     "hasTransition": true,
     "blockingPage": false,
     "showOnlyLandingPage": false,
-    "leaveSiteUrl": "https:\/\/www.google.com",
+    "leaveSiteUrl": "https://www.google.com",
     "linkRespectStoreLang": false
   },
   "cookies": {
@@ -375,7 +375,7 @@
       {
         "name": "shopify_pay_redirect",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -388,7 +388,7 @@
       {
         "name": "secure_customer_sig",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -401,7 +401,7 @@
       {
         "name": "cart_currency",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -414,7 +414,7 @@
       {
         "name": "_secure_session_id",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -429,7 +429,7 @@
       {
         "name": "_shopify_sa_t",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -442,7 +442,7 @@
       {
         "name": "_landing_page",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -455,7 +455,7 @@
       {
         "name": "_shopify_s",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -468,7 +468,7 @@
       {
         "name": "_shopify_y",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -481,7 +481,7 @@
       {
         "name": "_shopify_sa_p",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -494,7 +494,7 @@
       {
         "name": "_pandectes_gdpr",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Pandectes",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -507,7 +507,7 @@
       {
         "name": "_y",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -520,7 +520,7 @@
       {
         "name": "_orig_referrer",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -533,7 +533,7 @@
       {
         "name": "_s",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Shopify",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -548,7 +548,7 @@
       {
         "name": "_gat",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Google",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -561,7 +561,7 @@
       {
         "name": "_ga",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Google",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -574,7 +574,7 @@
       {
         "name": "_gid",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Google",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -589,7 +589,7 @@
       {
         "name": "__kla_id",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Klaviyo",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -602,7 +602,7 @@
       {
         "name": "_fbp",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Facebook",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -615,7 +615,7 @@
       {
         "name": "_gcl_au",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Google",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -630,7 +630,7 @@
       {
         "name": "_sp_id.ceda",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -643,7 +643,7 @@
       {
         "name": "_lo_v",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -656,7 +656,7 @@
       {
         "name": "datadome",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -669,7 +669,7 @@
       {
         "name": "_ps_session",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -682,7 +682,7 @@
       {
         "name": "wickedfu_null",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -695,7 +695,7 @@
       {
         "name": "_zp_client",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -708,7 +708,7 @@
       {
         "name": "_sp_ses.ceda",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": true,
         "retention": "1 year(s)",
@@ -721,7 +721,7 @@
       {
         "name": "_lo_uid",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -734,7 +734,7 @@
       {
         "name": "_lorid",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -747,7 +747,7 @@
       {
         "name": "__lotl",
         "domain": ".klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": false,
         "retention": "1 year(s)",
@@ -760,7 +760,7 @@
       {
         "name": "localization",
         "domain": "www.klova.com",
-        "path": "\/",
+        "path": "/",
         "provider": "Unknown",
         "firstParty": true,
         "retention": "1 year(s)",

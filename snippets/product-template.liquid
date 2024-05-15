@@ -137,9 +137,6 @@
                   {%- when '@app' -%}
                     {% render block %}
 
-
-
-                  
                   {%- when 'skio-plan-picker' -%}
                     {% if product.available %}
                       {% comment %}
@@ -163,7 +160,28 @@
                         {% render 'skio-details' %}
                       {% endcomment %}
                     {% endif %}
+                  {%- when 'buy_buttons' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      {%- unless product.empty? -%}
+                        <div class="product-block">
+                          {%- render 'product-form',
+                            form_id: form_id,
+                            product: product,
+                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
+                            direct_to_checkout: block.settings.direct_to_checkout,
+                            current_variant: current_variant
+                          -%}
+                        </div>
+                      {%- endunless -%}
 
+                      {%- if block.settings.surface_pickup_enable -%}
+                        <div
+                          data-store-availability-holder
+                          data-product-name="{{ product.title | escape }}"
+                          data-base-url="{{ shop.url }}{{ routes.root_url }}"
+                        ></div>
+                      {%- endif -%}
+                    </div>
                   {%- when 'separator' -%}
                     <div class="product-block"><hr></div>
                   {%- when 'text' -%}
@@ -254,6 +272,96 @@
                       {%- assign id = block.id | append: product.id -%}
                       {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
                     </div>
+
+                  {% when 'one_pack' %}
+                   {% if product.metafields.custom.onepack_variant !=blank %}
+                    <h2 class="pack-title">{{ block.settings.pack_title }}</h2>
+                   {% endif %}  
+                    {% assign onepack_data = product.metafields.custom.onepack_variant | split: ',' %}
+
+                    {% assign onepack_pro = onepack_variant | split: '|' %}
+
+                    <div class="onepack_data">
+                      <div class="onepack_content">
+                        <div class="onepack_main">
+                          {% for onepack_info in onepack_data %}
+                            {% assign onepackpipe = onepack_info | split: '|' %}
+                            {% assign onepackhandle = onepackpipe[0] %}
+                            <div class="pro_data">
+                              {% assign content_price = all_products[onepackhandle] %}
+                              {% assign current_page_url = shop.url | append: request.path %}
+                              {% assign pathurl = request.path | remove: '/products/' %}
+                              <a href="{{ content_price.url }}">
+                                <img
+                                  class="{{ onepackhandle }} {% if pathurl == onepackhandle %} border-line {% else %} no-border {% endif %}"
+                                  src="{{ content_price.images[0] | img_url:'master' }}"
+                                >
+                                <p class="pro-meta-title">{{ onepackpipe[1] | capitalize }}</p>
+                              </a>
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+
+                  {% when 'bundle_pack' %}
+                  
+                    {% if product.metafields.custom.bundle_variant !=blank %}
+                    <h2 class="bundle-title">{{ block.settings.bundle_title }}</h2>
+                    {% endif %}
+                    {% assign onepack_data = product.metafields.custom.bundle_variant | split: ',' %}
+                    {% assign onepack_pro = onepack_variant | split: '|' %}
+
+                    <div class="onepack_data">
+                      <div class="onepack_content">
+                        <div class="onepack_main">
+                          {% for onepack_info in onepack_data %}
+                            {% assign onepackpipe = onepack_info | split: '|' %}
+                            {% assign onepackhandle = onepackpipe[0] %}
+                            <div class="pro_data">
+                              {% assign content_price = all_products[onepackhandle] %}
+                              {% assign current_page_url = shop.url | append: request.path %}
+                              {% assign pathurl = request.path | remove: '/products/' %}
+                              <a href="{{ content_price.url }}">
+                                <img
+                                  class="{{ onepackhandle }} {% if pathurl contains onepackhandle %}border-line{% endif %}"
+                                  src="{{ content_price.images[0] | img_url:'master' }}"
+                                >
+                                <p class="pro-meta-title">{{ onepackpipe[1] | capitalize }}</p>
+                              </a>
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+
+                  {% when 'bundle_btn' %}
+                   <div class="bundle-bg">
+              
+                {% if block.settings.bundle_img !=blank %}
+                <div class="bundle-content">
+                  <div class="bundle-image">
+                    <picture>
+                      <source media="(min-width:768px)" srcset="{{ block.settings.bundle_img | img_url:'master' }}">
+                      <source media="(min-width:320px)" srcset="{{ block.settings.bundle_mob_img | img_url:'master' }}">
+                      <img src="{{ block.settings.bundle_img | img_url:'master' }}" alt="Flowers" style="width:auto;">
+                    </picture>
+                  <div class="bundle-text">
+                    {% if block.settings.bundle_data %}
+                    <h2 class="bundle-text-data">{{ block.settings.bundle_data }}</h2>
+                    {% endif %}
+                    {% if block.settings.bundle_sub_text !=blank %}
+                    <p class="bundle-sub-text">{{ block.settings.bundle_sub_text }}</p>
+                    {% endif %}
+                    {% if block.settings.bundle_btn !=blank %}
+                   <a class="bundle-url" target="_blank" href="{{ block.settings.bundle_url }}"><p class="bundle-btn-text">{{ block.settings.bundle_btn }}</p></a>
+                    {% endif %}
+                  </div>
+                  </div>  
+                </div>
+                {% endif %}
+              
+            </div>
 
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
@@ -386,7 +494,6 @@
                             form_id: form_id,
                             product: product,
                             block: block,
-                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
                             current_variant: current_variant
                           -%}
                         {%- endunless -%}
@@ -432,14 +539,13 @@
                               color_option_index: color_option_index
                             -%}
                           {%- else -%}
-                            {%-
-                              render 'variant-dropdown',
+                            {%- render 'variant-dropdown',
                               product: product,
                               form_id: form_id,
                               section_id: section_id,
                               option: option,
                               forloop: forloop,
-                              variant_labels: block.settings.variant_labels,
+                              variant_labels: block.settings.variant_labels
                             -%}
                           {%- endif -%}
                         {%- endfor -%}

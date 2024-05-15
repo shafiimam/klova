@@ -1,0 +1,220 @@
+{%- comment -%}
+Show a popup on the screen, when the user tries to exit the tab or window. It can be customised from the theme
+customisaton editor. ~Shikeb
+{%- endcomment -%}
+
+<!-- <div class="sticky-button" style="background-color: {{ section.settings.button_background_color }}; color: {{ section.settings.button_text_color }}">
+  <button class="open-popup" style="background-color: {{ section.settings.button_background_color }}; color: {{ section.settings.button_text_color }}">{{ section.settings.button_text }}</button>
+</div> -->
+
+<div class="popup-container">
+  <div class="popup-content" style="background-color: {{ section.settings.popup_background_color }};">
+    <button class="close-popup">×</button>
+    <!-- Custom HTML content for the popup -->
+    {{ section.settings.popup_html_content }}
+  </div>
+</div>
+
+<style>
+  /* Styles for the button */
+  .popup-button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .popup-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Styles for popup container */
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    overflow: auto;
+  }
+
+  /* Styles for popup content */
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    max-width: 960px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .ex-popup-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .popup-content img {
+    max-width: 950px;
+  }
+
+  .popup-content button.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+
+  @keyframes twitchyTrigger {
+    0% {
+      transform: translateX(0)
+    }
+
+    25% {
+      transform: translateY(-6px)
+    }
+
+    35% {
+      transform: translateY(-6px) rotate(14deg)
+    }
+
+    55% {
+      transform: translateY(-6px) rotate(-14deg)
+    }
+
+    65% {
+      transform: translateY(-6px) rotate(14deg)
+    }
+
+    75% {
+      transform: translateY(-6px) rotate(-14deg)
+    }
+
+    100% {
+      transform: translateY(0) rotate(0)
+    }
+  }
+
+
+  /* Responsive styles */
+  @media screen and (max-width: 767px) {
+    .sticky-button {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .popup-content {
+      width: 95%;
+      height: auto;
+    }
+
+    .popup-content img {
+      /* width:100%; */
+      height: auto;
+      padding-left: 25px;
+    }
+
+    #popupdeskimg {
+      display: none;
+    }
+
+    #popupMobimg {
+      display: block !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) {}
+
+  @media screen and (min-width: 1920px) {
+    /* Styles for 4k monitors */
+  }
+</style>
+
+<script>
+  var openPopupButtons = document.querySelectorAll('.open-popup');
+  var closePopupButton = document.querySelector('.close-popup');
+  var popupContainer = document.querySelector('.popup-container');
+
+  document.addEventListener("DOMContentLoaded", function () {
+    /* openPopupButtons.forEach(function(button) {
+       button.addEventListener('click', function() {
+         popupContainer.style.display = 'block';
+       });
+     }); */
+
+    closePopupButton.addEventListener('click', function () {
+      popupContainer.style.display = 'none';
+    });
+  });
+
+  // Event listener for mouseleave
+  document.addEventListener('mouseleave', function (event) {
+    // Check if the mouse is leaving towards the top of the window
+    if (event.clientY < 0 && document.visibilityState !== 'hidden') {
+      popupContainer.style.display = 'block';
+    }
+  });
+</script>
+
+{%- schema -%}
+{
+"name": "Exit-intent Popup",
+"settings": [
+{
+"type": "color",
+"id": "button_background_color",
+"label": "Button Background Color",
+"default": "#007bff"
+},
+{
+"type": "color",
+"id": "button_text_color",
+"label": "Button Text Color",
+"default": "#ffffff"
+},
+{
+"type": "text",
+"id": "button_text",
+"label": "Button Text",
+"default": "Click Me"
+},
+{
+"type": "color",
+"id": "popup_background_color",
+"label": "Popup Background Color",
+"default": "#ffffff"
+},
+{
+"type": "textarea",
+"id": "popup_html_content",
+"label": "Popup HTML Content",
+"default": "Content here"
+}
+],
+"presets": [
+{
+"name": "Exit-intent Popup"
+}
+]
+}
+{%- endschema -%}

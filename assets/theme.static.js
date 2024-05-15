@@ -2367,15 +2367,15 @@ lazySizesConfig.expFactor = 4;
       // Add class `unloading` to body for page transition on all
       // anchor tags, unless they have `js-no-transition` class
       document.querySelectorAll('a:not(.js-no-transition, .jdgm-star, .jdgm-rev__body-read-more, .jdgm-paginate__page)').forEach(el => {
-        el.addEventListener('click', function(evt) {
-          if (evt.metaKey) return true;
-          evt.preventDefault();
-          document.body.classList.add('unloading');
-          var src = el.getAttribute('href');
-          window.setTimeout(function() {
-            location.href = src;
-          }, 50);
-        });
+        // el.addEventListener('click', function(evt) {
+        //   if (evt.metaKey) return true;
+        //   evt.preventDefault();
+        //   document.body.classList.add('unloading');
+        //   var src = el.getAttribute('href');
+        //   window.setTimeout(function() {
+        //     location.href = src;
+        //   }, 50);
+        // });
       });
   
       // Close the mobile nav drawer after clicking on a nav link

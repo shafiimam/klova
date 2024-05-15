@@ -1,0 +1,147 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": false,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list-slider",
+      "blocks": {
+        "03a5378b-e0e5-4adb-9024-f00f45c3cbb6": {
+          "type": "collection-name",
+          "settings": {
+            "collection": "all",
+            "title": "All"
+          }
+        },
+        "collection_name_tCkqXa": {
+          "type": "collection-name",
+          "settings": {
+            "collection": "bundles",
+            "title": "Bundles"
+          }
+        },
+        "09a927ba-d4c0-4b6c-90b4-bd56488e97ae": {
+          "type": "collection-name",
+          "settings": {
+            "collection": "patches",
+            "title": "Patches"
+          }
+        },
+        "d85768e5-eda9-49ef-9234-0949135c3ee5": {
+          "type": "collection-name",
+          "settings": {
+            "collection": "sleep",
+            "title": "Sleep"
+          }
+        },
+        "420f4dcf-bf25-44c5-be96-b0744523d5d9": {
+          "type": "collection-name",
+          "settings": {
+            "collection": "performance",
+            "title": "Performance"
+          }
+        },
+        "collection_name_d9iNLr": {
+          "type": "collection-name",
+          "settings": {
+            "collection": "relax",
+            "title": "Relax"
+          }
+        }
+      },
+      "block_order": [
+        "03a5378b-e0e5-4adb-9024-f00f45c3cbb6",
+        "collection_name_tCkqXa",
+        "09a927ba-d4c0-4b6c-90b4-bd56488e97ae",
+        "d85768e5-eda9-49ef-9234-0949135c3ee5",
+        "420f4dcf-bf25-44c5-be96-b0744523d5d9",
+        "collection_name_d9iNLr"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 20px 0px",
+        "paddingsection_mob": "0px 0px 20px 0px",
+        "style_overlay": "bg-gr--blue-purple",
+        "show_byob": true,
+        "byob_title": "Build Your Own Bundle",
+        "byob_link": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapse_filters": false,
+        "enable_color_swatches": false,
+        "enable_sort": false
+      }
+    },
+    "1654436646762d3b0b": {
+      "type": "call-to-action",
+      "disabled": true,
+      "settings": {
+        "marginsection": "0px 0px 40px 0px",
+        "marginsection_mob": "0px 0px 40px 0px",
+        "call_to_action_desktop_image": "shopify://shop_images/CTA_bg.jpg",
+        "call_to_action_mobile_image": "shopify://shop_images/CTA_bg_mobile.jpg",
+        "call_to_action_title": "Build your custom pack",
+        "call_to_action_descr": "<p>Can bring you one step closer towards achieving your goals — without the weight of feeling constantly distracted.</p>",
+        "call_to_action_button": "To Builder",
+        "call_to_action_button_link": "#"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "promo-grid",
+    "collection-list",
+    "main-collection",
+    "1654436646762d3b0b",
+    "recently-viewed"
+  ]
+}

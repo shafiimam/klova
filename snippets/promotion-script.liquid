@@ -1,0 +1,62 @@
+{% assign thresholdPrice = 4500 %}
+{% assign freProducVariantId = 40337226399809 %}
+
+<script>
+    window.freeProductData = {
+      thresholdPrice: {{ thresholdPrice }},
+      freeProduct: {{ freProducVariantId }},
+      campaignDateStarted: hasDatePassedInPST('2024-04-09'),
+      campaignDateEnded: hasDatePassedInPST('2024-04-10')
+    }
+
+    function hasDatePassedInPST(dateString) {
+    const [year, month, date] = dateString.split('-').map(Number);
+    const adjustedMonth = month - 1;
+    const targetDate = new Date(year, adjustedMonth, date, 23, 59, 59);
+    const options = { timeZone: 'America/Los_Angeles' };
+    const nowPST = new Date(new Date().toLocaleString('en-US', options));
+    return nowPST > targetDate;
+  }
+
+  const {thresholdPrice, freProducVariantId,campaignDateStarted, campaignDateEnded } =  window.freeProductData;
+  const isCampaignLive = campaignDateStarted && !campaignDateEnded
+
+  async function isFreeProductAdded(variantId, thresholdPrice){
+    const cart = await fetch('/cart.js').then(res=> res.json());
+    const isProductAvaialable = cart.variants.some(variant=> variant.variant_id === variantId);
+    const totalPrice = cart.total_price || 0
+    const isCartThresholdMet = totalPrice >= thresholdPrice
+    return !isProductAvaialable && isCartThresholdMet;
+  }
+
+  async function addFreeProduct(variantId){
+    const isAllowedToAdd = await isFreeProductAdded(variantId);
+    if(isAllowedToAdd){
+      console.log('free product is already in cart');
+      return;
+    }
+    const options = {
+      method: 'POST',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+       'items': [{
+        'id': variantId,
+        'quantity': 2
+        }]
+      })
+    }
+    fetch('/cart/add.js',options).then(res => res.json()).then(data=>{
+      console.log('product added',cart);
+    }).catch(err=> console.log('error occured adding free product',err))
+  }
+  
+  if(isCampaignLive){
+    debugger
+    console.log('adding free product in cart')
+    addFreeProduct(freProducVariantId)
+  }
+  
+  
+</script>

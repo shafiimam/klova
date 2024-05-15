@@ -30,6 +30,45 @@
 
 {%- render 'product-metafields-block', product: product -%}
 
+<style>
+    {% for block in section.blocks %}
+    .bundle-text{
+      background-color:{{ block.settings.bundle_bg }};
+      color:{{ block.settings.bundle_color_text }};
+      border:{{ block.settings.bundle_border_num }}px solid {{ block.settings.bundle_btn_border }};
+      /* padding: 15px 10px; */
+      border-radius: 6px;
+      font-family:Bergen Sans;
+      font-size:16px;
+      font-weight: 600;
+      /* text-align: center; */
+    }
+    {% if block.settings.bundle_img !=blank %} 
+    .bundle-image img{
+      width:100%;
+    }  
+    {% comment %}  
+    .bundle-content{
+      background-image:url('{{ block.settings.bundle_img | img_url:'master' }}');
+      background-repeat: no-repeat;
+      height:170px;
+    }  
+    {% endcomment %}  
+    {% endif %}}
+    {% endfor %}
+    .bundle-btn-content{
+      width:40%;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+    .loop-selling-plan-fieldset{
+      margin-top:0px !important;
+    }
+    .loop-subscription-container{
+    /* padding-top:10px;  */
+  }
+</style>
+
 {% schema %}
   {
     "name": "Product",
@@ -309,6 +348,88 @@
             "type": "checkbox",
             "id": "is_tab",
             "label": "Show as tab"
+          }
+        ]
+      },
+      {
+        "type":"one_pack",
+        "name":"One Pack",
+        "limit":1,
+        "settings":[
+          {
+            "type":"text",
+              "id":"pack_title",
+            "label":"Title"
+          }
+        ]
+      },
+      {
+        "type":"bundle_pack",
+        "name":"Bundle Pack",
+        "limit":1,
+        "settings":[
+          {
+            "type":"text",
+              "id":"bundle_title",
+            "label":"Bundle Title"
+          }
+        ]
+      },
+      {
+        "type":"bundle_btn",
+        "name":"Bundle Button",
+        "limit":1,
+        "settings":[
+          {
+            "type":"image_picker",
+              "id":"bundle_img",
+            "label":"Bundle Bg image"
+          },
+          {
+            "type":"image_picker",
+              "id":"bundle_mob_img",
+            "label":"Bundle Bg mobile"
+          },
+          {
+            "type":"text",
+              "id":"bundle_data",
+            "label":"Bundle Main Title"
+          },
+          {
+            "type":"textarea",
+              "id":"bundle_sub_text",
+            "label":"Bundle Subtitle",
+            "default":"<h1>Enter subtitle</h1>"
+          },
+          { 
+            "type":"text",
+              "id":"bundle_btn",
+            "label":"Bundle Button"
+          },
+          {
+            "type":"url",
+              "id":"bundle_url",
+            "label":"Bundle URL"
+          },
+          {
+            "type":"color",
+              "id":"bundle_color_text",
+            "label":"Button text color"
+          },
+          {
+            "type":"color",
+              "id":"bundle_bg",
+            "label":"Button Bg Color"
+          },
+          {
+            "type":"color",
+              "id":"bundle_btn_border",
+            "label":"Button Border color"
+          },
+          {
+            "type":"number",
+            "id": "bundle_border_num",
+            "label":"Button Border Size"
           }
         ]
       },

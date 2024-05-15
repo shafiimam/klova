@@ -1,0 +1,13 @@
+{% assign icon = block.settings.icon %}
+{% assign title = block.settings.title %}
+{% assign subtitle = block.settings.subtitle %}
+
+<div class="icon-with-text" {{ block.shopify_attributes }}>
+  <div class="icon-container">
+    <img src="{{ icon | img_url }}" alt="" class="icon__image">
+  </div>
+  <div class="text-container">
+    <p class="title">{{ title }}</p>
+    <p class="subtitle">{{ subtitle }}</p>
+  </div>
+</div>

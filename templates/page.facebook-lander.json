@@ -13,7 +13,26 @@
     },
     "z_patch_video_with_text_6pm6E3": {
       "type": "z-patch-video-with-text",
+      "blocks": {
+        "trust_badge_yabXcE": {
+          "type": "trust-badge",
+          "settings": {
+            "text": "Free Shipping Over $45"
+          }
+        },
+        "trust_badge_Q4b4Mh": {
+          "type": "trust-badge",
+          "settings": {
+            "text": "30 Day Money Back Guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "trust_badge_yabXcE",
+        "trust_badge_Q4b4Mh"
+      ],
       "settings": {
+        "heading": "Discover the Secret to a Perfect Night's Sleep"
       }
     },
     "z_patch_reviews_photo_efcyGC": {
@@ -213,10 +232,88 @@
     },
     "z_patch_subscribe_NtBaR3": {
       "type": "z-patch-subscribe",
+      "disabled": true,
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/customer-bg-img.svg",
         "customer_review": "shopify:\/\/shop_images\/patches.png",
         "btn_text": ""
+      }
+    },
+    "featured_product_ECANrK": {
+      "type": "featured-product",
+      "blocks": {
+        "custom_NJYe8X": {
+          "type": "custom",
+          "settings": {
+            "code": "<style> .main-product__price{\ndisplay:none; !important}\n<\/style>"
+          }
+        },
+        "custom_qanAbn": {
+          "type": "custom",
+          "settings": {
+            "code": "<span id=\"subscribe\"><\/span>\n<style>\n.essential_countdown_annoucement_bar_wrapper {\n display: none !important;\n}\n<\/style>"
+          }
+        },
+        "price_649EHU": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description_NpYEaD": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "skio_plan_picker_BwB89N": {
+          "type": "skio-plan-picker",
+          "settings": {
+          }
+        },
+        "quantity_selector_cpkTHr": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "sales_point_jkTXV3": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
+        }
+      },
+      "block_order": [
+        "custom_NJYe8X",
+        "custom_qanAbn",
+        "price_649EHU",
+        "description_NpYEaD",
+        "skio_plan_picker_BwB89N",
+        "quantity_selector_cpkTHr",
+        "sales_point_jkTXV3"
+      ],
+      "settings": {
+        "featured_product": "sleep-patch",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
       }
     },
     "z_patch_review_video_Wr7AHQ": {
@@ -280,6 +377,7 @@
     "z_patch_footer_bottom_hjrEeP": {
       "type": "z-patch-footer-bottom",
       "settings": {
+        "footer_heading": "Take Advantage Of Our Limited Time Facebook Discount",
         "footer_image": "shopify:\/\/shop_images\/footer-bottom-img.png",
         "btn_text": ""
       }
@@ -287,6 +385,12 @@
     "z_patch_footer2_bottom_gr9fW9": {
       "type": "z-patch-footer2-bottom",
       "settings": {
+      }
+    },
+    "discount_application_landingpages_76B4Mp": {
+      "type": "discount-application-landingpages",
+      "settings": {
+        "discountcode": "FB-SAVINGS"
       }
     }
   },
@@ -299,8 +403,10 @@
     "customer_review_jzE83E",
     "z_patch_doc_video_aFxUmM",
     "z_patch_subscribe_NtBaR3",
+    "featured_product_ECANrK",
     "z_patch_review_video_Wr7AHQ",
     "z_patch_footer_bottom_hjrEeP",
-    "z_patch_footer2_bottom_gr9fW9"
+    "z_patch_footer2_bottom_gr9fW9",
+    "discount_application_landingpages_76B4Mp"
   ]
 }

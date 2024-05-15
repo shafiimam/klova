@@ -1,0 +1,129 @@
+<section class="zsleep-works">
+  <div class="zsleep-works-content">
+    <div class="zsleep-maintitle">
+      <p>{{ section.settings.main_title }}</p>
+    </div>
+    <div class="zsleep-works-data zsleep-page-width">
+      {% for block in section.blocks %}
+        {% if block.type == 'how-to-image' %}
+          <div class="works-image-content">
+            <img src="{{ block.settings.peelgif | img_url:'master' }}">
+            <div class="works-title-content">{{ block.settings.peel_text }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="simply-content">
+      {% for block in section.blocks %}
+        {% if block.type == 'work_formula' %}
+          <div class="simply-peel set-width" style="height: auto;">
+            <p style="line-height: 18px; text-align: center;">
+              <div style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(225, 223, 238);">
+                {{ block.settings.text }}
+              </div>
+            </p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="sleep-btn amazon-reviews-img">
+      <a href="https://www.amazon.com/Klova-Clinically-Ashwagandha-L-Theanine-Ingredients/dp/B0CP2YLNSK">
+        <p>GET IT NOW</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .zsleep-works-content{
+   background-color:#6660aa;
+  }
+  .zsleep-works-data{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom:40px;
+  }
+  .works-image-content{
+    width:193px;
+    height:193px;
+  }
+  .works-image-content img{
+     border-radius:30px;
+  }
+  .zsleep-maintitle{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(225, 223, 238);
+    text-align:center;
+    padding:20px;
+  }
+  .set-width{
+    max-width:352px;
+    margin:0 auto;
+    padding-bottom:20px;
+  }
+  .works-title-content{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(225, 223, 238);
+    text-align:center;
+  }
+  .simply-content{
+    padding-top:20px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Chill patch works",
+  "settings": [
+    {
+      "type":"text",
+      "id":"main_title",
+      "label":"Main Title"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_content",
+      "label": "Footer Content"
+    }
+  ],
+  "blocks":[{
+    "type": "how-to-image",
+    "name": "How To Use",
+    "settings":[
+      {
+        "type":"image_picker",
+        "id":"peelgif",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+         "id":"peel_text",
+        "label":"Text"
+      }
+    ]
+    },
+    {
+      "type": "work_formula",
+      "name": "Work Formula",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Chill patch Works"
+    }
+  ]
+}
+{% endschema %}

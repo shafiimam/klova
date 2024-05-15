@@ -1,0 +1,143 @@
+<section class="zsleep-works">
+  <div class="zsleep-choose">
+    <div class="zsleep-maintitle">
+      <p>{{ section.settings.main_title }}</p>
+    </div>
+    <h2 style="text-align: center;color:#fff;margin-bottom:0px;">Experience Serenity Naturally</h2>
+    <div class="simply-content-natural">
+      <p class="klovazsleep-text-first">The Klova Chill Patch leverages the power of:</p>
+      <ul class="choose-text-content">
+        <li class="choose-text">
+          <strong>Sensoril® Ashwagandha:</strong> Clinically proven to reduce stress and enhance mood.
+        </li>
+
+        <li class="choose-text"><strong>Ginger Root Extract & L-Theanine: </strong> For a soothing effect.</li>
+
+        <li class="choose-text"><strong>GABA & Passion Flower Extract: </strong> o promote relaxation.</li>
+
+        <li class="choose-text"><strong>Vitamin D3: </strong> For added health benefits.</li>
+      </ul>
+      <p class="klovazsleep-text">
+        These components work synergistically to help you find your inner peace, no matter the chaos around you.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+    .klovazsleep-text{
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-style: normal;
+      color: #fff;
+      margin: 0 auto;
+      max-width: 600px;
+      margin-top:5px;
+    }
+    .klovazsleep-text-first{
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-style: normal;
+      color: #fff;
+      margin: 0 auto;
+      max-width: 600px;
+      margin-bottom:20px;
+    }
+    .zsleep-choose{
+      background-color:#504e98;
+    }
+    ul.choose-text-content{
+      max-width:600px;
+      margin:0 auto;
+      list-style:block;
+    }
+  .choose-text-content li::maker{
+      color:#fff;
+      font-size:16px;
+    }
+
+    li.choose-text{
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-style: normal;
+      color: #fff;
+      list-style: disc;
+      /* list-style-image: url("https://cdn.shopify.com/s/files/1/2065/0707/files/whitedot.svg?v=1711096502"); */
+    }
+    .zsleep-works-data{
+      display:flex;
+      justify-content: space-evenly;
+      padding-bottom:40px;
+    }
+    .works-image-content{
+      width:193px;
+      height:193px;
+    }
+    .works-image-content img{
+       border-radius:30px;
+    }
+    .zsleep-maintitle{
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-style: normal;
+      color: rgb(225, 223, 238);
+      text-align:center;
+      padding:20px;
+    }
+    .set-width{
+      max-width:352px;
+      margin:0 auto;
+      padding-bottom:20px;
+    }
+    .works-title-content{
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 800;
+      font-style: normal;
+      color: rgb(225, 223, 238);
+      text-align:center;
+    }
+    .simply-content-natural{
+      padding:25px 0px;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Chill Patch natural",
+  "settings": [
+    {
+      "type":"text",
+        "id":"main_title",
+      "label":"Main Title"
+    }
+  ],
+  "blocks":[
+    {
+    "type": "text",
+    "name": "zsleep-works",
+    "settings":[
+    {
+      "type":"image_picker",
+        "id":"bgchoose",
+      "label":"Image"
+    },
+    {
+      "type":"text",
+        "id":"peel_text",
+      "label":"Text"
+    }
+    ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Chill Patch natural"
+    }
+  ]
+}
+{% endschema %}

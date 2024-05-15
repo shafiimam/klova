@@ -169,8 +169,8 @@
           "mega_menu_qqMD8D"
         ],
         "settings": {
-          "main_menu_link_list": "menu-new-desktop",
-          "mobile_menu_link_list": "",
+          "main_menu_link_list": "mega-menu",
+          "mobile_menu_link_list": "mega-menu",
           "main_menu_alignment": "center",
           "menu_bolder": "1",
           "show_desktop_menu": false,
@@ -233,14 +233,14 @@
         "blocks": {
           "announcement_VBbnx6": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "richtext": "<p>Easter Wellness Hop - Use Code EGGHUNT24<\/p>",
-              "richtext_mobile": "<p><a href=\"https:\/\/www.klova.com\/collections\/all\" title=\"https:\/\/www.klova.com\/collections\/all\">Easter Wellness Hop - Use Code EGGHUNT24<\/a><\/p>"
+              "richtext": "<p><a href=\"\/collections\/all\" title=\"All Products\">Take off an extra 15% on any subscription. Use Code EARTHDAY24<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/collections\/all\" title=\"All Products\">Take off an extra 15% on any subscription. Use Code EARTHDAY24<\/a><\/p>"
             }
           },
           "announcement_bCg9Hp": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "richtext": "<p>Hassle-free returns. 30-day postage paid returns<\/p>",
               "richtext_mobile": ""
@@ -250,6 +250,9 @@
         "block_order": [
           "announcement_VBbnx6",
           "announcement_bCg9Hp"
+        ],
+        "custom_css": [
+          ".toolbar,.announcement-slider > div,.announcement-slider__content {background-color: #c7e8f1;}"
         ],
         "settings": {
           "announcement_center": true,
@@ -369,6 +372,13 @@
         "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-global-embed\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
         "disabled": false,
         "settings": {
+        }
+      },
+      "1039332699720682334": {
+        "type": "shopify:\/\/apps\/omniconvert-explore\/blocks\/explore_tracking_code\/3ba98ea4-c855-42be-8457-a2f559ecf515",
+        "disabled": false,
+        "settings": {
+          "tracking_code_id": "v3c7d23"
         }
       }
     }

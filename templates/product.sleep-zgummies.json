@@ -31,6 +31,33 @@
             "is_tab": false
           }
         },
+        "one_pack_HnwzLB": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "One Pack"
+          }
+        },
+        "bundle_pack_RtLCcm": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Variety Bundle"
+          }
+        },
+        "bundle_btn_EUkJTL": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "#121212",
+            "bundle_bg": "#faf4fc",
+            "bundle_btn_border": "#121212",
+            "bundle_border_num": 2
+          }
+        },
         "2b499815-c36c-493a-af5f-742e6fb6953a": {
           "type": "skio-plan-picker",
           "settings": {
@@ -92,6 +119,9 @@
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8",
         "fb173e0b-99fc-4a25-b9e4-0fdac1f62597",
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
+        "one_pack_HnwzLB",
+        "bundle_pack_RtLCcm",
+        "bundle_btn_EUkJTL",
         "2b499815-c36c-493a-af5f-742e6fb6953a",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
         "essential_countdown_app_block_XhU8R6",
@@ -100,7 +130,7 @@
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
       "settings": {
-        "link-back-text": "- Back to shop",
+        "link-back-text": "",
         "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
@@ -108,7 +138,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -190,6 +220,13 @@
       "type": "product-footer-content-zipifypages",
       "settings": {
       }
+    },
+    "sleep_chart_d9CGJg": {
+      "type": "sleep-chart",
+      "settings": {
+        "title": "Comparison Chart",
+        "image": "shopify:\/\/shop_images\/Group_87.png"
+      }
     }
   },
   "order": [
@@ -197,6 +234,7 @@
     "main",
     "1653908906e8b1c207",
     "1663080799c5b88877",
-    "zp-product-footer-content"
+    "zp-product-footer-content",
+    "sleep_chart_d9CGJg"
   ]
 }

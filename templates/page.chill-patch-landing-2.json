@@ -1,0 +1,591 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "video_hero_Jdp3ni": {
+      "type": "video-hero",
+      "blocks": {
+        "trust_badge_6Ae3Y3": {
+          "type": "trust_badge",
+          "settings": {
+            "text": "Free Shipping"
+          }
+        },
+        "trust_badge_t4bpbJ": {
+          "type": "trust_badge",
+          "settings": {
+            "text": "30 Day Money Back Guarantee"
+          }
+        }
+      },
+      "block_order": ["trust_badge_6Ae3Y3", "trust_badge_t4bpbJ"],
+      "settings": {
+        "background_image_desktop": "shopify://shop_images/bg-chill-patch.jpg",
+        "background_image_tablet": "shopify://shop_images/bg-chill-patch-tablet.jpg",
+        "background_image_mobile": "shopify://shop_images/bg-chill-patch-mobile.jpg",
+        "image_desktop": "shopify://shop_images/banner4_Klova_for_landing_page.jpg",
+        "image_tablet": "shopify://shop_images/banner4_Klova_for_landing_page.jpg",
+        "image_mobile": "shopify://shop_images/banner4_Klova_for_landing_page.jpg",
+        "caption": "<p>Featured on 'The Doctors\", The Klova Chill Patch was <strong>SHOWN </strong>to work on <strong>ACTUAL </strong>audience members...</p>",
+        "heading": "Unwind Your Mind With Klova's Chill Patch",
+        "subHeading": "<p><strong>Dear Friend,</strong><br/>Do the day's stresses follow you home? If you find <strong>relaxation </strong>elusive and <strong>calm </strong>a distant dream, you're in good company. That sinking feeling of being unable to unwind is more common than you might think.<br/><br/>It's not just about the discomfort in the moment; it's about the ripple effects on your mood, focus, and overall well-being.<br/>It's time to address this challenge directly.</p>",
+        "button_text": "YES, I WANT TO CHILL!",
+        "url": ""
+      }
+    },
+    "review_slider_VWrMjn": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_fwwU9T": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“At first, I was very skeptical. They go on dry and don’t really have a lot of stick right away. I’m not saying they come off because they don’t. I just expect them to be very sticky and they’re not. There is no dramatic calming effect. You don’t feel woozy.",
+            "reviewer_name": "K. patton",
+            "product_image": "shopify://shop_images/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_iEAxVn": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“These patches go on easy and stick well. They don’t seem to provide as much effect as some others I have tried but I will keep using them because they have such a good balance of adaptogens. I prefer using a patch to taking pills and these patches are more pleasant to...”",
+            "reviewer_name": "Bittersweet",
+            "product_image": "shopify://shop_images/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_6iqjKn": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“These patches are such a cool and unique way of getting vitamins into your body. I do very much so feel relief and calming effects while wearing these patches, and they are easy to apply and comfortable to wear.”",
+            "reviewer_name": "Page",
+            "product_image": "shopify://shop_images/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_ykfHMm": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“This is such a cool and innovative way to get some calming ingredients into your body through the use of patch! I am a very anxious person by default, but some days I need extra help and I do have herbal supplements already.”",
+            "reviewer_name": "strawberrykitten",
+            "product_image": "shopify://shop_images/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_DUgymJ": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“Very good ingredients and helpful in relaxation. The patch causes minor sensitivity but I’m very sensitive.",
+            "reviewer_name": "Lee",
+            "product_image": "shopify://shop_images/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_TzRcFx": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“This is an interesting and convenient way to achieve further relaxation and centeredness. The patches are easy to apply and stay put well. I had a particularly stressful day today and using this patch does seem to help me relax and release some of the day's built up tension.”",
+            "reviewer_name": "Stuff&Things",
+            "product_image": "shopify://shop_images/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_fwwU9T",
+        "review_card_iEAxVn",
+        "review_card_6iqjKn",
+        "review_card_ykfHMm",
+        "review_card_DUgymJ",
+        "review_card_TzRcFx"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "review_count": "5209",
+        "divider": false
+      }
+    },
+    "image_with_text_cta_LknPwM": {
+      "type": "image-with-text-cta",
+      "settings": {
+        "heading": "Introducing the Klova Chill Patch, your secret to maintaining tranquility and balance every day.",
+        "subHeading": "<p>The Chill Patch, infused with natural ingredients, is designed to soothe your mind and promote a sense of peace.<br/><br/>Designed to help you fall asleep faster and stay asleep longer our patch leverages the power of nature to improve your sleep quality without the need for pills or potions.</p>",
+        "image": "shopify://shop_images/Frame_14139.jpg",
+        "button_text": "YES, I WANT IT!",
+        "button_url": "#subscribe",
+        "button_text_2": "Button Text",
+        "button_url_2": "",
+        "alignment": "left",
+        "background_color": "#ffffff",
+        "show_section_devider": false
+      }
+    },
+    "photo_collage_HVdJxe": {
+      "type": "photo-collage",
+      "blocks": {
+        "photo_item_nKyUBT": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/peel.gif",
+            "caption": "Peel",
+            "subtitle": ""
+          }
+        },
+        "photo_item_rPfr3Y": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/Stick_1.gif",
+            "caption": "Stick",
+            "subtitle": ""
+          }
+        },
+        "photo_item_ca34Ve": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/Chill_Patch_-_Thumbnail_Animation_1.gif",
+            "caption": "Chill",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "photo_item_nKyUBT",
+        "photo_item_rPfr3Y",
+        "photo_item_ca34Ve"
+      ],
+      "settings": {
+        "heading": "How The Chill Patch Works",
+        "sub_heading": "",
+        "background_type": "image",
+        "bg_desktop": "shopify://shop_images/collage-bg-desktop.jpg",
+        "bg_tablet": "shopify://shop_images/collage-bg-desktop.jpg",
+        "bg_mobile": "shopify://shop_images/collage-bg-mobile.jpg",
+        "background": "linear-gradient(180deg, rgba(186, 68, 68, 1), rgba(0, 0, 0, 1) 100%)",
+        "show_section_devider": false
+      }
+    },
+    "image_with_sales_point_9AzTFW": {
+      "type": "image-with-sales-point",
+      "blocks": {
+        "sales_point_kEtFjp": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/safety.png",
+            "title": "Simple Application",
+            "subtitle": "Just place the patch on a clean, hairless part of your body."
+          }
+        },
+        "sales_point_bJT3rD": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/easy_of_use.png",
+            "title": "Natural Ingredients",
+            "subtitle": "A carefully selected mix, led by Sensoril® Ashwagandha, ensures serenity without artificial interventions."
+          }
+        },
+        "sales_point_KMPcGp": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/heartbeat_7769930_1.png",
+            "title": "Doctor Endorsed",
+            "subtitle": "Thoroughly vetted and supported within the healthcare community."
+          }
+        },
+        "sales_point_pxNUxR": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/profit_1322818_1.png",
+            "title": "Satisfaction Guaranteed",
+            "subtitle": "Feel the difference or it's on us, with a 30-day money-back guarantee."
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_kEtFjp",
+        "sales_point_bJT3rD",
+        "sales_point_KMPcGp",
+        "sales_point_pxNUxR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/b1beaa63cd8aa040f048498386a9174b.jpg",
+        "aligment": "left"
+      }
+    },
+    "carousel_videos_3TdEYq": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_W7qDbG": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://vimeo.com/928093180?share=copy"
+          }
+        },
+        "video_Ae8rnh": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://vimeo.com/928092427?share=copy"
+          }
+        },
+        "video_dpiANi": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://vimeo.com/928092815?share=copy"
+          }
+        },
+        "video_nCafEj": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://vimeo.com/928093005?share=copy"
+          }
+        },
+        "video_eGcV3L": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://vimeo.com/928092614?share=copy"
+          }
+        }
+      },
+      "block_order": [
+        "video_W7qDbG",
+        "video_Ae8rnh",
+        "video_dpiANi",
+        "video_nCafEj",
+        "video_eGcV3L"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Real Stories of Peace and Calm",
+        "rte": "",
+        "overlay": "#faf9fb"
+      }
+    },
+    "photo_collage_9zzz34": {
+      "type": "photo-collage",
+      "blocks": {
+        "photo_item_JUKNmc": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/Sensoril_Ashwagandha.png",
+            "caption": "Sensoril® Ashwagandha",
+            "subtitle": "Clinically proven to reduce stress and calm anxious minds.*"
+          }
+        },
+        "photo_item_yNrBTn": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/Ginger_Root_Extract.png",
+            "caption": "Ginger Root Extract",
+            "subtitle": "An amino acid known to promoterelaxation, reduce stress, and improve sleep*"
+          }
+        },
+        "photo_item_WaFhtx": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/L-Theanine.png",
+            "caption": "L-Theanine",
+            "subtitle": "An amino acid known to promoterelaxation, reduce stress, and improve sleep*"
+          }
+        },
+        "photo_item_r8F8VT": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/GABA.png",
+            "caption": "GABA",
+            "subtitle": "A naturally occurring neurotransmitter known to reduce anxiety & improve sleep*"
+          }
+        },
+        "photo_item_iBHrai": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/Passion_Flower.png",
+            "caption": "Passion Flower",
+            "subtitle": "Known to help with insomnia and reduce inflammation and anxiety*"
+          }
+        },
+        "photo_item_kzakT3": {
+          "type": "photo_item",
+          "settings": {
+            "image": "shopify://shop_images/Vitamin_D3.png",
+            "caption": "Vitamin D3",
+            "subtitle": "Known to help with insomnia and reduce inflammation and anxiety*"
+          }
+        }
+      },
+      "block_order": [
+        "photo_item_JUKNmc",
+        "photo_item_yNrBTn",
+        "photo_item_WaFhtx",
+        "photo_item_r8F8VT",
+        "photo_item_iBHrai",
+        "photo_item_kzakT3"
+      ],
+      "custom_css": [
+        ".photo-collage__images {flex-wrap: wrap; gap: 64px;}",
+        ".photo-item {flex-basis: 30%;}",
+        "@media (max-width: 800px) {.photo-item {flex-basis: calc(50% - 64px); }}"
+      ],
+      "settings": {
+        "heading": "Experience Serenity Naturally",
+        "sub_heading": "The Klova Chill Patch leverages the power of:",
+        "background_type": "image",
+        "bg_desktop": "shopify://shop_images/collage-bg-desktop.jpg",
+        "bg_tablet": "shopify://shop_images/collage-bg-desktop.jpg",
+        "bg_mobile": "shopify://shop_images/collage-bg-mobile.jpg",
+        "background": "",
+        "show_section_devider": true
+      }
+    },
+    "image_with_text_cta_aW9FfY": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta__content--text {flex-basis: 50%; display: flex; flex-direction: column; justify-content: center;}"
+      ],
+      "settings": {
+        "heading": "“One of the reasons I love the Klova patches is because it works!” - Dr. Sydne Ford",
+        "subHeading": "<p>Safe ingredients, higher absorption rate andconsistent results are why doctors trust Klova Chill patches. </p>",
+        "image": "shopify://shop_images/invest_in_health_and_happiness_c734d55b-697d-495c-ba84-6563f3e3244c.png",
+        "button_text": "",
+        "button_url": "",
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "#ECF9FA",
+        "show_section_devider": true
+      }
+    },
+    "featured_product_FmTk66": {
+      "type": "featured-product",
+      "blocks": {
+        "custom_FUjfKa": {
+          "type": "custom",
+          "settings": {
+            "code": "<span id=\"subscribe\"></span>"
+          }
+        },
+        "judge_me_reviews_preview_badge_homepage_PpqTNB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "chill-patch"
+          }
+        },
+        "description_zDDTTM": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "one_pack_PbwpGK": {
+          "type": "one_pack",
+          "settings": {
+            "pack_title": "Single Pack"
+          }
+        },
+        "bundle_pack_kxNMeg": {
+          "type": "bundle_pack",
+          "settings": {
+            "bundle_title": "Bundle Pack"
+          }
+        },
+        "variant_picker_EgkrJf": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart": "",
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "skio_plan_picker_BYH7qa": {
+          "type": "skio-plan-picker",
+          "settings": {}
+        },
+        "quantity_selector_gxiVaw": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": true,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "sales_point_HbqaRW": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "FREE SHIPPING - OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "shield",
+            "text-three": "PHYSICIAN APPROVED"
+          }
+        }
+      },
+      "block_order": [
+        "custom_FUjfKa",
+        "judge_me_reviews_preview_badge_homepage_PpqTNB",
+        "description_zDDTTM",
+        "one_pack_PbwpGK",
+        "bundle_pack_kxNMeg",
+        "variant_picker_EgkrJf",
+        "skio_plan_picker_BYH7qa",
+        "quantity_selector_gxiVaw",
+        "sales_point_HbqaRW"
+      ],
+      "settings": {
+        "featured_product": "chill-patch",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "full",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "image_with_text_cta_R7kwtn": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta__content--text {flex-basis: 50%; display: flex; flex-direction: column; justify-content: center;}"
+      ],
+      "settings": {
+        "heading": "60 Day 100% Money Back Guarantee",
+        "subHeading": "<p>Your purchase today is secured by our unwavering 60-day 100% money-back guarantee. If you're not completely satisfied with the remarkable improvements in your energy levels and overall health, or if you don't see the vibrant transformation you expected, simply reach out to us within the next 60 days. We promise to return every penny, no questions asked</p>",
+        "image": "shopify://shop_images/money_back_4b0b3427-2ad7-4b97-a8c5-fc524619dec7.png",
+        "button_text": "",
+        "button_url": "",
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "left",
+        "background_color": "#C6E7F0",
+        "show_section_devider": false
+      }
+    },
+    "image_with_text_cta_7NhUFi": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta__content--text {flex-basis: 50%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}"
+      ],
+      "settings": {
+        "heading": "60 Day 100% Money Back Guarantee",
+        "subHeading": "<p>Your purchase today is secured by our unwavering 60-day 100% money-back guarantee. If you're not completely satisfied with the remarkable improvements in your energy levels and overall health, or if you don't see the vibrant transformation you expected, simply reach out to us within the next 60 days. We promise to return every penny, no questions asked</p>",
+        "image": "shopify://shop_images/Frame_14139.png",
+        "button_text": "GET IT NOW",
+        "button_url": "#subscribe",
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "left",
+        "background_color": "",
+        "show_section_devider": false
+      }
+    },
+    "new_faq_d7PytU": {
+      "type": "new-faq",
+      "blocks": {
+        "faq_FJLNgm": {
+          "type": "FAQ",
+          "settings": {
+            "question": "DO YOU HAVE MONEY BACK GUARANTEE?",
+            "answer": "Default Answer"
+          }
+        },
+        "faq_hCPzLF": {
+          "type": "FAQ",
+          "settings": {
+            "question": "IS THIS PRODUCT MADE WITH LATEX?",
+            "answer": "Default Answer"
+          }
+        },
+        "faq_6QNLmE": {
+          "type": "FAQ",
+          "settings": {
+            "question": "HOW TO USE IT?",
+            "answer": "Default Answer"
+          }
+        },
+        "faq_LHkJhe": {
+          "type": "FAQ",
+          "settings": {
+            "question": "WHAT’S IN IT?",
+            "answer": "Default Answer"
+          }
+        },
+        "faq_eLqYVT": {
+          "type": "FAQ",
+          "settings": {
+            "question": "CAN I USE WHILE PREGNANT?",
+            "answer": "Default Answer"
+          }
+        }
+      },
+      "block_order": [
+        "faq_FJLNgm",
+        "faq_hCPzLF",
+        "faq_6QNLmE",
+        "faq_LHkJhe",
+        "faq_eLqYVT"
+      ],
+      "custom_css": [],
+      "settings": {
+        "heading": "Questions?",
+        "sub_heading": "We’re here to help!",
+        "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11), rgba(123, 73, 181, 0.11) 100%)"
+      }
+    },
+    "slideshow_image_YXWXdy": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_6M6Baq": {
+          "type": "image",
+          "settings": {
+            "link": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify://shop_images/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify://shop_images/Frame_1000003734.jpg"
+          }
+        }
+      },
+      "block_order": ["image_6M6Baq"],
+      "custom_css": [
+        ".hero--padded {margin-top: 50px; padding: 0 !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_hero_Jdp3ni",
+    "review_slider_VWrMjn",
+    "image_with_text_cta_LknPwM",
+    "photo_collage_HVdJxe",
+    "image_with_sales_point_9AzTFW",
+    "carousel_videos_3TdEYq",
+    "photo_collage_9zzz34",
+    "image_with_text_cta_aW9FfY",
+    "featured_product_FmTk66",
+    "image_with_text_cta_R7kwtn",
+    "image_with_text_cta_7NhUFi",
+    "new_faq_d7PytU",
+    "slideshow_image_YXWXdy"
+  ]
+}

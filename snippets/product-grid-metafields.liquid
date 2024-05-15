@@ -71,12 +71,12 @@
         assign fixed_aspect_ratio = true
       endunless
 
-      assign preview_image = product.featured_media.preview_image
-      assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+      assign preview_image = product.metafields.custom.menu_img
+      assign img_url = preview_image | img_url: 'master'
     -%}
 
     <div class="grid-item__link collection-badge">
-      <a href="{{ product.url | within: collection }}" class="grid-product__image-wrap">
+      <a href="{{ product.url }}" class="grid-product__image-wrap">
         <div class="grid-product__tags">
           {%- if has_custom_label -%}
             {%- assign labels = custom_labels | split: ',' -%}
@@ -121,7 +121,7 @@
               assign ratio = preview_image.aspect_ratio
             endif
           -%}
-          <div style="height: 0; padding-bottom: {{ 90 | divided_by: ratio }}%;">
+          <div style="height: 0; padding-bottom: {{ 80 }}%;">
             <img class="img-bg-color grid-product__image lazyload"
                 data-src="{{ img_url }}"
                 data-widths="[360, 540, 720, 900, 1080]"

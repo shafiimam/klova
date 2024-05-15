@@ -1,180 +1,181 @@
 <section class="zsleep-video">
   <div class="z-patch-video-content-video">
     <div class="zsleep-video-data custom-page-width">
-      <!-- Video content start -->
-      {% for block in section.blocks %}
-        <div class="video-details">
-          <div class="video-iframe-data">
-            <div class="video-iframe-video">
-              <div class="video-iframe-doc">
-                <iframe width="100%" height="100%" src="{{ block.settings.vimeo_url }}"> </iframe>
-              </div>
-            </div>
+      <!-- Video content start  -->
+ {% for block in section.blocks %}
+      <div class="video-details">
 
-            <div class="video-details-text">
-              <p class="moreEnergy-text">
-                {% comment %}
-                  <span>
-                   <strong><u>{{ block.settings.title }}</u></strong>
-                  </span>
-                {% endcomment %}
-                <p style="line-height: 45px;">
-                  <span style="font-size: 32px;"
-                    ><strong
-                      ><span style="font-family: Poppins; font-weight: 700; font-style: normal;"
-                        >“One of the reasons I love the Klova patch is because it works!” - Dr. Sydne Ford</span
-                      ></strong
-                    ></span
-                  >
-                </p>
-              </p>
+        <div class="video-iframe-data">
 
-              <p class="looking-text">
-                <span>
-                  <p style="line-height: 29px;">
-                    <span style="font-weight: 400; font-family: Poppins; font-size: 18px;"
-                      ><span style="font-style: normal;"
-                        >Safe ingredients, higher absorption rate and consistent results are why doctors trust Kova
-                        sleep patches.&nbsp;</span
-                      ></span
-                    >
-                  </p>
-                </span>
-              </p>
-            </div>
-          </div>
+        <div class="video-iframe-video"> 
+        <div class="video-iframe-doc">
+        <iframe width="100%" height="100%" src="{{ block.settings.vimeo_url }}">
+        </iframe>
         </div>
-      {% endfor %}
+         </div>
 
+        <div class="video-details-text">
+        <p class="moreEnergy-text">
+          {% comment %}
+          <span>
+           <strong><u>{{ block.settings.title }}</u></strong> 
+          </span>
+           {% endcomment %}
+          <p style="line-height: 45px;"><span style="font-size: 32px;">
+            <strong>
+              <span class="doc-text-review" style="font-family: Poppins; font-weight: 700; font-style: normal;">
+              “One of the reasons I love the Klova patch is because it works!” - Dr. Sydne Ford
+          </span>
+          </strong></span></p>
+        </p>
+     
+        <p class="looking-text">  
+        <span>
+           <p style="line-height: 29px;"><span style="font-weight: 400; font-family: Poppins; font-size: 18px;"><span style="font-style: normal;">Safe ingredients, higher absorption rate and consistent results are why doctors trust Kova sleep patches.&nbsp;</span></span></p>
+        </span>
+        </p>
+        </div>
+          
+        </div>  
+
+  
+    
+      </div>
+       {% endfor %}
+
+      
       <!-- Video content end -->
     </div>
   </div>
 </section>
 
+
 <style>
-    .video-iframe-video{
-      max-width:50%;
-      width:50%;
-    }
-  .video-details-text {
-      max-width: 50%;
-      width: 50%;
-      padding-top: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  .video-iframe-video{
+    max-width:50%;
+    width:50%;
   }
-    .video-iframe-doc iframe{
-      border-radius:8px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-    .want-it{
-      padding-bottom:30px;
-    }
-    .zsleep-video-data.zsleep-page-width{
-      padding-bottom:30px;
-    }
-    .want-it-content{
-      max-width: 350px;
-      margin: 0 auto;
-    }
-    .zsleep-icon-text{
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
-    .width-set{
-      width:65px;
-      height:65px;
-    }
-    .icon-text-money{
-     width:109px;
-    }
-    .amazon-text{
-      max-width:340px;
-      margin:0 auto;
-    }
-    .z-patch-video-content-video{
-      background: #fff;
-    }
-    .moreEnergy-text{
-      font-size: 18px;
-      font-family: Montserrat;
-      font-weight: 500;
-      font-style: normal;
-      color: rgb(102, 96, 170);
-      text-align:center;
-    }
-    .moreEnergy-text span{
-      font-size: 18px;
-      font-family: Montserrat;
-      font-weight: 500;
-      font-style: normal;
-      color: rgb(102, 96, 170);
-    }
-    .looking-text{
-      text-align: center;
-      line-height: 16px;
-      max-width:300px;
-      margin:0 auto;
-      padding-top:5px;
-    }
-    .looking-text span{
-      font-size: 14px;
-      font-family: Montserrat;
-      font-weight: 600;
-      font-style: normal;
-      color: rgb(102, 96, 170);
-    }
-    .video-iframe-doc{
-      width: 440px;
-      height: 550px;
-      border-radius:8px;
-    }
-    .video-iframe iframe{
-      border:0px;
-    }
-    .video-details{
-     padding:30px 0px;
-    }
+  .video-details-text{
+    max-width:50%;
+    width:50%;
+    padding-top:50px;
+  }
+  .video-iframe-doc iframe{
+    border-radius:8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .want-it{
+    padding-bottom:30px;
+  }
+  .zsleep-video-data.zsleep-page-width{
+    padding-bottom:30px;
+  }
+  .want-it-content{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .zsleep-icon-text{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .width-set{
+    width:65px;
+    height:65px;
+  }
+  .icon-text-money{
+   width:109px; 
+  }
+  .amazon-text{
+    max-width:340px;
+    margin:0 auto;
+  }
+  .z-patch-video-content-video{
+    background: #fff;
+  }
+  .moreEnergy-text{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(102, 96, 170);
+    text-align:center;
+  }
+  .moreEnergy-text span{
+    font-size: 18px; 
+    font-family: Montserrat; 
+    font-weight: 500; 
+    font-style: normal; 
+    color: rgb(102, 96, 170);
+  }
+  .looking-text{
+    text-align: center; 
+    line-height: 16px;
+    max-width:300px;
+    margin:0 auto;
+    padding-top:5px;
+  }
+  .looking-text span{
+    font-size: 14px; 
+    font-family: Montserrat; 
+    font-weight: 600; 
+    font-style: normal; 
+    color: rgb(102, 96, 170);
+  }
+  .video-iframe-doc{
+    width: 440px;
+    height: 550px;
+    border-radius:8px;
+  }
+  .video-iframe iframe{
+    border:0px;
+  }
+  .video-details{
+   padding:30px 0px;
+  }
+  .video-iframe-data{
+    display:flex;
+  }
 </style>
 
+
+
 {% schema %}
-{
-  "name": "z-patch doc video",
-  "settings": [],
-   "blocks":[
-    {
-    "type": "text",
-    "name": "vimeo video",
-    "settings":[
-    {
-       "type":"text",
-        "id":"title",
-      "label":"Main title",
-      "default":"<p>enter text</p>"
-    },
-    {
-      "type":"text",
-        "id":"subtitle",
-      "label":"Sub Title",
-      "default":"<p>enter text</p>"
-    },
-    {
-      "type":"url",
-        "id":"vimeo_url",
-      "label":"Vimeo video"
-    }
-    ]
-    }
-  ],
-
-    "presets":[
+  {
+    "name": "z-patch doc video",
+    "settings": [],
+     "blocks":[
       {
-        "name":"z-patch doc video"
+      "type": "text",
+      "name": "vimeo video",
+      "settings":[
+      {
+         "type":"text",
+          "id":"title",
+        "label":"Main title",
+        "default":"<p>enter text</p>"
+      },
+      {
+        "type":"text",
+          "id":"subtitle",
+        "label":"Sub Title",
+        "default":"<p>enter text</p>"
+      },
+      {
+        "type":"url",
+          "id":"vimeo_url",
+        "label":"Vimeo video"
       }
-    ]
-
-}
+      ]
+      }
+    ],
+    
+      "presets":[
+        {
+          "name":"z-patch doc video"
+        }
+      ]
+    
+  }
 {% endschema %}

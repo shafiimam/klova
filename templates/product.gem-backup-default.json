@@ -45,6 +45,12 @@
             "surface_pickup_enable": false
           }
         },
+        "essential_countdown_app_block_MKCGLY": {
+          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "clsly3rjw4546821ou9msv7eihr"
+          }
+        },
         "6dbfc9bc-18b8-46ff-90c0-6c99d095e181": {
           "type": "link",
           "settings": {
@@ -56,7 +62,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "free",
-            "text": "FREE SHIPPING",
+            "text": "FREE SHIPPING OVER $45",
             "icon-two": "money",
             "text-two": "MONEY-BACK GUARANTEE",
             "icon-three": "health",
@@ -88,6 +94,7 @@
         "a91a2500-65d8-4a3c-a0ba-5156b25d84ae",
         "b9010da1-5cae-4ba5-9fc5-c670acc70709",
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270",
+        "essential_countdown_app_block_MKCGLY",
         "6dbfc9bc-18b8-46ff-90c0-6c99d095e181",
         "991843c7-0724-43cf-8891-6972bb0b8de4",
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
@@ -110,7 +117,6 @@
     },
     "16539274943ce12887": {
       "type": "sleep-chart",
-      "disabled": true,
       "settings": {
         "title": "Sleep Aid Comparison chart",
         "image": "shopify:\/\/shop_images\/Group_87.png"
@@ -223,6 +229,27 @@
       "type": "product-footer-content-zipifypages",
       "settings": {
       }
+    },
+    "17074127040251dd37": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_mVNktN": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "133626",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_mVNktN"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -232,6 +259,7 @@
     "16539298801be67a40",
     "1653908906e8b1c207",
     "1663080027983fd7ee",
-    "zp-product-footer-content"
+    "zp-product-footer-content",
+    "17074127040251dd37"
   ]
 }

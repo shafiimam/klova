@@ -1,15 +1,24 @@
 <section class="video-text">
-
   <div class="video-text-content">
     <div class="video-text-logo"><img src="{{ "logo.svg" | file_url }}"></div>
     <div class="video-text-start">
       <div class="text-area-data">
         <div class="img-icon-content">
-         <div class="img-icon">{% include 'z-patch-icon' %}</div><p class="natural-text">Natural Self-Care Hack for Deeper, More Restorative Sleep</p>
+          <div class="img-icon">{% include 'z-patch-icon' %}</div>
+          <p class="natural-text">Natural Self-Care Hack for Deeper, More Restorative Sleep</p>
         </div>
-        <h2 class="goodbye-text">Say Goodbye to Sleepless Nights and Hello to Restful Mornings</h2>
+        <h2 class="goodbye-text">{{ section.settings.heading }}</h2>
         <p class="powered-text">
-          <span style="font-weight: 400; font-family: Poppins; font-size: 18px;"><span style="font-style: normal;">Powered by <strong>natural ingredients</strong>, o<span style="font-weight: 400; font-family: Poppins; font-size: 18px;"><span style="font-style: normal;">ur <strong>long-lasting sleep patch</strong>&nbsp;</span></span>delivers sleep promoting goodness up to <strong>5x more effectively</strong> than their tablet, chew or gummy counterparts via <strong>transdermal</strong> absorption. <strong>Proven</strong> time and time again, <strong>T</strong><strong>ransdermal melatonin WORKS</strong>! Skeptical? Try it and <strong><u>get a full refund if you aren't bragging about your sleep!</u></strong></span></span>
+          <span style="font-weight: 400; font-family: Poppins; font-size: 18px;"
+            ><span style="font-style: normal;"
+              >Powered by <strong>natural ingredients</strong>, o<span style="font-weight: 400; font-family: Poppins; font-size: 18px;"
+                ><span style="font-style: normal;">ur <strong>long-lasting sleep patch</strong>&nbsp;</span></span
+              >delivers sleep promoting goodness up to <strong>5x more effectively</strong> than their tablet, chew or
+              gummy counterparts via <strong>transdermal</strong> absorption. <strong>Proven</strong> time and time
+              again, <strong>T</strong><strong>ransdermal melatonin WORKS</strong>! Skeptical? Try it and
+              <strong><u>get a full refund if you aren't bragging about your sleep!</u></strong></span
+            ></span
+          >
         </p>
         <div class="sleep-btn">
           <a href="#subscribe"><p>YES, I WANT SLEEP!</p></a>
@@ -19,14 +28,24 @@
         <div class="gif-section"><img src="{{ "z-patch-gif.gif" | file_url }}"></div>
       </div>
     </div>
-    <div class="free-shipping-content">
-      <div class="free-text"><img src="{{  "free-shipping.svg" | file_url }}"></div>
+    <div class="trust-badge-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'trust-badge' %}
+          <div class="trust-badge">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2065/0707/files/free-shipping_eec29f63-48d1-4eb1-bf1c-2611cfef5ff3.svg"
+              height="20px"
+              width="20px"
+            >
+            <span style="font-weight: bold">{{ block.settings.text }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
     <div class="support-content">
       <img src="{{ "support.svg" | file_url  }}">
     </div>
   </div>
-  
 </section>
 
 <style>
@@ -47,17 +66,55 @@
     width:100%;
     height:100%;
   }
+  .trust-badge-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+    align-items: center;
+    gap: 20px;
+  }
+  .trust-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .trust-badge-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 </style>
 {% schema %}
-  {
-    "name": "z-patch image",
-    "settings": [],
-    
-      "presets":[
-        {
-          "name":"z-patch image"
-        }
-      ]
-    
-  }
+{
+  "name": "z-patch image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default":"Say Goodbye to Sleepless Nights and Hello to Restful Mornings"
+    }
+  ],
+  "blocks": [
+      {
+        "type": "trust-badge",
+        "name": "Trust Badge",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"z-patch image"
+      }
+    ]
+
+}
 {% endschema %}

@@ -6,9 +6,10 @@
       "settings": {
       }
     },
-    "zsleep_announcement_money_D39xwy": {
-      "type": "zsleep-announcement-money",
+    "landing_page_announcement_bar_BxFPEm": {
+      "type": "landing-page-announcement-bar",
       "settings": {
+        "announcement_text": "30 DAY MONEY BACK GUARANTEE"
       }
     },
     "zsleep_announcement_logo_UB8mwQ": {
@@ -179,6 +180,9 @@
         "text_wFrjPW",
         "text_w9pC7x"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
       }
     },
@@ -243,11 +247,34 @@
       "type": "zsleep-footer",
       "settings": {
       }
+    },
+    "advanced_content_bVLTzi": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_MrTzXq": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n.essential_countdown_annoucement_bar_wrapper {\n  display: none !important;\n}\n<\/style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_MrTzXq"
+      ],
+      "custom_css": [
+        ".custom-content {display: none;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
     }
   },
   "order": [
     "main",
-    "zsleep_announcement_money_D39xwy",
+    "landing_page_announcement_bar_BxFPEm",
     "zsleep_announcement_logo_UB8mwQ",
     "zsleep_show_NwVVLM",
     "zsleep_works_yXr7HC",
@@ -258,6 +285,7 @@
     "zsleep_amazon_reviews_cdedwE",
     "rich_text_Q77maq",
     "zsleep_inst_reviews_yJHr3i",
-    "zsleep_footer_JdrkmU"
+    "zsleep_footer_JdrkmU",
+    "advanced_content_bVLTzi"
   ]
 }

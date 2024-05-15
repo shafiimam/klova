@@ -3,16 +3,17 @@
     "slideshow-split": {
       "type": "slideshow-split",
       "blocks": {
-        "slide_gqkm6Q": {
+        "slide_hRUmQr": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "top_subheading": "",
-            "title": "Peel Stick Recover",
+            "top_subheading": "Sleep Well, Mom",
+            "title": "Mother's day special",
             "last_word_color": "#fa4d09",
             "title_size": 60,
-            "subheading": "Easter Wellness Hop - Use Code EGGHUNT24",
+            "subheading": "<p>Buy One, Get One 50% Off. Use Code BESTMOM50 <\/p>",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/Klova-Banner_01-_480x450px_-_rectangular_-_March_12-2024.jpg",
+            "image": "shopify:\/\/shop_images\/Klova-Banner_-_480x450px_-_rectangular_-_Mother_Day_-_01May_2024-01.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "transform_mob_x": 0,
@@ -20,8 +21,29 @@
             "transform_x": 0,
             "transform_y": 0,
             "style_overlay": "bg-gr--green-blue",
-            "link_text": "Learn More",
-            "link": "https:\/\/www.klova.com\/collections\/patches"
+            "link_text": "",
+            "link": ""
+          }
+        },
+        "slide_tJCUyQ": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "PROUDLY",
+            "title": "Made in America",
+            "last_word_color": "#fa0909",
+            "title_size": 82,
+            "subheading": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Untitled_design_2.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "transform_mob_x": 0,
+            "transform_mob_y": 0,
+            "transform_x": 0,
+            "transform_y": 0,
+            "style_overlay": "bg-gr--green-blue",
+            "link_text": "",
+            "link": ""
           }
         },
         "slideshow-split-1": {
@@ -31,7 +53,7 @@
             "title": "Peel Stick Sleep",
             "last_word_color": "#1aa7d3",
             "title_size": 48,
-            "subheading": "Unlock your best sleep ever with the World's First Extra-Strength Sleep Patches.",
+            "subheading": "<p>Unlock your best sleep ever with the World's First Extra-Strength Sleep Patches.<\/p>",
             "text_position": "right",
             "image": "shopify:\/\/shop_images\/2.jpg",
             "indent_image": false,
@@ -53,7 +75,7 @@
             "title": "Peel Stick Focus",
             "last_word_color": "#fa4d09",
             "title_size": 48,
-            "subheading": "Introducing the World’s First Nootopic Focus Patch made with natural ingredients.",
+            "subheading": "<p>Introducing the World’s First Nootopic Focus Patch made with natural ingredients.<\/p>",
             "text_position": "right",
             "image": "shopify:\/\/shop_images\/1.jpg",
             "indent_image": false,
@@ -75,7 +97,7 @@
             "title": "Peel Stick Chill",
             "last_word_color": "#1aa7d3",
             "title_size": 60,
-            "subheading": "Decompress like a pro with the World's First and only Sensoril Ashwagandha Stress Patches.",
+            "subheading": "<p>Decompress like a pro with the World's First and only Sensoril Ashwagandha Stress Patches.<\/p>",
             "text_position": "right",
             "image": "shopify:\/\/shop_images\/Chill-AAW-Black.jpg",
             "indent_image": false,
@@ -92,7 +114,8 @@
         }
       },
       "block_order": [
-        "slide_gqkm6Q",
+        "slide_hRUmQr",
+        "slide_tJCUyQ",
         "slideshow-split-1",
         "slideshow-split-0",
         "dad8718f-d105-4c1c-85b5-91717c290bd4"
@@ -132,13 +155,20 @@
           "settings": {
             "label": "Natural ingredients"
           }
+        },
+        "text_4meqQc": {
+          "type": "text",
+          "settings": {
+            "label": "Made in USA 🇺🇸"
+          }
         }
       },
       "block_order": [
         "1654127270cb48741e-0",
         "1654127270cb48741e-1",
         "1654127270cb48741e-2",
-        "1654127270cb48741e-3"
+        "1654127270cb48741e-3",
+        "text_4meqQc"
       ],
       "settings": {
         "paddingsection": "20px 0px 60px 0px",
@@ -171,7 +201,7 @@
       "type": "feature-collection-metafields",
       "settings": {
         "title": "",
-        "home_featured_products": "all-products-mega-menu",
+        "home_featured_products": "patches",
         "count": 10,
         "mobile_scrollable": true,
         "view_all": false,
@@ -319,6 +349,11 @@
         "419cb1bf-d92d-446d-9e92-18c891da9d72": {
           "type": "quantity_selector",
           "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
           }
         },
         "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-2": {
@@ -329,21 +364,13 @@
             "picker_type": "button",
             "color_swatches": false
           }
-        },
-        "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
         }
       },
       "block_order": [
         "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-0",
         "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-1",
         "419cb1bf-d92d-446d-9e92-18c891da9d72",
-        "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-2",
-        "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-3"
+        "template--14739462389825__8c8a7ca4-24db-4e3b-9345-079496926fe2-1675033203469917fa-2"
       ],
       "disabled": true,
       "settings": {
@@ -378,6 +405,11 @@
         "quantity_selector_xGYerW": {
           "type": "quantity_selector",
           "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
           }
         },
         "variant_picker_9RMPwW": {
@@ -388,21 +420,13 @@
             "picker_type": "button",
             "color_swatches": false
           }
-        },
-        "buy_buttons_CRkJLB": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
         }
       },
       "block_order": [
         "price_VEiD9y",
         "description_D6VJHb",
         "quantity_selector_xGYerW",
-        "variant_picker_9RMPwW",
-        "buy_buttons_CRkJLB"
+        "variant_picker_9RMPwW"
       ],
       "disabled": true,
       "settings": {
@@ -437,6 +461,11 @@
         "eabbbaeb-12cc-4146-89b2-7590b5f60184": {
           "type": "quantity_selector",
           "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
           }
         },
         "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-2": {
@@ -447,21 +476,13 @@
             "picker_type": "button",
             "color_swatches": false
           }
-        },
-        "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
         }
       },
       "block_order": [
         "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-0",
         "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-1",
         "eabbbaeb-12cc-4146-89b2-7590b5f60184",
-        "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-2",
-        "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-3"
+        "template--14739462389825__66d67352-f6fe-484e-ae11-829f2f5a8d94-1675033203469917fa-2"
       ],
       "disabled": true,
       "settings": {
@@ -496,6 +517,11 @@
         "0cdff908-c4ed-4e2c-8048-c503d851a9c7": {
           "type": "quantity_selector",
           "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
           }
         },
         "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-2": {
@@ -506,21 +532,13 @@
             "picker_type": "button",
             "color_swatches": false
           }
-        },
-        "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
         }
       },
       "block_order": [
         "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-0",
         "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-1",
         "0cdff908-c4ed-4e2c-8048-c503d851a9c7",
-        "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-2",
-        "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-3"
+        "template--14739462389825__99999f50-3a71-429d-89d5-c91e4cd9a173-1675033203469917fa-2"
       ],
       "disabled": true,
       "settings": {

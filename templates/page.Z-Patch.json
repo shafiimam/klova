@@ -13,7 +13,26 @@
     },
     "z_patch_video_with_text_6pm6E3": {
       "type": "z-patch-video-with-text",
+      "blocks": {
+        "trust_badge_tWdkcw": {
+          "type": "trust-badge",
+          "settings": {
+            "text": "Free Shipping Over $45"
+          }
+        },
+        "trust_badge_NDXTCk": {
+          "type": "trust-badge",
+          "settings": {
+            "text": "30 Day Money Back Guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "trust_badge_tWdkcw",
+        "trust_badge_NDXTCk"
+      ],
       "settings": {
+        "heading": "Discover the Secret to a Perfect Night's Sleep"
       }
     },
     "z_patch_reviews_photo_efcyGC": {
@@ -214,6 +233,12 @@
     "featured_product_CDixXD": {
       "type": "featured-product",
       "blocks": {
+        "custom_w3d6aH": {
+          "type": "custom",
+          "settings": {
+            "code": "hello facebook\n<span id=\"subscribe\"><\/span>\n<style>\n.essential_countdown_annoucement_bar_wrapper {\n  display: none !important;\n}\n.main-product__price{\ndisplay:none;}\n<\/style>"
+          }
+        },
         "price_PB9MFP": {
           "type": "price",
           "settings": {
@@ -227,6 +252,7 @@
         },
         "variant_picker_az8agc": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "size_chart": "",
             "variant_labels": true,
@@ -234,25 +260,41 @@
             "color_swatches": false
           }
         },
-        "quantity_selector_GfnYbU": {
-          "type": "quantity_selector",
+        "skio_plan_picker_eF4Tc8": {
+          "type": "skio-plan-picker",
           "settings": {
           }
         },
-        "buy_buttons_FzLbAR": {
-          "type": "buy_buttons",
+        "quantity_selector_GfnYbU": {
+          "type": "quantity_selector",
           "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
             "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
             "surface_pickup_enable": true
+          }
+        },
+        "sales_point_YMkdni": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
           }
         }
       },
       "block_order": [
+        "custom_w3d6aH",
         "price_PB9MFP",
         "description_MJenNE",
         "variant_picker_az8agc",
+        "skio_plan_picker_eF4Tc8",
         "quantity_selector_GfnYbU",
-        "buy_buttons_FzLbAR"
+        "sales_point_YMkdni"
       ],
       "settings": {
         "featured_product": "sleep-patch",
@@ -262,7 +304,7 @@
         "image_container_size": "medium",
         "product_image_size": "square",
         "product_zoom_enable": false,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -403,6 +445,15 @@
       "type": "z-patch-footer2-bottom",
       "settings": {
       }
+    },
+    "discount_application_landingpages_CpeXRi": {
+      "type": "discount-application-landingpages",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "discountcode": "TIKTOK-SAVINGS"
+      }
     }
   },
   "order": [
@@ -419,6 +470,7 @@
     "z_patch_review_video_RhU4CK",
     "z_patch_review_video_ytwqKP",
     "z_patch_footer_bottom_hjrEeP",
-    "z_patch_footer2_bottom_gr9fW9"
+    "z_patch_footer2_bottom_gr9fW9",
+    "discount_application_landingpages_CpeXRi"
   ]
 }

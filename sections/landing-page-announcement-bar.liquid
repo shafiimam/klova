@@ -2,7 +2,11 @@
   <div class="zsleep-announcement-money-content">
     <div class="zsleep-page-width announcement-money-text">
       <div class="money-logo-content">
-         <p style="text-align: center; line-height: 20px;"><span style="font-size: 14px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">30 DAY MONEY BACK GUARANTEE</span></p>
+        <p style="text-align: center; line-height: 20px;">
+          <span style="font-size: 14px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);"
+            >30 DAY MONEY BACK GUARANTEE</span
+          >
+        </p>
       </div>
     </div>
   </div>
@@ -23,7 +27,7 @@
     justify-content: center;
     padding-top:5px;
     position: relative;
-    align-items: end;
+    align-items: center;
     height:100%;
   }
   .left-side-icon{
@@ -38,13 +42,20 @@
 </style>
 
 {% schema %}
-  {
-    "name": "zsleep announcement-money",
-    "settings": [],
-    "presets":[
-      {
-        "name":"zsleep announcement-money"
-      }
-    ]
-  }
+{
+  "name": "Landing Page Announcement",
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement Content",
+      "default": "30 DAY MONEY BACK GUARANTEE"
+    }
+  ],
+  "presets":[
+    {
+      "name":"Landing Page Announcement"
+    }
+  ]
+}
 {% endschema %}
