@@ -1,0 +1,145 @@
+<section id="{{ section.id }}">
+  <div class="page-width">
+    <div class="hero-container">
+      <div class="hero-image-wrapper">
+        {{ section.settings.background_image_desktop | image_url: width: 1400 | image_tag: widths: '1400' }}
+        {{ section.settings.background_image_tablet | image_url: width: 800 | image_tag: widths: '800' }}
+        {{ section.settings.background_image_mobile | image_url: width: 600 | image_tag: widths: '600' }}
+      </div>
+      <div class="hero-content">
+        <p class="hero-content_heading">{{ section.settings.heading }}</p>
+        <p class="hero-content_subheading">{{ section.settings.sub_heading }}</p>
+        {% if section.settings.button_text != '' %}
+          <a href="{{ section.settings.button_url }}" class="hero-cta-btn">{{ section.settings.button_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #{{ section.id }} .page-width {
+    background-size: contain;
+  }
+  .hero-container{
+    position: relative;
+    height: 100%;
+  }
+  .hero-image-wrapper img[width="1400"]{
+    height: 100%;
+  }
+  .hero-image-wrapper img[width="800"], .hero-image-wrapper img[width="600"]{
+    display: none;
+  }
+  .hero-image-wrapper img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .hero-content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  .hero-content {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    height: 100%;
+    max-width: 530px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px;
+    gap: 36px;
+  }
+  .hero-content .hero-content_heading{
+    color: #1E062C;
+    font-family: "Bergen Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 104.167% */
+  }
+  .hero-content .hero-content_subheading{
+    color: #1E062C;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+ 
+  }
+  .hero-cta-btn {
+    display: flex;
+    padding: 17px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #1E062C;  
+    color: #FFFFFF;
+  }
+  .hero-cta-btn:hover {
+    background: #BA4444;
+    color: #FFFFFF;
+  }
+  @media (max-width: 800px) {
+    .hero-image-wrapper img[width="1400"] {
+      display:none;
+    }
+    .hero-image-wrapper img[width="800"] {
+      display:block;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "New Hero Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image_desktop",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_tablet",
+      "label": "Tablet image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Mobile image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "New Hero Banner"
+    }
+  ]
+}
+{% endschema %}
