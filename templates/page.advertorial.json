@@ -263,6 +263,48 @@
             "bundle_title": ""
           }
         },
+        "bundle_btn_7PXHNY": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000004038.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000004038_a04d151a-cb02-413b-87f7-ec79d8ee07bf.png",
+            "bundle_data": "",
+            "bundle_sub_text": "",
+            "bundle_btn": "",
+            "bundle_url": "",
+            "bundle_color_text": "",
+            "bundle_bg": "",
+            "bundle_btn_border": ""
+          }
+        },
+        "bundle_btn_BWthex": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000004039.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000004039_fc1d0a1b-e558-4dcf-81ff-66660456bda5.png",
+            "bundle_data": "",
+            "bundle_sub_text": "",
+            "bundle_btn": "",
+            "bundle_url": "",
+            "bundle_color_text": "",
+            "bundle_bg": "",
+            "bundle_btn_border": ""
+          }
+        },
+        "bundle_btn_apm4Pg": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000004040.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000004040_dd401968-e26b-4a73-b426-0f88a330c387.png",
+            "bundle_data": "",
+            "bundle_sub_text": "",
+            "bundle_btn": "",
+            "bundle_url": "",
+            "bundle_color_text": "",
+            "bundle_bg": "",
+            "bundle_btn_border": ""
+          }
+        },
         "skio_plan_picker_H7HnAL": {
           "type": "skio-plan-picker",
           "settings": {
@@ -296,9 +338,15 @@
         "description_Y8jjkJ",
         "one_pack_FRW3B8",
         "bundle_pack_UMFEwH",
+        "bundle_btn_7PXHNY",
+        "bundle_btn_BWthex",
+        "bundle_btn_apm4Pg",
         "skio_plan_picker_H7HnAL",
         "quantity_selector_FGEGyQ",
         "sales_point_rHJWjF"
+      ],
+      "custom_css": [
+        ".bundle-image img {width: 100% !important;}"
       ],
       "settings": {
         "featured_product": "sleep-bundle",

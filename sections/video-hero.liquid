@@ -69,7 +69,7 @@
 <style>
   #shopify-section-toolbar,  #shopify-section-header{
     display: none;
-  } 
+  }
   #{{ section.id }} .page-width {
     background-image: url({{ section.settings.background_image_desktop | image_url }});
     padding: 164px 80px;
@@ -138,6 +138,9 @@
       background-size: cover;
       padding: 93px 20px 48px 20px;
       background-position: top center;
+    }
+    .video-hero__content--text .cta-button{
+        font-size: 18px;
     }
     .video-hero__content--text .heading{
       font-size: 36px;
@@ -214,7 +217,6 @@
       width: 100%;
     }
   }
-
 </style>
 
 {% schema %}

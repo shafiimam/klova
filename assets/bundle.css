@@ -4666,7 +4666,7 @@ html.category-open .site-header .site-header__element {
 @media screen and (max-width: 1023px) {
   .main-product__wrapper {
     margin-left: 0;
-    width: 80%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {

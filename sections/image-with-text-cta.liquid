@@ -21,7 +21,7 @@
           <div class="subheading">
             {{ section.settings.subHeading }}
           </div>
-          {% if section.settings.button_text %}
+          {% if section.settings.button_text != '' %}
             <a href="{{ section.settings.button_url }}" class="cta-button">{{ section.settings.button_text }}</a>
           {% endif %}
         </div>
