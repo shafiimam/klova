@@ -233,14 +233,14 @@
         "blocks": {
           "announcement_VBbnx6": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/all\" title=\"All Products\">Take off an extra 15% on any subscription. Use Code EARTHDAY24<\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"\/collections\/all\" title=\"All Products\">Take off an extra 15% on any subscription. Use Code EARTHDAY24<\/a><\/p>"
+              "richtext": "<p><a href=\"\/products\/daily-bundle\" title=\"Daily Performance Bundle\">\"Honor & Harmony\" Buy 1 Performance Bundle, get 1 Original Z Sleep patch for free<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/products\/daily-bundle\" title=\"Daily Performance Bundle\">\"Honor & Harmony\" Buy 1 Performance Bundle, get 1 Original Z Sleep patch for free<\/a><\/p>"
             }
           },
           "announcement_bCg9Hp": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p>Hassle-free returns. 30-day postage paid returns<\/p>",
               "richtext_mobile": ""

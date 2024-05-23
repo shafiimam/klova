@@ -5,15 +5,14 @@
       "blocks": {
         "slide_hRUmQr": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "top_subheading": "Sleep Well, Mom",
-            "title": "Mother's day special",
+            "top_subheading": "",
+            "title": "Memorial day special",
             "last_word_color": "#fa4d09",
             "title_size": 60,
-            "subheading": "<p>Buy One, Get One 50% Off. Use Code BESTMOM50 <\/p>",
+            "subheading": "<p>Buy 1 Performance Bundle, get 1 Original Z Sleep patch for free<\/p>",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/Klova-Banner_-_480x450px_-_rectangular_-_Mother_Day_-_01May_2024-01.jpg",
+            "image": "shopify:\/\/shop_images\/Klova_Memorial_Day_banner_03.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "transform_mob_x": 0,
@@ -21,8 +20,8 @@
             "transform_x": 0,
             "transform_y": 0,
             "style_overlay": "bg-gr--green-blue",
-            "link_text": "",
-            "link": ""
+            "link_text": "Learn More",
+            "link": "shopify:\/\/products\/daily-bundle"
           }
         },
         "slide_tJCUyQ": {

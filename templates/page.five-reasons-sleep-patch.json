@@ -2,11 +2,136 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "new_hero_XpecAm": {
+      "type": "new-hero",
       "settings": {
+        "background_image_desktop": "shopify://shop_images/hero-banner-desktop.jpg",
+        "background_image_tablet": "shopify://shop_images/hero-banner-tablet.jpg",
+        "background_image_mobile": "shopify://shop_images/hero-banner-mobile.jpg",
+        "heading": "5 Reasons NOT to Try Klova Sleep Patch",
+        "sub_heading": "",
+        "button_text": "TRY KLOVA SLEEP PATCH",
+        "button_url": "shopify://products/sleep-patch"
+      }
+    },
+    "text_and_image_9DxT6V": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Frame_1000003874.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "1. You adore feeling tired in the morning.",
+        "text": "<p>If you find a certain charm in dragging yourself out of bed each morning, yearning for just one more hour of shut-eye, then the Klova Sleep Patch might not be right for you. <br/></p><p>Designed specifically to promote deep, restful sleep, it effectively eliminates the grogginess that many secretly cherish.</p><p>With its timed release of natural sleep aids, you'll miss the days when waking up felt like a Herculean task.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_and_image_qK69J4": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Frame_1000003874-2.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "2. You're a fan of traditional sleep aids.",
+        "text": "<p>For those who prefer the routine of gulping down pills or brewing a cup of herbal sleep tea, Klova’s innovative transdermal technology could feel too impersonal and simple. </p><p>The patch, which seamlessly delivers a blend of melatonin, valerian root, and other sleep-enhancing ingredients through the skin, might not satisfy your preference for more tactile, traditional methods of inducing sleep.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_and_image_RxTEi3": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Frame_100000387422.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "3. You enjoy frequent midnight awakenings.",
+        "text": "<p>If you find solace in waking up multiple times a night—to ponder over past conversations or plan the day ahead—the Klova Sleep Patch’s ability to help you maintain uninterrupted sleep throughout the night could disrupt your nightly contemplations.</p><p>It’s crafted to keep you asleep, potentially robbing you of those quiet moments of nocturnal solitude.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_and_image_Y6VwED": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Frame_1000003874ss.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "4. You value complex sleep routines.",
+        "text": "<p>For those who have meticulously curated a bedtime ritual filled with multiple steps, the simplicity of applying a single sleep patch could seem mundane.</p><p>The Klova Sleep Patch, which requires you to just stick it on and drift off, might not align with the joy you find in a lengthy, elaborate bedtime process involving various products and practices.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "text_and_image_94fGUM": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Frame_1000003874ssss.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "5. You seek the thrill of sleepless nights.",
+        "text": "<p>Lastly, if you thrive on the buzz of a sleep-deprived day, where coffee is your best friend and the world seems like an obstacle course, the effectiveness of Klova’s Sleep Patch in enhancing sleep quality and duration will surely spoil your adventurous spirit.</p><p>Each patch is engineered to ensure a night of solid, uninterrupted sleep, smoothing out those edgy mornings you might secretly enjoy.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "slideshow_image_wQLQUV": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_kVpwnp": {
+          "type": "image",
+          "settings": {
+            "link": "shopify://products/sleep-patch",
+            "image": "shopify://shop_images/Frame_1000003951.png",
+            "image_mobile": "shopify://shop_images/Frame_1000003951-mobile.png"
+          }
+        }
+      },
+      "block_order": ["image_kVpwnp"],
+      "settings": {
+        "full_width": false,
+        "title": "Product Comparison",
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 7
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "new_hero_XpecAm",
+    "text_and_image_9DxT6V",
+    "text_and_image_qK69J4",
+    "text_and_image_RxTEi3",
+    "text_and_image_Y6VwED",
+    "text_and_image_94fGUM",
+    "slideshow_image_wQLQUV"
   ]
 }
