@@ -12,6 +12,7 @@
         "background_image_desktop": "shopify:\/\/shop_images\/hero-banner-desktop.jpg",
         "background_image_tablet": "shopify:\/\/shop_images\/hero-banner-tablet.jpg",
         "background_image_mobile": "shopify:\/\/shop_images\/hero-banner-mobile.jpg",
+        "alignment": "left",
         "heading": "5 Reasons NOT to Try Klova Sleep Patch",
         "sub_heading": "",
         "button_text": "TRY KLOVA SLEEP PATCH",
@@ -107,6 +108,9 @@
       },
       "block_order": [
         "image_kVpwnp"
+      ],
+      "custom_css": [
+        "a.hero__slide-link {display: block;}"
       ],
       "settings": {
         "full_width": false,
