@@ -69,7 +69,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 175% */
- 
+
   }
   .hero-cta-btn {
     display: flex;
@@ -78,15 +78,23 @@
     align-items: center;
     gap: 10px;
     border-radius: 6px;
-    background: #1E062C;  
+    background: #1E062C;
     color: #FFFFFF;
   }
   .hero-cta-btn:hover {
     background: #BA4444;
     color: #FFFFFF;
   }
-  @media (max-width: 800px) {
-    .hero-image-wrapper img[width="1400"] {
+  @media (max-width: 500px) {
+    .hero-image-wrapper img[width="1400"],.hero-image-wrapper img[width="800"], {
+      display:none;
+    }
+    .hero-image-wrapper img[width="500"] {
+      display:block;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 800px){
+    .hero-image-wrapper img[width="1400"],.hero-image-wrapper img[width="500"], {
       display:none;
     }
     .hero-image-wrapper img[width="800"] {
