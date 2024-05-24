@@ -110,8 +110,8 @@
     }
   }
   @media (max-width: 800px) {
-    .image-with-text-cta__content {
-      flex-direction: column;
+    #{{ section.id }} .image-with-text-cta__content {
+      flex-direction: {% if image_allignment == 'left' %}column{% else %}column-reverse{% endif  %};
       padding: 48px 0;
       gap: 24px;
     }

@@ -1,3 +1,8 @@
+{% assign alignment = section.settings.alignment %}
+{% assign textAlignment = 'flex-start' %}
+{% if alignment == 'right' %}
+  {% assign textAlignment = 'flex-end' %}
+{% endif %}
 <section id="{{ section.id }}">
   <div class="page-width">
     <div class="hero-container">
@@ -23,6 +28,8 @@
   .hero-container{
     position: relative;
     height: 100%;
+    display: flex;
+    justify-content:{{ textAlignment }};
   }
   .hero-image-wrapper img[width="1400"]{
     height: 100%;
@@ -54,6 +61,12 @@
     padding: 80px;
     gap: 36px;
   }
+  .image-with-text-cta__content--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }z
   .hero-content .hero-content_heading{
     color: #1E062C;
     font-family: "Bergen Sans";
@@ -85,21 +98,57 @@
     background: #BA4444;
     color: #FFFFFF;
   }
+
+
   @media (max-width: 500px) {
-    .hero-image-wrapper img[width="1400"],.hero-image-wrapper img[width="800"], {
+    .hero-image-wrapper img[width="1400"],.hero-image-wrapper img[width="800"] {
       display:none;
     }
-    .hero-image-wrapper img[width="500"] {
+    .hero-image-wrapper img[width="600"] {
       display:block;
     }
+    .hero-content{
+      padding: 60px 20px;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero-content .hero-content_heading{
+      font-size: 30px;
+      text-align: center;
+    }
+    .hero-cta-btn{
+      color: #FFF;
+      text-align: center;
+      font-family: "Bergen Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 14px; /* 100% */
+      text-transform: uppercase;
+      padding: 17px 30px;
+      width: 100%;
+    }
+    .hero-container{
+      display: block;
+    }
   }
-  @media (min-width: 500px) and (max-width: 800px){
-    .hero-image-wrapper img[width="1400"],.hero-image-wrapper img[width="500"], {
+  @media (min-width: 501px) and (max-width: 800px){
+    .hero-image-wrapper img[width="1400"],.hero-image-wrapper img[width="500"] {
       display:none;
     }
     .hero-image-wrapper img[width="800"] {
       display:block;
     }
+    .hero-content .hero-content_heading{
+      font-size: 30px;
+      max-width: 330px;
+    }
+    .hero-content{
+      padding: 60px 20px;
+      gap: 36px;
+    }
+   
   }
 </style>
 
@@ -121,6 +170,22 @@
       "type": "image_picker",
       "id": "background_image_mobile",
       "label": "Mobile image"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ],
+      "default": "left"
     },
     {
       "type": "text",
