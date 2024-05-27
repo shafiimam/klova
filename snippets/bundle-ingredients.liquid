@@ -1,0 +1,79 @@
+{% assign showSecondText = false %}
+{% if block.settings.showSecondText == "yes" %}
+  {% assign showSecondText = true %}
+{% endif %}
+
+{% assign collectionHandle = 'all-products-mega-menu' %}
+<div class="bundle-items-container" {{ block.shopify_attributes }}>
+  {% for Iproduct in collections[collectionHandle].products %}
+    {% if Iproduct.metafields.custom.patch_image %}
+      <div class="bundle-item">
+        <div class="image-container">
+          <img src="{{ Iproduct.metafields.custom.patch_image | img_url:'master' }}" height="64" width="64">
+        </div>
+        <div class="content-container">
+          <p class="title">{{ Iproduct.title }}</p>
+          <p class="subtitle">
+            {% if showSecondText == true %}
+              {{ Iproduct.metafields.custom.subtitle_for_bundle_content_2 }}
+            {% elsif showSecondText == false %}
+              {{ Iproduct.metafields.custom.subtitle_for_bundle_content }}
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+<style>
+  .bundle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(30, 6, 44, 0.17);
+    background: linear-gradient(90deg, rgba(100, 233, 217, 0.11) 0%, rgba(123, 73, 181, 0.11) 100%), #fff;
+    padding: 15px;
+  }
+  .bnundle-item .image-container {
+    width: 64px;
+    height: 64px;
+  }
+  .bundle-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+  }
+  .content-container {
+    width: calc(100% - 64px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .content-container .title {
+    font-family: Bergen Sans;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: left;
+  }
+  .content-container .subtitle {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 500px) {
+    .bundle-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .content-container {
+      width: 100%;
+    }
+  }
+</style>

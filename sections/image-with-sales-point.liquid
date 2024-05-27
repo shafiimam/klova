@@ -13,12 +13,20 @@
           <img src="{{ image | img_url: '1200x' }}" alt="" height="100%" width="100%">
         </div>
       {% endif %}
-      <div class="sales-points-text-container">
-        {% for block in section.blocks %}
-          {% if block.type == 'sales_point' %}
-            {% render 'icon-with-text', block: block %}
-          {% endif %}
-        {% endfor %}
+      <div class="sales-points-content-container">
+        {% if section.settings.title %}
+          <p class="section-title">{{ section.settings.title }}</p>
+        {% endif %}
+        <div class="sales-points-text-container">
+          {% for block in section.blocks %}
+            {% if block.type == 'sales_point' %}
+              {% render 'icon-with-text', block: block %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% if section.settings.link %}
+          <a href="{{ section.settings.link }}" class="cta-btn">{{ section.settings.button_label }}</a>
+        {% endif %}
       </div>
       {% if showOnRight == false %}
         <div class="sales-points-image-container">
@@ -36,6 +44,44 @@
   .sales-points-container {
     display: flex;
     gap: 80px;
+  }
+  #{{ section.id }} .sales-points-content-container .section-title {
+    color: #1E062C;
+    font-family: "Bergen Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px; /* 108.333% */
+  }
+  #{{ section.id }} .cta-btn{
+    border-radius: 6px;
+    background: #1E062C;  
+    display: flex;
+    max-width: 338px;
+    padding: 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bergen Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 100% */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  #{{ section.id }} .cta-btn:hover{
+    background: #4C1B6B;
+    color: #FFF;
+  }
+  .sales-points-content-container {
+      flex-basis: calc(50% - 64px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 48px;
   }
   .sales-points-image-container{
     flex-basis: 50%;
@@ -103,6 +149,9 @@
     .icon-container{
       flex-basis: 40px;
     }
+    #{{ section.id }} .cta-btn{
+      max-width: 100%;
+    }
   }
 </style>
 
@@ -114,6 +163,21 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
     },
     {
       "type": "select",

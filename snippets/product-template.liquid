@@ -371,7 +371,8 @@
                         </div>
                       {% endif %}
                     </div>
-
+                  {% when 'bundle_ingredients' %}
+                    {% render 'bundle-ingredients', block: block, product: product %}
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
                       <label class="variant__label" for="ProductPrice-{{ section_id }}">
