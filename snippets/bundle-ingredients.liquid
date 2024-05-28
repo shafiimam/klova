@@ -1,9 +1,11 @@
 {% assign showSecondText = false %}
-{% if block.settings.showSecondText == "yes" %}
+{% if block.settings.showSecondText == 'yes' %}
   {% assign showSecondText = true %}
 {% endif %}
-
-{% assign collectionHandle = 'all-products-mega-menu' %}
+{% assign collectionHandle = block.settings.collection %}
+{% if collectionHandle == '' %}
+  {% assign collectionHandle = 'all-products-mega-menu' %}
+{% endif %}
 <div class="bundle-items-container" {{ block.shopify_attributes }}>
   {% for Iproduct in collections[collectionHandle].products %}
     {% if Iproduct.metafields.custom.patch_image %}

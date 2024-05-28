@@ -51,7 +51,7 @@
           "type": "bundle_ingredients",
           "settings": {
             "showSecondText": "no",
-            "collection": ""
+            "collection": "deep-sleep-sample-products"
           }
         },
         "bundle_btn_WGPnxM": {
@@ -108,19 +108,20 @@
         },
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4": {
           "type": "tab",
+          "disabled": true,
           "settings": {
-            "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
-            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}</p>",
-            "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
-            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}</p>",
-            "acc-button-three": "{{ product.metafields.add_tab.product_title_tab_3.value }}",
-            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}</p>",
-            "acc-button-four": "{{ product.metafields.add_tab.product_title_tab_4.value }}",
-            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}</p>",
-            "acc-button-five": "{{ product.metafields.add_tab.product_title_tab_5.value }}",
-            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}</p>",
-            "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
-            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}</p>"
+            "acc-button-one": "WHO CAN USE THESE PATCHES?",
+            "acc-text-one": "<p>asdasdasdas</p>",
+            "acc-button-two": "WHERE IS KLOVA MADE?",
+            "acc-text-two": "",
+            "acc-button-three": "ARE THERE ANY INTERACTIONS?",
+            "acc-text-three": "",
+            "acc-button-four": "IS THERE A MONEY BACK GUARANTEE?",
+            "acc-text-four": "",
+            "acc-button-five": "WILL THE SLEEP PATCH MAKE ME GROGGY?",
+            "acc-text-five": "",
+            "acc-button-six": "",
+            "acc-text-six": ""
           }
         }
       },
@@ -141,6 +142,7 @@
         "991843c7-0724-43cf-8891-6972bb0b8de4",
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
+      "custom_css": [],
       "settings": {
         "link-back-text": "",
         "link-back": "shopify://collections/all",
@@ -157,44 +159,108 @@
         "product_video_style": "muted"
       }
     },
-    "image_with_sales_point_GjqhVW": {
-      "type": "image-with-sales-point",
+    "how_works_Ed9pG9": {
+      "type": "how-works",
       "blocks": {
-        "sales_point_DVigfw": {
-          "type": "sales_point",
+        "how_work_74MXrq": {
+          "type": "how_work",
           "settings": {
-            "icon": "shopify://shop_images/hand_12640429_1.svg",
-            "title": "Wide Selection",
-            "subtitle": "With seven different patches to try, you can explore a variety of benefits to enhance your daily life."
+            "image": "shopify://shop_images/peel.png",
+            "title": "Peel",
+            "subtitle": "Peel off one patch off of the included sheets (28 patches per pack)."
           }
         },
-        "sales_point_rwNMnf": {
-          "type": "sales_point",
+        "how_work_qKQG3k": {
+          "type": "how_work",
           "settings": {
-            "icon": "shopify://shop_images/Solution.svg",
-            "title": "Tailored Solutions",
-            "subtitle": "Each patch provides targeted support, allowing you to find what works best for your specific needs."
+            "image": "shopify://shop_images/stick.png",
+            "title": "Stick",
+            "subtitle": "Stick the patch on any hair-free part of the body with good blood flow."
           }
         },
-        "sales_point_jUgXbP": {
-          "type": "sales_point",
+        "how_work_UN3wjk": {
+          "type": "how_work",
           "settings": {
-            "icon": "shopify://shop_images/hand_1557703_1.svg",
-            "title": "Convenience",
-            "subtitle": "Each patch is easy to use, with a simple application process that fits seamlessly into your nightly or daily routine."
+            "image": "shopify://shop_images/sleep_11ffd87b-304a-4990-914f-9355499e76e5.png",
+            "title": "Sleep",
+            "subtitle": "Fall asleep naturally, and sleep soundly all night."
+          }
+        },
+        "how_work_8jhAdf": {
+          "type": "how_work",
+          "settings": {
+            "image": "shopify://shop_images/remove.png",
+            "title": "Remove",
+            "subtitle": "Simply remove about 7-9 hours later when you wake up and discard."
           }
         }
       },
       "block_order": [
-        "sales_point_DVigfw",
-        "sales_point_rwNMnf",
-        "sales_point_jUgXbP"
+        "how_work_74MXrq",
+        "how_work_qKQG3k",
+        "how_work_UN3wjk",
+        "how_work_8jhAdf"
       ],
       "settings": {
-        "image": "shopify://shop_images/banner-2.png",
+        "title": "How It Works"
+      }
+    },
+    "image_with_sales_point_gKLiyt": {
+      "type": "image-with-sales-point",
+      "blocks": {
+        "sales_point_HHNLH3": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/NATURAL_INGREDIENTS.svg",
+            "title": "Natural Ingredients",
+            "subtitle": "Safe and gentle for nightly use."
+          }
+        },
+        "sales_point_LqGBVp": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/no_addiction.svg",
+            "title": "Non-Habit Forming",
+            "subtitle": "Designed for regular use without dependency."
+          }
+        },
+        "sales_point_aqrxHb": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/working-hours_1.svg",
+            "title": "Duration",
+            "subtitle": "Each patch works up to 8 hours, ensuring a full night of uninterrupted sleep."
+          }
+        },
+        "sales_point_MipEaN": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/blood_1.svg",
+            "title": "Improved Circulation",
+            "subtitle": "Promotes healthy blood flow while you rest."
+          }
+        },
+        "sales_point_FLVTDy": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/safe_1.svg",
+            "title": "Skin Safety",
+            "subtitle": "Hypoallergenic materials suitable for all skin types."
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_HHNLH3",
+        "sales_point_LqGBVp",
+        "sales_point_aqrxHb",
+        "sales_point_MipEaN",
+        "sales_point_FLVTDy"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_334_d7ea17a0-ae92-4871-8a4e-bb4fbda98545.png",
         "title": "Benefits",
-        "link": "#buy-now",
-        "button_label": "Buy Now",
+        "link": "",
+        "button_label": "",
         "aligment": "right"
       }
     },
@@ -205,10 +271,10 @@
         ".image-with-text-cta .cta-button:hover {background: #4c1b6b; color: #fff;}"
       ],
       "settings": {
-        "heading": "Experience Comprehensive Wellness",
-        "subHeading": "<p>Our \"Try Them All\" Patch Sampler is your gateway to discovering how each patch can contribute to your overall well-being and performance. Whether you need better sleep, more focus, or enhanced recovery, this sampler has you covered.Discover your favorites and tailor your wellness approach with Klova’s most complete patch collection.</p>",
-        "image": "shopify://shop_images/Rectangle_334.png",
-        "button_text": "Try Them All",
+        "heading": "Find Your Favorite",
+        "subHeading": "<p>Each patch delivers unique benefits. Use this sampler to discover which formulation aligns best with your body's needs and enhances your sleep quality most effectively.<br/>Experience a new way to achieve a night of deep, restorative sleep with our Sleep Patch Sampler. Try it tonight and wake up refreshed and revitalized!</p>",
+        "image": "shopify://shop_images/Rectangle_334_77ba9666-9574-45db-b62d-0c3a0a099090.png",
+        "button_text": "Try Deep Sleep Patches",
         "button_url": "#buy-now",
         "button_text_2": "",
         "button_url_2": "",
@@ -217,25 +283,20 @@
         "show_section_devider": false
       }
     },
-    "slideshow_image_xkka8t": {
-      "type": "slideshow-image",
+    "bundle_product_includes_apM4GH": {
+      "type": "bundle-product-includes",
       "blocks": {
-        "image_UAwJTV": {
-          "type": "image",
+        "bundle_ingredients_j8B4bG": {
+          "type": "bundle_ingredients",
           "settings": {
-            "link": "",
-            "image": "shopify://shop_images/Frame_1000003848_72bce8b2-4a1b-4f3d-9e5a-3ee323fcc0bc.png",
-            "image_mobile": "shopify://shop_images/Frame_10000038485.png"
+            "showSecondText": "no",
+            "collection": "deep-sleep-sample-products"
           }
         }
       },
-      "block_order": ["image_UAwJTV"],
+      "block_order": ["bundle_ingredients_j8B4bG"],
       "settings": {
-        "full_width": false,
-        "title": "",
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
+        "title": "Included in Your Sampler"
       }
     },
     "16539274943ce12887": {
@@ -296,48 +357,48 @@
     "new_faq_ym3cyh": {
       "type": "new-faq",
       "blocks": {
-        "faq_AjfaQy": {
+        "faq_zTdi4g": {
           "type": "FAQ",
           "settings": {
-            "question": "MEET YOUR NEW KLOVA BFF",
-            "answer": "Get ready to experience the full wellness spectrum with our Try Them All sample pack. Each patch is tailored to support a specific aspect of your health, from a tranquil night's sleep with our Sleep patches to enhanced focus, relaxation, energy, and recovery. It's a comprehensive introduction to the Klova lifestyle and your new partner in personal well-being."
+            "question": "MEET YOUR NEW BEDTIME BFF",
+            "answer": "The Deep Sleep sample pack is curated to help you discover your perfect sleep solution. With a selection of our best sleep aid patches, you can find the optimal fit for your needs, ensuring a peaceful night's sleep and a refreshed awakening."
           }
         },
-        "faq_hAq8wV": {
+        "faq_tNCzii": {
           "type": "FAQ",
           "settings": {
             "question": "HOW IT WORKS?",
-            "answer": "Klova patches utilize transdermal technology to deliver a blend of natural ingredients directly into your bloodstream. Each patch contains a unique formula designed to support your body's specific needs, such as melatonin for sleep or caffeine for energy. These components are embedded in the patch and released slowly over 8 hours, ensuring a consistent benefit throughout their use."
+            "answer": "Our Deep Sleep patches are infused with ingredients like melatonin, hops, and valerian root (depending on the patch) that are known for their sleep-inducing properties. Transdermal delivery ensures these ingredients are absorbed consistently throughout the night, promoting uninterrupted and quality sleep."
           }
         },
-        "faq_hJY3CN": {
+        "faq_cTnn4x": {
           "type": "FAQ",
           "settings": {
             "question": "HOW TO USE IT?",
-            "answer": "Using Klova patches is as simple as peel, stick, and enhance your well-being. Choose the patch that matches your current need - whether you're seeking restful sleep, a surge in focus, or a boost in recovery. Peel off the patch's backing, stick it onto a clean, dry area of your skin, and let it work its magic as you go about your day or night."
+            "answer": "For a serene slumber, simply peel the backing off the patch of your choice, apply it to a clean area of your skin like the inside of your wrist or shoulder, and let the patch do the rest. The ingredients will help lull you into a peaceful sleep, allowing you to wake up rejuvenated."
           }
         },
-        "faq_grcdWB": {
+        "faq_ftXPXK": {
           "type": "FAQ",
           "settings": {
             "question": "WHAT’S IN IT?",
-            "answer": "The sample pack is the ultimate Klova experience with 4 patches of each product we have to offer: Original Sleep, Extra Strength, Melatonin-Free, Focus, Chill, Energy, and Recovery patches. It's the perfect way to find your favorite and tailor your wellness routine."
+            "answer": "The Deep Sleep sample pack includes 4 patches each of our dedicated sleep aids: Original Sleep, Extra Strength, and Melatonin-Free patches. It's designed to help you identify the right level of support for your sleep needs."
           }
         },
-        "faq_DhdrhF": {
+        "faq_PAGPfP": {
           "type": "FAQ",
           "settings": {
             "question": "BETTER SLEEP GUARANTEE",
-            "answer": "We stand behind our Better Sleep Guarantee. If you don't find satisfaction with our sleep-enhancing patches, Klova offers a 30 day money back guarantee. We're committed to your well-being, and if our patches don't help you achieve the rest you deserve, we want to make it right."
+            "answer": "Absolutely. Our Better Sleep Guarantee covers the Deep Sleep patches, ensuring that your journey to better rest is risk-free. If you're not satisfied with the improvement in your sleep quality, Klova offers a 30 day money back guarantee, providing a full refund, because your rest is our priority."
           }
         }
       },
       "block_order": [
-        "faq_AjfaQy",
-        "faq_hAq8wV",
-        "faq_hJY3CN",
-        "faq_grcdWB",
-        "faq_DhdrhF"
+        "faq_zTdi4g",
+        "faq_tNCzii",
+        "faq_cTnn4x",
+        "faq_ftXPXK",
+        "faq_PAGPfP"
       ],
       "custom_css": [],
       "settings": {
@@ -364,7 +425,7 @@
         "full_width": false,
         "title": "",
         "style": "arrows",
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_speed": 7
       }
     },
@@ -410,9 +471,10 @@
   "order": [
     "zp-product-header-content",
     "main",
-    "image_with_sales_point_GjqhVW",
+    "how_works_Ed9pG9",
+    "image_with_sales_point_gKLiyt",
     "image_with_text_cta_RbeaPt",
-    "slideshow_image_xkka8t",
+    "bundle_product_includes_apM4GH",
     "16539274943ce12887",
     "review_slider_NFJHzE",
     "new_faq_ym3cyh",

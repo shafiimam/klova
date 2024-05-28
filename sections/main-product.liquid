@@ -43,7 +43,7 @@
       font-weight: 600;
       /* text-align: center; */
     }
-    {% if block.settings.bundle_img !=blank %    {% if block.settings.bundle_img !=blank %}
+    {% if block.settings.bundle_img !=blank %}
     .bundle-image img{
       width:100%;
     }
@@ -902,8 +902,14 @@
               "value": "no"
             }
           ]
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
         }
       ]
     }
   ]
 }
+{% endschema %}

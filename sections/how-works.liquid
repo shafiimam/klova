@@ -1,0 +1,179 @@
+{% assign product = section.settings.product %}
+
+<div class="page-width">
+  <div class="how-it-works" id="{{ section.id }}">
+    <div class="container-section">
+      <div class="section-header">
+        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+      </div>
+      <div class="how-work-blocks-container">
+        {% for block in section.blocks %}
+          {% if block.type == 'how_work' %}
+            <div class="how-work-block" {{ block.shopify_attributes }}>
+              <div class="image-container">
+                <img src="{{ block.settings.image | img_url:'master' }}" height="248" width="248">
+              </div>
+              <div class="how-work-content-container">
+                <p class="title">{{ block.settings.title }}</p>
+                <p class="subtitle">
+                  {{ block.settings.subtitle }}
+                </p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #{{ section.id }} {
+    padding: 80px 120px;
+  }
+  .how-it-works .section-header__title{
+    color: #1E062C;
+    font-family: "Bergen Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px; /* 108.333% */
+    text-align: center;
+  }
+  .how-work-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(30, 6, 44, 0.17);
+    background: linear-gradient(90deg, rgba(100, 233, 217, 0.11) 0%, rgba(123, 73, 181, 0.11) 100%), #fff;
+    padding: 15px;
+  }
+
+  .how-work-blocks-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    justify-items: center;
+  }
+  .how-work-block .image-container {
+    width: 248px;
+    height: 248px;
+  }
+  .how-work-content-container {
+    width: calc(100% - 248px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .how-work-content-container .title {
+    font-family: Bergen Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+  }
+  .how-work-content-container .subtitle {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 800px) {
+    .how-work-block {
+      padding: 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 310px;
+    }
+    
+    .how-work-content-container {
+      width: 100%;
+    }
+    .how-work-block .image-container {
+      max-width: 100%;
+      flex-basis: 100%;
+      width: 100%;
+    }
+    .how-work-block .image-container img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  @media (min-width: 501px) and (max-width: 800px) {
+    #{{ section.id }} {
+      padding: 248px 0;
+    }
+    .how-it-works .section-header__title{
+      font-size: 40px;
+      line-height: 50px; /* 125% */`
+    }
+    .how-work-block:nth-child(odd) {
+      justify-self: end;
+    }
+    .how-work-block:nth-child(even) {
+      justify-self: start;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 500px){
+    #{{ section.id }} {
+      padding: 248px 0;
+    }
+    .how-it-works .section-header__title{
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .how-work-blocks-container{
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Bundle Product Includes",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Bundle Product Includes"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "how_work",
+      "name": "How Work",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How It Works"
+    }
+  ]
+}
+{% endschema %}
