@@ -98,19 +98,26 @@
 
                       {%- assign img_url = media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
   
-                      <img class="image-wrap data"
-                         
-                          src="{{ media.preview_image | img_url: product_zoom_size }}"
-                        >
-
-                     
-            
-                </a>
+                      <img class="image-wrap data" src="{{ media.preview_image | img_url: product_zoom_size }}">
+              </a>
               </div>
             {%- endfor -%}
           {%- endif -%}
-        </div>
 
+      <!--*** Start Last thumbs code ***-->
+          <div class="set-product-width"> 
+            {% if product.metafields.custom.last_video_url !=blank %}<a href="https://www.youtube.com/embed/{{ product.metafields.custom.last_video_url }}" class="glightbox video-data play-btn-pos">{% endif %} 
+                  {% if product.metafields.custom.product_last_thumbs !=blank %}
+                 <img class="image-wrap data" src="{{ product.metafields.custom.product_last_thumbs | img_url:'master' }}" alt="image">
+                  {% else %}
+                  <img class="image-wrap data" src="{{ product.selected_or_first_available_variant.featured_media | default: product.featured_media  | img_url:'master' }}"  alt="image">  
+                  {% endif %}
+           {% if product.metafields.custom.last_video_url !=blank %}<img class="image-wrap data video-btn" src="https://cdn.shopify.com/s/files/1/2065/0707/files/pngwing.com.png?v=1713424091" alt="image">{% endif %}
+              </a>
+          </div>   
+      <!--*** End Last thumbs code ***-->
+  
+        </div>
         {%- if thumbnail_arrows -%}
           <button type="button" class="product__thumb-arrow product__thumb-arrow--next" aria-label="{{ 'general.pagination.next' | t }}">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
