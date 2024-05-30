@@ -1,4 +1,17 @@
 {% assign image_allignment = section.settings.alignment %}
+{% assign bg_desktop = section.settings.bg_desktop | img_url: '1400x' %}
+{% assign bg_tablet = section.settings.bg_tablet | img_url: '800x' %}
+{% assign bg_mobile = section.settings.bg_mobile | img_url: '500x' %}
+{% assign bg_color = section.settings.background_color %}
+
+{% capture backgroundValue %}
+  {% if bg_color != blank %}
+    {{ bg_color }}
+  {% else %}
+    url({{ bg_desktop }})
+  {% endif %}
+{% endcapture %}
+
 {% capture image_content %}
 <div class="image-with-text-cta__content--image">
   <img
@@ -34,10 +47,16 @@
 </section>
 <style>
   #{{ section.id }} .page-width {
-    background: {{ section.settings.background_color }};
+    background: {{ backgroundValue }};
+    background-size: cover;
+    background-repeat: no-repeat;
     {% if section.settings.show_section_devider %}
       margin-top: 50px;
     {% endif %}
+  }
+  .page-width{
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .image-with-text-cta__content {
     padding: 100px 80px;
@@ -46,10 +65,10 @@
   }
 
   .image-with-text-cta__content--text {
-      flex-basis: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .image-with-text-cta__content--text .heading {
     color: #1e062c;
@@ -74,7 +93,7 @@
     flex-basis: calc(50% - 80px);
   }
   .image-with-text-cta__content--text .cta-button {
-    padding: 17px 80px;
+    padding: 17px 40px;
     border-radius: 5px;
     background: #5fb1c2;
     color: #fff;
@@ -90,6 +109,11 @@
     color: #fff;
   }
   @media (max-width: 500px) {
+    #{{ section.id }} .page-width {
+      background: {% if bg_color != blank %}{{ bg_color }}{% else %}url({{ bg_mobile }}){% endif %};
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
     .image-with-text-cta__content{
       padding: 40px 0;
     }
@@ -120,6 +144,14 @@
       gap: 24px;
     }
   }
+  @media (min-width: 500px) and (max-width: 800px) {
+    #{{ section.id }} .page-width {
+      background: {% if bg_color != blank %}{{ bg_color }}{% else %}url({{ bg_tablet }}){% endif %};
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 </style>
 
 {% schema %}
@@ -142,6 +174,21 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_desktop",
+      "label": "Background Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_tablet",
+      "label": "Background Image Tablet"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_mobile",
+      "label": "Background Image Mobile"
     },
     {
       "type": "text",

@@ -5,6 +5,7 @@
       "blocks": {
         "slide_hRUmQr": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "Memorial day special",

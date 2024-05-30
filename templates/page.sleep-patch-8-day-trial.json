@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_cta_d6LtXg": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta > div {border-radius: 20px;}",
+        ".image-with-text-cta__content--text * {color: #fff;}",
+        ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px;}",
+        "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
+      ],
+      "settings": {
+        "heading": "Experience Restful Nights with a Free 8-Day Trial of Klova's Original Sleep Patch",
+        "subHeading": "<p>For a limited time, you can try the Klova Sleep Patch absolutely free.</p><p>Experience the difference for yourself with 8 patches designed to help you fall asleep faster and stay asleep longer.</p>",
+        "image": "shopify://shop_images/Group_13633.png",
+        "bg_desktop": "shopify://shop_images/hero.jpg",
+        "bg_tablet": "shopify://shop_images/hero-tablet.png",
+        "bg_mobile": "shopify://shop_images/hero-mobile.png",
+        "button_text": "Get Your Free Trial Now!",
+        "button_url": "",
+        "button_text_2": "Button Text",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "",
+        "show_section_devider": false
+      }
+    },
+    "logo_list_with_cta_bh7h4h": {
+      "type": "logo-list-with-cta",
+      "blocks": {
+        "logo_image_DtgJRN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_14373.png",
+            "logo_title": "8 Patches (2 Sheets)",
+            "logo_subtitle": "Each patch is infused with a unique blend of natural ingredients including melatonin, ashwagandha, valerian root, and lavender oil."
+          }
+        },
+        "logo_image_8ExHGF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1000003701.png",
+            "logo_title": "Continuous Release Technology",
+            "logo_subtitle": "Ensures a steady delivery of sleep-promoting ingredients over 8 hours."
+          }
+        },
+        "logo_image_V3f4QL": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1000003702.png",
+            "logo_title": "Wake Up Refreshed",
+            "logo_subtitle": "Enjoy restful sleep without morning grogginess."
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_DtgJRN",
+        "logo_image_8ExHGF",
+        "logo_image_V3f4QL"
+      ],
+      "custom_css": [
+        ".logo-bar__image {height: 380px; width: 380px;}",
+        ".logo-bar__item {justify-content: flex-start; padding: 0;}",
+        ".logo-bar__title {color: #1e062c; font-family: \"Bergen Sans\"; font-size: 15px; font-style: normal; font-weight: 700; line-height: 20px;}",
+        "@media (min-width: 500px) and (max-width: 800px) {.logo-bar__image {height: 229px; width: 229px; }}",
+        "@media (max-width: 500px) {.logo-bar__image {height: 345px; width: 345px; }}"
+      ],
+      "settings": {
+        "row_count": 3,
+        "column_count": 1,
+        "title": "What You’ll Get:",
+        "divider": false,
+        "link": "",
+        "button_label": ""
+      }
+    },
+    "image_with_sales_point_fA9Ca4": {
+      "type": "image-with-sales-point",
+      "blocks": {
+        "sales_point_T3DGXH": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/NATURAL_INGREDIENTS_2d092f51-6d8e-4705-8f1b-d3849b4743b4.svg",
+            "title": "Natural Ingredients",
+            "subtitle": "Natural Ingredients"
+          }
+        },
+        "sales_point_fxzqXj": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/touch_1.svg",
+            "title": "Easy to Use",
+            "subtitle": "Simply apply a patch 30-60 minutes before bedtime to experience a tranquil night’s sleep."
+          }
+        },
+        "sales_point_ag7Mxf": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/dermatologically-tested_1.svg",
+            "title": "Dermatologically Tested",
+            "subtitle": "Safe and gentle on your skin, the patches are latex-free and non-irritating."
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_T3DGXH",
+        "sales_point_fxzqXj",
+        "sales_point_ag7Mxf"
+      ],
+      "custom_css": [
+        ".sales-points-section {background: linear-gradient( 90deg, rgba(100, 233, 217, 0.09) 0%, rgba(123, 73, 181, 0.09) 100% ); border-radius: 20px;}",
+        "section {margin: 0 20px;}",
+        ".icon-with-text .icon__image {width: 40px; height: 40px;}",
+        ".icon-container {flex-basis: 40px;}",
+        ".icon-with-text {gap: 16px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_2564_ee934fab-0d97-4780-bb72-8aeb59a96f45.png",
+        "title": "Why Choose Klova’sSleep Patch",
+        "link": "",
+        "button_label": "",
+        "aligment": "right"
+      }
+    },
+    "logo_list_with_cta_UJcxWL": {
+      "type": "logo-list-with-cta",
+      "blocks": {
+        "logo_image_PyU3yQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/apply.png",
+            "logo_title": "Apply",
+            "logo_subtitle": "Place one patch on a clean, dry area of skin."
+          }
+        },
+        "logo_image_WFDKQ9": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/relax.png",
+            "logo_title": "Relax",
+            "logo_subtitle": "Let the natural ingredients work to calm your mind and body."
+          }
+        },
+        "logo_image_WNVg7h": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/sleep_b13c5256-a1b4-431e-80a9-3d045aa63ad6.png",
+            "logo_title": "Sleep",
+            "logo_subtitle": "Enjoy a restful night’s sleep and wake up feeling refreshed."
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_PyU3yQ",
+        "logo_image_WFDKQ9",
+        "logo_image_WNVg7h"
+      ],
+      "custom_css": [
+        ".logo-bar__image {margin: 0; height: 129px; width: 129px;}",
+        ".logo-bar__item {justify-content: flex-start; background: linear-gradient( 90deg, rgba(100, 233, 217, 0.11) 0%, rgba(123, 73, 181, 0.11) 100% ), #fff; border-radius: 15px;}",
+        ".logo-bar__title {color: #1e062c; font-family: \"Bergen Sans\"; font-size: 15px; font-style: normal; font-weight: 700; line-height: 20px;}",
+        ".logo-bar__item span {margin: 10px 0 !important; text-align: left;}"
+      ],
+      "settings": {
+        "row_count": 3,
+        "column_count": 1,
+        "title": "What You’ll Get:",
+        "divider": false,
+        "link": "",
+        "button_label": ""
+      }
+    },
+    "image_with_text_cta_iFntRH": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".cta-button {border-radius: 6px; background: #1e062c; max-width: 360px;}"
+      ],
+      "settings": {
+        "heading": "Why Are We Doing This?",
+        "subHeading": "<p>We believe in the power of Klova’s Sleep Patch to transform your nights. By offering this <strong>free 8-day trial</strong>, we want you to experience the incredible benefits firsthand. </p><p>We know that once you try our patches, you’ll fall in love with the ease and effectiveness of our natural sleep aid. </p><p>Our goal is to help you achieve restful, uninterrupted sleep, and we’re confident that you’ll want to continue using the Klova Sleep Patch as part of your nightly routine.</p><p>Try it now, risk-free, and wake up refreshed!</p>",
+        "image": "shopify://shop_images/hands.png",
+        "button_text": "Get Your Free Trial Now!",
+        "button_url": "",
+        "button_text_2": "Button Text",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "#ffffff",
+        "show_section_devider": false
+      }
+    },
+    "carousel_videos_p8FBLJ": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_LbJYyW": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560840637"
+          }
+        },
+        "video_LnmW87": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560842790"
+          }
+        },
+        "video_NYzLj9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560859492"
+          }
+        },
+        "video_imyzrB": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560861088"
+          }
+        },
+        "video_PgcpTR": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560855080"
+          }
+        }
+      },
+      "block_order": [
+        "video_LbJYyW",
+        "video_LnmW87",
+        "video_NYzLj9",
+        "video_imyzrB",
+        "video_PgcpTR"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Bedtime Stories: Before & After",
+        "rte": "<p>Former Insomniacs Continuously Send Us ZPatch Reviews, Here Are Some Of Their Stories…</p>",
+        "overlay": "#faf9fb"
+      }
+    },
+    "image_with_text_cta_Vxw9EX": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta > div {border-radius: 20px;}",
+        ".image-with-text-cta__content--text * {color: #fff;}",
+        ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px;}",
+        "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
+      ],
+      "settings": {
+        "heading": "Try It Risk-Free",
+        "subHeading": "<p>Take  advantage of our free 8-day trial and discover the benefits of Klova’s Sleep Patch. If you don’t love it, there’s no obligation to continue.</p>",
+        "image": "shopify://shop_images/Group_13634.png",
+        "button_text": "Get Your Free Trial Now!",
+        "button_url": "",
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "#1E062C",
+        "show_section_devider": false
+      }
+    },
+    "image_with_text_cta_aFnDaH": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta > div {border-radius: 20px;}",
+        ".image-with-text-cta .cta-button {background: #1e062c; color: #fff; max-width: 360px;}",
+        "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
+      ],
+      "settings": {
+        "heading": "Order Your Free Trial Today!",
+        "subHeading": "<p>Don’t miss out on this exclusive offer. Click below to get your free 8-day trial of the Klova Sleep Patch and start sleeping better tonight.</p>",
+        "image": "shopify://shop_images/Group_13635.png",
+        "button_text": "Get Your Free Trial Now!",
+        "button_url": "",
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "left",
+        "background_color": "linear-gradient(90deg, rgba(100, 233, 217, 0.09), rgba(123, 73, 181, 0.09) 100%)",
+        "show_section_devider": true
+      }
+    },
+    "new_faq_HyWTqD": {
+      "type": "new-faq",
+      "blocks": {
+        "faq_Xqk4tJ": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How long does each patch last?",
+            "answer": "Each patch provides 8 hours of continuous release of natural sleep ingredients."
+          }
+        },
+        "faq_EidjzM": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Is there a catch?",
+            "answer": "No catch! We believe in our product and want you to try it for free."
+          }
+        },
+        "faq_434QmB": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Can I use it every night?",
+            "answer": "Yes, you can use a patch every night as part of your bedtime routine."
+          }
+        }
+      },
+      "block_order": ["faq_Xqk4tJ", "faq_EidjzM", "faq_434QmB"],
+      "settings": {
+        "heading": "Questions?",
+        "sub_heading": "We’re here to help!",
+        "background": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_cta_d6LtXg",
+    "logo_list_with_cta_bh7h4h",
+    "image_with_sales_point_fA9Ca4",
+    "logo_list_with_cta_UJcxWL",
+    "image_with_text_cta_iFntRH",
+    "carousel_videos_p8FBLJ",
+    "image_with_text_cta_Vxw9EX",
+    "image_with_text_cta_aFnDaH",
+    "new_faq_HyWTqD"
+  ]
+}

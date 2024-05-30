@@ -1,5 +1,6 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
-
+{% assign row_count = section.settings.row_count %}
+{% assign column_count = section.settings.column_count %}
 <div class="page-width">
   {%- if section.settings.title != blank -%}
     <div class="section-header small--text-center">
@@ -9,7 +10,7 @@
 
   {%- if section.blocks.size > 0 -%}
     <div class="logo-bar logo-bar--{{ section.id }}">
-      <div class="new-grid product-grid" data-view="6-2">
+      <div class="new-grid product-grid" data-view="{{ row_count }}-{{ column_count }}">
         {%- for block in section.blocks -%}
           <div class="grid-item grid-product" {{ block.shopify_attributes }}>
             <div class="logo-bar__item{% if block.settings.image == blank %} logo-bar__item-svg{% endif %}">
@@ -31,8 +32,16 @@
               {%- if block.settings.logo_title != blank -%}
                 <span
                   style="margin: 15px -10px;"
+                  class="logo-bar__title"
                 >
                   {{ block.settings.logo_title }}
+                </span>
+              {%- endif -%}
+              {%- if block.settings.logo_subtitle != blank -%}
+                <span
+                  style="margin: 15px -10px;"
+                >
+                  {{ block.settings.logo_subtitle }}
                 </span>
               {%- endif -%}
             </div>
@@ -70,6 +79,18 @@
   "class": "index-section",
   "max_blocks": 12,
   "settings": [
+    {
+      "type": "number",
+      "id": "row_count",
+      "label": "Number Of Row",
+      "default": 2
+    },
+    {
+      "type": "number",
+      "id": "column_count",
+      "label": "Number Of Column",
+      "default": 6
+    },
     {
       "type": "text",
       "id": "title",
@@ -111,6 +132,12 @@
           "id": "logo_title",
           "default": "Logo Title",
           "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "logo_subtitle",
+          "label": "Subtitle",
+          "info": "Optional"
         }
       ]
     }

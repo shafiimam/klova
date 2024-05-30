@@ -2,7 +2,8 @@
   "sections": {
     "zp-product-header-content": {
       "type": "product-header-content-zipifypages",
-      "settings": {}
+      "settings": {
+      }
     },
     "main": {
       "type": "main-product",
@@ -10,12 +11,13 @@
         "custom_JwHFbt": {
           "type": "custom",
           "settings": {
-            "code": "<span id=\"buy-now\"></span>"
+            "code": "<span id=\"buy-now\"><\/span>"
           }
         },
         "af3f79f3-45f3-4dd2-9d01-764c0ed941c0": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         },
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
           "type": "paragraph",
@@ -57,12 +59,12 @@
         "bundle_btn_WGPnxM": {
           "type": "bundle_btn",
           "settings": {
-            "bundle_img": "shopify://shop_images/Frame_1000003954_1.png",
-            "bundle_mob_img": "shopify://shop_images/Frame_1000003955_1.png",
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
             "bundle_data": "Build Your Own Bundle",
             "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
             "bundle_btn": "BUILD YOUR BUNDLE",
-            "bundle_url": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
             "bundle_color_text": "#121212",
             "bundle_bg": "#faf4fc",
             "bundle_btn_border": "#121212",
@@ -71,7 +73,8 @@
         },
         "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
-          "settings": {}
+          "settings": {
+          }
         },
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
           "type": "quantity_selector",
@@ -83,7 +86,7 @@
           }
         },
         "essential_countdown_app_block_MKCGLY": {
-          "type": "shopify://apps/essential-countdown/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
           }
@@ -111,7 +114,7 @@
           "disabled": true,
           "settings": {
             "acc-button-one": "WHO CAN USE THESE PATCHES?",
-            "acc-text-one": "<p>asdasdasdas</p>",
+            "acc-text-one": "<p>asdasdasdas<\/p>",
             "acc-button-two": "WHERE IS KLOVA MADE?",
             "acc-text-two": "",
             "acc-button-three": "ARE THERE ANY INTERACTIONS?",
@@ -142,10 +145,12 @@
         "991843c7-0724-43cf-8891-6972bb0b8de4",
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "link-back-text": "",
-        "link-back": "shopify://collections/all",
+        "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
         "image_position": "left",
@@ -165,7 +170,7 @@
         "how_work_74MXrq": {
           "type": "how_work",
           "settings": {
-            "image": "shopify://shop_images/peel.png",
+            "image": "shopify:\/\/shop_images\/peel.png",
             "title": "Peel",
             "subtitle": "Peel off one patch off of the included sheets (28 patches per pack)."
           }
@@ -173,7 +178,7 @@
         "how_work_qKQG3k": {
           "type": "how_work",
           "settings": {
-            "image": "shopify://shop_images/stick.png",
+            "image": "shopify:\/\/shop_images\/stick.png",
             "title": "Stick",
             "subtitle": "Stick the patch on any hair-free part of the body with good blood flow."
           }
@@ -181,7 +186,7 @@
         "how_work_UN3wjk": {
           "type": "how_work",
           "settings": {
-            "image": "shopify://shop_images/sleep_11ffd87b-304a-4990-914f-9355499e76e5.png",
+            "image": "shopify:\/\/shop_images\/sleep_11ffd87b-304a-4990-914f-9355499e76e5.png",
             "title": "Sleep",
             "subtitle": "Fall asleep naturally, and sleep soundly all night."
           }
@@ -189,7 +194,7 @@
         "how_work_8jhAdf": {
           "type": "how_work",
           "settings": {
-            "image": "shopify://shop_images/remove.png",
+            "image": "shopify:\/\/shop_images\/remove.png",
             "title": "Remove",
             "subtitle": "Simply remove about 7-9 hours later when you wake up and discard."
           }
@@ -211,7 +216,7 @@
         "sales_point_HHNLH3": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/NATURAL_INGREDIENTS.svg",
+            "icon": "shopify:\/\/shop_images\/NATURAL_INGREDIENTS.svg",
             "title": "Natural Ingredients",
             "subtitle": "Safe and gentle for nightly use."
           }
@@ -219,7 +224,7 @@
         "sales_point_LqGBVp": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/no_addiction.svg",
+            "icon": "shopify:\/\/shop_images\/no_addiction.svg",
             "title": "Non-Habit Forming",
             "subtitle": "Designed for regular use without dependency."
           }
@@ -227,7 +232,7 @@
         "sales_point_aqrxHb": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/working-hours_1.svg",
+            "icon": "shopify:\/\/shop_images\/working-hours_1.svg",
             "title": "Duration",
             "subtitle": "Each patch works up to 8 hours, ensuring a full night of uninterrupted sleep."
           }
@@ -235,7 +240,7 @@
         "sales_point_MipEaN": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/blood_1.svg",
+            "icon": "shopify:\/\/shop_images\/blood_1.svg",
             "title": "Improved Circulation",
             "subtitle": "Promotes healthy blood flow while you rest."
           }
@@ -243,7 +248,7 @@
         "sales_point_FLVTDy": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/safe_1.svg",
+            "icon": "shopify:\/\/shop_images\/safe_1.svg",
             "title": "Skin Safety",
             "subtitle": "Hypoallergenic materials suitable for all skin types."
           }
@@ -257,7 +262,7 @@
         "sales_point_FLVTDy"
       ],
       "settings": {
-        "image": "shopify://shop_images/Rectangle_334_d7ea17a0-ae92-4871-8a4e-bb4fbda98545.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_334_d7ea17a0-ae92-4871-8a4e-bb4fbda98545.png",
         "title": "Benefits",
         "link": "",
         "button_label": "",
@@ -272,8 +277,8 @@
       ],
       "settings": {
         "heading": "Find Your Favorite",
-        "subHeading": "<p>Each patch delivers unique benefits. Use this sampler to discover which formulation aligns best with your body's needs and enhances your sleep quality most effectively.<br/>Experience a new way to achieve a night of deep, restorative sleep with our Sleep Patch Sampler. Try it tonight and wake up refreshed and revitalized!</p>",
-        "image": "shopify://shop_images/Rectangle_334_77ba9666-9574-45db-b62d-0c3a0a099090.png",
+        "subHeading": "<p>Each patch delivers unique benefits. Use this sampler to discover which formulation aligns best with your body's needs and enhances your sleep quality most effectively.<br\/>Experience a new way to achieve a night of deep, restorative sleep with our Sleep Patch Sampler. Try it tonight and wake up refreshed and revitalized!<\/p>",
+        "image": "shopify:\/\/shop_images\/Rectangle_334_77ba9666-9574-45db-b62d-0c3a0a099090.png",
         "button_text": "Try Deep Sleep Patches",
         "button_url": "#buy-now",
         "button_text_2": "",
@@ -289,12 +294,14 @@
         "bundle_ingredients_j8B4bG": {
           "type": "bundle_ingredients",
           "settings": {
-            "showSecondText": "no",
+            "showSecondText": "yes",
             "collection": "deep-sleep-sample-products"
           }
         }
       },
-      "block_order": ["bundle_ingredients_j8B4bG"],
+      "block_order": [
+        "bundle_ingredients_j8B4bG"
+      ],
       "settings": {
         "title": "Included in Your Sampler"
       }
@@ -303,7 +310,7 @@
       "type": "sleep-chart",
       "settings": {
         "title": "How We Compare",
-        "image": "shopify://shop_images/Group_87.png"
+        "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
     "review_slider_NFJHzE": {
@@ -312,10 +319,10 @@
         "review_card_6dEi6G": {
           "type": "review_card",
           "settings": {
-            "image": "shopify://shop_images/05.jpg",
+            "image": "shopify:\/\/shop_images\/05.jpg",
             "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
             "reviewer_name": "Dr. Sydne Ford",
-            "product_image": "shopify://shop_images/sleep_zpatch_2.png",
+            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
             "product": "sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -323,10 +330,10 @@
         "review_card_HGd63i": {
           "type": "review_card",
           "settings": {
-            "image": "shopify://shop_images/08.jpg",
+            "image": "shopify:\/\/shop_images\/08.jpg",
             "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
             "reviewer_name": "Brandon T.",
-            "product_image": "shopify://shop_images/sleep_zpatch_2.png",
+            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
             "product": "sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -334,10 +341,10 @@
         "review_card_JyykWT": {
           "type": "review_card",
           "settings": {
-            "image": "shopify://shop_images/04.jpg",
+            "image": "shopify:\/\/shop_images\/04.jpg",
             "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
             "reviewer_name": "Heather T.",
-            "product_image": "shopify://shop_images/sleep_zpatch_2.png",
+            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
             "product": "sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -400,7 +407,9 @@
         "faq_ftXPXK",
         "faq_PAGPfP"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": "Questions?",
         "sub_heading": "We’re here to help!",
@@ -413,14 +422,18 @@
         "image_GcLfM9": {
           "type": "image",
           "settings": {
-            "link": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
-            "image": "shopify://shop_images/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
-            "image_mobile": "shopify://shop_images/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
           }
         }
       },
-      "block_order": ["image_GcLfM9"],
-      "custom_css": [".hero--padded{padding: 0;}"],
+      "block_order": [
+        "image_GcLfM9"
+      ],
+      "custom_css": [
+        ".hero--padded {padding: 0;}"
+      ],
       "settings": {
         "full_width": false,
         "title": "",
@@ -433,11 +446,14 @@
       "type": "apps",
       "blocks": {
         "bf6b2f19-d616-4954-9103-d53133278ad0": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         }
       },
-      "block_order": ["bf6b2f19-d616-4954-9103-d53133278ad0"],
+      "block_order": [
+        "bf6b2f19-d616-4954-9103-d53133278ad0"
+      ],
       "disabled": true,
       "settings": {
         "full_width": false,
@@ -446,13 +462,14 @@
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {}
+      "settings": {
+      }
     },
     "17074127040251dd37": {
       "type": "apps",
       "blocks": {
         "rebuy_personalization_engine_rebuy_widget_mVNktN": {
-          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
             "enabled": true,
             "id": "133626",
@@ -461,7 +478,9 @@
           }
         }
       },
-      "block_order": ["rebuy_personalization_engine_rebuy_widget_mVNktN"],
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_mVNktN"
+      ],
       "settings": {
         "full_width": false,
         "space_around": true
