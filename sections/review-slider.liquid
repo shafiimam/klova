@@ -11,7 +11,7 @@
   <div class="rating-container">
     <div class="star-rating">
       <img
-        src="https://cdn.shopify.com/s/files/1/2065/0707/files/star-rating.png?v=1711658188"
+        src="https://cdn.shopify.com/s/files/1/2065/0707/files/star-rating-golden.png?v=1717186574"
         width="96"
         height="20"
         alt=""
@@ -35,10 +35,20 @@
         {% for block in section.blocks %}
           <div class="splide__slide" {{ block.shopify_attributes }}>
             <div class="review-container">
+              {% if section.settings.show_reviewer_image %}
+                <div class="reviewer-image-container">
+                  <img
+                    src="{{ block.settings.image | image_url }}"
+                    alt="{{ block.settings.image.alt }}"
+                    height="150"
+                    width="150"
+                  >
+                </div>
+              {% endif %}
               <div class="review-content">
                 <div class="star-rating">
                   <img
-                    src="https://cdn.shopify.com/s/files/1/2065/0707/files/Button_-_4.72_stars.png"
+                    src="https://cdn.shopify.com/s/files/1/2065/0707/files/star-rating-golden.png?v=1717186574"
                     alt=""
                     width="96"
                     height="20"
@@ -84,11 +94,11 @@
 </section>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-      console.log('DOM loaded')
-      const splideInterval = setInterval(function(){
-        if(Splide){
-          clearInterval(splideInterval)
-          var splide = new Splide('.splide', {
+    console.log('DOM loaded');
+    const splideInterval = setInterval(function () {
+      if (Splide) {
+        clearInterval(splideInterval);
+        var splide = new Splide('.splide', {
           perPage: 3,
           width: '1400px',
           height: '700px',
@@ -98,22 +108,22 @@
           autoplay: true,
           arrows: false,
           interval: 4000,
-          loop:true,
+          loop: true,
           pauseOnHover: true,
           breakpoints: {
-              500: {
-                  perPage: 1,
-                  width: '100%',
-                  gap: '10px',
-              },
-              800:{
-                  perPage: 2
-              }
-          }
+            500: {
+              perPage: 1,
+              width: '100%',
+              gap: '10px',
+            },
+            700: {
+              perPage: 2,
+            },
+          },
         });
         splide.mount();
       }
-      },1000)
+    }, 1000);
   });
 </script>
 <style>
@@ -126,28 +136,28 @@
   }
 
   .review-container {
-      border: 2.5px solid #1e062c;
-      border-radius: 20px;
-      position: relative;
-      margin-top: 100px;
-      margin-bottom: 40px;
-      height: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    border: 2.5px solid #1e062c;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .rating-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 
   .review-count {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .reviewer-image-container {
     display: flex;
@@ -157,14 +167,14 @@
     width: 100%;
   }
   .reviewer-image-container img {
-      height: 150px;
-      width: 150px;
-      border: 2.5px solid #1e062c;
-      border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    border: 2.5px solid #1e062c;
+    border-radius: 20px;
   }
   .review-content {
     padding: 0 30px;
-    margin: 40px 0 50px 0;
+    margin: 135px 0 50px 0;
     gap: 24px;
     display: flex;
     flex-direction: column;
@@ -199,12 +209,12 @@
   }
 
   .review-bottom-cta .product-image img {
-      flex-shrink: 0;
-      position: relative;
-      top: -35px;
-      margin: 0 21px;
-      height: 90px;
-      width: 77px;
+    flex-shrink: 0;
+    position: relative;
+    top: -35px;
+    margin: 0 21px;
+    height: 90px;
+    width: 77px;
   }
   .review-bottom-cta .product-info {
     color: white;
@@ -247,6 +257,12 @@
       "id": "title",
       "label": "Title",
       "default": "What Our Customers Say"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviewer_image",
+      "label": "Show Reviewer Image",
+      "default": true
     },
     {
       "type": "text",
