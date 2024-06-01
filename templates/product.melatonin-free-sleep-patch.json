@@ -1,10 +1,5 @@
 {
   "sections": {
-    "zp-product-header-content": {
-      "type": "product-header-content-zipifypages",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -307,6 +302,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
+        "show_reviewer_image": false,
         "review_count": "5209",
         "divider": false
       }
@@ -362,7 +358,6 @@
     }
   },
   "order": [
-    "zp-product-header-content",
     "main",
     "16539274943ce12887",
     "16539298801be67a40",

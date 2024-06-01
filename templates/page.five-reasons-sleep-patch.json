@@ -119,6 +119,148 @@
         "autoplay": false,
         "autoplay_speed": 7
       }
+    },
+    "featured_product_GPBCUJ": {
+      "type": "featured-product",
+      "blocks": {
+        "judge_me_reviews_preview_badge_homepage_dyUyiH": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "sleep-patch"
+          }
+        },
+        "paragraph_krYryE": {
+          "type": "paragraph",
+          "settings": {
+            "subtitle": "{{ section.settings.featured_product.metafields.add_met.subtitle.value }}"
+          }
+        },
+        "textarea_m4kK37": {
+          "type": "textarea",
+          "settings": {
+            "un-text": "te{{ section.settings.featured_product.metafields.add_meta.sub_two.value }}"
+          }
+        },
+        "description_qMc6hG": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "bundle_btn_tQANDX": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "",
+            "bundle_bg": "",
+            "bundle_btn_border": ""
+          }
+        },
+        "skio_plan_picker_CiqiHV": {
+          "type": "skio-plan-picker",
+          "settings": {
+          }
+        },
+        "quantity_selector_kLfG93": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": false,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": false
+          }
+        },
+        "sales_point_EyVzYr": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_homepage_dyUyiH",
+        "paragraph_krYryE",
+        "textarea_m4kK37",
+        "description_qMc6hG",
+        "bundle_btn_tQANDX",
+        "skio_plan_picker_CiqiHV",
+        "quantity_selector_kLfG93",
+        "sales_point_EyVzYr"
+      ],
+      "settings": {
+        "featured_product": "sleep-patch",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "review_slider_TC9CxL": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_weYyJ4": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_58d126c6-18ef-48d7-8b4f-0bcd466fd5af.png",
+            "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
+            "reviewer_name": "Dr. Sydne Ford",
+            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_fKpHkj": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
+            "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
+            "reviewer_name": "Brandon T.",
+            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_ErbzeA": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
+            "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
+            "reviewer_name": "Heather T.",
+            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_weYyJ4",
+        "review_card_fKpHkj",
+        "review_card_ErbzeA"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "1482",
+        "divider": false
+      }
     }
   },
   "order": [
@@ -129,6 +271,8 @@
     "image_with_text_cta_NTDzjp",
     "image_with_text_cta_x4Qf3p",
     "image_with_text_cta_4air4B",
-    "slideshow_image_wQLQUV"
+    "slideshow_image_wQLQUV",
+    "featured_product_GPBCUJ",
+    "review_slider_TC9CxL"
   ]
 }

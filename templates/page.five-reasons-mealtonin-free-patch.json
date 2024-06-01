@@ -119,6 +119,145 @@
         "autoplay": false,
         "autoplay_speed": 7
       }
+    },
+    "featured_product_L4xwR3": {
+      "type": "featured-product",
+      "blocks": {
+        "judge_me_reviews_preview_badge_homepage_RMH6rU": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "melatonin-free-sleep-patch"
+          }
+        },
+        "text_DTmJYP": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.featured_product.metafields.add_met.subtitle.value }}"
+          }
+        },
+        "textarea_jbxgzp": {
+          "type": "textarea",
+          "settings": {
+            "un-text": "{{ section.settings.featured_product.metafields.add_meta.sub_two.value }}"
+          }
+        },
+        "description_DdUKjG": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "bundle_btn_9BJn6r": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "",
+            "bundle_bg": "",
+            "bundle_btn_border": ""
+          }
+        },
+        "skio_plan_picker_nGbb37": {
+          "type": "skio-plan-picker",
+          "settings": {
+          }
+        },
+        "quantity_selector_k7qgHn": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "sales_point_xQitw6": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "free",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_homepage_RMH6rU",
+        "text_DTmJYP",
+        "textarea_jbxgzp",
+        "description_DdUKjG",
+        "bundle_btn_9BJn6r",
+        "skio_plan_picker_nGbb37",
+        "quantity_selector_k7qgHn",
+        "sales_point_xQitw6"
+      ],
+      "settings": {
+        "featured_product": "melatonin-free-sleep-patch",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": false,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "review_slider_U8hRbr": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_NrJCFa": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“At first, I was very skeptical. They go on dry and don’t really have a lot of stick right away. I’m not saying they come off because they don’t. I just expect them to be very sticky and they’re not. There is no dramatic calming effect. You don’t feel woozy.",
+            "reviewer_name": "K. patton",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "melatonin-free-sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_FVyB3X": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“These patches go on easy and stick well. They don’t seem to provide as much effect as some others I have tried but I will keep using them because they have such a good balance of adaptogens. I prefer using a patch to taking pills and these patches are more pleasant to...”",
+            "reviewer_name": "Bittersweet",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "melatonin-free-sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_AqbDkW": {
+          "type": "review_card",
+          "settings": {
+            "review_text": "“These patches are such a cool and unique way of getting vitamins into your body. I do very much so feel relief and calming effects while wearing these patches, and they are easy to apply and comfortable to wear.”",
+            "reviewer_name": "Page",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "melatonin-free-sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_NrJCFa",
+        "review_card_FVyB3X",
+        "review_card_AqbDkW"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": false,
+        "review_count": "5209",
+        "divider": false
+      }
     }
   },
   "order": [
@@ -129,6 +268,8 @@
     "image_with_text_cta_NTDzjp",
     "image_with_text_cta_x4Qf3p",
     "image_with_text_cta_4air4B",
-    "slideshow_image_wQLQUV"
+    "slideshow_image_wQLQUV",
+    "featured_product_L4xwR3",
+    "review_slider_U8hRbr"
   ]
 }

@@ -219,9 +219,9 @@
           "type": "review_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_1000003704_58d126c6-18ef-48d7-8b4f-0bcd466fd5af.png",
-            "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
-            "reviewer_name": "Dr. Sydne Ford",
-            "product_image": "shopify:\/\/shop_images\/Extra-StrengthSleepPatch1_1800x1800_044ab0cf-39b5-4aee-8d9a-71687e025a9e.webp",
+            "review_text": "“This is such a cool and innovative way to get some calming ingredients into your body through the use of patch! I am a very anxious person by default, but some days I need extra help and I do have herbal supplements already.”",
+            "reviewer_name": "strawberrykitten",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
             "product": "extra-strength-sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -230,9 +230,9 @@
           "type": "review_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
-            "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
-            "reviewer_name": "Brandon T.",
-            "product_image": "shopify:\/\/shop_images\/Extra-StrengthSleepPatch1_1800x1800_044ab0cf-39b5-4aee-8d9a-71687e025a9e.webp",
+            "review_text": "“Very good ingredients and helpful in relaxation. The patch causes minor sensitivity but I’m very sensitive.",
+            "reviewer_name": "Lee",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
             "product": "extra-strength-sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -241,9 +241,9 @@
           "type": "review_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
-            "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
-            "reviewer_name": "Heather T.",
-            "product_image": "shopify:\/\/shop_images\/Extra-StrengthSleepPatch1_1800x1800_044ab0cf-39b5-4aee-8d9a-71687e025a9e.webp",
+            "review_text": "“This is an interesting and convenient way to achieve further relaxation and centeredness. The patches are easy to apply and stay put well. I had a particularly stressful day today and using this patch does seem to help me relax and release some of the day's built up tension.”",
+            "reviewer_name": "Stuff&Things",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
             "product": "extra-strength-sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -256,6 +256,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
+        "show_reviewer_image": false,
         "review_count": "5209",
         "divider": false
       }

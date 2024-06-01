@@ -46,6 +46,7 @@
         "review_card_fwwU9T": {
           "type": "review_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/04.jpg",
             "review_text": "“At first, I was very skeptical. They go on dry and don’t really have a lot of stick right away. I’m not saying they come off because they don’t. I just expect them to be very sticky and they’re not. There is no dramatic calming effect. You don’t feel woozy.",
             "reviewer_name": "K. patton",
             "product_image": "shopify:\/\/shop_images\/Chill_Patch_1.jpg",
@@ -56,6 +57,7 @@
         "review_card_iEAxVn": {
           "type": "review_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/08.jpg",
             "review_text": "“These patches go on easy and stick well. They don’t seem to provide as much effect as some others I have tried but I will keep using them because they have such a good balance of adaptogens. I prefer using a patch to taking pills and these patches are more pleasant to...”",
             "reviewer_name": "Bittersweet",
             "product_image": "shopify:\/\/shop_images\/Chill_Patch_1.jpg",
@@ -114,6 +116,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
+        "show_reviewer_image": false,
         "review_count": "5209",
         "divider": false
       }
@@ -221,6 +224,9 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/b1beaa63cd8aa040f048498386a9174b.jpg",
+        "title": "",
+        "link": "",
+        "button_label": "",
         "aligment": "left"
       }
     },
