@@ -1,0 +1,421 @@
+{% assign bgDesktop = section.settings.hero_background_image_desktop | image_url: width: 1440, height: 825 %}
+{% assign bgMobie = section.settings.hero_background_image_mobile | image_url: width: 768, height: 1024 %}
+{% assign contentWidth = section.settings.content_width %}
+{% assign imageWidth = section.settings.content_width | minus: -100 %}
+<section id="{{ section.id }}">
+  <p>image width: {{ imageWidth }}</p>
+  <div class="page-width hero-header two-columns-section">
+    <div class="two-columns-container">
+      <div class="content-container">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'title' %}
+              <p class="block-title" {{ block.shopify_attributes }}>
+                {{ block.settings.title }}
+              </p>
+            {% when 'subtitle' %}
+              <p class="block-subtitle" {{ block.shopify_attributes }}>
+                {{ block.settings.subtitle }}
+              </p>
+            {% when 'sales_point' %}
+              <div class="sales-point-container" {{ block.shopify_attributes }}>
+                {% for i in (1..4) %}
+                  {% assign sales_point_id = 'sales_point' | append: i %}
+                  {% if block.settings[sales_point_id] != blank%}
+                    <div class="sales-point grid-{{ block.settings.num_column_grid }}">
+                      <img
+                        src="{{ block.settings.icon | image_url: width: 20, height: 20 }}"
+                        width="20"
+                        height="20"
+                        alt="icon"
+                      >
+                      <p class="sales-point-content">
+                        {{ block.settings[sales_point_id] }}
+                      </p>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% when 'button_with_review' %}
+              <div class="review-btn-container" {{ block.shopify_attributes }}>
+                <a class="cta-btn" href="{{ block.settings.button_link }}">{{ block.settings.button_text }}</a>
+                <div class="review_container" style="background-color: {{ block.settings.background }};">
+                  <div class="review-title">{{ block.settings.title }}</div>
+                  <div class="review-icon-and-text">
+                    <img
+                      src="{{ block.settings.star_icon | image_url : width:150 , height: 28 }}"
+                      height="28"
+                      width="150"
+                    >
+                    <p class="review-content">{{ block.settings.review_content }}</p>
+                  </div>
+                </div>
+              </div>
+            {% when 'badge' %}
+              <div
+                class="badge-block"
+                style="background-color: {{ block.settings.background }}; text-align: center;"
+                {{ block.shopify_attributes }}
+              >
+                <span class="badge-content">{{ block.settings.text }}</span>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="image-container">
+        <img
+          src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
+          alt="patch-image"
+          width="540"
+          height="610"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .two-columns-section{
+    background: url('{{bgDesktop}}');
+    background-size: cover;
+    padding: 28px 80px;
+    width: 100%;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  a.cta-btn{
+    border-radius: 5px;
+    background: #1E062C;
+    color: white;
+    padding: 12px 50px;
+    transition: all 0.2s ease;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bergen Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+  }
+  .cta-btn:hover{
+    transform: scale(1.05) !important;
+  }
+
+  .two-columns-container{
+    display: flex;
+    gap: 100px;
+    margin-top: 110px;
+  }
+
+  .content-container{
+    flex-basis: {{ contentWidth | append: '%' }};
+  }
+
+  .image-container{
+    flex-basis: calc(100% - {{ contentWidth | append: '%' }} - 100px);
+  }
+
+  .image-container img{
+    object-fit: contain;
+    object-position: top;
+    height: auto;
+  }
+
+  .sales-point-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .sales-point{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .sales-point-content{
+    color: #1E062C;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+  }
+  .badge-block{
+    width: fit-content;
+    padding: 10px 40px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.28px;
+    border-radius: 30px;
+  }
+
+  .block-title{
+    margin: 30px 0;
+    color: #1E062C;
+    font-family: "Bergen Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+  .block-subtitle{
+    color: #1E062C;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .review-btn-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .review_container{
+    padding: 18px 22px;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .review-title{
+    max-width: 160px;
+  }
+  .review-icon-and-text {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 500px){
+    .header-container{
+      justify-content: center;
+
+    }
+    .two-columns-section{
+      background: url('{{ bgMobie }}');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .block-title{
+      font-size: 34px;
+      line-height: 44px; /* 129.412% */
+      letter-spacing: 0.51px;
+    }
+    .header-cta{
+      display: none;
+    }
+    .review-btn-container{
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .review-btn-container > *{
+      width: 100%;
+    }
+  }
+  @media (max-width: 900px) {
+    .hero-header{
+
+    }
+    .two-columns-container{
+      margin-top: 50px;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+
+  @media (min-width: 501px) and (max-width: 800px){
+    .block-title{
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0.6px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Two Column",
+  "settings": [
+    {
+      "type": "url",
+      "id": "header_btn_link",
+      "label": "Header link"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "label": "Content Width",
+      "min": 30,
+      "max": 75,
+      "default": 50
+    },
+    {
+      "type": "text",
+      "id": "header_btn_text",
+      "label": "Header Button Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_background_image_desktop",
+      "label": "Background image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_background_image_mobile",
+      "label": "Background Image Mobile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Badge Text",
+          "default": "Default Badge Text"
+        },
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Background"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "title-icon",
+          "label": "Title Icon"
+        }
+      ]
+    },
+    {
+      "type": "subtitle",
+      "name": "Sub Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "sales_point",
+      "name": "Sales Point",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Sales Point Icon"
+        },
+        {
+          "type": "number",
+          "id": "num_column_grid",
+          "label": "Number Of Column",
+          "default": 2,
+        },
+        {
+          "type": "text",
+          "id": "sales_point1",
+          "label": "Sales Point 1"
+        },
+        {
+          "type": "text",
+          "id": "sales_point2",
+          "label": "Sales Point 2"
+        },
+        {
+          "type": "text",
+          "id": "sales_point3",
+          "label": "Sales Point 3"
+        },
+        {
+          "type": "text",
+          "id": "sales_point4",
+          "label": "Sales Point 4"
+        }
+      ]
+    },
+    {
+      "type": "button_with_review",
+      "name": "Button With Review",
+      "settings": [
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "TItle"
+        },
+        {
+          "type": "image_picker",
+          "id": "star_icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "review_content",
+          "label": "Review Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Column"
+    }
+  ]
+}
+{% endschema %}
