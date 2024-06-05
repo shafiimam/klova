@@ -1,7 +1,8 @@
+{% assign headerLogo = section.settings.header_logo | image_url: width: 84, height: 34 %}
 {% assign bgDesktop = section.settings.hero_background_image_desktop | image_url: width: 1440, height: 825 %}
 {% assign bgMobie = section.settings.hero_background_image_mobile | image_url: width: 768, height: 1024 %}
 {% assign contentWidth = section.settings.content_width %}
-{% assign imageWidth = section.settings.content_width | minus: -100 %}
+{% assign imageWidth = section.settings.content_width | minus: 100 %}
 <section id="{{ section.id }}">
   <p>image width: {{ imageWidth }}</p>
   <div class="page-width hero-header two-columns-section">
@@ -260,6 +261,11 @@
   "name": "Two Column",
   "settings": [
     {
+      "type": "image_picker",
+      "id": "header_logo",
+      "label": "Header logo"
+    },
+    {
       "type": "url",
       "id": "header_btn_link",
       "label": "Header link"
@@ -351,7 +357,7 @@
           "type": "number",
           "id": "num_column_grid",
           "label": "Number Of Column",
-          "default": 2,
+          "default": 2
         },
         {
           "type": "text",

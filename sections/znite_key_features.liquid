@@ -1,0 +1,196 @@
+<section class="Znite_key_features">
+  <div class="br-radius-24">
+    <div class="empower__patch znite_key_feat_flexcontent flex patch"> 
+     {% capture image_layout  %} 
+      <div class="patch__image znite_key_feat_image">
+        <img
+          src="{{ section.settings.empower_image | img_url: 'master' }}"
+          alt="{{ section.settings.empower_image.alt | default: "patches" }}"
+        >
+      </div>
+      {% endcapture %}
+
+      {% if section.settings.layout == 'left' %}
+          {{ image_layout }}
+      {% endif %}
+      
+      <div class="patch__text text znite_feature_text_img">
+        <h2 class="text__title">{{ section.settings.empower_title }}</h2>
+
+        <div class="znite_flex_main_content"> 
+          {% for block in section.blocks %}
+          <div class="znite_flex_content">
+          <div class="znite_flex_content_img">
+            <img src="{{ block.settings.keyfeature_icon_one | img_url:'master' }}">
+          </div>
+          <div class="znite_feature_text_content">
+          <div class="znite_feature_title">
+            <h2>{{ block.settings.keyfeature_text_one }}</h2>
+          </div>
+          <div class="znite_feature_text">
+            <p>{{ block.settings.keyfeature_content_one }}</p>
+          </div>
+          </div>  
+        </div>
+         {% endfor %}
+        </div>
+        
+        <div class="patch__button znite_feature_btn">
+          <a class="c-button -primary -large" href="{{ section.settings.empower_button_link }}">
+            {{ section.settings.empower_button }}
+          </a>
+        </div>
+      </div>
+
+    {% if section.settings.layout == 'right' %}
+      {{ image_layout }}
+    {% endif %}
+      
+    </div>
+    <ul class="empower__achievements achievements flex">
+      {%- for block in section.blocks -%}
+        <li class="achievements__item">{{ block.settings.achievements_item }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .Znite_key_features{
+     margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 20px;
+    width: 100%;
+  }   
+  .znite_key_feat_flexcontent{
+    display: flex;
+    justify-content: space-between;
+  }    
+  .znite_key_feat_image{
+    width: 50%;
+    text-align: start;
+  }  
+  .znite_feature_text_img{
+    width:50%;
+  }
+  .znite_flex_content{
+    display:flex;
+    margin-top:30px;
+  }
+  .znite_flex_content_img{
+    width:64px;
+    height:64px;
+  }
+  .znite_feature_text_content{
+    width:85%;
+  }
+  .znite_feature_title h2{
+    font-size:26px;
+    margin-bottom:10px;
+  }
+  .znite_feature_text p{
+    font-size:14px;
+  }
+  .znite_feature_btn{
+    width:338px;
+    margin-top:40px;
+  }
+  @media only screen and (max-width:1034px){
+    .znite_key_feat_flexcontent{
+      flex-wrap: wrap; 
+    }
+    .znite_key_feat_flexcontent .znite_feature_text_img{
+      order:2;
+      width:100%;
+    }
+    .znite_key_feat_flexcontent .znite_key_feat_image{
+     order:1;
+      width:100%;
+    }
+    .znite_key_feat_flexcontent .znite_key_feat_image img{
+      width:100%;
+    }
+    .znite_key_feat_flexcontent .znite_feature_btn{
+      max-width:100%; 
+      width:100%;
+    }
+    .znite_feature_text_img h2{
+      margin-top:20px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Znite_key_features",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "id": "empower_image",
+        "type": "image_picker",
+        "label": "Empower image"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Image alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "id": "empower_title",
+        "type": "text",
+        "label": "Empower title",
+        "default": "Empower Your Best Self, with Klova ;)"
+      },
+      {
+        "id": "empower_button",
+        "type": "text",
+        "label": "Empower button",
+        "default": "Patch me!"
+      },
+      {
+        "id": "empower_button_link",
+        "type": "url",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Achievements",
+        "settings": [
+        {
+          "type":"image_picker",
+           "id":"keyfeature_icon_one",
+          "label":"Keyfeature Icon"
+        },
+        {
+          "type":"text",
+          "id":"keyfeature_text_one",
+          "label":"Keyfeature Text"
+        },
+        {
+          "type":"textarea",
+           "id":"keyfeature_content_one",
+          "label":"Keyfeature Content"
+        }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Znite_key_features"
+      }
+    ]
+  }
+{% endschema %}

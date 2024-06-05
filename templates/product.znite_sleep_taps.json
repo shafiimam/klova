@@ -1,10 +1,5 @@
 {
   "sections": {
-    "zp-product-header-content": {
-      "type": "product-header-content-zipifypages",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -112,6 +107,12 @@
             "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
             "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
           }
+        },
+        "trust_badge_r3DXFU": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Frame_1000003996.png"
+          }
         }
       },
       "block_order": [
@@ -127,7 +128,8 @@
         "essential_countdown_app_block_MKCGLY",
         "6dbfc9bc-18b8-46ff-90c0-6c99d095e181",
         "991843c7-0724-43cf-8891-6972bb0b8de4",
-        "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
+        "4a35f8b0-879a-41fc-8ad7-20579c2e14f4",
+        "trust_badge_r3DXFU"
       ],
       "settings": {
         "link-back-text": "",
@@ -145,10 +147,125 @@
         "product_video_style": "muted"
       }
     },
+    "znite_img_with_text_Yz7L7N": {
+      "type": "znite_img_with_text",
+      "settings": {
+        "empower_image": "shopify:\/\/shop_images\/Rectangle_334_ac776a96-5eed-4af9-b616-f76fab998ac0.png",
+        "layout": "right",
+        "empower_title": "ZNiteTM Tapes",
+        "empower_descr": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite Tapes. Crafted for comfort and effectiveness, ZNite Tapes help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
+        "empower_button": "BUY NOW",
+        "empower_button_link": ""
+      }
+    },
+    "znite_key_features_wEDw8z": {
+      "type": "znite_key_features",
+      "blocks": {
+        "text_9epBNY": {
+          "type": "text",
+          "settings": {
+            "keyfeature_icon_one": "shopify:\/\/shop_images\/Group_403abcb1-3112-4511-bf53-0d2a03a968aa.png",
+            "keyfeature_text_one": "ENHANCED SLEEP QUALITY",
+            "keyfeature_content_one": "Our mouth tapes ensure you breathe through your nose, reducing snoring and improving oxygen intake for a rejuvenating night's sleep."
+          }
+        },
+        "text_9NgFj7": {
+          "type": "text",
+          "settings": {
+            "keyfeature_icon_one": "shopify:\/\/shop_images\/Frame.png",
+            "keyfeature_text_one": "PREMIUM MATERIALS",
+            "keyfeature_content_one": "Made with a hypoallergenic, medical-grade adhesive and a soft cotton blend, ZNite Tapes are designed to provide a secure fit for any face shape. They are also latex-free, PFAS-free, and gluten-free."
+          }
+        },
+        "text_VwpYND": {
+          "type": "text",
+          "settings": {
+            "keyfeature_icon_one": "shopify:\/\/shop_images\/user-friendly_4946408_1.png",
+            "keyfeature_text_one": "USER-FRIENDLY DESIGN",
+            "keyfeature_content_one": "Easy to apply and painless to remove, ZNite Tapes are also equipped with a small tab for quick adjustments and removals without discomfort."
+          }
+        }
+      },
+      "block_order": [
+        "text_9epBNY",
+        "text_9NgFj7",
+        "text_VwpYND"
+      ],
+      "settings": {
+        "empower_image": "shopify:\/\/shop_images\/Rectangle_334_ec0f9a76-664d-41b3-bc5b-17590506dcdf.png",
+        "layout": "left",
+        "empower_title": "Key Features",
+        "empower_button": "Buy Now",
+        "empower_button_link": ""
+      }
+    },
+    "znite_icon_text_bg_J4wUjy": {
+      "type": "znite_icon_text_bg",
+      "blocks": {
+        "text_block_U36xtt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/sleep_15125241_1.png",
+            "image_width": 64,
+            "title": "Snore Reduction",
+            "text": "<p>Say goodbye to snoring and greet the morning feeling refreshed and ready to tackle the day.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_r6pWTn": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/oral-health_10747673_1.png",
+            "image_width": 64,
+            "title": "Oral Health Improvement",
+            "text": "<p>Promotes mouth closure to prevent dry mouth and halitosis, contributing to better oral hygiene.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_Rr6bt8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/health-insurance_4801920_1.png",
+            "image_width": 64,
+            "title": "Boosted Immunity",
+            "text": "<p>By optimizing breathing patterns, ZNite Tapes help improve your body's natural defenses.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_U36xtt",
+        "text_block_r6pWTn",
+        "text_block_Rr6bt8"
+      ],
+      "settings": {
+        "title": "Health Benefits",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "znite_legal_hzLbaF": {
+      "type": "znite_legal",
+      "settings": {
+        "empower_image": "shopify:\/\/shop_images\/Rectangle_334_4.png",
+        "layout": "left",
+        "empower_title": "Legal Disclaimer",
+        "empower_descr": "<p>This product is <strong>not intended <\/strong>for children under the age of 6, those with breathing disorders, heart conditions, nasal congestion, risk of vomiting or with the use of alcohol or sedatives, and those unable to remove the tape on their own. Statements regarding wellness products have not been evaluated by the FDA and are <strong>not intended<\/strong> to diagnose, treat, cure, or prevent any disease and\/or health condition.<\/p><p><\/p><p><\/p><p><br\/>Whether you're looking to enhance your sleep, boost your health, or simply enjoy silent nights, <strong>ZNiteTM Tapes<\/strong> are your ideal choice. Try them tonight and feel the difference!<\/p>",
+        "empower_button": "",
+        "empower_button_link": ""
+      }
+    },
     "16539274943ce12887": {
       "type": "sleep-chart",
       "settings": {
-        "title": "Comparison chart",
+        "title": "How We Compare",
         "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
@@ -158,7 +275,7 @@
         "review_card_6dEi6G": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/05.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_58d126c6-18ef-48d7-8b4f-0bcd466fd5af.png",
             "review_text": "{{ block.settings.product.metafields.custom.product_review_1.value }}",
             "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_1.value }}",
             "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
@@ -169,7 +286,7 @@
         "review_card_HGd63i": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/08.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
             "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
             "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_2.value }}",
             "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
@@ -180,7 +297,7 @@
         "review_card_JyykWT": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/04.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
             "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
             "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_3.value }}",
             "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
@@ -198,23 +315,6 @@
         "title": "What Our Customers Say",
         "review_count": "5209",
         "divider": false
-      }
-    },
-    "1663080027983fd7ee": {
-      "type": "apps",
-      "blocks": {
-        "bf6b2f19-d616-4954-9103-d53133278ad0": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "bf6b2f19-d616-4954-9103-d53133278ad0"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
       }
     },
     "1653908906e8b1c207": {
@@ -271,8 +371,27 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
+    "1663080027983fd7ee": {
+      "type": "apps",
+      "blocks": {
+        "bf6b2f19-d616-4954-9103-d53133278ad0": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "bf6b2f19-d616-4954-9103-d53133278ad0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
+      "disabled": true,
       "settings": {
       }
     },
@@ -292,6 +411,7 @@
       "block_order": [
         "rebuy_personalization_engine_rebuy_widget_mVNktN"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -319,17 +439,43 @@
         "autoplay": true,
         "autoplay_speed": 7
       }
+    },
+    "1715597314648dded0": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_7mQMUV": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "131220",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_7mQMUV"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
-    "zp-product-header-content",
     "main",
+    "znite_img_with_text_Yz7L7N",
+    "znite_key_features_wEDw8z",
+    "znite_icon_text_bg_J4wUjy",
+    "znite_legal_hzLbaF",
     "16539274943ce12887",
     "review_slider_NFJHzE",
-    "1663080027983fd7ee",
     "1653908906e8b1c207",
+    "1663080027983fd7ee",
     "zp-product-footer-content",
     "17074127040251dd37",
-    "slideshow_image_qnjBEc"
+    "slideshow_image_qnjBEc",
+    "1715597314648dded0"
   ]
 }
