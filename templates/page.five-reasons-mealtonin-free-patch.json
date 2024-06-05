@@ -219,6 +219,7 @@
         "review_card_NrJCFa": {
           "type": "review_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/08_b8f6d257-5ec5-484b-b4c8-e376113e1fc4.jpg",
             "review_text": "“At first, I was very skeptical. They go on dry and don’t really have a lot of stick right away. I’m not saying they come off because they don’t. I just expect them to be very sticky and they’re not. There is no dramatic calming effect. You don’t feel woozy.",
             "reviewer_name": "K. patton",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -229,6 +230,7 @@
         "review_card_FVyB3X": {
           "type": "review_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/02.jpg",
             "review_text": "“These patches go on easy and stick well. They don’t seem to provide as much effect as some others I have tried but I will keep using them because they have such a good balance of adaptogens. I prefer using a patch to taking pills and these patches are more pleasant to...”",
             "reviewer_name": "Bittersweet",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -239,6 +241,7 @@
         "review_card_AqbDkW": {
           "type": "review_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/03_418b8467-833d-4b77-bc72-119ee7c7a604.jpg",
             "review_text": "“These patches are such a cool and unique way of getting vitamins into your body. I do very much so feel relief and calming effects while wearing these patches, and they are easy to apply and comfortable to wear.”",
             "reviewer_name": "Page",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -254,7 +257,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
-        "show_reviewer_image": false,
+        "show_reviewer_image": true,
         "review_count": "5209",
         "divider": false
       }

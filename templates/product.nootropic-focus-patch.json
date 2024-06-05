@@ -1,17 +1,11 @@
 {
   "sections": {
-    "zp-product-header-content": {
-      "type": "product-header-content-zipifypages",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "8d5b248f-0365-4a36-929d-ae493e468bcf": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
           "type": "paragraph",
@@ -46,12 +40,12 @@
         "bundle_btn_i8xLMH": {
           "type": "bundle_btn",
           "settings": {
-            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
-            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_img": "shopify://shop_images/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify://shop_images/Frame_1000003955_1.png",
             "bundle_data": "Build Your Own Bundle",
             "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
             "bundle_btn": "BUILD YOUR BUNDLE",
-            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_url": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
             "bundle_color_text": "#121212",
             "bundle_bg": "#faf4fc",
             "bundle_btn_border": "#121212",
@@ -60,8 +54,7 @@
         },
         "8ac7f3a8-6330-4b31-9e5c-11f94adab453": {
           "type": "skio-plan-picker",
-          "settings": {
-          }
+          "settings": {}
         },
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
           "type": "quantity_selector",
@@ -73,7 +66,7 @@
           }
         },
         "essential_countdown_app_block_zdK4Lf": {
-          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "type": "shopify://apps/essential-countdown/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
           }
@@ -101,17 +94,17 @@
           "type": "tab",
           "settings": {
             "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
-            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}<\/p>",
+            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}</p>",
             "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
-            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}<\/p>",
+            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}</p>",
             "acc-button-three": "{{ product.metafields.add_tab.product_title_tab_3.value }}",
-            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}<\/p>",
+            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}</p>",
             "acc-button-four": "{{ product.metafields.add_tab.product_title_tab_4.value }}",
-            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}<\/p>",
+            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}</p>",
             "acc-button-five": "{{ product.metafields.add_tab.product_title_tab_5.value }}",
-            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}<\/p>",
+            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}</p>",
             "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
-            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
+            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}</p>"
           }
         }
       },
@@ -132,7 +125,7 @@
       ],
       "settings": {
         "link-back-text": "",
-        "link-back": "shopify:\/\/collections\/all",
+        "link-back": "shopify://collections/all",
         "second_stars": true,
         "sku_enable": false,
         "image_position": "left",
@@ -199,7 +192,7 @@
         "title": "Peel Stick Optimize",
         "info": "",
         "overlay": "#faf9fb",
-        "video_url": "https:\/\/vimeo.com\/703421279",
+        "video_url": "https://vimeo.com/703421279",
         "overlay_opacity": 0,
         "height": 500,
         "height_mobile": 160
@@ -212,28 +205,28 @@
           "type": "info",
           "settings": {
             "title": "COMPREHENSIVE INGREDIENTS",
-            "text": "<p>Every Nootropic Focus Patch is the equivalent of 10 different health products working together as 1 to help support your focus, energy and presence.<\/p>"
+            "text": "<p>Every Nootropic Focus Patch is the equivalent of 10 different health products working together as 1 to help support your focus, energy and presence.</p>"
           }
         },
         "1654687329e5bc22ff-1": {
           "type": "info",
           "settings": {
             "title": "THE DIFFERENCE IS THE DELIVERY",
-            "text": "<p>Your body was built to absorb nutrients it needs transdermally, and we aren't the first to capitalize on it either: the sun has been doing it for years now ;)<\/p>"
+            "text": "<p>Your body was built to absorb nutrients it needs transdermally, and we aren't the first to capitalize on it either: the sun has been doing it for years now ;)</p>"
           }
         },
         "1654687329e5bc22ff-2": {
           "type": "info",
           "settings": {
             "title": "WELLNESS THAT STICKS",
-            "text": "<p>Klova is a wellness routine you can stick with easier than most, because it sticks with you. Each patch stays secure for up to 8 hours, or until you remove it.<\/p>"
+            "text": "<p>Klova is a wellness routine you can stick with easier than most, because it sticks with you. Each patch stays secure for up to 8 hours, or until you remove it.</p>"
           }
         },
         "1654687329e5bc22ff-3": {
           "type": "info",
           "settings": {
             "title": "GIVE YOUR STOMACH A BREAK",
-            "text": "<p>Stomach aches are very common with focus support pills or drinks. We fixed that by skipping the stomach and going right to bloodstream. Better results, faster.<\/p>"
+            "text": "<p>Stomach aches are very common with focus support pills or drinks. We fixed that by skipping the stomach and going right to bloodstream. Better results, faster.</p>"
           }
         }
       },
@@ -247,7 +240,7 @@
         "paddingsection": "0px 0px 40px 0px",
         "paddingsection_mob": "0px 0px 40px 0px",
         "title": "Peel. Stick. Focus.",
-        "image": "shopify:\/\/shop_images\/Optimize_fec99116-f63e-4a0b-9f5d-f2936eee174d.png",
+        "image": "shopify://shop_images/Optimize_fec99116-f63e-4a0b-9f5d-f2936eee174d.png",
         "html": "",
         "overlay": "#faf9fb",
         "animate": "fade-up"
@@ -288,8 +281,8 @@
         "paddingsection_mob": "40px 0px 40px 0px",
         "style": "style-2",
         "title": "Meet the only nootropic you can wear.",
-        "info": "<p>Nootropic Focus Patches are engineered for optimal absorption throughout the day.<\/p>",
-        "html": "<script src=\"https:\/\/unpkg.com\/@lottiefiles\/lottie-player@latest\/dist\/lottie-player.js\"><\/script><lottie-player src=\"https:\/\/assets10.lottiefiles.com\/private_files\/lf30_4t2s7qja.json\" background=\"transparent\" speed=\"1\" style=\"width: 470px;height: 475px;margin-left: -80px; margin-bottom: -60px;\" loop=\"\" autoplay=\"\"><\/lottie-player>",
+        "info": "<p>Nootropic Focus Patches are engineered for optimal absorption throughout the day.</p>",
+        "html": "<script src=\"https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js\"></script><lottie-player src=\"https://assets10.lottiefiles.com/private_files/lf30_4t2s7qja.json\" background=\"transparent\" speed=\"1\" style=\"width: 470px;height: 475px;margin-left: -80px; margin-bottom: -60px;\" loop=\"\" autoplay=\"\"></lottie-player>",
         "overlay": "#ffffff"
       }
     },
@@ -299,10 +292,10 @@
         "position_image": "benefits-card__inner_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify:\/\/shop_images\/Untitled_1316_x_1040_px_6_1-min.jpg",
-        "image-mobile": "shopify:\/\/shop_images\/Rectangle_7-4.jpg",
+        "image": "shopify://shop_images/Untitled_1316_x_1040_px_6_1-min.jpg",
+        "image-mobile": "shopify://shop_images/Rectangle_7-4.jpg",
         "title": "Crush your to-do list",
-        "text": "<p>Tune out distractions, make conifdent decisions and breeze through busy work. Unlock clean, comprehensive cognitive support that lasts for hours with just one patch per day. <\/p><p><\/p><p>✓ Focus <\/p><p>✓ Clarity <\/p><p>✓ Performance<\/p><p><\/p><p>PS - Pairs Well With Coffee ;)<\/p>"
+        "text": "<p>Tune out distractions, make conifdent decisions and breeze through busy work. Unlock clean, comprehensive cognitive support that lasts for hours with just one patch per day. </p><p></p><p>✓ Focus </p><p>✓ Clarity </p><p>✓ Performance</p><p></p><p>PS - Pairs Well With Coffee ;)</p>"
       }
     },
     "1653916291e266d004": {
@@ -311,10 +304,10 @@
         "position_image": "benefits-card__inner_left",
         "text-align": "benefits-card__content_right",
         "bcg-color": "#faf9fb",
-        "image": "shopify:\/\/shop_images\/Untitled_1316_x_1040_px_1_1-min.jpg",
-        "image-mobile": "shopify:\/\/shop_images\/Rectangle_7-1.jpg",
+        "image": "shopify://shop_images/Untitled_1316_x_1040_px_1_1-min.jpg",
+        "image-mobile": "shopify://shop_images/Rectangle_7-1.jpg",
         "title": "Optimize your performance",
-        "text": "<p>Take your workouts to the next level, and get in the zone quicker. The nootropic blend helps support and extend flow state duration and mental\/ physical output.<\/p><p><\/p><p>✓Focus<\/p><p>✓ Flow State<\/p><p>✓ Stamina<\/p>"
+        "text": "<p>Take your workouts to the next level, and get in the zone quicker. The nootropic blend helps support and extend flow state duration and mental/ physical output.</p><p></p><p>✓Focus</p><p>✓ Flow State</p><p>✓ Stamina</p>"
       }
     },
     "16539162981609c3bf": {
@@ -323,10 +316,10 @@
         "position_image": "benefits-card__inner_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify:\/\/shop_images\/Untitled_1316_x_1040_px_2_1-min.jpg",
-        "image-mobile": "shopify:\/\/shop_images\/Rectangle_7-2.jpg",
+        "image": "shopify://shop_images/Untitled_1316_x_1040_px_2_1-min.jpg",
+        "image-mobile": "shopify://shop_images/Rectangle_7-2.jpg",
         "title": "Light it up",
-        "text": "<p>Light up the boardroom, bedroom or gym with clean, crash-free, natural energy. Focus Patches deliver a continuous blend of guarana, green tea extract and B12 for consistant energy levels.<\/p><p><\/p><p>✓ Clean Energy<\/p><p>✓ Cellular Function<\/p><p>✓ Antioxidation<\/p>"
+        "text": "<p>Light up the boardroom, bedroom or gym with clean, crash-free, natural energy. Focus Patches deliver a continuous blend of guarana, green tea extract and B12 for consistant energy levels.</p><p></p><p>✓ Clean Energy</p><p>✓ Cellular Function</p><p>✓ Antioxidation</p>"
       }
     },
     "1653916303774cfc14": {
@@ -335,10 +328,10 @@
         "position_image": "benefits-card__inner_left",
         "text-align": "benefits-card__content_right",
         "bcg-color": "#faf9fb",
-        "image": "shopify:\/\/shop_images\/Untitled_1316_x_1040_px_4_1-min.jpg",
-        "image-mobile": "shopify:\/\/shop_images\/Rectangle_7-3.jpg",
+        "image": "shopify://shop_images/Untitled_1316_x_1040_px_4_1-min.jpg",
+        "image-mobile": "shopify://shop_images/Rectangle_7-3.jpg",
         "title": "Focus on what matters most",
-        "text": "<p>Anchor your mind and stay present in the moment whether you’re at work, in the gym, out on the town or taking some personal time.<\/p><p><\/p><p>✓ Stay Present<\/p><p>✓ Get It Done<\/p><p>✓ Keep The Pace<\/p>"
+        "text": "<p>Anchor your mind and stay present in the moment whether you’re at work, in the gym, out on the town or taking some personal time.</p><p></p><p>✓ Stay Present</p><p>✓ Get It Done</p><p>✓ Keep The Pace</p>"
       }
     },
     "16539163096b01f9e3": {
@@ -347,17 +340,17 @@
         "position_image": "benefits-card__inner_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify:\/\/shop_images\/Untitled_1316_x_1040_px_5_1-min.jpg",
-        "image-mobile": "shopify:\/\/shop_images\/Rectangle_7_66dfb6ed-25df-4b98-9ee9-b68b3dd627fe.jpg",
+        "image": "shopify://shop_images/Untitled_1316_x_1040_px_5_1-min.jpg",
+        "image-mobile": "shopify://shop_images/Rectangle_7_66dfb6ed-25df-4b98-9ee9-b68b3dd627fe.jpg",
         "title": "Clear the fog",
-        "text": "<p>Engineered so you can get more done, Focus Patches use proven, natural ingredients to help promote a mental edge for those early tee-times, workouts and zoom meetings.<\/p><p><\/p><p>✓ Fog-Free Focus<\/p><p>✓ Comprehensive CNS Support<\/p><p>✓ For Mindful Mornings<\/p>"
+        "text": "<p>Engineered so you can get more done, Focus Patches use proven, natural ingredients to help promote a mental edge for those early tee-times, workouts and zoom meetings.</p><p></p><p>✓ Fog-Free Focus</p><p>✓ Comprehensive CNS Support</p><p>✓ For Mindful Mornings</p>"
       }
     },
     "16539274943ce12887": {
       "type": "sleep-chart",
       "settings": {
         "title": "",
-        "image": "shopify:\/\/shop_images\/Group_87.png"
+        "image": "shopify://shop_images/Group_87.png"
       }
     },
     "16539298801be67a40": {
@@ -369,7 +362,7 @@
             "subtitle": "The original",
             "title": "Sleep Patch",
             "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify:\/\/shop_images\/ZPatch-AmazonMainImage-2022_1_png.webp"
+            "item-image": "shopify://shop_images/ZPatch-AmazonMainImage-2022_1_png.webp"
           }
         },
         "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
@@ -378,7 +371,7 @@
             "subtitle-two": "Brand new",
             "title-two": "Extra Strenght Sleep Patch",
             "text-two": "",
-            "item-image-two": "shopify:\/\/shop_images\/untitled-design-95_png.webp"
+            "item-image-two": "shopify://shop_images/untitled-design-95_png.webp"
           }
         }
       },
@@ -398,35 +391,35 @@
           "type": "text",
           "settings": {
             "acc-button": "WHO CAN USE THIS PATCH?",
-            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
+            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.</p>"
           }
         },
         "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
           "type": "text",
           "settings": {
             "acc-button": "WHERE IS KLOVA MADE?",
-            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
+            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.</p>"
           }
         },
         "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
           "type": "text",
           "settings": {
             "acc-button": "ARE THERE ANY INTERACTIONS?",
-            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
+            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.</p>"
           }
         },
         "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
           "type": "text",
           "settings": {
             "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
-            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.</p>"
           }
         },
         "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
           "type": "text",
           "settings": {
             "acc-button": "WHAT ARE ‘NOOTROPICS’?",
-            "acc-text": "<p>Nootropics are defined as any supplement or substance used to enhance memory or other cognitive functions like focus or clarity.<\/p><p><\/p><p>Klova uses only the most clinically researched, natural nootropics like guarana, huperzine A, bacopa and agmatine sulfate. Each ingredient has been shown to have nootropic properties of varying degree in independent clinical research. <\/p>"
+            "acc-text": "<p>Nootropics are defined as any supplement or substance used to enhance memory or other cognitive functions like focus or clarity.</p><p></p><p>Klova uses only the most clinically researched, natural nootropics like guarana, huperzine A, bacopa and agmatine sulfate. Each ingredient has been shown to have nootropic properties of varying degree in independent clinical research. </p>"
           }
         }
       },
@@ -440,23 +433,20 @@
       "settings": {
         "title": "FAQ",
         "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
-        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
+        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}</p>",
         "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
-        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
+        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}</p>"
       }
     },
     "16630811238323670e": {
       "type": "apps",
       "blocks": {
         "6e72f45b-a6f7-410c-8f79-cf979b82c274": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
-      "block_order": [
-        "6e72f45b-a6f7-410c-8f79-cf979b82c274"
-      ],
+      "block_order": ["6e72f45b-a6f7-410c-8f79-cf979b82c274"],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -464,8 +454,7 @@
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {
-      }
+      "settings": {}
     },
     "slideshow_image_7BihzW": {
       "type": "slideshow-image",
@@ -473,15 +462,13 @@
         "image_eRqmzF": {
           "type": "image",
           "settings": {
-            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
-            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+            "link": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify://shop_images/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify://shop_images/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
           }
         }
       },
-      "block_order": [
-        "image_eRqmzF"
-      ],
+      "block_order": ["image_eRqmzF"],
       "settings": {
         "full_width": false,
         "title": "",
@@ -492,7 +479,6 @@
     }
   },
   "order": [
-    "zp-product-header-content",
     "main",
     "1654687495df726be8",
     "1654687329523c467f",

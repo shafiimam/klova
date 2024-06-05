@@ -218,7 +218,7 @@
         "review_card_yH68Xm": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003704_58d126c6-18ef-48d7-8b4f-0bcd466fd5af.png",
+            "image": "shopify:\/\/shop_images\/01.jpg",
             "review_text": "“This is such a cool and innovative way to get some calming ingredients into your body through the use of patch! I am a very anxious person by default, but some days I need extra help and I do have herbal supplements already.”",
             "reviewer_name": "strawberrykitten",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -229,7 +229,7 @@
         "review_card_ktVWUx": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
+            "image": "shopify:\/\/shop_images\/09.jpg",
             "review_text": "“Very good ingredients and helpful in relaxation. The patch causes minor sensitivity but I’m very sensitive.",
             "reviewer_name": "Lee",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -240,7 +240,7 @@
         "review_card_zpjyEi": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
             "review_text": "“This is an interesting and convenient way to achieve further relaxation and centeredness. The patches are easy to apply and stay put well. I had a particularly stressful day today and using this patch does seem to help me relax and release some of the day's built up tension.”",
             "reviewer_name": "Stuff&Things",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -256,7 +256,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
-        "show_reviewer_image": false,
+        "show_reviewer_image": true,
         "review_count": "5209",
         "divider": false
       }

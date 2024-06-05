@@ -2,11 +2,70 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_with_header_ibVAy8": {
+      "type": "hero-with-header",
+      "blocks": {
+        "badge_GXK4tF": {
+          "type": "badge",
+          "settings": {
+            "text": "FREE SHIPPING   |   30-DAY MONEY BACK GUARANTEE",
+            "background": "#625FA2"
+          }
+        },
+        "title_ixDUPj": {
+          "type": "title",
+          "settings": {
+            "title": "Effortlessly Drift Into Sleep The Natural Way"
+          }
+        },
+        "subtitle_CFrUPg": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Sleep Promoting Patches"
+          }
+        },
+        "sales_point_4KUJgq": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/tick-icon.png",
+            "sales_point1": "Naturally Helps You Get to Sleep Faster",
+            "sales_point2": "Sealed Patches Last Up to 8 Hours",
+            "sales_point3": "28 Patches Per Pack",
+            "sales_point4": "Easy To Use - Directly Apply To Skin"
+          }
+        },
+        "button_with_review_tAwcD9": {
+          "type": "button_with_review",
+          "settings": {
+            "background": "#FFFFFF",
+            "button_text": "Get It Now!",
+            "button_link": "#subscribe",
+            "title": "<p>Our customers rate us as <strong>Excellent</strong></p>",
+            "star_icon": "shopify://shop_images/star-icon.png",
+            "review_content": "<p><strong>Reviews (1273)</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "badge_GXK4tF",
+        "title_ixDUPj",
+        "subtitle_CFrUPg",
+        "sales_point_4KUJgq",
+        "button_with_review_tAwcD9"
+      ],
       "settings": {
+        "hide_header": true,
+        "header_logo": "shopify://shop_images/klova_logo.png",
+        "header_btn_link": "#subscribe",
+        "header_btn_text": "Get It Now",
+        "hero_image": "shopify://shop_images/Group_13631.png",
+        "hero_background_image_desktop": "shopify://shop_images/Hero_Section.png",
+        "hero_background_image_mobile": "shopify://shop_images/Hero_section_-_mobile.png"
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main", "hero_with_header_ibVAy8"]
 }

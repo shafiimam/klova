@@ -1,17 +1,11 @@
 {
   "sections": {
-    "zp-product-header-content": {
-      "type": "product-header-content-zipifypages",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "af3f79f3-45f3-4dd2-9d01-764c0ed941c0": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
           "type": "paragraph",
@@ -46,12 +40,12 @@
         "bundle_btn_WGPnxM": {
           "type": "bundle_btn",
           "settings": {
-            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
-            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
+            "bundle_img": "shopify://shop_images/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify://shop_images/Frame_1000003955_1.png",
             "bundle_data": "Build Your Own Bundle",
             "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
             "bundle_btn": "BUILD YOUR BUNDLE",
-            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_url": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
             "bundle_color_text": "#121212",
             "bundle_bg": "#faf4fc",
             "bundle_btn_border": "#121212",
@@ -60,8 +54,7 @@
         },
         "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
-          "settings": {
-          }
+          "settings": {}
         },
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
           "type": "quantity_selector",
@@ -73,7 +66,7 @@
           }
         },
         "essential_countdown_app_block_MKCGLY": {
-          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "type": "shopify://apps/essential-countdown/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
           }
@@ -100,17 +93,17 @@
           "type": "tab",
           "settings": {
             "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
-            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}<\/p>",
+            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}</p>",
             "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
-            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}<\/p>",
+            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}</p>",
             "acc-button-three": "{{ product.metafields.add_tab.product_title_tab_3.value }}",
-            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}<\/p>",
+            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}</p>",
             "acc-button-four": "{{ product.metafields.add_tab.product_title_tab_4.value }}",
-            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}<\/p>",
+            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}</p>",
             "acc-button-five": "{{ product.metafields.add_tab.product_title_tab_5.value }}",
-            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}<\/p>",
+            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}</p>",
             "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
-            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
+            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}</p>"
           }
         }
       },
@@ -131,7 +124,7 @@
       ],
       "settings": {
         "link-back-text": "",
-        "link-back": "shopify:\/\/collections\/all",
+        "link-back": "shopify://collections/all",
         "second_stars": false,
         "sku_enable": false,
         "image_position": "left",
@@ -149,7 +142,7 @@
       "type": "sleep-chart",
       "settings": {
         "title": "Comparison chart",
-        "image": "shopify:\/\/shop_images\/Group_87.png"
+        "image": "shopify://shop_images/Group_87.png"
       }
     },
     "review_slider_NFJHzE": {
@@ -158,7 +151,7 @@
         "review_card_6dEi6G": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
+            "image": "shopify://shop_images/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
             "review_text": "{{ block.settings.product.metafields.custom.product_review_1.value }}",
             "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_1.value }}",
             "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
@@ -169,7 +162,7 @@
         "review_card_HGd63i": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003714.jpg",
+            "image": "shopify://shop_images/Frame_1000003714.jpg",
             "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
             "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_2.value }}",
             "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
@@ -180,7 +173,7 @@
         "review_card_JyykWT": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003716.jpg",
+            "image": "shopify://shop_images/Frame_1000003716.jpg",
             "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
             "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_3.value }}",
             "product_image": "{{ product.metafields.custom.product_cover_image.value }}",
@@ -205,14 +198,11 @@
       "type": "apps",
       "blocks": {
         "bf6b2f19-d616-4954-9103-d53133278ad0": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
-      "block_order": [
-        "bf6b2f19-d616-4954-9103-d53133278ad0"
-      ],
+      "block_order": ["bf6b2f19-d616-4954-9103-d53133278ad0"],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -225,35 +215,35 @@
           "type": "text",
           "settings": {
             "acc-button": "WHO CAN USE THIS PATCH?",
-            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
+            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.</p>"
           }
         },
         "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
           "type": "text",
           "settings": {
             "acc-button": "WHERE IS KLOVA MADE?",
-            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
+            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.</p>"
           }
         },
         "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
           "type": "text",
           "settings": {
             "acc-button": "ARE THERE ANY INTERACTIONS?",
-            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
+            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.</p>"
           }
         },
         "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
           "type": "text",
           "settings": {
             "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
-            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.</p>"
           }
         },
         "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
           "type": "text",
           "settings": {
             "acc-button": "WILL IT MAKE ME GROGGY?",
-            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
+            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.</p><p></p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. </p>"
           }
         }
       },
@@ -267,21 +257,20 @@
       "settings": {
         "title": "FAQ",
         "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
-        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
+        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}</p>",
         "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
-        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
+        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}</p>"
       }
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {
-      }
+      "settings": {}
     },
     "17074127040251dd37": {
       "type": "apps",
       "blocks": {
         "rebuy_personalization_engine_rebuy_widget_mVNktN": {
-          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
           "settings": {
             "enabled": true,
             "id": "133626",
@@ -290,9 +279,7 @@
           }
         }
       },
-      "block_order": [
-        "rebuy_personalization_engine_rebuy_widget_mVNktN"
-      ],
+      "block_order": ["rebuy_personalization_engine_rebuy_widget_mVNktN"],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -304,15 +291,13 @@
         "image_i3zCH4": {
           "type": "image",
           "settings": {
-            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
-            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+            "link": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify://shop_images/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify://shop_images/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
           }
         }
       },
-      "block_order": [
-        "image_i3zCH4"
-      ],
+      "block_order": ["image_i3zCH4"],
       "settings": {
         "full_width": false,
         "title": "",
@@ -323,7 +308,6 @@
     }
   },
   "order": [
-    "zp-product-header-content",
     "main",
     "16539274943ce12887",
     "review_slider_NFJHzE",

@@ -11,9 +11,20 @@
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'title' %}
-              <p class="block-title" {{ block.shopify_attributes }}>
-                {{ block.settings.title }}
-              </p>
+              <div class="titlte-block-container">
+                {% if block.settings['title-icon'] %}
+                  <img
+                    src="{{ block.settings['title-icon'] | asset_url | image_url: width:143, height:120 }}"
+                    alt=""
+                    srcset=""
+                    height="auto"
+                    width="auto"
+                  >
+                {% endif %}
+                <p class="block-title" {{ block.shopify_attributes }}>
+                  {{ block.settings.title }}
+                </p>
+              </div>
             {% when 'subtitle' %}
               <p class="block-subtitle" {{ block.shopify_attributes }}>
                 {{ block.settings.subtitle }}
@@ -22,7 +33,7 @@
               <div class="sales-point-container" {{ block.shopify_attributes }}>
                 {% for i in (1..4) %}
                   {% assign sales_point_id = 'sales_point' | append: i %}
-                  {% if block.settings[sales_point_id] != blank%}
+                  {% if block.settings[sales_point_id] != blank %}
                     <div class="sales-point grid-{{ block.settings.num_column_grid }}">
                       <img
                         src="{{ block.settings.icon | image_url: width: 20, height: 20 }}"
@@ -203,6 +214,12 @@
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .title-block-container{
+    display: flex;
+    gap: 27px;
+    justify-content: flex-start;
   }
   @media (max-width: 500px){
     .header-container{

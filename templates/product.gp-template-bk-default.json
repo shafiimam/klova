@@ -1,17 +1,11 @@
 {
   "sections": {
-    "zp-product-header-content": {
-      "type": "product-header-content-zipifypages",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "af3f79f3-45f3-4dd2-9d01-764c0ed941c0": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         },
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
           "type": "paragraph",
@@ -56,8 +50,7 @@
         },
         "b9010da1-5cae-4ba5-9fc5-c670acc70709": {
           "type": "skio-plan-picker",
-          "settings": {
-          }
+          "settings": {}
         },
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
           "type": "quantity_selector",
@@ -239,13 +232,10 @@
       "blocks": {
         "bf6b2f19-d616-4954-9103-d53133278ad0": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
-      "block_order": [
-        "bf6b2f19-d616-4954-9103-d53133278ad0"
-      ],
+      "block_order": ["bf6b2f19-d616-4954-9103-d53133278ad0"],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -253,8 +243,7 @@
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {
-      }
+      "settings": {}
     },
     "17074127040251dd37": {
       "type": "apps",
@@ -269,9 +258,7 @@
           }
         }
       },
-      "block_order": [
-        "rebuy_personalization_engine_rebuy_widget_mVNktN"
-      ],
+      "block_order": ["rebuy_personalization_engine_rebuy_widget_mVNktN"],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -279,7 +266,6 @@
     }
   },
   "order": [
-    "zp-product-header-content",
     "main",
     "16539274943ce12887",
     "16539298801be67a40",
