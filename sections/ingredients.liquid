@@ -25,32 +25,36 @@
       <div class="ingredients__body">
         <figure class="ingredients__image">
           {% if section.settings.image != blank %}
-              {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[540, 720, 900, 1080, 1600]"
-                    data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ section.settings.image.alt }}">
-            {% else %}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-            {% endif %}
+            {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img
+              class="lazyload"
+              data-src="{{ img_url }}"
+              data-widths="[540, 720, 900, 1080, 1600]"
+              data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ section.settings.image.alt }}"
+            >
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
         </figure>
 
         <ul class="ingredients__list">
           {%- for block in section.blocks -%}
-            <li class="ingredients__item ingredient-card u-align-center">
+            <li class="ingredients__item ingredient-card u-align-center" {{ block.shopify_attributes }}>
               <figure class="ingredient-card__icon">
                 {% if block.settings.svg_icon != blank %}
                   {{ block.settings.svg_icon }}
                 {% elsif block.settings.image != blank %}
                   {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="lazyload"
-                      data-src="{{ img_url }}"
-                      data-widths="[540, 720, 900, 1080, 1600]"
-                      data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-                      data-sizes="auto"
-                      alt="{{ block.settings.image.alt }}">
+                  <img
+                    class="lazyload"
+                    data-src="{{ img_url }}"
+                    data-widths="[540, 720, 900, 1080, 1600]"
+                    data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                    data-sizes="auto"
+                    alt="{{ block.settings.image.alt }}"
+                  >
                 {% else %}
                   {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
                 {% endif %}
