@@ -24,7 +24,9 @@
   endif
 -%}
 
-<div class="grid-item grid-product {{ classes }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+{% unless product.type == 'Hidden' %}
+
+<div class="data-product grid-item grid-product {{ classes }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-item__content">
 
     {%- unless no_actions -%}
@@ -293,3 +295,5 @@
     </div>
   </div>
 </div>
+
+{% endunless %}

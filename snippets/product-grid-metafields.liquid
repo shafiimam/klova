@@ -24,6 +24,9 @@
   endif
 -%}
 
+
+{% unless product.type == 'Hidden' %}
+
 <div class="grid-item grid-product {{ classes }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-item__content meta-bg-color" style="background:{{ product.metafields.custom.color_menu }}">
 
@@ -348,6 +351,7 @@
     </textarea>
   {%- endif -%}
 {%- endform -%}
+        
 
 {% comment %}
 
@@ -390,3 +394,5 @@
     </div>
   </div>
 </div>
+
+{% endunless %}                    

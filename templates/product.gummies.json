@@ -4,8 +4,9 @@
       "type": "main-product",
       "blocks": {
         "4f8d020b-0ca1-4d52-a50b-cd4f4ba05025": {
-          "type": "shopify://apps/judge-me-product-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         },
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
           "type": "paragraph",
@@ -28,7 +29,8 @@
         "0426a047-807b-4175-a859-91c1e840f565": {
           "type": "skio-plan-picker",
           "disabled": true,
-          "settings": {}
+          "settings": {
+          }
         },
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
           "type": "quantity_selector",
@@ -61,17 +63,17 @@
           "type": "tab",
           "settings": {
             "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
-            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}</p>",
+            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}<\/p>",
             "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
-            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}</p>",
+            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}<\/p>",
             "acc-button-three": "{{ product.metafields.add_tab.product_title_tab_3.value }}",
-            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}</p>",
+            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}<\/p>",
             "acc-button-four": "{{ product.metafields.add_tab.product_title_tab_4.value }}",
-            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}</p>",
+            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}<\/p>",
             "acc-button-five": "{{ product.metafields.add_tab.product_title_tab_5.value }}",
-            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}</p>",
+            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}<\/p>",
             "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
-            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}</p>"
+            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
           }
         }
       },
@@ -88,7 +90,7 @@
       ],
       "settings": {
         "link-back-text": "- Back to shop",
-        "link-back": "shopify://collections/all",
+        "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
         "image_position": "left",
@@ -107,12 +109,11 @@
       "disabled": true,
       "settings": {
         "title": "Sleep Aid Comparison chart",
-        "image": "shopify://shop_images/Group_87.png"
+        "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
     "16539298801be67a40": {
       "type": "simile",
-      "disabled": true,
       "blocks": {
         "6e3c9fbf-178c-466e-983c-cac0feb1c53e": {
           "type": "text",
@@ -120,7 +121,7 @@
             "subtitle": "The original",
             "title": "Sleep Patch",
             "text": "Our first patch. Simple and reliable",
-            "item-image": "shopify://shop_images/19430931_1.png"
+            "item-image": "shopify:\/\/shop_images\/19430931_1.png"
           }
         },
         "b1bed1a0-3e11-49b3-8de9-a329568d8189": {
@@ -129,7 +130,7 @@
             "subtitle-two": "Brand new",
             "title-two": "Extra Strenght Sleep Patch",
             "text-two": "",
-            "item-image-two": "shopify://shop_images/19430931_1.png"
+            "item-image-two": "shopify:\/\/shop_images\/19430931_1.png"
           }
         }
       },
@@ -137,41 +138,41 @@
         "6e3c9fbf-178c-466e-983c-cac0feb1c53e",
         "b1bed1a0-3e11-49b3-8de9-a329568d8189"
       ],
+      "disabled": true,
       "settings": {
         "text": "VS",
-        "image": "shopify://shop_images/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
+        "image": "shopify:\/\/shop_images\/Group_87_6adf7c10-1e5a-4540-b15d-03df992109ba.png"
       }
     },
     "1654687329523c467f": {
       "type": "image-with-carousel-text",
-      "disabled": true,
       "blocks": {
         "1654687329e5bc22ff-0": {
           "type": "info",
           "settings": {
             "title": "COMPREHENSIVE INGREDIENTS",
-            "text": "<p>Using only the best natural and clinically proven ingredients, Klova patches deliver a precise blend of each physician approved formula for up to eight consecutive hours. This helps eliminate using multiple products, and saves you money.</p>"
+            "text": "<p>Using only the best natural and clinically proven ingredients, Klova patches deliver a precise blend of each physician approved formula for up to eight consecutive hours. This helps eliminate using multiple products, and saves you money.<\/p>"
           }
         },
         "1654687329e5bc22ff-1": {
           "type": "info",
           "settings": {
             "title": "THE DIFFERENCE IS THE DELIVERY",
-            "text": "<p>Transdermal absorption is not a new concept, and every skin care product and topical medication uses it. So why not give your stomach a break, make the most of your body’s ability to absorb micronutrients, and optimize your sleep and focus?</p>"
+            "text": "<p>Transdermal absorption is not a new concept, and every skin care product and topical medication uses it. So why not give your stomach a break, make the most of your body’s ability to absorb micronutrients, and optimize your sleep and focus?<\/p>"
           }
         },
         "1654687329e5bc22ff-2": {
           "type": "info",
           "settings": {
             "title": "WELLNESS THAT STICKS",
-            "text": "<p>Conveniently optimize your days and nights with Klova patches. Just one Extra Strength Sleep Patch helps support optimized sleep, while just one Nootropic Focus Patch helps support optimized focus, clarity and presence.</p>"
+            "text": "<p>Conveniently optimize your days and nights with Klova patches. Just one Extra Strength Sleep Patch helps support optimized sleep, while just one Nootropic Focus Patch helps support optimized focus, clarity and presence.<\/p>"
           }
         },
         "1654687329e5bc22ff-3": {
           "type": "info",
           "settings": {
             "title": "PEEL. STICK. OPTIMIZE.",
-            "text": "<p>It’s hard to get optimized when most oral sleep and focus support products cause stomach discomfort (according to their reviews). Klova solved that with industry leading, transdermal technology. Simply peel, stick and optimize your day or night.</p>"
+            "text": "<p>It’s hard to get optimized when most oral sleep and focus support products cause stomach discomfort (according to their reviews). Klova solved that with industry leading, transdermal technology. Simply peel, stick and optimize your day or night.<\/p>"
           }
         }
       },
@@ -181,11 +182,12 @@
         "1654687329e5bc22ff-2",
         "1654687329e5bc22ff-3"
       ],
+      "disabled": true,
       "settings": {
         "paddingsection": "0px 0px 40px 0px",
         "paddingsection_mob": "0px 0px 40px 0px",
         "title": "Patches with purpose: <br>One patch for sleep.<br> One patch for focus.",
-        "image": "shopify://shop_images/hande_2.gif",
+        "image": "shopify:\/\/shop_images\/hande_2.gif",
         "html": "",
         "overlay": "#faf9fb",
         "animate": "false"
@@ -197,10 +199,10 @@
         "position_image": "benefits-card__image_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/BlackPatch-womansleeping.jpg",
-        "image-mobile": "shopify://shop_images/BlackPatch-womansleeping.jpg",
+        "image": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
         "title": "Fall asleep",
-        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.</p>"
+        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.<\/p>"
       }
     },
     "1653916291e266d004": {
@@ -209,10 +211,10 @@
         "position_image": "benefits-card__inner_left",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/Rectangle_7-min.jpg",
-        "image-mobile": "shopify://shop_images/Rectangle_9-min-min.jpg",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_9-min-min.jpg",
         "title": "Stay asleep",
-        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.</p>"
+        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.<\/p>"
       }
     },
     "16539162981609c3bf": {
@@ -221,10 +223,10 @@
         "position_image": "benefits-card__image_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/Rectangle_7-1-min.jpg",
-        "image-mobile": "shopify://shop_images/Rectangle_10-min-min.jpg",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-1-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_10-min-min.jpg",
         "title": "Reduce tossing and turning",
-        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.</p>"
+        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.<\/p>"
       }
     },
     "1653916303774cfc14": {
@@ -233,10 +235,10 @@
         "position_image": "benefits-card__inner_left",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/BluePatch-WakeUpRefreshed.jpg",
-        "image-mobile": "shopify://shop_images/BluePatch-WakeUpRefreshed.jpg",
+        "image": "shopify:\/\/shop_images\/BluePatch-WakeUpRefreshed.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BluePatch-WakeUpRefreshed.jpg",
         "title": "Wake up refreshed",
-        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.</p>"
+        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.<\/p>"
       }
     },
     "16539163096b01f9e3": {
@@ -245,10 +247,10 @@
         "position_image": "benefits-card__image_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/BluepatchEliminateGroggyMornings.jpg",
-        "image-mobile": "shopify://shop_images/BluepatchEliminateGroggyMornings.jpg",
+        "image": "shopify:\/\/shop_images\/BluepatchEliminateGroggyMornings.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BluepatchEliminateGroggyMornings.jpg",
         "title": "Eliminate groggy mornings",
-        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.</p>"
+        "text": "<p>Positive emotions impact the brain's prefrontal cortex - located in the front of the brain - resulting in an increase in activity and zeal.<\/p>"
       }
     },
     "1653908906e8b1c207": {
@@ -258,35 +260,35 @@
           "type": "text",
           "settings": {
             "acc-button": "WHO CAN USE THIS PATCH?",
-            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.</p>"
+            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
           }
         },
         "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
           "type": "text",
           "settings": {
             "acc-button": "WHERE IS KLOVA MADE?",
-            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.</p>"
+            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
           }
         },
         "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
           "type": "text",
           "settings": {
             "acc-button": "ARE THERE ANY INTERACTIONS?",
-            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.</p>"
+            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
           }
         },
         "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
           "type": "text",
           "settings": {
             "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
-            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.</p>"
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
           }
         },
         "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
           "type": "text",
           "settings": {
             "acc-button": "WILL IT MAKE ME GROGGY?",
-            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.</p><p></p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. </p>"
+            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
           }
         }
       },
@@ -300,20 +302,23 @@
       "settings": {
         "title": "FAQ",
         "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
-        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}</p>",
+        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
         "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
-        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}</p>"
+        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
     "16630813829008fe51": {
       "type": "apps",
       "blocks": {
         "417124d8-90cb-47f2-b565-611a59c69fc4": {
-          "type": "shopify://apps/judge-me-product-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         }
       },
-      "block_order": ["417124d8-90cb-47f2-b565-611a59c69fc4"],
+      "block_order": [
+        "417124d8-90cb-47f2-b565-611a59c69fc4"
+      ],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -321,7 +326,8 @@
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

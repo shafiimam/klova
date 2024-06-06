@@ -93,11 +93,16 @@
     data-view="{{ productGridView }}"
     data-scroll-to
   >
+ 
     {%- for item in items -%}
       {%- if item.object_type == 'product' -%}
         {%- assign pr_handle = 'routeins' | handleize  -%}
         {% unless item.handle contains pr_handle %}
+   
+          {% unless product.type contains "Hidden" %}
           {%- render 'product-grid-item', product: item -%}
+          {% endunless %}  
+     
         {% endunless %}
 
         {%- if quick_shop_enable -%}

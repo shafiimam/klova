@@ -2,39 +2,50 @@
 {% assign bgDesktop = section.settings.hero_background_image_desktop | image_url: width: 1440, height: 825 %}
 {% assign bgMobie = section.settings.hero_background_image_mobile | image_url: width: 768, height: 1024 %}
 {% assign contentWidth = section.settings.content_width %}
-{% assign imageWidth = section.settings.content_width | minus: 100 %}
 <section id="{{ section.id }}">
-  <p>image width: {{ imageWidth }}</p>
-  <div class="page-width hero-header two-columns-section">
+  <div class="page-width two-columns-section">
     <div class="two-columns-container">
-      <div class="content-container">
+      {% if section.settings.image_direction == 'left' %}
+        <div class="image-container">
+          <img
+            src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
+            alt="patch-image"
+            width="540"
+            height="610"
+          >
+        </div>
+      {% endif %}
+      <div class="content-container-tc">
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'title' %}
-              <div class="titlte-block-container">
-                {% if block.settings['title-icon'] %}
+              <div class="title-block-container-tc">
+                {% if block.settings.title_icon %}
                   <img
-                    src="{{ block.settings['title-icon'] | asset_url | image_url: width:143, height:120 }}"
+                    src="{{ block.settings.title_icon | image_url: width:143, height:120 }}"
                     alt=""
                     srcset=""
                     height="auto"
                     width="auto"
                   >
                 {% endif %}
-                <p class="block-title" {{ block.shopify_attributes }}>
+                <p class="block-title-tc" {{ block.shopify_attributes }}>
                   {{ block.settings.title }}
                 </p>
               </div>
             {% when 'subtitle' %}
-              <p class="block-subtitle" {{ block.shopify_attributes }}>
+              <p class="block-subtitle-tc" {{ block.shopify_attributes }}>
                 {{ block.settings.subtitle }}
               </p>
             {% when 'sales_point' %}
-              <div class="sales-point-container" {{ block.shopify_attributes }}>
+              <div
+                class="sales-point-container  grid-{{ block.settings.num_column_grid }}"
+                {{ block.shopify_attributes }}
+              >
                 {% for i in (1..4) %}
                   {% assign sales_point_id = 'sales_point' | append: i %}
                   {% if block.settings[sales_point_id] != blank %}
-                    <div class="sales-point grid-{{ block.settings.num_column_grid }}">
+                    <div class="sales-point">
                       <img
                         src="{{ block.settings.icon | image_url: width: 20, height: 20 }}"
                         width="20"
@@ -74,29 +85,25 @@
           {% endcase %}
         {% endfor %}
       </div>
-      <div class="image-container">
-        <img
-          src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
-          alt="patch-image"
-          width="540"
-          height="610"
-        >
-      </div>
+      {% if section.settings.image_direction == 'right' %}
+        <div class="image-container">
+          <img
+            src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
+            alt="patch-image"
+            width="540"
+            height="610"
+          >
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
 <style>
-  .two-columns-section{
+  #{{  section.id }} .two-columns-section{
     background: url('{{bgDesktop}}');
     background-size: cover;
     padding: 28px 80px;
     width: 100%;
-  }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
   }
   a.cta-btn{
     border-radius: 5px;
@@ -116,18 +123,21 @@
     transform: scale(1.05) !important;
   }
 
-  .two-columns-container{
+  #{{  section.id }} .two-columns-container{
     display: flex;
     gap: 100px;
     margin-top: 110px;
   }
 
-  .content-container{
+  #{{  section.id }} .content-container-tc{
     flex-basis: {{ contentWidth | append: '%' }};
   }
 
-  .image-container{
+  #{{  section.id }} .image-container{
     flex-basis: calc(100% - {{ contentWidth | append: '%' }} - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .image-container img{
@@ -138,8 +148,13 @@
 
   .sales-point-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+  .grid-1{
+    grid-template-columns: 1fr;
+  }
+  .grid-2{
+    grid-template-columns: 1fr 1fr;
   }
 
   .sales-point{
@@ -170,25 +185,25 @@
     border-radius: 30px;
   }
 
-  .block-title{
-    margin: 30px 0;
+  .block-title-tc{
     color: #1E062C;
     font-family: "Bergen Sans";
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0.75px;
+    line-height: 60px; /* 150% */
+    letter-spacing: 0.6px;
     text-transform: uppercase;
   }
-  .block-subtitle{
-    color: #1E062C;
+  .block-subtitle-tc{
+    color: #000;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 34px;
+    margin-bottom: 24px;
   }
   .review-btn-container{
     margin-top: 30px;
@@ -216,46 +231,48 @@
     flex-wrap: wrap;
   }
 
-  .title-block-container{
+  .title-block-container-tc{
     display: flex;
     gap: 27px;
     justify-content: flex-start;
+    align-items: center;
   }
   @media (max-width: 500px){
-    .header-container{
-      justify-content: center;
-
-    }
-    .two-columns-section{
+    #{{  section.id }} .two-columns-section{
       background: url('{{ bgMobie }}');
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .block-title{
-      font-size: 34px;
-      line-height: 44px; /* 129.412% */
-      letter-spacing: 0.51px;
-    }
-    .header-cta{
-      display: none;
+    .block-title-tc{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px; /* 150% */
+      letter-spacing: 0.36px;
     }
     .review-btn-container{
       flex-direction: column;
       gap: 20px;
     }
-
     .review-btn-container > *{
       width: 100%;
     }
+    .title-block-container-tc{
+      flex-direction: column;
+    }
   }
   @media (max-width: 900px) {
-    .hero-header{
-
+    #{{ section.id }} .two-columns-section{
+      padding: 48px 20px;
     }
-    .two-columns-container{
-      margin-top: 50px;
+    #{{ section.id }} .two-columns-container{
+      margin-top: 0px;
+      {% if section.settings.image_direction == 'left' %}
+      flex-direction: column-reverse;
+      {% else %}
       flex-direction: column;
+      {% endif %}
+
       align-items: center;
       gap: 30px;
     }
@@ -263,13 +280,14 @@
 
 
   @media (min-width: 501px) and (max-width: 800px){
-    .block-title{
-      font-size: 40px;
-      font-style: normal;
+    .block-title-tc{
+      color: #1E062C;
+      font-size: 34px;
       font-weight: 700;
-      line-height: 50px;
-      letter-spacing: 0.6px;
+      line-height: 44px;
+      letter-spacing: 0.51px;
     }
+
   }
 </style>
 
@@ -277,16 +295,6 @@
 {
   "name": "Two Column",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "header_logo",
-      "label": "Header logo"
-    },
-    {
-      "type": "url",
-      "id": "header_btn_link",
-      "label": "Header link"
-    },
     {
       "type": "range",
       "id": "content_width",
@@ -299,6 +307,22 @@
       "type": "text",
       "id": "header_btn_text",
       "label": "Header Button Content"
+    },
+    {
+      "type": "select",
+      "id": "image_direction",
+      "label": "Image Direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     },
     {
       "type": "image_picker",
@@ -345,7 +369,7 @@
         },
         {
           "type": "image_picker",
-          "id": "title-icon",
+          "id": "title_icon",
           "label": "Title Icon"
         }
       ]
