@@ -62,17 +62,19 @@
             {% when 'button_with_review' %}
               <div class="review-btn-container" {{ block.shopify_attributes }}>
                 <a class="cta-btn" href="{{ block.settings.button_link }}">{{ block.settings.button_text }}</a>
-                <div class="review_container" style="background-color: {{ block.settings.background }};">
-                  <div class="review-title">{{ block.settings.title }}</div>
-                  <div class="review-icon-and-text">
-                    <img
-                      src="{{ block.settings.star_icon | image_url : width:150 , height: 28 }}"
-                      height="28"
-                      width="150"
-                    >
-                    <p class="review-content">{{ block.settings.review_content }}</p>
+                {% if block.settings.review_content != blank %}
+                  <div class="review_container" style="background-color: {{ block.settings.background }};">
+                    <div class="review-title">{{ block.settings.title }}</div>
+                    <div class="review-icon-and-text">
+                      <img
+                        src="{{ block.settings.star_icon | image_url : width:150 , height: 28 }}"
+                        height="28"
+                        width="150"
+                      >
+                      <p class="review-content">{{ block.settings.review_content }}</p>
+                    </div>
                   </div>
-                </div>
+                {% endif %}
               </div>
             {% when 'badge' %}
               <div
