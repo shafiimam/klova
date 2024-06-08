@@ -1,0 +1,179 @@
+<section id="{{ section.id }}">
+  <div class="page-width">
+    <div class="faq-v2__content">
+      <div class="faq-v2__content--text">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'title' %}
+              <h2 class="title" {{ block.shopify_attributes }}>{{ block.settings.title }}</h2>
+            {% when 'badge' %}
+              <div
+                class="badge-content"
+                style="background-color: {{ block.settings.background }};"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.text }}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="faq-v2__content--faq">
+        <div class="accordion">
+          <ul class="accordion__items">
+            {% for block in section.blocks %}
+              {% if block.type == 'FAQ' %}
+                {% if block.settings.question != blank %}
+                  <li class="accordion__item" {{ block.shopify_attributes }}>
+                    <button class="accordion__button">{{ block.settings.question }}</button>
+                    <div class="accordion__text">
+                      <div class="accordion__inside">
+                        <p>{{ block.settings.answer }}</p>
+                      </div>
+                    </div>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #{{ section.id }} .page-width{
+    background-image: {{ section.settings.background  }};
+    padding: 100px 120px;
+  }
+  .faq-v2__content--text{
+    display:flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .faq-v2__content--text .badge-content{
+    color: #FFF;
+    text-align: center;
+    font-family: "Bergen Sans";
+    font-size: 36.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 132.414% */
+    text-transform: uppercase;
+    border-radius: 40px;
+  }
+  .faq-v2__content--text .title {
+    color: #000;
+    text-align: center;
+    font-family: "Bergen Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48.8px; /* 187.692% */
+    margin:0;
+  }
+  .faq-v2__content--faq {
+    margin-top: 60px;
+  }
+
+  .faq-v2__content--faq .accordion__items{
+    display: flex;
+
+    gap: 20px;
+  }
+
+  .faq-v2__content--faq .accordion__item{
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #EBE9F2;
+  }
+  .faq-v2__content--faq ul.accordion__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .accordion__items .accordion__item::before{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #62519D;
+    border-radius: 20px;
+  }
+
+  .faq-v2__content--faq .accordion__button{
+    margin: 0;
+    color: #62519D;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    text-transform: unset;
+  }
+  .faq-v2__content--faq .accordion__inside{
+    margin-top: 10px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "FAQ v2",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Default Title"
+        }
+      ]
+    },
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Badge Text",
+          "default": "Default Badge Text"
+        },
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Background"
+        }
+      ]
+    },
+    {
+      "type": "FAQ",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "question",
+          "label": "Question",
+          "default": "<p>Default Question</p>"
+        },
+        {
+          "type": "text",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Default Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ v2"
+    }
+  ]
+}
+{% endschema %}
