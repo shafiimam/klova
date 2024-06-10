@@ -82,21 +82,23 @@
     gap: 20px;
   }
 
-  .faq-v2__content--faq .accordion__item{
-    padding: 20px;
+  #{{ section.id }} .faq-v2__content--faq .accordion__item{
     border-radius: 20px;
-    border: 2px solid #EBE9F2;
+    border: 2px solid #EBE9F2 !important;
+    margin: 0 !important;
+    padding: 20px;
+    gap: 0 !important;
   }
   .faq-v2__content--faq ul.accordion__items {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
-  .accordion__items .accordion__item::before{
+  #{{ section.id }} .accordion__items .accordion__item::before{
     content: "";
     position: relative;
-    top: 0;
-    left: 0;
+    top: 17px;
+    left: -25px;
     width: 8px;
     height: 8px;
     background: #62519D;
@@ -104,7 +106,7 @@
   }
 
   .faq-v2__content--faq .accordion__button{
-    margin: 0;
+    margin: 0 0 5px 0;
     color: #62519D;
     font-family: Montserrat;
     font-size: 18px;
@@ -114,6 +116,16 @@
   }
   .faq-v2__content--faq .accordion__inside{
     margin-top: 10px;
+  }
+
+  @media (max-width: 900px) {
+    #{{ section.id }} .page-width{
+      padding: 40px 20px;
+    }
+    .faq-v2__content--faq .accordion__button{
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 </style>
 

@@ -251,7 +251,7 @@
         "review_card_6dEi6G": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/05.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
             "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
             "reviewer_name": "Dr. Sydne Ford",
             "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
@@ -262,7 +262,7 @@
         "review_card_HGd63i": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/08.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
             "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
             "reviewer_name": "Brandon T.",
             "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
@@ -273,7 +273,7 @@
         "review_card_JyykWT": {
           "type": "review_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/04.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
             "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
             "reviewer_name": "Heather T.",
             "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
@@ -289,6 +289,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
+        "show_reviewer_image": true,
         "review_count": "5209",
         "divider": false
       }
@@ -364,7 +365,7 @@
         "image_GcLfM9"
       ],
       "custom_css": [
-        ".hero--padded{padding: 0;}"
+        ".hero--padded {padding: 0;}"
       ],
       "settings": {
         "full_width": false,

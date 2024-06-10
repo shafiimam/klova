@@ -4399,6 +4399,10 @@ html.category-open .site-header .site-header__element {
 @media screen and (max-width: 767px) {
   .sleep-chart__title {
     margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.36px;
   }
 }
 @media screen and (max-width: 1023px) {

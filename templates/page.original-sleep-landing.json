@@ -2,11 +2,513 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_with_header_ibVAy8": {
+      "type": "hero-with-header",
+      "blocks": {
+        "badge_GXK4tF": {
+          "type": "badge",
+          "settings": {
+            "text": "FREE SHIPPING   |   30-DAY MONEY BACK GUARANTEE",
+            "background": "#625FA2"
+          }
+        },
+        "title_ixDUPj": {
+          "type": "title",
+          "settings": {
+            "title": "Effortlessly Drift Into Sleep The Natural Way"
+          }
+        },
+        "subtitle_CFrUPg": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Sleep Promoting Patches"
+          }
+        },
+        "sales_point_4KUJgq": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/tick-icon.png",
+            "sales_point1": "Naturally Helps You Get to Sleep Faster",
+            "sales_point2": "Sealed Patches Last Up to 8 Hours",
+            "sales_point3": "28 Patches Per Pack",
+            "sales_point4": "Easy To Use - Directly Apply To Skin"
+          }
+        },
+        "button_with_review_tAwcD9": {
+          "type": "button_with_review",
+          "settings": {
+            "background": "#FFFFFF",
+            "button_text": "Get It Now!",
+            "button_link": "#subscribe",
+            "title": "<p>Our customers rate us as <strong>Excellent</strong></p>",
+            "star_icon": "shopify://shop_images/star-icon.png",
+            "review_content": "<p><strong>Reviews (1273)</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "badge_GXK4tF",
+        "title_ixDUPj",
+        "subtitle_CFrUPg",
+        "sales_point_4KUJgq",
+        "button_with_review_tAwcD9"
+      ],
       "settings": {
+        "hide_header": true,
+        "header_logo": "shopify://shop_images/klova_logo.png",
+        "header_btn_link": "#subscribe",
+        "header_btn_text": "Get It Now",
+        "hero_image": "shopify://shop_images/Group_13631.png",
+        "hero_background_image_desktop": "shopify://shop_images/Hero_Section.png",
+        "hero_background_image_mobile": "shopify://shop_images/Hero_section_-_mobile.png"
+      }
+    },
+    "two_column_7NEEbB": {
+      "type": "two-column",
+      "blocks": {
+        "title_HfHNqF": {
+          "type": "title",
+          "settings": {
+            "title": "100% NATURAL INGREDIENTS & CHEMICAL-FREE",
+            "title_icon": "shopify://shop_images/Group_13630.png"
+          }
+        },
+        "subtitle_URpDg6": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Our Sleep Patches are crafted using a unique blend of essential oils to help you achieve restful sleep. These patches are designed to soothe your nervous system, relax your mind, and promote a sense of calm."
+          }
+        },
+        "sales_point_Vt3WyA": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/tick-icon.png",
+            "num_column_grid": 2,
+            "sales_point1": "Melatonin",
+            "sales_point2": "Lavender Oil",
+            "sales_point3": "Valerian",
+            "sales_point4": "Passion Flower"
+          }
+        },
+        "subtitle_yTHz7t": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "These carefully selected natural ingredients work together to support your body’s natural sleep processes, ensuring a safe and effective solution for better sleep."
+          }
+        }
+      },
+      "block_order": [
+        "title_HfHNqF",
+        "subtitle_URpDg6",
+        "sales_point_Vt3WyA",
+        "subtitle_yTHz7t"
+      ],
+      "custom_css": [
+        ".title-block-container img {width: 143px; height: 120px;}"
+      ],
+      "settings": {
+        "content_width": 60,
+        "header_btn_text": "",
+        "image_direction": "right",
+        "hero_image": "shopify://shop_images/Frame_14139_cb2981fa-73a5-402e-b106-0ba97e03610d.png"
+      }
+    },
+    "two_column_QMcmrF": {
+      "type": "two-column",
+      "blocks": {
+        "title_AecD6D": {
+          "type": "title",
+          "settings": {
+            "title": "SCIENCE-BACKED FORMULA FOR BETTER SLEEP"
+          }
+        },
+        "subtitle_ic8btE": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Our Klova Sleep Patch harnesses the power of natural ingredients like Melatonin and Magnesium to soothe your nervous system and help you quickly relax into deep sleep."
+          }
+        },
+        "subtitle_yUe7ic": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "This patch promotes the kind of restorative REM sleep that your body needs to wake up feeling refreshed and energized. Wake up ready to tackle your day with improved focus and a calm, relaxed mind."
+          }
+        },
+        "sales_point_iGNHRF": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/tick-icon.png",
+            "num_column_grid": 1,
+            "sales_point1": "Improves sleep issues like insomnia",
+            "sales_point2": "Reduces stress, anxiety, and fatigue",
+            "sales_point3": "Encourages deeper, healthier REM sleep",
+            "sales_point4": ""
+          }
+        },
+        "subtitle_j4aqWq": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Experience the benefits of a scientifically formulated sleep aid designed for better rest and overall well-being."
+          }
+        }
+      },
+      "block_order": [
+        "title_AecD6D",
+        "subtitle_ic8btE",
+        "subtitle_yUe7ic",
+        "sales_point_iGNHRF",
+        "subtitle_j4aqWq"
+      ],
+      "settings": {
+        "content_width": 50,
+        "header_btn_text": "",
+        "image_direction": "left",
+        "hero_image": "shopify://shop_images/tested.png"
+      }
+    },
+    "faq_v2_JewFXe": {
+      "type": "faq-v2",
+      "blocks": {
+        "title_mCr6GA": {
+          "type": "title",
+          "settings": {
+            "title": "What"
+          }
+        },
+        "badge_36Fc9N": {
+          "type": "badge",
+          "settings": {
+            "text": "Sleeping ISSUES",
+            "background": "#625FA2"
+          }
+        },
+        "title_jQjQjp": {
+          "type": "title",
+          "settings": {
+            "title": "are you facing?"
+          }
+        },
+        "faq_KnEGMV": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I struggle to<strong> fall asleep quickly</strong></p>",
+            "answer": "The Klova Sleep Patch is designed to help individuals who have difficulty falling asleep quickly by leveraging a blend of natural ingredients like melatonin, magnesium, and calming essential oils such as lavender and chamomile. Melatonin, a hormone naturally produced by the pineal gland, signals to your body that it’s time to wind down, helping to regulate your sleep-wake cycle. When applied, the patch releases these ingredients gradually, which helps you relax and fall asleep faster. Additionally, the soothing scents of lavender and chamomile work to reduce anxiety and create a calming environment, making it easier for your mind to transition into a restful state. This combination ensures that you not only fall asleep quickly but also have a more peaceful and undisturbed night’s sleep."
+          }
+        },
+        "faq_y4BhYF": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I often <strong>wake up</strong> during the night</p>",
+            "answer": "Waking up frequently during the night can disrupt your sleep cycle and leave you feeling groggy and unrefreshed in the morning. The Klova Sleep Patch addresses this issue by providing a steady release of sleep-enhancing ingredients throughout the night. Melatonin helps regulate your sleep cycle, ensuring you stay asleep for longer periods. The calming effects of magnesium and essential oils such as vetiver and valerian root work together to maintain a deep, restorative sleep. By applying the patch before bedtime, you can experience fewer awakenings and enjoy a more consistent and uninterrupted sleep, leading to better overall sleep quality and improved daytime alertness."
+          }
+        },
+        "faq_zWQUTC": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I have <strong>difficulty staying asleep</strong></p>",
+            "answer": "Difficulty staying asleep can be caused by various factors, including stress, anxiety, or an overactive mind. The Klova Sleep Patch is formulated to help you maintain a deep and restful sleep by combining ingredients that promote relaxation and reduce nighttime awakenings. Melatonin supports your body’s natural sleep-wake cycle, while magnesium helps to relax your muscles and calm your nervous system. Essential oils like sandalwood and bergamot create a tranquil environment that encourages continuous sleep. The patch’s slow-release technology ensures that these ingredients are delivered consistently throughout the night, helping you stay asleep and wake up feeling more refreshed and rejuvenated."
+          }
+        },
+        "faq_7zqc8L": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I feel <strong>anxious and stressed, </strong>making it hard to sleep</p>",
+            "answer": "Anxiety and stress are common barriers to achieving restful sleep. The Klova Sleep Patch is designed to help alleviate these issues by incorporating natural ingredients known for their calming properties. The patch contains lavender and chamomile essential oils, which have been shown to reduce anxiety and promote relaxation. Additionally, the inclusion of magnesium helps to ease muscle tension and soothe the nervous system. By applying the patch before bed, you can create a calming pre-sleep routine that helps to quiet your mind and reduce stress levels, making it easier to fall asleep and stay asleep throughout the night."
+          }
+        },
+        "faq_ixEP6n": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I wake up f<strong>eeling tired and unrefreshed</strong></p>",
+            "answer": "Waking up feeling tired and unrefreshed can be a sign of poor sleep quality. The Klova Sleep Patch helps improve sleep quality by promoting deeper and more restorative sleep. Melatonin in the patch helps to regulate your sleep cycle, ensuring you spend more time in the deep, restorative stages of sleep. The calming effects of magnesium and essential oils like lavender and valerian root help to relax your body and mind, allowing for a more restful sleep. By using the patch, you can wake up feeling more refreshed, energized, and ready to take on the day."
+          }
+        },
+        "faq_wBEJhm": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I need a solution for <strong>jet lag when traveling</strong></p>",
+            "answer": "Jet lag can significantly disrupt your sleep patterns, making it difficult to adjust to new time zones. The Klova Sleep Patch is an effective solution for managing jet lag by helping to regulate your sleep-wake cycle. Melatonin, a key ingredient in the patch, is particularly useful for resetting your internal clock, allowing you to adapt more quickly to new time zones. The calming effects of essential oils like lavender and chamomile help to reduce stress and promote relaxation, making it easier to fall asleep and stay asleep in unfamiliar environments. By using the patch, you can minimize the impact of jet lag and enjoy more restful sleep while traveling."
+          }
+        },
+        "faq_JQwgtz": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I experience <strong>insomnia </strong>and want a natural remedy</p>",
+            "answer": "Insomnia can be a challenging condition to manage, but the Klova Sleep Patch offers a natural remedy to help you achieve better sleep. The patch contains melatonin, which helps to regulate your sleep cycle and signal to your body that it’s time to sleep. Additionally, the inclusion of magnesium and calming essential oils like lavender and valerian root helps to relax your muscles and calm your mind, making it easier to fall asleep and stay asleep. By using the patch, you can avoid the side effects associated with pharmaceutical sleep aids and enjoy a more natural and holistic approach to managing insomnia."
+          }
+        },
+        "faq_kdKPx8": {
+          "type": "FAQ",
+          "settings": {
+            "question": "<p>I suffer from<strong> sleep disruptions </strong>due to health conditions</p>",
+            "answer": "Health conditions such as chronic pain, anxiety, or hormonal imbalances can lead to sleep disruptions. The Klova Sleep Patch is designed to help mitigate these disruptions by providing a steady release of sleep-enhancing ingredients. Melatonin helps to regulate your sleep cycle, while magnesium and essential oils like lavender and chamomile work to reduce pain, anxiety, and stress. The patch’s natural ingredients are gentle on the body and provide a safe and effective way to improve sleep quality. By incorporating the patch into your nightly routine, you can experience fewer sleep disruptions and enjoy more restorative sleep."
+          }
+        }
+      },
+      "block_order": [
+        "title_mCr6GA",
+        "badge_36Fc9N",
+        "title_jQjQjp",
+        "faq_KnEGMV",
+        "faq_y4BhYF",
+        "faq_zWQUTC",
+        "faq_7zqc8L",
+        "faq_ixEP6n",
+        "faq_wBEJhm",
+        "faq_JQwgtz",
+        "faq_kdKPx8"
+      ],
+      "settings": {}
+    },
+    "two_column_yB8enn": {
+      "type": "two-column",
+      "blocks": {
+        "title_fmjyqk": {
+          "type": "title",
+          "settings": {
+            "title": "PROMOTE RESTFUL SLEEP WITH EASE!"
+          }
+        },
+        "subtitle_N9A4G4": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Apply the Klova Sleep Patch to your skin to help settle your mind and encourage sleepiness."
+          }
+        },
+        "sales_point_mdVVBH": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify://shop_images/tick-icon.png",
+            "num_column_grid": 1,
+            "sales_point1": "Contains 28 Patches: One-month supply for consistent sleep support.",
+            "sales_point2": "Ziplock Resealable Bag: Keeps patches fresh and effective.",
+            "sales_point3": "Long-Lasting: Each patch works for up to 8 hours.",
+            "sales_point4": "Simple Application: Easy to use; apply directly to your skin."
+          }
+        },
+        "subtitle_LcFTwy": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Made with 100% natural ingredients and gentle adhesive."
+          }
+        },
+        "button_with_review_4zfqw8": {
+          "type": "button_with_review",
+          "settings": {
+            "background": "",
+            "button_text": "GET YOUR SLEEP PATCH",
+            "button_link": "",
+            "title": "",
+            "review_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_fmjyqk",
+        "subtitle_N9A4G4",
+        "sales_point_mdVVBH",
+        "subtitle_LcFTwy",
+        "button_with_review_4zfqw8"
+      ],
+      "settings": {
+        "content_width": 50,
+        "header_btn_text": "",
+        "image_direction": "left",
+        "hero_image": "shopify://shop_images/image_156.png"
+      }
+    },
+    "slideshow_image_9rRWFW": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_BEwgt7": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/Frame_1239330479_22351052-0358-44bb-958c-109ac0941605.png",
+            "image_mobile": "shopify://shop_images/Frame_14233_00dc5b33-1eb5-4c3e-9ae7-7e33be95f125.png"
+          }
+        }
+      },
+      "block_order": ["image_BEwgt7"],
+      "custom_css": [
+        ".sleep-chart__title {max-width: 100%; margin-top: 60px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "KLOVA SLEEP BUNDLE VS. OTHER SLEEP REMEDIES",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "carousel_videos_MBqDbD": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_RpJMXx": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560840637"
+          }
+        },
+        "video_fjGgU8": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560842790"
+          }
+        },
+        "video_8qKWF8": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560859492"
+          }
+        },
+        "video_NXEGeV": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560861088"
+          }
+        },
+        "video_mymVJq": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://player.vimeo.com/video/560855080"
+          }
+        }
+      },
+      "block_order": [
+        "video_RpJMXx",
+        "video_fjGgU8",
+        "video_8qKWF8",
+        "video_NXEGeV",
+        "video_mymVJq"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Why People Love Sleep Patch",
+        "rte": "",
+        "overlay": "#faf9fb"
+      }
+    },
+    "new_faq_gfMQpH": {
+      "type": "new-faq",
+      "blocks": {
+        "faq_96Unwz": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How does Sleep Patch work?",
+            "answer": "The Klova Sleep Patch utilizes a carefully formulated blend of natural ingredients like melatonin, magnesium, and essential oils to promote restful sleep. Designed to calm the nervous system and relax the mind, it creates an overall sense of tranquility.When applied to the skin, the patch gradually releases these ingredients throughout the night. Melatonin regulates your sleep-wake cycle, while essential oils such as lavender and chamomile help soothe and reduce anxiety. Magnesium further supports muscle relaxation and overall calmness.This slow-release technology ensures continuous effectiveness, providing up to 8 hours of sleep support. Within 30 minutes, users typically begin to feel the calming effects, though individual experiences may vary. The Klova Sleep Patch offers a natural, non-invasive solution to improve sleep quality, helping you wake up refreshed and rejuvenated."
+          }
+        },
+        "faq_FD8LKd": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What Does Sleep Patch Smell Like?",
+            "answer": "Our Klova Sleep Patches are crafted using a blend of scientifically researched natural ingredients to help you wind down for a restful night's sleep. These patches have a soothing scent derived from ingredients like melatonin, magnesium, and calming essential oils such as lavender and chamomile.The pleasant aroma and calming effects of these natural components create a relaxing bedtime environment, promoting deep and restorative sleep for a refreshing start to your day."
+          }
+        },
+        "faq_wKdRNa": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What Are The Ingredients In The Sleep Patch?",
+            "answer": "The Klova Sleep Patch is formulated with a carefully selected blend of natural ingredients. Key components include melatonin, magnesium, and essential oils such as lavender and chamomile. These ingredients work synergistically to promote relaxation and improve sleep quality. The soothing properties of lavender and chamomile help to calm the mind, while melatonin and magnesium support the body’s natural sleep-wake cycle, making the Klova Sleep Patch an effective solution for achieving a restful night's sleep."
+          }
+        }
+      },
+      "block_order": ["faq_96Unwz", "faq_FD8LKd", "faq_wKdRNa"],
+      "settings": {
+        "heading": "Questions?",
+        "sub_heading": "We’re here to help!",
+        "background": ""
+      }
+    },
+    "featured_product_UCEdbK": {
+      "type": "featured-product",
+      "blocks": {
+        "judge_me_reviews_preview_badge_homepage_FFbmWB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "sleep-patch"
+          }
+        },
+        "textarea_8NrE3D": {
+          "type": "textarea",
+          "settings": {
+            "un-text": "{{ section.settings.featured_product.metafields.add_meta.sub_two.value }}"
+          }
+        },
+        "description_PVz4Lz": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "bundle_btn_6LAx4a": {
+          "type": "bundle_btn",
+          "settings": {
+            "bundle_img": "shopify://shop_images/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify://shop_images/Frame_1000003955.png",
+            "bundle_data": "Build Your Own Bundle",
+            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
+            "bundle_btn": "BUILD YOUR BUNDLE",
+            "bundle_url": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_color_text": "",
+            "bundle_bg": "",
+            "bundle_btn_border": ""
+          }
+        },
+        "skio_plan_picker_cKknmn": {
+          "type": "skio-plan-picker",
+          "settings": {}
+        },
+        "quantity_selector_Vdi6qF": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_quantity": true,
+            "full_width_button": false,
+            "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
+            "surface_pickup_enable": false
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_homepage_FFbmWB",
+        "textarea_8NrE3D",
+        "description_PVz4Lz",
+        "bundle_btn_6LAx4a",
+        "skio_plan_picker_cKknmn",
+        "quantity_selector_Vdi6qF"
+      ],
+      "settings": {
+        "featured_product": "sleep-patch",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": false,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": false,
+        "product_video_style": "muted"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "hero_with_header_ibVAy8",
+    "two_column_7NEEbB",
+    "two_column_QMcmrF",
+    "faq_v2_JewFXe",
+    "two_column_yB8enn",
+    "slideshow_image_9rRWFW",
+    "carousel_videos_MBqDbD",
+    "new_faq_gfMQpH",
+    "featured_product_UCEdbK"
   ]
 }
