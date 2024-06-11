@@ -65,7 +65,7 @@
       </div>
       <div class="image-container">
         <img
-          src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
+          src="{{ section.settings.hero_image | img_url: 'master' }}"
           alt="patch-image"
           width="540"
           height="610"
@@ -76,7 +76,11 @@
 </section>
 <style>
   .header-hero-section{
-    background: url('{{bgDesktop}}');
+    {% if section.settings.show_plain_bg == true %}
+      background-color: {{ section.settings.plain_bg_color }};
+      {% else %}
+      background: url('{{bgDesktop}}');
+    {% endif %}
     background-size: cover;
     padding: 28px 80px;
     width: 100%;
@@ -217,7 +221,6 @@
   @media (max-width: 500px){
     .header-container{
       justify-content: center;
-      
     }
     .header-hero-section{
       background: url('{{ bgMobie }}');
@@ -305,6 +308,18 @@
       "type": "image_picker",
       "id": "hero_background_image_mobile",
       "label": "Background Image Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_plain_bg",
+      "label": "Show Plain Background",
+      "default": false
+    },
+    {
+      "type": "color_background",
+      "id": "plain_bg_color",
+      "label": "Plain Background Color",
+      "default": "#FFFFFF"
     }
   ],
   "blocks": [

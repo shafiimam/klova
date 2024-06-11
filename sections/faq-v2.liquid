@@ -101,13 +101,13 @@
     left: -25px;
     width: 8px;
     height: 8px;
-    background: #62519D;
+    background: {{ section.settings.color_background }};
     border-radius: 20px;
   }
 
   .faq-v2__content--faq .accordion__button{
     margin: 0 0 5px 0;
-    color: #62519D;
+    color: {{ section.settings.color_background }};
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -132,7 +132,14 @@
 {% schema %}
 {
   "name": "FAQ v2",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color_background",
+      "id": "color_background",
+      "label": "Block Color",
+      "default": "#62519D"
+    }
+  ],
   "blocks": [
     {
       "type": "title",

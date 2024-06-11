@@ -12,13 +12,13 @@
           "type": "badge",
           "settings": {
             "text": "FREE SHIPPING   |   30-DAY MONEY BACK GUARANTEE",
-            "background": "#625FA2"
+            "background": "#1E062C"
           }
         },
         "title_ixDUPj": {
           "type": "title",
           "settings": {
-            "title": "Effortlessly Drift Into Sleep The Natural Way"
+            "title": "EFFORTLESSLY DRIFT INTO SLEEP THE NATURAL WAY"
           }
         },
         "subtitle_CFrUPg": {
@@ -30,7 +30,7 @@
         "sales_point_4KUJgq": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/tick-icon.png",
+            "icon": "shopify://shop_images/tick-icon_412510b6-4868-41d3-a43f-4405e5887467.png",
             "sales_point1": "Naturally Helps You Get to Sleep Faster",
             "sales_point2": "Sealed Patches Last Up to 8 Hours",
             "sales_point3": "28 Patches Per Pack",
@@ -45,7 +45,7 @@
             "button_link": "#subscribe",
             "title": "<p>Our customers rate us as <strong>Excellent</strong></p>",
             "star_icon": "shopify://shop_images/star-icon.png",
-            "review_content": "<p><strong>Reviews (1273)</strong></p>"
+            "review_content": "<p><strong>Reviews (1476)</strong></p>"
           }
         }
       },
@@ -56,14 +56,17 @@
         "sales_point_4KUJgq",
         "button_with_review_tAwcD9"
       ],
+      "custom_css": [],
       "settings": {
         "hide_header": true,
         "header_logo": "shopify://shop_images/klova_logo.png",
         "header_btn_link": "#subscribe",
         "header_btn_text": "Get It Now",
-        "hero_image": "shopify://shop_images/Group_13631.png",
+        "hero_image": "shopify://shop_images/Hero_Section_a391c5ce-2d50-4c9f-970e-3b727eba1505.png",
         "hero_background_image_desktop": "shopify://shop_images/Hero_Section.png",
-        "hero_background_image_mobile": "shopify://shop_images/Hero_section_-_mobile.png"
+        "hero_background_image_mobile": "shopify://shop_images/Hero_section_-_mobile.png",
+        "show_plain_bg": true,
+        "plain_bg_color": "#dff2f8"
       }
     },
     "two_column_7NEEbB": {
@@ -85,7 +88,7 @@
         "sales_point_Vt3WyA": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify://shop_images/tick-icon.png",
+            "icon": "shopify://shop_images/tick-icon_412510b6-4868-41d3-a43f-4405e5887467.png",
             "num_column_grid": 2,
             "sales_point1": "Melatonin",
             "sales_point2": "Lavender Oil",
@@ -166,7 +169,37 @@
         "content_width": 50,
         "header_btn_text": "",
         "image_direction": "left",
-        "hero_image": "shopify://shop_images/tested.png"
+        "hero_image": "shopify://shop_images/Frame_14139_1d231241-8845-4560-92a0-d6083836dd4b.png"
+      }
+    },
+    "two_column_BCeeh4": {
+      "type": "two-column",
+      "blocks": {
+        "title_bHbt8M": {
+          "type": "title",
+          "settings": {
+            "title": "CUSTOMIZED FOR YOUR UNIQUE NEEDS"
+          }
+        },
+        "subtitle_PJqeVA": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "With the <strong>Klova Bundle</strong>, you can discover the perfect sleep solution tailored to your preferences. Whether you prefer the Original, Extra-Strength, or Melatonin-Free option, this bundle allows you to test each one and find what works best for you."
+          }
+        },
+        "subtitle_A38MEt": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "If you’re sensitive to melatonin or seeking a stronger formula, this bundle provides the flexibility to choose the right patch for a restful night’s sleep. Enjoy the peace of mind knowing you have options that cater to your unique sleep needs."
+          }
+        }
+      },
+      "block_order": ["title_bHbt8M", "subtitle_PJqeVA", "subtitle_A38MEt"],
+      "settings": {
+        "content_width": 50,
+        "header_btn_text": "",
+        "image_direction": "right",
+        "hero_image": "shopify://shop_images/Frame_14139_7ea80b7a-4874-417f-a12f-b915c4fd566d.png"
       }
     },
     "faq_v2_JewFXe": {
@@ -182,7 +215,7 @@
           "type": "badge",
           "settings": {
             "text": "Sleeping ISSUES",
-            "background": "#625FA2"
+            "background": "#1E062C"
           }
         },
         "title_jQjQjp": {
@@ -261,7 +294,9 @@
         "faq_JQwgtz",
         "faq_kdKPx8"
       ],
-      "settings": {}
+      "settings": {
+        "color_background": "#1E062C"
+      }
     },
     "two_column_yB8enn": {
       "type": "two-column",
@@ -283,16 +318,22 @@
           "settings": {
             "icon": "shopify://shop_images/tick-icon.png",
             "num_column_grid": 1,
-            "sales_point1": "Contains 28 Patches: One-month supply for consistent sleep support.",
+            "sales_point1": "Contains 84 Patches: Three-month supply for consistent sleep support.",
             "sales_point2": "Ziplock Resealable Bag: Keeps patches fresh and effective.",
             "sales_point3": "Long-Lasting: Each patch works for up to 8 hours.",
-            "sales_point4": "Simple Application: Easy to use; apply directly to your skin."
+            "sales_point4": "Simple Application: Easy to use. Apply directly to your skin."
           }
         },
         "subtitle_LcFTwy": {
           "type": "subtitle",
           "settings": {
             "subtitle": "Made with 100% natural ingredients and gentle adhesive."
+          }
+        },
+        "subtitle_FX86Xg": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Improve your sleep quality and wake up refreshed. Join thousands who have benefited from our patches."
           }
         },
         "button_with_review_4zfqw8": {
@@ -311,13 +352,14 @@
         "subtitle_N9A4G4",
         "sales_point_mdVVBH",
         "subtitle_LcFTwy",
+        "subtitle_FX86Xg",
         "button_with_review_4zfqw8"
       ],
       "settings": {
         "content_width": 50,
         "header_btn_text": "",
         "image_direction": "left",
-        "hero_image": "shopify://shop_images/image_156.png"
+        "hero_image": "shopify://shop_images/image_156_187839d4-83b7-4b20-93a2-c78bfb2f164b.png"
       }
     },
     "slideshow_image_9rRWFW": {
@@ -507,7 +549,7 @@
         "judge_me_reviews_preview_badge_homepage_FFbmWB": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "sleep-patch"
+            "product": "try-them-all"
           }
         },
         "textarea_8NrE3D": {
@@ -549,6 +591,17 @@
             "direct_to_checkout": true,
             "surface_pickup_enable": false
           }
+        },
+        "sales_point_4pC7ib": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "FREE SHIPPING OVER $45",
+            "icon-two": "money",
+            "text-two": "MONEY-BACK GUARANTEE",
+            "icon-three": "health",
+            "text-three": "PHYSICIAN APPROVED"
+          }
         }
       },
       "block_order": [
@@ -558,10 +611,11 @@
         "description_PVz4Lz",
         "bundle_btn_6LAx4a",
         "skio_plan_picker_cKknmn",
-        "quantity_selector_Vdi6qF"
+        "quantity_selector_Vdi6qF",
+        "sales_point_4pC7ib"
       ],
       "settings": {
-        "featured_product": "sleep-patch",
+        "featured_product": "try-them-all",
         "divider": false,
         "sku_enable": false,
         "image_position": "left",
@@ -597,6 +651,7 @@
     "hero_with_header_ibVAy8",
     "two_column_7NEEbB",
     "two_column_QMcmrF",
+    "two_column_BCeeh4",
     "faq_v2_JewFXe",
     "two_column_yB8enn",
     "slideshow_image_9rRWFW",

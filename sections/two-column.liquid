@@ -8,10 +8,8 @@
       {% if section.settings.image_direction == 'left' %}
         <div class="image-container">
           <img
-            src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
+            src="{{ section.settings.hero_image | img_url: 'master' }}"
             alt="patch-image"
-            width="540"
-            height="610"
           >
         </div>
       {% endif %}
@@ -90,10 +88,8 @@
       {% if section.settings.image_direction == 'right' %}
         <div class="image-container">
           <img
-            src="{{ section.settings.hero_image | image_url: width: 540, height: 610 }}"
+            src="{{ section.settings.hero_image | img_url: 'master' }}"
             alt="patch-image"
-            width="540"
-            height="610"
           >
         </div>
       {% endif %}
