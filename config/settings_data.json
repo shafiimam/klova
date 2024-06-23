@@ -241,15 +241,24 @@
           },
           "announcement_bCg9Hp": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p>Hassle-free returns. 30-day postage paid returns<\/p>",
               "richtext_mobile": ""
+            }
+          },
+          "announcement_m7Ke93": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "<p>Hassle-free returns. 30-day postage paid returns<\/p>",
+              "richtext_mobile": "<p>Hassle-free returns. 30-day postage paid returns<\/p>"
             }
           }
         },
         "block_order": [
           "announcement_VBbnx6",
-          "announcement_bCg9Hp"
+          "announcement_bCg9Hp",
+          "announcement_m7Ke93"
         ],
         "custom_css": [
           ".toolbar,.announcement-slider > div,.announcement-slider__content {background-color: #c7e8f1;}"

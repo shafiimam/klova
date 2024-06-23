@@ -17,9 +17,9 @@
         "@media (max-width: 800px) {.call-to-action__button {display: flex; justify-content: center; }}"
       ],
       "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/Frame_1000003874.jpg",
-        "tablet_image": "shopify:\/\/shop_images\/hero_image_1.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Frame_1000003704_d848a404-427d-4f5d-99b7-338e12f3d141.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/advdertorial-hero.png",
+        "tablet_image": "shopify:\/\/shop_images\/advdertorial-hero-tablet.png",
+        "mobile_image": "shopify:\/\/shop_images\/advdertorial-hero-mobile.png",
         "heading": "The Ultimate Sleep Solution: The Klova Sleep Bundle",
         "subheading": "With over one-third of adults reporting that they usually get less than the recommended amount of sleep, the quest for a restful night has never been more critical.",
         "cta_link": "#subscribe",
@@ -61,7 +61,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Frame_14373.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_14373_4b19ce8e-0f09-4dbf-8733-341bf3c962a0.png",
             "image_width": 650,
             "title": "The Original Sleep Z Patch",
             "text": "<p>Offering more than just melatonin, this patch incorporates a comprehensive formula aimed at enhancing sleep quality and duration.<\/p>",
@@ -140,7 +140,7 @@
         "@media only screen and (max-width: 800px) {.feature-row__image {border-radius: 20px; } .feature-row__item {width: 100% !important; } .feature-row {flex-direction: column; margin: 0; background: none; } .feature-row__text--right {padding: 40px 20px; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/b9f7914f627bf272282209aee7c914bc.png",
+        "image": "shopify:\/\/shop_images\/Rectangle_339.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Backed by Science: The Proof Is in the Sleep",
@@ -189,7 +189,7 @@
         "@media only screen and (max-width: 800px) {.feature-row__image {border-radius: 20px; } .feature-row__item {width: 100% !important; } .feature-row {flex-direction: column; margin: 0; background: none; } .feature-row__text--left {padding: 40px 20px; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_339S.jpg",
+        "image": "shopify:\/\/shop_images\/advdertorial-section-1.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Join the Klova Sleep Revolution",
@@ -214,7 +214,7 @@
         "@media only screen and (max-width: 800px) {.feature-row__image {border-radius: 20px; } .feature-row {flex-direction: column; margin: 0; background: none; } .feature-row__item {width: 100% !important; } .feature-row__text--right {padding: 40px 20px; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_339ss.jpg",
+        "image": "shopify:\/\/shop_images\/advdertorial-section-2.png",
         "image_width": 700,
         "subtitle": "",
         "title": "Rest Reimagined: Experience the Klova Sleep Bundle",
@@ -365,13 +365,15 @@
     },
     "exit_intent_popup_Ffbk6r": {
       "type": "exit-intent-popup",
-      "disabled": true,
+      "custom_css": [
+        ".popup-content {max-width: 770px;}"
+      ],
       "settings": {
         "button_background_color": "#007bff",
         "button_text_color": "#ffffff",
         "button_text": "Click Me",
         "popup_background_color": "#ffffff",
-        "popup_html_content": "<div class=\"ex-popup-container bg-gr--blue-purple\">\n  <h2 class=\"text__title\">Wait! Don’t Miss Our Exclusive Sleep Sample Offer! <\/h2>\n  <p>Before you leave, grab our exclusive Sleep Sample Pack at no cost—simply cover shipping! This special pack includes\n    a variety of our best sleep patches to help you find your ideal sleep solution. Don’t miss out on this unique\n    opportunity to enhance your nights!<\/p>\n  <div class=\"popup-button-container\">\n    <div class=\"patch__button\">\n      <a class=\"c-button -primary -large\" href=\"#\">\n        Get the FREE Sample Pack\n      <\/a>\n    <\/div>\n  <\/div>\n<\/div>"
+        "popup_html_content": "<div class=\"ex-popup-container bg-gr--blue-purple\">\n  <h2 class=\"text__title\">Wait! Don’t Miss Our Exclusive Sample Offer! <\/h2>\n  <p>Before you leave, grab our exclusive ZNite™ Sleep Tapes Sample Pack at no cost—simply cover shipping!\n   Our mouth tapes ensure you breathe through your nose, reducing snoring and improving oxygen intake for a rejuvenating night's sleep.\nDon’t miss out on this unique\n    opportunity to enhance your nights!<\/p>\n  <div class=\"popup-button-container\">\n    <div class=\"patch__button\">\n      <a class=\"c-button -primary -large\" href=\"https:\/\/www.klova.com\/products\/znite-sleep-tapes-sample\">\n        Get the FREE Sample Pack\n      <\/a>\n    <\/div>\n  <\/div>\n<\/div>"
       }
     }
   },

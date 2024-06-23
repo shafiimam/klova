@@ -30,6 +30,55 @@
         "show_section_devider": false
       }
     },
+    "sales_point_column_LFGdtL": {
+      "type": "sales-point-column",
+      "blocks": {
+        "sales_point_wFnmr6": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/madeinusa.png",
+            "text": "<p>MADE IN USA<\/p>"
+          }
+        },
+        "sales_point_YwNf4r": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/drug-free.png",
+            "text": "<p>DRUG FREE<\/p>"
+          }
+        },
+        "sales_point_fWVxnK": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/money_back_cbdda9f7-4240-4982-8f13-d75951d66084.png",
+            "text": "<p>30 DAY MONEY-BACK GUARANTEE<\/p>"
+          }
+        },
+        "sales_point_dtgzxY": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/physicial_approved.png",
+            "text": "<p>PHYSICIAN APPROVED FORMULATIONS<\/p>"
+          }
+        },
+        "sales_point_iTqB8M": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NATURAL_INGREDIENTS.png",
+            "text": "<p>NATURAL INGREDIENTS<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_wFnmr6",
+        "sales_point_YwNf4r",
+        "sales_point_fWVxnK",
+        "sales_point_dtgzxY",
+        "sales_point_iTqB8M"
+      ],
+      "settings": {
+      }
+    },
     "logo_list_with_cta_bh7h4h": {
       "type": "logo-list-with-cta",
       "blocks": {
@@ -392,7 +441,7 @@
         "subHeading": "<p>Take  advantage of our free 8-day trial and discover the benefits of Klova’s Sleep Patch. If you don’t love it, there’s no obligation to continue.<\/p>",
         "image": "shopify:\/\/shop_images\/Group_13634.png",
         "button_text": "Get Your Subscription!",
-        "button_url": "https:\/\/www.klova.com\/products\/sleep-patch-free-trial",
+        "button_url": "#subscribe",
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "right",
@@ -412,7 +461,7 @@
         "subHeading": "<p>Don’t miss out on this exclusive offer. Click below to get your free 8-day trial of the Klova Sleep Patch and start sleeping better tonight.<\/p>",
         "image": "shopify:\/\/shop_images\/Group_13635.png",
         "button_text": "Get Your Subscription!",
-        "button_url": "https:\/\/www.klova.com\/products\/sleep-patch-free-trial",
+        "button_url": "#subscribe",
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "left",
@@ -429,7 +478,7 @@
             "image": "shopify:\/\/shop_images\/Frame_1000003704_58d126c6-18ef-48d7-8b4f-0bcd466fd5af.png",
             "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
             "reviewer_name": "Dr. Sydne Ford",
-            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
+            "product_image": "shopify:\/\/shop_images\/01SleepZPatch-A.jpg",
             "product": "sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -440,7 +489,7 @@
             "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
             "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
             "reviewer_name": "Brandon T.",
-            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
+            "product_image": "shopify:\/\/shop_images\/01SleepZPatch-A.jpg",
             "product": "sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -451,7 +500,7 @@
             "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
             "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
             "reviewer_name": "Heather T.",
-            "product_image": "shopify:\/\/shop_images\/sleep_zpatch_2.png",
+            "product_image": "shopify:\/\/shop_images\/01SleepZPatch-A.jpg",
             "product": "sleep-patch",
             "cta_content": "Subscribe and save"
           }
@@ -466,7 +515,7 @@
         "title": "What Our Customers Say",
         "show_reviewer_image": true,
         "review_count": "5209",
-        "divider": false
+        "divider": true
       }
     },
     "new_faq_HyWTqD": {
@@ -509,6 +558,7 @@
   "order": [
     "main",
     "image_with_text_cta_d6LtXg",
+    "sales_point_column_LFGdtL",
     "logo_list_with_cta_bh7h4h",
     "image_with_sales_point_fA9Ca4",
     "logo_list_with_cta_UJcxWL",

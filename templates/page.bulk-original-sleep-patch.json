@@ -1,0 +1,477 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "image_with_text_cta_wbXgfK": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".image-with-text-cta__content .cta-button {background: #1e062c;}",
+        ".image-with-text-cta__content {padding-right: 0; padding-top: 0; padding-bottom: 0;}",
+        ".image-with-text-cta__content--image {position: relative; left: 20px;}",
+        ".image-with-text-cta__container {padding-top: 50px;}"
+      ],
+      "settings": {
+        "heading": "Get Your Best Sleep Ever with Klova’s Original Sleep Patch!",
+        "subHeading": "",
+        "image": "shopify:\/\/shop_images\/original-patch-hero_4aea343e-5549-4876-9f86-3be87a9155d8.jpg",
+        "button_text": "Get Original Sleep Patch!",
+        "button_url": "#subscribe",
+        "button_text_2": "Button Text",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "#c8c2dd",
+        "show_section_devider": false
+      }
+    },
+    "image_with_sales_point_z6qtFq": {
+      "type": "image-with-sales-point",
+      "blocks": {
+        "sales_point_makXxD": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/tick-icon.png",
+            "title": "Wake Up Refreshed and Energized",
+            "subtitle": "Thanks to the powerful blend of natural ingredients like melatonin, ashwagandha, and valerian root, our Klova Sleep Patch helps you fall asleep faster and stay asleep longer. Experience deep, restorative sleep without the grogginess."
+          }
+        },
+        "sales_point_cdAzkH": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/tick-icon.png",
+            "title": "Natural Ingredients for Better Sleep",
+            "subtitle": "Our expertly formulated patch delivers continuous absorption of sleep-enhancing ingredients throughout the night, promoting relaxation and reducing nighttime awakenings."
+          }
+        },
+        "sales_point_wG8UQz": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/tick-icon.png",
+            "title": "Easy to Use and Effective",
+            "subtitle": "Thanks to the powerful blend of natural ingredients like melatonin, ashwagandha, and valerian root, our Klova Sleep Patch helps you fall asleep faster and stay asleep longer. Experience deep, restorative sleep without the grogginess."
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_makXxD",
+        "sales_point_cdAzkH",
+        "sales_point_wG8UQz"
+      ],
+      "custom_css": [
+        ".icon-container {flex-basis: 28px; margin-top: 5px;}",
+        ".icon-with-text .icon__image {height: 28px; width: 28px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC05493_1.jpg",
+        "title": "",
+        "link": "",
+        "button_label": "",
+        "aligment": "right"
+      }
+    },
+    "carousel_videos_ARgqAp": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_VXdjnE": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560840637"
+          }
+        },
+        "video_TNjVAh": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560842790"
+          }
+        },
+        "video_dar83i": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560859492"
+          }
+        },
+        "video_FB7in4": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560861088"
+          }
+        },
+        "video_K46gDL": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560855080"
+          }
+        }
+      },
+      "block_order": [
+        "video_VXdjnE",
+        "video_TNjVAh",
+        "video_dar83i",
+        "video_FB7in4",
+        "video_K46gDL"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Over 25,000 People Have Transformed Their Sleep with Klova’s Original Sleep Patch!",
+        "rte": "",
+        "overlay": "#faf9fb"
+      }
+    },
+    "rich_text_Ve3pWa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_paYDEN": {
+          "type": "heading",
+          "settings": {
+            "title": "The Perfect Blend of Natural Ingredients for Optimal Sleep"
+          }
+        }
+      },
+      "block_order": [
+        "heading_paYDEN"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "image_with_text_cta_pyyKFx": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".cta-button {background: #1e062c;}"
+      ],
+      "settings": {
+        "heading": "",
+        "subHeading": "<p>Our Klova Sleep Patch is infused with a unique mix of melatonin, ashwagandha, valerian root, hops, and other natural ingredients designed to promote deep, restful sleep.<\/p><p>This powerful formula works synergistically to help you fall asleep faster, stay asleep longer, and wake up refreshed without the grogginess associated with other sleep aids.<\/p><p>Plus, our patches are manufactured in an FDA-registered facility in the US, ensuring you receive a premium quality product every time.<\/p><p>Try Klova's Original Sleep Patch today and experience the best sleep of your life!<\/p>",
+        "image": "shopify:\/\/shop_images\/Rectangle_334.jpg",
+        "button_text": "Try Original Sleep Patch",
+        "button_url": "#buy-now",
+        "button_text_2": "Button Text",
+        "button_url_2": "",
+        "alignment": "left",
+        "background_color": "#ffffff",
+        "show_section_devider": false
+      }
+    },
+    "logo_list_Q3U9aP": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_LnQTrh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gmp.png",
+            "link": ""
+          }
+        },
+        "logo_image_ztJjqt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fda-approved.png",
+            "link": ""
+          }
+        },
+        "logo_image_YfdjRx": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/natural.png",
+            "link": ""
+          }
+        },
+        "logo_image_k6PmF7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/made-in-uwq.png",
+            "link": ""
+          }
+        },
+        "logo_image_rBzUPQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gmo-free.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_LnQTrh",
+        "logo_image_ztJjqt",
+        "logo_image_YfdjRx",
+        "logo_image_k6PmF7",
+        "logo_image_rBzUPQ"
+      ],
+      "custom_css": [
+        ".new-grid {justify-content: center;}",
+        "@media (max-width: 900px) {.grid-item {flex: 0 0 40%; } .logo-bar__item {padding: 0; margin-bottom: 10px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false
+      }
+    },
+    "bulk_product_column_mPkHjz": {
+      "type": "bulk-product-column",
+      "blocks": {
+        "product_rJR9Bh": {
+          "type": "product",
+          "settings": {
+            "title": "1x Pack",
+            "subtitle": "30 Day Supply",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "",
+            "price": "$29.97",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1",
+            "total_price": "Total $29.97",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "*Free Shipping Over $50"
+          }
+        },
+        "product_V7RJ3e": {
+          "type": "product",
+          "settings": {
+            "title": "6x Packs",
+            "subtitle": "30 Day Supply",
+            "product_image": "shopify:\/\/shop_images\/Group_13640.png",
+            "product": "",
+            "price": "$16.65",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
+            "total_price": "Total $79.97",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "*Free Shipping Over $50"
+          }
+        },
+        "product_EtVwF9": {
+          "type": "product",
+          "settings": {
+            "title": "3x Packs",
+            "subtitle": "30 Day Supply",
+            "product_image": "shopify:\/\/shop_images\/Group_13661.png",
+            "product": "",
+            "price": "$26.65",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
+            "total_price": "Total $49.97",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "*Free Shipping Over $50"
+          }
+        }
+      },
+      "block_order": [
+        "product_rJR9Bh",
+        "product_V7RJ3e",
+        "product_EtVwF9"
+      ],
+      "settings": {
+        "title": "Limited Stock Available - Get Your Klova Sleep Patch Now!",
+        "accent_color": "#62519D",
+        "custom_html": "<span id=\"buy-now\"><\/span>"
+      }
+    },
+    "rich_text_bFUApi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JBbAbq": {
+          "type": "heading",
+          "settings": {
+            "title": "Fall Asleep The Natural Way Without Drugs Or Over The Counter Sleep Aids"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JBbAbq"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "image_with_text_cta_VtxqUp": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".cta-button {border-radius: 6px; background: #1e062c;}"
+      ],
+      "settings": {
+        "heading": "",
+        "subHeading": "<p>Many people turn to prescription drugs or over-the-counter sleep aids, which often come with unwanted side effects like dizziness, dependency, daytime drowsiness, and cognitive impairment. <\/p><p>These solutions can leave you feeling groggy and less alert during the day.<\/p><p>With Klova's Original Sleep Patch, you get a natural, drug-free alternative that promotes restful sleep without the side effects.<\/p><p>Our patch uses a blend of natural ingredients like melatonin, ashwagandha, and valerian root, ensuring you wake up refreshed and ready to take on the day. <\/p><p>Say goodbye to the drugged-up feeling and hello to a healthier, more natural sleep solution.<\/p>",
+        "image": "shopify:\/\/shop_images\/girl-on-bed.png",
+        "button_text": "Try Original Sleep Patch",
+        "button_url": "#buy-now",
+        "button_text_2": "Button Text",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "#ffffff",
+        "show_section_devider": false
+      }
+    },
+    "image_with_text_cta_E3j8g9": {
+      "type": "image-with-text-cta",
+      "custom_css": [
+        ".heading,.subheading {color: #fff;}"
+      ],
+      "settings": {
+        "heading": "Try Klova Risk-Free For 30 Days",
+        "subHeading": "<p>We’re so confident you’ll love the Klova Sleep Patch that we offer a 30-day money-back guarantee.<\/p><p>Try it for a month, and if you’re not completely satisfied with your improved sleep quality, simply return the product for a full refund.<\/p><p>No questions asked. <br\/>Your satisfaction and restful nights are our top priorities. Join the thousands of happy customers who have transformed their sleep with Klova, risk-free.<\/p>",
+        "image": "shopify:\/\/shop_images\/money_back_badge.png",
+        "button_text": "",
+        "button_url": "",
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "left",
+        "background_color": "#1E062C",
+        "show_section_devider": false
+      }
+    },
+    "bulk_product_column_nANnmR": {
+      "type": "bulk-product-column",
+      "blocks": {
+        "product_wNn3iM": {
+          "type": "product",
+          "settings": {
+            "title": "1x Pack",
+            "subtitle": "30 Day Supply",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "",
+            "price": "$29.97",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1",
+            "total_price": "Total $29.97",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "*Free Shipping Over $50"
+          }
+        },
+        "product_VzLbQD": {
+          "type": "product",
+          "settings": {
+            "title": "6x Packs",
+            "subtitle": "30 Day Supply",
+            "product_image": "shopify:\/\/shop_images\/Group_13640.png",
+            "product": "",
+            "price": "$16.65",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
+            "total_price": "Total $79.97",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "*Free Shipping Over $50"
+          }
+        },
+        "product_V7UQ3w": {
+          "type": "product",
+          "settings": {
+            "title": "3x Packs",
+            "subtitle": "30 Day Supply",
+            "product_image": "shopify:\/\/shop_images\/Group_13661.png",
+            "product": "",
+            "price": "$26.65",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
+            "total_price": "Total $49.97",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "*Free Shipping Over $50"
+          }
+        }
+      },
+      "block_order": [
+        "product_wNn3iM",
+        "product_VzLbQD",
+        "product_V7UQ3w"
+      ],
+      "settings": {
+        "title": "Limited Stock Available - Get Your Klova Sleep Patch Now!",
+        "accent_color": "#62519D",
+        "custom_html": "<span id=\"buy-now\"><\/span>"
+      }
+    },
+    "new_faq_q9fbh6": {
+      "type": "new-faq",
+      "blocks": {
+        "faq_byAdVX": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How do I use the Klova Sleep Patch?",
+            "answer": "The Klova Sleep Patch utilizes a carefully formulated blend of natural ingredients like melatonin, magnesium, and essential oils to promote restful sleep. Designed to calm the nervous system and relax the mind, it creates an overall sense of tranquility.When applied to the skin, the patch gradually releases these ingredients throughout the night. Melatonin regulates your sleep-wake cycle, while essential oils such as lavender and chamomile help soothe and reduce anxiety. Magnesium further supports muscle relaxation and overall calmness.This slow-release technology ensures continuous effectiveness, providing up to 8 hours of sleep support. Within 30 minutes, users typically begin to feel the calming effects, though individual experiences may vary. The Klova Sleep Patch offers a natural, non-invasive solution to improve sleep quality, helping you wake up refreshed and rejuvenated."
+          }
+        },
+        "faq_7zzTVj": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are there any side effects?",
+            "answer": "The Klova Sleep Patch is made with natural ingredients and is designed to be gentle. However, if you experience any adverse effects, discontinue use and consult your physician."
+          }
+        },
+        "faq_EYxiwa": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Can I use this while pregnant?",
+            "answer": "Please check with your physician before using the Klova Sleep Patch during pregnancy."
+          }
+        },
+        "faq_TUGyB4": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How long does one patch last?",
+            "answer": "Each patch provides continuous absorption for up to 8 hours."
+          }
+        },
+        "faq_4Jiz48": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Is the Klova Sleep Patch safe for children?",
+            "answer": "The patch is intended for adults. Consult a pediatrician before use on children."
+          }
+        },
+        "faq_jMeB8R": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "We offer a 30-day money-back guarantee. If you're not satisfied, return the product for a full refund."
+          }
+        },
+        "faq_wyyN7Q": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Can I wear the patch while using other medications?",
+            "answer": "Consult your physician to ensure the patch is safe to use with your current medications."
+          }
+        }
+      },
+      "block_order": [
+        "faq_byAdVX",
+        "faq_7zzTVj",
+        "faq_EYxiwa",
+        "faq_TUGyB4",
+        "faq_4Jiz48",
+        "faq_jMeB8R",
+        "faq_wyyN7Q"
+      ],
+      "settings": {
+        "heading": "Default Heading",
+        "sub_heading": "Default Sub Heading",
+        "background": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_cta_wbXgfK",
+    "image_with_sales_point_z6qtFq",
+    "carousel_videos_ARgqAp",
+    "rich_text_Ve3pWa",
+    "image_with_text_cta_pyyKFx",
+    "logo_list_Q3U9aP",
+    "bulk_product_column_mPkHjz",
+    "rich_text_bFUApi",
+    "image_with_text_cta_VtxqUp",
+    "image_with_text_cta_E3j8g9",
+    "bulk_product_column_nANnmR",
+    "new_faq_q9fbh6"
+  ]
+}

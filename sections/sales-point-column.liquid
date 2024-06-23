@@ -1,0 +1,75 @@
+{% assign columnLength = section.blocks | size %}
+<section id="{{ section.id }}">
+  <div class="page-width">
+    <div class="sales-point-container">
+      <div class="sales-point-grid grid-{{ section.blocks | size }}">
+        {% for block in section.blocks %}
+          <div class="sales-point-item" {{ block.shopify_attributes }}>
+            <img src="{{ block.settings.image | image_url }}" alt="sales point icon" height="48" width="48">
+            <div class="sales-point-text">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+#{{ section.id }} .sales-point-grid{
+  display: grid;
+  grid-template-columns: repeat({{ columnLength }}, 1fr);
+  grid-gap: 25px;
+  margin: 0;
+  padding: 40px 80px;
+}
+#{{ section.id }} .sales-point-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#{{ section.id }} .sales-point-text{
+  color: #1E062C;
+  font-family: "Bergen Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 100% */
+}
+
+
+
+</style>
+{% schema %}
+{
+  "name": "Sales Point [Image+Text]",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "sales-point",
+      "name": "Sales Point",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Sales Point Text</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sales Point [Image+Text]"
+    }
+  ]
+}
+{% endschema %}

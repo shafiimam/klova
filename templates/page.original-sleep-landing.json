@@ -62,7 +62,7 @@
         "header_logo": "shopify:\/\/shop_images\/klova_logo.png",
         "header_btn_link": "#subscribe",
         "header_btn_text": "Get It Now",
-        "hero_image": "shopify:\/\/shop_images\/Group_13631.png",
+        "hero_image": "shopify:\/\/shop_images\/Group_13631_c81b0b8c-5521-4d02-afa6-113373d0bc84.png",
         "hero_background_image_desktop": "shopify:\/\/shop_images\/Hero_Section.png",
         "hero_background_image_mobile": "shopify:\/\/shop_images\/Hero_section_-_mobile.png",
         "show_plain_bg": false,
@@ -289,7 +289,7 @@
             "icon": "shopify:\/\/shop_images\/tick-icon.png",
             "num_column_grid": 1,
             "sales_point1": "Contains 28 Patches: One-month supply for consistent sleep support.",
-            "sales_point2": "Ziplock Resealable Bag: Keeps patches fresh and effective.",
+            "sales_point2": "",
             "sales_point3": "Long-Lasting: Each patch works for up to 8 hours.",
             "sales_point4": "Simple Application: Easy to use; apply directly to your skin."
           }
@@ -322,7 +322,7 @@
         "content_width": 50,
         "header_btn_text": "",
         "image_direction": "left",
-        "hero_image": "shopify:\/\/shop_images\/image_156.png"
+        "hero_image": "shopify:\/\/shop_images\/image_156_7e059d99-3170-42da-965b-874e28aedae1.png"
       }
     },
     "slideshow_image_9rRWFW": {
@@ -533,20 +533,6 @@
             "is_tab": false
           }
         },
-        "bundle_btn_6LAx4a": {
-          "type": "bundle_btn",
-          "settings": {
-            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
-            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955.png",
-            "bundle_data": "Build Your Own Bundle",
-            "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
-            "bundle_btn": "BUILD YOUR BUNDLE",
-            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
-            "bundle_color_text": "",
-            "bundle_bg": "",
-            "bundle_btn_border": ""
-          }
-        },
         "skio_plan_picker_cKknmn": {
           "type": "skio-plan-picker",
           "settings": {
@@ -561,6 +547,17 @@
             "direct_to_checkout": true,
             "surface_pickup_enable": false
           }
+        },
+        "sales_point_wHfkbT": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Free Shipping Over $45",
+            "icon-two": "money",
+            "text-two": "Money Back Guarantee",
+            "icon-three": "health",
+            "text-three": "Physician Approved"
+          }
         }
       },
       "block_order": [
@@ -568,9 +565,9 @@
         "judge_me_reviews_preview_badge_homepage_FFbmWB",
         "textarea_8NrE3D",
         "description_PVz4Lz",
-        "bundle_btn_6LAx4a",
         "skio_plan_picker_cKknmn",
-        "quantity_selector_Vdi6qF"
+        "quantity_selector_Vdi6qF",
+        "sales_point_wHfkbT"
       ],
       "settings": {
         "featured_product": "sleep-patch",
