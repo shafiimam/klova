@@ -227,7 +227,7 @@
             "price": "$29.97",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1",
-            "total_price": "Total $29.97",
+            "total_price": "",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
             "footer_text": "*Free Shipping Over $50"
           }
@@ -239,10 +239,10 @@
             "subtitle": "30 Day Supply",
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
-            "price": "$16.65",
+            "price": "$79.97",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
-            "total_price": "Total $79.97",
+            "total_price": "",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
             "footer_text": "*Free Shipping Over $50"
           }
@@ -254,10 +254,10 @@
             "subtitle": "30 Day Supply",
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
-            "price": "$26.65",
+            "price": "$49.97",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
-            "total_price": "Total $49.97",
+            "total_price": "",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
             "footer_text": "*Free Shipping Over $50"
           }
@@ -267,6 +267,9 @@
         "product_rJR9Bh",
         "product_V7RJ3e",
         "product_EtVwF9"
+      ],
+      "custom_css": [
+        ".section-heading {max-width: 976px; margin: 0 auto;}"
       ],
       "settings": {
         "title": "Limited Stock Available - Get Your Klova Sleep Patch Now!",
@@ -286,6 +289,9 @@
       },
       "block_order": [
         "heading_JBbAbq"
+      ],
+      "custom_css": [
+        "h2 {max-width: 976px; margin: 0 auto;}"
       ],
       "settings": {
         "align_text": "center",
@@ -343,7 +349,7 @@
             "price": "$29.97",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1",
-            "total_price": "Total $29.97",
+            "total_price": "",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
             "footer_text": "*Free Shipping Over $50"
           }
@@ -355,10 +361,10 @@
             "subtitle": "30 Day Supply",
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
-            "price": "$16.65",
+            "price": "$79.97",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
-            "total_price": "Total $79.97",
+            "total_price": "",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
             "footer_text": "*Free Shipping Over $50"
           }
@@ -370,10 +376,10 @@
             "subtitle": "30 Day Supply",
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
-            "price": "$26.65",
+            "price": "$49.97",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
-            "total_price": "Total $49.97",
+            "total_price": "",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
             "footer_text": "*Free Shipping Over $50"
           }
@@ -398,6 +404,14 @@
           "settings": {
             "question": "How do I use the Klova Sleep Patch?",
             "answer": "The Klova Sleep Patch utilizes a carefully formulated blend of natural ingredients like melatonin, magnesium, and essential oils to promote restful sleep. Designed to calm the nervous system and relax the mind, it creates an overall sense of tranquility.When applied to the skin, the patch gradually releases these ingredients throughout the night. Melatonin regulates your sleep-wake cycle, while essential oils such as lavender and chamomile help soothe and reduce anxiety. Magnesium further supports muscle relaxation and overall calmness.This slow-release technology ensures continuous effectiveness, providing up to 8 hours of sleep support. Within 30 minutes, users typically begin to feel the calming effects, though individual experiences may vary. The Klova Sleep Patch offers a natural, non-invasive solution to improve sleep quality, helping you wake up refreshed and rejuvenated."
+          }
+        },
+        "faq_G3wnJU": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What’s in it?",
+            "answer": "Full Supplement Facts:",
+            "image": "shopify:\/\/shop_images\/ingredients-sleep-patch.png"
           }
         },
         "faq_7zzTVj": {
@@ -445,6 +459,7 @@
       },
       "block_order": [
         "faq_byAdVX",
+        "faq_G3wnJU",
         "faq_7zzTVj",
         "faq_EYxiwa",
         "faq_TUGyB4",
@@ -455,7 +470,7 @@
       "settings": {
         "heading": "Default Heading",
         "sub_heading": "Default Sub Heading",
-        "background": ""
+        "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11) 0%, rgba(123, 73, 181, 0.11) 100%)"
       }
     }
   },

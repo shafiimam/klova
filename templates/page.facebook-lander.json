@@ -17,7 +17,7 @@
         "trust_badge_yabXcE": {
           "type": "trust-badge",
           "settings": {
-            "text": "Free Shipping Over $45"
+            "text": "FREE SHIPPING OVER $50"
           }
         },
         "trust_badge_Q4b4Mh": {
@@ -284,7 +284,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "free",
-            "text": "FREE SHIPPING OVER $45",
+            "text": "FREE SHIPPING OVER $50",
             "icon-two": "money",
             "text-two": "MONEY-BACK GUARANTEE",
             "icon-three": "health",

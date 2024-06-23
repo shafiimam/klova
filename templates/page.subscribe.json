@@ -116,7 +116,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/truck_1.png",
-            "logo_title": "FREE SHIPPING ALWAYS"
+            "logo_title": "FREE SHIPPING OVER $50"
           }
         },
         "logo_image_dTMWGd": {
@@ -223,7 +223,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "free",
-            "text": "FREE SHIPPING OVER $45",
+            "text": "FREE SHIPPING OVER $50",
             "icon-two": "money",
             "text-two": "MONEY-BACK GUARANTEE",
             "icon-three": "health",

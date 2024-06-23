@@ -11,17 +11,17 @@
       "custom_css": [
         ".image-with-text-cta > div {border-radius: 20px;}",
         ".image-with-text-cta__content--text * {color: #fff;}",
-        ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px;}",
+        ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px; font-size: 14px;}",
         "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
       ],
       "settings": {
-        "heading": "Experience Restful Nights with a Free 8-Day Trial of Klova's Original Sleep Patch",
-        "subHeading": "<p>For a limited time, you can try the Klova Sleep Patch absolutely free.<\/p><p>Experience the difference for yourself with 8 patches designed to help you fall asleep faster and stay asleep longer.<\/p>",
+        "heading": "Discover the Magic of Better Sleep with Klova’s Sleep Patch – Start Your Free Trial",
+        "subHeading": "<p>Try Klova’s Original Sleep Patch on us! Just cover <strong>$9.95<\/strong> for shipping!<\/p><p>Unlock the secret to quicker, more peaceful sleep with our no-cost trial, featuring 8 patches ingeniously crafted to enhance your sleep quality.<\/p>",
         "image": "shopify:\/\/shop_images\/0712321c9f3f08f9900c63b3279b3144_fb401740-68f0-4762-bc34-918950a7a46d.png",
         "bg_desktop": "shopify:\/\/shop_images\/hero.jpg",
         "bg_tablet": "shopify:\/\/shop_images\/hero-tablet.png",
         "bg_mobile": "shopify:\/\/shop_images\/hero-mobile.png",
-        "button_text": "Get Your Subscription!",
+        "button_text": "Begin Your Free Sleep Trial",
         "button_url": "https:\/\/www.klova.com\/products\/sleep-patch-free-trial",
         "button_text_2": "Button Text",
         "button_url_2": "",
@@ -86,24 +86,24 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_14373.png",
-            "logo_title": "8 Patches (2 Sheets)",
-            "logo_subtitle": "Each patch is infused with a unique blend of natural ingredients including melatonin, ashwagandha, valerian root, and lavender oil."
+            "logo_title": "8 Sleep-Inducing Patches (2 Sheets)",
+            "logo_subtitle": "These patches are a tapestry of sleep-supportive elements, including melatonin, ashwagandha, valerian root, and a touch of calming lavender oil."
           }
         },
         "logo_image_8ExHGF": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_1000003701.png",
-            "logo_title": "Continuous Release Technology",
-            "logo_subtitle": "Ensures a steady delivery of sleep-promoting ingredients over 8 hours."
+            "logo_title": "Time-Release Design",
+            "logo_subtitle": "Our advanced formulation ensures a consistent, 8-hour stream of slumber-inducing nutrients."
           }
         },
         "logo_image_V3f4QL": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_1000003702.png",
-            "logo_title": "Wake Up Refreshed",
-            "logo_subtitle": "Enjoy restful sleep without morning grogginess."
+            "logo_title": "Awaken with Vigor",
+            "logo_subtitle": "Engage in the kind of deep sleep that leaves you energized and clear-headed at daybreak."
           }
         }
       },
@@ -122,7 +122,7 @@
       "settings": {
         "row_count": 3,
         "column_count": 1,
-        "title": "What You’ll Get:",
+        "title": "Your Trial Includes",
         "divider": false,
         "link": "",
         "button_label": ""
@@ -135,24 +135,24 @@
           "type": "sales_point",
           "settings": {
             "icon": "shopify:\/\/shop_images\/NATURAL_INGREDIENTS_2d092f51-6d8e-4705-8f1b-d3849b4743b4.svg",
-            "title": "Natural Ingredients",
-            "subtitle": "Natural Ingredients"
+            "title": "All-Natural Formula",
+            "subtitle": "Our patches are made with high-quality, natural ingredients that work with your body to promote better sleep."
           }
         },
         "sales_point_fxzqXj": {
           "type": "sales_point",
           "settings": {
             "icon": "shopify:\/\/shop_images\/touch_1.svg",
-            "title": "Easy to Use",
-            "subtitle": "Simply apply a patch 30-60 minutes before bedtime to experience a tranquil night’s sleep."
+            "title": "Fuss-Free Application",
+            "subtitle": "Peel, stick and set sail towards a night of uninterrupted rest, starting 30-60 minutes before bedtime."
           }
         },
         "sales_point_ag7Mxf": {
           "type": "sales_point",
           "settings": {
             "icon": "shopify:\/\/shop_images\/dermatologically-tested_1.svg",
-            "title": "Dermatologically Tested",
-            "subtitle": "Safe and gentle on your skin, the patches are latex-free and non-irritating."
+            "title": "Skincare-Conscious",
+            "subtitle": "Tested for safety and comfort, our patches are latex-free and meticulously formulated to be gentle on all skin types."
           }
         }
       },
@@ -162,14 +162,14 @@
         "sales_point_ag7Mxf"
       ],
       "custom_css": [
-        ".sales-points-section {background: linear-gradient( 90deg, rgba(100, 233, 217, 0.09) 0%, rgba(123, 73, 181, 0.09) 100% ); border-radius: 20px;}",
+        ".sales-points-section {background: linear-gradient( 270deg, rgba(100, 233, 217, 0.09) 0%, rgba(123, 73, 181, 0.09) 100% ); border-radius: 20px;}",
         "section {margin: 0 20px;}",
         ".icon-with-text .icon__image {width: 40px; height: 40px;}",
         ".icon-container {flex-basis: 40px;}",
         ".icon-with-text {gap: 16px;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_13639.png",
+        "image": "shopify:\/\/shop_images\/slee-patch-trial.png",
         "title": "Why Choose Klova’sSleep Patch",
         "link": "",
         "button_label": "",
@@ -184,23 +184,23 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/apply.png",
             "logo_title": "Apply",
-            "logo_subtitle": "Place one patch on a clean, dry area of skin."
+            "logo_subtitle": "Smoothly attach one patch to an area of skin that’s clean and moisture-free."
           }
         },
         "logo_image_WFDKQ9": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/relax.png",
-            "logo_title": "Relax",
-            "logo_subtitle": "Let the natural ingredients work to calm your mind and body."
+            "logo_title": "Unwind",
+            "logo_subtitle": "Allow the blend of natural soothers to lull your senses into a state of pre-sleep calm."
           }
         },
         "logo_image_WNVg7h": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sleep_b13c5256-a1b4-431e-80a9-3d045aa63ad6.png",
-            "logo_title": "Sleep",
-            "logo_subtitle": "Enjoy a restful night’s sleep and wake up feeling refreshed."
+            "image": "shopify:\/\/shop_images\/surfing.png",
+            "logo_title": "Rejuvenate",
+            "logo_subtitle": "Experience the bliss of uninterrupted slumber and start your day with newfound vitality."
           }
         }
       },
@@ -218,7 +218,7 @@
       "settings": {
         "row_count": 3,
         "column_count": 1,
-        "title": "What You’ll Get:",
+        "title": "Three Steps to Transformative Sleep:",
         "divider": false,
         "link": "",
         "button_label": ""
@@ -227,13 +227,13 @@
     "image_with_text_cta_iFntRH": {
       "type": "image-with-text-cta",
       "custom_css": [
-        ".cta-button {border-radius: 6px; background: #1e062c; max-width: 360px;}"
+        ".cta-button {border-radius: 6px; background: #1e062c; max-width: 360px; font-size: 14px;}"
       ],
       "settings": {
-        "heading": "Why Are We Doing This?",
-        "subHeading": "<p>We believe in the power of Klova’s Sleep Patch to transform your nights. By offering this <strong>free 8-day trial<\/strong>, we want you to experience the incredible benefits firsthand. <\/p><p>We know that once you try our patches, you’ll fall in love with the ease and effectiveness of our natural sleep aid. <\/p><p>Our goal is to help you achieve restful, uninterrupted sleep, and we’re confident that you’ll want to continue using the Klova Sleep Patch as part of your nightly routine.<\/p><p>Try it now, risk-free, and wake up refreshed!<\/p>",
+        "heading": "Why We’re Sharing the Klova Experience",
+        "subHeading": "<p><strong>“We’re on a mission to revolutionize sleep, and nothing speaks louder than firsthand experiences. That’s why we’re offering this free trial—to let you discover the transformative power of the Klova Sleep Patch for yourself. <\/strong><\/p><p><strong>We’re confident that our approach to rest will resonate with you, making the Klova Sleep Patch a cherished addition to your nightly ritual. Dive into your trial today, completely on us, and reawaken to brighter mornings!”<\/strong><\/p>",
         "image": "shopify:\/\/shop_images\/hands.png",
-        "button_text": "Get Your Subscription!",
+        "button_text": "Get Your Free 8-Day Trial Pack Now",
         "button_url": "https:\/\/www.klova.com\/products\/sleep-patch-free-trial",
         "button_text_2": "Button Text",
         "button_url_2": "",
@@ -437,10 +437,10 @@
         "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
       ],
       "settings": {
-        "heading": "Try It Risk-Free",
-        "subHeading": "<p>Take  advantage of our free 8-day trial and discover the benefits of Klova’s Sleep Patch. If you don’t love it, there’s no obligation to continue.<\/p>",
+        "heading": "30 Day Money Back Guarantee",
+        "subHeading": "<p>Just pay $9.95 shipping. After 7 days from sign-up, your monthly subscription will begin at $27.99\/month. You will receive email and text notifications before your subscription begins. You can cancel anytime in our online portal, or by emailing sleep@klova.com.<\/p>",
         "image": "shopify:\/\/shop_images\/Group_13634.png",
-        "button_text": "Get Your Subscription!",
+        "button_text": "Get Your Free 8-Day Trial Pack Now",
         "button_url": "#subscribe",
         "button_text_2": "",
         "button_url_2": "",
@@ -453,14 +453,14 @@
       "type": "image-with-text-cta",
       "custom_css": [
         ".image-with-text-cta > div {border-radius: 20px;}",
-        ".image-with-text-cta .cta-button {background: #1e062c; color: #fff; max-width: 360px;}",
+        ".image-with-text-cta .cta-button {background: #1e062c; color: #fff; max-width: 360px; font-size: 14px;}",
         "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
       ],
       "settings": {
         "heading": "Order Your Free Trial Today!",
         "subHeading": "<p>Don’t miss out on this exclusive offer. Click below to get your free 8-day trial of the Klova Sleep Patch and start sleeping better tonight.<\/p>",
         "image": "shopify:\/\/shop_images\/Group_13635.png",
-        "button_text": "Get Your Subscription!",
+        "button_text": "Get Your Free Trial Now!",
         "button_url": "#subscribe",
         "button_text_2": "",
         "button_url_2": "",
@@ -524,22 +524,22 @@
         "faq_Xqk4tJ": {
           "type": "FAQ",
           "settings": {
-            "question": "How long does each patch last?",
-            "answer": "Each patch provides 8 hours of continuous release of natural sleep ingredients."
+            "question": "What Duration does each patch last",
+            "answer": "A patch works its magic throughout the night, offering 8 hours of therapeutic release."
           }
         },
         "faq_EidjzM": {
           "type": "FAQ",
           "settings": {
-            "question": "Is there a catch?",
-            "answer": "No catch! We believe in our product and want you to try it for free."
+            "question": "Will there be any surprises later?",
+            "answer": "Our promise is straightforward: try Klova for free, no strings attached."
           }
         },
         "faq_434QmB": {
           "type": "FAQ",
           "settings": {
-            "question": "Can I use it every night?",
-            "answer": "Yes, you can use a patch every night as part of your bedtime routine."
+            "question": "Is it suitable for nightly use?",
+            "answer": "Yes, make Klova part of your sleep routine for consistent restorative rest."
           }
         }
       },
@@ -548,10 +548,13 @@
         "faq_EidjzM",
         "faq_434QmB"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": "Questions?",
         "sub_heading": "We’re here to help!",
-        "background": ""
+        "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11), rgba(123, 73, 181, 0.11) 100%)"
       }
     }
   },

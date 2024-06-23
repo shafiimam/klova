@@ -12,7 +12,7 @@
         "badge_GXK4tF": {
           "type": "badge",
           "settings": {
-            "text": "FREE SHIPPING ON ORDERS OVER $45",
+            "text": "FREE SHIPPING ON ORDERS OVER $50",
             "background": "#1E062C"
           }
         },
@@ -596,7 +596,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "truck",
-            "text": "FREE SHIPPING OVER $45",
+            "text": "FREE SHIPPING OVER $50",
             "icon-two": "money",
             "text-two": "MONEY-BACK GUARANTEE",
             "icon-three": "health",

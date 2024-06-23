@@ -15,6 +15,14 @@
                   <div class="accordion__text">
                     <div class="accordion__inside">
                       <p>{{ block.settings.answer }}</p>
+                      {% if block.settings.image != blank %}
+                        <img
+                          src="{{ block.settings.image | image_url: width: 460, height: 350 }}"
+                          alt="faq image"
+                          height="350"
+                          width="460"
+                        >
+                      {% endif %}
                     </div>
                   </div>
                 </li>
@@ -63,7 +71,7 @@
   .accordion__item{
     border: none !important;
     border-radius: 15px;
-    background: #FFF; 
+    background: #FFF;
     display: flex;
     flex-direction:column;
     gap: 30px;
@@ -130,6 +138,11 @@
           "id": "answer",
           "label": "Answer",
           "default": "Default Answer"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Optional Image"
         }
       ]
     }
