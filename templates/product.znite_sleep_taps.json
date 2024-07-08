@@ -111,7 +111,7 @@
         "trust_badge_r3DXFU": {
           "type": "trust_badge",
           "settings": {
-            "trust_image": "shopify:\/\/shop_images\/Frame_1000003996.png"
+            "trust_image": "shopify:\/\/shop_images\/Frame_1000003996_19588d7c-44fd-4cee-bde3-4901126f3464.png"
           }
         }
       },
@@ -206,10 +206,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/sleep_15125241_1.png",
+            "image": "shopify:\/\/shop_images\/versatile.png",
             "image_width": 64,
-            "title": "Snore Reduction",
-            "text": "<p>Say goodbye to snoring and greet the morning feeling refreshed and ready to tackle the day.<\/p>",
+            "title": "Versatile Design",
+            "text": "<p>Can be worn in \"I\" or \"H\" shape based on your needs, providing flexibility and comfort.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -220,8 +220,8 @@
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/oral-health_10747673_1.png",
             "image_width": 64,
-            "title": "Oral Health Improvement",
-            "text": "<p>Promotes mouth closure to prevent dry mouth and halitosis, contributing to better oral hygiene.<\/p>",
+            "title": "Safe and Non-Suffocating",
+            "text": "<p>Doesn't cover the whole mouth, reducing the fear of suffocation while effectively training you to breathe through your nose.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -230,10 +230,46 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/health-insurance_4801920_1.png",
+            "image": "shopify:\/\/shop_images\/breathe.png",
             "image_width": 64,
-            "title": "Boosted Immunity",
-            "text": "<p>By optimizing breathing patterns, ZNite Tapes help improve your body's natural defenses.<\/p>",
+            "title": "High Breathability",
+            "text": "<p>Allows some airflow, ensuring you can breathe comfortably throughout the night.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_yDQN6A": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/drink.png",
+            "image_width": 64,
+            "title": "Easy Drinking",
+            "text": "<p>If you get thirsty, you can easily drink with a straw from the side without removing the tape.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_fGEcPw": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/comfortable.png",
+            "image_width": 64,
+            "title": "Comfortable and Secure",
+            "text": "<p>Gentle yet secure adhesive ensures the tape stays in place all night without causing irritation.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_aE8Fkx": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/organic.png",
+            "image_width": 64,
+            "title": "Hypoallergenic Material",
+            "text": "<p>Made from medical-grade hypoallergenic material, it's safe for all skin types, reducing the risk of allergic reactions.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -242,10 +278,13 @@
       "block_order": [
         "text_block_U36xtt",
         "text_block_r6pWTn",
-        "text_block_Rr6bt8"
+        "text_block_Rr6bt8",
+        "text_block_yDQN6A",
+        "text_block_fGEcPw",
+        "text_block_aE8Fkx"
       ],
       "settings": {
-        "title": "Health Benefits",
+        "title": "Benefits of Klova ZNite™ Tapes",
         "align_text": "left",
         "divider": false,
         "color_scheme": "none"
@@ -262,11 +301,27 @@
         "empower_button_link": ""
       }
     },
-    "16539274943ce12887": {
-      "type": "sleep-chart",
+    "slideshow_image_WcVdkm": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_gbhmmL": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/ZNITE-compare-desktop.png",
+            "image_mobile": "shopify:\/\/shop_images\/ZNITE-compare-mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_gbhmmL"
+      ],
       "settings": {
-        "title": "How We Compare",
-        "image": "shopify:\/\/shop_images\/Group_87.png"
+        "full_width": false,
+        "title": "Product Comparison",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
       }
     },
     "review_slider_NFJHzE": {
@@ -313,6 +368,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
+        "show_reviewer_image": true,
         "review_count": "5209",
         "divider": false
       }
@@ -323,36 +379,36 @@
         "95efa8d9-b7a2-4979-bae9-044a1cde6016": {
           "type": "text",
           "settings": {
-            "acc-button": "WHO CAN USE THIS PATCH?",
-            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
+            "acc-button": "MEET YOUR NEW BEDTIME BFF",
+            "acc-text": "<p>The ZNite Tape is your new sleep-enhancement companion, innovatively designed in an H-shape to gently secure your mouth closed during the night. This promotes nasal breathing, which can lead to improved sleep quality, reduced snoring, and overall better health. The H-form is specifically crafted for comfort and effectiveness, ensuring a restful night's sleep without discomfort.<\/p>"
           }
         },
         "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
           "type": "text",
           "settings": {
-            "acc-button": "WHERE IS KLOVA MADE?",
-            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
+            "acc-button": "HOW IT WORKS?",
+            "acc-text": "<p>ZNite Tape works by encouraging your body to breathe naturally through the nose. By gently holding the mouth closed, the tape prevents mouth breathing, which can lead to dry mouth, snoring, and interrupted sleep. Nasal breathing is key to a deeper and more consistent sleep cycle, as it better regulates the flow of air and optimizes oxygen intake.<\/p>"
           }
         },
         "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
           "type": "text",
           "settings": {
-            "acc-button": "ARE THERE ANY INTERACTIONS?",
-            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
+            "acc-button": "HOW TO USE IT?",
+            "acc-text": "<p>It's quite simple to use the ZNite Tape. Before bed, ensure your skin is clean and dry for optimal adhesion. Place the H-shaped tape over the mouth, using the central connector to lightly hold the lips together. The wings of the tape should lay flat against the cheeks without causing any tension. You can also place it like an I-shaped tape. In the morning, gently remove the tape by peeling it away slowly from one corner.<\/p>"
           }
         },
         "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
           "type": "text",
           "settings": {
-            "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
-            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
+            "acc-button": "WHAT’S IN IT?",
+            "acc-text": "<p>ZNite Tape is made from a hypoallergenic, medical-grade adhesive and soft cotton blend that's gentle on the skin while providing strong enough adhesion to stay in place throughout the night. The material is also breathable, ensuring your skin's comfort while you sleep.<\/p>"
           }
         },
         "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
           "type": "text",
           "settings": {
-            "acc-button": "WILL IT MAKE ME GROGGY?",
-            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
+            "acc-button": "BETTER SLEEP GUARANTEE",
+            "acc-text": "<p>Klova stands behind the quality and effectiveness of its ZNite Tape. If you're not completely satisfied with the improvement in your sleep quality, Klova offers a 30-day money-back guarantee. Simply contact our customer service for a stress-free return process, giving you peace of mind to try the tapes and experience better sleep risk-free.<\/p>"
           }
         }
       },
@@ -469,7 +525,7 @@
     "znite_key_features_wEDw8z",
     "znite_icon_text_bg_J4wUjy",
     "znite_legal_hzLbaF",
-    "16539274943ce12887",
+    "slideshow_image_WcVdkm",
     "review_slider_NFJHzE",
     "1653908906e8b1c207",
     "1663080027983fd7ee",

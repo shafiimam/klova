@@ -9,6 +9,7 @@
     "image_with_text_cta_wbXgfK": {
       "type": "image-with-text-cta",
       "custom_css": [
+        ".heading {max-width: 652px; color: #1e062c; font-family: \"Bergen Sans\"; font-size: 56px; font-style: normal; font-weight: 700; line-height: 64px; \/* 114.286% *\/}",
         ".image-with-text-cta__content .cta-button {background: #1e062c;}",
         ".image-with-text-cta__content {padding-right: 0; padding-top: 0; padding-bottom: 0;}",
         ".image-with-text-cta__content--image {position: relative; left: 20px;}",
@@ -19,7 +20,7 @@
         "subHeading": "",
         "image": "shopify:\/\/shop_images\/original-patch-hero_4aea343e-5549-4876-9f86-3be87a9155d8.jpg",
         "button_text": "Get Original Sleep Patch!",
-        "button_url": "#subscribe",
+        "button_url": "#buy-now",
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -62,7 +63,9 @@
       ],
       "custom_css": [
         ".icon-container {flex-basis: 28px; margin-top: 5px;}",
-        ".icon-with-text .icon__image {height: 28px; width: 28px;}"
+        ".icon-with-text .icon__image {height: 28px; width: 28px;}",
+        ".sales-points-content-container {padding: 10px;}",
+        ".sales-points-container {border-radius: 9.092px; background: linear-gradient( 270deg, rgba(100, 233, 217, 0.09) 0%, rgba(123, 73, 181, 0.09) 100% ), #fff;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC05493_1.jpg",
@@ -134,6 +137,10 @@
       "block_order": [
         "heading_paYDEN"
       ],
+      "custom_css": [
+        "h2 {max-width: 976px; margin: 0 auto; color: #1e062c; text-align: center; font-family: \"Bergen Sans\"; font-size: 48px; font-style: normal; font-weight: 700; line-height: 52px;}",
+        "@media (max-width: 500px) {h2 {text-align: center; font-size: 24px; font-weight: 700; line-height: 30px; } .text-center {margin-bottom: 15px; }}"
+      ],
       "settings": {
         "align_text": "center",
         "narrow_column": false,
@@ -144,7 +151,8 @@
     "image_with_text_cta_pyyKFx": {
       "type": "image-with-text-cta",
       "custom_css": [
-        ".cta-button {background: #1e062c;}"
+        ".cta-button {background: #1e062c;}",
+        ".image-with-text-cta__content {padding-top: 0;}"
       ],
       "settings": {
         "heading": "",
@@ -221,45 +229,48 @@
           "type": "product",
           "settings": {
             "title": "1x Pack",
-            "subtitle": "30 Day Supply",
+            "subtitle": "1 Month Supply",
             "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
             "product": "",
             "price": "$29.97",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1",
-            "total_price": "",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1?discount=PATCH1PACK",
+            "extra_text": "60 Day Money Back Guarantee",
+            "total_price": "Total: <s>$39.99<\/s> <b>$29.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
-            "footer_text": "*Free Shipping Over $50"
+            "footer_text": "+Shipping $5.95"
           }
         },
         "product_V7RJ3e": {
           "type": "product",
           "settings": {
             "title": "6x Packs",
-            "subtitle": "30 Day Supply",
+            "subtitle": "6 Month Supply",
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
-            "price": "$79.97",
+            "price": "$13.33",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
-            "total_price": "",
+            "extra_text": "60 Day Money Back Guarantee",
+            "total_price": "Total: <s>$239.94<\/s> <b>$79.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
-            "footer_text": "*Free Shipping Over $50"
+            "footer_text": "+Free US Shipping"
           }
         },
         "product_EtVwF9": {
           "type": "product",
           "settings": {
             "title": "3x Packs",
-            "subtitle": "30 Day Supply",
+            "subtitle": "3 Month Supply",
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
-            "price": "$49.97",
+            "price": "$16.66",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
-            "total_price": "",
+            "extra_text": "60 Day Money Back Guarantee",
+            "total_price": "Total: <s>$119.97<\/s> <b>$49.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
-            "footer_text": "*Free Shipping Over $50"
+            "footer_text": "+Shipping $5.95"
           }
         }
       },
@@ -291,7 +302,8 @@
         "heading_JBbAbq"
       ],
       "custom_css": [
-        "h2 {max-width: 976px; margin: 0 auto;}"
+        "h2 {max-width: 976px; margin: 0 auto; color: #1e062c; text-align: center; font-family: \"Bergen Sans\"; font-size: 48px; font-style: normal; font-weight: 700; line-height: 52px;}",
+        "@media (max-width: 500px) {h2 {text-align: center; font-size: 24px; font-weight: 700; line-height: 30px; } .text-center {margin-bottom: 5px; }}"
       ],
       "settings": {
         "align_text": "center",
@@ -303,7 +315,9 @@
     "image_with_text_cta_VtxqUp": {
       "type": "image-with-text-cta",
       "custom_css": [
-        ".cta-button {border-radius: 6px; background: #1e062c;}"
+        ".cta-button {border-radius: 6px; background: #1e062c;}",
+        ".image-with-text-cta__content {padding-top: 0;}",
+        ".subheading p {color: #1e062c; font-family: Montserrat; font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px;}"
       ],
       "settings": {
         "heading": "",
@@ -321,7 +335,9 @@
     "image_with_text_cta_E3j8g9": {
       "type": "image-with-text-cta",
       "custom_css": [
-        ".heading,.subheading {color: #fff;}"
+        ".heading,.subheading {color: #fff;}",
+        ".heading {color: #fff; font-family: \"Bergen Sans\"; font-size: 40px; font-style: normal; font-weight: 700; line-height: 48px; max-width: 550px;}",
+        ".subheading {color: #fff; font-family: Montserrat; font-size: 18px; font-style: normal; font-weight: 400; line-height: 28px;}"
       ],
       "settings": {
         "heading": "Try Klova Risk-Free For 30 Days",
@@ -336,59 +352,111 @@
         "show_section_devider": false
       }
     },
-    "bulk_product_column_nANnmR": {
-      "type": "bulk-product-column",
+    "review_slider_9D3X9L": {
+      "type": "review-slider",
       "blocks": {
-        "product_wNn3iM": {
-          "type": "product",
+        "review_card_eKtgPc": {
+          "type": "review_card",
           "settings": {
-            "title": "1x Pack",
-            "subtitle": "30 Day Supply",
-            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
-            "product": "",
-            "price": "$29.97",
-            "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1",
-            "total_price": "",
-            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
-            "footer_text": "*Free Shipping Over $50"
+            "image": "shopify:\/\/shop_images\/Frame_1000003704_58d126c6-18ef-48d7-8b4f-0bcd466fd5af.png",
+            "review_text": "“One of the big reasons I love the Klova patch is because IT WORKS!\u2028The Klova patch introduced a new way where i only have one product with multiple ingredients and it helps me stay asleep.”",
+            "reviewer_name": "Dr. Sydne Ford",
+            "product_image": "shopify:\/\/shop_images\/01SleepZPatch-A.jpg",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
           }
         },
-        "product_VzLbQD": {
-          "type": "product",
+        "review_card_64Ew8T": {
+          "type": "review_card",
           "settings": {
-            "title": "6x Packs",
-            "subtitle": "30 Day Supply",
-            "product_image": "shopify:\/\/shop_images\/Group_13640.png",
-            "product": "",
-            "price": "$79.97",
-            "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
-            "total_price": "",
-            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
-            "footer_text": "*Free Shipping Over $50"
+            "image": "shopify:\/\/shop_images\/Frame_1000003714.png",
+            "review_text": "This guys, honestly helps with sleep! Like it really works! It takes me a long time to fall asleep but with this, I’m out in about 15-20min!Thank you @klovasleep for creating these amazing products!",
+            "reviewer_name": "Brandon T.",
+            "product_image": "shopify:\/\/shop_images\/01SleepZPatch-A.jpg",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
           }
         },
-        "product_V7UQ3w": {
-          "type": "product",
+        "review_card_yKyck9": {
+          "type": "review_card",
           "settings": {
-            "title": "3x Packs",
-            "subtitle": "30 Day Supply",
-            "product_image": "shopify:\/\/shop_images\/Group_13661.png",
-            "product": "",
-            "price": "$49.97",
-            "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
-            "total_price": "",
-            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
-            "footer_text": "*Free Shipping Over $50"
+            "image": "shopify:\/\/shop_images\/Frame_1000003716.png",
+            "review_text": "THE KEY TO RESTFUL SLEEP💤\u2028I do NOT mess around when it comes to sleep. Ya girl needs at LEAST 8 hours to function properly in the morning and to be productive. That’s why I’m currently obsessing over @klovasleep ZPatches",
+            "reviewer_name": "Heather T.",
+            "product_image": "shopify:\/\/shop_images\/01SleepZPatch-A.jpg",
+            "product": "sleep-patch",
+            "cta_content": "Subscribe and save"
           }
         }
       },
       "block_order": [
-        "product_wNn3iM",
-        "product_VzLbQD",
-        "product_V7UQ3w"
+        "review_card_eKtgPc",
+        "review_card_64Ew8T",
+        "review_card_yKyck9"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": true
+      }
+    },
+    "bulk_product_column_DVqAmA": {
+      "type": "bulk-product-column",
+      "blocks": {
+        "product_U47xRK": {
+          "type": "product",
+          "settings": {
+            "title": "1x Pack",
+            "subtitle": "1 Month Supply",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "",
+            "price": "$29.97",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1?discount=PATCH1PACK",
+            "extra_text": "60 Day Money Back Guarantee",
+            "total_price": "Total: <s>$39.99<\/s> <b>$29.97<\/b>",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "+Shipping $5.95"
+          }
+        },
+        "product_7mBkq7": {
+          "type": "product",
+          "settings": {
+            "title": "6x Packs",
+            "subtitle": "6 Month Supply",
+            "product_image": "shopify:\/\/shop_images\/Group_13640.png",
+            "product": "",
+            "price": "$13.33",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
+            "extra_text": "60 Day Money Back Guarantee",
+            "total_price": "Total: <s>$239.94<\/s> <b>$79.97<\/b>",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "+Free US Shipping"
+          }
+        },
+        "product_YWegcq": {
+          "type": "product",
+          "settings": {
+            "title": "3x Packs",
+            "subtitle": "3 Month Supply",
+            "product_image": "shopify:\/\/shop_images\/Group_13661.png",
+            "product": "",
+            "price": "$16.66",
+            "btn_content": "Buy Now",
+            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
+            "extra_text": "60 Day Money Back Guarantee",
+            "total_price": "Total: <s>$119.97<\/s> <b>$49.97<\/b>",
+            "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
+            "footer_text": "+Shipping $5.95"
+          }
+        }
+      },
+      "block_order": [
+        "product_U47xRK",
+        "product_7mBkq7",
+        "product_YWegcq"
       ],
       "settings": {
         "title": "Limited Stock Available - Get Your Klova Sleep Patch Now!",
@@ -468,9 +536,9 @@
         "faq_wyyN7Q"
       ],
       "settings": {
-        "heading": "Default Heading",
-        "sub_heading": "Default Sub Heading",
-        "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11) 0%, rgba(123, 73, 181, 0.11) 100%)"
+        "heading": "Frequently Asked Questions",
+        "sub_heading": "",
+        "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11), rgba(123, 73, 181, 0.11) 100%)"
       }
     }
   },
@@ -486,7 +554,8 @@
     "rich_text_bFUApi",
     "image_with_text_cta_VtxqUp",
     "image_with_text_cta_E3j8g9",
-    "bulk_product_column_nANnmR",
+    "review_slider_9D3X9L",
+    "bulk_product_column_DVqAmA",
     "new_faq_q9fbh6"
   ]
 }

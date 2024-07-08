@@ -17,6 +17,11 @@
           {% if block.type == 'product' %}
             {% assign grid_length = grid_length | plus: 1 %}
             <div class="product-grid-item" {{ block.shopify_attributes }}>
+              <div class="product-badge">
+                {% if block.settings.showBadge %}
+                  <img src="{{ block.settings.badge | image_url }}" alt="product-badge" height="40" width="40"/>
+                {% endif %}
+              </div>
               <div class="product-info">
                 <p class="block-title">{{ block.settings.title }}</p>
                 <p class="block-subtitle">{{ block.settings.subtitle }}</p>
@@ -31,9 +36,10 @@
               <div class="product-content">
                 <div class="block-price-container">
                   <span class="money block-price">{{ block.settings.price }}</span>
+                  <span class="block-price-text">/Pack</span>
                 </div>
                 <a href="{{ block.settings.btn_url }}" class="product-cta-btn">{{ block.settings.btn_content }}</a>
-                <p class="block-total-price">{{ block.settings.total_price }}</p>
+                <p class="block-guarantee">{{ block.settings.extra_text }}</p>
                 <img
                   src="{{ block.settings.payment_method | image_url: width:215, height: 34 }}"
                   alt=""
@@ -41,6 +47,7 @@
                   width="215"
                   class="block-payment-icon"
                 >
+                <p class="block-total-price">{{ block.settings.total_price }}</p>
                 <p class="block-footer-text">
                   {{ block.settings.footer_text }}
                 </p>
@@ -53,169 +60,181 @@
   </div>
 </section>
 <style>
+#{{ section.id }} .page-width{
+  padding: 80px;
+}
+#{{ section.id }} .product-grid-container{
+  display: grid;
+  grid-template-columns: repeat({{  grid_length }}, 1fr);
+  align-items: center;
+  justify-items:center;
+  gap:24px;
+  max-width: 1030px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.product-column-section .section-heading{;
+  color: #1E062C;
+  text-align: center;
+  font-family: "Bergen Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+}
+.product-grid-item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 2px solid #C2C4C9;
+  background: #FFF;
+  padding: 30px;
+}
+.product-grid-item:nth-child(2){
+  padding: 50px 30px;
+  border-radius: 16px;
+  border: 2px solid #62519D;
+  background: #E5E4EC;
+  box-shadow: 0px 2px 36px 0px rgba(0, 0, 0, 0.15);
+}
+.product-grid-item .product-info, .product-grid-item .product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-grid-item .block-title {
+  color: #62519D;
+  text-align: center;
+  font-family: "Bergen Sans";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+.product-grid-item .block-subtitle {
+  color: #1E062C;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.product-grid-item .block-price-container .money{
+  color: #62519D;
+  text-align: center;
+  font-family: "Bergen Sans";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.22px;
+}
+.product-grid-item .block-price-container .block-price-text{
+  color: #1E062C;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.24px;
+}
+.product-grid-item .product-cta-btn{
+  border-radius: 6px;
+  background: #1E062C;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 17px;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  font-family: "Bergen Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 100% */
+  text-transform: uppercase;
+}
+.block-payment-icon{
+  margin: 5px auto;
+}
+p.block-total-price {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    margin: 5px 0px;
+}
+
+p.block-guarantee {
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 12px;
+    font-weight: 500;
+}
+@media (max-width: 550px) {
+  .product-grid-item .block-price-container .money{
+    font-size: 48px;
+  }
+  .product-grid-item .block-title{
+    color: #62519D;
+    font-size: 19.23px;
+    font-weight: 600;
+    line-height: 22.623px;
+  }
+  .product-grid-item .block-subtitle{
+    color: #1E062C;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.574px;
+    margin-bottom: 8px;
+  }
+  .product-grid-item .product-image{
+    height: 140px;
+    object-fit: contain;
+  }
+  .product-column-section .section-heading {
+    color: #1E062C;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .product-column-section .product-cta-btn{
+    margin-top: 5px;
+  }
+  .product-column-section .block-payment-icon{
+    height: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
   #{{ section.id }} .page-width{
-    padding: 80px;
+    padding: 48px 20px;
   }
   #{{ section.id }} .product-grid-container{
-    display: grid;
-    grid-template-columns: repeat({{  grid_length }}, 1fr);
-    align-items: center;
-    justify-items:center;
-    gap:24px;
-    max-width: 1030px;
-    margin: 0 auto;
-    margin-top: 60px;
-  }
-  .product-column-section .section-heading{;
-    color: #1E062C;
-    text-align: center;
-    font-family: "Bergen Sans";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px; /* 108.333% */
+    grid-template-columns: 1fr;
   }
   .product-grid-item{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 16px;
-    border: 2px solid #C2C4C9;
-    background: #FFF;
-    padding: 30px;
+    flex-direction: row;
+    padding: 10px;
   }
   .product-grid-item:nth-child(2){
-    padding: 50px 30px;
-    border-radius: 16px;
-    border: 2px solid #62519D;
-    background: #E5E4EC;
-    box-shadow: 0px 2px 36px 0px rgba(0, 0, 0, 0.15);
+    grid-row-start: 1;
+    padding: 10px;
   }
-  .product-grid-item .product-info, .product-grid-item .product-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .product-grid-item .block-title {
-    color: #62519D;
-    text-align: center;
-    font-family: "Bergen Sans";
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-  }
-  .product-grid-item .block-subtitle {
-    color: #1E062C;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-
-  .product-grid-item .block-price-container .money{
-    color: #62519D;
-    text-align: center;
-    font-family: "Bergen Sans";
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -2.22px;
-  }
-  .product-grid-item .block-price-container .block-price-text{
-    color: #1E062C;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: -0.24px;
-  }
-  .product-grid-item .product-cta-btn{
-    border-radius: 6px;
-    background: #1E062C;
+  .product-grid-item .product-info, .product-grid-item .product-content{
+    flex-basis: 50%;
+  } 
+  #{{ section.id }} .product-grid-container{
     margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 17px;
-    width: 100%;
-    color: #FFF;
-    text-align: center;
-    font-family: "Bergen Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 14px; /* 100% */
-    text-transform: uppercase;
   }
-  .block-payment-icon{
-    margin: 5px auto;
-  }
-
-  @media (max-width: 550px) {
-    .product-grid-item .block-price-container .money{
-      font-size: 48px;
-    }
-    .product-grid-item .block-title{
-      color: #62519D;
-      font-size: 19.23px;
-      font-weight: 600;
-      line-height: 22.623px;
-    }
-    .product-grid-item .block-subtitle{
-      color: #1E062C;
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 13.574px;
-      margin-bottom: 8px;
-    }
-    .product-grid-item .product-image{
-      height: 140px;
-      object-fit: contain;
-    }
-    .product-column-section .section-heading {
-      color: #1E062C;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 30px;
-    }
-    .product-column-section .product-cta-btn{
-      margin-top: 5px;
-    }
-    .product-column-section .block-payment-icon{
-      height: 30px;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    #{{ section.id }} .page-width{
-      padding: 48px 20px;
-    }
-    #{{ section.id }} .product-grid-container{
-      grid-template-columns: 1fr;
-    }
-    .product-grid-item{
-      flex-direction: row;
-      padding: 10px;
-    }
-    .product-grid-item:nth-child(2){
-      grid-row-start: 1;
-      padding: 10px;
-    }
-    .product-grid-item .product-info, .product-grid-item .product-content{
-      flex-basis: 50%;
-    }
-    #{{ section.id }} .product-grid-container{
-      margin-top: 30px;
-    }
-  }
+}
 </style>
 
 {% schema %}
@@ -287,9 +306,15 @@
         },
         {
           "type": "text",
+          "id": "extra_text",
+          "label": "Extra Text",
+          "default": "60 Day Money Back Guarantee"
+        },
+        {
+          "type": "liquid",
           "id": "total_price",
           "label": "Total Price",
-          "default": "Total $34"
+          "default": "<p>Total $34</p>"
         },
         {
           "type": "image_picker",

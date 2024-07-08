@@ -154,8 +154,8 @@
               "menu_collection_three": "relax",
               "menu_title_four": "Bundles",
               "menu_collection_four": "bundles",
-              "menu_title_five": "",
-              "menu_collection_five": "",
+              "menu_title_five": "ZNite™ Sleep Tapes",
+              "menu_collection_five": "znite-sleep-tapes",
               "shopall_text": "Shop all",
               "shopall_url": "shopify:\/\/collections\/all"
             }
@@ -231,20 +231,12 @@
       "toolbar": {
         "type": "toolbar",
         "blocks": {
-          "announcement_VBbnx6": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "richtext": "<p><a href=\"\/products\/daily-bundle\" title=\"Daily Performance Bundle\">\"Honor & Harmony\" Buy 1 Performance Bundle, get 1 Original Z Sleep patch for free<\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"\/products\/daily-bundle\" title=\"Daily Performance Bundle\">\"Honor & Harmony\" Buy 1 Performance Bundle, get 1 Original Z Sleep patch for free<\/a><\/p>"
-            }
-          },
           "announcement_bCg9Hp": {
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "richtext": "<p>Hassle-free returns. 30-day postage paid returns<\/p>",
-              "richtext_mobile": ""
+              "richtext": "<p><a href=\"\/collections\/all\" title=\"All Products\">4th of July Freedom Sale - 20% off storewide sale<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/collections\/all\" title=\"All Products\">4th of July Freedom Sale - 20% off storewide sale<\/a><\/p>"
             }
           },
           "announcement_m7Ke93": {
@@ -256,12 +248,12 @@
           }
         },
         "block_order": [
-          "announcement_VBbnx6",
           "announcement_bCg9Hp",
           "announcement_m7Ke93"
         ],
         "custom_css": [
-          ".toolbar,.announcement-slider > div,.announcement-slider__content {background-color: #c7e8f1;}"
+          ".toolbar,.announcement-slider > div,.announcement-slider__content {background-color: #c7e8f1;}",
+          "#AnnouncementSlider .flickity-viewport {height: 21px !important;}"
         ],
         "settings": {
           "announcement_center": true,

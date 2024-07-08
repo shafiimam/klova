@@ -12,17 +12,20 @@
         ".image-with-text-cta > div {border-radius: 20px;}",
         ".image-with-text-cta__content--text * {color: #fff;}",
         ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px; font-size: 14px;}",
-        "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
+        ".image-with-text-cta {margin: 0 20px;}",
+        "h1.heading {font-size: 56px; font-weight: 700; line-height: 64px; max-width: 652px;}",
+        ".subheading {font-size: 24px; font-weight: 400; line-height: 30px; gap: 0;}",
+        ".subheading p:last-child {margin-top: 20px; color: #fff; font-size: 16px; font-weight: 500; line-height: 26px;}"
       ],
       "settings": {
         "heading": "Discover the Magic of Better Sleep with Klova’s Sleep Patch – Start Your Free Trial",
-        "subHeading": "<p>Try Klova’s Original Sleep Patch on us! Just cover <strong>$9.95<\/strong> for shipping!<\/p><p>Unlock the secret to quicker, more peaceful sleep with our no-cost trial, featuring 8 patches ingeniously crafted to enhance your sleep quality.<\/p>",
+        "subHeading": "<p>Try Klova’s Original Sleep Patch on us!<\/p><p>Just cover <strong>$9.95<\/strong> for shipping!<\/p><p>Unlock the secret to quicker, more peaceful sleep with our no-cost trial, featuring 8 patches ingeniously crafted to enhance your sleep quality.  <\/p>",
         "image": "shopify:\/\/shop_images\/0712321c9f3f08f9900c63b3279b3144_fb401740-68f0-4762-bc34-918950a7a46d.png",
         "bg_desktop": "shopify:\/\/shop_images\/hero.jpg",
         "bg_tablet": "shopify:\/\/shop_images\/hero-tablet.png",
         "bg_mobile": "shopify:\/\/shop_images\/hero-mobile.png",
         "button_text": "Begin Your Free Sleep Trial",
-        "button_url": "https:\/\/www.klova.com\/products\/sleep-patch-free-trial",
+        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -76,6 +79,9 @@
         "sales_point_dtgzxY",
         "sales_point_iTqB8M"
       ],
+      "custom_css": [
+        ".sales-point-text {max-width: 178px;}"
+      ],
       "settings": {
       }
     },
@@ -93,7 +99,7 @@
         "logo_image_8ExHGF": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003701.png",
+            "image": "shopify:\/\/shop_images\/clokc.png",
             "logo_title": "Time-Release Design",
             "logo_subtitle": "Our advanced formulation ensures a consistent, 8-hour stream of slumber-inducing nutrients."
           }
@@ -115,7 +121,8 @@
       "custom_css": [
         ".logo-bar__image {height: 380px; width: 380px;}",
         ".logo-bar__item {justify-content: flex-start; padding: 0;}",
-        ".logo-bar__title {color: #1e062c; font-family: \"Bergen Sans\"; font-size: 15px; font-style: normal; font-weight: 700; line-height: 20px;}",
+        ".logo-bar__title {color: #1e062c; font-family: \"Bergen Sans\"; font-size: 24px; font-style: normal; font-weight: 700; line-height: 30px; width: 380px; margin: 15px auto; margin-bottom: 0; text-align: left;}",
+        ".logo-subheading {margin: 15px auto; text-align: left; width: 380px;}",
         "@media (min-width: 500px) and (max-width: 800px) {.logo-bar__image {height: 229px; width: 229px; }}",
         "@media (max-width: 500px) {.logo-bar__image {height: 345px; width: 345px; }}"
       ],
@@ -134,7 +141,7 @@
         "sales_point_T3DGXH": {
           "type": "sales_point",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/NATURAL_INGREDIENTS_2d092f51-6d8e-4705-8f1b-d3849b4743b4.svg",
+            "icon": "shopify:\/\/shop_images\/Layer_1.png",
             "title": "All-Natural Formula",
             "subtitle": "Our patches are made with high-quality, natural ingredients that work with your body to promote better sleep."
           }
@@ -166,11 +173,12 @@
         "section {margin: 0 20px;}",
         ".icon-with-text .icon__image {width: 40px; height: 40px;}",
         ".icon-container {flex-basis: 40px;}",
-        ".icon-with-text {gap: 16px;}"
+        ".icon-with-text {gap: 16px;}",
+        ".section-title {max-width: 494px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/slee-patch-trial.png",
-        "title": "Why Choose Klova’sSleep Patch",
+        "title": "Why Klova’s Sleep Patch Is Your Nighttime Ally?",
         "link": "",
         "button_label": "",
         "aligment": "right"
@@ -212,7 +220,7 @@
       "custom_css": [
         ".logo-bar__image {margin: 0; height: 129px; width: 129px;}",
         ".logo-bar__item {justify-content: flex-start; background: linear-gradient( 90deg, rgba(100, 233, 217, 0.11) 0%, rgba(123, 73, 181, 0.11) 100% ), #fff; border-radius: 15px;}",
-        ".logo-bar__title {color: #1e062c; font-family: \"Bergen Sans\"; font-size: 15px; font-style: normal; font-weight: 700; line-height: 20px;}",
+        ".logo-bar__title {color: #1e062c; font-family: \"Bergen Sans\"; font-size: 20px; font-style: normal; font-weight: 700; line-height: 28px;}",
         ".logo-bar__item span {margin: 10px 0 !important; text-align: left;}"
       ],
       "settings": {
@@ -231,10 +239,10 @@
       ],
       "settings": {
         "heading": "Why We’re Sharing the Klova Experience",
-        "subHeading": "<p><strong>“We’re on a mission to revolutionize sleep, and nothing speaks louder than firsthand experiences. That’s why we’re offering this free trial—to let you discover the transformative power of the Klova Sleep Patch for yourself. <\/strong><\/p><p><strong>We’re confident that our approach to rest will resonate with you, making the Klova Sleep Patch a cherished addition to your nightly ritual. Dive into your trial today, completely on us, and reawaken to brighter mornings!”<\/strong><\/p>",
+        "subHeading": "<p><em><strong>“We’re on a mission to revolutionize sleep, and nothing speaks louder than firsthand experiences. That’s why we’re offering this free trial—to let you discover the transformative power of the Klova Sleep Patch for yourself. <\/strong><\/em><\/p><p><em><strong>We’re confident that our approach to rest will resonate with you, making the Klova Sleep Patch a cherished addition to your nightly ritual. Dive into your trial today, completely on us, and reawaken to brighter mornings!”<\/strong><\/em><\/p>",
         "image": "shopify:\/\/shop_images\/hands.png",
         "button_text": "Get Your Free 8-Day Trial Pack Now",
-        "button_url": "https:\/\/www.klova.com\/products\/sleep-patch-free-trial",
+        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -433,15 +441,15 @@
       "custom_css": [
         ".image-with-text-cta > div {border-radius: 20px;}",
         ".image-with-text-cta__content--text * {color: #fff;}",
-        ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px;}",
+        ".image-with-text-cta .cta-button {background: #fff; max-width: 360px; color: #1e062c; text-align: center; font-size: 13px; font-style: normal; font-weight: 700; line-height: 14px; text-transform: uppercase;}",
         "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
       ],
       "settings": {
         "heading": "30 Day Money Back Guarantee",
         "subHeading": "<p>Just pay $9.95 shipping. After 7 days from sign-up, your monthly subscription will begin at $27.99\/month. You will receive email and text notifications before your subscription begins. You can cancel anytime in our online portal, or by emailing sleep@klova.com.<\/p>",
-        "image": "shopify:\/\/shop_images\/Group_13634.png",
+        "image": "shopify:\/\/shop_images\/money_back_badge.png",
         "button_text": "Get Your Free 8-Day Trial Pack Now",
-        "button_url": "#subscribe",
+        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "right",
@@ -454,6 +462,8 @@
       "custom_css": [
         ".image-with-text-cta > div {border-radius: 20px;}",
         ".image-with-text-cta .cta-button {background: #1e062c; color: #fff; max-width: 360px; font-size: 14px;}",
+        ".heading {color: #1e062c; font-size: 48px; font-weight: 700; line-height: 56px;}",
+        ".heading,.subheading {max-width: 519px;}",
         "@media (max-width: 800px) {.image-with-text-cta {margin: 0 20px; }}"
       ],
       "settings": {
@@ -461,7 +471,7 @@
         "subHeading": "<p>Don’t miss out on this exclusive offer. Click below to get your free 8-day trial of the Klova Sleep Patch and start sleeping better tonight.<\/p>",
         "image": "shopify:\/\/shop_images\/Group_13635.png",
         "button_text": "Get Your Free Trial Now!",
-        "button_url": "#subscribe",
+        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "left",

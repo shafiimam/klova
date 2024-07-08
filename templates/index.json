@@ -8,12 +8,12 @@
           "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "Cheers to Dads",
-            "last_word_color": "#fa4d09",
+            "title": "Cheers to Freedom",
+            "last_word_color": "#fa0909",
             "title_size": 60,
-            "subheading": "<p>On $45 purchases Here's to the guiding hands and caring hearts of Fathers – Klova celebrates Dad's strength and love.or more, get 1 Free Mouth Tape Sample<\/p>",
+            "subheading": "<p>Ignite Your Independence Day - 20% Off Klova Patches Store-wide!<\/p>",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/Klova-Banner_01-_480x450px_-_rectangular_-_Father_Day_-_May_30_2024.jpg",
+            "image": "shopify:\/\/shop_images\/Klova-Banner_Fourth_of_July_-_480x450px_-_rectangular_-_June_25-2024_01.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "transform_mob_x": 0,
@@ -21,7 +21,7 @@
             "transform_x": 0,
             "transform_y": 0,
             "style_overlay": "bg-gr--green-blue",
-            "link_text": "Learn More",
+            "link_text": "Shop Now",
             "link": "shopify:\/\/collections\/all"
           }
         },

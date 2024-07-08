@@ -17,31 +17,41 @@
 </section>
 
 <style>
-#{{ section.id }} .sales-point-grid{
-  display: grid;
-  grid-template-columns: repeat({{ columnLength }}, 1fr);
-  grid-gap: 25px;
-  margin: 0;
-  padding: 40px 80px;
-}
-#{{ section.id }} .sales-point-item{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-#{{ section.id }} .sales-point-text{
-  color: #1E062C;
-  font-family: "Bergen Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 14px; /* 100% */
-}
+  #{{section.id}} .page-width{
+    padding: 0;
+  }
+  #{{ section.id }} .sales-point-grid {
+      display: flex;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 0;
+      padding: 40px 80px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 35px;
+  }
+  #{{ section.id }} .sales-point-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #{{ section.id }} .sales-point-text{
+    color: #1E062C;
+    font-family: "Bergen Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px; /* 100% */
+  }
 
-
-
+  @media (max-width: 600px){
+    #{{ section.id }} .sales-point-grid{
+      padding: 40px 15px;
+      gap: 41px;
+      justify-content: flex-start;
+    }
+  }
 </style>
 {% schema %}
 {
