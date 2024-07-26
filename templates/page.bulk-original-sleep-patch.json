@@ -6,6 +6,42 @@
       "settings": {
       }
     },
+    "slideshow_3fBzej": {
+      "type": "slideshow",
+      "blocks": {
+        "hero_fC6AKg": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Get Your Best Sleep Ever with Klova’s Original Sleep Patch!<\/p>",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "Get Original Sleep Patch!",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#1e062c",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Frame_1239330632.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1239330634.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "hero_fC6AKg"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "image_with_text_cta_wbXgfK": {
       "type": "image-with-text-cta",
       "custom_css": [
@@ -13,12 +49,16 @@
         ".image-with-text-cta__content .cta-button {background: #1e062c;}",
         ".image-with-text-cta__content {padding-right: 0; padding-top: 0; padding-bottom: 0;}",
         ".image-with-text-cta__content--image {position: relative; left: 20px;}",
-        ".image-with-text-cta__container {padding-top: 50px;}"
+        ".image-with-text-cta__container {padding-top: 50px;}",
+        ".image-with-text-cta__content--image {flex-basis: 57%;}"
       ],
       "settings": {
         "heading": "Get Your Best Sleep Ever with Klova’s Original Sleep Patch!",
         "subHeading": "",
-        "image": "shopify:\/\/shop_images\/original-patch-hero_4aea343e-5549-4876-9f86-3be87a9155d8.jpg",
+        "image": "shopify:\/\/shop_images\/Frame_1239330632_2ea8edfd-c183-4365-bf32-012db7a3c373.png",
+        "bg_desktop": "shopify:\/\/shop_images\/Frame_1239330632.png",
+        "bg_tablet": "shopify:\/\/shop_images\/Frame_1239330632.png",
+        "bg_mobile": "shopify:\/\/shop_images\/Frame_1239330634.png",
         "button_text": "Get Original Sleep Patch!",
         "button_url": "#buy-now",
         "button_text_2": "Button Text",
@@ -167,6 +207,184 @@
         "show_section_devider": false
       }
     },
+    "ingredients_Y66VyT": {
+      "type": "ingredients",
+      "blocks": {
+        "card_EyP9xJ": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/melatonin.png",
+            "svg_icon": "",
+            "title": "Melatonin",
+            "description": "<p>Naturally occurring hormone commonlyused as a natural sleep aid*<\/p>"
+          }
+        },
+        "card_UpQBdm": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-theanine_3fc01a1e-4e68-4973-8e2b-587eb2fdfc49.png",
+            "svg_icon": "",
+            "title": "L-Theanine",
+            "description": "<p>An amino acid known to promote relaxation, reduce stress, and improve sleep*<\/p>"
+          }
+        },
+        "card_AkqCAA": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/velerian.png",
+            "svg_icon": "",
+            "title": "Skin sensitivity blend",
+            "description": "<p>White Willow Bark Extract & Aloe Vera LeafGel Extract for skin-care.*<\/p>"
+          }
+        },
+        "card_EP6Pj3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gaba_3fb48ac7-1a32-4ca7-b1e2-4aa9ddeacdff.png",
+            "svg_icon": "",
+            "title": "GABA",
+            "description": "<p>A naturally occurring neuro transmitter known to reduce anxiety & improve sleep*<\/p>"
+          }
+        },
+        "card_tFek4Y": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmoperine.png",
+            "svg_icon": "",
+            "title": "Cosmoperine",
+            "description": "<p>Naturally derived from black pepper, it'sused to increase the absorption of nutrientsthrough the skin.<\/p>"
+          }
+        },
+        "card_x7fMx9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/passion_flower_ccf040f3-dcf6-421a-84e1-08ff1ba3f76f.png",
+            "svg_icon": "",
+            "title": "Passion Flower",
+            "description": "<p>Known to help with insomnia and reduce inflammation and anxiety*<\/p>"
+          }
+        },
+        "card_ULchCU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lavender-oil.png",
+            "svg_icon": "",
+            "title": "Lavender Oil",
+            "description": "<p>*Known natural anxiety reliever and sedative.<\/p>"
+          }
+        },
+        "card_C9cC9Q": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/velerian.png",
+            "svg_icon": "",
+            "title": "Valerian",
+            "description": "<p>A root known to help reduce anxietyand promote relaxation*<\/p>"
+          }
+        },
+        "card_pyg6GY": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/velerian.png",
+            "svg_icon": "",
+            "title": "Sensoril Ashwagandha",
+            "description": "<p>Clinically proven to reduce stress and calmanxious minds.*<\/p>"
+          }
+        },
+        "card_PRFipe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hops.png",
+            "svg_icon": "",
+            "title": "Hops",
+            "description": "<p>A plant commonly used to reduceanxiety and sleep disorders*<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_EyP9xJ",
+        "card_UpQBdm",
+        "card_AkqCAA",
+        "card_EP6Pj3",
+        "card_tFek4Y",
+        "card_x7fMx9",
+        "card_ULchCU",
+        "card_C9cC9Q",
+        "card_pyg6GY",
+        "card_PRFipe"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Made with Naturally Occurring Ingredients",
+        "rte": "<p>A calming blend of 11 nature-inspired ingredients on each ZPatch<\/p>",
+        "image": "shopify:\/\/shop_images\/patch.png"
+      }
+    },
+    "slideshow_image_QRjEpD": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_jP3YF6": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Frame_14205.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_14233.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_jP3YF6"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "How We Compare",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "zsleep_show_NJwUWn": {
+      "type": "zsleep-show",
+      "custom_css": [
+        ".sleep-patch-inst {display: none;}",
+        ".zsleep-content p {display: none;}",
+        ".zsleep-content p:nth-child(4),.zsleep-content p:nth-child(1) {display: block;}"
+      ],
+      "settings": {
+      }
+    },
+    "sales_point_column_dgpYr4": {
+      "type": "sales-point-column",
+      "blocks": {
+        "sales_point_k3RXbc": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/who-support-us.svg",
+            "text": "<p>Who Supports Us<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_k3RXbc"
+      ],
+      "custom_css": [
+        ".sales-point-item {flex-direction: column-reverse; width: 100%;}",
+        ".sales-point-item img {height: 100px; width: 100%;}",
+        ".sales-point-text {font-family: Poppins; font-weight: 700; font-style: normal; font-size: 32px;}"
+      ],
+      "settings": {
+      }
+    },
+    "z_patch_night_sleep_QtBypk": {
+      "type": "z-patch-night-sleep",
+      "custom_css": [
+        ".night-sleep-data {text-align: center; padding-top: 60px;}",
+        ".image-width-text {display: none;}"
+      ],
+      "settings": {
+      }
+    },
     "logo_list_Q3U9aP": {
       "type": "logo-list",
       "blocks": {
@@ -230,11 +448,12 @@
           "settings": {
             "title": "1x Pack",
             "subtitle": "1 Month Supply",
+            "showBadge": false,
             "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
             "product": "",
             "price": "$29.97",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1?discount=PATCH1PACK",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:1?discount=PATCH1PACK",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$39.99<\/s> <b>$29.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -246,11 +465,13 @@
           "settings": {
             "title": "6x Packs",
             "subtitle": "6 Month Supply",
+            "showBadge": true,
+            "badge": "shopify:\/\/shop_images\/Badge_40X40px_-_Purple_-_Klova_FREE_SHIPPING_5_1.png",
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
             "price": "$13.33",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:6?discount=PATCH6PACKS",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$239.94<\/s> <b>$79.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -262,11 +483,12 @@
           "settings": {
             "title": "3x Packs",
             "subtitle": "3 Month Supply",
+            "showBadge": false,
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
             "price": "$16.66",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:3?discount=PATCH3PACKS",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$119.97<\/s> <b>$49.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -409,6 +631,7 @@
           "settings": {
             "title": "1x Pack",
             "subtitle": "1 Month Supply",
+            "showBadge": false,
             "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
             "product": "",
             "price": "$29.97",
@@ -425,6 +648,8 @@
           "settings": {
             "title": "6x Packs",
             "subtitle": "6 Month Supply",
+            "showBadge": true,
+            "badge": "shopify:\/\/shop_images\/Badge_40X40px_-_Purple_-_Klova_FREE_SHIPPING_5_1.png",
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
             "price": "$13.33",
@@ -441,6 +666,7 @@
           "settings": {
             "title": "3x Packs",
             "subtitle": "3 Month Supply",
+            "showBadge": false,
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
             "price": "$16.66",
@@ -540,15 +766,44 @@
         "sub_heading": "",
         "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11), rgba(123, 73, 181, 0.11) 100%)"
       }
+    },
+    "1720562996d5cf18f5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_Ly8DJD": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "sleep-patch"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_Ly8DJD"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "custom_ar_ventures_script_pKDFkB": {
+      "type": "custom-ar-ventures-script",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
+    "slideshow_3fBzej",
     "image_with_text_cta_wbXgfK",
     "image_with_sales_point_z6qtFq",
     "carousel_videos_ARgqAp",
     "rich_text_Ve3pWa",
     "image_with_text_cta_pyyKFx",
+    "ingredients_Y66VyT",
+    "slideshow_image_QRjEpD",
+    "zsleep_show_NJwUWn",
+    "sales_point_column_dgpYr4",
+    "z_patch_night_sleep_QtBypk",
     "logo_list_Q3U9aP",
     "bulk_product_column_mPkHjz",
     "rich_text_bFUApi",
@@ -556,6 +811,8 @@
     "image_with_text_cta_E3j8g9",
     "review_slider_9D3X9L",
     "bulk_product_column_DVqAmA",
-    "new_faq_q9fbh6"
+    "new_faq_q9fbh6",
+    "1720562996d5cf18f5",
+    "custom_ar_ventures_script_pKDFkB"
   ]
 }

@@ -12,20 +12,20 @@
         ".image-with-text-cta > div {border-radius: 20px;}",
         ".image-with-text-cta__content--text * {color: #fff;}",
         ".image-with-text-cta .cta-button {background: #fff; color: #000; max-width: 360px; font-size: 14px;}",
-        ".image-with-text-cta {margin: 0 20px;}",
+        ".image-with-text-cta {margin: 0 20px; padding-top: 20px;}",
         "h1.heading {font-size: 56px; font-weight: 700; line-height: 64px; max-width: 652px;}",
         ".subheading {font-size: 24px; font-weight: 400; line-height: 30px; gap: 0;}",
         ".subheading p:last-child {margin-top: 20px; color: #fff; font-size: 16px; font-weight: 500; line-height: 26px;}"
       ],
       "settings": {
         "heading": "Discover the Magic of Better Sleep with Klova’s Sleep Patch – Start Your Free Trial",
-        "subHeading": "<p>Try Klova’s Original Sleep Patch on us!<\/p><p>Just cover <strong>$9.95<\/strong> for shipping!<\/p><p>Unlock the secret to quicker, more peaceful sleep with our no-cost trial, featuring 8 patches ingeniously crafted to enhance your sleep quality.  <\/p>",
+        "subHeading": "<p>Try Klova’s Original ZPatch on us!<\/p><p>Just cover <strong>$9.95<\/strong> for shipping!<\/p><p>Unlock the secret to quicker, more peaceful sleep with our no-cost trial, featuring 8 patches ingeniously crafted to enhance your sleep quality.  <\/p>",
         "image": "shopify:\/\/shop_images\/0712321c9f3f08f9900c63b3279b3144_fb401740-68f0-4762-bc34-918950a7a46d.png",
-        "bg_desktop": "shopify:\/\/shop_images\/hero.jpg",
-        "bg_tablet": "shopify:\/\/shop_images\/hero-tablet.png",
-        "bg_mobile": "shopify:\/\/shop_images\/hero-mobile.png",
+        "bg_desktop": "shopify:\/\/shop_images\/Frame_1239330636.png",
+        "bg_tablet": "shopify:\/\/shop_images\/Frame_1239330639.png",
+        "bg_mobile": "shopify:\/\/shop_images\/Frame_1239330641.png",
         "button_text": "Begin Your Free Sleep Trial",
-        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
+        "button_url": "https:\/\/klova.myshopify.com\/cart\/41597035708481:1",
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -135,6 +135,47 @@
         "button_label": ""
       }
     },
+    "z_patch_night_sleep_6KiybG": {
+      "type": "z-patch-night-sleep",
+      "custom_css": [
+        ".night-sleep-data {text-align: center; padding-top: 60px;}",
+        ".image-width-text {display: none;}"
+      ],
+      "settings": {
+      }
+    },
+    "zsleep_show_8VLzEy": {
+      "type": "zsleep-show",
+      "custom_css": [
+        ".sleep-patch-inst {display: none;}",
+        ".zsleep-content p {display: none;}",
+        ".zsleep-content p:nth-child(4),.zsleep-content p:nth-child(1) {display: block;}"
+      ],
+      "settings": {
+      }
+    },
+    "sales_point_column_kULyGg": {
+      "type": "sales-point-column",
+      "blocks": {
+        "sales_point_EREJXM": {
+          "type": "sales-point",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/who-support-us.svg",
+            "text": "<p>Who Supports Us<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_EREJXM"
+      ],
+      "custom_css": [
+        ".sales-point-item {flex-direction: column-reverse; width: 100%;}",
+        ".sales-point-item img {height: 100px; width: 100%;}",
+        ".sales-point-text {font-family: Poppins; font-weight: 700; font-style: normal; font-size: 32px;}"
+      ],
+      "settings": {
+      }
+    },
     "image_with_sales_point_fA9Ca4": {
       "type": "image-with-sales-point",
       "blocks": {
@@ -242,7 +283,7 @@
         "subHeading": "<p><em><strong>“We’re on a mission to revolutionize sleep, and nothing speaks louder than firsthand experiences. That’s why we’re offering this free trial—to let you discover the transformative power of the Klova Sleep Patch for yourself. <\/strong><\/em><\/p><p><em><strong>We’re confident that our approach to rest will resonate with you, making the Klova Sleep Patch a cherished addition to your nightly ritual. Dive into your trial today, completely on us, and reawaken to brighter mornings!”<\/strong><\/em><\/p>",
         "image": "shopify:\/\/shop_images\/hands.png",
         "button_text": "Get Your Free 8-Day Trial Pack Now",
-        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
+        "button_url": "https:\/\/klova.myshopify.com\/cart\/41597035708481:1",
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -259,7 +300,7 @@
             "image": "shopify:\/\/shop_images\/melatonin.png",
             "svg_icon": "",
             "title": "Melatonin",
-            "description": "<p>Naturally occurring hormone commonlyused as a natural sleep aid*<\/p>"
+            "description": "<p>Naturally occurring hormone commonly used as a natural sleep aid*<\/p>"
           }
         },
         "card_UpQBdm": {
@@ -331,7 +372,7 @@
             "image": "shopify:\/\/shop_images\/velerian.png",
             "svg_icon": "",
             "title": "Sensoril Ashwagandha",
-            "description": "<p>Clinically proven to reduce stress and calmanxious minds.*<\/p>"
+            "description": "<p>Clinically proven to reduce stress and calm anxious minds.*<\/p>"
           }
         },
         "card_PRFipe": {
@@ -340,7 +381,7 @@
             "image": "shopify:\/\/shop_images\/hops.png",
             "svg_icon": "",
             "title": "Hops",
-            "description": "<p>A plant commonly used to reduceanxiety and sleep disorders*<\/p>"
+            "description": "<p>A plant commonly used to reduce anxiety and sleep disorders*<\/p>"
           }
         }
       },
@@ -449,7 +490,7 @@
         "subHeading": "<p>Just pay $9.95 shipping. After 7 days from sign-up, your monthly subscription will begin at $27.99\/month. You will receive email and text notifications before your subscription begins. You can cancel anytime in our online portal, or by emailing sleep@klova.com.<\/p>",
         "image": "shopify:\/\/shop_images\/money_back_badge.png",
         "button_text": "Get Your Free 8-Day Trial Pack Now",
-        "button_url": "https:\/\/klova.com\/cart\/45010295562:1",
+        "button_url": "https:\/\/klova.myshopify.com\/cart\/41597035708481:1",
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "right",
@@ -566,6 +607,59 @@
         "sub_heading": "We’re here to help!",
         "background": "linear-gradient(90deg, rgba(100, 233, 217, 0.11), rgba(123, 73, 181, 0.11) 100%)"
       }
+    },
+    "1720636531b105d014": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_XBxR7c": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "sleep-patch"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_XBxR7c"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "advanced_content_kD4FBc": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_i6Kyif": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_8bxCxf": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n#HeaderWrapper {\n  display: none;\n}\n\n.footer__block{\ndisplay:none;\n}\n.footer__block--copyright{\ndisplay:block;\nmax-width:600px;\n}\n.madeInAmerica{\nmax-width:240px;\n}\n\n@media (max-width: 500px) {\n    #shopify-section-template--15915053940801__logo_list_with_cta_bh7h4h .logo-bar__image {\n        height: 300px;\n        width: 300px;\n        text-align: left;\n        margin: 0;\n    }\n}\n\n<\/style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_i6Kyif",
+        "liquid_8bxCxf"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "custom_ar_ventures_script_qKCzKB": {
+      "type": "custom-ar-ventures-script",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -573,6 +667,9 @@
     "image_with_text_cta_d6LtXg",
     "sales_point_column_LFGdtL",
     "logo_list_with_cta_bh7h4h",
+    "z_patch_night_sleep_6KiybG",
+    "zsleep_show_8VLzEy",
+    "sales_point_column_kULyGg",
     "image_with_sales_point_fA9Ca4",
     "logo_list_with_cta_UJcxWL",
     "image_with_text_cta_iFntRH",
@@ -582,6 +679,9 @@
     "image_with_text_cta_Vxw9EX",
     "image_with_text_cta_aFnDaH",
     "review_slider_Dc9Fi4",
-    "new_faq_HyWTqD"
+    "new_faq_HyWTqD",
+    "1720636531b105d014",
+    "advanced_content_kD4FBc",
+    "custom_ar_ventures_script_qKCzKB"
   ]
 }

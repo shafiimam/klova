@@ -1,6 +1,6 @@
 <div class="faq">
-  <div class="faq__wrapper">
-    <div class="page-width">
+  <div class="faq__wrapper rem-spcing">
+    <div class="page-width mob-spacing">
       <div class="faq__inner">
         {% if section.settings.title != blank %}
         <h2 class="faq__title"> {{ section.settings.title }} </h2>
@@ -34,6 +34,17 @@
   </div>
 </div>
 
+<style>
+  @media only screen and (min-width:320px) and (max-width:768px){
+    .rem-spcing{
+      padding-right:20px;
+      padding-left:20px;
+    }
+    .mob-spacing{
+      padding:0px;
+    }
+  }
+</style>
 
 {% schema %}
 {

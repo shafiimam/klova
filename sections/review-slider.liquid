@@ -59,6 +59,7 @@
                 </p>
                 <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
               </div>
+                <a href="{{ block.settings.product.url }}">
               <div class="review-bottom-cta">
                 <div class="product-image">
                   <img
@@ -75,16 +76,16 @@
                   </p>
                 </div>
                 <div class="review-cta-btn">
-                  <a href="{{ block.settings.product.url }}">
                     <img
                       src="https://cdn.shopify.com/s/files/1/2065/0707/files/arrow-right_1.svg"
                       alt="arrow-icon"
                       height="24"
                       width="24"
                     >
-                  </a>
                 </div>
               </div>
+                  </a>
+          
             </div>
           </div>
         {% endfor %}
@@ -179,8 +180,9 @@
     gap: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
   }
 
   .review-text {

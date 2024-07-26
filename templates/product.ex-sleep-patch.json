@@ -4,8 +4,9 @@
       "type": "main-product",
       "blocks": {
         "a310623b-9aaf-479b-8302-dceb2a0a9c9a": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         },
         "a3c96a02-0049-4561-912c-c3f3d0bc16c8": {
           "type": "paragraph",
@@ -40,12 +41,12 @@
         "bundle_btn_nJ3Dfz": {
           "type": "bundle_btn",
           "settings": {
-            "bundle_img": "shopify://shop_images/Frame_1000003954_1.png",
-            "bundle_mob_img": "shopify://shop_images/Frame_1000003955_1.png",
+            "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
+            "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
             "bundle_data": "Build Your Own Bundle",
             "bundle_sub_text": "Discover the perfect combination of Klova products tailored just for you. Mix and match to create a bundle that fits your needs.",
             "bundle_btn": "BUILD YOUR BUNDLE",
-            "bundle_url": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "bundle_url": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
             "bundle_color_text": "#121212",
             "bundle_bg": "#faf4fc",
             "bundle_btn_border": "#121212",
@@ -54,7 +55,8 @@
         },
         "4c031575-b1fb-46de-a7bc-39207e9de917": {
           "type": "skio-plan-picker",
-          "settings": {}
+          "settings": {
+          }
         },
         "f6df66b7-72d8-4e33-8bf4-5ec6986c9270": {
           "type": "quantity_selector",
@@ -66,7 +68,7 @@
           }
         },
         "essential_countdown_app_block_CAhqfx": {
-          "type": "shopify://apps/essential-countdown/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
             "id": "clsly3rjw4546821ou9msv7eihr"
           }
@@ -94,17 +96,17 @@
           "type": "tab",
           "settings": {
             "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
-            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}</p>",
+            "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}<\/p>",
             "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
-            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}</p>",
+            "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}<\/p>",
             "acc-button-three": "{{ product.metafields.add_tab.product_title_tab_3.value }}",
-            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}</p>",
+            "acc-text-three": "<p>{{ product.metafields.add_tab.product_text_tab_3 | metafield_tag }}<\/p>",
             "acc-button-four": "{{ product.metafields.add_tab.product_title_tab_4.value }}",
-            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}</p>",
+            "acc-text-four": "<p>{{ product.metafields.add_tab.product_text_tab_4 | metafield_tag }}<\/p>",
             "acc-button-five": "{{ product.metafields.add_tab.product_title_tab_5.value }}",
-            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}</p>",
+            "acc-text-five": "<p>{{ product.metafields.add_tab.product_text_tab_5 | metafield_tag }}<\/p>",
             "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
-            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}</p>"
+            "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
           }
         }
       },
@@ -125,7 +127,7 @@
       ],
       "settings": {
         "link-back-text": "",
-        "link-back": "shopify://collections/all",
+        "link-back": "shopify:\/\/collections\/all",
         "second_stars": false,
         "sku_enable": false,
         "image_position": "left",
@@ -163,7 +165,7 @@
           "settings": {
             "title": "Optimize",
             "text": "Before applying the patch, shave the area you'll be apply it to Lorem",
-            "popup_info": "<p>Before applying the patch, shave the area you'll be apply it to, as even tiny hairs can prevent absorption. For best results, ensure proper blood flow to the area after applying. We recommend applying to the top of the foot and walking for 10 minutes. Alternatively, apply to the upper arm/ shoulder and do a few sets of arm circles or pushups to get blood flowing to the area. Remember, the ingredients absorbing through the upper dermis capillaries NEED a good amount of blood flow to carry them through the body, so do not place the patches on area without good blood flow. </p>"
+            "popup_info": "<p>Before applying the patch, shave the area you'll be apply it to, as even tiny hairs can prevent absorption. For best results, ensure proper blood flow to the area after applying. We recommend applying to the top of the foot and walking for 10 minutes. Alternatively, apply to the upper arm\/ shoulder and do a few sets of arm circles or pushups to get blood flowing to the area. Remember, the ingredients absorbing through the upper dermis capillaries NEED a good amount of blood flow to carry them through the body, so do not place the patches on area without good blood flow. <\/p>"
           }
         },
         "165468749574c87244-3": {
@@ -185,12 +187,91 @@
         "paddingsection": "0px 0px 60px 0px",
         "paddingsection_mob": "0px 0px 60px 0px",
         "title": "Peel Stick Sleep",
-        "info": "<p>Extra-Strength Sleep Patches are the easiest way to unlock your best sleep ever, here's how it works:</p>",
+        "info": "<p>Extra-Strength Sleep Patches are the easiest way to unlock your best sleep ever, here's how it works:<\/p>",
         "overlay": "#faf9fb",
-        "video_url": "https://vimeo.com/703421279",
+        "video_url": "https:\/\/vimeo.com\/703421279",
         "overlay_opacity": 0,
         "height": 500,
         "height_mobile": 160
+      }
+    },
+    "carousel_videos_XhbdTb": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_B3EdQy": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560840637"
+          }
+        },
+        "video_RVxzWg": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560842790"
+          }
+        },
+        "video_ifaUAp": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560859492"
+          }
+        },
+        "video_XXV3e4": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560861088"
+          }
+        },
+        "video_GeEY6L": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560855080"
+          }
+        },
+        "video_RBMgnx": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/974750709"
+          }
+        }
+      },
+      "block_order": [
+        "video_B3EdQy",
+        "video_RVxzWg",
+        "video_ifaUAp",
+        "video_XXV3e4",
+        "video_GeEY6L",
+        "video_RBMgnx"
+      ],
+      "settings": {
+        "paddingsection": "60px 0px 60px 0px",
+        "paddingsection_mob": "20px",
+        "title": "Bedtime Stories: Before & After",
+        "rte": "<p>Former Insomniacs Continuously Send Us Sleep Patch Reviews, Here Are Some Of Their Stories…<\/p>",
+        "overlay": "#faf9fb"
+      }
+    },
+    "slideshow_image_DphBr7": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_KcqLEM": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/product-comparison-desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/product-comparison-mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_KcqLEM"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "Product Comparison",
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
       }
     },
     "1654687329523c467f": {
@@ -200,28 +281,28 @@
           "type": "info",
           "settings": {
             "title": "COMPREHENSIVE INGREDIENTS",
-            "text": "<p>Every Extra-Strength Sleep Patch is the equivalent of 7 different health products working together as 1 to help promote your best sleep ever.</p>"
+            "text": "<p>Every Extra-Strength Sleep Patch is the equivalent of 7 different health products working together as 1 to help promote your best sleep ever.<\/p>"
           }
         },
         "1654687329e5bc22ff-1": {
           "type": "info",
           "settings": {
             "title": "THE DIFFERENCE IS THE DELIVERY",
-            "text": "<p>Your body was built to absorb nutrients it needs transdermally, and we aren't the first to capitalize on it either: the sun has been doing it for years now ;)</p>"
+            "text": "<p>Your body was built to absorb nutrients it needs transdermally, and we aren't the first to capitalize on it either: the sun has been doing it for years now ;)<\/p>"
           }
         },
         "1654687329e5bc22ff-2": {
           "type": "info",
           "settings": {
             "title": "WELLNESS THAT STICKS",
-            "text": "<p>Klova is a wellness routine you can stick with easier than most, because it sticks with you. Each patch stays secure for up to 8 hours, or until you remove it.</p>"
+            "text": "<p>Klova is a wellness routine you can stick with easier than most, because it sticks with you. Each patch stays secure for up to 8 hours, or until you remove it.<\/p>"
           }
         },
         "1654687329e5bc22ff-3": {
           "type": "info",
           "settings": {
             "title": "GIVE YOUR STOMACH A BREAK",
-            "text": "<p>Stomach aches are very common with sleep support pills or drinks. We fixed that by skipping the stomach and going right to bloodstream. Better results, faster.</p>"
+            "text": "<p>Stomach aches are very common with sleep support pills or drinks. We fixed that by skipping the stomach and going right to bloodstream. Better results, faster.<\/p>"
           }
         }
       },
@@ -235,7 +316,7 @@
         "paddingsection": "0px 0px 40px 0px",
         "paddingsection_mob": "0px 0px 40px 0px",
         "title": "See you in bed ;)",
-        "image": "shopify://shop_images/hand.png",
+        "image": "shopify:\/\/shop_images\/hand.png",
         "html": "",
         "overlay": "#faf9fb",
         "animate": "false"
@@ -247,10 +328,10 @@
         "position_image": "benefits-card__image_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/BlackPatch-womansleeping.jpg",
-        "image-mobile": "shopify://shop_images/BlackPatch-womansleeping.jpg",
+        "image": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BlackPatch-womansleeping.jpg",
         "title": "Fall asleep",
-        "text": "<p>Melatonin and naturally occuring ingredients promote relaxation before bed, which can help you wind down and ease into a gentle sleep.</p>"
+        "text": "<p>Melatonin and naturally occuring ingredients promote relaxation before bed, which can help you wind down and ease into a gentle sleep.<\/p>"
       }
     },
     "1653916291e266d004": {
@@ -259,10 +340,10 @@
         "position_image": "benefits-card__inner_left",
         "text-align": "benefits-card__content_right",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/Rectangle_7-min.jpg",
-        "image-mobile": "shopify://shop_images/Rectangle_9-min-min.jpg",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_9-min-min.jpg",
         "title": "Stay asleep",
-        "text": "<p><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2909186/\" target=\"_blank\" title=\"Melatonin sleep patch study\">Independent studies</a> have shown that transdermal melatonin patches can be more effective at helping people remain sleeping.</p>"
+        "text": "<p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC2909186\/\" target=\"_blank\" title=\"Melatonin sleep patch study\">Independent studies<\/a> have shown that transdermal melatonin patches can be more effective at helping people remain sleeping.<\/p>"
       }
     },
     "16539162981609c3bf": {
@@ -271,10 +352,10 @@
         "position_image": "benefits-card__image_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/Rectangle_7-1-min.jpg",
-        "image-mobile": "shopify://shop_images/Rectangle_10-min-min.jpg",
+        "image": "shopify:\/\/shop_images\/Rectangle_7-1-min.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Rectangle_10-min-min.jpg",
         "title": "Reduce tossing and turning",
-        "text": "<p>96% of sleep study participants reported less tossing and turning when using a Klova sleep patch.</p>"
+        "text": "<p>96% of sleep study participants reported less tossing and turning when using a Klova sleep patch.<\/p>"
       }
     },
     "1653916303774cfc14": {
@@ -283,10 +364,10 @@
         "position_image": "benefits-card__inner_left",
         "text-align": "benefits-card__content_right",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/BluePatch-WakeUpRefreshed.jpg",
-        "image-mobile": "shopify://shop_images/BluePatch-WakeUpRefreshed.jpg",
+        "image": "shopify:\/\/shop_images\/BluePatch-WakeUpRefreshed.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BluePatch-WakeUpRefreshed.jpg",
         "title": "Wake up refreshed",
-        "text": "<p>94% of sleep study participants reported waking up more refreshed after using Klova sleeping patches.</p>"
+        "text": "<p>94% of sleep study participants reported waking up more refreshed after using Klova sleeping patches.<\/p>"
       }
     },
     "16539163096b01f9e3": {
@@ -295,38 +376,50 @@
         "position_image": "benefits-card__image_right",
         "text-align": "benefits-card__content_left",
         "bcg-color": "#faf9fb",
-        "image": "shopify://shop_images/BluepatchEliminateGroggyMornings.jpg",
-        "image-mobile": "shopify://shop_images/BluepatchEliminateGroggyMornings.jpg",
+        "image": "shopify:\/\/shop_images\/BluepatchEliminateGroggyMornings.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/BluepatchEliminateGroggyMornings.jpg",
         "title": "Eliminate groggy mornings",
-        "text": "<p>With almost 100% of sleep study participants reporting better sleep and more energy, our favorite stat is that they reported fewer groggy mornings. </p><p></p><p>What are you waiting for? Your best sleep ever is waiting.</p>"
+        "text": "<p>With almost 100% of sleep study participants reporting better sleep and more energy, our favorite stat is that they reported fewer groggy mornings. <\/p><p><\/p><p>What are you waiting for? Your best sleep ever is waiting.<\/p>"
       }
     },
     "16539274943ce12887": {
       "type": "sleep-chart",
       "settings": {
         "title": "Comparison chart",
-        "image": "shopify://shop_images/Group_87.png"
+        "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
-    "slideshow_image_DphBr7": {
-      "type": "slideshow-image",
+    "top_products_QQik7N": {
+      "type": "top-products",
       "blocks": {
-        "image_KcqLEM": {
-          "type": "image",
+        "product_E4zmkr": {
+          "type": "product",
           "settings": {
-            "link": "",
-            "image": "shopify://shop_images/product-comparison-desktop.jpg",
-            "image_mobile": "shopify://shop_images/product-comparison-mobile.jpg"
+            "style_overlay": "bg-gr--green-blue",
+            "product": "znite-sleep-tape-sample",
+            "description": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite Tapes. Crafted for comfort and effectiveness, ZNite Tapes help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
+            "btn": "Learn More"
+          }
+        },
+        "product_BXcdnK": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--yellow-orange",
+            "product": "focus-patch",
+            "image": "shopify:\/\/shop_images\/Nootropic_Focus_Patch_1.png",
+            "description": "<p>The World's First nootropic focus patches made with guarana, huperzine, agmatine sulfate and other clinically proven ingredients. Peel. Stick. Focus.<\/p><p><\/p>",
+            "btn": "Learn More"
           }
         }
       },
-      "block_order": ["image_KcqLEM"],
+      "block_order": [
+        "product_E4zmkr",
+        "product_BXcdnK"
+      ],
       "settings": {
-        "full_width": false,
-        "title": "Product Comparison",
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
+        "paddingsection": "48px 0px 104px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "You may also like"
       }
     },
     "1653908906e8b1c207": {
@@ -336,35 +429,35 @@
           "type": "text",
           "settings": {
             "acc-button": "WHO CAN USE THIS PATCH?",
-            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.</p>"
+            "acc-text": "<p>Klova patches are formulated for persons 18 and older. They are not intended for persons who are pregnant and nursing.<\/p>"
           }
         },
         "43f3a410-63e7-4bd9-bf77-63ec200964aa": {
           "type": "text",
           "settings": {
             "acc-button": "WHERE IS KLOVA MADE?",
-            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.</p>"
+            "acc-text": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>"
           }
         },
         "b78ca722-63a3-4f9b-b14c-ff8533cfb237": {
           "type": "text",
           "settings": {
             "acc-button": "ARE THERE ANY INTERACTIONS?",
-            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.</p>"
+            "acc-text": "<p>Please consult your physician if you are worried about any potential interactions. Klova patches are made from medical grade foam with a latex-free adhesive. Every patch is 100% drug- free.<\/p>"
           }
         },
         "de14acba-692d-4dbe-9a7d-e5b5c86c2f8d": {
           "type": "text",
           "settings": {
             "acc-button": "IS THERE A MONEY BACK GUARANTEE?",
-            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.</p>"
+            "acc-text": "<p>Yes, Klova offers a full 30 day money back guarantee less the cost of shipping, if any.<\/p>"
           }
         },
         "783ba886-e7c2-4ffc-adc7-3e85654ed6e8": {
           "type": "text",
           "settings": {
             "acc-button": "WILL IT MAKE ME GROGGY?",
-            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.</p><p></p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. </p>"
+            "acc-text": "<p>We get this question a lot, so we conducted a sleep study to give you a  factual based answer. during our at-home sleep study, 94% of participants reported that they were more refreshed when waking after using the patch. 94% of participants also said they performed better mentally and physically after using the patch. Finally, 98% of participants reported feeling less tired during the day after using the sleep patch the night before.<\/p><p><\/p><p>If for any reason Klova does not live up to your expectations, we offer a full 30 day money back guarantee. <\/p>"
           }
         }
       },
@@ -378,20 +471,23 @@
       "settings": {
         "title": "FAQ",
         "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
-        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}</p>",
+        "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
         "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
-        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}</p>"
+        "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
     "16630817672cdb6d0f": {
       "type": "apps",
       "blocks": {
         "855dfa5d-fd92-4e3d-89d7-075b7757950e": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
         }
       },
-      "block_order": ["855dfa5d-fd92-4e3d-89d7-075b7757950e"],
+      "block_order": [
+        "855dfa5d-fd92-4e3d-89d7-075b7757950e"
+      ],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -399,7 +495,8 @@
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {}
+      "settings": {
+      }
     },
     "slideshow_image_aQjDP8": {
       "type": "slideshow-image",
@@ -407,13 +504,15 @@
         "image_fQRUEQ": {
           "type": "image",
           "settings": {
-            "link": "https://www.klova.com/a/loop_subscriptions/bundle/31161e8c8f6d4c3c967ac4b3e75f90e4",
-            "image": "shopify://shop_images/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
-            "image_mobile": "shopify://shop_images/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
+            "link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4",
+            "image": "shopify:\/\/shop_images\/build-bundle_banner_9db4aee6-968a-4193-ac4e-144275d3f95e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003734_47fed1f4-b255-49ca-9db7-05be8818bf90.png"
           }
         }
       },
-      "block_order": ["image_fQRUEQ"],
+      "block_order": [
+        "image_fQRUEQ"
+      ],
       "settings": {
         "full_width": false,
         "title": "",
@@ -426,6 +525,8 @@
   "order": [
     "main",
     "1654687495df726be8",
+    "carousel_videos_XhbdTb",
+    "slideshow_image_DphBr7",
     "1654687329523c467f",
     "16539147732bd96387",
     "1653916291e266d004",
@@ -433,7 +534,7 @@
     "1653916303774cfc14",
     "16539163096b01f9e3",
     "16539274943ce12887",
-    "slideshow_image_DphBr7",
+    "top_products_QQik7N",
     "1653908906e8b1c207",
     "16630817672cdb6d0f",
     "zp-product-footer-content",

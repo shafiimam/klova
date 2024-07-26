@@ -23,7 +23,7 @@
     <div class="advantage__wrap flkty-slider flkty-slider--md">
       {%- for block in section.blocks -%}
       {% if block.type == "card-info" %}
-        <div class="advantage-card br-radius-16" style="background-color: {{ block.settings.overlay }};">
+        <div class="advantage-card br-radius-16" style="background-color: {{ block.settings.overlay }};" {{ block.shopify_attributes }}>
           <figure class="advantage-card__icon">
             {% if block.settings.svg_icon != blank %}
               {{ block.settings.svg_icon }}

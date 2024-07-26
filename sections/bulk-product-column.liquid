@@ -19,7 +19,7 @@
             <div class="product-grid-item" {{ block.shopify_attributes }}>
               <div class="product-badge">
                 {% if block.settings.showBadge %}
-                  <img src="{{ block.settings.badge | image_url }}" alt="product-badge" height="40" width="40"/>
+                  <img src="{{ block.settings.badge | image_url }}" alt="product-badge" height="100" width="100"/>
                 {% endif %}
               </div>
               <div class="product-info">
@@ -92,6 +92,7 @@
   border: 2px solid #C2C4C9;
   background: #FFF;
   padding: 30px;
+  position: relative;
 }
 .product-grid-item:nth-child(2){
   padding: 50px 30px;
@@ -177,6 +178,11 @@ p.block-guarantee {
     margin-bottom: 10px;
     line-height: 12px;
     font-weight: 500;
+}
+.product-badge {
+  position: absolute;
+  top: -50px;
+  right: -30px;
 }
 @media (max-width: 550px) {
   .product-grid-item .block-price-container .money{
@@ -276,6 +282,17 @@ p.block-guarantee {
           "id": "subtitle",
           "label": "Subtitle",
           "default": "30 Day Supply"
+        },
+        {
+          "type": "checkbox",
+          "id": "showBadge",
+          "label": "Show Badge",
+          "default": false,
+        },
+        {
+          "type": "image_picker",
+          "id": "badge",
+          "label": "Badge"       
         },
         {
           "type": "image_picker",

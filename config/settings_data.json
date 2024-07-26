@@ -117,6 +117,7 @@
           },
           "32581abe-7c30-4cd7-98fd-18f1b881d5a9": {
             "type": "category",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_19.png",
               "title": "Sleep",
@@ -126,6 +127,7 @@
           },
           "4dad4cef-8eaa-4634-b234-5cbca6883a2e": {
             "type": "category",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_20.png",
               "title": "Focus",
@@ -135,7 +137,6 @@
           },
           "0f7a7981-8054-4c7b-ba8a-f72dd922924f": {
             "type": "category",
-            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/Chill_menu_icon_684ff184-bab6-4915-989b-8822194bccde.png",
               "title": "Chill",
@@ -147,14 +148,14 @@
             "type": "MegaMenu",
             "settings": {
               "menu_title": "Sleep",
-              "menu_collection": "sleep-patches",
+              "menu_collection": "sleep",
               "menu_title_two": "Performance",
               "menu_collection_two": "performance-patches",
               "menu_title_three": "Relax",
               "menu_collection_three": "relax",
               "menu_title_four": "Bundles",
               "menu_collection_four": "bundles",
-              "menu_title_five": "ZNite™ Sleep Tapes",
+              "menu_title_five": "",
               "menu_collection_five": "znite-sleep-tapes",
               "shopall_text": "Shop all",
               "shopall_url": "shopify:\/\/collections\/all"
@@ -167,6 +168,9 @@
           "4dad4cef-8eaa-4634-b234-5cbca6883a2e",
           "0f7a7981-8054-4c7b-ba8a-f72dd922924f",
           "mega_menu_qqMD8D"
+        ],
+        "custom_css": [
+
         ],
         "settings": {
           "main_menu_link_list": "mega-menu",
@@ -235,12 +239,13 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/all\" title=\"All Products\">4th of July Freedom Sale - 20% off storewide sale<\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"\/collections\/all\" title=\"All Products\">4th of July Freedom Sale - 20% off storewide sale<\/a><\/p>"
+              "richtext": "<p>Mid-Summer Self Care Adventure with Klova! Double the discount of your first month's subscription- Code SUMMER15<\/p>",
+              "richtext_mobile": "<p>Mid-Summer Self Care Adventure with Klova! Double the discount of your first month's subscription- Code SUMMER15<\/p>"
             }
           },
           "announcement_m7Ke93": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p>Hassle-free returns. 30-day postage paid returns<\/p>",
               "richtext_mobile": "<p>Hassle-free returns. 30-day postage paid returns<\/p>"
@@ -276,6 +281,7 @@
           },
           "fe6a67a0-686e-435b-a946-f28802053c97": {
             "type": "contact",
+            "disabled": true,
             "settings": {
               "phone": "",
               "contact": "",
@@ -283,11 +289,32 @@
               "enable_social": true,
               "enable_text_instead_icons": true
             }
+          },
+          "payment_R3TEac": {
+            "type": "payment",
+            "settings": {
+              "show_payment_icons": false,
+              "show_locale_selector": false,
+              "show_currency_selector": false,
+              "show_currency_flags": true
+            }
+          },
+          "contact_hqNVde": {
+            "type": "contact",
+            "settings": {
+              "phone": "",
+              "contact": "",
+              "chat": "",
+              "enable_social": false,
+              "enable_text_instead_icons": false
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "fe6a67a0-686e-435b-a946-f28802053c97"
+          "fe6a67a0-686e-435b-a946-f28802053c97",
+          "payment_R3TEac",
+          "contact_hqNVde"
         ],
         "settings": {
           "show_newsletter": false,
@@ -326,12 +353,6 @@
 
     ],
     "blocks": {
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "judgeme_core_55e86de1": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,

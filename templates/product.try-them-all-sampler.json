@@ -46,6 +46,7 @@
         },
         "bundle_ingredients_RWUpjG": {
           "type": "bundle_ingredients",
+          "disabled": true,
           "settings": {
             "showSecondText": "no",
             "collection": ""
@@ -204,7 +205,7 @@
       ],
       "settings": {
         "heading": "Experience Comprehensive Wellness",
-        "subHeading": "<p>Our \"Try Them All\" Patch Sampler is your gateway to discovering how each patch can contribute to your overall well-being and performance. Whether you need better sleep, more focus, or enhanced recovery, this sampler has you covered.Discover your favorites and tailor your wellness approach with Klova’s most complete patch collection.<\/p>",
+        "subHeading": "<p>Our \"Try Them All\" Patch Bundle is your gateway to discovering how each patch can contribute to your overall well-being and performance. Whether you need better sleep, more focus, or enhanced recovery, this bundle has you covered.<br\/>Discover your favorites and tailor your wellness approach with Klova’s most complete patch collection.<\/p>",
         "image": "shopify:\/\/shop_images\/Rectangle_334.png",
         "button_text": "Try Them All",
         "button_url": "#buy-now",
@@ -230,6 +231,7 @@
       "block_order": [
         "image_UAwJTV"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "title": "",

@@ -93,8 +93,9 @@
         },
         "4a35f8b0-879a-41fc-8ad7-20579c2e14f4": {
           "type": "tab",
+          "disabled": true,
           "settings": {
-            "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}",
+            "acc-button-one": "{{ product.metafields.add_tab.product_title_tab_1.value }}{{ product.metafields.my_fields.accordion_title_one.value }}",
             "acc-text-one": "<p>{{ product.metafields.add_tab.product_text_tab_1 | metafield_tag }}<\/p>",
             "acc-button-two": "{{ product.metafields.add_tab.product_title_tab_2.value }}",
             "acc-text-two": "<p>{{ product.metafields.add_tab.product_text_tab_2 | metafield_tag }}<\/p>",
@@ -155,7 +156,7 @@
         "empower_title": "ZNiteTM Tapes",
         "empower_descr": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite Tapes. Crafted for comfort and effectiveness, ZNite Tapes help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
         "empower_button": "BUY NOW",
-        "empower_button_link": ""
+        "empower_button_link": "#PageContainer"
       }
     },
     "znite_key_features_wEDw8z": {
@@ -196,7 +197,7 @@
         "layout": "left",
         "empower_title": "Key Features",
         "empower_button": "Buy Now",
-        "empower_button_link": ""
+        "empower_button_link": "#PageContainer"
       }
     },
     "znite_icon_text_bg_J4wUjy": {
@@ -282,6 +283,10 @@
         "text_block_yDQN6A",
         "text_block_fGEcPw",
         "text_block_aE8Fkx"
+      ],
+      "custom_css": [
+        ".znite_bg_color {display: flex; height: 100%;}",
+        ".grid {display: flex; flex-wrap: wrap; justify-content: space-evenly;}"
       ],
       "settings": {
         "title": "Benefits of Klova ZNite™ Tapes",

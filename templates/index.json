@@ -8,19 +8,19 @@
           "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "Cheers to Freedom",
+            "title": "Mid-Summer Dreams Unfold with Klova",
             "last_word_color": "#fa0909",
             "title_size": 60,
-            "subheading": "<p>Ignite Your Independence Day - 20% Off Klova Patches Store-wide!<\/p>",
+            "subheading": "<p>Double Your First Month's Discount on All New Subscriptions, Including ZNite Tape!<\/p>",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/Klova-Banner_Fourth_of_July_-_480x450px_-_rectangular_-_June_25-2024_01.jpg",
+            "image": "shopify:\/\/shop_images\/Klova-Banner_Mid-Summer_-_480x450px_-_rectangular_-_01.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "transform_mob_x": 0,
             "transform_mob_y": 0,
             "transform_x": 0,
             "transform_y": 0,
-            "style_overlay": "bg-gr--green-blue",
+            "style_overlay": "bg-gr--yellow-orange",
             "link_text": "Shop Now",
             "link": "shopify:\/\/collections\/all"
           }
@@ -119,6 +119,9 @@
         "slideshow-split-1",
         "slideshow-split-0",
         "dad8718f-d105-4c1c-85b5-91717c290bd4"
+      ],
+      "custom_css": [
+        ".hero__image--slide_hRUmQr {object-position: right !important; object-fit: contain;}"
       ],
       "settings": {
         "full_width": false,

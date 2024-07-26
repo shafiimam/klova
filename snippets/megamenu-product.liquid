@@ -132,7 +132,7 @@
               assign ratio = preview_image.aspect_ratio
             endif
           -%}
-          <div style="height: 0; padding-bottom: {{ 100 | divided_by: ratio }}%;">
+          <div style="height: 0; padding-bottom: {{ 100 }}%;">
             <img class="grid-product__image lazyload"
                 {% if product.metafields.custom.menu_img !=blank %}
                     data-src="{{ img_url }}"

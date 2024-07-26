@@ -107,6 +107,12 @@
             "acc-button-six": "{{ product.metafields.add_tab.product_title_tab_6.value }}",
             "acc-text-six": "<p>{{ product.metafields.add_tab.product_text_tab_6 | metafield_tag }}<\/p>"
           }
+        },
+        "custom_qXEyir": {
+          "type": "custom",
+          "settings": {
+            "code": "<style>\n@media screen and (min-width: 1024px) {\n  .ingredients__item:nth-of-type(8) {\n    transform: translateY(-93%) translate(11%);\n  }\n  .ingredients__item:nth-of-type(4) {\n    transform: translate(-4%) translateY(301%);\n  }\n  .ingredients__item:nth-of-type(5) {\n    transform: translate(-100%) translateY(-11%);\n  }\n  .ingredients__item:nth-of-type(7) {\n    transform: translateY(-43%) translate(100%);\n  }\n  .ingredients__item:nth-of-type(3) {\n    transform: translate(-6%) translateY(149%);\n  }\n     .ingredients__item:first-of-type {\n        transform: translate(5%) translateY(-25px);\n    }\n    .ingredients__item:nth-of-type(11){\n         transform: translate(158%) translateY(-26px);\n    }\n.ingredients__item:nth-of-type(7) {\n    transform: translateY(-25%) translate(72%);\n    }\n.ingredients__item:nth-of-type(5) {\n    transform: translate(-75%) translateY(-11%);\n    }\n.ingredients__item:nth-of-type(6) {\n    transform: translateY(20%) translate(-50%);\n    }\n}\n<\/style>"
+          }
         }
       },
       "block_order": [
@@ -122,7 +128,8 @@
         "essential_countdown_app_block_MKCGLY",
         "6dbfc9bc-18b8-46ff-90c0-6c99d095e181",
         "991843c7-0724-43cf-8891-6972bb0b8de4",
-        "4a35f8b0-879a-41fc-8ad7-20579c2e14f4"
+        "4a35f8b0-879a-41fc-8ad7-20579c2e14f4",
+        "custom_qXEyir"
       ],
       "settings": {
         "link-back-text": "",
@@ -173,7 +180,7 @@
         "1655201956f0f03657-3": {
           "type": "card-img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_32.jpg"
+            "image": "shopify:\/\/shop_images\/image_31a98a1b-c539-42fe-9275-44d4b4e72c16.png"
           }
         }
       },
@@ -190,58 +197,250 @@
         "description": ""
       }
     },
-    "video_with_text_9zbhb8": {
-      "type": "video-with-text",
+    "znite_icon_text_bg_YjytyV": {
+      "type": "znite_icon_text_bg",
       "blocks": {
-        "165468749574c87244-0": {
-          "type": "card_info",
+        "text_block_rfba3H": {
+          "type": "text_block",
           "settings": {
-            "title": "Peel",
-            "text": "Peel one patch off of the included sheets (28 patches per pack).",
-            "popup_info": ""
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/sleep_2.svg",
+            "image_width": 64,
+            "title": "Promotes Healthy Sleep",
+            "text": "<p>These patches promote healthy sleep by targeting multiple sleep centers in the brain. They encourage a healthy response to stress and a relaxed nervous system response.<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "165468749574c87244-1": {
-          "type": "card_info",
+        "text_block_CqtGKY": {
+          "type": "text_block",
           "settings": {
-            "title": "Stick",
-            "text": "Stick the patch on any hair-free part of the body with good blood flow.",
-            "popup_info": ""
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/NATURAL_INGREDIENTS.png",
+            "image_width": 64,
+            "title": "Natural Ingredients",
+            "text": "<p>The patch employs natural substances like Sensoril Ashwagandha, hops, and valerian root. These ingredients might disrupt your established pharmaceutical routine with their emphasis on holistic health.<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "165468749574c87244-2": {
-          "type": "card_info",
+        "text_block_EhydhR": {
+          "type": "text_block",
           "settings": {
-            "title": "Optimize",
-            "text": "Before applying the patch, shave the area you'll be apply it to Lorem",
-            "popup_info": "<p>Before applying the patch, shave the area you'll be apply it to, as even tiny hairs can prevent absorption. For best results, ensure proper blood flow to the area after applying. We recommend applying to the top of the foot and walking for 10 minutes. Alternatively, apply to the upper arm\/ shoulder and do a few sets of arm circles or pushups to get blood flowing to the area. Remember, the ingredients absorbing through the upper dermis capillaries NEED a good amount of blood flow to carry them through the body, so do not place the patches on area without good blood flow. <\/p>"
-          }
-        },
-        "165468749574c87244-3": {
-          "type": "card_info",
-          "settings": {
-            "title": "Remove",
-            "text": "Simply remove about 7-9 hours later when you wake up and discard.",
-            "popup_info": ""
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/pill_3882692_1.svg",
+            "image_width": 64,
+            "title": "Melatonin Free",
+            "text": "<p>Promotes restful sleep naturally, without using the hormone melatonin. Ideal for those who prefer a melatonin-free sleep aid.<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "165468749574c87244-0",
-        "165468749574c87244-1",
-        "165468749574c87244-2",
-        "165468749574c87244-3"
+        "text_block_rfba3H",
+        "text_block_CqtGKY",
+        "text_block_EhydhR"
+      ],
+      "custom_css": [
+        ".znite_bg_color {display: flex; height: 100%;}",
+        ".grid {display: flex;}"
       ],
       "settings": {
-        "paddingsection": "0px 0px 60px 0px",
-        "paddingsection_mob": "0px 0px 60px 0px",
-        "title": "Peel Stick Sleep",
-        "info": "<p>Melatonin Free Sleep Patches are the easiest way to unlock your best sleep ever, here's how it works:<\/p>",
-        "overlay": "#faf9fb",
-        "video_url": "https:\/\/vimeo.com\/703421279",
-        "overlay_opacity": 0,
-        "height": 500,
-        "height_mobile": 160
+        "title": "Melatonin-Free Sleep Patch Benefits",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
+    "carousel_videos_bhGFBf": {
+      "type": "carousel-videos",
+      "blocks": {
+        "video_TafaN3": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560840637"
+          }
+        },
+        "video_nrhDbt": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560842790"
+          }
+        },
+        "video_F3TMtg": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560859492"
+          }
+        },
+        "video_EqAr34": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560861088"
+          }
+        },
+        "video_8kpBNP": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/player.vimeo.com\/video\/560855080"
+          }
+        },
+        "video_qc6GPi": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/974750709"
+          }
+        },
+        "video_BTRQqU": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/vimeo.com\/974750252"
+          }
+        }
+      },
+      "block_order": [
+        "video_TafaN3",
+        "video_nrhDbt",
+        "video_F3TMtg",
+        "video_EqAr34",
+        "video_8kpBNP",
+        "video_qc6GPi",
+        "video_BTRQqU"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Bedtime Stories: Before & After",
+        "rte": "<p>Former Insomniacs Continuously Send Us Sleep Patch Reviews, Here Are Some Of Their Stories…<\/p>",
+        "overlay": "#faf9fb"
+      }
+    },
+    "ingredients_RbCHwR": {
+      "type": "ingredients",
+      "blocks": {
+        "card_RGMXtE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hop.png",
+            "svg_icon": "",
+            "title": "Hop Flower Powder",
+            "description": "<p>A plant commonly used to reduceanxiety and sleep disorders*<\/p>"
+          }
+        },
+        "card_xYUiCU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sensoril_Ashwagandha.png",
+            "svg_icon": "",
+            "title": "Sensoril® Ashwagandha Extract",
+            "description": "<p>Clinically proven to reduce stress and calmanxious minds.*<\/p>"
+          }
+        },
+        "card_FTYpyc": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmosperine.png",
+            "svg_icon": "",
+            "title": "Cosmoperine",
+            "description": "<p>Naturally derived from black pepper, it'sused to increase the absorption of nutrientsthrough the skin.<\/p>"
+          }
+        },
+        "card_kYWK8y": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aloe_vera.png",
+            "svg_icon": "",
+            "title": "Aloe Vera Leaf Gel",
+            "description": "<p>Faster wound healing, reduced inflamation, and protection against infection.*<\/p>"
+          }
+        },
+        "card_wNKDcd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/White_Willow_Bark_Extract.png",
+            "svg_icon": "",
+            "title": "White Willow Bark",
+            "description": "<p>Provides natural pain relief, reduces inflammation, and benefits skin health.*<\/p>"
+          }
+        },
+        "card_A9p9UB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/passion_flower_ccf040f3-dcf6-421a-84e1-08ff1ba3f76f.png",
+            "svg_icon": "",
+            "title": "Passion Flower Extract",
+            "description": "<p>Known to help with insomnia and reduceinflammation and anxiety*<\/p>"
+          }
+        },
+        "card_PrbJHk": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lavender-oil.png",
+            "svg_icon": "",
+            "title": "Lavender Oil",
+            "description": "<p>*Known natural anxiety reliever and sedative.<\/p>"
+          }
+        },
+        "card_eUkb7p": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gaba_3fb48ac7-1a32-4ca7-b1e2-4aa9ddeacdff.png",
+            "svg_icon": "",
+            "title": "Gaba",
+            "description": "<p>A naturally occurring neurotransmitterknown to reduce anxiety & improve sleep*<\/p>"
+          }
+        },
+        "card_MHkwVt": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cherry.png",
+            "svg_icon": "",
+            "title": "Tart Cherry Extract",
+            "description": "<p>Healthy beverage rich in antioxidants, improve cognition, aid fat burning and potentially lower the risk of certain cancers.*<\/p>"
+          }
+        },
+        "card_ARi9nP": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/velerian.png",
+            "svg_icon": "",
+            "title": "Valerian Root Powder",
+            "description": "<p>A root known to help reduce anxietyand promote relaxation*<\/p>"
+          }
+        },
+        "card_7fRGNB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-theanine_3fc01a1e-4e68-4973-8e2b-587eb2fdfc49.png",
+            "svg_icon": "",
+            "title": "L-Theanine",
+            "description": "<p>An amino acid known to promoterelaxation, reduce stress, and improve sleep*<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_RGMXtE",
+        "card_xYUiCU",
+        "card_FTYpyc",
+        "card_kYWK8y",
+        "card_wNKDcd",
+        "card_A9p9UB",
+        "card_PrbJHk",
+        "card_eUkb7p",
+        "card_MHkwVt",
+        "card_ARi9nP",
+        "card_7fRGNB"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 1024px) {.ingredients__image {min-width: 578px; }}"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Made with Naturally Occurring Ingredients",
+        "rte": "<p>A 11 nature-inspired ingredients on Melatonin-Free Patch<\/p>",
+        "image": "shopify:\/\/shop_images\/Group_13662.png"
       }
     },
     "slideshow_image_qftcLt": {
@@ -265,6 +464,122 @@
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
+      }
+    },
+    "image_with_sales_point_eDTNnB": {
+      "type": "image-with-sales-point",
+      "blocks": {
+        "sales_point_ExzwXH": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/check-box_2.svg",
+            "title": "Easy Application",
+            "subtitle": "Simply peel, stick & let the Recovery Patch work its magic.Discard upon waking; each patch is single-use for your convenience."
+          }
+        },
+        "sales_point_QrK9nK": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/check-box_2.svg",
+            "title": "Non-Habit Forming",
+            "subtitle": "Simply peel, stick & let the Recovery Patch work its magic.Discard upon waking; each patch is single-use for your convenience."
+          }
+        },
+        "sales_point_fUmaHx": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/check-box_2.svg",
+            "title": "Doctor Approved",
+            "subtitle": "The patch is rigorously tested and backed by the medical community, ensuring its safety and effectiveness."
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_ExzwXH",
+        "sales_point_QrK9nK",
+        "sales_point_fUmaHx"
+      ],
+      "custom_css": [
+        ".icon-container {flex-basis: 24px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_334_b79f451c-c414-435b-8a93-2daaaa0051cf.png",
+        "title": "Why Choose Klova’s Melatonin-Free Sleep Patch?",
+        "link": "",
+        "button_label": "",
+        "aligment": "right"
+      }
+    },
+    "slideshow_image_YmfPN3": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_GcyVWL": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify:\/\/shop_images\/Group_87.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1000003909.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_GcyVWL"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "How We Compare",
+        "style": "minimal",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "review_slider_cQdzgn": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_fRzMWQ": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "30 years of difficult sleeping and I’m on the path to getting some good sleep. This patch is great",
+            "reviewer_name": "Judy Felix",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_tWewdq": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02.jpg",
+            "review_text": "I love my klova patches. I keep the melatonin free ones by my bed and I use extra strength when I travel since I struggle to sleep when I'm away.",
+            "reviewer_name": "Courtney Hillesheim",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_BFfYg7": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.jpg",
+            "review_text": "I love the normal patches, but these ones allow me to still wake if my partner or dog needs me while being able to doze off again with no proble. The lack of groggy mornings is a great benefit too, these dont leave me feeling like im melted to the bed for 10-15 minutes after waking.",
+            "reviewer_name": "Shannon",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_fRzMWQ",
+        "review_card_tWewdq",
+        "review_card_BFfYg7"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": true
       }
     },
     "1653908906e8b1c207": {
@@ -338,55 +653,6 @@
         "space_around": true
       }
     },
-    "review_slider_cQdzgn": {
-      "type": "review-slider",
-      "blocks": {
-        "review_card_fRzMWQ": {
-          "type": "review_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003704_03b99a58-60fd-421c-92f7-3d47509e501b.jpg",
-            "review_text": "{{ block.settings.product.metafields.custom.product_review_1.value }}",
-            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_1.value }}",
-            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
-            "product": "{{ product }}",
-            "cta_content": "Subscribe and save"
-          }
-        },
-        "review_card_tWewdq": {
-          "type": "review_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003714.jpg",
-            "review_text": "{{ block.settings.product.metafields.custom.product_review_2.value }}",
-            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_2.value }}",
-            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
-            "product": "{{ product }}",
-            "cta_content": "Subscribe and save"
-          }
-        },
-        "review_card_BFfYg7": {
-          "type": "review_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1000003716.jpg",
-            "review_text": "{{ block.settings.product.metafields.custom.product_review_1.value }}",
-            "reviewer_name": "{{ block.settings.product.metafields.custom.reviewer_name_1.value }}",
-            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
-            "product": "{{ product }}",
-            "cta_content": "Subscribe and save"
-          }
-        }
-      },
-      "block_order": [
-        "review_card_fRzMWQ",
-        "review_card_tWewdq",
-        "review_card_BFfYg7"
-      ],
-      "settings": {
-        "title": "What Our Customers Say",
-        "show_reviewer_image": false,
-        "review_count": "5209",
-        "divider": false
-      }
-    },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
       "settings": {
@@ -440,11 +706,15 @@
   "order": [
     "main",
     "advantage_hwAigt",
-    "video_with_text_9zbhb8",
+    "znite_icon_text_bg_YjytyV",
+    "carousel_videos_bhGFBf",
+    "ingredients_RbCHwR",
     "slideshow_image_qftcLt",
+    "image_with_sales_point_eDTNnB",
+    "slideshow_image_YmfPN3",
+    "review_slider_cQdzgn",
     "1653908906e8b1c207",
     "1663080027983fd7ee",
-    "review_slider_cQdzgn",
     "zp-product-footer-content",
     "17074127040251dd37",
     "slideshow_image_RBmbJB"

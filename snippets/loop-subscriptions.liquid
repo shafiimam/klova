@@ -1,17 +1,14 @@
-{%- comment -%} Loop Subscription Snippet v7.9 {%- endcomment -%}
+{%- comment -%} Loop Subscription Snippet v6.9 {%- endcomment -%}
 {% comment %}
 	LOOP SUBSCRIPTIONS (https://apps.shopify.com/loop-subscriptions)
 
   DO NOT modify source code of this file because
-	It is automatically generated from LOOP SUBSCRIPTIONS WIDGET DESIGN
-	If you need to make change, please do it using our standard widget design settings or create a custom widget design in LOOP SUBSCRIPTIONS app.
+  It is automatically generated from LOOP SUBSCRIPTIONS WIDGET DESIGN
 {% endcomment %}
 
 <div class='loop-display-none'>Rendering loop-subscriptions</div>
 {%- if type contains 'product-widget' -%}
-	{%- if content_for_header contains 'loop_snippets' -%}
-		{% render 'loop-widget-standard' type: 'product-widget', product: product %}
-	{%- endif -%}
+		{% render 'loop-widget-custom' type: 'product-widget', product: product %}
 {%- elsif type == 'customer-portal-link' -%}
 	{% assign locale = shop_locale.iso_code %}
 	{% if locale == null %}
