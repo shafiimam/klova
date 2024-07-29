@@ -37,6 +37,16 @@
           {% if section.settings.button_text != '' %}
             <a href="{{ section.settings.button_url }}" class="cta-button">{{ section.settings.button_text }}</a>
           {% endif %}
+          {% for block in section.blocks %}
+            {% if block.type == 'text-image' %}
+              <div class="text-image-container" {{ block.shopify_attributes }}>
+                <p class="text-image-content">
+                {{ block.settings.text }}
+                </p>
+                <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="text-image-media">
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
         {% if image_allignment == 'right' %}
           {{ image_content }}
@@ -107,6 +117,14 @@
   .image-with-text-cta__content--text .cta-button:hover {
     background: #2d7b8e;
     color: #fff;
+  }
+  p.text-image-content {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  .text-image-media{
+    margin: 20px -5px;
   }
   @media (max-width: 500px) {
     #{{ section.id }} .page-width {
@@ -241,7 +259,25 @@
       "default": false
     }
   ],
-  "blocks": [],
+  "blocks": [
+    {
+      "type": "text-image",
+      "name": "Text and Image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Content",
+          "default": "Who supports us"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Brand Logo"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Image With Text CTA"

@@ -39,6 +39,7 @@
                   <span class="block-price-text">/Pack</span>
                 </div>
                 <a href="{{ block.settings.btn_url }}" class="product-cta-btn">{{ block.settings.btn_content }}</a>
+                <p class="block-saving">{{ block.settings.saving }}</p>
                 <p class="block-guarantee">{{ block.settings.extra_text }}</p>
                 <img
                   src="{{ block.settings.payment_method | image_url: width:215, height: 34 }}"
@@ -184,6 +185,10 @@ p.block-guarantee {
   top: -50px;
   right: -30px;
 }
+.block-saving{
+  font-weight: bold;
+  color: #34A853;
+}
 @media (max-width: 550px) {
   .product-grid-item .block-price-container .money{
     font-size: 48px;
@@ -228,10 +233,6 @@ p.block-guarantee {
   }
   .product-grid-item{
     flex-direction: row;
-    padding: 10px;
-  }
-  .product-grid-item:nth-child(2){
-    grid-row-start: 1;
     padding: 10px;
   }
   .product-grid-item .product-info, .product-grid-item .product-content{
@@ -309,6 +310,11 @@ p.block-guarantee {
           "id": "price",
           "label": "price",
           "default": "$34"
+        },
+        {
+          "type": "text",
+          "id": "saving",
+          "label": "Saving Percent"
         },
         {
           "type": "text",

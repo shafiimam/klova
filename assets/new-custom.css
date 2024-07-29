@@ -69,6 +69,51 @@ background-color:#c6e8f1;
 .page-width.article-set-content{
   max-width:640px;
 }
+.product-grid[data-view="medium"] .grid-product__image-wrap {
+  margin: 0px;
+}
+.product-grid[data-view="medium"] .grid-item__link {
+  padding: 24px;
+}
+.product-grid[data-view="medium"] .grid-product__image {
+  border-radius: 10px;
+}
+.col-hoverline{
+  opacity:0;
+  transition: all .2s ease-out;
+}
+.btnhover {
+  opacity:0;
+  transition: all .2s ease-out;
+}
+.collection-grid .data-product:hover .col-hoverline{
+  opacity:1;
+  position: relative;
+  bottom: 40px;
+} 
+.collection-grid .data-product:hover .btnhover{
+  opacity:1;
+  position:relative;
+  bottom:30px;
+}
+.collection-grid .grid-product__image{
+  transition: all .2s ease-out;
+}
+.data-product:hover .grid-product__image{
+ transform: scale(.9) translateY(-5%);  
+}
+.collection-grid .data-product:hover .grid-item__meta-main{
+  opacity:1;
+  position:relative;
+  bottom:30px;
+}
+.product-grid[data-view=medium] .grid-item__meta-secondary{
+  padding-top:0px;
+  height:22px;
+}
+.data-product .grid-product__image{
+  transition: all .2s ease-out;
+}
 /*======= Start Bundle Button with Bg Image =======*/
 .bundle-text-data{
   font-size: 28px;
@@ -111,7 +156,15 @@ p.bundle-btn-text{
     padding-bottom: 20px;
     padding-top: 10px;
 }
-
+[value="Deliver every 4 weeks"] {
+  display: none;
+}
+[value="Deliver every 6 weeks"] {
+  display: none;
+}
+[value="Deliver every 8 weeks"] {
+  display: none;
+}
 @media only screen and (min-width:1024px) and (max-width:1280px){
   .bundle-image img{
     height:150px;

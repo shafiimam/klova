@@ -109,42 +109,48 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/discount_1.png",
-            "logo_title": "SAVE 20% ON EVERY ORDER"
+            "logo_title": "SAVE 20% ON EVERY ORDER",
+            "logo_subtitle": ""
           }
         },
         "logo_image_e4QYF3": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/truck_1.png",
-            "logo_title": "FREE SHIPPING OVER $50"
+            "logo_title": "FREE SHIPPING OVER $50",
+            "logo_subtitle": ""
           }
         },
         "logo_image_dTMWGd": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/delete-symbol_2891452_2.png",
-            "logo_title": "EDIT OR CANCEL ANYTIME"
+            "logo_title": "EDIT OR CANCEL ANYTIME",
+            "logo_subtitle": ""
           }
         },
         "logo_image_MjbX4f": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/time-management_2.png",
-            "logo_title": "EARLY ACCESS TO PRODUCTS"
+            "logo_title": "EARLY ACCESS TO PRODUCTS",
+            "logo_subtitle": ""
           }
         },
         "logo_image_BGjgE7": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/people_2.png",
-            "logo_title": "CUSTOMER SUPPORT"
+            "logo_title": "CUSTOMER SUPPORT",
+            "logo_subtitle": ""
           }
         },
         "logo_image_NCaLBz": {
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/30-days_1.png",
-            "logo_title": "30 DAY MONEY BACK GUARANTEE"
+            "logo_title": "30 DAY MONEY BACK GUARANTEE",
+            "logo_subtitle": ""
           }
         }
       },
@@ -157,6 +163,8 @@
         "logo_image_NCaLBz"
       ],
       "settings": {
+        "row_count": 3,
+        "column_count": 6,
         "title": "Member Benefits",
         "divider": true,
         "link": "#subscribe",
@@ -216,6 +224,7 @@
             "show_quantity": true,
             "full_width_button": false,
             "show_dynamic_checkout": true,
+            "direct_to_checkout": true,
             "surface_pickup_enable": true
           }
         },
@@ -246,7 +255,7 @@
         ".shopify-payment-button {display: none;}"
       ],
       "settings": {
-        "featured_product": "sleep-patch",
+        "featured_product": "original-sleep-zpatch",
         "divider": false,
         "sku_enable": false,
         "image_position": "left",
@@ -304,6 +313,7 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
+        "show_reviewer_image": true,
         "review_count": "5209",
         "divider": false
       }

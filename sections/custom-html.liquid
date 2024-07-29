@@ -1,5 +1,6 @@
 
-{{ section.settings.custom_html }}
+<div>{{ section.settings.custom_html }}</div>
+
   {% schema %}
     {
       "name": "Custom HTML",
@@ -10,6 +11,11 @@
           "label": "Custom HTML",
           "default": "<p></p>"
         }
-      ]
+      ],
+       "presets": [
+    {
+      "name": "Custom HTML"
+    }
+  ]
     }
   {% endschema %}

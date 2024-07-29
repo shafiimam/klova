@@ -1,49 +1,31 @@
 {
   "sections": {
+    "custom_html_BemdKR": {
+      "type": "custom-html",
+      "settings": {
+        "custom_html": "<style>\n #SiteHeader {display: none !important;}\n#PageContainer {\npadding-top: 15px;\n}\n<\/style>"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
       }
     },
-    "slideshow_3fBzej": {
-      "type": "slideshow",
+    "image_with_text_cta_wbXgfK": {
+      "type": "image-with-text-cta",
       "blocks": {
-        "hero_fC6AKg": {
-          "type": "hero",
+        "text_image_jEm8dU": {
+          "type": "text-image",
           "settings": {
-            "top_subheading": "",
-            "title": "<p>Get Your Best Sleep Ever with Klova’s Original Sleep Patch!<\/p>",
-            "title_size": 40,
-            "subheading": "",
-            "link": "",
-            "link_text": "Get Original Sleep Patch!",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#1e062c",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Frame_1239330632.png",
-            "image_mobile": "shopify:\/\/shop_images\/Frame_1239330634.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
+            "text": "Who supports us",
+            "image": "shopify:\/\/shop_images\/who-support-us.svg"
           }
         }
       },
       "block_order": [
-        "hero_fC6AKg"
+        "text_image_jEm8dU"
       ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "image_with_text_cta_wbXgfK": {
-      "type": "image-with-text-cta",
       "custom_css": [
         ".heading {max-width: 652px; color: #1e062c; font-family: \"Bergen Sans\"; font-size: 56px; font-style: normal; font-weight: 700; line-height: 64px; \/* 114.286% *\/}",
         ".image-with-text-cta__content .cta-button {background: #1e062c;}",
@@ -66,6 +48,61 @@
         "alignment": "right",
         "background_color": "#c8c2dd",
         "show_section_devider": false
+      }
+    },
+    "logo_list_Q3U9aP": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_LnQTrh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gmp.png",
+            "link": ""
+          }
+        },
+        "logo_image_ztJjqt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fda-approved.png",
+            "link": ""
+          }
+        },
+        "logo_image_YfdjRx": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/natural.png",
+            "link": ""
+          }
+        },
+        "logo_image_k6PmF7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/made-in-uwq.png",
+            "link": ""
+          }
+        },
+        "logo_image_rBzUPQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gmo-free.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_LnQTrh",
+        "logo_image_ztJjqt",
+        "logo_image_YfdjRx",
+        "logo_image_k6PmF7",
+        "logo_image_rBzUPQ"
+      ],
+      "custom_css": [
+        ".new-grid {justify-content: center;}",
+        "@media (max-width: 900px) {.grid-item {flex: 0 0 30%; } .logo-bar__item {padding: 0; margin-bottom: 10px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false
       }
     },
     "image_with_sales_point_z6qtFq": {
@@ -385,61 +422,6 @@
       "settings": {
       }
     },
-    "logo_list_Q3U9aP": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_image_LnQTrh": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gmp.png",
-            "link": ""
-          }
-        },
-        "logo_image_ztJjqt": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fda-approved.png",
-            "link": ""
-          }
-        },
-        "logo_image_YfdjRx": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/natural.png",
-            "link": ""
-          }
-        },
-        "logo_image_k6PmF7": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/made-in-uwq.png",
-            "link": ""
-          }
-        },
-        "logo_image_rBzUPQ": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gmo-free.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_image_LnQTrh",
-        "logo_image_ztJjqt",
-        "logo_image_YfdjRx",
-        "logo_image_k6PmF7",
-        "logo_image_rBzUPQ"
-      ],
-      "custom_css": [
-        ".new-grid {justify-content: center;}",
-        "@media (max-width: 900px) {.grid-item {flex: 0 0 40%; } .logo-bar__item {padding: 0; margin-bottom: 10px; }}"
-      ],
-      "settings": {
-        "title": "",
-        "divider": false
-      }
-    },
     "bulk_product_column_mPkHjz": {
       "type": "bulk-product-column",
       "blocks": {
@@ -452,6 +434,7 @@
             "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
             "product": "",
             "price": "$29.97",
+            "saving": "Save 25%",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:1?discount=PATCH1PACK",
             "extra_text": "60 Day Money Back Guarantee",
@@ -470,6 +453,7 @@
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
             "price": "$13.33",
+            "saving": "Save 66%",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:6?discount=PATCH6PACKS",
             "extra_text": "60 Day Money Back Guarantee",
@@ -487,6 +471,7 @@
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
             "price": "$16.66",
+            "saving": "Save 58%",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:3?discount=PATCH3PACKS",
             "extra_text": "60 Day Money Back Guarantee",
@@ -559,7 +544,8 @@
       "custom_css": [
         ".heading,.subheading {color: #fff;}",
         ".heading {color: #fff; font-family: \"Bergen Sans\"; font-size: 40px; font-style: normal; font-weight: 700; line-height: 48px; max-width: 550px;}",
-        ".subheading {color: #fff; font-family: Montserrat; font-size: 18px; font-style: normal; font-weight: 400; line-height: 28px;}"
+        ".subheading {color: #fff; font-family: Montserrat; font-size: 18px; font-style: normal; font-weight: 400; line-height: 28px;}",
+        ".image-with-text-cta__content--image {padding: 50px;}"
       ],
       "settings": {
         "heading": "Try Klova Risk-Free For 30 Days",
@@ -635,6 +621,7 @@
             "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
             "product": "",
             "price": "$29.97",
+            "saving": "Save 25%",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1?discount=PATCH1PACK",
             "extra_text": "60 Day Money Back Guarantee",
@@ -653,6 +640,7 @@
             "product_image": "shopify:\/\/shop_images\/Group_13640.png",
             "product": "",
             "price": "$13.33",
+            "saving": "Save  66%",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
             "extra_text": "60 Day Money Back Guarantee",
@@ -670,6 +658,7 @@
             "product_image": "shopify:\/\/shop_images\/Group_13661.png",
             "product": "",
             "price": "$16.66",
+            "saving": "Save 58%",
             "btn_content": "Buy Now",
             "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
             "extra_text": "60 Day Money Back Guarantee",
@@ -773,7 +762,7 @@
         "judge_me_reviews_review_widget_homepage_Ly8DJD": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget_homepage\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "sleep-patch"
+            "product": "original-sleep-zpatch"
           }
         }
       },
@@ -792,9 +781,10 @@
     }
   },
   "order": [
+    "custom_html_BemdKR",
     "main",
-    "slideshow_3fBzej",
     "image_with_text_cta_wbXgfK",
+    "logo_list_Q3U9aP",
     "image_with_sales_point_z6qtFq",
     "carousel_videos_ARgqAp",
     "rich_text_Ve3pWa",
@@ -804,7 +794,6 @@
     "zsleep_show_NJwUWn",
     "sales_point_column_dgpYr4",
     "z_patch_night_sleep_QtBypk",
-    "logo_list_Q3U9aP",
     "bulk_product_column_mPkHjz",
     "rich_text_bFUApi",
     "image_with_text_cta_VtxqUp",

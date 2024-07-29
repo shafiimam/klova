@@ -261,8 +261,12 @@
           {% endif %}
         </div>
 
+        <div class="col-hoverline">
+         <p>{{ product.metafields.custom.col_hover_animation_text }}</p>       
+        </div>
+        
         <div class="grid-item__meta-secondary">
-          <a href="{{ product.url | within: collection }}" class="grid-product__btn c-button -large">
+          <a href="{{ product.url | within: collection }}" class="grid-product__btn btnhover c-button -large">
             <div class="grid-product__price">
               {%- if product.price_varies -%}
                 <span class="grid-product__price--current">
