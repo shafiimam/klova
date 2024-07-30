@@ -153,8 +153,8 @@
       "settings": {
         "empower_image": "shopify:\/\/shop_images\/Rectangle_334_ac776a96-5eed-4af9-b616-f76fab998ac0.png",
         "layout": "right",
-        "empower_title": "ZNite™ Tapes",
-        "empower_descr": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite Tapes. Crafted for comfort and effectiveness, ZNite Tapes help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
+        "empower_title": "ZNite™ Tape",
+        "empower_descr": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite™ Tape. Crafted for comfort and effectiveness, ZNite™ Tape help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
         "empower_button": "BUY NOW",
         "empower_button_link": "#PageContainer"
       }
@@ -175,7 +175,7 @@
           "settings": {
             "keyfeature_icon_one": "shopify:\/\/shop_images\/Frame.png",
             "keyfeature_text_one": "PREMIUM MATERIALS",
-            "keyfeature_content_one": "Made with a hypoallergenic, medical-grade adhesive and a soft cotton blend, ZNite Tapes are designed to provide a secure fit for any face shape. They are also latex-free, PFAS-free, and gluten-free."
+            "keyfeature_content_one": "Made with a hypoallergenic, medical-grade adhesive and a soft cotton blend, ZNite™ Tape are designed to provide a secure fit for any face shape. They are also latex-free, PFAS-free, and gluten-free."
           }
         },
         "text_VwpYND": {
@@ -183,7 +183,7 @@
           "settings": {
             "keyfeature_icon_one": "shopify:\/\/shop_images\/user-friendly_4946408_1.png",
             "keyfeature_text_one": "USER-FRIENDLY DESIGN",
-            "keyfeature_content_one": "Easy to apply and painless to remove, ZNite Tapes are also equipped with a small tab for quick adjustments and removals without discomfort."
+            "keyfeature_content_one": "Easy to apply and painless to remove, ZNite™ Tape are also equipped with a small tab for quick adjustments and removals without discomfort."
           }
         }
       },
@@ -289,7 +289,7 @@
         ".grid {display: flex; flex-wrap: wrap; justify-content: space-evenly;}"
       ],
       "settings": {
-        "title": "Benefits of Klova ZNite™ Tapes",
+        "title": "Benefits of Klova ZNite™ Tape",
         "align_text": "left",
         "divider": false,
         "color_scheme": "none"
@@ -301,7 +301,7 @@
         "empower_image": "shopify:\/\/shop_images\/Rectangle_334_4.png",
         "layout": "left",
         "empower_title": "Legal Disclaimer",
-        "empower_descr": "<p>This product is <strong>not intended <\/strong>for children under the age of 6, those with breathing disorders, heart conditions, nasal congestion, risk of vomiting or with the use of alcohol or sedatives, and those unable to remove the tape on their own. Statements regarding wellness products have not been evaluated by the FDA and are <strong>not intended<\/strong> to diagnose, treat, cure, or prevent any disease and\/or health condition.<\/p><p><\/p><p><\/p><p><br\/>Whether you're looking to enhance your sleep, boost your health, or simply enjoy silent nights, <strong>ZNiteTM Tapes<\/strong> are your ideal choice. Try them tonight and feel the difference!<\/p>",
+        "empower_descr": "<p>This product is <strong>not intended <\/strong>for children under the age of 6, those with breathing disorders, heart conditions, nasal congestion, risk of vomiting or with the use of alcohol or sedatives, and those unable to remove the tape on their own. Statements regarding wellness products have not been evaluated by the FDA and are <strong>not intended<\/strong> to diagnose, treat, cure, or prevent any disease and\/or health condition.<\/p><p><\/p><p><\/p><p><br\/>Whether you're looking to enhance your sleep, boost your health, or simply enjoy silent nights, <strong>ZNite™ Tape<\/strong> are your ideal choice. Try them tonight and feel the difference!<\/p>",
         "empower_button": "",
         "empower_button_link": ""
       }

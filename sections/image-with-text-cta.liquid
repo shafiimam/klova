@@ -45,6 +45,14 @@
                 </p>
                 <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="text-image-media">
               </div>
+            {% endif %} 
+            {% if block.type == 'popup-opener' %}
+              <div class="pop-up-container">
+                <p class="cta-button" data-fancybox data-src="#dialog-content" style="background: #1e062c;">{{ block.settings.pop_up_btn_content }}</p>
+                <div class="popup-content-container">
+                  {{ block.settings.popup-content }}
+                </div>
+              </div>
             {% endif %}
           {% endfor %}
         </div>
@@ -274,6 +282,22 @@
           "type": "image_picker",
           "id": "image",
           "label": "Brand Logo"
+        }
+      ]
+    },
+    {
+      "type": "popup-opener",
+      "name": "Pop Up opener",
+      "settings": [
+        {
+          "type": "text",
+          "id": "pop_up_btn_content",
+          "label": "Button Content"
+        },
+        {
+          "type": "html",
+          "id": "popup-content",
+          "label": "Popup Content",
         }
       ]
     }

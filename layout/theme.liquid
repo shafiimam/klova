@@ -234,10 +234,10 @@
 
    <link rel="stylesheet" type="text/css" href="https://www.klova.com/cdn/shop/t/85/assets/glightbox.css?v=169652494311725131341711513223" />
     {{ "new-custom.css" | asset_url | stylesheet_tag }}
-  {% comment %}  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"  />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  {% endcomment %}
+
 </head>
 
   <style class="loop-style">
@@ -269,7 +269,7 @@
         {%- section 'toolbar' -%}
         {%- section 'header' -%}
 
-        <main class="main-content" id="MainContent">
+        <main class="main-content" id="MainContent"> 
           {%- if request.path contains 'loop_subscriptions/bundle'
             or request.path contains 'loop_subscriptions/customer'
           -%}
