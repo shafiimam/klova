@@ -782,7 +782,6 @@
     },
     "custom_ar_ventur_bulk_script_rFcjKd": {
       "type": "custom-ar-ventur-bulk-script",
-      "disabled": true,
       "settings": {
       }
     }

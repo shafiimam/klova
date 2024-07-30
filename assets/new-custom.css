@@ -156,6 +156,13 @@ p.bundle-btn-text{
     padding-bottom: 20px;
     padding-top: 10px;
 }
+.sleep-patch-8-day-trial-ar-venture .logo-bar .new-grid .grid-item.grid-product{
+  width:33.33%;
+  max-width:33.33%;
+}
+.sleep-patch-8-day-trial-ar-venture  .logo-bar__item{
+  width:100%;
+}
 [value="Deliver every 4 weeks"] {
   display: none;
 }

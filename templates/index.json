@@ -180,20 +180,20 @@
         "text_color": "#554360"
       }
     },
-    "advanced_content_yXHURA": {
+    "advanced_content_THwdR3": {
       "type": "advanced-content",
       "blocks": {
-        "liquid_GbQz9T": {
+        "liquid_GeceNk": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=\"discover-patches-home\" style=\"text-align:center;\"> <h2 style=\"margin-bottom:15px\">Shop Our Most Popular<\/h2>\n\n<div style=\"margin:0px auto; width:30%;text-align:center;\">\n<a type=\"button\" class=\"c-button -primary -large\" name=\"commit\" aria-label=\"Shop All\" style=\"text-decoration:none;\"href=\"\/collections\/all\">\n          <span class=\"form__submit--large\" style=\"display:block;margin-bottom:0\">Shop All<\/span>\n        <\/a><\/div>\n<\/div>",
+            "code": "<div class=\"discover-patches-home\" style=\"text-align:center;\"> <h2 style=\"margin-bottom:15px\">Shop Our Most Popular<\/h2>\n<\/div>",
             "width": "100%",
             "alignment": "center"
           }
         }
       },
       "block_order": [
-        "liquid_GbQz9T"
+        "liquid_GeceNk"
       ],
       "settings": {
         "full_width": false,
@@ -209,6 +209,26 @@
         "mobile_scrollable": true,
         "view_all": false,
         "divider": false
+      }
+    },
+    "advanced_content_yXHURA": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_GbQz9T": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"discover-patches-home\" style=\"text-align:center;\">\n\n<div style=\"margin:0px auto; width:30%;text-align:center;\">\n<a type=\"button\" target=\"_blank\" class=\"c-button -primary -large\" name=\"commit\" aria-label=\"Shop All\" style=\"text-decoration:none;\"href=\"https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4\">\n          <span class=\"form__submit--large\" style=\"display:block;margin-bottom:0\">Build Your Own Bundle<\/span>\n        <\/a><\/div>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_GbQz9T"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "16545214080f08530b": {
@@ -925,8 +945,9 @@
   "order": [
     "slideshow-split",
     "1654127270e8f5804c",
-    "advanced_content_yXHURA",
+    "advanced_content_THwdR3",
     "feature_collection_metafields_nf6WEz",
+    "advanced_content_yXHURA",
     "16545214080f08530b",
     "1654180341a1ad4e10",
     "slideshow_image_gBqMfQ",

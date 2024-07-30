@@ -153,7 +153,7 @@
       "settings": {
         "empower_image": "shopify:\/\/shop_images\/Rectangle_334_ac776a96-5eed-4af9-b616-f76fab998ac0.png",
         "layout": "right",
-        "empower_title": "ZNiteTM Tapes",
+        "empower_title": "ZNite™ Tapes",
         "empower_descr": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite Tapes. Crafted for comfort and effectiveness, ZNite Tapes help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
         "empower_button": "BUY NOW",
         "empower_button_link": "#PageContainer"
@@ -371,6 +371,7 @@
         "review_card_HGd63i",
         "review_card_JyykWT"
       ],
+      "disabled": true,
       "settings": {
         "title": "What Our Customers Say",
         "show_reviewer_image": true,
