@@ -421,6 +421,38 @@
         "text": "VS"
       }
     },
+    "top_products_jcwdBb": {
+      "type": "top-products",
+      "blocks": {
+        "product_YaUqxX": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "chill-patch",
+            "description": "<p>Formulated with Sensoril® Ashwagandha: Clinically PROVEN to manage and reduce stress, improve mood, fatigue and mental cognitive health.<\/p>",
+            "btn": "Buy Now"
+          }
+        },
+        "product_iFVB3h": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "energy-patch",
+            "description": "<p>Boost your athletic performance and mental focus with our Energy Patch! Convenient and efficient, our patch provides all-day support for your active lifestyle.<\/p>",
+            "btn": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_YaUqxX",
+        "product_iFVB3h"
+      ],
+      "settings": {
+        "paddingsection": "40px 0px",
+        "paddingsection_mob": "20px 0px",
+        "title": "You May Also Like"
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -534,6 +566,7 @@
     "16539163096b01f9e3",
     "16539274943ce12887",
     "16539298801be67a40",
+    "top_products_jcwdBb",
     "1653908906e8b1c207",
     "16630811238323670e",
     "zp-product-footer-content",

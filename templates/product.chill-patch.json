@@ -497,6 +497,38 @@
         "text": ""
       }
     },
+    "top_products_MtxbG4": {
+      "type": "top-products",
+      "blocks": {
+        "product_dYWcXL": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "energy-patch",
+            "description": "<p>Boost your athletic performance and mental focus with our Energy Patch! Convenient and efficient, our patch provides all-day support for your active lifestyle.<\/p>",
+            "btn": ""
+          }
+        },
+        "product_DceLkq": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "melatonin-free-sleep-patch",
+            "description": "<p>These patches promote healthy sleep by targeting multiple sleep centers in the brain.<\/p>",
+            "btn": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_dYWcXL",
+        "product_DceLkq"
+      ],
+      "settings": {
+        "paddingsection": "30px 0px",
+        "paddingsection_mob": "20px 0px",
+        "title": "You May Also Like"
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -568,6 +600,7 @@
       "block_order": [
         "rebuy_personalization_engine_rebuy_widget_bcybU9"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -652,6 +685,7 @@
     "1655290887e148c5bc",
     "sleep_chart_zwXQwj",
     "16539162981609c3bf",
+    "top_products_MtxbG4",
     "1653908906e8b1c207",
     "1707412982f325c155",
     "1663080677e87bd9f4",

@@ -111,7 +111,8 @@
       "custom_css": [
         ".product-grid[data-view=\"medium\"] .grid-product__image-wrap {margin: 0px;}",
         ".product-grid[data-view=\"medium\"] .grid-item__link {padding: 24px;}",
-        ".product-grid[data-view=medium] .grid-product__image{border-radius:10px;}"
+        ".product-grid[data-view=\"medium\"] .grid-product__image {border-radius: 10px;}",
+        ".col-hoverline p{font-size:14px; font-weight:400px;}"
       ],
       "settings": {
         "enable_sidebar": false,

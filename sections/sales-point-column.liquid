@@ -5,7 +5,11 @@
       <div class="sales-point-grid grid-{{ section.blocks | size }}">
         {% for block in section.blocks %}
           <div class="sales-point-item" {{ block.shopify_attributes }}>
+            {% if block.settings.image !=blank  %}
             <img src="{{ block.settings.image | image_url }}" alt="sales point icon" height="48" width="48">
+            {% else %}
+            <div class="sales-img">{{ block.settings.svgImg }}</div>  
+            {% endif %}
             <div class="sales-point-text">
               {{ block.settings.text }}
             </div>
@@ -33,8 +37,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    /* justify-content: center;
+    gap: 10px; */
   }
   #{{ section.id }} .sales-point-text{
     color: #1E062C;
@@ -47,9 +51,17 @@
 
   @media (max-width: 600px){
     #{{ section.id }} .sales-point-grid{
-      padding: 40px 15px;
-      gap: 41px;
+      padding: 20px;
+      gap: 0px;
       justify-content: flex-start;
+    }
+     #{{ section.id }} .sales-point-item{
+      width: 50%;
+      max-width: 50%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-right: 15px;
+      gap:10px;
     }
   }
 </style>
@@ -66,6 +78,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type":"html",
+            "id":"svgImg",
+          "label":"For svg image"
         },
         {
           "type": "richtext",

@@ -454,6 +454,38 @@
         "image": "shopify:\/\/shop_images\/Group_87.png"
       }
     },
+    "top_products_NNFFfL": {
+      "type": "top-products",
+      "blocks": {
+        "product_4hHBaU": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "chill-patch",
+            "description": "<p>Formulated with Sensoril® Ashwagandha: Clinically PROVEN to manage and reduce stress, improve mood, fatigue and mental cognitive health - Use daily or as needed when it's time to decompress and relax<\/p>",
+            "btn": "Buy Now"
+          }
+        },
+        "product_QUKRJQ": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "recovery-patch",
+            "description": "<p>Revitalize and refresh with our Recovery Patch! Replenish lost electrolytes for a fast recovery and wake up feeling fresh. Get back to your best self without the hassle. Say goodbye to exhaustion, hello to rejuvenation!<\/p>",
+            "btn": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "product_4hHBaU",
+        "product_QUKRJQ"
+      ],
+      "settings": {
+        "paddingsection": "30px 0px",
+        "paddingsection_mob": "20px 0px",
+        "title": "You May Also Like"
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -485,7 +517,7 @@
         "8b55c85f-b038-497f-81ae-ad131602f7a2"
       ],
       "settings": {
-        "title": "Energy Patch FAQ's",
+        "title": "FAQ's",
         "acc-button-spec": "{{ product.metafields.my_fields.accordion_title_one.value }}",
         "acc-text-spec": "<p>{{ product.metafields.my_fields.accordion_text_one.value }}<\/p>",
         "acc-button-spec-two": "{{ product.metafields.my_fields.accordion_title_two.value }}",
@@ -510,7 +542,7 @@
           "type": "review_card",
           "settings": {
             "image": "shopify:\/\/shop_images\/06.jpg",
-            "review_text": "After being on the go all day at work, coming home to relax i place a chill patch on and unwind. It’s the perfect way to a chill and rejuvenate for the next day. Love them!",
+            "review_text": "After being on the go all day at work, coming home to relax i place a energy patch on and unwind. It’s the perfect way to a chill and rejuvenate for the next day. Love them!",
             "reviewer_name": "Kris Matson",
             "product_image": "shopify:\/\/shop_images\/2023-RecoveryPouch-FrontSide-Mockup_2_309e51e1-a5eb-44d9-abc9-658d3453b864.png",
             "product": "energy-patch",
@@ -595,6 +627,7 @@
     "ingredients_GBrgW9",
     "image_with_sales_point_YEzK46",
     "sleep_chart_gFq4ja",
+    "top_products_NNFFfL",
     "1653908906e8b1c207",
     "review_slider_J3ikai",
     "1663080027983fd7ee",

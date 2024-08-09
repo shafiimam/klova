@@ -523,6 +523,38 @@
         "space_around": true
       }
     },
+    "top_products_frHcYp": {
+      "type": "top-products",
+      "blocks": {
+        "product_UzLzLc": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "chill-patch",
+            "description": "<p>Formulated with Sensoril® Ashwagandha: Clinically PROVEN to manage and reduce stress, improve mood, fatigue and mental cognitive health - Use daily or as needed when it's time to decompress and relax<\/p>",
+            "btn": "Buy Now"
+          }
+        },
+        "product_GYnKU7": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "original-sleep-zpatch",
+            "description": "<p>Newly reformulated, Klova Sleep Patches combine clinically proven Sensoril Ashwagandha, Melatonin, Hops, Valerian Root and more to deliver a night of sleep worth bragging about. <\/p>",
+            "btn": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "product_UzLzLc",
+        "product_GYnKU7"
+      ],
+      "settings": {
+        "paddingsection": "30px 0px",
+        "paddingsection_mob": "20px 0px",
+        "title": "You May Also Like"
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -637,6 +669,7 @@
     "16539274943ce12887",
     "review_slider_NFJHzE",
     "1663080027983fd7ee",
+    "top_products_frHcYp",
     "1653908906e8b1c207",
     "zp-product-footer-content",
     "17074127040251dd37",

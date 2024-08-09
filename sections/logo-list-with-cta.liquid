@@ -1,7 +1,7 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 {% assign row_count = section.settings.row_count %}
 {% assign column_count = section.settings.column_count %}
-<div class="page-width">
+<div class="page-width" id="{{ section.id }}">
   {%- if section.settings.title != blank -%}
     <div class="section-header small--text-center">
       <h2 class="section-header__title" style="text-align: center;">{{ section.settings.title | escape }}</h2>
@@ -31,16 +31,14 @@
               {%- endif -%}
               {%- if block.settings.logo_title != blank -%}
                 <span
-                  style="margin: 15px auto"
-                  class="logo-bar__title"
+                  class="logo-bar__title maintitleSpc"
                 >
                   {{ block.settings.logo_title }}
                 </span>
               {%- endif -%}
               {%- if block.settings.logo_subtitle != blank -%}
                 <span
-                  style="margin: 0  auto"
-                  class="logo-subheading"
+                  class="logo-subheading titleSpc"
                 >
                   {{ block.settings.logo_subtitle }}
                 </span>
@@ -73,6 +71,41 @@
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
+
+<style>
+.logo-subheading {
+  margin: 0px 30px;
+  text-align: left;
+}
+.maintitleSpc{
+  margin:10px 30px;
+}  
+  @media only screen and (min-width:320px) and (max-width:600px){
+    .sleep-patch-8-day-trial-ar-venture .logo-bar .new-grid .grid-item.grid-product{
+      width:100%;
+      max-width:100%;
+    }
+ .sleep-patch-8-day-trial-ar-venture .logo-bar__item .logo-bar__image{
+      width:100% !important;
+      height:100% !important;
+    }
+  .sleep-patch-8-day-trial-ar-venture .logo-bar__item{
+    padding-bottom:10px;
+  } 
+  .logo-subheading {
+  margin: 0px;
+  text-align: left;
+  }  
+  }
+  @media only screen and (min-width:320px) and (max-width:768px){
+    .logo-bar__title.maintitleSpc{
+      margin: 10px 0px;
+    }
+    .logo-subheading{
+      margin:0px;
+    }
+  }
+</style>
 
 {% schema %}
 {

@@ -12,36 +12,21 @@
 {% endschema %}
 
 <div class="custom-script-section">
- <script type="text/javascript"
+<script type="text/javascript"
     src="https://www.kdj37jkd.com/scripts/sdk/everflow.js"></script>
 
 <script type="text/javascript">
-const params = new Proxy(new URLSearchParams(window.location.href), {
-  get: (searchParams, prop) => searchParams.get(prop),
-});
-
-var oid = params.oid;
-var affid = params.affid;
-var sub1 = params.sub1;
-var sub2 = params.sub2;
-var sub3 = params.sub3;
-var sub4 = params.sub4;
-var sub5 = params.sub5;
-var uid = params.uid;
-var source_id = params.source_id;
-var transaction_id = params._ef_transaction_id;
-
 EF.click({
-    offer_id: oid,
-    affiliate_id: affid,
-    sub1: sub1,
-    sub2: sub2,
-    sub3: sub3,
-    sub4: sub4,
-    sub5: sub5,
-    uid: uid,
-    source_id: source_id,
-    transaction_id: transaction_id,
+    offer_id: EF.urlParameter('oid'),
+    affiliate_id: EF.urlParameter('affid'),
+    sub1: EF.urlParameter('sub1'),
+    sub2: EF.urlParameter('sub2'),
+    sub3: EF.urlParameter('sub3'),
+    sub4: EF.urlParameter('sub4'),
+    sub5: EF.urlParameter('sub5'),
+    uid: EF.urlParameter('uid'),
+    source_id: EF.urlParameter('source_id'),
+    transaction_id: EF.urlParameter('_ef_transaction_id'),
 });
 </script>
 </div>

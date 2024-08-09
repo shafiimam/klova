@@ -35,7 +35,11 @@
             {{ section.settings.subHeading }}
           </div>
           {% if section.settings.button_text != '' %}
-            <a href="{{ section.settings.button_url }}" class="cta-button">{{ section.settings.button_text }}</a>
+            {% if section.settings.willRedirect == true %}
+            <button data-href="{{ section.settings.button_url }}" class="cta-button">{{ section.settings.button_text }}</button>
+            {% else %}
+               <a href="{{ section.settings.button_url }}" class="cta-button-link">{{ section.settings.button_text }}</a>
+            {% endif %}
           {% endif %}
           {% for block in section.blocks %}
             {% if block.type == 'text-image' %}
@@ -48,7 +52,7 @@
             {% endif %} 
             {% if block.type == 'popup-opener' %}
               <div class="pop-up-container">
-                <p class="cta-button" data-fancybox data-src="#dialog-content" style="background: #1e062c;">{{ block.settings.pop_up_btn_content }}</p>
+                <p class="cta-button-2" data-fancybox data-src="#dialog-content" style="background: #1e062c;">{{ block.settings.pop_up_btn_content }}</p>
                 <div class="popup-content-container">
                   {{ block.settings.popup-content }}
                 </div>
@@ -63,6 +67,21 @@
     </div>
   </div>
 </section>
+<script>
+  document.querySelectorAll('.cta-button').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+        console.log('clicked');
+      let link = '{{ section.settings.button_url }}';
+      if(link === '#buy-now'){
+        console.log('scrolling to view')
+        document.getElementById(`${link}`).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      } else {
+        location.href = link;
+      }
+  },false)
+})
+</script>
 <style>
   #{{ section.id }} .page-width {
     background: {{ backgroundValue }};
@@ -110,7 +129,7 @@
   .image-with-text-cta__content--image {
     flex-basis: calc(50% - 80px);
   }
-  .image-with-text-cta__content--text .cta-button {
+  .image-with-text-cta__content--text .cta-button, .cta-button-2,.image-with-text-cta__content--text .cta-button-link {
     padding: 17px 40px;
     border-radius: 5px;
     background: #5fb1c2;
@@ -122,7 +141,8 @@
     line-height: 24px;
     transition: 0.3s;
   }
-  .image-with-text-cta__content--text .cta-button:hover {
+  
+  .image-with-text-cta__content--text .cta-button:hover ,.cta-button-2:hover {
     background: #2d7b8e;
     color: #fff;
   }
@@ -133,6 +153,12 @@
   }
   .text-image-media{
     margin: 20px -5px;
+  }
+    .needsclick.kl-private-reset-css-Xuajs1, .announcement-bar.text-center {
+      display: none;
+    }
+  #PageContainer{
+    padding-top: 0;
   }
   @media (max-width: 500px) {
     #{{ section.id }} .page-width {
@@ -179,7 +205,6 @@
     }
   }
 </style>
-
 {% schema %}
 {
   "name": "Image With Text CTA",
@@ -226,6 +251,18 @@
       "type": "url",
       "id": "button_url",
       "label": "Button Url"
+    },
+    {
+      "type": "color",
+      "id": "btn-color",
+      "label": "button color",
+      "default": "#fff"
+    },
+    {
+      "type": "checkbox",
+      "id": "willRedirect",
+      "label": "will redirect?",
+      "default":false
     },
     {
       "type": "text",

@@ -396,7 +396,7 @@
           "type": "product",
           "settings": {
             "style_overlay": "bg-gr--green-blue",
-            "product": "znite-sleep-tape-sample",
+            "product": "znite-sleep-tape",
             "description": "<p>Discover the secret to a deeper, uninterrupted sleep with our innovative ZNite Tapes. Crafted for comfort and effectiveness, ZNite Tapes help train your body to embrace nasal breathing, enhancing your sleep quality and overall health.<\/p>",
             "btn": "Learn More"
           }
@@ -405,9 +405,9 @@
           "type": "product",
           "settings": {
             "style_overlay": "bg-gr--yellow-orange",
-            "product": "focus-patch",
-            "image": "shopify:\/\/shop_images\/Nootropic_Focus_Patch_1.png",
-            "description": "<p>The World's First nootropic focus patches made with guarana, huperzine, agmatine sulfate and other clinically proven ingredients. Peel. Stick. Focus.<\/p><p><\/p>",
+            "product": "original-sleep-zpatch",
+            "image": "shopify:\/\/shop_images\/6-SleepZPatch.jpg",
+            "description": "<p>Newly reformulated, Klova Sleep Patches combine clinically proven Sensoril Ashwagandha, Melatonin, Hops, Valerian Root and more to deliver a night of sleep worth bragging about. <\/p>",
             "btn": "Learn More"
           }
         }

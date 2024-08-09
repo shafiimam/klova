@@ -582,6 +582,38 @@
         "divider": true
       }
     },
+    "top_products_kYFP8M": {
+      "type": "top-products",
+      "blocks": {
+        "product_LNKrfR": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "chill-patch",
+            "description": "<p>Formulated with Sensoril® Ashwagandha: Clinically PROVEN to manage and reduce stress, improve mood, fatigue and mental cognitive health - Use daily or as needed when it's time to decompress and relax<\/p>",
+            "btn": "Buy Now"
+          }
+        },
+        "product_LtVUjT": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--yellow-orange",
+            "product": "focus-patch",
+            "description": "<p>This Focus Patch will help you stay focused and confident, leading to better decision-making abilities.<\/p>",
+            "btn": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_LNKrfR",
+        "product_LtVUjT"
+      ],
+      "settings": {
+        "paddingsection": "30px 0",
+        "paddingsection_mob": "20px 0",
+        "title": "You May Also Like"
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -713,6 +745,7 @@
     "image_with_sales_point_eDTNnB",
     "slideshow_image_YmfPN3",
     "review_slider_cQdzgn",
+    "top_products_kYFP8M",
     "1653908906e8b1c207",
     "1663080027983fd7ee",
     "zp-product-footer-content",

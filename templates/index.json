@@ -5,15 +5,14 @@
       "blocks": {
         "slide_hRUmQr": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "Mid-Summer Dreams Unfold with Klova",
+            "title": "Back To School With Klova",
             "last_word_color": "#fa0909",
             "title_size": 60,
-            "subheading": "<p>Double Your First Month's Discount on All New Subscriptions, Including ZNite Tape!<\/p>",
+            "subheading": "<p>Buy One Focus Patch, Get One Free - Code SCHOOL20<\/p>",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/Klova-Banner_Mid-Summer_-_480x450px_-_rectangular_-_01.jpg",
+            "image": "shopify:\/\/shop_images\/Klova-Banner_Back_to_school_-_480x450px_-_rectangular_-_01.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "transform_mob_x": 0,
@@ -21,8 +20,8 @@
             "transform_x": 0,
             "transform_y": 0,
             "style_overlay": "bg-gr--yellow-orange",
-            "link_text": "Shop Now",
-            "link": "shopify:\/\/collections\/all"
+            "link_text": "Get Now",
+            "link": "shopify:\/\/products\/focus-patch"
           }
         },
         "slide_tJCUyQ": {
@@ -195,13 +194,20 @@
       "block_order": [
         "liquid_GeceNk"
       ],
+      "custom_css": [
+        ".custom__item.one-whole.align--center {margin-bottom: 0;}"
+      ],
       "settings": {
         "full_width": false,
-        "space_around": true
+        "space_around": false
       }
     },
     "feature_collection_metafields_nf6WEz": {
       "type": "feature-collection-metafields",
+      "custom_css": [
+        ".prev_arrow.slick-arrow {transform: translate(-79px, 70px);}",
+        ".next_arrow.slick-arrow {transform: translate(-16px, 10%);}"
+      ],
       "settings": {
         "title": "",
         "home_featured_products": "patches",
@@ -225,6 +231,9 @@
       },
       "block_order": [
         "liquid_GbQz9T"
+      ],
+      "custom_css": [
+        ".custom__item {margin-top: 25px;}"
       ],
       "settings": {
         "full_width": false,
@@ -716,7 +725,7 @@
         "16542132562e01bd50-2"
       ],
       "settings": {
-        "paddingsection": "60px 0px 60px 0px",
+        "paddingsection": "60px 0px 30px 0px",
         "paddingsection_mob": "60px 0px 60px 0px",
         "style": "style-1",
         "title": "Patches with a purpose",
@@ -768,7 +777,7 @@
         "16542407283c337af4-3"
       ],
       "settings": {
-        "paddingsection": "100px 0px 60px 0px",
+        "paddingsection": "50px 0px 0px 0px",
         "paddingsection_mob": "60px 0px 60px 0px",
         "title": "Peel Stick Optimize",
         "info": "<p>Optimize your nights with our best-selling Extra Strength Sleep Patches, and optimize your days with NEW Nootropic Focus Patches. Here's how they work:<\/p>",
@@ -819,7 +828,7 @@
         "16542462414e63cefe-2"
       ],
       "settings": {
-        "paddingsection": "60px 0px 70px 0px",
+        "paddingsection": "60px 0px 0px 0px",
         "paddingsection_mob": "60px 0px 60px 0px",
         "title": "The Daily Snooze: Blog",
         "overlay": "#faf9fb"
@@ -879,6 +888,9 @@
         "16542559718202f42b-2",
         "16542559718202f42b-3"
       ],
+      "custom_css": [
+        ".reviews-home__inside {padding-bottom: 0;}"
+      ],
       "settings": {
         "paddingsection": "70px 0px 10px 0px",
         "paddingsection_mob": "60px 0px 0px 0px",
@@ -915,30 +927,11 @@
         "text",
         "form"
       ],
-      "settings": {
-        "color_scheme": "none"
-      }
-    },
-    "1710452923ad735923": {
-      "type": "apps",
-      "blocks": {
-        "rebuy_personalization_engine_rebuy_widget_c4mwFD": {
-          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
-          "disabled": true,
-          "settings": {
-            "enabled": true,
-            "id": "139274",
-            "product_id_enabled": true,
-            "collection_id_enabled": false
-          }
-        }
-      },
-      "block_order": [
-        "rebuy_personalization_engine_rebuy_widget_c4mwFD"
+      "custom_css": [
+        ".newsletter-section.index-section:first-child {padding-top: 25px;}"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "color_scheme": "none"
       }
     }
   },
@@ -961,7 +954,6 @@
     "165419671935304e10",
     "165424624126b32151",
     "1654255971d301bddd",
-    "newsletter",
-    "1710452923ad735923"
+    "newsletter"
   ]
 }

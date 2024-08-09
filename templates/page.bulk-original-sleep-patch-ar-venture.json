@@ -3,7 +3,7 @@
     "custom_html_BemdKR": {
       "type": "custom-html",
       "settings": {
-        "custom_html": "<style>\n #SiteHeader {display: none !important;}\n#PageContainer {\npadding-top: 15px;\n}\n<\/style>"
+        "custom_html": "<style>\n #SiteHeader, .essential_countdown_annoucement_bar_wrapper  {display: none !important;}\n#PageContainer {\npadding-top: 15px;\n}\n\n<\/style>"
       }
     },
     "main": {
@@ -28,7 +28,7 @@
       ],
       "custom_css": [
         ".heading {max-width: 652px; color: #1e062c; font-family: \"Bergen Sans\"; font-size: 56px; font-style: normal; font-weight: 700; line-height: 64px; \/* 114.286% *\/}",
-        ".image-with-text-cta__content .cta-button {background: #1e062c;}",
+        ".image-with-text-cta__content .cta-button-link {background: #1e062c;}",
         ".image-with-text-cta__content {padding-right: 0; padding-top: 0; padding-bottom: 0;}",
         ".image-with-text-cta__content--image {position: relative; left: 20px;}",
         ".image-with-text-cta__container {padding-top: 50px;}",
@@ -43,6 +43,8 @@
         "bg_mobile": "shopify:\/\/shop_images\/Frame_1239330634.png",
         "button_text": "Get Original Sleep Patch!",
         "button_url": "#buy-now",
+        "btn-color": "#ffffff",
+        "willRedirect": false,
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -237,6 +239,8 @@
         "image": "shopify:\/\/shop_images\/Rectangle_334.jpg",
         "button_text": "Try Original Sleep Patch",
         "button_url": "#buy-now",
+        "btn-color": "#ffffff",
+        "willRedirect": false,
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "left",
@@ -391,35 +395,37 @@
       "settings": {
       }
     },
-    "sales_point_column_dgpYr4": {
-      "type": "sales-point-column",
+    "image_with_text_cta_YGkUmq": {
+      "type": "image-with-text-cta",
       "blocks": {
-        "sales_point_k3RXbc": {
-          "type": "sales-point",
+        "popup_opener_9mdGAB": {
+          "type": "popup-opener",
           "settings": {
-            "image": "shopify:\/\/shop_images\/who-support-us.svg",
-            "text": "<p>Who Supports Us<\/p>"
+            "pop_up_btn_content": "See Full Results",
+            "popup-content": "<div id=\"dialog-content\" style=\"display: none; max-width: 840px; overflow: auto;\" class=\"fancybox-content\">\n<h4 style=\"margin-bottom: 0;\n  margin-top: 10px;\">Wake Up Refreshed &amp; Energized<\/h4>\n<p> And 98% felt less tired during the day after using.\nFall Asleep Faster &amp; Stay Asleep\nLonger\n<\/p>\n<h4 style=\"margin-bottom: 0;\n  margin-top: 10px;\">Fall Asleep Faster &amp; Stay Asleep\nLonger<\/h4>\n<p>92% of people report falling asleep easier and\n94% of people woke up less often throughout the night.\n<\/p>\n<h4 style=\"margin-bottom: 0;\n  margin-top: 10px;\">More Effective Than Oral Sleep Aids<\/h4>\n<p>Independent studies published by the NiH show that transdermal melatonin patches can be more effective than melatonin pills.\n<\/p>\n<\/div>"
           }
         }
       },
       "block_order": [
-        "sales_point_k3RXbc"
+        "popup_opener_9mdGAB"
       ],
       "custom_css": [
-        ".sales-point-item {flex-direction: column-reverse; width: 100%;}",
-        ".sales-point-item img {height: 100px; width: 100%;}",
-        ".sales-point-text {font-family: Poppins; font-weight: 700; font-style: normal; font-size: 32px;}"
+        ".heading {font-size: 64px; line-height: 68px;}",
+        ".cta-button {background: #1e062c; cursor: pointer;}"
       ],
       "settings": {
-      }
-    },
-    "z_patch_night_sleep_QtBypk": {
-      "type": "z-patch-night-sleep",
-      "custom_css": [
-        ".night-sleep-data {text-align: center; padding-top: 60px;}",
-        ".image-width-text {display: none;}"
-      ],
-      "settings": {
+        "heading": "Proven in A 14 Night Sleep Study",
+        "subHeading": "<p><strong>98%<\/strong> success rate in Sleep Study Participants.<\/p>",
+        "image": "shopify:\/\/shop_images\/Rectangle_334_96f6f13c-2a0d-4b03-821d-ed3e65f3711b.png",
+        "button_text": "",
+        "button_url": "",
+        "btn-color": "#ffffff",
+        "willRedirect": false,
+        "button_text_2": "",
+        "button_url_2": "",
+        "alignment": "right",
+        "background_color": "#ffffff",
+        "show_section_devider": false
       }
     },
     "bulk_product_column_mPkHjz": {
@@ -436,7 +442,7 @@
             "price": "$29.97",
             "saving": "Save 25%",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:1?discount=PATCH1PACK",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41636945363009:1?discount=PATCH1PACK",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$39.99<\/s> <b>$29.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -455,7 +461,7 @@
             "price": "$13.33",
             "saving": "Save 66%",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:6?discount=PATCH6PACKS",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41636945363009:6?discount=PATCH6PACKS",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$239.94<\/s> <b>$79.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -473,7 +479,7 @@
             "price": "$16.66",
             "saving": "Save 58%",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41590309486657:3?discount=PATCH3PACKS",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41636945363009:3?discount=PATCH3PACKS",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$119.97<\/s> <b>$49.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -532,6 +538,8 @@
         "image": "shopify:\/\/shop_images\/girl-on-bed.png",
         "button_text": "Try Original Sleep Patch",
         "button_url": "#buy-now",
+        "btn-color": "#ffffff",
+        "willRedirect": false,
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
@@ -553,6 +561,8 @@
         "image": "shopify:\/\/shop_images\/money_back_badge.png",
         "button_text": "",
         "button_url": "",
+        "btn-color": "#ffffff",
+        "willRedirect": false,
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "left",
@@ -623,7 +633,7 @@
             "price": "$29.97",
             "saving": "Save 25%",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:1?discount=PATCH1PACK",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41636945363009:1?discount=PATCH1PACK",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$39.99<\/s> <b>$29.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -642,7 +652,7 @@
             "price": "$13.33",
             "saving": "Save  66%",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:6?discount=PATCH6PACKS",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41636945363009:6?discount=PATCH6PACKS",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$239.94<\/s> <b>$79.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -660,7 +670,7 @@
             "price": "$16.66",
             "saving": "Save 58%",
             "btn_content": "Buy Now",
-            "btn_url": "https:\/\/www.klova.com\/cart\/31632025256001:3?discount=PATCH3PACKS",
+            "btn_url": "https:\/\/klova.myshopify.com\/cart\/41636945363009:3?discount=PATCH3PACKS",
             "extra_text": "60 Day Money Back Guarantee",
             "total_price": "Total: <s>$119.97<\/s> <b>$49.97<\/b>",
             "payment_method": "shopify:\/\/shop_images\/payment_methods.png",
@@ -798,8 +808,7 @@
     "ingredients_Y66VyT",
     "slideshow_image_QRjEpD",
     "zsleep_show_NJwUWn",
-    "sales_point_column_dgpYr4",
-    "z_patch_night_sleep_QtBypk",
+    "image_with_text_cta_YGkUmq",
     "bulk_product_column_mPkHjz",
     "rich_text_bFUApi",
     "image_with_text_cta_VtxqUp",

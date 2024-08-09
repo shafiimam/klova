@@ -379,6 +379,38 @@
         "divider": false
       }
     },
+    "top_products_Pw8JAt": {
+      "type": "top-products",
+      "blocks": {
+        "product_T3j3mH": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "focus-patch",
+            "description": "<p>This Focus Patch will help you stay focused and confident, leading to better decision-making abilities.<\/p>",
+            "btn": "Buy Now"
+          }
+        },
+        "product_niagKy": {
+          "type": "product",
+          "settings": {
+            "style_overlay": "bg-gr--green-blue",
+            "product": "energy-patch",
+            "description": "<p>Boost your athletic performance and mental focus with our Energy Patch! Convenient and efficient, our patch provides all-day support for your active lifestyle.<\/p>",
+            "btn": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "product_T3j3mH",
+        "product_niagKy"
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "You May Also Like"
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -533,6 +565,7 @@
     "znite_legal_hzLbaF",
     "slideshow_image_WcVdkm",
     "review_slider_NFJHzE",
+    "top_products_Pw8JAt",
     "1653908906e8b1c207",
     "1663080027983fd7ee",
     "zp-product-footer-content",

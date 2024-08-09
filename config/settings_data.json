@@ -148,7 +148,7 @@
             "type": "MegaMenu",
             "settings": {
               "menu_title": "Sleep",
-              "menu_collection": "sleep",
+              "menu_collection": "sleep-megamenu",
               "menu_title_two": "Performance",
               "menu_collection_two": "performance-patches",
               "menu_title_three": "Relax",
@@ -237,10 +237,9 @@
         "blocks": {
           "announcement_bCg9Hp": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p>Mid-Summer Self Care Adventure with Klova! Double the discount of your first month's subscription- Code SUMMER15<\/p>",
-              "richtext_mobile": "<p>Mid-Summer Self Care Adventure with Klova! Double the discount of your first month's subscription- Code SUMMER15<\/p>"
+              "richtext": "<p><a href=\"\/products\/focus-patch\" title=\"Focus Patch\">Buy One Focus Patch, Get One Free - Code SCHOOL20<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/products\/focus-patch\" title=\"Focus Patch\">Buy One Focus Patch, Get One Free - Code SCHOOL20<\/a><\/p>"
             }
           },
           "announcement_m7Ke93": {
@@ -258,14 +257,14 @@
         ],
         "custom_css": [
           ".toolbar,.announcement-slider > div,.announcement-slider__content {background-color: #c7e8f1;}",
-          "#AnnouncementSlider .flickity-viewport {height: 21px !important;}"
+          "#AnnouncementSlider .flickity-viewport {}"
         ],
         "settings": {
           "announcement_center": true,
           "toolbar_social": false,
-          "show_locale_selector": true,
-          "show_currency_selector": true,
-          "show_currency_flags": true
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false
         }
       },
       "footer": {

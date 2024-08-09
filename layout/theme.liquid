@@ -34,7 +34,6 @@
       gtag('config', 'G-GQWY7KSW9K');
       </script>
     -->
-    {% include 'replo-head.liquid' %}
 {% comment %}
     {% render 'skio-head' %}
  {% endcomment %}   
@@ -281,7 +280,8 @@
 
         {%- section 'footer-promotions' -%}
         {%- section 'footer' -%}
-        <div data-rebuy-id="153845"></div>
+         <!-- Rebuy Gift widget -->
+        <div data-rebuy-id="162368"></div>
       </div>
     </div>
 
@@ -385,6 +385,13 @@
     </script>
    
     <script src="{{ 'theme.static.js' | asset_url }}" defer="defer"></script>
-    {% render 'promotion-script' %}
   </body>
+  <p class="template-name" style="display:none;">{{ page.title }}</p>
+  {% if page.title contains 'sleep'  %}
+  <style>
+    .needsclick.kl-private-reset-css-Xuajs1, .announcement-bar.text-center {
+      display: none;
+    }
+  </style>
+  {% endif %}
 </html>
