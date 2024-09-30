@@ -35,11 +35,12 @@
         "bundle_pack_aiExWm": {
           "type": "bundle_pack",
           "settings": {
-            "bundle_title": "Variety Bundle"
+            "bundle_title": "Bundle Pack"
           }
         },
         "bundle_btn_WGPnxM": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -406,8 +407,8 @@
         "product_niagKy"
       ],
       "settings": {
-        "paddingsection": "0px 0px 0px 0px",
-        "paddingsection_mob": "0px 0px 0px 0px",
+        "paddingsection": "40px 0",
+        "paddingsection_mob": "20px 0",
         "title": "You May Also Like"
       }
     },
@@ -465,6 +466,55 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
+    "review_slider_zkqCyX": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_886XAn": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "I love the sleep patch. I’ve been struggling with sleep for years and have tried different things. These work and I now dream again and remember my dreams… love that. If I do wake up I go back to sleep and quickly. No more tossing and turning trying to sleep.",
+            "reviewer_name": "Mia Inderbitzin ",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "original-sleep-zpatch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_x9GNCF": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/09.jpg",
+            "review_text": "I used this for just 4 nights and my sleep is back! Needless to say I keep them close by.,,",
+            "reviewer_name": "Gail",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "original-sleep-zpatch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_TTDV4t": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_418b8467-833d-4b77-bc72-119ee7c7a604.jpg",
+            "review_text": "I have had the hardest time sleeping for at least a year and a half. Saw these on TikTok followed up with some research and thought I would try them. I have been sleeping so good and my favorite part is I stay asleep! It varies night to night how sleepy I get or how quickly they work but when I fall asleep I sleep so good. I am very happy with these patches",
+            "reviewer_name": "Holly",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "original-sleep-zpatch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_886XAn",
+        "review_card_x9GNCF",
+        "review_card_TTDV4t"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": false
+      }
+    },
     "1663080027983fd7ee": {
       "type": "apps",
       "blocks": {
@@ -477,7 +527,6 @@
       "block_order": [
         "bf6b2f19-d616-4954-9103-d53133278ad0"
       ],
-      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
@@ -567,6 +616,7 @@
     "review_slider_NFJHzE",
     "top_products_Pw8JAt",
     "1653908906e8b1c207",
+    "review_slider_zkqCyX",
     "1663080027983fd7ee",
     "zp-product-footer-content",
     "17074127040251dd37",

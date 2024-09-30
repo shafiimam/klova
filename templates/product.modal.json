@@ -3,12 +3,17 @@
   "sections": {
     "main": {
       "type": "main-product",
-      "settings": {}
+      "settings": {
+      }
     },
     "zp-product-footer-content": {
       "type": "product-footer-content-zipifypages",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["main", "zp-product-footer-content"]
+  "order": [
+    "main",
+    "zp-product-footer-content"
+  ]
 }

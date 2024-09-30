@@ -40,6 +40,7 @@
         },
         "bundle_btn_nJ3Dfz": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -258,8 +259,8 @@
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/product-comparison-desktop.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/product-comparison-mobile.jpg"
+            "image": "shopify:\/\/shop_images\/Frame_14205_fba1f8d2-dd53-494d-b830-e193396976b8.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_14233_adacd902-bf9c-4ed0-ac04-f8896df20628.png"
           }
         }
       },
@@ -476,6 +477,55 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
+    "review_slider_xjktxa": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_AWxqyV": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "With my klova Pattches I’ve been getting the best s sleep ever n waking j up g feeling great n energized! Thanks Klova!",
+            "reviewer_name": "Luz",
+            "product_image": "shopify:\/\/shop_images\/Extra-Strength_Sleep_Patch_1.png",
+            "product": "extra-strength-sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_38HL34": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.jpg",
+            "review_text": "Amazing product! Anyone who has issues sleeping should try this product.",
+            "reviewer_name": "Joey",
+            "product_image": "shopify:\/\/shop_images\/Extra-Strength_Sleep_Patch_1.png",
+            "product": "extra-strength-sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_gythBg": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_418b8467-833d-4b77-bc72-119ee7c7a604.jpg",
+            "review_text": "These are by far the best sleep gummies I have ever taken. I only wish they were a little less expensive.",
+            "reviewer_name": "Angela",
+            "product_image": "shopify:\/\/shop_images\/Extra-StrengthSleepPatch1_1800x1800_c958fbeb-52c0-41ef-be42-68765545b167.webp",
+            "product": "extra-strength-sleep-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_AWxqyV",
+        "review_card_38HL34",
+        "review_card_gythBg"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": false
+      }
+    },
     "16630817672cdb6d0f": {
       "type": "apps",
       "blocks": {
@@ -536,6 +586,7 @@
     "16539274943ce12887",
     "top_products_QQik7N",
     "1653908906e8b1c207",
+    "review_slider_xjktxa",
     "16630817672cdb6d0f",
     "zp-product-footer-content",
     "slideshow_image_aQjDP8"

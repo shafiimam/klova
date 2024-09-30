@@ -216,7 +216,7 @@
               </div>
 
               <div class="header-item header-item--search small--hide">
-                <div class="search-spc data-demo" data-fancybox data-src="#dialog-content">
+                <div class="search-spc data-demo">
                   {%- render 'header-icons', section: section, nav_position: nav_position -%}
                 </div>
                 {%- if logo_alignment == 'center' -%}
@@ -360,11 +360,6 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    Fancybox.bind('[data-fancybox]', {
-      // Custom options for all galleries
-    });
-  });
 </script>
 
 {% schema %}

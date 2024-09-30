@@ -447,6 +447,7 @@ svg {
 }
 .rte img {
   height: auto;
+  margin-left: 62px;
 }
 .rte ol,
 .rte ul {
@@ -482,7 +483,7 @@ svg {
 .rte ol,
 .rte ul {
   list-style-position: inside;
-  margin-left: 0;
+  margin-left: 62px;
 }
 .rte blockquote {
   background: #f8f8f8;
@@ -1375,6 +1376,9 @@ h6 {
     -ms-flex: initial;
     flex: initial;
     min-height: 210px;
+  }
+  .rte img {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -6753,7 +6757,7 @@ html.category-open .site-header .site-header__element {
 .ingredients__image {
   height: auto;
   margin: 0 auto 60px;
-  max-width: 360px;
+  max-width: 500px;
   position: relative;
   width: 100%;
 }

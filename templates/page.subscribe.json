@@ -14,7 +14,7 @@
         "call_to_action_desktop_image": "shopify:\/\/shop_images\/Frame_1000003711.jpg",
         "call_to_action_mobile_image": "shopify:\/\/shop_images\/Frame_1000003704_e80852ec-c6b4-4baa-b744-06fc9b414841.jpg",
         "call_to_action_title": "Subscribe, Save and Simplify Your Routine",
-        "call_to_action_descr": "<p>Easily receive your orders at your doorstep, without any hassle. Subscribe today to enjoy a 10% discount and free shipping on all orders.<\/p>",
+        "call_to_action_descr": "<p>Easily receive your orders at your doorstep, without any hassle. Subscribe today to enjoy a 20% discount and free shipping on all orders.<\/p>",
         "call_to_action_button": "Manage my subscription",
         "call_to_action_button_link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/get-subscription-link"
       }
@@ -408,6 +408,7 @@
       "block_order": [
         "image_P7qENz"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__slide-link {display: block !important;}"
       ],

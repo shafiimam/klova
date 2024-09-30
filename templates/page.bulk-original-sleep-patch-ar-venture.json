@@ -32,7 +32,8 @@
         ".image-with-text-cta__content {padding-right: 0; padding-top: 0; padding-bottom: 0;}",
         ".image-with-text-cta__content--image {position: relative; left: 20px;}",
         ".image-with-text-cta__container {padding-top: 50px;}",
-        ".image-with-text-cta__content--image {flex-basis: 57%;}"
+        ".image-with-text-cta__content--image {flex-basis: 57%;}",
+        ".cta-button-link {color: #fff;}"
       ],
       "settings": {
         "heading": "Get Your Best Sleep Ever with Klova’s Original Sleep Patch!",
@@ -792,6 +793,7 @@
     },
     "custom_ar_ventur_bulk_script_rFcjKd": {
       "type": "custom-ar-ventur-bulk-script",
+      "disabled": true,
       "settings": {
       }
     }

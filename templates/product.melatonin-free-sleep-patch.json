@@ -40,6 +40,7 @@
         },
         "bundle_btn_bwwPr3": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -450,8 +451,8 @@
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/Frame_14205.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/comparison-mobile.png"
+            "image": "shopify:\/\/shop_images\/Frame_14205_fba1f8d2-dd53-494d-b830-e193396976b8.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_14233_adacd902-bf9c-4ed0-ac04-f8896df20628.png"
           }
         }
       },
@@ -531,55 +532,6 @@
         "style": "minimal",
         "autoplay": false,
         "autoplay_speed": 5
-      }
-    },
-    "review_slider_cQdzgn": {
-      "type": "review-slider",
-      "blocks": {
-        "review_card_fRzMWQ": {
-          "type": "review_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
-            "review_text": "30 years of difficult sleeping and I’m on the path to getting some good sleep. This patch is great",
-            "reviewer_name": "Judy Felix",
-            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
-            "product": "{{ product }}",
-            "cta_content": "Subscribe and save"
-          }
-        },
-        "review_card_tWewdq": {
-          "type": "review_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/02.jpg",
-            "review_text": "I love my klova patches. I keep the melatonin free ones by my bed and I use extra strength when I travel since I struggle to sleep when I'm away.",
-            "reviewer_name": "Courtney Hillesheim",
-            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
-            "product": "{{ product }}",
-            "cta_content": "Subscribe and save"
-          }
-        },
-        "review_card_BFfYg7": {
-          "type": "review_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/01.jpg",
-            "review_text": "I love the normal patches, but these ones allow me to still wake if my partner or dog needs me while being able to doze off again with no proble. The lack of groggy mornings is a great benefit too, these dont leave me feeling like im melted to the bed for 10-15 minutes after waking.",
-            "reviewer_name": "Shannon",
-            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
-            "product": "{{ product }}",
-            "cta_content": "Subscribe and save"
-          }
-        }
-      },
-      "block_order": [
-        "review_card_fRzMWQ",
-        "review_card_tWewdq",
-        "review_card_BFfYg7"
-      ],
-      "settings": {
-        "title": "What Our Customers Say",
-        "show_reviewer_image": true,
-        "review_count": "5209",
-        "divider": true
       }
     },
     "top_products_kYFP8M": {
@@ -668,6 +620,55 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
+    "review_slider_cQdzgn": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_fRzMWQ": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "30 years of difficult sleeping and I’m on the path to getting some good sleep. This patch is great",
+            "reviewer_name": "Judy Felix",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_tWewdq": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02.jpg",
+            "review_text": "I love my klova patches. I keep the melatonin free ones by my bed and I use extra strength when I travel since I struggle to sleep when I'm away.",
+            "reviewer_name": "Courtney Hillesheim",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_BFfYg7": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.jpg",
+            "review_text": "I love the normal patches, but these ones allow me to still wake if my partner or dog needs me while being able to doze off again with no proble. The lack of groggy mornings is a great benefit too, these dont leave me feeling like im melted to the bed for 10-15 minutes after waking.",
+            "reviewer_name": "Shannon",
+            "product_image": "{{ block.settings.product.metafields.custom.product_cover_image.value }}",
+            "product": "{{ product }}",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_fRzMWQ",
+        "review_card_tWewdq",
+        "review_card_BFfYg7"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": true
+      }
+    },
     "1663080027983fd7ee": {
       "type": "apps",
       "blocks": {
@@ -744,9 +745,9 @@
     "slideshow_image_qftcLt",
     "image_with_sales_point_eDTNnB",
     "slideshow_image_YmfPN3",
-    "review_slider_cQdzgn",
     "top_products_kYFP8M",
     "1653908906e8b1c207",
+    "review_slider_cQdzgn",
     "1663080027983fd7ee",
     "zp-product-footer-content",
     "17074127040251dd37",

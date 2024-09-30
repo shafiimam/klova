@@ -1,0 +1,76 @@
+<section class="zsleep-show">
+  <div class="zsleep-show-content">
+    <div class="zsleep-content zsleep-page-width">
+      <h2 style="text-align: center;" class="trans-text">{{ section.settings.title }}</h2>
+      <div class="zsleep-show-data">
+        <p style="text-align: center;">
+          <span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">
+            {{- section.settings.description -}}
+          </span>
+        </p>
+      </div>
+      <video
+        width="100%"
+        height="100%"
+        controls
+        poster="{{ section.settings.video_thumbnail | image_url }}"
+      >
+        {%- for source in section.settings.video.sources -%}
+          <source src="{{ source.url  }}" type="{{ source.mime_type }}">
+        {%- endfor -%}
+      </video>
+      <caption>
+        {{ section.settings.video_caption }}
+      </caption>
+    </div>
+  </div>
+</section>
+
+<style>
+  .zsleep-show-content {
+    background: rgba(225, 223, 238, 1);
+  }
+  .zsleep-content {
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .zsleep-show-data {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Conten With Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title Of The Section"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Description about the video</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_thumbnail",
+      "label": "Viddeo Thumbnail"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Select Video"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Conten With Video"
+    }
+  ]
+}
+{% endschema %}

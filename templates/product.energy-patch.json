@@ -40,6 +40,7 @@
         },
         "bundle_btn_FWmb8w": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",

@@ -714,6 +714,7 @@
     },
     "custom_ar_ventures_script_qKCzKB": {
       "type": "custom-ar-ventures-script",
+      "disabled": true,
       "settings": {
       }
     }

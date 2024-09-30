@@ -53,6 +53,7 @@
         },
         "bundle_btn_WGPnxM": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -276,6 +277,8 @@
         "image": "shopify:\/\/shop_images\/Rectangle_334_77ba9666-9574-45db-b62d-0c3a0a099090.png",
         "button_text": "Try Deep Sleep Patches",
         "button_url": "#buy-now",
+        "btn-color": "#fff",
+        "willRedirect": false,
         "button_text_2": "",
         "button_url_2": "",
         "alignment": "right",

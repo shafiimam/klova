@@ -170,7 +170,7 @@
           "mega_menu_qqMD8D"
         ],
         "custom_css": [
-
+          "[data-rebuy-id=\"165335\"] {display: none;}"
         ],
         "settings": {
           "main_menu_link_list": "mega-menu",
@@ -237,9 +237,10 @@
         "blocks": {
           "announcement_bCg9Hp": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/products\/focus-patch\" title=\"Focus Patch\">Buy One Focus Patch, Get One Free - Code SCHOOL20<\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"\/products\/focus-patch\" title=\"Focus Patch\">Buy One Focus Patch, Get One Free - Code SCHOOL20<\/a><\/p>"
+              "richtext": "<p><a href=\"\/products\/chill-patch\" title=\"Chill Patch\">Embrace tranquility inside and out this Peace Day - 15% OFF on Chill Patch with Code PEACEDAY21<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/products\/chill-patch\" title=\"Chill Patch\">Embrace tranquility inside and out this Peace Day - 15% OFF on Chill Patch with Code PEACEDAY21<\/a><\/p>"
             }
           },
           "announcement_m7Ke93": {
@@ -300,11 +301,12 @@
           },
           "contact_hqNVde": {
             "type": "contact",
+            "disabled": true,
             "settings": {
               "phone": "",
               "contact": "",
               "chat": "",
-              "enable_social": false,
+              "enable_social": true,
               "enable_text_instead_icons": false
             }
           }
@@ -314,6 +316,9 @@
           "fe6a67a0-686e-435b-a946-f28802053c97",
           "payment_R3TEac",
           "contact_hqNVde"
+        ],
+        "custom_css": [
+          ".footer__section {z-index: 0; margin-bottom: 50px;}"
         ],
         "settings": {
           "show_newsletter": false,
@@ -400,6 +405,94 @@
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
+        }
+      },
+      "10008203421340698720": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/dropdown\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "select_language_label": "Select Language",
+          "native_language_names": true,
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "11354984448963461329": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/dropdown_with_flags\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "right",
+          "vertical_position": "top",
+          "open_direction": "bottom",
+          "native_language_names": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "switcher_text_color": "#666666",
+          "switcher_arrow_color": "#666666",
+          "switcher_border_color": "#cccccc",
+          "switcher_background_color": "#ffffff",
+          "switcher_background_shadow_color": "#efefef",
+          "switcher_background_hover_color": "#ffffff",
+          "dropdown_text_color": "#000000",
+          "dropdown_hover_color": "#ffffff",
+          "dropdown_background_color": "#eeeeee",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "3188416721648828243": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/flags_code\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "right",
+          "vertical_position": "top",
+          "native_language_names": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "14631529263461341981": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/flags_dropdown\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "right",
+          "vertical_position": "top",
+          "native_language_names": true,
+          "add_new_line": false,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "14032133030156696076": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/flags\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "right",
+          "vertical_position": "top",
+          "native_language_names": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "4730719560732683355": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/float\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": false,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "open_direction": "top",
+          "native_language_names": true,
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
         }
       }
     }

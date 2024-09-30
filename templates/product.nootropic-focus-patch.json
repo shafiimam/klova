@@ -40,6 +40,7 @@
         },
         "bundle_btn_i8xLMH": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -283,6 +284,127 @@
         "overlay": "#faf9fb"
       }
     },
+    "ingredients_Ce83Qh": {
+      "type": "ingredients",
+      "blocks": {
+        "card_GJkPzB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/l-theanine_3fc01a1e-4e68-4973-8e2b-587eb2fdfc49.png",
+            "svg_icon": "",
+            "title": "L-Theanine",
+            "description": "<p>An amino acid known to promoterelaxation, reduce stress, and improve sleep*<\/p>"
+          }
+        },
+        "card_4dTKhX": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mushroom.png",
+            "svg_icon": "",
+            "title": "Mushroom Extract",
+            "description": "<p>All-natural supplement derived from mushrooms, known for its immune-boosting and antioxidant properties.<\/p>"
+          }
+        },
+        "card_JiREn7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aloe_vera.png",
+            "svg_icon": "",
+            "title": "Aloe Vera Leaf Gel",
+            "description": "<p>Faster wound healing, reduced inflammation, and protection against infection.*<\/p>"
+          }
+        },
+        "card_pfyXHb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/alpha-gpc.png",
+            "svg_icon": "",
+            "title": "Alpha GPC",
+            "description": "<p>A powerful choline compound that supports cognitive function, memory enhancement, and overall brain health.<\/p>"
+          }
+        },
+        "card_UPYVih": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bacopa.png",
+            "svg_icon": "",
+            "title": "Bacopa Monnieri",
+            "description": "<p>A traditional herb known for enhancing memory, reducing stress, and supporting cognitive function.<\/p>"
+          }
+        },
+        "card_xrzk3y": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/copaiba_oil.png",
+            "svg_icon": "",
+            "title": "Black PEpper Extract",
+            "description": "<p>Enhance the absorption of other nutrients, boosting their effectiveness and supporting mental clarity.<\/p>"
+          }
+        },
+        "card_xiVFt7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Figure.png",
+            "svg_icon": "",
+            "title": "L-Arginine",
+            "description": "<p>An essential amino acid that supports blood flow, enhances athletic performance, and promotes heart health.<\/p>"
+          }
+        },
+        "card_Gfbr6M": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vitamin_b6.png",
+            "svg_icon": "",
+            "title": "B6 Vitamin",
+            "description": "<p>A vital nutrient that supports brain health, energy metabolism, and the production of neurotransmitters.<\/p>"
+          }
+        },
+        "card_rygxUH": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/willow-bark.png",
+            "svg_icon": "",
+            "title": "White Willow Bark Extract",
+            "description": "<p>Provides natural pain relief, reduces inflammation, and benefits skin health.*<\/p>"
+          }
+        },
+        "card_Gyag9c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CAFFEINE.png",
+            "svg_icon": "",
+            "title": "CAFFEINE",
+            "description": "<p>Central nervous system stimulant, promoting wakefulness and enhancing cognitive performance.*<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_GJkPzB",
+        "card_4dTKhX",
+        "card_JiREn7",
+        "card_pfyXHb",
+        "card_UPYVih",
+        "card_xrzk3y",
+        "card_xiVFt7",
+        "card_Gfbr6M",
+        "card_rygxUH",
+        "card_Gyag9c"
+      ],
+      "custom_css": [
+        ".ingredients__item:nth-of-type(8) {transform: translateY(-125%) translate(10%);}",
+        ".ingredients__item:nth-of-type(5) {transform: translate(-94%) translateY(0%);}",
+        ".ingredients__item:nth-of-type(4) {transform: translate(-8%) translateY(279%);}",
+        ".ingredients__item:nth-of-type(7) {transform: translateY(0%) translate(94%);}",
+        ".ingredients__item:nth-of-type(6) {transform: translateY(30%) translate(-50%);}"
+      ],
+      "settings": {
+        "paddingsection": "40px 0",
+        "paddingsection_mob": "20px 0",
+        "title": "Made with Naturally Occurring Ingredients",
+        "rte": "<p>A 10 nature-inspired ingredients on Focus Patch<\/p>",
+        "image": "shopify:\/\/shop_images\/Group_13663_b45c2f14-6753-4331-bbf5-a37dc03185ec.png"
+      }
+    },
     "165530704378c04958": {
       "type": "image-with-text",
       "blocks": {
@@ -507,6 +629,105 @@
         "acc-text-spec-two": "<p>{{ product.metafields.my_fields.accordion_text_two.value }}<\/p>"
       }
     },
+    "review_slider_FwFUtH": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_W4gHE7": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "Now I can focus more on my work and increased productivity along the day.",
+            "reviewer_name": "Mia Inderbitzin ",
+            "product_image": "shopify:\/\/shop_images\/Nootropic_Focus_Patch_1.png",
+            "product": "focus-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_DjP7BD": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/09.jpg",
+            "review_text": "I used this for just 4 days and my focus and mental strength is back! Needless to say I keep them close by.,,",
+            "reviewer_name": "Gail",
+            "product_image": "shopify:\/\/shop_images\/Nootropic_Focus_Patch_1.png",
+            "product": "focus-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_9H7jdw": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_418b8467-833d-4b77-bc72-119ee7c7a604.jpg",
+            "review_text": "The best thing out there which will make you mentally strong and bold, without any side effects!!",
+            "reviewer_name": "Holly",
+            "product_image": "shopify:\/\/shop_images\/Nootropic_Focus_Patch_1.png",
+            "product": "focus-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_W4gHE7",
+        "review_card_DjP7BD",
+        "review_card_9H7jdw"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "2302",
+        "divider": false
+      }
+    },
+    "review_slider_z37LVE": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_KT33gC": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "I love the sleep patch. I’ve been struggling with sleep for years and have tried different things. These work and I now dream again and remember my dreams… love that. If I do wake up I go back to sleep and quickly. No more tossing and turning trying to sleep.",
+            "reviewer_name": "Mia Inderbitzin ",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "original-sleep-zpatch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_XYnAyn": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/09.jpg",
+            "review_text": "I used this for just 4 nights and my sleep is back! Needless to say I keep them close by.,,",
+            "reviewer_name": "Gail",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "original-sleep-zpatch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_RtmWt7": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_418b8467-833d-4b77-bc72-119ee7c7a604.jpg",
+            "review_text": "I have had the hardest time sleeping for at least a year and a half. Saw these on TikTok followed up with some research and thought I would try them. I have been sleeping so good and my favorite part is I stay asleep! It varies night to night how sleepy I get or how quickly they work but when I fall asleep I sleep so good. I am very happy with these patches",
+            "reviewer_name": "Holly",
+            "product_image": "shopify:\/\/shop_images\/SleepZPatch-2023_1_6.jpg",
+            "product": "original-sleep-zpatch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_KT33gC",
+        "review_card_XYnAyn",
+        "review_card_RtmWt7"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": false
+      }
+    },
     "16630811238323670e": {
       "type": "apps",
       "blocks": {
@@ -558,6 +779,7 @@
     "1654687495df726be8",
     "1654687329523c467f",
     "carousel_videos_jVA9qT",
+    "ingredients_Ce83Qh",
     "165530704378c04958",
     "16539147732bd96387",
     "1653916291e266d004",
@@ -568,6 +790,8 @@
     "16539298801be67a40",
     "top_products_jcwdBb",
     "1653908906e8b1c207",
+    "review_slider_FwFUtH",
+    "review_slider_z37LVE",
     "16630811238323670e",
     "zp-product-footer-content",
     "slideshow_image_7BihzW"

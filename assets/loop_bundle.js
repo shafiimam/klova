@@ -1,4 +1,4 @@
-/*  Loop Subscription Bundle Snippet v2.7
+/*  Loop Subscription Bundle Snippet v3.1
 
 Created and maintained by LOOP SUBSCRIPTIONS (https://apps.shopify.com/loop-subscriptions)
 DO NOT modify source code of this file because
@@ -27,7 +27,7 @@ let CART_SUBTOTAL_CLASS = "CART_SUBTOTAL_CLASS";
 //   "https://api-service.loopwork.co/bundleTransaction/getBundleCartDetails";
 // const LOOP_API_SERVICE_URL = "https://api-service.loopwork.co";
 
-const getItemsHtml = (item, bundleQuantityMapping) => {
+const getItemsHtmlLoop = (item, bundleQuantityMapping) => {
     let quantity = item.quantity;
     if (bundleQuantityMapping) {
         let variant = bundleQuantityMapping.find(
@@ -42,7 +42,16 @@ const getItemsHtml = (item, bundleQuantityMapping) => {
     } x ${quantity || ""}</span></p>`;
 };
 
-const getBundleCartTableTemplate = (bundleItem, index, bundleLink) => {
+const getEditCartButton = (bundleTransactionId) => {
+    return `<button onclick="event.preventDefault(); changeBundleCartItems('${bundleTransactionId}');" style="background:none;border:none;display:flex;align-items:center;gap:3px;cursor:pointer;padding:0; text-decoration:underline;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 17 17">
+            <path fill-rule="evenodd" d="M15.655 4.344a2.695 2.695 0 0 0-3.81 0l-.599.599-.009-.009-1.06 1.06.008.01-5.88 5.88a2.75 2.75 0 0 0-.805 1.944v1.922a.75.75 0 0 0 .75.75h1.922a2.75 2.75 0 0 0 1.944-.806l7.54-7.539a2.695 2.695 0 0 0 0-3.81Zm-4.409 2.72-5.88 5.88a1.25 1.25 0 0 0-.366.884v1.172h1.172c.331 0 .65-.132.883-.366l5.88-5.88-1.689-1.69Zm2.75.629.599-.599a1.195 1.195 0 1 0-1.69-1.689l-.598.599 1.69 1.689Z"></path>
+        </svg>
+        <p style="padding:0px;margin:0px;margin-top:5px">Edit</p>
+    </button>`;
+};
+
+const getBundleCartTableTemplateLoop = (bundleItem, index, bundleLink) => {
     return `
         <tr class="cart-item" id="CartBundleItem-${index}">
     <td class="cart-item__media">
@@ -58,16 +67,16 @@ const getBundleCartTableTemplate = (bundleItem, index, bundleLink) => {
         bundleItem.label
     }</a>
                 <div class="product-option">
-            ${bundleItem.items.map((item) => getItemsHtml(item)).join("")}
+            ${bundleItem.items.map((item) => getItemsHtmlLoop(item)).join("")}
               <br/>
         </div>
         <div class="product-option">
          ${bundleItem.price}
         </div><dl></dl>
-
         <p class="product-option">${
             bundleItem.sellingPlan || ""
         }</p><ul class="discounts list-unstyled" role="list" aria-label="Discount"></ul>
+        ${getEditCartButton(bundleItem.bundleId)}
     </td>
 
     <td class="cart-item__totals right medium-hide large-up-hide">
@@ -84,7 +93,7 @@ const getBundleCartTableTemplate = (bundleItem, index, bundleLink) => {
           <input disabled class="quantity__input" type="number" value="1" min="0">
         </quantity-input>
         <cart-remove-button>
-          <a onclick="removeBundle('${
+          <a onclick="removeBundleLoop('${
               bundleItem.bundleId
           }')" class="button button--tertiary" aria-label="${
         bundleItem.label
@@ -107,7 +116,7 @@ const getBundleCartTableTemplate = (bundleItem, index, bundleLink) => {
     `;
 };
 
-const getBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
+const getBundleCartDrawerTemplateLoop = (bundleItem, index, bundleLink) => {
     return `
         <tr class="cart-item" id="CartBundleItem-${index}">
           <td class="cart-item__media" style="text-align:center;">
@@ -122,7 +131,9 @@ const getBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
             </a>
             <dl>
               <div class="product-option">
-                ${bundleItem.items.map((item) => getItemsHtml(item)).join("")}
+                ${bundleItem.items
+                    .map((item) => getItemsHtmlLoop(item))
+                    .join("")}
                   <br/>
                   <p><span class="data-cart-item-selling-plan-name">
                     ${bundleItem.sellingPlan || ""}
@@ -142,7 +153,8 @@ const getBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
                 ${bundleItem.price} 
               </span>
             </div>
-            <div onclick="removeBundle('${
+            ${getEditCartButton(bundleItem.bundleId)}
+            <div onclick="removeBundleLoop('${
                 bundleItem.bundleId
             }')" style="cursor:pointer; width: fit-content;height: 15px;display: inline-flex;flex-direction: row-reverse;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width: 1em; height: 1em;" aria-hidden="true" focusable="false" role="presentation" class="icon icon-remove">
@@ -155,7 +167,7 @@ const getBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
     `;
 };
 
-const getBundleCartItemsDivTemplate = (bundleItem, index, bundleLink) => {
+const getBundleCartItemsDivTemplateLoop = (bundleItem, index, bundleLink) => {
     return `
         <div style="display:flex; gap:20px; justify-content: space-between;" id="CartBundleItem-${index}">
           <div style="display:flex; gap:20px;">
@@ -170,7 +182,9 @@ const getBundleCartItemsDivTemplate = (bundleItem, index, bundleLink) => {
                 ${bundleItem.label || ""}
               </a>
               <div>
-                ${bundleItem.items.map((item) => getItemsHtml(item)).join("")}
+                ${bundleItem.items
+                    .map((item) => getItemsHtmlLoop(item))
+                    .join("")}
                   <br/>
                   <p><span>${bundleItem.sellingPlan || ""}</span></p>
               </div>
@@ -186,7 +200,8 @@ const getBundleCartItemsDivTemplate = (bundleItem, index, bundleLink) => {
               </span>
               <span style="font-weight: 600;">${bundleItem.price}</span>
             </div>
-            <div onclick="removeBundle('${
+            ${getEditCartButton(bundleItem.bundleId)}
+            <div onclick="removeBundleLoop('${
                 bundleItem.bundleId
             }')" style="cursor:pointer; vertical-align: text-top; width: fit-content;height: 15px;display: inline-flex;flex-direction: row-reverse;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width: 1em; height: 1em;" aria-hidden="true" focusable="false" role="presentation" class="icon icon-remove">
@@ -199,7 +214,7 @@ const getBundleCartItemsDivTemplate = (bundleItem, index, bundleLink) => {
     `;
 };
 
-const getPresetBundleCartTemplate = (bundleItem, index, bundleLink) => {
+const getPresetBundleCartTemplateLoop = (bundleItem, index, bundleLink) => {
     return `
         <tr class="cart-item" id="CartBundleItem-${index}">
     <td class="cart-item__media">
@@ -217,7 +232,7 @@ const getPresetBundleCartTemplate = (bundleItem, index, bundleLink) => {
         <div class="product-option">
             ${bundleItem.items
                 .map((item) =>
-                    getItemsHtml(item, bundleItem.bundleQuantityMapping)
+                    getItemsHtmlLoop(item, bundleItem.bundleQuantityMapping)
                 )
                 .join("")}
               <br/>
@@ -256,7 +271,7 @@ const getPresetBundleCartTemplate = (bundleItem, index, bundleLink) => {
           }" min="0">
         </quantity-input>
         <cart-remove-button>
-          <a onclick="removeBundle('${
+          <a onclick="removeBundleLoop('${
               bundleItem.bundleId
           }')" class="button button--tertiary" aria-label="${
         bundleItem.label
@@ -279,7 +294,11 @@ const getPresetBundleCartTemplate = (bundleItem, index, bundleLink) => {
     `;
 };
 
-const getPresetBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
+const getPresetBundleCartDrawerTemplateLoop = (
+    bundleItem,
+    index,
+    bundleLink
+) => {
     return `
         <tr class="cart-item" id="CartBundleItem-${index}">
     <td class="cart-item__media">
@@ -297,7 +316,7 @@ const getPresetBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
                 <div class="product-option">
             ${bundleItem.items
                 .map((item) =>
-                    getItemsHtml(item, bundleItem.bundleQuantityMapping)
+                    getItemsHtmlLoop(item, bundleItem.bundleQuantityMapping)
                 )
                 .join("")}
               <br/>
@@ -336,7 +355,7 @@ const getPresetBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
           }" min="0">
         </quantity-input>
         <cart-remove-button>
-          <a onclick="removeBundle('${
+          <a onclick="removeBundleLoop('${
               bundleItem.bundleId
           }')" class="button button--tertiary" aria-label="${
         bundleItem.label
@@ -360,7 +379,7 @@ const getPresetBundleCartDrawerTemplate = (bundleItem, index, bundleLink) => {
 };
 
 // returns cart item key of a bundleId
-const getItemKeysByBundleId = (bundleId) => {
+const getItemKeysByBundleIdLoop = (bundleId) => {
     const cartItems = window.Loop.bundleCartAllItems;
     const data = {
         updates: {},
@@ -375,8 +394,8 @@ const getItemKeysByBundleId = (bundleId) => {
 };
 
 // removes a bundleId from cart
-const removeBundle = async (bundleId) => {
-    const data = getItemKeysByBundleId(bundleId);
+const removeBundleLoop = async (bundleId) => {
+    const data = getItemKeysByBundleIdLoop(bundleId);
     const endpoint = `${window.Shopify.routes.root}cart/update.js`;
     await fetch(endpoint, {
         method: "POST",
@@ -388,61 +407,44 @@ const removeBundle = async (bundleId) => {
     window.location.href = window.location.href;
 };
 
-// returns variants and quantity of item from a bundle
-const _getSelectedBundleVariants = (bundleId) => {
-    const _allBundleCartItems = window.Loop.bundleCartAllItems;
-    let _selectedVariants = "";
-    let _selectedQuantities = "";
-    for (const _item of _allBundleCartItems) {
-        const _bundleId =
-            _item?.properties?._bundleId ?? _item?.properties?.bundleId;
-        if (!_bundleId || _bundleId !== bundleId) continue;
-        _selectedVariants += `${_item.id},`;
-        _selectedQuantities += `${_item.quantity},`;
+const changeBundleCartItems = async (bundleTransactionId) => {
+    disableEditButton();
+    const currentLocale = window?.Shopify?.locale;
+    const root = window?.Shopify?.routes?.root ?? "/";
+
+    if (bundleTransactionId) {
+        const _editBundleRef = `${BUNDLE_LINK_PREFIX}/change/${bundleTransactionId}`;
+        if (currentLocale && root !== "/") {
+            window.location.href = `/${currentLocale}${_editBundleRef}`;
+        } else {
+            window.location.href = _editBundleRef;
+        }
     }
-    return {
-        selectedVariants: _selectedVariants.substring(
-            0,
-            _selectedVariants?.length - 1 //bcz we want to remove the last ","
-        ),
-        selectedQuantities: _selectedQuantities.substring(
-            0,
-            _selectedQuantities?.length - 1
-        ),
-    };
 };
 
-const _getLoopToken = async (shopifyDomain, bundleId) => {
-    const _endpoint = `${LOOP_API_SERVICE_URL}/bundleTransaction/getToken?shopifyDomain=${shopifyDomain}&bundleTransactionId=${bundleId}`;
-    const _response = await fetch(_endpoint);
-    const _jsonRes = await _response.json();
-    return _jsonRes?.token ?? "LOOP_TOKEN";
-};
-
-const editBundle = async (bundleId) => {
-    console.log(`Editing bundle: ${bundleId}`);
-    const { selectedVariants, selectedQuantities } = _getSelectedBundleVariants(
-        bundleId
+const disableEditButton = (bundleId) => {
+    console.log(`disabling bundle edit button: ${bundleId}`);
+    const editButttons = document.querySelectorAll(
+        `loop-edit-bundle-${bundleId}`
     );
-    const _shopifyDomain = window?.Shopify?.shop;
-    const _loopToken = await _getLoopToken(_shopifyDomain, bundleId);
-    const _editBundleRef = `${BUNDLE_LINK_PREFIX}/change/${bundleId}?loop_token=${_loopToken}&selectedVariants=${selectedVariants}&selectedQuantities=${selectedQuantities}`;
-    window.location.href = _editBundleRef;
+    for (const button of editButttons) {
+        button.disabled = true;
+    }
 };
 
-const fetchBundleTransactionCartDetails = async (loopBundleGuid) => {
+const fetchLoopBundleTransactionCartDetails = async (loopBundleGuid) => {
     const _endpoint = `${LOOP_BUNDLE_URL}/${loopBundleGuid}`;
     const _response = await fetch(_endpoint);
     return await _response.json();
 };
 
-const addExtraDetailsToBundleItems = async (bundleItems) => {
+const addExtraDetailsToBundleItemsLoop = async (bundleItems) => {
     let totalDiscount = 0;
     let currencySymbol = "";
     let currency = "";
 
     const fetchDetailsPromises = bundleItems.map((bundleItem) =>
-        fetchBundleTransactionCartDetails(bundleItem.bundleId)
+        fetchLoopBundleTransactionCartDetails(bundleItem.bundleId)
     );
     const allExtraDetails = await Promise.all(fetchDetailsPromises);
     for (let i = 0; i < allExtraDetails.length; ++i) {
@@ -539,10 +541,14 @@ const addExtraDetailsToBundleItems = async (bundleItems) => {
         }
     }
 
-    removeDiscountFromSubtotalInCart(totalDiscount, currencySymbol, currency);
+    removeDiscountFromSubtotalInCartLoop(
+        totalDiscount,
+        currencySymbol,
+        currency
+    );
 };
 
-const removeDiscountFromSubtotalInCart = (
+const removeDiscountFromSubtotalInCartLoop = (
     totalDiscount,
     currencySymbol,
     currency
@@ -550,7 +556,7 @@ const removeDiscountFromSubtotalInCart = (
     let targetNode = null;
     targetNode = document.querySelector(`.totals__subtotal-value`);
     if (targetNode) {
-        applyDiscountByCartLineItems(
+        applyDiscountByCartLineItemsLoop(
             targetNode,
             totalDiscount,
             currencySymbol,
@@ -559,7 +565,7 @@ const removeDiscountFromSubtotalInCart = (
     }
 };
 
-function applyDiscountByCartLineItems(
+function applyDiscountByCartLineItemsLoop(
     element,
     discount,
     currencySymbol,
@@ -588,7 +594,7 @@ function applyDiscountByCartLineItems(
     }
 }
 
-const getBundleItems = (items) => {
+const getBundleItemsLoop = (items) => {
     const bundleItemsMap = {};
     for (const item of items) {
         const bundleId =
@@ -620,10 +626,10 @@ const getBundleItems = (items) => {
             bundleItemsMap[bundleId].items.push(item);
         }
     }
-    return sortItemsByTitle(Object.values(bundleItemsMap));
+    return sortItemsByTitleLoop(Object.values(bundleItemsMap));
 };
 
-const sortItemsByTitle = (bundles) => {
+const sortItemsByTitleLoop = (bundles) => {
     return bundles.map((bundle) => {
         bundle.items.sort((a, b) => {
             let titleA = a.title.toUpperCase();
@@ -640,7 +646,7 @@ const sortItemsByTitle = (bundles) => {
     });
 };
 
-const renderBundleItems = (bundleItems, clientId) => {
+const renderBundleItemsLoop = (bundleItems, clientId) => {
     let _parent = document.querySelector(`.${clientId}`);
     if (!_parent) {
         _parent = document.querySelector(`.${BUNDLE_CONTAINER_CLASS}`);
@@ -661,7 +667,7 @@ const renderBundleItems = (bundleItems, clientId) => {
             bundleItem["isPresetBundleProduct"] &&
             window.location.pathname === "/cart"
         ) {
-            _template = getPresetBundleCartTemplate(
+            _template = getPresetBundleCartTemplateLoop(
                 bundleItem,
                 i + 1,
                 _bundleLink
@@ -670,25 +676,25 @@ const renderBundleItems = (bundleItems, clientId) => {
             bundleItem["isPresetBundleProduct"] &&
             window.location.pathname !== "/cart"
         ) {
-            _template = getPresetBundleCartDrawerTemplate(
+            _template = getPresetBundleCartDrawerTemplateLoop(
                 bundleItem,
                 i + 1,
                 _bundleLink
             );
         } else if (clientId.includes("drawer") && hasTable.length) {
-            _template = getBundleCartDrawerTemplate(
+            _template = getBundleCartDrawerTemplateLoop(
                 bundleItem,
                 i + 1,
                 _bundleLink
             );
         } else if (hasTable.length) {
-            _template = getBundleCartTableTemplate(
+            _template = getBundleCartTableTemplateLoop(
                 bundleItem,
                 i + 1,
                 _bundleLink
             );
         } else {
-            _template = getBundleCartItemsDivTemplate(
+            _template = getBundleCartItemsDivTemplateLoop(
                 bundleItem,
                 i + 1,
                 _bundleLink
@@ -698,13 +704,13 @@ const renderBundleItems = (bundleItems, clientId) => {
     }
 };
 
-async function getCartItems() {
+async function getCartItemsLoop() {
     const url = `https://${Shopify.cdnHost.split("/cdn")[0]}/cart.json`;
     const res = await (await fetch(url)).json();
     return res?.items ?? [];
 }
 
-function setupMutationNew() {
+function setupMutationLoop() {
     if (window.location.pathname.includes("/a/loop_subscriptions/bundle")) {
         return;
     }
@@ -715,7 +721,7 @@ function setupMutationNew() {
     );
     let timeoutId;
     const handleChanges = async () => {
-        const res = await getCartItems();
+        const res = await getCartItemsLoop();
         let currenctQuantity = res.reduce(
             (acc, curr) => acc + curr.quantity,
             0
@@ -771,7 +777,7 @@ function setupMutationIfElementDelete() {
     observer.observe(targetNode, config);
 }
 
-function setupMutation() {
+function setupMutationOldLoop() {
     var firstChange = true;
     let targetNode = null;
     let observerNode = null;
@@ -801,7 +807,7 @@ function setupMutation() {
     observer.observe(observerNode, config);
 }
 
-const bootstrap = async (clientId) => {
+const initLoopBundle = async (clientId) => {
     console.log(`Loop Bundle Initialized for ${clientId}`);
 
     try {
@@ -820,12 +826,12 @@ const bootstrap = async (clientId) => {
     }
 
     const _cartItems = window.Loop.bundleCartAllItems;
-    const _bundleItems = getBundleItems(_cartItems);
-    await addExtraDetailsToBundleItems(_bundleItems);
+    const _bundleItems = getBundleItemsLoop(_cartItems);
+    await addExtraDetailsToBundleItemsLoop(_bundleItems);
     if (_bundleItems?.length) {
-        setupMutationNew();
-        // setupMutation();
+        setupMutationLoop();
+        // setupMutationOldLoop();
         // setupMutationIfElementDelete();
     }
-    renderBundleItems(_bundleItems, clientId);
+    renderBundleItemsLoop(_bundleItems, clientId);
 };

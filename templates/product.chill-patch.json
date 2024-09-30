@@ -40,6 +40,7 @@
         },
         "bundle_btn_Gd4Ykn": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -257,6 +258,123 @@
         "title": "Chill Vibes Chronicles: Real Stories from Real Users",
         "rte": "<p>Former Stress Warriors Share Their Klova Chill Patch Experience<\/p>",
         "overlay": "#faf9fb"
+      }
+    },
+    "ingredients_cUhJBa": {
+      "type": "ingredients",
+      "blocks": {
+        "card_ApA4xd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rhodiola_Rosea.png",
+            "svg_icon": "",
+            "title": "Rhodiola Rosea",
+            "description": "<p>An adaptogenic herb that helps reduce stress, enhance endurance, and improve mental performance.<\/p>"
+          }
+        },
+        "card_iYG9GV": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/passion_flower_ccf040f3-dcf6-421a-84e1-08ff1ba3f76f.png",
+            "svg_icon": "",
+            "title": "Passion Flower Extract",
+            "description": "<p>Known to help with insomnia and reduceinflammation and anxiety*<\/p>"
+          }
+        },
+        "card_DaWbDM": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ginger_root.png",
+            "svg_icon": "",
+            "title": "Ginger Root Extract",
+            "description": "<p>Anti-inflammatory properties, digestive support, and ability to ease nausea.<\/p>"
+          }
+        },
+        "card_qzGdrd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ltheanine.png",
+            "svg_icon": "",
+            "title": "L-Theanine",
+            "description": "<p>An amino acid known to promoterelaxation, reduce stress, and improve sleep*<\/p>"
+          }
+        },
+        "card_6taVdB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GABA.png",
+            "svg_icon": "",
+            "title": "GABA",
+            "description": "<p>A naturally occurring neurotransmitter known to reduce anxiety & improve sleep*<\/p>"
+          }
+        },
+        "card_64TY4m": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vitamin_b6.png",
+            "svg_icon": "",
+            "title": "B6 Vitamin",
+            "description": "<p>A vital nutrient that supports brain health, energy metabolism, and the production of neurotransmitters.<\/p>"
+          }
+        },
+        "card_xGaGEH": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aloe_vera.png",
+            "svg_icon": "",
+            "title": "Aloe Vera Leaf Gel Extract",
+            "description": "<p>Faster wound healing, reduced inflammation, and protection against infection.*<\/p>"
+          }
+        },
+        "card_wKgg7e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/willow-bark.png",
+            "svg_icon": "",
+            "title": "White Willow Bark Extract",
+            "description": "<p>Provides natural pain relief, reduces inflammation, and benefits skin health.*<\/p>"
+          }
+        },
+        "card_EcEytQ": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmosperine.png",
+            "svg_icon": "",
+            "title": "Black Pepper Extract",
+            "description": "<p>Enhance the absorption of other nutrients, boosting their effectiveness and supporting mental clarity.<\/p>"
+          }
+        },
+        "card_rEfYEp": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-sensitivity.png",
+            "svg_icon": "",
+            "title": "Sensoril® Ashwagandha",
+            "description": "<p>Clinically proven to reduce stress and calmanxious minds.*<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_ApA4xd",
+        "card_iYG9GV",
+        "card_DaWbDM",
+        "card_qzGdrd",
+        "card_6taVdB",
+        "card_64TY4m",
+        "card_xGaGEH",
+        "card_wKgg7e",
+        "card_EcEytQ",
+        "card_rEfYEp"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection_mob": "0px 0px 0px 0px",
+        "title": "Made with Naturally Occurring Ingredients",
+        "rte": "<p>A 10 nature-inspired ingredients on Chill Patch<\/p>",
+        "image": "shopify:\/\/shop_images\/chill-patch.png"
       }
     },
     "f9abfcd4-03c3-4a06-b16c-0c8aa6b1121c": {
@@ -529,6 +647,55 @@
         "title": "You May Also Like"
       }
     },
+    "review_slider_bBytTd": {
+      "type": "review-slider",
+      "blocks": {
+        "review_card_pMXzgh": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04_5ca392dd-8d11-4ed4-906c-ffe7e7e79982.jpg",
+            "review_text": "I am a business owner and often find parts of my day to be very stressful. The chill patch has helped calm my stress almost completely. I am thankful to find a natural solution. I love this product so much that I have purchased multiple times!!!",
+            "reviewer_name": "juanita",
+            "product_image": "shopify:\/\/shop_images\/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_aLx8bQ": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_418b8467-833d-4b77-bc72-119ee7c7a604.jpg",
+            "review_text": "I love all these products. They are no too overwhelming l, but do what they say.",
+            "reviewer_name": "Sharon",
+            "product_image": "shopify:\/\/shop_images\/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        },
+        "review_card_BNn9V3": {
+          "type": "review_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/08_b8f6d257-5ec5-484b-b4c8-e376113e1fc4.jpg",
+            "review_text": "Allows me to wind down after a tough day. I use to take medication to help me with my anxiety and stress. Now I just use the chill patch and I'm good.",
+            "reviewer_name": "Raymond",
+            "product_image": "shopify:\/\/shop_images\/Chill_Patch_1.jpg",
+            "product": "chill-patch",
+            "cta_content": "Subscribe and save"
+          }
+        }
+      },
+      "block_order": [
+        "review_card_pMXzgh",
+        "review_card_aLx8bQ",
+        "review_card_BNn9V3"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "show_reviewer_image": true,
+        "review_count": "5209",
+        "divider": false
+      }
+    },
     "1653908906e8b1c207": {
       "type": "faq-block",
       "blocks": {
@@ -678,6 +845,7 @@
     "165520195680c8f3b7",
     "1653916303774cfc14",
     "1655216981912667ca",
+    "ingredients_cUhJBa",
     "f9abfcd4-03c3-4a06-b16c-0c8aa6b1121c",
     "7499d221-a431-4923-838d-1f0823023fcc",
     "2e0268da-a51d-472e-9e99-fe752e6fcac4",
@@ -686,6 +854,7 @@
     "sleep_chart_zwXQwj",
     "16539162981609c3bf",
     "top_products_MtxbG4",
+    "review_slider_bBytTd",
     "1653908906e8b1c207",
     "1707412982f325c155",
     "1663080677e87bd9f4",

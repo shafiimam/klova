@@ -40,6 +40,7 @@
         },
         "bundle_btn_HBpG4r": {
           "type": "bundle_btn",
+          "disabled": true,
           "settings": {
             "bundle_img": "shopify:\/\/shop_images\/Frame_1000003954_1.png",
             "bundle_mob_img": "shopify:\/\/shop_images\/Frame_1000003955_1.png",
@@ -422,6 +423,9 @@
         "1655285723440721d1-8",
         "1655285723440721d1-9"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "paddingsection": "60px 0px 60px 0px",
         "paddingsection_mob": "120px 0px 40px 0px",
@@ -437,8 +441,8 @@
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/product-comparison-desktop.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/product-comparison-mobile.jpg"
+            "image": "shopify:\/\/shop_images\/Frame_14205_fba1f8d2-dd53-494d-b830-e193396976b8.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_14233_adacd902-bf9c-4ed0-ac04-f8896df20628.png"
           }
         }
       },

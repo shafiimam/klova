@@ -5,14 +5,15 @@
       "blocks": {
         "slide_hRUmQr": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "Back To School With Klova",
+            "title": "Peace Day In Klova",
             "last_word_color": "#fa0909",
             "title_size": 60,
-            "subheading": "<p>Buy One Focus Patch, Get One Free - Code SCHOOL20<\/p>",
+            "subheading": "<p>15% Off Chill Patch<\/p>",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/Klova-Banner_Back_to_school_-_480x450px_-_rectangular_-_01.jpg",
+            "image": "shopify:\/\/shop_images\/Klova-Banner_Peace_Day_2.0_-_480x450px_-_rectangular_-_01.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "transform_mob_x": 0,
@@ -22,27 +23,6 @@
             "style_overlay": "bg-gr--yellow-orange",
             "link_text": "Get Now",
             "link": "shopify:\/\/products\/focus-patch"
-          }
-        },
-        "slide_tJCUyQ": {
-          "type": "slide",
-          "settings": {
-            "top_subheading": "PROUDLY",
-            "title": "Made in America",
-            "last_word_color": "#fa0909",
-            "title_size": 82,
-            "subheading": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>",
-            "text_position": "right",
-            "image": "shopify:\/\/shop_images\/Untitled_design_2.png",
-            "indent_image": false,
-            "focal_point": "center center",
-            "transform_mob_x": 0,
-            "transform_mob_y": 0,
-            "transform_x": 0,
-            "transform_y": 0,
-            "style_overlay": "bg-gr--green-blue",
-            "link_text": "",
-            "link": ""
           }
         },
         "slideshow-split-1": {
@@ -65,6 +45,27 @@
             "style_overlay": "bg-gr--green-blue",
             "link_text": "Learn More",
             "link": "shopify:\/\/products\/extra-strength-sleep-patch"
+          }
+        },
+        "slide_tJCUyQ": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "PROUDLY",
+            "title": "Made in America",
+            "last_word_color": "#fa0909",
+            "title_size": 82,
+            "subheading": "<p>Every Klova patch is made in the USA in a GMP certified facility.<\/p>",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Untitled_design_2.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "transform_mob_x": 0,
+            "transform_mob_y": 0,
+            "transform_x": 0,
+            "transform_y": 0,
+            "style_overlay": "bg-gr--green-blue",
+            "link_text": "",
+            "link": ""
           }
         },
         "slideshow-split-0": {
@@ -114,8 +115,8 @@
       },
       "block_order": [
         "slide_hRUmQr",
-        "slide_tJCUyQ",
         "slideshow-split-1",
+        "slide_tJCUyQ",
         "slideshow-split-0",
         "dad8718f-d105-4c1c-85b5-91717c290bd4"
       ],
@@ -232,6 +233,7 @@
       "block_order": [
         "liquid_GbQz9T"
       ],
+      "disabled": true,
       "custom_css": [
         ".custom__item {margin-top: 25px;}"
       ],
@@ -353,6 +355,7 @@
       "block_order": [
         "image_DXLFia"
       ],
+      "disabled": true,
       "custom_css": [
         ".hero__slide-link {display: block !important;}"
       ],
@@ -794,7 +797,7 @@
         "paddingsection": "60px 0px 60px 0px",
         "paddingsection_mob": "60px 0px 60px 0px",
         "full_width": false,
-        "title": "Follow us on @klovasleep",
+        "title": "Follow us on our Instagram @klovasleep",
         "instagram_url": "",
         "instagram_label": "",
         "style_overlay": "bg-gr--blue-purple"

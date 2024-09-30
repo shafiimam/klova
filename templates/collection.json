@@ -52,6 +52,7 @@
         },
         "420f4dcf-bf25-44c5-be96-b0744523d5d9": {
           "type": "collection-name",
+          "disabled": true,
           "settings": {
             "collection": "performance",
             "title": "Performance"
@@ -77,7 +78,7 @@
         "paddingsection": "0px 0px 20px 0px",
         "paddingsection_mob": "0px 0px 20px 0px",
         "style_overlay": "bg-gr--blue-purple",
-        "show_byob": true,
+        "show_byob": false,
         "byob_title": "Build Your Own Bundle",
         "byob_link": "https:\/\/www.klova.com\/a\/loop_subscriptions\/bundle\/31161e8c8f6d4c3c967ac4b3e75f90e4"
       }
@@ -112,7 +113,7 @@
         ".product-grid[data-view=\"medium\"] .grid-product__image-wrap {margin: 0px;}",
         ".product-grid[data-view=\"medium\"] .grid-item__link {padding: 24px;}",
         ".product-grid[data-view=\"medium\"] .grid-product__image {border-radius: 10px;}",
-        ".col-hoverline p{font-size:14px; font-weight:400px;}"
+        ".col-hoverline p {font-size: 14px; font-weight: 400px;}"
       ],
       "settings": {
         "enable_sidebar": false,

@@ -14,18 +14,6 @@
     },
     "image_with_text_cta_wbXgfK": {
       "type": "image-with-text-cta",
-      "blocks": {
-        "text_image_jEm8dU": {
-          "type": "text-image",
-          "settings": {
-            "text": "Who supports us",
-            "image": "shopify:\/\/shop_images\/who-support-us.svg"
-          }
-        }
-      },
-      "block_order": [
-        "text_image_jEm8dU"
-      ],
       "custom_css": [
         ".heading {max-width: 652px; color: #1e062c; font-family: \"Bergen Sans\"; font-size: 56px; font-style: normal; font-weight: 700; line-height: 64px; \/* 114.286% *\/}",
         ".image-with-text-cta__content .cta-button-link {background: #1e062c;}",
@@ -33,79 +21,81 @@
         ".image-with-text-cta__content--image {position: relative; left: 20px;}",
         ".image-with-text-cta__container {padding-top: 50px;}",
         ".image-with-text-cta__content--image {flex-basis: 57%;}",
-        ".cta-button-link{color: #fff;}"
+        ".cta-button-link {color: #fff;}"
       ],
       "settings": {
-        "heading": "Get Your Best Sleep Ever with Klova’s Original Sleep Patch!",
-        "subHeading": "",
-        "image": "shopify:\/\/shop_images\/Frame_1239330632_2ea8edfd-c183-4365-bf32-012db7a3c373.png",
-        "bg_desktop": "shopify:\/\/shop_images\/Frame_1239330632.png",
-        "bg_tablet": "shopify:\/\/shop_images\/Frame_1239330632.png",
-        "bg_mobile": "shopify:\/\/shop_images\/Frame_1239330634.png",
-        "button_text": "Get Original Sleep Patch!",
+        "heading": "Discover the Magic of Better Sleep with Klova’s Sleep Patch – Start Your Free Trial",
+        "subHeading": "<p>Try Klova’s Extra-Strength Sleep Patch on us! Just cover<strong> $9.95<\/strong> for shipping!<\/p><p>Unlock the secret to quicker, more peaceful sleep with our no-cost trial, featuring 8 patches ingeniously crafted to enhance your sleep quality.<\/p>",
+        "image": "shopify:\/\/shop_images\/Group_1366012.png",
+        "bg_desktop": "shopify:\/\/shop_images\/Frame_1000003699.png",
+        "bg_tablet": "shopify:\/\/shop_images\/Frame_1000003698.png",
+        "bg_mobile": "shopify:\/\/shop_images\/Frame_1000003705.png",
+        "button_text": "Begin Your Free Sleep Trial",
         "button_url": "#buy-now",
         "btn-color": "#ffffff",
         "willRedirect": false,
         "button_text_2": "Button Text",
         "button_url_2": "",
         "alignment": "right",
-        "background_color": "#c8c2dd",
+        "background_color": "",
         "show_section_devider": false
       }
     },
-    "logo_list_Q3U9aP": {
-      "type": "logo-list",
+    "sales_point_column_3BTUBb": {
+      "type": "sales-point-column",
       "blocks": {
-        "logo_image_LnQTrh": {
-          "type": "logo_image",
+        "sales_point_QyBfAd": {
+          "type": "sales-point",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gmp.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/19031158_usa_7_1.png",
+            "svgImg": "",
+            "text": "<p>MADE IN USA<\/p>"
           }
         },
-        "logo_image_ztJjqt": {
-          "type": "logo_image",
+        "sales_point_6DrRn7": {
+          "type": "sales-point",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fda-approved.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/drug-free.png",
+            "svgImg": "",
+            "text": "<p>DRUG FREE<\/p>"
           }
         },
-        "logo_image_YfdjRx": {
-          "type": "logo_image",
+        "sales_point_y7z4f8": {
+          "type": "sales-point",
           "settings": {
-            "image": "shopify:\/\/shop_images\/natural.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/money_back_cbdda9f7-4240-4982-8f13-d75951d66084.png",
+            "svgImg": "",
+            "text": "<p>30 DAY MONEY-BACK GUARANTEE<\/p>"
           }
         },
-        "logo_image_k6PmF7": {
-          "type": "logo_image",
+        "sales_point_jARgYA": {
+          "type": "sales-point",
           "settings": {
-            "image": "shopify:\/\/shop_images\/made-in-uwq.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/physicial_approved.png",
+            "svgImg": "",
+            "text": "<p>PHYSICIAN APPROVED FORMULATIONS<\/p>"
           }
         },
-        "logo_image_rBzUPQ": {
-          "type": "logo_image",
+        "sales_point_rAMY3G": {
+          "type": "sales-point",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gmo-free.png",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/NATURAL_INGREDIENTS.png",
+            "svgImg": "",
+            "text": "<p>NATURAL INGREDIENTS<\/p>"
           }
         }
       },
       "block_order": [
-        "logo_image_LnQTrh",
-        "logo_image_ztJjqt",
-        "logo_image_YfdjRx",
-        "logo_image_k6PmF7",
-        "logo_image_rBzUPQ"
+        "sales_point_QyBfAd",
+        "sales_point_6DrRn7",
+        "sales_point_y7z4f8",
+        "sales_point_jARgYA",
+        "sales_point_rAMY3G"
       ],
       "custom_css": [
-        ".new-grid {justify-content: center;}",
-        "@media (max-width: 900px) {.grid-item {flex: 0 0 30%; } .logo-bar__item {padding: 0; margin-bottom: 10px; }}"
+        ".sales-point-item {gap: 10px;}"
       ],
       "settings": {
-        "title": "",
-        "divider": false
       }
     },
     "image_with_sales_point_z6qtFq": {
@@ -247,6 +237,58 @@
         "alignment": "left",
         "background_color": "#ffffff",
         "show_section_devider": false
+      }
+    },
+    "text_columns_gkLHUd": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_He79KK": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image_3f6933fe-c249-4bf1-b0c5-c1c09616eb9f.png",
+            "image_width": 650,
+            "title": "8 Sleep-Inducing Patches (2 Sheets)",
+            "text": "<p>These patches are a tapestry of sleep-supportive elements, including melatonin, ashwagandha, valerian root, and a touch of calming lavender oil.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_cR37m8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Frame_1000003701_8dfa2d4c-fd79-464f-964b-e86ed8cd22d3.png",
+            "image_width": 650,
+            "title": "Time-Release Design",
+            "text": "<p>Our advanced formulation ensures a consistent, 8-hour stream of slumber-inducing nutrients.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_DhEhXh": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Frame_1000003702_036f32b6-cd25-4bec-8484-6df0fafee31a.png",
+            "image_width": 650,
+            "title": "Awaken with Vigor",
+            "text": "<p>Engage in the kind of deep sleep that leaves you energized and clear-headed at daybreak.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_He79KK",
+        "text_block_cR37m8",
+        "text_block_DhEhXh"
+      ],
+      "settings": {
+        "title": "Your Trial Includes",
+        "align_text": "left",
+        "divider": false,
+        "color_scheme": "none"
       }
     },
     "ingredients_Y66VyT": {
@@ -801,11 +843,12 @@
     "custom_html_BemdKR",
     "main",
     "image_with_text_cta_wbXgfK",
-    "logo_list_Q3U9aP",
+    "sales_point_column_3BTUBb",
     "image_with_sales_point_z6qtFq",
     "carousel_videos_ARgqAp",
     "rich_text_Ve3pWa",
     "image_with_text_cta_pyyKFx",
+    "text_columns_gkLHUd",
     "ingredients_Y66VyT",
     "slideshow_image_QRjEpD",
     "zsleep_show_NJwUWn",
