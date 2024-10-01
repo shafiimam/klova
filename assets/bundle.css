@@ -1948,11 +1948,12 @@ html.category-open .site-header .site-header__element {
   margin: 0;
   padding: 0;
 }
+ul.no-bullets.footer__social {
+  display: flex;
+  justify-content: flex-end;
+}
 .footer__social li {
   margin: 0 20px 15px 0;
-}
-.footer__social li:nth-of-type(3n + 3) {
-  margin-right: 10px;
 }
 .footer__social--enabled-text li {
   display: block;

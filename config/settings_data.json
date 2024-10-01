@@ -66,6 +66,7 @@
     "social_twitter_link": "",
     "social_instagram_link": "https:\/\/www.instagram.com\/klovasleep",
     "social_tiktok_link": "https:\/\/www.tiktok.com\/@klovasleep",
+    "social_youtube_link": "https:\/\/www.youtube.com\/@klovasleep",
     "favicon": "shopify:\/\/shop_images\/Klova_Icon_-_Social_Media_b08ef331-45dc-475e-b212-4e675462d045.png",
     "search_type": "product,article,page,collection",
     "predictive_search_enabled": true,
@@ -279,17 +280,6 @@
               "enable_account_link": false
             }
           },
-          "fe6a67a0-686e-435b-a946-f28802053c97": {
-            "type": "contact",
-            "disabled": true,
-            "settings": {
-              "phone": "",
-              "contact": "",
-              "chat": "",
-              "enable_social": true,
-              "enable_text_instead_icons": true
-            }
-          },
           "payment_R3TEac": {
             "type": "payment",
             "settings": {
@@ -299,12 +289,11 @@
               "show_currency_flags": true
             }
           },
-          "contact_hqNVde": {
+          "contact_Jn8rqa": {
             "type": "contact",
-            "disabled": true,
             "settings": {
               "phone": "",
-              "contact": "",
+              "contact": "contact-us",
               "chat": "",
               "enable_social": true,
               "enable_text_instead_icons": false
@@ -313,12 +302,12 @@
         },
         "block_order": [
           "footer-0",
-          "fe6a67a0-686e-435b-a946-f28802053c97",
           "payment_R3TEac",
-          "contact_hqNVde"
+          "contact_Jn8rqa"
         ],
         "custom_css": [
-          ".footer__section {z-index: 0; margin-bottom: 50px;}"
+          ".footer__section {z-index: 0; margin-bottom: 50px;}",
+          ".footer__block:last-of-type {padding: 0; margin-top: 20px;}"
         ],
         "settings": {
           "show_newsletter": false,

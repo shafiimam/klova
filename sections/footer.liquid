@@ -60,22 +60,23 @@
 "> <img src="https://cdn.shopify.com/s/files/1/2065/0707/files/MADE_IS_AMERICA_1.png?v=1707241940"> </div>
           </div>
         {%- endif -%}
-
-        {%- for block in section.blocks -%}
-          <div {{ block.shopify_attributes }} class="footer__block" data-type="{{ block.type }}">
-            {%- liquid
-              case block.type
-                when 'menu'
-                  render 'footer-menu', block: block
-                when 'payment'
-                  assign show_currency_flags = block.settings.show_currency_flags
-                  render 'footer-payments', block: block, show_currency_flags: show_currency_flags
-                when 'contact'
-                  render 'footer-contact', block: block
-              endcase
-            -%}
-          </div>
-        {%- endfor -%}
+        <div class="footer-menu-blocks-container">
+          {%- for block in section.blocks -%}
+            <div {{ block.shopify_attributes }} class="footer__block" data-type="{{ block.type }}">
+              {%- liquid
+                case block.type
+                  when 'menu'
+                    render 'footer-menu', block: block
+                  when 'payment'
+                    assign show_currency_flags = block.settings.show_currency_flags
+                    render 'footer-payments', block: block, show_currency_flags: show_currency_flags
+                  when 'contact'
+                    render 'footer-contact', block: block
+                endcase
+              -%}
+            </div>
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>

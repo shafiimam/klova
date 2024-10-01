@@ -85,7 +85,7 @@
 <style>
   #{{ section.id }} .page-width {
     background: {{ backgroundValue }};
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     {% if section.settings.show_section_devider %}
       margin-top: 50px;
@@ -101,6 +101,7 @@
     justify-content: space-between;
   }
 
+
   .image-with-text-cta__content--text {
     flex-basis: 50%;
     display: flex;
@@ -108,11 +109,13 @@
     justify-content: center;
   }
   .image-with-text-cta__content--text .heading {
+    max-width: 652px;
     color: #1e062c;
-    font-size: 40px;
+    font-family: "Bergen Sans";
+    font-size: 56px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 40px; /* 100% */
+    font-weight: 700;
+    line-height: 64px; /* 114.286% */
   }
   .image-with-text-cta__content--text .subheading {
     display: flex;
@@ -132,7 +135,8 @@
   .image-with-text-cta__content--text .cta-button, .cta-button-2,.image-with-text-cta__content--text .cta-button-link {
     padding: 17px 40px;
     border-radius: 5px;
-    background: #5fb1c2;
+    background: {{ section.settings.cta-btn-link-color }};
+    color: #fff;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -142,8 +146,7 @@
   }
   
   .image-with-text-cta__content--text .cta-button:hover ,.cta-button-2:hover {
-    background: #2d7b8e;
-    color: {{ section.settings.btn-color }}
+    cursor: pointer;
   }
   p.text-image-content {
     font-size: 20px;
@@ -253,9 +256,9 @@
     },
     {
       "type": "color",
-      "id": "btn-color",
+      "id": "cta-btn-link-color",
       "label": "button color",
-      "default": "#fff"
+      "default": "#1E062C"
     },
     {
       "type": "checkbox",

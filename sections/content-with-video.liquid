@@ -1,18 +1,17 @@
 <section class="zsleep-show">
   <div class="zsleep-show-content">
     <div class="zsleep-content zsleep-page-width">
-      <h2 style="text-align: center;" class="trans-text">{{ section.settings.title }}</h2>
+      <h2 style="text-align: center;" class="video-content-heading">{{ section.settings.title }}</h2>
       <div class="zsleep-show-data">
-        <p style="text-align: center;">
-          <span style="font-size: 18px; font-family: Montserrat; font-weight: 600; font-style: normal; color: rgb(102, 96, 170);">
-            {{- section.settings.description -}}
-          </span>
-        </p>
+        <div style="text-align: center;" class="video-content-description">
+          {{- section.settings.description -}}
+        </div>
       </div>
       <video
         width="100%"
         height="100%"
         controls
+        class="section-video-element"
         poster="{{ section.settings.video_thumbnail | image_url }}"
       >
         {%- for source in section.settings.video.sources -%}
@@ -28,21 +27,72 @@
 
 <style>
   .zsleep-show-content {
-    background: rgba(225, 223, 238, 1);
+    background: {{ section.settings.section_bg  }} !important;
+  }
+  .video-content-heading{
+    color: #000;
+    text-align: center;
+    font-family: "Bergen Sans";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+  }
+  .video-content-description p{
+    color: #000;
+    text-align: center;
+    font-family: "Bergen Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .section-video-element{
+    margin-top: 40px;
+    border-radius: 20px;
   }
   .zsleep-content {
     text-align: center;
-    padding: 20px 0px;
+    padding: 64px 0;
   }
   .zsleep-show-data {
     max-width: 530px;
     margin: 0 auto;
   }
+  .caption{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+  }
+  @media screen and (max-width: 768px) {
+    .video-content-heading{
+      color: #000;
+      text-align: center;
+      font-family: "Bergen Sans";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+    }    
+    .video-content-description{
+      color: #000;
+      text-align: center;
+      font-family: "Bergen Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
 </style>
 
 {% schema %}
 {
-  "name": "Conten With Video",
+  "name": "Content With Video",
   "settings": [
     {
       "type": "text",
@@ -65,11 +115,23 @@
       "type": "video",
       "id": "video",
       "label": "Select Video"
+    },
+    {
+      "type": "text",
+      "id": "video_caption",
+      "label": "Caption",
+      "default": "Video Caption"
+    },
+    {
+      "type": "color_background",
+      "id": "section_bg",
+      "label": "Background Color",
+      "default": "rgba(225, 223, 238, 1)"
     }
   ],
   "presets": [
     {
-      "name": "Conten With Video"
+      "name": "Content With Video"
     }
   ]
 }

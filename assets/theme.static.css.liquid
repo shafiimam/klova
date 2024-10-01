@@ -3100,12 +3100,20 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
     }
   }
 
-.footer__blocks{
+{% comment %} .footer__blocks{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
+} {% endcomment %}
+.footer__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
 }
-
+.footer__block.footer__block--copyright {
+  max-width: 500px;
+}
 .footer__block{
   flex:0 1 25%;
   max-width:210px;
