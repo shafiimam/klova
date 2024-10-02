@@ -18,7 +18,7 @@
         "trust_badge_t4bpbJ": {
           "type": "trust_badge",
           "settings": {
-            "text": "60 Day Money Back Guarantee"
+            "text": "30 Day Money Back Guarantee"
           }
         }
       },
@@ -461,8 +461,8 @@
         ".image-with-text-cta__content--text {flex-basis: 50%; display: flex; flex-direction: column; justify-content: center;}"
       ],
       "settings": {
-        "heading": "60 Day 100% Money Back Guarantee",
-        "subHeading": "<p>Your purchase today is secured by our unwavering 60-day 100% money-back guarantee. If you're not completely satisfied with the remarkable improvements in your energy levels and overall health, or if you don't see the vibrant transformation you expected, simply reach out to us within the next 60 days. We promise to return every penny, no questions asked<\/p>",
+        "heading": "30 Day 100% Money Back Guarantee",
+        "subHeading": "<p>Your purchase today is secured by our unwavering 60-day 100% money-back guarantee. If you're not completely satisfied with the remarkable improvements in your energy levels and overall health, or if you don't see the vibrant transformation you expected, simply reach out to us within the next 30 days. We promise to return every penny, no questions asked<\/p>",
         "image": "shopify:\/\/shop_images\/money_back_4b0b3427-2ad7-4b97-a8c5-fc524619dec7.png",
         "button_text": "",
         "button_url": "",

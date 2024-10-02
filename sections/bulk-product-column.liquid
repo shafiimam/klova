@@ -98,8 +98,8 @@
 .product-grid-item:nth-child(2){
   padding: 50px 30px;
   border-radius: 16px;
-  border: 2px solid #62519D;
-  background: #E5E4EC;
+  border: 2px solid {{ section.settings.card_border_color }};
+  background: {{ section.settings.card_background}};
   box-shadow: 0px 2px 36px 0px rgba(0, 0, 0, 0.15);
 }
 .product-grid-item .product-info, .product-grid-item .product-content {
@@ -109,7 +109,7 @@
   align-items: center;
 }
 .product-grid-item .block-title {
-  color: #62519D;
+  color: {{ section.settings.card_border_color }};
   text-align: center;
   font-family: "Bergen Sans";
   font-size: 34px;
@@ -118,7 +118,7 @@
   line-height: 40px;
 }
 .product-grid-item .block-subtitle {
-  color: #1E062C;
+  color: {{ section.settings.card_border_color }};
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -129,7 +129,7 @@
 }
 
 .product-grid-item .block-price-container .money{
-  color: #62519D;
+  color: {{ section.settings.card_border_color }};
   text-align: center;
   font-family: "Bergen Sans";
   font-size: 55px;
@@ -150,7 +150,7 @@
 }
 .product-grid-item .product-cta-btn{
   border-radius: 6px;
-  background: #1E062C;
+  background: {{ section.settings.card_btn_color }};
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 17px;
@@ -256,9 +256,21 @@ p.block-guarantee {
     },
     {
       "type": "color_background",
-      "id": "accent_color",
-      "label": "Color Accent",
+      "id": "card_background",
+      "label": "Card Background",
+      "default": "#E5E4EC"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card Border And Font Color",
       "default": "#62519D"
+    },
+    {
+      "type": "color",
+      "id": "card_btn_color",   
+      "label": "Card Button Color",
+      "default": "#1E062C"
     },
     {
       "type": "html",
